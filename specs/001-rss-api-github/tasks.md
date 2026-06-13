@@ -92,10 +92,10 @@ tags:
 
 ### Implementation for User Story 2
 
-- [ ] T021 [P] [US2] `scripts/score.py` — `group_topics(items)`(제목 토큰셋 Jaccard≥0.5 또는 동일 정규화 URL 그리디 클러스터, research R2) + `score(topics)`(`log1p`+min-max 정규화, `0.6*src + 0.4*hn`, 0~1)
-- [ ] T022 [US2] `scripts/collect.py`에 점수 단계 통합 — 수집 항목으로 HotTopic 산출, 점수 내림차순 상위 10(FR-008/FR-017)을 snapshot `hot_topics`에 기록 (T021, T014 의존)
-- [ ] T023 [US2] `docs/app.js`·`docs/index.html` 핫토픽 탭 — `hot_topics` 렌더(점수·src_count 배지, 근거 항목 출처 링크), 내림차순 정렬 표시 (T019 의존)
-- [ ] T024 [P] [US2] `tests/unit/test_score.py` — research R2 worked example(Claude 0.96 > Rust 0.70 > DeepMind 0.00) 재현, 결측 HN 항이 0 처리(헌법 III)·정렬 검증
+- [X] T021 [P] [US2] `scripts/score.py` — `group_topics(items)`(제목 토큰셋 Jaccard≥0.5 또는 동일 정규화 URL 그리디 클러스터, research R2) + `score(topics)`(`log1p`+min-max 정규화, `0.6*src + 0.4*hn`, 0~1)
+- [X] T022 [US2] `scripts/collect.py`에 점수 단계 통합 — 수집 항목으로 HotTopic 산출, 점수 내림차순 상위 10(FR-008/FR-017)을 snapshot `hot_topics`에 기록 (T021, T014 의존)
+- [X] T023 [US2] `docs/app.js`·`docs/index.html` 핫토픽 탭 — `hot_topics` 렌더(점수·src_count 배지, 근거 항목 출처 링크), 내림차순 정렬 표시 (T019 의존)
+- [X] T024 [P] [US2] `tests/unit/test_score.py` — research R2 worked example(Claude 0.96 > Rust 0.70 > DeepMind 0.00) 재현, 결측 HN 항이 0 처리(헌법 III)·정렬 검증
 
 **Checkpoint**: US1 + US2 모두 독립 동작 — 핫토픽 점수 표시
 

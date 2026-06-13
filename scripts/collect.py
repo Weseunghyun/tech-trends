@@ -16,6 +16,7 @@ from pathlib import Path
 from scripts.config import CONTENT_CATEGORIES, KST, PER_CATEGORY, SOURCES
 from scripts.normalize import clip, item_id, normalize_url, valid_url
 from scripts.render import build_snapshot, prune_files, refresh_pointers, write_snapshot
+from scripts.score import compute_hot_topics
 from scripts.sources.hackernews import fetch_hn
 from scripts.sources.rss import fetch_rss
 
@@ -102,11 +103,12 @@ def collect(
             )
 
     categories = _group_by_category(items)
+    hot_topics = compute_hot_topics(items)
     snapshot = build_snapshot(
         date_str=date_str,
         generated_at=generated_at,
         categories=categories,
-        hot_topics=[],  # US2에서 통합
+        hot_topics=hot_topics,
         sources=sources_status,
     )
 
@@ -144,6 +146,7 @@ def _print_dry_run(snapshot: dict, ok_count: int) -> None:
         print(f"  - {s['source']}: {s['item_count']}건 {mark}")
     for cat, lst in snapshot["categories"].items():
         print(f"  [{cat}] {len(lst)}건")
+    print(f"  [hot_topics] {len(snapshot['hot_topics'])}건")
 
 
 def main(argv: list[str] | None = None) -> int:
