@@ -1,3 +1,7 @@
+# [활성화] 이 파일을 .github/workflows/daily.yml 로 옮기면 Actions가 인식한다.
+#   (gh 토큰에 workflow 스코프가 없어 초기 푸시에서 제외됨 — 웹 UI 추가 또는
+#    `gh auth refresh -s workflow` 후 이동·커밋. 1차 경로는 claude.ai/code 루틴이라 선택사항.)
+#
 # 폴백 스케줄러 — 1차는 claude.ai/code 루틴(에이전트 인라인 한글 요약).
 # 이 워크플로는 루틴 불가 시 대체용. LLM 키가 없으므로 요약(summary_ko)은 빈 값으로
 # 커밋되고(추정 금지, 헌법 III), 대시보드는 제목·출처·점수만 표시한다.

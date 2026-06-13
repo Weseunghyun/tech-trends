@@ -45,7 +45,7 @@ cd docs && python -m http.server 8080    # http://localhost:8080 미리보기
 ## 스케줄
 
 - **1차(권장)**: claude.ai/code 스케줄 루틴 — 수집 + 한글 요약을 에이전트가 인라인으로 수행하고 커밋·푸시(별도 LLM 키 없음).
-- **폴백**: `.github/workflows/daily.yml` cron `0 23 * * *`(=KST 08:00). LLM 키가 없어 요약은 빈 값으로 커밋되고(추정 금지), 내장 `GITHUB_TOKEN`로 push. cron 타이밍은 비보장.
+- **폴백**: `.github/daily.yml.example`를 `.github/workflows/daily.yml`로 옮기면 활성화(cron `0 23 * * *`=KST 08:00). LLM 키가 없어 요약은 빈 값으로 커밋되고(추정 금지), 내장 `GITHUB_TOKEN`로 push. cron 타이밍은 비보장. (초기 푸시 시 gh 토큰의 workflow 스코프 부재로 별도 추가 필요.)
 
 ## 원칙·보안
 
