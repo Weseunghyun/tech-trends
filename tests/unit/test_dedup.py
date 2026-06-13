@@ -21,9 +21,10 @@ def test_normalized_url_dedup_equivalence():
 def test_fragment_distinguishes_items():
     # Codex changelog는 fragment로 항목 구분 — fragment가 다르면 별개 자원
     led: dict[str, str] = {}
-    mark_seen("https://developers.openai.com/codex/changelog/#codex-2026-06-11", led, date(2026, 6, 13))
-    assert is_new("https://developers.openai.com/codex/changelog/#codex-2026-06-09", led)
-    assert not is_new("https://developers.openai.com/codex/changelog/#codex-2026-06-11", led)
+    base = "https://developers.openai.com/codex/changelog/"
+    mark_seen(base + "#codex-2026-06-11", led, date(2026, 6, 13))
+    assert is_new(base + "#codex-2026-06-09", led)
+    assert not is_new(base + "#codex-2026-06-11", led)
 
 
 def test_prune_drops_over_30_days():
