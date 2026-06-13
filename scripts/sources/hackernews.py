@@ -52,6 +52,7 @@ def fetch_hn(source: dict) -> list[dict]:
                     "source": source["id"],
                     "category": source["category"],
                     "summary_ko": "",
+                    "raw_summary": "",  # HN은 본문 없음(토론 링크). 점수·제목으로 충분
                     "lang": "en",
                     "published_at": _created_iso(hit),
                     "metrics": metrics,

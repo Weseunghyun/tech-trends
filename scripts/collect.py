@@ -46,6 +46,7 @@ def _finalize_item(raw: dict, collected_at: str) -> dict | None:
         "source": raw["source"],
         "category": raw["category"],
         "summary_ko": clip(raw.get("summary_ko"), 600),
+        "raw_summary": clip(raw.get("raw_summary"), 600),
         "lang": raw.get("lang") or "unknown",
         "published_at": raw.get("published_at"),
         "collected_at": collected_at,

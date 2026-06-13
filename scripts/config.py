@@ -111,6 +111,7 @@ PER_CATEGORY = 10  # 카테고리당 표시 항목 상한 (FR-017)
 HOT_TOPICS_MAX = 10  # 핫토픽 상위 N (FR-008)
 TITLE_MAX = 300  # 제목 길이 컷 (SEC-05)
 SUMMARY_MAX = 600  # 한글 요약 길이 컷
+RAW_SUMMARY_MAX = 600  # 요약 입력용 원문 description 컷
 URL_MAX = 2048
 RETENTION_DAYS = 30  # 일자 아카이브 롤링 보관 (FR-018)
 
