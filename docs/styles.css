@@ -1,0 +1,152 @@
+/* Tech Trends 대시보드 — 외부 CDN 없음, 모바일 반응형(FR-013, SC-005) */
+
+:root {
+  --bg: #0f1419;
+  --surface: #1a2029;
+  --surface-2: #232b36;
+  --border: #2d3744;
+  --text: #e6edf3;
+  --text-dim: #9aa7b4;
+  --accent: #4dabf7;
+  --accent-dim: #1f6feb;
+  --hot: #ff922b;
+  --ok: #51cf66;
+  --fail: #ff6b6b;
+  --radius: 10px;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple SD Gothic Neo",
+    "Malgun Gothic", sans-serif;
+  line-height: 1.55;
+  -webkit-text-size-adjust: 100%;
+}
+
+.site-header {
+  padding: 18px 16px 10px;
+  border-bottom: 1px solid var(--border);
+}
+.site-header h1 {
+  margin: 0;
+  font-size: 1.4rem;
+  letter-spacing: 0.5px;
+}
+.meta {
+  margin-top: 4px;
+  font-size: 0.8rem;
+  color: var(--text-dim);
+}
+.meta .src-fail { color: var(--fail); }
+
+/* 탭 — 가로 스크롤 가능하되 본문은 스크롤 없음 */
+.tabs {
+  display: flex;
+  gap: 6px;
+  padding: 10px 12px;
+  overflow-x: auto;
+  border-bottom: 1px solid var(--border);
+  position: sticky;
+  top: 0;
+  background: var(--bg);
+  z-index: 10;
+  -webkit-overflow-scrolling: touch;
+}
+.tab {
+  flex: 0 0 auto;
+  padding: 7px 13px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--surface);
+  color: var(--text-dim);
+  font-size: 0.85rem;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.tab[aria-selected="true"] {
+  background: var(--accent-dim);
+  color: #fff;
+  border-color: var(--accent);
+}
+.tab .count {
+  margin-left: 5px;
+  opacity: 0.7;
+  font-size: 0.78rem;
+}
+
+main {
+  padding: 14px 12px 40px;
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+.placeholder, .empty {
+  color: var(--text-dim);
+  text-align: center;
+  padding: 40px 10px;
+}
+
+/* 카드 */
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 13px 15px;
+  margin-bottom: 11px;
+}
+.card a.title {
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+}
+.card a.title:hover { color: var(--accent); text-decoration: underline; }
+.card .summary {
+  margin: 7px 0 0;
+  color: var(--text-dim);
+  font-size: 0.9rem;
+  white-space: pre-wrap;
+}
+.card .row {
+  margin-top: 9px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+  font-size: 0.76rem;
+  color: var(--text-dim);
+}
+.badge {
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 2px 7px;
+}
+.badge.score { background: rgba(255, 146, 43, 0.15); border-color: var(--hot); color: var(--hot); }
+.badge.src { background: rgba(77, 171, 247, 0.12); border-color: var(--accent); color: var(--accent); }
+
+.hot-items {
+  margin: 8px 0 0;
+  padding-left: 16px;
+  font-size: 0.84rem;
+}
+.hot-items li { margin: 3px 0; }
+.hot-items a { color: var(--text-dim); text-decoration: none; }
+.hot-items a:hover { color: var(--accent); }
+
+.site-footer {
+  padding: 16px 12px 30px;
+  text-align: center;
+  font-size: 0.74rem;
+  color: var(--text-dim);
+  border-top: 1px solid var(--border);
+}
+
+@media (min-width: 640px) {
+  .site-header h1 { font-size: 1.6rem; }
+}

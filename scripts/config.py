@@ -1,0 +1,125 @@
+"""수집기 설정 — 소스 목록·카테고리 매핑·점수 상수·한계값.
+
+모든 소스는 무료·무키 공개 엔드포인트이며 클라우드/해외 IP에서 도달 가능하고
+로그인이 필요 없다(헌법 II, FR-015). X/Twitter는 phase 1에서 제외한다(FR-016).
+구체 엔드포인트 근거는 specs/001-rss-api-github/research.md R1.
+"""
+
+from __future__ import annotations
+
+from zoneinfo import ZoneInfo
+
+# 기준 시간대 — "당일" 판정 및 타임스탬프(FR-001)
+KST = ZoneInfo("Asia/Seoul")
+
+# HTTP (SEC-04)
+HTTP_TIMEOUT = 15  # connect+read 초
+USER_AGENT = "tech-trends/1.0 (personal dashboard)"
+
+# 카테고리 코드 → 표시명 (FR-007, 5탭 고정)
+CATEGORY_NAMES = {
+    "ai_labs": "AI 랩 동향",
+    "github_trending": "GitHub Trending",
+    "codex": "OpenAI Codex",
+    "eng_blogs": "엔지니어링/기술 블로그",
+    "hot_topics": "핫토픽/화두",
+}
+
+# 콘텐츠 탭(개별 항목 렌더). hot_topics는 최상위 HotTopic 집계로 별도 렌더.
+CONTENT_CATEGORIES = ["ai_labs", "github_trending", "codex", "eng_blogs"]
+
+# 소스 정의 — 닫힌 9개 식별자.
+# kind: "rss"(feedparser) | "hn"(Algolia JSON). category: 항목이 귀속될 카테고리 코드.
+# 모든 url은 https(verify=True)·클라우드 도달·로그인 불필요.
+SOURCES = [
+    {
+        "id": "github_trending",
+        "kind": "rss",
+        "category": "github_trending",
+        "urls": ["https://mshibanami.github.io/GitHubTrendingRSS/daily/all.xml"],
+    },
+    {
+        "id": "anthropic",
+        "kind": "rss",
+        "category": "ai_labs",
+        "urls": [
+            "https://raw.githubusercontent.com/Olshansk/rss-feeds/main/feeds/feed_anthropic_news.xml"
+        ],
+    },
+    {
+        "id": "openai",
+        "kind": "rss",
+        "category": "ai_labs",
+        # Olshansk 미수록 → 공식 RSS(research R1). 개편·봇필터 위험 → 실패 격리로 보호.
+        "urls": [
+            "https://openai.com/news/engineering/rss.xml",
+            "https://openai.com/blog/rss.xml",
+        ],
+    },
+    {
+        "id": "deepmind",
+        "kind": "rss",
+        "category": "ai_labs",
+        # Olshansk 미수록 → 공식 RSS(research R1)
+        "urls": ["https://deepmind.google/blog/rss.xml"],
+    },
+    {
+        "id": "meta_ai",
+        "kind": "rss",
+        "category": "ai_labs",
+        "urls": [
+            "https://raw.githubusercontent.com/Olshansk/rss-feeds/main/feeds/feed_meta_ai.xml"
+        ],
+    },
+    {
+        "id": "mistral",
+        "kind": "rss",
+        "category": "ai_labs",
+        "urls": ["https://raw.githubusercontent.com/Olshansk/rss-feeds/main/feeds/feed_mistral.xml"],
+    },
+    {
+        "id": "xai",
+        "kind": "rss",
+        "category": "ai_labs",
+        "urls": ["https://raw.githubusercontent.com/Olshansk/rss-feeds/main/feeds/feed_xainews.xml"],
+    },
+    {
+        "id": "openai_codex",
+        "kind": "rss",
+        "category": "codex",
+        "urls": ["https://developers.openai.com/codex/changelog/rss.xml"],
+    },
+    {
+        "id": "hackernews",
+        "kind": "hn",
+        "category": "hot_topics",
+        "urls": ["https://hn.algolia.com/api/v1/search?tags=front_page"],
+    },
+]
+
+# 닫힌 소스 식별자 enum (data-model과 일치)
+SOURCE_IDS = [s["id"] for s in SOURCES]
+
+# 트렌드 점수 상수 (research R2) — 실측 수치만 사용, 임의 보정 없음(헌법 III)
+W_SRC = 0.6  # 교차 출현 가중치
+W_HN = 0.4  # HN engagement 가중치
+COMMENT_RATIO = 0.5  # HN 댓글 대 포인트 구조 비율(점수 부스트 아님)
+JACCARD = 0.5  # 토픽 그룹핑 제목 토큰셋 유사도 임계
+
+# 한계값
+PER_CATEGORY = 10  # 카테고리당 표시 항목 상한 (FR-017)
+HOT_TOPICS_MAX = 10  # 핫토픽 상위 N (FR-008)
+TITLE_MAX = 300  # 제목 길이 컷 (SEC-05)
+SUMMARY_MAX = 600  # 한글 요약 길이 컷
+URL_MAX = 2048
+RETENTION_DAYS = 30  # 일자 아카이브 롤링 보관 (FR-018)
+
+SCHEMA_VERSION = 1
+
+# FR-016 가드: 자동 소스에 X/Twitter 엔드포인트가 없어야 한다.
+_FORBIDDEN_HOSTS = ("twitter.com", "x.com", "nitter")
+for _s in SOURCES:
+    for _u in _s["urls"]:
+        assert not any(h in _u.lower() for h in _FORBIDDEN_HOSTS), (
+            f"X/Twitter 소스는 phase 1에서 금지(FR-016): {_s['id']}"
+        )

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tech Trends — 오늘의 AI·개발 트렌드</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <h1>Tech Trends</h1>
+    <div class="meta" id="meta">
+      <span id="freshness">불러오는 중…</span>
+    </div>
+  </header>
+
+  <nav class="tabs" id="tabs" role="tablist"><!-- 탭은 app.js가 채운다 --></nav>
+
+  <main id="panels" aria-live="polite">
+    <p class="placeholder" id="placeholder">데이터를 불러오는 중…</p>
+  </main>
+
+  <footer class="site-footer">
+    <span>무료 공개 RSS·API 수집 · 출처 링크 포함 · 매일 KST 08:00경 갱신</span>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

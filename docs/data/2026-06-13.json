@@ -1,0 +1,440 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-06-13T20:48:04+09:00",
+  "date": "2026-06-13",
+  "categories": {
+    "ai_labs": [
+      {
+        "id": "f2851367423f7fb3c4f26f839f5fd2c6fc889552",
+        "title": "TCS and Anthropic partner to bring Claude to regulated industries",
+        "url": "https://anthropic.com/news/tcs-anthropic-partnership",
+        "source": "anthropic",
+        "category": "ai_labs",
+        "summary_ko": "",
+        "lang": "en",
+        "published_at": "2026-06-12T09:00:00+09:00",
+        "collected_at": "2026-06-13T20:48:04+09:00",
+        "metrics": null
+      },
+      {
+        "id": "7ec3169e75a1511e030c77f92b62574b4e0e1e21",
+        "title": "Results from the first Anthropic Public Record",
+        "url": "https://anthropic.com/news/anthropic-public-record",
+        "source": "anthropic",
+        "category": "ai_labs",
+        "summary_ko": "",
+        "lang": "en",
+        "published_at": "2026-06-12T09:00:00+09:00",
+        "collected_at": "2026-06-13T20:48:04+09:00",
+        "metrics": null
+      },
+      {
+        "id": "00e9d8a44be5ffc84e9f314e700222e9fa0044fe",
+        "title": "Statement on the US government directive to suspend access to Fable 5 and Mythos 5",
+        "url": "https://anthropic.com/news/fable-mythos-access",
+        "source": "anthropic",
+        "category": "ai_labs",
+        "summary_ko": "",
+        "lang": "en",
+        "published_at": "2026-06-12T09:00:00+09:00",
+        "collected_at": "2026-06-13T20:48:04+09:00",
+        "metrics": null
+      },
+      {
+        "id": "4ef4e47b8069ce277df42d4d429fa1c67b2d999a",
+        "title": "DXC will integrate Claude into the systems banks, airlines, and other regulated industries rely on",
+        "url": "https://anthropic.com/news/dxc-anthropic-alliance",
+        "source": "anthropic",
+        "category": "ai_labs",
+        "summary_ko": "",
+        "lang": "en",
+        "published_at": "2026-06-11T09:00:00+09:00",
+        "collected_at": "2026-06-13T20:48:04+09:00",
+        "metrics": null
+      },
+      {
+        "id": "7ba3d7901a3a6daa893e567970dc3d1b87388564",
+        "title": "Introducing Claude Corps",
+        "url": "https://anthropic.com/news/claude-corps",
+        "source": "anthropic",
+        "category": "ai_labs",
+        "summary_ko": "",
+        "lang": "en",
+        "published_at": "2026-06-11T09:00:00+09:00",
+        "collected_at": "2026-06-13T20:48:04+09:00",
+        "metrics": null
+      },
+      {
+        "id": "d2f8f42724e381e1a27ff9e3f79a2cd697c01fce",
+        "title": "Claude Fable 5 and Claude Mythos 5",
+        "url": "https://anthropic.com/news/claude-fable-5-mythos-5",
+        "source": "anthropic",
+        "category": "ai_labs",
+        "summary_ko": "",
+        "lang": "en",
+        "published_at": "2026-06-09T09:00:00+09:00",
+        "collected_at": "2026-06-13T20:48:04+09:00",
+        "metrics": null
+      },
+      {
+        "id": "e37a6b914672903fd143d86793273b569d3d7afb",
+        "title": "What we learned mapping a year’s worth of AI-enabled cyber threats",
+        "url": "https://anthropic.com/news/AI-enabled-cyber-threats-mitre-attack",
+        "source": "anthropic",
+        "category": "ai_labs",
+        "summary_ko": "",
+        "lang": "en",
+        "published_at": "2026-06-03T09:00:00+09:00",
+        "collected_at": "2026-06-13T20:48:04+09:00",
+        "metrics": null
+      },
+      {
+        "id": "a22a99b79337fd7562708fc7a429d8bc36493145",
+        "title": "Introducing the Services Track and Partner Hub of the Claude Partner Network",
+        "url": "https://anthropic.com/news/services-track-partner-hub",
+        "source": "anthropic",
+        "category": "ai_labs",
+        "summary_ko": "",
+        "lang": "en",
+        "published_at": "2026-06-03T09:00:00+09:00",
+        "collected_at": "2026-06-13T20:48:04+09:00",
+        "metrics": null
+      },
+      {
+        "id": "5419be6027617ea106bfcd9abf4870782a368e9d",
+        "title": "Expanding Project Glasswing",
+        "url": "https://anthropic.com/news/expanding-project-glasswing",
+        "source": "anthropic",
+        "category": "ai_labs",
+        "summary_ko": "",
+        "lang": "en",
+        "published_at": "2026-06-02T09:00:00+09:00",
+        "collected_at": "2026-06-13T20:48:04+09:00",
+        "metrics": null
+      },
+      {
+        "id": "4fbee1675965ec4b037a70670d3b53e29d3bbf45",
+        "title": "Anthropic confidentially submits draft S-1 to the SEC",
+        "url": "https://anthropic.com/news/confidential-draft-s1-sec",
+        "source": "anthropic",
+        "category": "ai_labs",
+        "summary_ko": "",
+        "lang": "en",
+        "published_at": "2026-06-01T09:00:00+09:00",
+        "collected_at": "2026-06-13T20:48:04+09:00",
+        "metrics": null
+      }
+    ],
+    "github_trending": [
+      {
+        "id": "2e74d0228d63bddb2160d88b164fe5cb75af4408",
+        "title": "addyosmani/agent-skills",
+        "url": "https://github.com/addyosmani/agent-skills",
+        "source": "github_trending",
+        "category": "github_trending",
+        "summary_ko": "",
+        "lang": "en",
+        "published_at": null,
+        "collected_at": "2026-06-13T20:48:04+09:00",
+        "metrics": null
+      },
+      {
+        "id": "ab8c0d0275401727bc939cbf3d689ed6bcdcc42d",
+        "title": "music-assistant/server",
+        "url": "https://github.com/music-assistant/server",
+        "source": "github_trending",
+        "category": "github_trending",
+        "summary_ko": "",
+        "lang": "en",
+        "published_at": null,
+        "collected_at": "2026-06-13T20:48:04+09:00",
+        "metrics": null
+      },
+      {
+        "id": "7bd795e61292caddfebb138b53feca4a9e0d1368",
+        "title": "mattermost/mattermost",
+        "url": "https://github.com/mattermost/mattermost",
+        "source": "github_trending",
+        "category": "github_trending",
+        "summary_ko": "",
+        "lang": "en",
+        "published_at": null,
+        "collected_at": "2026-06-13T20:48:04+09:00",
+        "metrics": null
+      },
+      {
+        "id": "ccc439177718eb974d6ddef2a96b7204c49d46e1",
+        "title": "apple/container",
+        "url": "https://github.com/apple/container",
+        "source": "github_trending",
+        "category": "github_trending",
+        "summary_ko": "",
+        "lang": "en",
+        "published_at": null,
+        "collected_at": "2026-06-13T20:48:04+09:00",
+        "metrics": null
+      },
+      {
+        "id": "31a178ebae363d4139b80abe1b38e6369ae26c02",
+        "title": "iptv-org/iptv",
+        "url": "https://github.com/iptv-org/iptv",
+        "source": "github_trending",
+        "category": "github_trending",
+        "summary_ko": "",
+        "lang": "en",
+        "published_at": null,
+        "collected_at": "2026-06-13T20:48:04+09:00",
+        "metrics": null
+      },
+      {
+        "id": "2046f5e50fafe44ab9382efbd7ce4484b55575ee",
+        "title": "obra/superpowers",
+        "url": "https://github.com/obra/superpowers",
+        "source": "github_trending",
+        "category": "github_trending",
+        "summary_ko": "",
+        "lang": "en",
+        "published_at": null,
+        "collected_at": "2026-06-13T20:48:04+09:00",
+        "metrics": null
+      },
+      {
+        "id": "3028b0699ef1c7ba41c6aafcc144e1398b82506c",
+        "title": "refactoringhq/tolaria",
+        "url": "https://github.com/refactoringhq/tolaria",
+        "source": "github_trending",
+        "category": "github_trending",
+        "summary_ko": "",
+        "lang": "en",
+        "published_at": null,
+        "collected_at": "2026-06-13T20:48:04+09:00",
+        "metrics": null
+      },
+      {
+        "id": "c0e198ef7ba41275e2b69aa2e2fb5428385729ef",
+        "title": "maziyarpanahi/openmed",
+        "url": "https://github.com/maziyarpanahi/openmed",
+        "source": "github_trending",
+        "category": "github_trending",
+        "summary_ko": "",
+        "lang": "en",
+        "published_at": null,
+        "collected_at": "2026-06-13T20:48:04+09:00",
+        "metrics": null
+      },
+      {
+        "id": "589bc97827fa554dbb35fa355d4be4e333198a5e",
+        "title": "LMCache/LMCache",
+        "url": "https://github.com/LMCache/LMCache",
+        "source": "github_trending",
+        "category": "github_trending",
+        "summary_ko": "",
+        "lang": "en",
+        "published_at": null,
+        "collected_at": "2026-06-13T20:48:04+09:00",
+        "metrics": null
+      },
+      {
+        "id": "07f903de7009b9672ca07fa595688234d2a67595",
+        "title": "phuryn/pm-skills",
+        "url": "https://github.com/phuryn/pm-skills",
+        "source": "github_trending",
+        "category": "github_trending",
+        "summary_ko": "",
+        "lang": "en",
+        "published_at": null,
+        "collected_at": "2026-06-13T20:48:04+09:00",
+        "metrics": null
+      }
+    ],
+    "codex": [
+      {
+        "id": "91992ed9f82d7466401849371a107a449028b695",
+        "title": "Codex app",
+        "url": "https://developers.openai.com/codex/changelog",
+        "source": "openai_codex",
+        "category": "codex",
+        "summary_ko": "",
+        "lang": "en",
+        "published_at": "2026-06-11T09:00:00+09:00",
+        "collected_at": "2026-06-13T20:48:04+09:00",
+        "metrics": null
+      },
+      {
+        "id": "91992ed9f82d7466401849371a107a449028b695",
+        "title": "Codex app",
+        "url": "https://developers.openai.com/codex/changelog",
+        "source": "openai_codex",
+        "category": "codex",
+        "summary_ko": "",
+        "lang": "en",
+        "published_at": "2026-06-09T09:00:00+09:00",
+        "collected_at": "2026-06-13T20:48:04+09:00",
+        "metrics": null
+      },
+      {
+        "id": "91992ed9f82d7466401849371a107a449028b695",
+        "title": "ChatGPT for iOS",
+        "url": "https://developers.openai.com/codex/changelog",
+        "source": "openai_codex",
+        "category": "codex",
+        "summary_ko": "",
+        "lang": "en",
+        "published_at": "2026-06-09T09:00:00+09:00",
+        "collected_at": "2026-06-13T20:48:04+09:00",
+        "metrics": null
+      },
+      {
+        "id": "91992ed9f82d7466401849371a107a449028b695",
+        "title": "Codex CLI Release: 0.139.0",
+        "url": "https://developers.openai.com/codex/changelog",
+        "source": "openai_codex",
+        "category": "codex",
+        "summary_ko": "",
+        "lang": "en",
+        "published_at": "2026-06-09T09:00:00+09:00",
+        "collected_at": "2026-06-13T20:48:04+09:00",
+        "metrics": null
+      },
+      {
+        "id": "91992ed9f82d7466401849371a107a449028b695",
+        "title": "Codex CLI Release: 0.138.0",
+        "url": "https://developers.openai.com/codex/changelog",
+        "source": "openai_codex",
+        "category": "codex",
+        "summary_ko": "",
+        "lang": "en",
+        "published_at": "2026-06-08T09:00:00+09:00",
+        "collected_at": "2026-06-13T20:48:04+09:00",
+        "metrics": null
+      },
+      {
+        "id": "91992ed9f82d7466401849371a107a449028b695",
+        "title": "Codex app updates",
+        "url": "https://developers.openai.com/codex/changelog",
+        "source": "openai_codex",
+        "category": "codex",
+        "summary_ko": "",
+        "lang": "en",
+        "published_at": "2026-06-04T09:00:00+09:00",
+        "collected_at": "2026-06-13T20:48:04+09:00",
+        "metrics": null
+      },
+      {
+        "id": "91992ed9f82d7466401849371a107a449028b695",
+        "title": "Codex CLI Release: 0.137.0",
+        "url": "https://developers.openai.com/codex/changelog",
+        "source": "openai_codex",
+        "category": "codex",
+        "summary_ko": "",
+        "lang": "en",
+        "published_at": "2026-06-04T09:00:00+09:00",
+        "collected_at": "2026-06-13T20:48:04+09:00",
+        "metrics": null
+      },
+      {
+        "id": "91992ed9f82d7466401849371a107a449028b695",
+        "title": "Build and deploy websites with Sites",
+        "url": "https://developers.openai.com/codex/changelog",
+        "source": "openai_codex",
+        "category": "codex",
+        "summary_ko": "",
+        "lang": "en",
+        "published_at": "2026-06-02T09:00:00+09:00",
+        "collected_at": "2026-06-13T20:48:04+09:00",
+        "metrics": null
+      },
+      {
+        "id": "91992ed9f82d7466401849371a107a449028b695",
+        "title": "ChatGPT for iOS",
+        "url": "https://developers.openai.com/codex/changelog",
+        "source": "openai_codex",
+        "category": "codex",
+        "summary_ko": "",
+        "lang": "en",
+        "published_at": "2026-06-02T09:00:00+09:00",
+        "collected_at": "2026-06-13T20:48:04+09:00",
+        "metrics": null
+      },
+      {
+        "id": "91992ed9f82d7466401849371a107a449028b695",
+        "title": "Use Codex with Amazon Bedrock",
+        "url": "https://developers.openai.com/codex/changelog",
+        "source": "openai_codex",
+        "category": "codex",
+        "summary_ko": "",
+        "lang": "en",
+        "published_at": "2026-06-01T09:00:00+09:00",
+        "collected_at": "2026-06-13T20:48:04+09:00",
+        "metrics": null
+      }
+    ],
+    "eng_blogs": []
+  },
+  "hot_topics": [],
+  "sources": [
+    {
+      "source": "github_trending",
+      "ok": true,
+      "item_count": 13,
+      "error_type": null,
+      "feed_built_at": null
+    },
+    {
+      "source": "anthropic",
+      "ok": true,
+      "item_count": 229,
+      "error_type": null,
+      "feed_built_at": null
+    },
+    {
+      "source": "openai",
+      "ok": false,
+      "item_count": 0,
+      "error_type": "HTTPError",
+      "feed_built_at": null
+    },
+    {
+      "source": "deepmind",
+      "ok": true,
+      "item_count": 100,
+      "error_type": null,
+      "feed_built_at": null
+    },
+    {
+      "source": "meta_ai",
+      "ok": true,
+      "item_count": 89,
+      "error_type": null,
+      "feed_built_at": null
+    },
+    {
+      "source": "mistral",
+      "ok": true,
+      "item_count": 54,
+      "error_type": null,
+      "feed_built_at": null
+    },
+    {
+      "source": "xai",
+      "ok": true,
+      "item_count": 39,
+      "error_type": null,
+      "feed_built_at": null
+    },
+    {
+      "source": "openai_codex",
+      "ok": true,
+      "item_count": 94,
+      "error_type": null,
+      "feed_built_at": null
+    },
+    {
+      "source": "hackernews",
+      "ok": true,
+      "item_count": 20,
+      "error_type": null,
+      "feed_built_at": null
+    }
+  ]
+}

@@ -37,11 +37,11 @@ tags:
 
 **Purpose**: 프로젝트 초기화 및 기본 구조
 
-- [ ] T001 plan.md 구조대로 디렉토리 생성: `scripts/`, `scripts/sources/`, `docs/`, `docs/data/`, `tests/unit/`, `tests/integration/` (각 패키지에 `__init__.py`)
-- [ ] T002 `requirements.txt` 작성 — `feedparser==6.0.11`, `requests==2.32.3` (== 핀, SEC-08). LLM SDK 미포함
-- [ ] T003 [P] ruff·bandit 설정 추가 (`pyproject.toml` 또는 `ruff.toml`/`.bandit`) — ruff S-그룹 활성(SEC 검출)
-- [ ] T004 [P] `scripts/config.py` 작성 — 소스 목록·엔드포인트(research.md R1), 닫힌 소스 enum(9개: github_trending·anthropic·openai·deepmind·meta_ai·mistral·xai·openai_codex·hackernews) 및 소스→카테고리 매핑(data-model Category, HN→`hot_topics`), 점수 상수 `W_SRC=0.6`/`W_HN=0.4`/`COMMENT_RATIO=0.5`/`JACCARD=0.5`, 길이 컷 상수. 각 소스는 **클라우드 IP 도달·로그인 불필요**(FR-015)임을 주석으로 명시하고, X/Twitter 엔드포인트를 포함하지 않음을 보장(FR-016 가드)
-- [ ] T005 [P] `.gitignore`에 `.env`·`*.key`·SA JSON 패턴 확인/추가(SEC-09), `docs/data/`는 추적 대상 유지
+- [X] T001 plan.md 구조대로 디렉토리 생성: `scripts/`, `scripts/sources/`, `docs/`, `docs/data/`, `tests/unit/`, `tests/integration/` (각 패키지에 `__init__.py`)
+- [X] T002 `requirements.txt` 작성 — `feedparser==6.0.11`, `requests==2.32.3` (== 핀, SEC-08). LLM SDK 미포함
+- [X] T003 [P] ruff·bandit 설정 추가 (`pyproject.toml` 또는 `ruff.toml`/`.bandit`) — ruff S-그룹 활성(SEC 검출)
+- [X] T004 [P] `scripts/config.py` 작성 — 소스 목록·엔드포인트(research.md R1), 닫힌 소스 enum(9개: github_trending·anthropic·openai·deepmind·meta_ai·mistral·xai·openai_codex·hackernews) 및 소스→카테고리 매핑(data-model Category, HN→`hot_topics`), 점수 상수 `W_SRC=0.6`/`W_HN=0.4`/`COMMENT_RATIO=0.5`/`JACCARD=0.5`, 길이 컷 상수. 각 소스는 **클라우드 IP 도달·로그인 불필요**(FR-015)임을 주석으로 명시하고, X/Twitter 엔드포인트를 포함하지 않음을 보장(FR-016 가드)
+- [X] T005 [P] `.gitignore`에 `.env`·`*.key`·SA JSON 패턴 확인/추가(SEC-09), `docs/data/`는 추적 대상 유지
 
 ---
 
@@ -51,10 +51,10 @@ tags:
 
 **⚠️ CRITICAL**: 이 단계 완료 전 사용자 스토리 작업 불가
 
-- [ ] T006 `scripts/http.py` 구현 — `get(url, timeout=15) -> bytes` (Session + UA, `verify=True` 기본 유지, `raise_for_status()`; SEC-04). 시크릿·URL 토큰 미출력
-- [ ] T007 [P] `scripts/normalize.py` 구현 — `normalize_url(raw)`(scheme소문자·http→https·www제거·끝슬래시·utm_/추적파라미터제거·정렬·fragment제거, research R3) + `valid_url(u)`(`^https?://[^\s]{1,2048}$`) + `item_id(url)`(정규화 URL의 sha1-hex)
-- [ ] T008 `scripts/render.py` 구현 — `write_snapshot(snapshot, out)`, `refresh_pointers(out)`(latest.json 복사·index.json 갱신), `prune_files(out, days=30)`; `schema_version=1`, 한국어 JSON `ensure_ascii=False` (data-model·R7)
-- [ ] T009 `scripts/collect.py` 골격 — argparse(`--dry-run`,`--date`,`--out docs/data`), KST(Asia/Seoul) 기준 일자 계산, 소스 호출→항목 수집→render 호출 파이프라인 배선. (실패 격리·점수·중복 제거는 각 스토리에서 강화)
+- [X] T006 `scripts/http.py` 구현 — `get(url, timeout=15) -> bytes` (Session + UA, `verify=True` 기본 유지, `raise_for_status()`; SEC-04). 시크릿·URL 토큰 미출력
+- [X] T007 [P] `scripts/normalize.py` 구현 — `normalize_url(raw)`(scheme소문자·http→https·www제거·끝슬래시·utm_/추적파라미터제거·정렬·fragment제거, research R3) + `valid_url(u)`(`^https?://[^\s]{1,2048}$`) + `item_id(url)`(정규화 URL의 sha1-hex)
+- [X] T008 `scripts/render.py` 구현 — `write_snapshot(snapshot, out)`, `refresh_pointers(out)`(latest.json 복사·index.json 갱신), `prune_files(out, days=30)`; `schema_version=1`, 한국어 JSON `ensure_ascii=False` (data-model·R7)
+- [X] T009 `scripts/collect.py` 골격 — argparse(`--dry-run`,`--date`,`--out docs/data`), KST(Asia/Seoul) 기준 일자 계산, 소스 호출→항목 수집→render 호출 파이프라인 배선. (실패 격리·점수·중복 제거는 각 스토리에서 강화)
 
 **Checkpoint**: 공통 인프라 준비 — 사용자 스토리 착수 가능
 
@@ -68,17 +68,17 @@ tags:
 
 ### Implementation for User Story 1
 
-- [ ] T010 [P] [US1] `scripts/sources/github_trending.py` — `fetch() -> list[dict]` (daily/all.xml, http.py로 bytes→feedparser.parse, title/url/published 추출, category=`github_trending`)
-- [ ] T011 [P] [US1] `scripts/sources/ai_labs.py` — Anthropic·OpenAI(공식 RSS)·DeepMind(공식 RSS)·Meta·Mistral·xAI 피드 수집, source 식별자·category=`ai_labs` 부여(research R1 엔드포인트)
-- [ ] T012 [P] [US1] `scripts/sources/codex.py` — OpenAI Codex changelog RSS 수집, category=`codex`
-- [ ] T013 [P] [US1] `scripts/sources/hackernews.py` — Algolia `search?tags=front_page`·`search_by_date` JSON, `points`/`num_comments`/`created_at_i` → metrics, category=`hot_topics` 원천, 429 백오프
-- [ ] T014 [US1] `scripts/collect.py`에 항목 정규화·검증 통합 — 각 raw 항목에 `item_id`·정규화 url·`valid_url` 필터(미충족 폐기)·title/summary 길이 컷·`collected_at`(KST)·카테고리당 ~10개 상한(FR-017) 적용 (T010–T013, T007 의존)
-- [ ] T015 [US1] 요약 주입 계약 구현 — `collect.py`/`render.py`가 `summary_ko`를 받도록(기본 ""), 에이전트가 채울 수 있는 `--summaries <json>` 머지 경로 또는 항목별 빈 필드 산출(FR-004; 결측 시 "" 유지, 추정 금지)
-- [ ] T016 [US1] `render`로 당일 `DashboardSnapshot` 작성 → `docs/data/YYYY-MM-DD.json`·`latest.json`·`index.json` 생성(contracts/data-json-schema 준수)
-- [ ] T017 [P] [US1] `docs/index.html` — 카테고리 탭(AI 랩 동향/GitHub Trending/엔지니어링·기술 블로그/OpenAI Codex/핫토픽), 외부 CDN 0
-- [ ] T018 [P] [US1] `docs/styles.css` — 모바일 반응형(가로 스크롤 없음, SC-005), 카드/탭 룩앤필
-- [ ] T019 [US1] `docs/app.js` — `data/latest.json?v=<ts>` 동일 출처 fetch(`cache:"no-store"`), 카테고리별 카드 렌더(제목→url 링크, `summary_ko`), `generated_at` 신선도 표시(FR-012), 빈 카테고리 "항목 없음"(T017 의존)
-- [ ] T020 [P] [US1] `tests/integration/test_collect_smoke.py` — `--dry-run`에서 1개 이상 소스 수집·모든 항목이 `valid_url` 통과·출처 링크 100% 보유(SC-002)·시크릿 미출력 검증; `docs/index.html`이 외부 CDN(절대 URL script/link)을 포함하지 않음 단언(SC-001/외부 CDN 0) (US1 Independent Test)
+- [X] T010 [P] [US1] `scripts/sources/github_trending.py` — `fetch() -> list[dict]` (daily/all.xml, http.py로 bytes→feedparser.parse, title/url/published 추출, category=`github_trending`)
+- [X] T011 [P] [US1] `scripts/sources/ai_labs.py` — Anthropic·OpenAI(공식 RSS)·DeepMind(공식 RSS)·Meta·Mistral·xAI 피드 수집, source 식별자·category=`ai_labs` 부여(research R1 엔드포인트)
+- [X] T012 [P] [US1] `scripts/sources/codex.py` — OpenAI Codex changelog RSS 수집, category=`codex`
+- [X] T013 [P] [US1] `scripts/sources/hackernews.py` — Algolia `search?tags=front_page`·`search_by_date` JSON, `points`/`num_comments`/`created_at_i` → metrics, category=`hot_topics` 원천, 429 백오프
+- [X] T014 [US1] `scripts/collect.py`에 항목 정규화·검증 통합 — 각 raw 항목에 `item_id`·정규화 url·`valid_url` 필터(미충족 폐기)·title/summary 길이 컷·`collected_at`(KST)·카테고리당 ~10개 상한(FR-017) 적용 (T010–T013, T007 의존)
+- [X] T015 [US1] 요약 주입 계약 구현 — `collect.py`/`render.py`가 `summary_ko`를 받도록(기본 ""), 에이전트가 채울 수 있는 `--summaries <json>` 머지 경로 또는 항목별 빈 필드 산출(FR-004; 결측 시 "" 유지, 추정 금지)
+- [X] T016 [US1] `render`로 당일 `DashboardSnapshot` 작성 → `docs/data/YYYY-MM-DD.json`·`latest.json`·`index.json` 생성(contracts/data-json-schema 준수)
+- [X] T017 [P] [US1] `docs/index.html` — 카테고리 탭(AI 랩 동향/GitHub Trending/엔지니어링·기술 블로그/OpenAI Codex/핫토픽), 외부 CDN 0
+- [X] T018 [P] [US1] `docs/styles.css` — 모바일 반응형(가로 스크롤 없음, SC-005), 카드/탭 룩앤필
+- [X] T019 [US1] `docs/app.js` — `data/latest.json?v=<ts>` 동일 출처 fetch(`cache:"no-store"`), 카테고리별 카드 렌더(제목→url 링크, `summary_ko`), `generated_at` 신선도 표시(FR-012), 빈 카테고리 "항목 없음"(T017 의존)
+- [X] T020 [P] [US1] `tests/integration/test_collect_smoke.py` — `--dry-run`에서 1개 이상 소스 수집·모든 항목이 `valid_url` 통과·출처 링크 100% 보유(SC-002)·시크릿 미출력 검증; `docs/index.html`이 외부 CDN(절대 URL script/link)을 포함하지 않음 단언(SC-001/외부 CDN 0) (US1 Independent Test)
 
 **Checkpoint**: US1 단독으로 "오늘의 트렌드를 본다" MVP 동작·테스트 가능
 
