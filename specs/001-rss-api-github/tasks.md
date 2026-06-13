@@ -109,11 +109,11 @@ tags:
 
 ### Implementation for User Story 3
 
-- [ ] T025 [US3] `scripts/collect.py` 실패 격리 강화 — 소스별 `try/except`로 `SourceStatus`(ok/item_count/`error_type=type(e).__name__`만, SEC-02) 집계, 부분 성공으로 진행, 종료코드(0=부분성공/1=전소스실패), 전 소스 실패 시 `latest.json` 미덮어쓰기(엣지 케이스 정책, FR-009)
-- [ ] T026 [P] [US3] `scripts/dedup.py` — `load_ledger(path)`/`prune(ledger, today, days=30)`/`is_new(url, ledger)` + `docs/data/seen_urls.json` 입출력(research R3)
-- [ ] T027 [US3] `scripts/collect.py`에 중복 제거 통합 — 정규화 URL로 신규 항목만 통과·원장 갱신·30일 prune, HN 텍스트 글은 item URL 키 폴백(FR-011) (T026, T014 의존)
-- [ ] T028 [US3] `docs/app.js` — `sources` 중 `ok:false`를 "수집 실패" 표시, 빈 소스/카테고리 추정값 미표시(FR-010) (T019 의존)
-- [ ] T029 [P] [US3] `tests/integration/test_failure_isolation.py` — 한 소스 강제 실패 시 나머지 적재·종료코드 0·SourceStatus 기록; `tests/unit/test_dedup.py` — 정규화 URL 동일 항목 일자 간 1회·30일 prune 검증
+- [X] T025 [US3] `scripts/collect.py` 실패 격리 강화 — 소스별 `try/except`로 `SourceStatus`(ok/item_count/`error_type=type(e).__name__`만, SEC-02) 집계, 부분 성공으로 진행, 종료코드(0=부분성공/1=전소스실패), 전 소스 실패 시 `latest.json` 미덮어쓰기(엣지 케이스 정책, FR-009)
+- [X] T026 [P] [US3] `scripts/dedup.py` — `load_ledger(path)`/`prune(ledger, today, days=30)`/`is_new(url, ledger)` + `docs/data/seen_urls.json` 입출력(research R3)
+- [X] T027 [US3] `scripts/collect.py`에 중복 제거 통합 — 정규화 URL로 신규 항목만 통과·원장 갱신·30일 prune, HN 텍스트 글은 item URL 키 폴백(FR-011) (T026, T014 의존)
+- [X] T028 [US3] `docs/app.js` — `sources` 중 `ok:false`를 "수집 실패" 표시, 빈 소스/카테고리 추정값 미표시(FR-010) (T019 의존)
+- [X] T029 [P] [US3] `tests/integration/test_failure_isolation.py` — 한 소스 강제 실패 시 나머지 적재·종료코드 0·SourceStatus 기록; `tests/unit/test_dedup.py` — 정규화 URL 동일 항목 일자 간 1회·30일 prune 검증
 
 **Checkpoint**: 전 사용자 스토리 독립 동작
 

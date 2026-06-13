@@ -10,10 +10,11 @@ from __future__ import annotations
 import argparse
 import json
 import sys
-from datetime import datetime
+from datetime import date, datetime
 from pathlib import Path
 
 from scripts.config import CONTENT_CATEGORIES, KST, PER_CATEGORY, SOURCES
+from scripts.dedup import filter_new_items, load_ledger, prune, save_ledger
 from scripts.normalize import clip, item_id, normalize_url, valid_url
 from scripts.render import build_snapshot, prune_files, refresh_pointers, write_snapshot
 from scripts.score import compute_hot_topics
@@ -102,6 +103,11 @@ def collect(
                 }
             )
 
+    # 일자 간 중복 제거(FR-011): 정규화 URL 원장으로 신규 항목만 통과
+    today = date.fromisoformat(date_str)
+    ledger = prune(load_ledger(out), today)
+    items = filter_new_items(items, ledger, today)
+
     categories = _group_by_category(items)
     hot_topics = compute_hot_topics(items)
     snapshot = build_snapshot(
@@ -125,6 +131,7 @@ def collect(
     day_file = write_snapshot(snapshot, out)
     refresh_pointers(out, day_file, generated_at)
     prune_files(out, now.date())
+    save_ledger(out, ledger)  # 신규 등록·prune 반영된 원장 저장(FR-011)
     return snapshot
 
 
