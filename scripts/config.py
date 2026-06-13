@@ -116,10 +116,15 @@ RETENTION_DAYS = 30  # 일자 아카이브 롤링 보관 (FR-018)
 
 SCHEMA_VERSION = 1
 
-# FR-016 가드: 자동 소스에 X/Twitter 엔드포인트가 없어야 한다.
+# FR-016 가드: 자동 소스에 X/Twitter 엔드포인트가 없어야 한다(assert는 -O에서 제거되므로 raise).
 _FORBIDDEN_HOSTS = ("twitter.com", "x.com", "nitter")
-for _s in SOURCES:
-    for _u in _s["urls"]:
-        assert not any(h in _u.lower() for h in _FORBIDDEN_HOSTS), (
-            f"X/Twitter 소스는 phase 1에서 금지(FR-016): {_s['id']}"
-        )
+
+
+def _assert_no_x_sources() -> None:
+    for s in SOURCES:
+        for u in s["urls"]:
+            if any(h in u.lower() for h in _FORBIDDEN_HOSTS):
+                raise RuntimeError(f"X/Twitter 소스는 phase 1에서 금지(FR-016): {s['id']}")
+
+
+_assert_no_x_sources()

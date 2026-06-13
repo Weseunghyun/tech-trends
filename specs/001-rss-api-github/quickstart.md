@@ -20,7 +20,7 @@ tags:
 
 ```bash
 python -m venv .venv && source .venv/bin/activate
-pip install -r requirements.txt   # feedparser==6.0.11, requests==2.32.3
+pip install -r requirements.txt   # feedparser==6.0.11, requests==2.33.0
 ```
 
 ## 2. 수집 dry-run (네트워크만, 쓰기 없음)

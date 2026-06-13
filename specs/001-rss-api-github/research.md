@@ -56,9 +56,10 @@ tags:
 
 **결정**: 고정된 안전·멱등 변환으로 URL 정규화 후 중복 판정. 일자 간 중복은 커밋되는 `seen_urls.json` 원장으로 기억.
 
-- **정규화 변환(안전)**: ① scheme 소문자 + http→https 통일, ② host 소문자 + 선행 `www.` 제거(비기본 포트는 보존), ③ 경로 끝 `/` 1개 제거(루트 제외), ④ `utm_*` 및 큐레이트된 추적 파라미터(fbclid, gclid, ref, mc_cid 등) 제거 후 나머지 정렬, ⑤ fragment 제거.
+- **정규화 변환(안전)**: ① scheme 소문자 + http→https 통일, ② host 소문자 + 선행 `www.` 제거(비기본 포트는 보존), ③ 경로 끝 `/` 1개 제거(루트 제외), ④ `utm_*` 및 큐레이트된 추적 파라미터(fbclid, gclid, ref, mc_cid 등) 제거 후 나머지 정렬, ⑤ **fragment 보존**.
 - **건드리지 않음(불안전)**: 경로 대소문자(서버 case-sensitive), 비추적 쿼리(`id`,`page`,`v` 등) — 자원을 바꾸므로 보존.
-- **엣지**: hashbang SPA(`/#/post/42`)는 fragment 제거 시 오병합 → 현 소스엔 없음(문서화). HN 텍스트 글(외부 URL 없음)은 `https://news.ycombinator.com/item?id={objectID}`를 키로. 동일 기사·다른 도메인(신디케이션)은 URL로 못 잡음 → R2 제목 그룹핑이 토픽 레이어에서 처리(2계층 분리).
+- **⚠️ fragment 보존(구현 중 보정)**: 초기 설계는 fragment를 제거하려 했으나, **OpenAI Codex changelog가 fragment(`#codex-2026-06-11-app`)로 개별 항목을 구분**한다(94개 항목이 동일 경로 + 다른 fragment). 제거 시 전 항목이 1개로 병합되므로 fragment를 보존한다. 비용: `#top` 류 무의미 fragment가 false 구분을 만들 수 있으나, 현 소스에선 항목 병합 손실이 더 큰 위험이라 보존이 옳다.
+- **엣지**: HN 텍스트 글(외부 URL 없음)은 `https://news.ycombinator.com/item?id={objectID}`를 키로. 동일 기사·다른 도메인(신디케이션)은 URL로 못 잡음 → R2 제목 그룹핑이 토픽 레이어에서 처리(2계층 분리).
 - **30일 원장**: `seen_urls.json`(정규화 URL → 최초 발견일). 매 실행: 로드 → 30일 초과 prune → 신규 항목 정규화 후 원장에 있으면 drop, 없으면 today로 추가·유지 → 저장·커밋. 외부 저장소 불필요.
 
 **근거**: 정확 URL 중복(결정적·안전)과 퍼지 토픽 그룹핑(best-effort)을 분리해 각각 단순·디버그 가능. stdlib `urllib.parse`로 ~60줄 명시 로직(감사 가능) → `w3lib.canonicalize_url`보다 의존성·불필요 변환 적음.
@@ -72,7 +73,7 @@ tags:
 | 용도 | 라이브러리 | 핀 버전(2026-06) | 근거 |
 |---|---|---|---|
 | RSS+Atom 파싱 | feedparser | `feedparser==6.0.11` | RSS 1.0/2.0·Atom·RDF·malformed 모두 처리, 날짜 정규화. 이 프로젝트의 이종 피드에 적합 |
-| HTTP | requests | `requests==2.32.3` | 성숙, SEC-04(timeout·verify=True·raise_for_status)에 정합. stock-routine과 동일 |
+| HTTP | requests | `requests==2.33.0` | 성숙, SEC-04(timeout·verify=True·raise_for_status)에 정합. stock-routine과 동일 |
 | HTML 정리(필요 시) | stdlib `html`/`html.parser` | — | 피드 본문 HTML 제거. 필요시에만 beautifulsoup4 추가 |
 
 - **LLM SDK 없음**: 요약/번역은 오케스트레이팅 에이전트가 직접 → `anthropic`/`openai` 패키지 미포함(requirements.txt에서 의도적 부재).

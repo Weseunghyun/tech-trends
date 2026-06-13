@@ -26,7 +26,7 @@ tags:
 ## Technical Context
 
 **Language/Version**: Python 3.11+ (수집기), HTML5 + Vanilla JS/CSS (대시보드, 빌드 스텝·프레임워크 없음)  
-**Primary Dependencies**: `feedparser==6.0.11`, `requests==2.32.3` (LLM SDK 없음 — 요약은 에이전트 인라인)  
+**Primary Dependencies**: `feedparser==6.0.11`, `requests==2.33.0` (LLM SDK 없음 — 요약은 에이전트 인라인)  
 **Storage**: 정적 JSON 파일(`docs/data/`); DB 없음  
 **Testing**: pytest(수집/정규화/점수/중복 제거 단위), `--dry-run` 통합, `impl-python-validate`(ruff/bandit/pip-audit)  
 **Target Platform**: GitHub Pages 정적 호스팅 + 스케줄 자동화(claude.ai/code 루틴 1차, GitHub Actions cron 폴백)  
@@ -100,7 +100,7 @@ tests/
 ├── unit/                # normalize/dedup/score 단위
 └── integration/         # collect --dry-run, 부분 실패 격리
 
-requirements.txt         # feedparser==6.0.11, requests==2.32.3
+requirements.txt         # feedparser==6.0.11, requests==2.33.0
 .github/workflows/       # (폴백) daily.yml — cron 0 23 * * *
 ```
 

@@ -18,6 +18,14 @@ def test_normalized_url_dedup_equivalence():
     assert is_new("https://example.com/post", led)
 
 
+def test_fragment_distinguishes_items():
+    # Codex changelog는 fragment로 항목 구분 — fragment가 다르면 별개 자원
+    led: dict[str, str] = {}
+    mark_seen("https://developers.openai.com/codex/changelog/#codex-2026-06-11", led, date(2026, 6, 13))
+    assert is_new("https://developers.openai.com/codex/changelog/#codex-2026-06-09", led)
+    assert not is_new("https://developers.openai.com/codex/changelog/#codex-2026-06-11", led)
+
+
 def test_prune_drops_over_30_days():
     led = {
         "https://a.com/1": "2026-05-01",  # 43일 전 → 제거

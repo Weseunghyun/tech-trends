@@ -60,14 +60,24 @@ def save_ledger(out: Path, ledger: dict[str, str]) -> None:
 
 
 def filter_new_items(items: list[dict], ledger: dict[str, str], today: date) -> list[dict]:
-    """원장에 없는 신규 항목만 통과시키고, 통과 항목을 원장에 등록(FR-011).
+    """이전 일자에 본 항목만 걸러내고 신규/당일 항목은 통과시킨다(FR-011).
 
-    같은 실행 내 동일 URL 중복도 1회만 통과한다.
+    - 이전 일자(today 이전)에 본 URL → 제외(일자 간 중복 누적 방지).
+    - 당일 최초 등장 또는 같은 날 재실행 항목 → 통과(같은 날 재실행 시 스냅샷이 비지 않음).
+    - 같은 실행 내 동일 URL 중복 → 1회만 통과.
+    통과 항목은 원장에 최초 발견일로 등록한다(기존 일자 보존).
     """
+    today_str = today.isoformat()
     fresh: list[dict] = []
+    run_seen: set[str] = set()
     for it in items:
-        url = it["url"]
-        if is_new(url, ledger):
-            fresh.append(it)
-            mark_seen(url, ledger, today)
+        norm = normalize_url(it["url"])
+        if norm in run_seen:
+            continue  # 같은 실행 내 중복
+        prior = ledger.get(norm)
+        if prior is not None and prior < today_str:
+            continue  # 이전 일자에 이미 노출 → 일자 간 중복 제거
+        run_seen.add(norm)
+        ledger.setdefault(norm, today_str)
+        fresh.append(it)
     return fresh

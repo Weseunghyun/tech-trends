@@ -68,9 +68,9 @@ def test_summary_injection(monkeypatch, tmp_path):
     assert injected and injected[0]["summary_ko"] == "주입된 한글 요약"
 
 
-def test_dry_run_no_secret_output(monkeypatch, capsys):
+def test_dry_run_no_secret_output(monkeypatch, capsys, tmp_path):
     monkeypatch.setattr(collect_mod, "_dispatch", _fake_dispatch)
-    collect_mod.collect("2026-06-13", Path("/tmp/should-not-write"), dry_run=True)
+    collect_mod.collect("2026-06-13", tmp_path / "nowrite", dry_run=True)
     out = capsys.readouterr()
     combined = out.out + out.err
     # 토큰/키스러운 패턴이 출력에 없어야 함 (SEC-01)

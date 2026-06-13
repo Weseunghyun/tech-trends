@@ -38,7 +38,7 @@ tags:
 **Purpose**: 프로젝트 초기화 및 기본 구조
 
 - [X] T001 plan.md 구조대로 디렉토리 생성: `scripts/`, `scripts/sources/`, `docs/`, `docs/data/`, `tests/unit/`, `tests/integration/` (각 패키지에 `__init__.py`)
-- [X] T002 `requirements.txt` 작성 — `feedparser==6.0.11`, `requests==2.32.3` (== 핀, SEC-08). LLM SDK 미포함
+- [X] T002 `requirements.txt` 작성 — `feedparser==6.0.11`, `requests==2.33.0` (== 핀, SEC-08). LLM SDK 미포함
 - [X] T003 [P] ruff·bandit 설정 추가 (`pyproject.toml` 또는 `ruff.toml`/`.bandit`) — ruff S-그룹 활성(SEC 검출)
 - [X] T004 [P] `scripts/config.py` 작성 — 소스 목록·엔드포인트(research.md R1), 닫힌 소스 enum(9개: github_trending·anthropic·openai·deepmind·meta_ai·mistral·xai·openai_codex·hackernews) 및 소스→카테고리 매핑(data-model Category, HN→`hot_topics`), 점수 상수 `W_SRC=0.6`/`W_HN=0.4`/`COMMENT_RATIO=0.5`/`JACCARD=0.5`, 길이 컷 상수. 각 소스는 **클라우드 IP 도달·로그인 불필요**(FR-015)임을 주석으로 명시하고, X/Twitter 엔드포인트를 포함하지 않음을 보장(FR-016 가드)
 - [X] T005 [P] `.gitignore`에 `.env`·`*.key`·SA JSON 패턴 확인/추가(SEC-09), `docs/data/`는 추적 대상 유지
@@ -123,11 +123,11 @@ tags:
 
 **Purpose**: 보안 검증·스케줄·배포·문서
 
-- [ ] T030 `impl-python-validate` 실행 — `scripts/**` ruff(S그룹)/bandit/pip-audit + SEC-01~09 수동 체크리스트. `.claude/rules/python-security.md` 준수 확인(외부 HTTP·시크릿 취급 태스크 T006/T009/T025 완료 조건). 추가: 커밋 대상 `docs/data/*` diff에 토큰/키 패턴이 없음을 스캔(SEC-01/09, 헌법 I)
-- [ ] T031 [P] `.github/workflows/daily.yml` (폴백) — cron `0 23 * * *`(=KST 08:00), `workflow_dispatch`, `permissions: contents: write`, 내장 `GITHUB_TOKEN`로 `docs/data` 커밋·푸시. LLM 키 사용 시 Actions Secret만(커밋·출력 금지, SEC-01/09)
-- [ ] T032 [P] `README.md` 갱신 — 공개 URL·아키텍처·스케줄 루틴(1차)/Actions(폴백)·GitHub Pages `/docs` 설정 절차
-- [ ] T033 quickstart.md 검증 절차 전체 1회 수행(로컬 dry-run→산출→대시보드 미리보기→검증 체크리스트), 결과 기록. 포함: `latest.json` 단일 fetch로 대시보드 첫 표시 5초 이내(SC-001) 및 외부 CDN 0 확인
-- [ ] T034 스케줄 루틴 등록 — claude.ai/code 일일 KST 08:00 루틴(수집→에이전트 한글 요약 인라인→커밋·푸시). 요약 주입 경로(T015) 연결 확인
+- [X] T030 `impl-python-validate` 실행 — `scripts/**` ruff(S그룹)/bandit/pip-audit + SEC-01~09 수동 체크리스트. `.claude/rules/python-security.md` 준수 확인(외부 HTTP·시크릿 취급 태스크 T006/T009/T025 완료 조건). 추가: 커밋 대상 `docs/data/*` diff에 토큰/키 패턴이 없음을 스캔(SEC-01/09, 헌법 I)
+- [X] T031 [P] `.github/workflows/daily.yml` (폴백) — cron `0 23 * * *`(=KST 08:00), `workflow_dispatch`, `permissions: contents: write`, 내장 `GITHUB_TOKEN`로 `docs/data` 커밋·푸시. LLM 키 사용 시 Actions Secret만(커밋·출력 금지, SEC-01/09)
+- [X] T032 [P] `README.md` 갱신 — 공개 URL·아키텍처·스케줄 루틴(1차)/Actions(폴백)·GitHub Pages `/docs` 설정 절차
+- [X] T033 quickstart.md 검증 절차 전체 1회 수행(로컬 dry-run→산출→대시보드 미리보기→검증 체크리스트), 결과 기록. 포함: `latest.json` 단일 fetch로 대시보드 첫 표시 5초 이내(SC-001) 및 외부 CDN 0 확인
+- [ ] T034 스케줄 루틴 등록 — claude.ai/code 일일 KST 08:00 루틴(수집→에이전트 한글 요약 인라인→커밋·푸시). 요약 주입 경로(T015) 연결 확인 (⏳ 사용자 액션 — /schedule 또는 claude.ai/code 루틴 등록 필요)
 
 ---
 

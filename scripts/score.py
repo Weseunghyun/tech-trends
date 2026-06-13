@@ -113,7 +113,7 @@ def score_topics(topics: list[dict], top_n: int = HOT_TOPICS_MAX) -> list[dict]:
     norm_hn = _minmax(hn_raw)
 
     scored: list[dict] = []
-    for t, ns, nh in zip(topics, norm_src, norm_hn):
+    for t, ns, nh in zip(topics, norm_src, norm_hn, strict=True):
         score = W_SRC * ns + W_HN * nh
         hn = None
         if t["hn_points"] or t["hn_comments"]:

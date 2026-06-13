@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-06-13T20:53:03+09:00",
+  "generated_at": "2026-06-13T20:58:38+09:00",
   "date": "2026-06-13",
   "categories": {
     "ai_labs": [
@@ -13,7 +13,7 @@
         "summary_ko": "",
         "lang": "en",
         "published_at": "2026-06-12T09:00:00+09:00",
-        "collected_at": "2026-06-13T20:53:03+09:00",
+        "collected_at": "2026-06-13T20:58:38+09:00",
         "metrics": null
       },
       {
@@ -25,7 +25,7 @@
         "summary_ko": "",
         "lang": "en",
         "published_at": "2026-06-12T09:00:00+09:00",
-        "collected_at": "2026-06-13T20:53:03+09:00",
+        "collected_at": "2026-06-13T20:58:38+09:00",
         "metrics": null
       },
       {
@@ -37,7 +37,7 @@
         "summary_ko": "",
         "lang": "en",
         "published_at": "2026-06-12T09:00:00+09:00",
-        "collected_at": "2026-06-13T20:53:03+09:00",
+        "collected_at": "2026-06-13T20:58:38+09:00",
         "metrics": null
       },
       {
@@ -49,7 +49,7 @@
         "summary_ko": "",
         "lang": "en",
         "published_at": "2026-06-11T09:00:00+09:00",
-        "collected_at": "2026-06-13T20:53:03+09:00",
+        "collected_at": "2026-06-13T20:58:38+09:00",
         "metrics": null
       },
       {
@@ -61,7 +61,7 @@
         "summary_ko": "",
         "lang": "en",
         "published_at": "2026-06-11T09:00:00+09:00",
-        "collected_at": "2026-06-13T20:53:03+09:00",
+        "collected_at": "2026-06-13T20:58:38+09:00",
         "metrics": null
       },
       {
@@ -73,7 +73,7 @@
         "summary_ko": "",
         "lang": "en",
         "published_at": "2026-06-09T09:00:00+09:00",
-        "collected_at": "2026-06-13T20:53:03+09:00",
+        "collected_at": "2026-06-13T20:58:38+09:00",
         "metrics": null
       },
       {
@@ -85,7 +85,7 @@
         "summary_ko": "",
         "lang": "en",
         "published_at": "2026-06-03T09:00:00+09:00",
-        "collected_at": "2026-06-13T20:53:03+09:00",
+        "collected_at": "2026-06-13T20:58:38+09:00",
         "metrics": null
       },
       {
@@ -97,7 +97,7 @@
         "summary_ko": "",
         "lang": "en",
         "published_at": "2026-06-03T09:00:00+09:00",
-        "collected_at": "2026-06-13T20:53:03+09:00",
+        "collected_at": "2026-06-13T20:58:38+09:00",
         "metrics": null
       },
       {
@@ -109,7 +109,7 @@
         "summary_ko": "",
         "lang": "en",
         "published_at": "2026-06-02T09:00:00+09:00",
-        "collected_at": "2026-06-13T20:53:03+09:00",
+        "collected_at": "2026-06-13T20:58:38+09:00",
         "metrics": null
       },
       {
@@ -121,7 +121,7 @@
         "summary_ko": "",
         "lang": "en",
         "published_at": "2026-06-01T09:00:00+09:00",
-        "collected_at": "2026-06-13T20:53:03+09:00",
+        "collected_at": "2026-06-13T20:58:38+09:00",
         "metrics": null
       }
     ],
@@ -135,7 +135,7 @@
         "summary_ko": "",
         "lang": "en",
         "published_at": null,
-        "collected_at": "2026-06-13T20:53:03+09:00",
+        "collected_at": "2026-06-13T20:58:38+09:00",
         "metrics": null
       },
       {
@@ -147,7 +147,7 @@
         "summary_ko": "",
         "lang": "en",
         "published_at": null,
-        "collected_at": "2026-06-13T20:53:03+09:00",
+        "collected_at": "2026-06-13T20:58:38+09:00",
         "metrics": null
       },
       {
@@ -159,7 +159,7 @@
         "summary_ko": "",
         "lang": "en",
         "published_at": null,
-        "collected_at": "2026-06-13T20:53:03+09:00",
+        "collected_at": "2026-06-13T20:58:38+09:00",
         "metrics": null
       },
       {
@@ -171,7 +171,7 @@
         "summary_ko": "",
         "lang": "en",
         "published_at": null,
-        "collected_at": "2026-06-13T20:53:03+09:00",
+        "collected_at": "2026-06-13T20:58:38+09:00",
         "metrics": null
       },
       {
@@ -183,7 +183,7 @@
         "summary_ko": "",
         "lang": "en",
         "published_at": null,
-        "collected_at": "2026-06-13T20:53:03+09:00",
+        "collected_at": "2026-06-13T20:58:38+09:00",
         "metrics": null
       },
       {
@@ -195,7 +195,7 @@
         "summary_ko": "",
         "lang": "en",
         "published_at": null,
-        "collected_at": "2026-06-13T20:53:03+09:00",
+        "collected_at": "2026-06-13T20:58:38+09:00",
         "metrics": null
       },
       {
@@ -207,7 +207,7 @@
         "summary_ko": "",
         "lang": "en",
         "published_at": null,
-        "collected_at": "2026-06-13T20:53:03+09:00",
+        "collected_at": "2026-06-13T20:58:38+09:00",
         "metrics": null
       },
       {
@@ -219,7 +219,7 @@
         "summary_ko": "",
         "lang": "en",
         "published_at": null,
-        "collected_at": "2026-06-13T20:53:03+09:00",
+        "collected_at": "2026-06-13T20:58:38+09:00",
         "metrics": null
       },
       {
@@ -231,7 +231,7 @@
         "summary_ko": "",
         "lang": "en",
         "published_at": null,
-        "collected_at": "2026-06-13T20:53:03+09:00",
+        "collected_at": "2026-06-13T20:58:38+09:00",
         "metrics": null
       },
       {
@@ -243,21 +243,129 @@
         "summary_ko": "",
         "lang": "en",
         "published_at": null,
-        "collected_at": "2026-06-13T20:53:03+09:00",
+        "collected_at": "2026-06-13T20:58:38+09:00",
         "metrics": null
       }
     ],
     "codex": [
       {
-        "id": "91992ed9f82d7466401849371a107a449028b695",
+        "id": "b3f18990192f8c9129d0b6e74d47bda83aa4f430",
         "title": "Codex app",
-        "url": "https://developers.openai.com/codex/changelog",
+        "url": "https://developers.openai.com/codex/changelog#codex-2026-06-11-app",
         "source": "openai_codex",
         "category": "codex",
         "summary_ko": "",
         "lang": "en",
         "published_at": "2026-06-11T09:00:00+09:00",
-        "collected_at": "2026-06-13T20:53:03+09:00",
+        "collected_at": "2026-06-13T20:58:38+09:00",
+        "metrics": null
+      },
+      {
+        "id": "e303be303ab403d76a3584f6415a698f60e7d32a",
+        "title": "Codex app",
+        "url": "https://developers.openai.com/codex/changelog#codex-2026-06-09-app",
+        "source": "openai_codex",
+        "category": "codex",
+        "summary_ko": "",
+        "lang": "en",
+        "published_at": "2026-06-09T09:00:00+09:00",
+        "collected_at": "2026-06-13T20:58:38+09:00",
+        "metrics": null
+      },
+      {
+        "id": "2303b5bc3435aee4d560e8995414a3e0d90a4aa2",
+        "title": "ChatGPT for iOS",
+        "url": "https://developers.openai.com/codex/changelog#codex-2026-06-09-mobile",
+        "source": "openai_codex",
+        "category": "codex",
+        "summary_ko": "",
+        "lang": "en",
+        "published_at": "2026-06-09T09:00:00+09:00",
+        "collected_at": "2026-06-13T20:58:38+09:00",
+        "metrics": null
+      },
+      {
+        "id": "11d6c83ac9aabac882050ce7b735326a9d55ec58",
+        "title": "Codex CLI Release: 0.139.0",
+        "url": "https://developers.openai.com/codex/changelog#github-release-336847772",
+        "source": "openai_codex",
+        "category": "codex",
+        "summary_ko": "",
+        "lang": "en",
+        "published_at": "2026-06-09T09:00:00+09:00",
+        "collected_at": "2026-06-13T20:58:38+09:00",
+        "metrics": null
+      },
+      {
+        "id": "4824e1b371a7a0d8ae2c8431b00eb016f4f0178a",
+        "title": "Codex CLI Release: 0.138.0",
+        "url": "https://developers.openai.com/codex/changelog#github-release-336275797",
+        "source": "openai_codex",
+        "category": "codex",
+        "summary_ko": "",
+        "lang": "en",
+        "published_at": "2026-06-08T09:00:00+09:00",
+        "collected_at": "2026-06-13T20:58:38+09:00",
+        "metrics": null
+      },
+      {
+        "id": "7230cf49255175949c77ec1d377314154f800d86",
+        "title": "Codex app updates",
+        "url": "https://developers.openai.com/codex/changelog#codex-2026-06-04-app",
+        "source": "openai_codex",
+        "category": "codex",
+        "summary_ko": "",
+        "lang": "en",
+        "published_at": "2026-06-04T09:00:00+09:00",
+        "collected_at": "2026-06-13T20:58:38+09:00",
+        "metrics": null
+      },
+      {
+        "id": "87ff453daa958cda66e63a97477cb83c941617ce",
+        "title": "Codex CLI Release: 0.137.0",
+        "url": "https://developers.openai.com/codex/changelog#github-release-334076532",
+        "source": "openai_codex",
+        "category": "codex",
+        "summary_ko": "",
+        "lang": "en",
+        "published_at": "2026-06-04T09:00:00+09:00",
+        "collected_at": "2026-06-13T20:58:38+09:00",
+        "metrics": null
+      },
+      {
+        "id": "a541449aa4e08550b8e450d1e53d7ba22a0c1088",
+        "title": "Build and deploy websites with Sites",
+        "url": "https://developers.openai.com/codex/changelog#codex-2026-06-02",
+        "source": "openai_codex",
+        "category": "codex",
+        "summary_ko": "",
+        "lang": "en",
+        "published_at": "2026-06-02T09:00:00+09:00",
+        "collected_at": "2026-06-13T20:58:38+09:00",
+        "metrics": null
+      },
+      {
+        "id": "788d15c95be5679c3ac7578eb131f81f805306b4",
+        "title": "ChatGPT for iOS",
+        "url": "https://developers.openai.com/codex/changelog#codex-2026-06-02-mobile",
+        "source": "openai_codex",
+        "category": "codex",
+        "summary_ko": "",
+        "lang": "en",
+        "published_at": "2026-06-02T09:00:00+09:00",
+        "collected_at": "2026-06-13T20:58:38+09:00",
+        "metrics": null
+      },
+      {
+        "id": "90ea133bd278bab2d6a9088ab3705f679528a0d5",
+        "title": "Use Codex with Amazon Bedrock",
+        "url": "https://developers.openai.com/codex/changelog#codex-2026-06-01",
+        "source": "openai_codex",
+        "category": "codex",
+        "summary_ko": "",
+        "lang": "en",
+        "published_at": "2026-06-01T09:00:00+09:00",
+        "collected_at": "2026-06-13T20:58:38+09:00",
         "metrics": null
       }
     ],
@@ -265,229 +373,33 @@
   },
   "hot_topics": [
     {
-      "topic": "phuryn/pm-skills",
+      "topic": "addyosmani/agent-skills",
       "trend_score": 0.6,
       "src_count": 2,
       "hn": null,
       "items": [
         {
-          "id": "07f903de7009b9672ca07fa595688234d2a67595",
-          "title": "phuryn/pm-skills",
-          "url": "https://github.com/phuryn/pm-skills",
+          "id": "2e74d0228d63bddb2160d88b164fe5cb75af4408",
+          "title": "addyosmani/agent-skills",
+          "url": "https://github.com/addyosmani/agent-skills",
           "source": "github_trending",
           "category": "github_trending",
           "summary_ko": "",
           "lang": "en",
           "published_at": null,
-          "collected_at": "2026-06-13T20:53:03+09:00",
+          "collected_at": "2026-06-13T20:58:38+09:00",
           "metrics": null
         },
         {
-          "id": "39c29e13e298c113fa193ab7ba29ee1a5d8298e7",
-          "title": "Using skills",
-          "url": "https://openai.com/academy/skills",
-          "source": "openai",
-          "category": "ai_labs",
-          "summary_ko": "",
-          "lang": "en",
-          "published_at": "2026-04-10T09:00:00+09:00",
-          "collected_at": "2026-06-13T20:53:03+09:00",
-          "metrics": null
-        }
-      ]
-    },
-    {
-      "topic": "Agents for financial services",
-      "trend_score": 0.6,
-      "src_count": 2,
-      "hn": null,
-      "items": [
-        {
-          "id": "7843b678a2f7d4e3fbd55a9ff3fb97cfc6ff86d6",
-          "title": "Agents for financial services",
-          "url": "https://anthropic.com/news/finance-agents",
-          "source": "anthropic",
-          "category": "ai_labs",
-          "summary_ko": "",
-          "lang": "en",
-          "published_at": "2026-05-05T09:00:00+09:00",
-          "collected_at": "2026-06-13T20:53:03+09:00",
-          "metrics": null
-        },
-        {
-          "id": "195b64a10ce54f6aa3b9c583410b13bc4c7c1ee9",
-          "title": "Claude for Financial Services",
-          "url": "https://anthropic.com/news/claude-for-financial-services",
-          "source": "anthropic",
-          "category": "ai_labs",
-          "summary_ko": "",
-          "lang": "en",
-          "published_at": "2025-07-15T09:00:00+09:00",
-          "collected_at": "2026-06-13T20:53:03+09:00",
-          "metrics": null
-        },
-        {
-          "id": "11c496abc34e390b624587e7a60f8fa9f6ba1bee",
-          "title": "Financial services",
-          "url": "https://openai.com/academy/financial-services",
-          "source": "openai",
-          "category": "ai_labs",
-          "summary_ko": "",
-          "lang": "en",
-          "published_at": "2026-04-10T09:00:00+09:00",
-          "collected_at": "2026-06-13T20:53:03+09:00",
-          "metrics": null
-        }
-      ]
-    },
-    {
-      "topic": "Frontier Model Security",
-      "trend_score": 0.6,
-      "src_count": 2,
-      "hn": null,
-      "items": [
-        {
-          "id": "b81df2644e7549c9286ba8cab740de8eb4aa6748",
-          "title": "Frontier Model Security",
-          "url": "https://anthropic.com/news/frontier-model-security",
-          "source": "anthropic",
-          "category": "ai_labs",
-          "summary_ko": "",
-          "lang": "en",
-          "published_at": "2023-07-25T09:00:00+09:00",
-          "collected_at": "2026-06-13T20:53:03+09:00",
-          "metrics": null
-        },
-        {
-          "id": "3fe00ac124e9e5b829e8f7430c66319fafb36812",
-          "title": "Frontier Model Forum",
-          "url": "https://openai.com/index/frontier-model-forum",
-          "source": "openai",
-          "category": "ai_labs",
-          "summary_ko": "",
-          "lang": "en",
-          "published_at": "2023-07-26T16:00:00+09:00",
-          "collected_at": "2026-06-13T20:53:03+09:00",
-          "metrics": null
-        }
-      ]
-    },
-    {
-      "topic": "Introducing the Codex app",
-      "trend_score": 0.6,
-      "src_count": 2,
-      "hn": null,
-      "items": [
-        {
-          "id": "15315cc38e8625f65c99751a35a2c666842c83a8",
-          "title": "Introducing the Codex app",
-          "url": "https://openai.com/index/introducing-the-codex-app",
-          "source": "openai",
-          "category": "ai_labs",
-          "summary_ko": "",
-          "lang": "en",
-          "published_at": "2026-02-02T09:00:00+09:00",
-          "collected_at": "2026-06-13T20:53:03+09:00",
-          "metrics": null
-        },
-        {
-          "id": "b9b66ec7cdb8de17c469a004d548651454b49604",
-          "title": "Introducing upgrades to Codex",
-          "url": "https://openai.com/index/introducing-upgrades-to-codex",
-          "source": "openai",
-          "category": "ai_labs",
-          "summary_ko": "",
-          "lang": "en",
-          "published_at": "2025-09-15T19:00:00+09:00",
-          "collected_at": "2026-06-13T20:53:03+09:00",
-          "metrics": null
-        },
-        {
-          "id": "91992ed9f82d7466401849371a107a449028b695",
-          "title": "Codex app",
-          "url": "https://developers.openai.com/codex/changelog",
+          "id": "179823dab98fe272eed5fe4bc84bb08a2d239a7c",
+          "title": "Agent skills in Codex",
+          "url": "https://developers.openai.com/codex/changelog#codex-2025-12-19",
           "source": "openai_codex",
           "category": "codex",
           "summary_ko": "",
           "lang": "en",
-          "published_at": "2026-06-11T09:00:00+09:00",
-          "collected_at": "2026-06-13T20:53:03+09:00",
-          "metrics": null
-        }
-      ]
-    },
-    {
-      "topic": "DALL·E API now available in public beta",
-      "trend_score": 0.6,
-      "src_count": 2,
-      "hn": null,
-      "items": [
-        {
-          "id": "18ec4ca338a547cbae44b1f0a182534919fee570",
-          "title": "DALL·E API now available in public beta",
-          "url": "https://openai.com/index/dall-e-api-now-available-in-public-beta",
-          "source": "openai",
-          "category": "ai_labs",
-          "summary_ko": "",
-          "lang": "en",
-          "published_at": "2022-11-03T16:00:00+09:00",
-          "collected_at": "2026-06-13T20:53:03+09:00",
-          "metrics": null
-        },
-        {
-          "id": "6ef09b11d6acaefd068785d4cbe1f7bb8536b80b",
-          "title": "DALL·E now available in beta",
-          "url": "https://openai.com/index/dall-e-now-available-in-beta",
-          "source": "openai",
-          "category": "ai_labs",
-          "summary_ko": "",
-          "lang": "en",
-          "published_at": "2022-07-20T16:00:00+09:00",
-          "collected_at": "2026-06-13T20:53:03+09:00",
-          "metrics": null
-        },
-        {
-          "id": "51cd17c95d4b190d988a7f53caf3908bea377058",
-          "title": "API Public Beta",
-          "url": "https://x.ai/news/api",
-          "source": "xai",
-          "category": "ai_labs",
-          "summary_ko": "",
-          "lang": "en",
-          "published_at": "2024-11-04T09:00:00+09:00",
-          "collected_at": "2026-06-13T20:53:03+09:00",
-          "metrics": null
-        }
-      ]
-    },
-    {
-      "topic": "AI and compute",
-      "trend_score": 0.6,
-      "src_count": 2,
-      "hn": null,
-      "items": [
-        {
-          "id": "ebdaaac7f0aeb00f0d4212cadd5c41cb8017c83e",
-          "title": "AI and compute",
-          "url": "https://openai.com/index/ai-and-compute",
-          "source": "openai",
-          "category": "ai_labs",
-          "summary_ko": "",
-          "lang": "en",
-          "published_at": "2018-05-16T16:00:00+09:00",
-          "collected_at": "2026-06-13T20:53:03+09:00",
-          "metrics": null
-        },
-        {
-          "id": "deddad7f18631d6a6c7716d555efeaa833522525",
-          "title": "Mistral Compute",
-          "url": "https://mistral.ai/news/mistral-compute",
-          "source": "mistral",
-          "category": "ai_labs",
-          "summary_ko": "",
-          "lang": "en",
-          "published_at": "2025-06-11T09:00:00+09:00",
-          "collected_at": "2026-06-13T20:53:03+09:00",
+          "published_at": "2025-12-19T09:00:00+09:00",
+          "collected_at": "2026-06-13T20:58:38+09:00",
           "metrics": null
         }
       ]
@@ -497,8 +409,8 @@
       "trend_score": 0.4,
       "src_count": 1,
       "hn": {
-        "points": 1054,
-        "comments": 325
+        "points": 1071,
+        "comments": 331
       },
       "items": [
         {
@@ -510,20 +422,20 @@
           "summary_ko": "",
           "lang": "en",
           "published_at": "2026-06-13T11:14:24+09:00",
-          "collected_at": "2026-06-13T20:53:03+09:00",
+          "collected_at": "2026-06-13T20:58:38+09:00",
           "metrics": {
-            "points": 1054,
-            "comments": 325
+            "points": 1071,
+            "comments": 331
           }
         }
       ]
     },
     {
       "topic": "CRISPR tech selectively shreds cancer cells, including \"undruggable\" cancers",
-      "trend_score": 0.3802,
+      "trend_score": 0.3796,
       "src_count": 1,
       "hn": {
-        "points": 846,
+        "points": 852,
         "comments": 190
       },
       "items": [
@@ -536,9 +448,9 @@
           "summary_ko": "",
           "lang": "en",
           "published_at": "2026-06-13T00:15:24+09:00",
-          "collected_at": "2026-06-13T20:53:03+09:00",
+          "collected_at": "2026-06-13T20:58:38+09:00",
           "metrics": {
-            "points": 846,
+            "points": 852,
             "comments": 190
           }
         }
@@ -549,8 +461,8 @@
       "trend_score": 0.3546,
       "src_count": 1,
       "hn": {
-        "points": 511,
-        "comments": 147
+        "points": 517,
+        "comments": 150
       },
       "items": [
         {
@@ -562,20 +474,20 @@
           "summary_ko": "",
           "lang": "en",
           "published_at": "2026-06-13T07:08:03+09:00",
-          "collected_at": "2026-06-13T20:53:03+09:00",
+          "collected_at": "2026-06-13T20:58:38+09:00",
           "metrics": {
-            "points": 511,
-            "comments": 147
+            "points": 517,
+            "comments": 150
           }
         }
       ]
     },
     {
       "topic": "Malware developers added nuclear and biological weapons text to to their spyware",
-      "trend_score": 0.3535,
+      "trend_score": 0.3527,
       "src_count": 1,
       "hn": {
-        "points": 405,
+        "points": 406,
         "comments": 222
       },
       "items": [
@@ -588,10 +500,140 @@
           "summary_ko": "",
           "lang": "en",
           "published_at": "2026-06-12T05:24:18+09:00",
-          "collected_at": "2026-06-13T20:53:03+09:00",
+          "collected_at": "2026-06-13T20:58:38+09:00",
           "metrics": {
-            "points": 405,
+            "points": 406,
             "comments": 222
+          }
+        }
+      ]
+    },
+    {
+      "topic": "There is a shadow hanging over this Fable thing",
+      "trend_score": 0.3451,
+      "src_count": 1,
+      "hn": {
+        "points": 305,
+        "comments": 269
+      },
+      "items": [
+        {
+          "id": "c639fc2fae6f8280ee747240f842bfe0668d96d4",
+          "title": "There is a shadow hanging over this Fable thing",
+          "url": "https://12gramsofcarbon.com/p/tech-things-there-is-a-massive-shadow",
+          "source": "hackernews",
+          "category": "hot_topics",
+          "summary_ko": "",
+          "lang": "en",
+          "published_at": "2026-06-13T14:16:41+09:00",
+          "collected_at": "2026-06-13T20:58:38+09:00",
+          "metrics": {
+            "points": 305,
+            "comments": 269
+          }
+        }
+      ]
+    },
+    {
+      "topic": "How to setup a local coding agent on macOS",
+      "trend_score": 0.3349,
+      "src_count": 1,
+      "hn": {
+        "points": 390,
+        "comments": 99
+      },
+      "items": [
+        {
+          "id": "525a5570de9b78d413868efcee4d27f046554db8",
+          "title": "How to setup a local coding agent on macOS",
+          "url": "https://ikyle.me/blog/2026/how-to-setup-a-local-coding-agent-on-macos",
+          "source": "hackernews",
+          "category": "hot_topics",
+          "summary_ko": "",
+          "lang": "en",
+          "published_at": "2026-06-13T02:34:55+09:00",
+          "collected_at": "2026-06-13T20:58:38+09:00",
+          "metrics": {
+            "points": 390,
+            "comments": 99
+          }
+        }
+      ]
+    },
+    {
+      "topic": "Leaving Mozilla",
+      "trend_score": 0.3276,
+      "src_count": 1,
+      "hn": {
+        "points": 270,
+        "comments": 144
+      },
+      "items": [
+        {
+          "id": "527e6a76e452a8acfa8f788c0a874008b40a2e22",
+          "title": "Leaving Mozilla",
+          "url": "https://blog.unitedheroes.net/5751",
+          "source": "hackernews",
+          "category": "hot_topics",
+          "summary_ko": "",
+          "lang": "en",
+          "published_at": "2026-06-13T14:57:14+09:00",
+          "collected_at": "2026-06-13T20:58:38+09:00",
+          "metrics": {
+            "points": 270,
+            "comments": 144
+          }
+        }
+      ]
+    },
+    {
+      "topic": "Twenty One Zero-Days in FFmpeg",
+      "trend_score": 0.3213,
+      "src_count": 1,
+      "hn": {
+        "points": 232,
+        "comments": 143
+      },
+      "items": [
+        {
+          "id": "85161612a131d1113fded85197521edd4353ffe6",
+          "title": "Twenty One Zero-Days in FFmpeg",
+          "url": "https://depthfirst.com/research/21-zero-days-in-ffmpeg",
+          "source": "hackernews",
+          "category": "hot_topics",
+          "summary_ko": "",
+          "lang": "en",
+          "published_at": "2026-06-13T07:13:29+09:00",
+          "collected_at": "2026-06-13T20:58:38+09:00",
+          "metrics": {
+            "points": 232,
+            "comments": 143
+          }
+        }
+      ]
+    },
+    {
+      "topic": "Pirates, a naval warfare game inspired by Sid Meier's Pirates",
+      "trend_score": 0.3167,
+      "src_count": 1,
+      "hn": {
+        "points": 273,
+        "comments": 82
+      },
+      "items": [
+        {
+          "id": "c137243425ed2361f8dee3396b36bebb961a7bcf",
+          "title": "Pirates, a naval warfare game inspired by Sid Meier's Pirates",
+          "url": "https://piwodlaiwo.github.io/pirates",
+          "source": "hackernews",
+          "category": "hot_topics",
+          "summary_ko": "",
+          "lang": "en",
+          "published_at": "2026-06-13T02:07:46+09:00",
+          "collected_at": "2026-06-13T20:58:38+09:00",
+          "metrics": {
+            "points": 273,
+            "comments": 82
           }
         }
       ]
@@ -614,9 +656,9 @@
     },
     {
       "source": "openai",
-      "ok": true,
-      "item_count": 1020,
-      "error_type": null,
+      "ok": false,
+      "item_count": 0,
+      "error_type": "HTTPError",
       "feed_built_at": null
     },
     {

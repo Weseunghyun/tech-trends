@@ -34,7 +34,8 @@ def normalize_url(raw: str) -> str:
 
     ① scheme 소문자 + http→https  ② host 소문자 + 선행 www. 제거(비기본 포트 보존)
     ③ 경로 끝 슬래시 제거(루트 제외)  ④ utm_/추적 파라미터 제거 후 나머지 정렬
-    ⑤ fragment 제거. 경로 대소문자·비추적 쿼리는 보존(자원 변경 방지).
+    ⑤ fragment 보존(OpenAI Codex changelog 등은 fragment로 개별 항목을 구분 —
+       제거하면 전 항목이 하나로 병합됨). 경로 대소문자·비추적 쿼리도 보존(자원 변경 방지).
     """
     parts = urlsplit(raw.strip())
 
@@ -43,10 +44,7 @@ def normalize_url(raw: str) -> str:
     host = parts.hostname.lower() if parts.hostname else ""
     if host.startswith("www."):
         host = host[4:]
-    if parts.port and parts.port not in (80, 443):
-        netloc = f"{host}:{parts.port}"
-    else:
-        netloc = host
+    netloc = f"{host}:{parts.port}" if parts.port and parts.port not in (80, 443) else host
 
     path = parts.path
     if len(path) > 1 and path.endswith("/"):
@@ -59,12 +57,14 @@ def normalize_url(raw: str) -> str:
     ]
     query = urlencode(sorted(kept))
 
-    return urlunsplit((scheme, netloc, path, query, ""))
+    return urlunsplit((scheme, netloc, path, query, parts.fragment))
 
 
 def item_id(url: str) -> str:
-    """정규화 URL의 SHA-1 16진 — dedup·중복 제거 키."""
-    return hashlib.sha1(normalize_url(url).encode("utf-8")).hexdigest()  # noqa: S324
+    """정규화 URL의 SHA-1 16진 — dedup·중복 제거 키(보안용 아님)."""
+    return hashlib.sha1(
+        normalize_url(url).encode("utf-8"), usedforsecurity=False
+    ).hexdigest()
 
 
 def clip(text: str | None, limit: int = TITLE_MAX) -> str:
