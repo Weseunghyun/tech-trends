@@ -127,7 +127,7 @@ tags:
 - [X] T031 [P] `.github/workflows/daily.yml` (폴백) — cron `0 23 * * *`(=KST 08:00), `workflow_dispatch`, `permissions: contents: write`, 내장 `GITHUB_TOKEN`로 `docs/data` 커밋·푸시. LLM 키 사용 시 Actions Secret만(커밋·출력 금지, SEC-01/09)
 - [X] T032 [P] `README.md` 갱신 — 공개 URL·아키텍처·스케줄 루틴(1차)/Actions(폴백)·GitHub Pages `/docs` 설정 절차
 - [X] T033 quickstart.md 검증 절차 전체 1회 수행(로컬 dry-run→산출→대시보드 미리보기→검증 체크리스트), 결과 기록. 포함: `latest.json` 단일 fetch로 대시보드 첫 표시 5초 이내(SC-001) 및 외부 CDN 0 확인
-- [X] T034 스케줄 루틴 등록 — `/schedule`로 `tech-trends-daily`(cron `0 8 * * *`, KST 08:00) 등록: 로컬 repo clone→수집→에이전트 한글 요약→commit·push. 요약 주입 경로(T015) 연결됨. 주의: 데스크톱 앱이 켜져 있을 때 실행(꺼져 있으면 다음 실행 시 보충)
+- [ ] T034 스케줄 루틴 등록 — 데스크톱 `/schedule` 루틴은 앱 종속(앱 꺼지면 미실행)이라 제거함. **항상 켜져 있어도 도는 원격 루틴은 claude.ai/code(웹) routines에서 등록**(사용자 액션): repo 연결 + 매일 ~08:07 KST cron + collect→한글요약→push 프롬프트. env/키 불필요(무키 소스), push 권한만 GitHub 연결로 제공. 배포는 push 시 Pages 자동.
 
 ---
 
