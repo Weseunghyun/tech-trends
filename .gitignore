@@ -1,7 +1,10 @@
 # secrets / env
 .env
+.env.*
 *.key
 *.pem
+*-sa.json
+service-account*.json
 # python
 __pycache__/
 *.py[codz]
@@ -12,3 +15,6 @@ node_modules/
 # IDE
 .idea/
 .vscode/
+# OS
+.DS_Store
+Thumbs.db
