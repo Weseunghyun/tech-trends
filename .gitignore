@@ -1,0 +1,14 @@
+# secrets / env
+.env
+*.key
+*.pem
+# python
+__pycache__/
+*.py[codz]
+.venv/
+venv/
+# node
+node_modules/
+# IDE
+.idea/
+.vscode/

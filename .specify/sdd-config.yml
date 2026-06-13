@@ -1,0 +1,13 @@
+# SDD 산출물 저장 설정 (개인 프로젝트)
+#
+# 외부 노트 앱(Obsidian) 연동은 사용하지 않는다.
+# vault_path가 비어 있으므로 모든 SDD 산출물은 로컬 `specs/<NNN-slug>/`에 생성된다.
+# frontmatter의 project 값은 아래 top-level `project`를 사용한다.
+
+project: "tech-trends"
+
+# 스크립트(common.sh) 호환용. vault_path를 비워두면 로컬 specs/로 폴백한다.
+obsidian:
+  vault_path: ""
+  base_dir: "sdd"
+  project: "tech-trends"
