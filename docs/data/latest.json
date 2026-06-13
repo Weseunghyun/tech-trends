@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-06-14T03:11:10+09:00",
+  "generated_at": "2026-06-14T07:08:37+09:00",
   "date": "2026-06-14",
   "categories": {
     "ai_labs": [
@@ -10,11 +10,11 @@
         "url": "https://anthropic.com/news/tcs-anthropic-partnership",
         "source": "anthropic",
         "category": "ai_labs",
-        "summary_ko": "TCS와 Anthropic이 제휴해 규제 산업에 Claude를 도입한다.",
+        "summary_ko": "TCS와 Anthropic이 파트너십을 체결해 금융·의료 등 규제 산업에 Claude AI를 도입하기 위해 협력한다.",
         "raw_summary": "TCS and Anthropic partner to bring Claude to regulated industries",
         "lang": "en",
         "published_at": "2026-06-12T09:00:00+09:00",
-        "collected_at": "2026-06-14T03:11:10+09:00",
+        "collected_at": "2026-06-14T07:08:37+09:00",
         "metrics": null
       },
       {
@@ -23,11 +23,11 @@
         "url": "https://anthropic.com/news/anthropic-public-record",
         "source": "anthropic",
         "category": "ai_labs",
-        "summary_ko": "Anthropic이 첫 'Public Record'의 결과를 공개했다.",
+        "summary_ko": "Anthropic이 첫 번째 공개 기록(Public Record)의 결과를 발표했다.",
         "raw_summary": "Results from the first Anthropic Public Record",
         "lang": "en",
         "published_at": "2026-06-12T09:00:00+09:00",
-        "collected_at": "2026-06-14T03:11:10+09:00",
+        "collected_at": "2026-06-14T07:08:37+09:00",
         "metrics": null
       },
       {
@@ -36,11 +36,11 @@
         "url": "https://anthropic.com/news/fable-mythos-access",
         "source": "anthropic",
         "category": "ai_labs",
-        "summary_ko": "미국 정부의 Fable 5·Mythos 5 접근 중단 지시에 대한 Anthropic의 공식 입장문.",
+        "summary_ko": "미국 정부의 Fable 5 및 Mythos 5 접근 중단 지시에 대한 Anthropic의 공식 입장을 담은 성명이다.",
         "raw_summary": "Statement on the US government directive to suspend access to Fable 5 and Mythos 5",
         "lang": "en",
         "published_at": "2026-06-12T09:00:00+09:00",
-        "collected_at": "2026-06-14T03:11:10+09:00",
+        "collected_at": "2026-06-14T07:08:37+09:00",
         "metrics": null
       },
       {
@@ -49,11 +49,11 @@
         "url": "https://anthropic.com/news/dxc-anthropic-alliance",
         "source": "anthropic",
         "category": "ai_labs",
-        "summary_ko": "DXC가 은행·항공 등 규제 산업이 의존하는 시스템에 Claude를 통합한다.",
+        "summary_ko": "DXC 테크놀로지가 은행·항공사 등 규제 산업의 핵심 시스템에 Claude를 통합할 예정이다.",
         "raw_summary": "DXC will integrate Claude into the systems banks, airlines, and other regulated industries rely on",
         "lang": "en",
         "published_at": "2026-06-11T09:00:00+09:00",
-        "collected_at": "2026-06-14T03:11:10+09:00",
+        "collected_at": "2026-06-14T07:08:37+09:00",
         "metrics": null
       },
       {
@@ -62,11 +62,11 @@
         "url": "https://anthropic.com/news/claude-corps",
         "source": "anthropic",
         "category": "ai_labs",
-        "summary_ko": "Anthropic이 'Claude Corps' 프로그램을 새로 소개한다.",
+        "summary_ko": "Anthropic이 Claude Corps를 공개했다.",
         "raw_summary": "Introducing Claude Corps",
         "lang": "en",
         "published_at": "2026-06-11T09:00:00+09:00",
-        "collected_at": "2026-06-14T03:11:10+09:00",
+        "collected_at": "2026-06-14T07:08:37+09:00",
         "metrics": null
       },
       {
@@ -75,11 +75,11 @@
         "url": "https://anthropic.com/news/claude-fable-5-mythos-5",
         "source": "anthropic",
         "category": "ai_labs",
-        "summary_ko": "Anthropic이 Claude Fable 5와 Claude Mythos 5를 발표했다.",
+        "summary_ko": "Anthropic이 Claude Fable 5와 Claude Mythos 5 신규 모델을 발표했다.",
         "raw_summary": "Claude Fable 5 and Claude Mythos 5",
         "lang": "en",
         "published_at": "2026-06-09T09:00:00+09:00",
-        "collected_at": "2026-06-14T03:11:10+09:00",
+        "collected_at": "2026-06-14T07:08:37+09:00",
         "metrics": null
       },
       {
@@ -88,11 +88,11 @@
         "url": "https://anthropic.com/news/AI-enabled-cyber-threats-mitre-attack",
         "source": "anthropic",
         "category": "ai_labs",
-        "summary_ko": "1년치 AI 악용 사이버 위협을 매핑하며 얻은 교훈을 정리했다.",
+        "summary_ko": "Anthropic이 1년간 AI를 활용한 사이버 위협을 분석한 결과를 공유했다.",
         "raw_summary": "What we learned mapping a year’s worth of AI-enabled cyber threats",
         "lang": "en",
         "published_at": "2026-06-03T09:00:00+09:00",
-        "collected_at": "2026-06-14T03:11:10+09:00",
+        "collected_at": "2026-06-14T07:08:37+09:00",
         "metrics": null
       },
       {
@@ -101,11 +101,11 @@
         "url": "https://anthropic.com/news/services-track-partner-hub",
         "source": "anthropic",
         "category": "ai_labs",
-        "summary_ko": "Claude 파트너 네트워크의 Services Track과 Partner Hub를 소개한다.",
+        "summary_ko": "Anthropic이 Claude 파트너 네트워크의 서비스 트랙과 파트너 허브를 새롭게 공개했다.",
         "raw_summary": "Introducing the Services Track and Partner Hub of the Claude Partner Network",
         "lang": "en",
         "published_at": "2026-06-03T09:00:00+09:00",
-        "collected_at": "2026-06-14T03:11:10+09:00",
+        "collected_at": "2026-06-14T07:08:37+09:00",
         "metrics": null
       },
       {
@@ -114,11 +114,11 @@
         "url": "https://anthropic.com/news/expanding-project-glasswing",
         "source": "anthropic",
         "category": "ai_labs",
-        "summary_ko": "Anthropic이 'Project Glasswing'을 확장한다.",
+        "summary_ko": "Anthropic이 Project Glasswing의 확장 계획을 발표했다.",
         "raw_summary": "Expanding Project Glasswing",
         "lang": "en",
         "published_at": "2026-06-02T09:00:00+09:00",
-        "collected_at": "2026-06-14T03:11:10+09:00",
+        "collected_at": "2026-06-14T07:08:37+09:00",
         "metrics": null
       },
       {
@@ -127,555 +127,343 @@
         "url": "https://anthropic.com/news/confidential-draft-s1-sec",
         "source": "anthropic",
         "category": "ai_labs",
-        "summary_ko": "Anthropic이 SEC에 상장 신청서(S-1) 초안을 비공개 제출했다.",
+        "summary_ko": "Anthropic이 기업공개(IPO)를 위한 S-1 초안을 미국 SEC에 비공개로 제출했다.",
         "raw_summary": "Anthropic confidentially submits draft S-1 to the SEC",
         "lang": "en",
         "published_at": "2026-06-01T09:00:00+09:00",
-        "collected_at": "2026-06-14T03:11:10+09:00",
+        "collected_at": "2026-06-14T07:08:37+09:00",
         "metrics": null
       }
     ],
-    "github_trending": [
-      {
-        "id": "2e74d0228d63bddb2160d88b164fe5cb75af4408",
-        "title": "addyosmani/agent-skills",
-        "url": "https://github.com/addyosmani/agent-skills",
-        "source": "github_trending",
-        "category": "github_trending",
-        "summary_ko": "AI 코딩 에이전트용 프로덕션급 엔지니어링 스킬 모음 — 개발 전 단계의 워크플로·품질 게이트·모범사례를 패키지화했다.",
-        "raw_summary": "Production-grade engineering skills for AI coding agents. Agent Skills Production-grade engineering skills for AI coding agents. Skills encode the workflows, quality gates, and best practices that senior engineers use when building software. These ones are packaged so AI agents follow them consistently across every phase of development. DEFINE PLAN BUILD VERIFY REVIEW SHIP ┌──────┐ ┌──────┐ ┌──────┐ ┌──────┐ ┌──────┐ ┌──────┐ │ Idea │ ───▶ │ Spec │ ───▶ │ Code │ ───▶ │ Test │ ───▶ │ QA │ ───▶ │ Go │ │Refine│ │ PRD │ │ Impl │ │Debug │ │ Gate │ │ Live │ └──────┘ └──────┘ └──────┘ └──────┘ └─────",
-        "lang": "en",
-        "published_at": null,
-        "collected_at": "2026-06-14T03:11:10+09:00",
-        "metrics": null
-      },
-      {
-        "id": "ab8c0d0275401727bc939cbf3d689ed6bcdcc42d",
-        "title": "music-assistant/server",
-        "url": "https://github.com/music-assistant/server",
-        "source": "github_trending",
-        "category": "github_trending",
-        "summary_ko": "스트리밍 서비스와 다양한 스피커를 연결하는 무료 오픈소스 미디어 라이브러리 관리자(Music Assistant)의 서버 코어.",
-        "raw_summary": "Music Assistant is a free, opensource Media library manager that connects to your streaming services and a wide range of connected speakers. The server is the beating heart, the core of Music Assistant and must run on an always-on device like a Raspberry Pi, a NAS or an Intel NUC or alike. Music Assistant Music Assistant Server Music Assistant is a free, opensource Media library manager that connects to your streaming services and a wide range of connected speakers. The server is the beating heart, the core of Music Assistant and must run on an always-on device like a Raspberry Pi, a NAS or an",
-        "lang": "en",
-        "published_at": null,
-        "collected_at": "2026-06-14T03:11:10+09:00",
-        "metrics": null
-      },
-      {
-        "id": "7bd795e61292caddfebb138b53feca4a9e0d1368",
-        "title": "mattermost/mattermost",
-        "url": "https://github.com/mattermost/mattermost",
-        "source": "github_trending",
-        "category": "github_trending",
-        "summary_ko": "채팅·워크플로 자동화·음성·화면공유·AI 통합을 제공하는 오픈소스 셀프호스트 협업 플랫폼(Go·React).",
-        "raw_summary": "Mattermost is an open source platform for secure collaboration across the entire software development lifecycle.. Mattermost is an open core, self-hosted collaboration platform that offers chat, workflow automation, voice calling, screen sharing, and AI integration. This repo is the primary source for core development on the Mattermost platform; it's written in Go and React, runs as a single Linux binary, and relies on PostgreSQL. A new compiled version is released under an MIT license every month on the 16th. Deploy Mattermost on-premises , or try it for free in the cloud . Learn more about t",
-        "lang": "en",
-        "published_at": null,
-        "collected_at": "2026-06-14T03:11:10+09:00",
-        "metrics": null
-      },
-      {
-        "id": "ccc439177718eb974d6ddef2a96b7204c49d46e1",
-        "title": "apple/container",
-        "url": "https://github.com/apple/container",
-        "source": "github_trending",
-        "category": "github_trending",
-        "summary_ko": "Mac에서 경량 가상머신으로 Linux 컨테이너를 실행하는 Apple silicon 최적화 Swift 도구.",
-        "raw_summary": "A tool for creating and running Linux containers using lightweight virtual machines on a Mac. It is written in Swift, and optimized for Apple silicon. container container is a tool that you can use to create and run Linux containers as lightweight virtual machines on your Mac. It's written in Swift, and optimized for Apple silicon. The tool consumes and produces OCI-compatible container images , so you can pull and run images from any standard container registry. You can push images that you build to those registries as well, and run the images in any other OCI-compatible application. containe",
-        "lang": "en",
-        "published_at": null,
-        "collected_at": "2026-06-14T03:11:10+09:00",
-        "metrics": null
-      },
-      {
-        "id": "31a178ebae363d4139b80abe1b38e6369ae26c02",
-        "title": "iptv-org/iptv",
-        "url": "https://github.com/iptv-org/iptv",
-        "source": "github_trending",
-        "category": "github_trending",
-        "summary_ko": "전 세계 공개 IPTV 채널을 모은 플레이리스트 모음.",
-        "raw_summary": "Collection of publicly available IPTV channels from all over the world IPTV Collection of publicly available IPTV (Internet Protocol television) channels from all over the world. Table of contents 🚀 How to use? 📺 Playlists 🗓 EPG 🗄 Database 👨‍💻 API 📚 Resources 💬 Discussions ❓ FAQ 🛠 Contribution ⚖ Legal © License How to use? Simply paste the link to one of the playlists into any video player that supports live streaming and press Open . Playlists The main playlist containing all channels available in the repository can be found at: https://iptv-org.github.io/iptv/index.m3u Links to other playlis",
-        "lang": "en",
-        "published_at": null,
-        "collected_at": "2026-06-14T03:11:10+09:00",
-        "metrics": null
-      },
-      {
-        "id": "2046f5e50fafe44ab9382efbd7ce4484b55575ee",
-        "title": "obra/superpowers",
-        "url": "https://github.com/obra/superpowers",
-        "source": "github_trending",
-        "category": "github_trending",
-        "summary_ko": "코딩 에이전트를 위한 합성 가능한 스킬 기반 소프트웨어 개발 방법론 프레임워크.",
-        "raw_summary": "An agentic skills framework & software development methodology that works. Superpowers Superpowers is a complete software development methodology for your coding agents, built on top of a set of composable skills and some initial instructions that make sure your agent uses them. Quickstart Give your agent Superpowers: Claude Code , Codex CLI , Codex App , Factory Droid , Gemini CLI , OpenCode , Cursor , GitHub Copilot CLI . How it works It starts from the moment you fire up your coding agent. As soon as it sees that you're building something, it doesn't just jump into trying to write code. Ins",
-        "lang": "en",
-        "published_at": null,
-        "collected_at": "2026-06-14T03:11:10+09:00",
-        "metrics": null
-      },
-      {
-        "id": "3028b0699ef1c7ba41c6aafcc144e1398b82506c",
-        "title": "refactoringhq/tolaria",
-        "url": "https://github.com/refactoringhq/tolaria",
-        "source": "github_trending",
-        "category": "github_trending",
-        "summary_ko": "마크다운 지식베이스를 관리하는 macOS·Windows·Linux 데스크톱 앱(Tolaria).",
-        "raw_summary": "Desktop app to manage markdown knowledge bases 💧 Tolaria Tolaria is a desktop app for macOS, Windows, and Linux for managing markdown knowledge bases . People use it for a variety of use cases: Operate second brains and personal knowledge Organize company docs as context for AI Store OpenClaw/assistants memory and procedures Personally, I use it to run my life (hey 👋 Luca here ). I have a massive workspace of 10,000+ notes, which are the result of my Refactoring work + a ton of personal journaling and second braining . Walkthroughs You can find some Loom walkthroughs below — they are short and",
-        "lang": "en",
-        "published_at": null,
-        "collected_at": "2026-06-14T03:11:10+09:00",
-        "metrics": null
-      },
-      {
-        "id": "c0e198ef7ba41275e2b69aa2e2fb5428385729ef",
-        "title": "maziyarpanahi/openmed",
-        "url": "https://github.com/maziyarpanahi/openmed",
-        "source": "github_trending",
-        "category": "github_trending",
-        "summary_ko": "기기에서만 동작하는 로컬 우선 헬스케어 AI — 임상 텍스트 구조화·PII 비식별화, 1,000+ 온디바이스 의료 모델(Apache-2.0).",
-        "raw_summary": "open-source healthcare ai Local-first healthcare AI that never leaves the device Turn clinical text into structured insight with one line of code. Entity extraction, PII de-identification, and 1,000+ specialized medical models that run entirely on your own hardware — from a one-liner in Python to a native Swift app on iPhone, powered by Apple MLX. No cloud. No vendor lock-in. No patient data leaving your network. 1,000+ models · 12 languages · 247 PII checkpoints · 100% on-device · Apache-2.0 English · 简体中文 · Español · Français · Deutsch · Italiano · Português · Nederlands · العربية · हिन्दी ·",
-        "lang": "en",
-        "published_at": null,
-        "collected_at": "2026-06-14T03:11:10+09:00",
-        "metrics": null
-      },
-      {
-        "id": "589bc97827fa554dbb35fa355d4be4e333198a5e",
-        "title": "LMCache/LMCache",
-        "url": "https://github.com/LMCache/LMCache",
-        "source": "github_trending",
-        "category": "github_trending",
-        "summary_ko": "확장형 LLM 추론을 위한 고속 KV 캐시 관리 레이어(LMCache).",
-        "raw_summary": "LMCache: Supercharge Your LLM with the Fastest KV Cache Layer A KV Cache Management Layer for Scalable LLM Inference Blog | Documentation | Join Slack | Community Meeting | Roadmap Updates [2026/05] 🔥 Agentic workload benchmark on AMD MI300X ( blog ). [2026/04] 🔥 LMCache's new multiprocess(MP) architecture release ( blog ). [2026/03] LMCache at GTC 2026 ( post ). [2026/01] LMCache multi-node P2P CPU memory sharing, from experimental feature to production ( blog ). More [2025/11] LMCache x CoreWeave accelerate efficient LLM inference for Cohere ( blog ). [2025/10] LMCache joins the PyTorch Foun",
-        "lang": "en",
-        "published_at": null,
-        "collected_at": "2026-06-14T03:11:10+09:00",
-        "metrics": null
-      },
-      {
-        "id": "07f903de7009b9672ca07fa595688234d2a67595",
-        "title": "phuryn/pm-skills",
-        "url": "https://github.com/phuryn/pm-skills",
-        "source": "github_trending",
-        "category": "github_trending",
-        "summary_ko": "발견부터 전략·실행·런칭·성장까지 100+ 에이전트 스킬을 담은 PM 스킬 마켓플레이스.",
-        "raw_summary": "PM Skills Marketplace: 100+ agentic skills, commands, and plugins — from discovery to strategy, execution, launch, and growth. PM Skills Marketplace: The AI Operating System for Better Product Decisions 68 PM skills and 42 chained workflows across 9 plugins. Claude Code, Cowork, and more. From discovery to strategy, execution, launch, growth, and shipping AI-built code. Designed for Claude Code and Cowork. Skills compatible with other AI assistants. Start Here New idea? → /discover Need strategic clarity? → /strategy Writing a PRD? → /write-prd Planning a launch? → /plan-launch Defining metric",
-        "lang": "en",
-        "published_at": null,
-        "collected_at": "2026-06-14T03:11:10+09:00",
-        "metrics": null
-      }
-    ],
-    "codex": [
-      {
-        "id": "b3f18990192f8c9129d0b6e74d47bda83aa4f430",
-        "title": "Codex app",
-        "url": "https://developers.openai.com/codex/changelog#codex-2026-06-11-app",
-        "source": "openai_codex",
-        "category": "codex",
-        "summary_ko": "Codex 앱 관련 업데이트(체인지로그 항목).",
-        "raw_summary": "Codex app",
-        "lang": "en",
-        "published_at": "2026-06-11T09:00:00+09:00",
-        "collected_at": "2026-06-14T03:11:10+09:00",
-        "metrics": null
-      },
-      {
-        "id": "e303be303ab403d76a3584f6415a698f60e7d32a",
-        "title": "Codex app",
-        "url": "https://developers.openai.com/codex/changelog#codex-2026-06-09-app",
-        "source": "openai_codex",
-        "category": "codex",
-        "summary_ko": "Codex 앱 관련 업데이트(체인지로그 항목).",
-        "raw_summary": "Codex app",
-        "lang": "en",
-        "published_at": "2026-06-09T09:00:00+09:00",
-        "collected_at": "2026-06-14T03:11:10+09:00",
-        "metrics": null
-      },
-      {
-        "id": "2303b5bc3435aee4d560e8995414a3e0d90a4aa2",
-        "title": "ChatGPT for iOS",
-        "url": "https://developers.openai.com/codex/changelog#codex-2026-06-09-mobile",
-        "source": "openai_codex",
-        "category": "codex",
-        "summary_ko": "ChatGPT iOS 앱 관련 변경(체인지로그 항목).",
-        "raw_summary": "ChatGPT for iOS",
-        "lang": "en",
-        "published_at": "2026-06-09T09:00:00+09:00",
-        "collected_at": "2026-06-14T03:11:10+09:00",
-        "metrics": null
-      },
-      {
-        "id": "11d6c83ac9aabac882050ce7b735326a9d55ec58",
-        "title": "Codex CLI Release: 0.139.0",
-        "url": "https://developers.openai.com/codex/changelog#github-release-336847772",
-        "source": "openai_codex",
-        "category": "codex",
-        "summary_ko": "Codex CLI 0.139.0 릴리스.",
-        "raw_summary": "0.139.0",
-        "lang": "en",
-        "published_at": "2026-06-09T09:00:00+09:00",
-        "collected_at": "2026-06-14T03:11:10+09:00",
-        "metrics": null
-      },
-      {
-        "id": "4824e1b371a7a0d8ae2c8431b00eb016f4f0178a",
-        "title": "Codex CLI Release: 0.138.0",
-        "url": "https://developers.openai.com/codex/changelog#github-release-336275797",
-        "source": "openai_codex",
-        "category": "codex",
-        "summary_ko": "Codex CLI 0.138.0 릴리스.",
-        "raw_summary": "0.138.0",
-        "lang": "en",
-        "published_at": "2026-06-08T09:00:00+09:00",
-        "collected_at": "2026-06-14T03:11:10+09:00",
-        "metrics": null
-      },
-      {
-        "id": "7230cf49255175949c77ec1d377314154f800d86",
-        "title": "Codex app updates",
-        "url": "https://developers.openai.com/codex/changelog#codex-2026-06-04-app",
-        "source": "openai_codex",
-        "category": "codex",
-        "summary_ko": "Codex 앱 업데이트 모음(체인지로그 항목).",
-        "raw_summary": "Codex app updates",
-        "lang": "en",
-        "published_at": "2026-06-04T09:00:00+09:00",
-        "collected_at": "2026-06-14T03:11:10+09:00",
-        "metrics": null
-      },
-      {
-        "id": "87ff453daa958cda66e63a97477cb83c941617ce",
-        "title": "Codex CLI Release: 0.137.0",
-        "url": "https://developers.openai.com/codex/changelog#github-release-334076532",
-        "source": "openai_codex",
-        "category": "codex",
-        "summary_ko": "Codex CLI 0.137.0 릴리스.",
-        "raw_summary": "0.137.0",
-        "lang": "en",
-        "published_at": "2026-06-04T09:00:00+09:00",
-        "collected_at": "2026-06-14T03:11:10+09:00",
-        "metrics": null
-      },
-      {
-        "id": "a541449aa4e08550b8e450d1e53d7ba22a0c1088",
-        "title": "Build and deploy websites with Sites",
-        "url": "https://developers.openai.com/codex/changelog#codex-2026-06-02",
-        "source": "openai_codex",
-        "category": "codex",
-        "summary_ko": "Codex의 Sites 기능으로 웹사이트를 만들고 배포한다.",
-        "raw_summary": "Build and deploy websites with Sites",
-        "lang": "en",
-        "published_at": "2026-06-02T09:00:00+09:00",
-        "collected_at": "2026-06-14T03:11:10+09:00",
-        "metrics": null
-      },
-      {
-        "id": "788d15c95be5679c3ac7578eb131f81f805306b4",
-        "title": "ChatGPT for iOS",
-        "url": "https://developers.openai.com/codex/changelog#codex-2026-06-02-mobile",
-        "source": "openai_codex",
-        "category": "codex",
-        "summary_ko": "ChatGPT iOS 앱 관련 변경(체인지로그 항목).",
-        "raw_summary": "ChatGPT for iOS",
-        "lang": "en",
-        "published_at": "2026-06-02T09:00:00+09:00",
-        "collected_at": "2026-06-14T03:11:10+09:00",
-        "metrics": null
-      },
-      {
-        "id": "90ea133bd278bab2d6a9088ab3705f679528a0d5",
-        "title": "Use Codex with Amazon Bedrock",
-        "url": "https://developers.openai.com/codex/changelog#codex-2026-06-01",
-        "source": "openai_codex",
-        "category": "codex",
-        "summary_ko": "Amazon Bedrock과 함께 Codex를 사용하는 방법.",
-        "raw_summary": "Use Codex with Amazon Bedrock",
-        "lang": "en",
-        "published_at": "2026-06-01T09:00:00+09:00",
-        "collected_at": "2026-06-14T03:11:10+09:00",
-        "metrics": null
-      }
-    ],
+    "github_trending": [],
+    "codex": [],
     "eng_blogs": []
   },
   "hot_topics": [
     {
-      "topic": "addyosmani/agent-skills",
-      "trend_score": 0.6,
-      "src_count": 2,
+      "topic": "TCS and Anthropic partner to bring Claude to regulated industries",
+      "trend_score": 0.0,
+      "src_count": 1,
       "hn": null,
       "items": [
         {
-          "id": "2e74d0228d63bddb2160d88b164fe5cb75af4408",
-          "title": "addyosmani/agent-skills",
-          "url": "https://github.com/addyosmani/agent-skills",
-          "source": "github_trending",
-          "category": "github_trending",
-          "summary_ko": "AI 코딩 에이전트용 프로덕션급 엔지니어링 스킬 모음 — 개발 전 단계의 워크플로·품질 게이트·모범사례를 패키지화했다.",
-          "raw_summary": "Production-grade engineering skills for AI coding agents. Agent Skills Production-grade engineering skills for AI coding agents. Skills encode the workflows, quality gates, and best practices that senior engineers use when building software. These ones are packaged so AI agents follow them consistently across every phase of development. DEFINE PLAN BUILD VERIFY REVIEW SHIP ┌──────┐ ┌──────┐ ┌──────┐ ┌──────┐ ┌──────┐ ┌──────┐ │ Idea │ ───▶ │ Spec │ ───▶ │ Code │ ───▶ │ Test │ ───▶ │ QA │ ───▶ │ Go │ │Refine│ │ PRD │ │ Impl │ │Debug │ │ Gate │ │ Live │ └──────┘ └──────┘ └──────┘ └──────┘ └─────",
+          "id": "f2851367423f7fb3c4f26f839f5fd2c6fc889552",
+          "title": "TCS and Anthropic partner to bring Claude to regulated industries",
+          "url": "https://anthropic.com/news/tcs-anthropic-partnership",
+          "source": "anthropic",
+          "category": "ai_labs",
+          "summary_ko": "TCS와 Anthropic이 파트너십을 체결해 금융·의료 등 규제 산업에 Claude AI를 도입하기 위해 협력한다.",
+          "raw_summary": "TCS and Anthropic partner to bring Claude to regulated industries",
           "lang": "en",
-          "published_at": null,
-          "collected_at": "2026-06-14T03:11:10+09:00",
+          "published_at": "2026-06-12T09:00:00+09:00",
+          "collected_at": "2026-06-14T07:08:37+09:00",
           "metrics": null
         },
         {
-          "id": "179823dab98fe272eed5fe4bc84bb08a2d239a7c",
-          "title": "Agent skills in Codex",
-          "url": "https://developers.openai.com/codex/changelog#codex-2025-12-19",
-          "source": "openai_codex",
-          "category": "codex",
+          "id": "ab9a4b0c55461cba781e40fddde6d45aebe693ec",
+          "title": "Anthropic and Salesforce expand partnership to bring Claude to regulated industries",
+          "url": "https://anthropic.com/news/salesforce-anthropic-expanded-partnership",
+          "source": "anthropic",
+          "category": "ai_labs",
           "summary_ko": "",
-          "raw_summary": "Agent skills in Codex",
+          "raw_summary": "Anthropic and Salesforce expand partnership to bring Claude to regulated industries",
           "lang": "en",
-          "published_at": "2025-12-19T09:00:00+09:00",
-          "collected_at": "2026-06-14T03:11:10+09:00",
+          "published_at": "2025-10-14T09:00:00+09:00",
+          "collected_at": "2026-06-14T07:08:37+09:00",
           "metrics": null
         }
       ]
     },
     {
-      "topic": "Open source AI must win",
-      "trend_score": 0.4,
+      "topic": "Results from the first Anthropic Public Record",
+      "trend_score": 0.0,
       "src_count": 1,
-      "hn": {
-        "points": 1409,
-        "comments": 431
-      },
+      "hn": null,
       "items": [
         {
-          "id": "e137e59ee936802bf6957ca5d419d3c825bd6474",
-          "title": "Open source AI must win",
-          "url": "https://opensourceaimustwin.com/?share=v2",
-          "source": "hackernews",
-          "category": "hot_topics",
-          "summary_ko": "",
-          "raw_summary": "",
+          "id": "7ec3169e75a1511e030c77f92b62574b4e0e1e21",
+          "title": "Results from the first Anthropic Public Record",
+          "url": "https://anthropic.com/news/anthropic-public-record",
+          "source": "anthropic",
+          "category": "ai_labs",
+          "summary_ko": "Anthropic이 첫 번째 공개 기록(Public Record)의 결과를 발표했다.",
+          "raw_summary": "Results from the first Anthropic Public Record",
           "lang": "en",
-          "published_at": "2026-06-13T11:14:24+09:00",
-          "collected_at": "2026-06-14T03:11:10+09:00",
-          "metrics": {
-            "points": 1409,
-            "comments": 431
-          }
+          "published_at": "2026-06-12T09:00:00+09:00",
+          "collected_at": "2026-06-14T07:08:37+09:00",
+          "metrics": null
         }
       ]
     },
     {
-      "topic": "Electric motors with no rare earths",
-      "trend_score": 0.3538,
+      "topic": "Statement on the US government directive to suspend access to Fable 5 and Mythos 5",
+      "trend_score": 0.0,
       "src_count": 1,
-      "hn": {
-        "points": 654,
-        "comments": 185
-      },
+      "hn": null,
       "items": [
         {
-          "id": "5fd81676590a4b1f4080ccb812b21393cfd5b09a",
-          "title": "Electric motors with no rare earths",
-          "url": "https://renaultgroup.com/en/magazine/energy-and-powertrains/all-about-electric-motors-with-no-rare-earths",
-          "source": "hackernews",
-          "category": "hot_topics",
-          "summary_ko": "",
-          "raw_summary": "",
+          "id": "00e9d8a44be5ffc84e9f314e700222e9fa0044fe",
+          "title": "Statement on the US government directive to suspend access to Fable 5 and Mythos 5",
+          "url": "https://anthropic.com/news/fable-mythos-access",
+          "source": "anthropic",
+          "category": "ai_labs",
+          "summary_ko": "미국 정부의 Fable 5 및 Mythos 5 접근 중단 지시에 대한 Anthropic의 공식 입장을 담은 성명이다.",
+          "raw_summary": "Statement on the US government directive to suspend access to Fable 5 and Mythos 5",
           "lang": "en",
-          "published_at": "2026-06-13T07:08:03+09:00",
-          "collected_at": "2026-06-14T03:11:10+09:00",
-          "metrics": {
-            "points": 654,
-            "comments": 185
-          }
+          "published_at": "2026-06-12T09:00:00+09:00",
+          "collected_at": "2026-06-14T07:08:37+09:00",
+          "metrics": null
         }
       ]
     },
     {
-      "topic": "Leaving Mozilla",
-      "trend_score": 0.3427,
+      "topic": "DXC will integrate Claude into the systems banks, airlines, and other regulated industries rely on",
+      "trend_score": 0.0,
       "src_count": 1,
-      "hn": {
-        "points": 424,
-        "comments": 249
-      },
+      "hn": null,
       "items": [
         {
-          "id": "527e6a76e452a8acfa8f788c0a874008b40a2e22",
-          "title": "Leaving Mozilla",
-          "url": "https://blog.unitedheroes.net/5751",
-          "source": "hackernews",
-          "category": "hot_topics",
-          "summary_ko": "",
-          "raw_summary": "",
+          "id": "4ef4e47b8069ce277df42d4d429fa1c67b2d999a",
+          "title": "DXC will integrate Claude into the systems banks, airlines, and other regulated industries rely on",
+          "url": "https://anthropic.com/news/dxc-anthropic-alliance",
+          "source": "anthropic",
+          "category": "ai_labs",
+          "summary_ko": "DXC 테크놀로지가 은행·항공사 등 규제 산업의 핵심 시스템에 Claude를 통합할 예정이다.",
+          "raw_summary": "DXC will integrate Claude into the systems banks, airlines, and other regulated industries rely on",
           "lang": "en",
-          "published_at": "2026-06-13T14:57:14+09:00",
-          "collected_at": "2026-06-14T03:11:10+09:00",
-          "metrics": {
-            "points": 424,
-            "comments": 249
-          }
+          "published_at": "2026-06-11T09:00:00+09:00",
+          "collected_at": "2026-06-14T07:08:37+09:00",
+          "metrics": null
         }
       ]
     },
     {
-      "topic": "Malware developers added nuclear and biological weapons text to to their spyware",
-      "trend_score": 0.3423,
+      "topic": "Introducing Claude Corps",
+      "trend_score": 0.0,
       "src_count": 1,
-      "hn": {
-        "points": 437,
-        "comments": 229
-      },
+      "hn": null,
       "items": [
         {
-          "id": "9c287eeda21b87be5190478b2032a87f9d117d1d",
-          "title": "Malware developers added nuclear and biological weapons text to to their spyware",
-          "url": "https://twitter.com/jsrailton/status/2064661778978533571",
-          "source": "hackernews",
-          "category": "hot_topics",
-          "summary_ko": "",
-          "raw_summary": "",
+          "id": "7ba3d7901a3a6daa893e567970dc3d1b87388564",
+          "title": "Introducing Claude Corps",
+          "url": "https://anthropic.com/news/claude-corps",
+          "source": "anthropic",
+          "category": "ai_labs",
+          "summary_ko": "Anthropic이 Claude Corps를 공개했다.",
+          "raw_summary": "Introducing Claude Corps",
           "lang": "en",
-          "published_at": "2026-06-12T05:24:18+09:00",
-          "collected_at": "2026-06-14T03:11:10+09:00",
-          "metrics": {
-            "points": 437,
-            "comments": 229
-          }
+          "published_at": "2026-06-11T09:00:00+09:00",
+          "collected_at": "2026-06-14T07:08:37+09:00",
+          "metrics": null
+        },
+        {
+          "id": "87d9e4cd04cc2e79d6e6f2e3baf318968c119da9",
+          "title": "Introducing Claude Opus 4.8",
+          "url": "https://anthropic.com/news/claude-opus-4-8",
+          "source": "anthropic",
+          "category": "ai_labs",
+          "summary_ko": "",
+          "raw_summary": "Introducing Claude Opus 4.8",
+          "lang": "en",
+          "published_at": "2026-05-28T09:00:00+09:00",
+          "collected_at": "2026-06-14T07:08:37+09:00",
+          "metrics": null
+        },
+        {
+          "id": "ce2be96bdc924b5f2b556d0616e6d6e3dd630678",
+          "title": "Introducing Claude Opus 4.7",
+          "url": "https://anthropic.com/news/claude-opus-4-7",
+          "source": "anthropic",
+          "category": "ai_labs",
+          "summary_ko": "",
+          "raw_summary": "Introducing Claude Opus 4.7",
+          "lang": "en",
+          "published_at": "2026-04-16T09:00:00+09:00",
+          "collected_at": "2026-06-14T07:08:37+09:00",
+          "metrics": null
+        },
+        {
+          "id": "ab45c3f15e8dea1b7cb1e6399d182c6068cd3a4a",
+          "title": "Introducing Claude Opus 4.6",
+          "url": "https://anthropic.com/news/claude-opus-4-6",
+          "source": "anthropic",
+          "category": "ai_labs",
+          "summary_ko": "",
+          "raw_summary": "Introducing Claude Opus 4.6",
+          "lang": "en",
+          "published_at": "2026-02-05T09:00:00+09:00",
+          "collected_at": "2026-06-14T07:08:37+09:00",
+          "metrics": null
+        },
+        {
+          "id": "5281f56635298d436a3229caa2989ceeaf33832c",
+          "title": "Introducing Claude Opus 4.5",
+          "url": "https://anthropic.com/news/claude-opus-4-5",
+          "source": "anthropic",
+          "category": "ai_labs",
+          "summary_ko": "",
+          "raw_summary": "Introducing Claude Opus 4.5",
+          "lang": "en",
+          "published_at": "2025-11-24T09:00:00+09:00",
+          "collected_at": "2026-06-14T07:08:37+09:00",
+          "metrics": null
+        },
+        {
+          "id": "8584cd574bae70daa47c04bc19d7a1fb3dca753e",
+          "title": "Claude Opus 4.1",
+          "url": "https://anthropic.com/news/claude-opus-4-1",
+          "source": "anthropic",
+          "category": "ai_labs",
+          "summary_ko": "",
+          "raw_summary": "Claude Opus 4.1",
+          "lang": "en",
+          "published_at": "2025-08-05T09:00:00+09:00",
+          "collected_at": "2026-06-14T07:08:37+09:00",
+          "metrics": null
+        },
+        {
+          "id": "dab3c16174ed3fcc590b0e17f197c1e87f950541",
+          "title": "Introducing Claude 4",
+          "url": "https://anthropic.com/news/claude-4",
+          "source": "anthropic",
+          "category": "ai_labs",
+          "summary_ko": "",
+          "raw_summary": "Introducing Claude 4",
+          "lang": "en",
+          "published_at": "2025-05-22T09:00:00+09:00",
+          "collected_at": "2026-06-14T07:08:37+09:00",
+          "metrics": null
+        },
+        {
+          "id": "0ffeefdcf1ba874e37970cc60f64d73a810330a3",
+          "title": "Introducing Claude 2.1",
+          "url": "https://anthropic.com/news/claude-2-1",
+          "source": "anthropic",
+          "category": "ai_labs",
+          "summary_ko": "",
+          "raw_summary": "Introducing Claude 2.1",
+          "lang": "en",
+          "published_at": "2023-11-21T09:00:00+09:00",
+          "collected_at": "2026-06-14T07:08:37+09:00",
+          "metrics": null
+        },
+        {
+          "id": "2acff47cc6a9a50f5803f6b034b013b5943eea2e",
+          "title": "Introducing Claude",
+          "url": "https://anthropic.com/news/introducing-claude",
+          "source": "anthropic",
+          "category": "ai_labs",
+          "summary_ko": "",
+          "raw_summary": "Introducing Claude",
+          "lang": "en",
+          "published_at": "2023-03-14T09:00:00+09:00",
+          "collected_at": "2026-06-14T07:08:37+09:00",
+          "metrics": null
         }
       ]
     },
     {
-      "topic": "US bans differential privacy in Census data",
-      "trend_score": 0.3319,
+      "topic": "Claude Fable 5 and Claude Mythos 5",
+      "trend_score": 0.0,
       "src_count": 1,
-      "hn": {
-        "points": 387,
-        "comments": 171
-      },
+      "hn": null,
       "items": [
         {
-          "id": "5dd82fcec89e6bccb8e41c4b3b3c593ba4139401",
-          "title": "US bans differential privacy in Census data",
-          "url": "https://desfontain.es/blog/banning-noise.html",
-          "source": "hackernews",
-          "category": "hot_topics",
-          "summary_ko": "",
-          "raw_summary": "",
+          "id": "d2f8f42724e381e1a27ff9e3f79a2cd697c01fce",
+          "title": "Claude Fable 5 and Claude Mythos 5",
+          "url": "https://anthropic.com/news/claude-fable-5-mythos-5",
+          "source": "anthropic",
+          "category": "ai_labs",
+          "summary_ko": "Anthropic이 Claude Fable 5와 Claude Mythos 5 신규 모델을 발표했다.",
+          "raw_summary": "Claude Fable 5 and Claude Mythos 5",
           "lang": "en",
-          "published_at": "2026-06-13T22:54:56+09:00",
-          "collected_at": "2026-06-14T03:11:10+09:00",
-          "metrics": {
-            "points": 387,
-            "comments": 171
-          }
+          "published_at": "2026-06-09T09:00:00+09:00",
+          "collected_at": "2026-06-14T07:08:37+09:00",
+          "metrics": null
         }
       ]
     },
     {
-      "topic": "How to setup a local coding agent on macOS",
-      "trend_score": 0.33,
+      "topic": "What we learned mapping a year’s worth of AI-enabled cyber threats",
+      "trend_score": 0.0,
       "src_count": 1,
-      "hn": {
-        "points": 455,
-        "comments": 112
-      },
+      "hn": null,
       "items": [
         {
-          "id": "525a5570de9b78d413868efcee4d27f046554db8",
-          "title": "How to setup a local coding agent on macOS",
-          "url": "https://ikyle.me/blog/2026/how-to-setup-a-local-coding-agent-on-macos",
-          "source": "hackernews",
-          "category": "hot_topics",
-          "summary_ko": "",
-          "raw_summary": "",
+          "id": "e37a6b914672903fd143d86793273b569d3d7afb",
+          "title": "What we learned mapping a year’s worth of AI-enabled cyber threats",
+          "url": "https://anthropic.com/news/AI-enabled-cyber-threats-mitre-attack",
+          "source": "anthropic",
+          "category": "ai_labs",
+          "summary_ko": "Anthropic이 1년간 AI를 활용한 사이버 위협을 분석한 결과를 공유했다.",
+          "raw_summary": "What we learned mapping a year’s worth of AI-enabled cyber threats",
           "lang": "en",
-          "published_at": "2026-06-13T02:34:55+09:00",
-          "collected_at": "2026-06-14T03:11:10+09:00",
-          "metrics": {
-            "points": 455,
-            "comments": 112
-          }
+          "published_at": "2026-06-03T09:00:00+09:00",
+          "collected_at": "2026-06-14T07:08:37+09:00",
+          "metrics": null
         }
       ]
     },
     {
-      "topic": "H.R. 6028 would fundamentally change the U.S. Copyright Office",
-      "trend_score": 0.3095,
+      "topic": "Introducing the Services Track and Partner Hub of the Claude Partner Network",
+      "trend_score": 0.0,
       "src_count": 1,
-      "hn": {
-        "points": 268,
-        "comments": 112
-      },
+      "hn": null,
       "items": [
         {
-          "id": "f511cc7d22a8ba853d669b494cf3f278f855c413",
-          "title": "H.R. 6028 would fundamentally change the U.S. Copyright Office",
-          "url": "https://eff.org/deeplinks/2026/06/congress-just-rushed-through-disastrous-copyright-office-overhaul",
-          "source": "hackernews",
-          "category": "hot_topics",
-          "summary_ko": "",
-          "raw_summary": "",
+          "id": "a22a99b79337fd7562708fc7a429d8bc36493145",
+          "title": "Introducing the Services Track and Partner Hub of the Claude Partner Network",
+          "url": "https://anthropic.com/news/services-track-partner-hub",
+          "source": "anthropic",
+          "category": "ai_labs",
+          "summary_ko": "Anthropic이 Claude 파트너 네트워크의 서비스 트랙과 파트너 허브를 새롭게 공개했다.",
+          "raw_summary": "Introducing the Services Track and Partner Hub of the Claude Partner Network",
           "lang": "en",
-          "published_at": "2026-06-11T09:00:42+09:00",
-          "collected_at": "2026-06-14T03:11:10+09:00",
-          "metrics": {
-            "points": 268,
-            "comments": 112
-          }
+          "published_at": "2026-06-03T09:00:00+09:00",
+          "collected_at": "2026-06-14T07:08:37+09:00",
+          "metrics": null
         }
       ]
     },
     {
-      "topic": "Show HN: Putt.day a daily mini golf game",
-      "trend_score": 0.307,
+      "topic": "Expanding Project Glasswing",
+      "trend_score": 0.0,
       "src_count": 1,
-      "hn": {
-        "points": 267,
-        "comments": 99
-      },
+      "hn": null,
       "items": [
         {
-          "id": "b76a6806ea9b1613229301306c6654991f9968e2",
-          "title": "Show HN: Putt.day a daily mini golf game",
-          "url": "https://putt.day/",
-          "source": "hackernews",
-          "category": "hot_topics",
-          "summary_ko": "",
-          "raw_summary": "",
+          "id": "5419be6027617ea106bfcd9abf4870782a368e9d",
+          "title": "Expanding Project Glasswing",
+          "url": "https://anthropic.com/news/expanding-project-glasswing",
+          "source": "anthropic",
+          "category": "ai_labs",
+          "summary_ko": "Anthropic이 Project Glasswing의 확장 계획을 발표했다.",
+          "raw_summary": "Expanding Project Glasswing",
           "lang": "en",
-          "published_at": "2026-06-13T07:56:06+09:00",
-          "collected_at": "2026-06-14T03:11:10+09:00",
-          "metrics": {
-            "points": 267,
-            "comments": 99
-          }
+          "published_at": "2026-06-02T09:00:00+09:00",
+          "collected_at": "2026-06-14T07:08:37+09:00",
+          "metrics": null
         }
       ]
     },
     {
-      "topic": "Arch Linux Now Believes Malware Incident Under Control: More Than 1,500 Packages",
-      "trend_score": 0.3019,
+      "topic": "Anthropic confidentially submits draft S-1 to the SEC",
+      "trend_score": 0.0,
       "src_count": 1,
-      "hn": {
-        "points": 206,
-        "comments": 128
-      },
+      "hn": null,
       "items": [
         {
-          "id": "3344e40c0f182542f76b6040d793c45f27f9336e",
-          "title": "Arch Linux Now Believes Malware Incident Under Control: More Than 1,500 Packages",
-          "url": "https://phoronix.com/news/Arch-Linux-AUR-More-Than-1500",
-          "source": "hackernews",
-          "category": "hot_topics",
-          "summary_ko": "",
-          "raw_summary": "",
+          "id": "4fbee1675965ec4b037a70670d3b53e29d3bbf45",
+          "title": "Anthropic confidentially submits draft S-1 to the SEC",
+          "url": "https://anthropic.com/news/confidential-draft-s1-sec",
+          "source": "anthropic",
+          "category": "ai_labs",
+          "summary_ko": "Anthropic이 기업공개(IPO)를 위한 S-1 초안을 미국 SEC에 비공개로 제출했다.",
+          "raw_summary": "Anthropic confidentially submits draft S-1 to the SEC",
           "lang": "en",
-          "published_at": "2026-06-13T20:55:30+09:00",
-          "collected_at": "2026-06-14T03:11:10+09:00",
-          "metrics": {
-            "points": 206,
-            "comments": 128
-          }
+          "published_at": "2026-06-01T09:00:00+09:00",
+          "collected_at": "2026-06-14T07:08:37+09:00",
+          "metrics": null
         }
       ]
     }
@@ -683,9 +471,9 @@
   "sources": [
     {
       "source": "github_trending",
-      "ok": true,
-      "item_count": 13,
-      "error_type": null,
+      "ok": false,
+      "item_count": 0,
+      "error_type": "HTTPError",
       "feed_built_at": null
     },
     {
@@ -704,9 +492,9 @@
     },
     {
       "source": "deepmind",
-      "ok": true,
-      "item_count": 100,
-      "error_type": null,
+      "ok": false,
+      "item_count": 0,
+      "error_type": "HTTPError",
       "feed_built_at": null
     },
     {
@@ -732,16 +520,16 @@
     },
     {
       "source": "openai_codex",
-      "ok": true,
-      "item_count": 94,
-      "error_type": null,
+      "ok": false,
+      "item_count": 0,
+      "error_type": "HTTPError",
       "feed_built_at": null
     },
     {
       "source": "hackernews",
-      "ok": true,
-      "item_count": 20,
-      "error_type": null,
+      "ok": false,
+      "item_count": 0,
+      "error_type": "HTTPError",
       "feed_built_at": null
     }
   ]
