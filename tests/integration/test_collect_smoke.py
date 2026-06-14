@@ -27,8 +27,14 @@ def _fake_dispatch(source):
     ]
 
 
+def _stub_enrich(monkeypatch):
+    # 본문 fetch는 네트워크를 타므로 테스트에서 비활성화
+    monkeypatch.setattr(collect_mod, "_enrich_article_text", lambda items: None)
+
+
 def test_collect_produces_valid_items(monkeypatch, tmp_path):
     monkeypatch.setattr(collect_mod, "_dispatch", _fake_dispatch)
+    _stub_enrich(monkeypatch)
     snap = collect_mod.collect("2026-06-13", tmp_path)
 
     # 모든 항목이 valid http(s) url 보유 (SC-002)
@@ -55,17 +61,42 @@ def test_collect_produces_valid_items(monkeypatch, tmp_path):
 
 def test_summary_injection(monkeypatch, tmp_path):
     monkeypatch.setattr(collect_mod, "_dispatch", _fake_dispatch)
-    # 먼저 id를 알아내기 위해 1회 수집
-    snap = collect_mod.collect("2026-06-13", tmp_path, dry_run=True)
+    _stub_enrich(monkeypatch)
+    # 1패스: 당일 스냅샷 생성
+    snap = collect_mod.collect("2026-06-13", tmp_path)
     first = next(it for lst in snap["categories"].values() for it in lst)
     sfile = tmp_path / "summaries.json"
     sfile.write_text(json.dumps({first["id"]: "주입된 한글 요약"}), encoding="utf-8")
 
-    snap2 = collect_mod.collect("2026-06-13", tmp_path, dry_run=True, summaries_path=str(sfile))
+    # 2패스: 재수집 없이 주입만
+    collect_mod.inject_summaries(tmp_path, "2026-06-13", str(sfile))
+    latest = json.loads((tmp_path / "latest.json").read_text(encoding="utf-8"))
     injected = [
-        it for lst in snap2["categories"].values() for it in lst if it["id"] == first["id"]
+        it for lst in latest["categories"].values() for it in lst if it["id"] == first["id"]
     ]
     assert injected and injected[0]["summary_ko"] == "주입된 한글 요약"
+
+
+def test_summary_input_written(monkeypatch, tmp_path):
+    monkeypatch.setattr(collect_mod, "_dispatch", _fake_dispatch)
+    _stub_enrich(monkeypatch)
+    collect_mod.collect("2026-06-13", tmp_path)
+    # 요약 입력 파일(gitignore)이 생성되고 id별 항목을 담는다
+    si = json.loads((tmp_path / "summary_input.json").read_text(encoding="utf-8"))
+    assert si
+    sample = next(iter(si.values()))
+    assert set(sample) >= {"title", "url", "source", "raw_summary", "article_text"}
+
+
+def test_committed_snapshot_is_lean(monkeypatch, tmp_path):
+    monkeypatch.setattr(collect_mod, "_dispatch", _fake_dispatch)
+    _stub_enrich(monkeypatch)
+    collect_mod.collect("2026-06-13", tmp_path)
+    latest = json.loads((tmp_path / "latest.json").read_text(encoding="utf-8"))
+    # 커밋 파일에는 무거운 요약 입력 필드가 없어야 함
+    for lst in latest["categories"].values():
+        for it in lst:
+            assert "raw_summary" not in it and "article_text" not in it
 
 
 def test_dry_run_no_secret_output(monkeypatch, capsys, tmp_path):

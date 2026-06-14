@@ -15,6 +15,8 @@ KST = ZoneInfo("Asia/Seoul")
 # HTTP (SEC-04)
 HTTP_TIMEOUT = 15  # connect+read 초
 USER_AGENT = "tech-trends/1.0 (personal dashboard)"
+HTTP_RETRIES = 2  # 실패 시 추가 재시도 횟수(예의 있는 backoff, 우회 아님)
+HTTP_BACKOFF = 1.5  # 재시도 간 대기 배수(초)
 
 # 카테고리 코드 → 표시명 (FR-007, 5탭 고정)
 CATEGORY_NAMES = {
@@ -110,8 +112,9 @@ JACCARD = 0.5  # 토픽 그룹핑 제목 토큰셋 유사도 임계
 PER_CATEGORY = 10  # 카테고리당 표시 항목 상한 (FR-017)
 HOT_TOPICS_MAX = 10  # 핫토픽 상위 N (FR-008)
 TITLE_MAX = 300  # 제목 길이 컷 (SEC-05)
-SUMMARY_MAX = 600  # 한글 요약 길이 컷
-RAW_SUMMARY_MAX = 600  # 요약 입력용 원문 description 컷
+SUMMARY_MAX = 2500  # 한글 상세 요약 길이 컷(번역·정리·전문용어 설명 포함)
+RAW_SUMMARY_MAX = 1000  # 요약 입력용 원문 description 컷
+ARTICLE_TEXT_MAX = 5000  # 요약 입력용 본문 추출 텍스트 컷
 URL_MAX = 2048
 RETENTION_DAYS = 30  # 일자 아카이브 롤링 보관 (FR-018)
 

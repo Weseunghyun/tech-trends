@@ -63,17 +63,21 @@ function hotTopicCard(topic) {
   card.appendChild(row);
 
   if (topic.items && topic.items.length) {
-    var ul = el("ul", "hot-items");
+    // 연관 글: 제목(출처 링크) + 상세 한글 요약을 바로 펼쳐 보여준다
     topic.items.forEach(function (it) {
-      var li = el("li");
-      var a = el("a", null, it.title || it.url);
+      var sub = el("div", "hot-item");
+      var a = el("a", "hot-item-title", it.title || it.url);
       a.href = escapeAttr(it.url);
       a.target = "_blank";
       a.rel = "noopener noreferrer";
-      li.appendChild(a);
-      ul.appendChild(li);
+      sub.appendChild(a);
+      var src = el("span", "hot-item-src", " · " + (it.source || ""));
+      sub.appendChild(src);
+      if (it.summary_ko) {
+        sub.appendChild(el("p", "summary", it.summary_ko));
+      }
+      card.appendChild(sub);
     });
-    card.appendChild(ul);
   }
   return card;
 }

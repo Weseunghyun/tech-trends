@@ -7,6 +7,10 @@ import json
 from scripts import collect as collect_mod
 
 
+def _stub_enrich(monkeypatch):
+    monkeypatch.setattr(collect_mod, "_enrich_article_text", lambda items: None)
+
+
 def _make_dispatch(fail_source: str):
     def _dispatch(source):
         if source["id"] == fail_source:
@@ -21,6 +25,7 @@ def _make_dispatch(fail_source: str):
 
 def test_one_source_failure_isolated(monkeypatch, tmp_path):
     monkeypatch.setattr(collect_mod, "_dispatch", _make_dispatch("hackernews"))
+    _stub_enrich(monkeypatch)
     snap = collect_mod.collect("2026-06-13", tmp_path)
 
     statuses = {s["source"]: s for s in snap["sources"]}
@@ -50,6 +55,7 @@ def test_all_sources_fail_does_not_overwrite(monkeypatch, tmp_path):
 
 def test_exit_code_partial_vs_total_failure(monkeypatch, tmp_path):
     monkeypatch.setattr(collect_mod, "_dispatch", _make_dispatch("hackernews"))
+    _stub_enrich(monkeypatch)
     assert collect_mod.main(["--date", "2026-06-13", "--out", str(tmp_path)]) == 0
 
     def _all_fail(source):
@@ -61,6 +67,7 @@ def test_exit_code_partial_vs_total_failure(monkeypatch, tmp_path):
 
 def test_cross_day_dedup(monkeypatch, tmp_path):
     monkeypatch.setattr(collect_mod, "_dispatch", _make_dispatch("none"))
+    _stub_enrich(monkeypatch)
     # 1일차: 모든 항목 신규
     snap1 = collect_mod.collect("2026-06-13", tmp_path)
     day1_items = [it for lst in snap1["categories"].values() for it in lst]
