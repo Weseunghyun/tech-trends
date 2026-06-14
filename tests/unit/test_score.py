@@ -15,26 +15,34 @@ def _topic(title, sources, points=0, comments=0, items=None):
     }
 
 
-def test_worked_example_r2():
-    # R2: Claude(src3, 420/180) > Rust(src2, 950/240) > DeepMind(src1, 0/0)
+def test_scoring_orders_and_spreads():
+    # 교차출현↑·HN engagement↑ 토픽이 상위; 단일·무HN은 0
     topics = [
-        _topic("Claude Opus tool use", ["anthropic", "hackernews", "github_trending"], 420, 180),
-        _topic("new Rust web framework", ["github_trending", "hackernews"], 950, 240),
-        _topic("DeepMind weather model", ["deepmind"], 0, 0),
+        _topic("Claude tool use", ["anthropic", "hackernews", "github_trending"], 420, 180),
+        _topic("Rust web framework", ["github_trending", "hackernews"], 950, 240),
+        _topic("DeepMind weather", ["deepmind"], 0, 0),
     ]
     result = score_topics(topics)
-
-    assert [r["topic"] for r in result] == [
-        "Claude Opus tool use",
-        "new Rust web framework",
-        "DeepMind weather model",
-    ]
-    assert round(result[0]["trend_score"], 2) == 0.96
-    assert round(result[1]["trend_score"], 2) == 0.70
-    assert round(result[2]["trend_score"], 2) == 0.00
-    # 내림차순
+    assert result[0]["topic"] == "Claude tool use"  # 3소스+HN → 최상위
+    assert result[-1]["topic"] == "DeepMind weather"  # 단일소스·무HN → 최하
+    assert result[0]["trend_score"] == 1.0  # 최댓값 = 1.0로 정규화
+    assert result[-1]["trend_score"] == 0.0
     scores = [r["trend_score"] for r in result]
     assert scores == sorted(scores, reverse=True)
+    # 점수가 서로 달라야 함(변별)
+    assert len(set(scores)) == 3
+
+
+def test_hn_only_topics_differentiate_by_points():
+    # HN 단일 소스라도 포인트가 다르면 점수가 달라야 한다(전부 동일 금지)
+    topics = [
+        _topic("big story", ["hackernews"], 1500, 400),
+        _topic("small story", ["hackernews"], 50, 5),
+    ]
+    result = score_topics(topics)
+    scores = {r["topic"]: r["trend_score"] for r in result}
+    assert scores["big story"] > scores["small story"]
+    assert scores["big story"] != scores["small story"]
 
 
 def test_missing_hn_is_zero_not_fabricated():

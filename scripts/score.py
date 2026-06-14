@@ -9,7 +9,7 @@ from __future__ import annotations
 import math
 import re
 
-from scripts.config import COMMENT_RATIO, HOT_TOPICS_MAX, JACCARD, W_HN, W_SRC
+from scripts.config import COMMENT_RATIO, HOT_TOPICS_MAX, ITEM_BONUS, JACCARD, SRC_BONUS
 from scripts.normalize import normalize_url
 
 _STOP = {
@@ -88,33 +88,29 @@ def _add_to_cluster(c: dict, it: dict, key: frozenset[str], norm: str) -> None:
         c["title"] = it["title"]
 
 
-def _minmax(values: list[float]) -> list[float]:
-    if not values:
-        return []
-    lo, hi = min(values), max(values)
-    if hi - lo < 1e-9:
-        return [0.0 for _ in values]
-    return [(v - lo) / (hi - lo) for v in values]
+def _raw_score(topic: dict) -> float:
+    """절대 raw 점수 — HN engagement + 교차출현 가산 + 항목수 가산(모두 실측)."""
+    hn = math.log1p(topic["hn_points"]) + COMMENT_RATIO * math.log1p(topic["hn_comments"])
+    src = SRC_BONUS * (len(topic["sources"]) - 1)
+    items = ITEM_BONUS * math.log1p(max(0, len(topic["items"]) - 1))
+    return hn + src + items
 
 
 def score_topics(topics: list[dict], top_n: int = HOT_TOPICS_MAX) -> list[dict]:
-    """토픽들에 트렌드 점수를 부여하고 내림차순 상위 top_n HotTopic 반환.
+    """토픽에 트렌드 점수를 매기고 내림차순 상위 top_n HotTopic 반환.
 
-    norm_src_count·norm_hn_engagement(log1p+minmax)의 가중합. 실측만 사용.
+    절대 raw 점수를 그날 최댓값으로 나눠 0~1로 표시한다(연속 분포 → 변별됨).
+    raw가 모두 0(HN 없고 전부 단일 소스)일 때만 점수가 모두 0이 된다.
     """
     if not topics:
         return []
 
-    src_counts = [float(len(t["sources"])) for t in topics]
-    hn_raw = [
-        math.log1p(t["hn_points"]) + COMMENT_RATIO * math.log1p(t["hn_comments"]) for t in topics
-    ]
-    norm_src = _minmax(src_counts)
-    norm_hn = _minmax(hn_raw)
+    raws = [_raw_score(t) for t in topics]
+    hi = max(raws)
 
     scored: list[dict] = []
-    for t, ns, nh in zip(topics, norm_src, norm_hn, strict=True):
-        score = W_SRC * ns + W_HN * nh
+    for t, raw in zip(topics, raws, strict=True):
+        score = (raw / hi) if hi > 1e-9 else 0.0
         hn = None
         if t["hn_points"] or t["hn_comments"]:
             hn = {"points": t["hn_points"], "comments": t["hn_comments"]}

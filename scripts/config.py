@@ -91,6 +91,17 @@ SOURCES = [
         "category": "codex",
         "urls": ["https://developers.openai.com/codex/changelog/rss.xml"],
     },
+    # 엔지니어링/기술 블로그(대기업 eng blog 공식 RSS) — 모두 클라우드/로컬 도달 확인
+    {"id": "cloudflare", "kind": "rss", "category": "eng_blogs",
+     "urls": ["https://blog.cloudflare.com/rss/"]},
+    {"id": "github_blog", "kind": "rss", "category": "eng_blogs",
+     "urls": ["https://github.blog/feed/"]},
+    {"id": "aws", "kind": "rss", "category": "eng_blogs",
+     "urls": ["https://aws.amazon.com/blogs/aws/feed/"]},
+    {"id": "stripe", "kind": "rss", "category": "eng_blogs",
+     "urls": ["https://stripe.com/blog/feed.rss"]},
+    {"id": "meta_eng", "kind": "rss", "category": "eng_blogs",
+     "urls": ["https://engineering.fb.com/feed/"]},
     {
         "id": "hackernews",
         "kind": "hn",
@@ -102,10 +113,12 @@ SOURCES = [
 # 닫힌 소스 식별자 enum (data-model과 일치)
 SOURCE_IDS = [s["id"] for s in SOURCES]
 
-# 트렌드 점수 상수 (research R2) — 실측 수치만 사용, 임의 보정 없음(헌법 III)
-W_SRC = 0.6  # 교차 출현 가중치
-W_HN = 0.4  # HN engagement 가중치
+# 트렌드 점수 상수 — 실측 수치만 사용, 임의 보정 없음(헌법 III)
+# raw_score = hn_engagement + SRC_BONUS*(소스수-1) + ITEM_BONUS*log1p(항목수-1)
+# 이후 그날 최댓값으로 나눠 0~1로 표시(연속 분포 → 점수가 변별됨).
 COMMENT_RATIO = 0.5  # HN 댓글 대 포인트 구조 비율(점수 부스트 아님)
+SRC_BONUS = 3.0  # 교차 출현 1개 추가당 가산(중간 화제의 HN 글 수준)
+ITEM_BONUS = 0.4  # 토픽 내 항목 수 가산(많이 회자될수록)
 JACCARD = 0.5  # 토픽 그룹핑 제목 토큰셋 유사도 임계
 
 # 한계값
