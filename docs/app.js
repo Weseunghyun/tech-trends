@@ -184,4 +184,9 @@ function init() {
     });
 }
 
-document.addEventListener("DOMContentLoaded", init);
+// 동적 로드 시 DOMContentLoaded가 이미 지났을 수 있으므로 상태를 확인해 init 호출
+if (document.readyState === "loading") {
+  document.addEventListener("DOMContentLoaded", init);
+} else {
+  init();
+}

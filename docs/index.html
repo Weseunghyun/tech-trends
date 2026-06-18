@@ -3,8 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- 화면 코드(껍데기) 캐시 무효화 — 새로고침 없이 항상 최신 화면 -->
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
   <title>Tech Trends — 오늘의 AI·개발 트렌드</title>
-  <link rel="stylesheet" href="styles.css">
+  <!-- styles/app은 캐시버스팅 쿼리로 매번 새로 받는다 -->
+  <script>
+    (function () {
+      var v = Date.now();
+      document.write('<link rel="stylesheet" href="styles.css?v=' + v + '">');
+      window.__ASSET_V = v;
+    })();
+  </script>
 </head>
 <body>
   <header class="site-header">
@@ -26,6 +36,13 @@
     <span>무료 공개 RSS·API 수집 · 출처 링크 포함 · 매일 KST 08:00경 갱신</span>
   </footer>
 
-  <script src="app.js"></script>
+  <script>
+    // app.js를 캐시버스팅 쿼리로 동적 로드 — 항상 최신 화면 코드
+    (function () {
+      var s = document.createElement('script');
+      s.src = 'app.js?v=' + (window.__ASSET_V || Date.now());
+      document.body.appendChild(s);
+    })();
+  </script>
 </body>
 </html>
