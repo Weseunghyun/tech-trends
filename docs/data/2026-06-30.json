@@ -1,0 +1,520 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-06-30T07:37:49+09:00",
+  "date": "2026-06-30",
+  "categories": {
+    "ai_labs": [
+      {
+        "id": "5b79476b114204dfe57ef8bf97ddea09c2e8f24d",
+        "title": "Mapping Europe’s AI Workforce Opportunity",
+        "url": "https://openai.com/index/mapping-ai-jobs-transition-eu",
+        "source": "openai",
+        "category": "ai_labs",
+        "summary_ko": "",
+        "lang": "en",
+        "published_at": "2026-06-29T16:00:00+09:00",
+        "collected_at": "2026-06-30T07:37:49+09:00",
+        "metrics": null
+      },
+      {
+        "id": "1ae317c00ced77b0a26456fe8c2f1072709cf678",
+        "title": "HP Inc. launches Frontier strategic partnership with OpenAI",
+        "url": "https://openai.com/index/hp-frontier-partnership",
+        "source": "openai",
+        "category": "ai_labs",
+        "summary_ko": "",
+        "lang": "en",
+        "published_at": "2026-06-29T02:00:00+09:00",
+        "collected_at": "2026-06-30T07:37:49+09:00",
+        "metrics": null
+      },
+      {
+        "id": "86bc9e2813795f0f4351782f6918790ecbd83d0e",
+        "title": "From Brain Waves to Words: Brain2Qwerty Offers a New Path to Communication Without Surgery",
+        "url": "https://ai.meta.com/blog/brain2qwerty-brain-ai-human-communication",
+        "source": "meta_ai",
+        "category": "ai_labs",
+        "summary_ko": "",
+        "lang": "en",
+        "published_at": "2026-06-29T09:00:00+09:00",
+        "collected_at": "2026-06-30T07:37:49+09:00",
+        "metrics": null
+      }
+    ],
+    "github_trending": [
+      {
+        "id": "fe4700f2d2f1ec0ff4d04374732baf5573e35eda",
+        "title": "Robbyant/lingbot-map",
+        "url": "https://github.com/Robbyant/lingbot-map",
+        "source": "github_trending",
+        "category": "github_trending",
+        "summary_ko": "",
+        "lang": "en",
+        "published_at": null,
+        "collected_at": "2026-06-30T07:37:49+09:00",
+        "metrics": null
+      },
+      {
+        "id": "f8ff2141343de84c973b22eafd8c32235cac13ac",
+        "title": "cupy/cupy",
+        "url": "https://github.com/cupy/cupy",
+        "source": "github_trending",
+        "category": "github_trending",
+        "summary_ko": "",
+        "lang": "en",
+        "published_at": null,
+        "collected_at": "2026-06-30T07:37:49+09:00",
+        "metrics": null
+      },
+      {
+        "id": "be837dc4cfb8721e70a06bfee24d8ed5dfe11e34",
+        "title": "altic-dev/FluidVoice",
+        "url": "https://github.com/altic-dev/FluidVoice",
+        "source": "github_trending",
+        "category": "github_trending",
+        "summary_ko": "",
+        "lang": "en",
+        "published_at": null,
+        "collected_at": "2026-06-30T07:37:49+09:00",
+        "metrics": null
+      },
+      {
+        "id": "e678d4cec6baabba8eaf66ce448561c31f20693a",
+        "title": "ByteByteGoHq/system-design-101",
+        "url": "https://github.com/ByteByteGoHq/system-design-101",
+        "source": "github_trending",
+        "category": "github_trending",
+        "summary_ko": "",
+        "lang": "en",
+        "published_at": null,
+        "collected_at": "2026-06-30T07:37:49+09:00",
+        "metrics": null
+      },
+      {
+        "id": "9d0f79dbc94561efbd2eb9f3f93268f10295bd1c",
+        "title": "usestrix/strix",
+        "url": "https://github.com/usestrix/strix",
+        "source": "github_trending",
+        "category": "github_trending",
+        "summary_ko": "",
+        "lang": "en",
+        "published_at": null,
+        "collected_at": "2026-06-30T07:37:49+09:00",
+        "metrics": null
+      },
+      {
+        "id": "ac945c3c8745af6d9144e602ed1fbb153936aaa3",
+        "title": "browser-use/video-use",
+        "url": "https://github.com/browser-use/video-use",
+        "source": "github_trending",
+        "category": "github_trending",
+        "summary_ko": "",
+        "lang": "en",
+        "published_at": null,
+        "collected_at": "2026-06-30T07:37:49+09:00",
+        "metrics": null
+      }
+    ],
+    "codex": [],
+    "eng_blogs": [
+      {
+        "id": "e12415de2a8e92e025819a69ef49b8b889df3333",
+        "title": "Highlights from Git 2.55",
+        "url": "https://github.blog/open-source/git/highlights-from-git-2-55",
+        "source": "github_blog",
+        "category": "eng_blogs",
+        "summary_ko": "",
+        "lang": "en",
+        "published_at": "2026-06-30T02:25:25+09:00",
+        "collected_at": "2026-06-30T07:37:49+09:00",
+        "metrics": null
+      },
+      {
+        "id": "64f52f706f766e5ac6628c7a8f15278b44f5ce22",
+        "title": "Inside the Advisory Database and what happens when vulnerability volume breaks records",
+        "url": "https://github.blog/security/supply-chain-security/inside-the-advisory-database-and-what-happens-when-vulnerability-volume-breaks-records",
+        "source": "github_blog",
+        "category": "eng_blogs",
+        "summary_ko": "",
+        "lang": "en",
+        "published_at": "2026-06-30T01:10:20+09:00",
+        "collected_at": "2026-06-30T07:37:49+09:00",
+        "metrics": null
+      },
+      {
+        "id": "642f54856ab6de28a4055baa1803815b5675a37f",
+        "title": "AWS Weekly Roundup, Agentic CX designer for Amazon Connect Customer, EC2 AMI Watermarks, Open Governance for MySQL, and more (June 29, 2026)",
+        "url": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-agentic-cx-designer-for-amazon-connect-customer-ec2-ami-watermarks-open-governance-for-mysql-and-more-june-29-2026",
+        "source": "aws",
+        "category": "eng_blogs",
+        "summary_ko": "",
+        "lang": "en",
+        "published_at": "2026-06-30T01:30:30+09:00",
+        "collected_at": "2026-06-30T07:37:49+09:00",
+        "metrics": null
+      }
+    ]
+  },
+  "hot_topics": [
+    {
+      "topic": "Qwen 3.6 27B is the sweet spot for local development",
+      "trend_score": 1.0,
+      "src_count": 1,
+      "hn": {
+        "points": 499,
+        "comments": 433
+      },
+      "items": [
+        {
+          "id": "279d788d0c635bff09c46c77334e63c2eae3777c",
+          "title": "Qwen 3.6 27B is the sweet spot for local development",
+          "url": "https://quesma.com/blog/qwen-36-is-awesome",
+          "source": "hackernews",
+          "category": "hot_topics",
+          "summary_ko": "",
+          "lang": "en",
+          "published_at": "2026-06-30T02:05:16+09:00",
+          "collected_at": "2026-06-30T07:37:49+09:00",
+          "metrics": {
+            "points": 499,
+            "comments": 433
+          }
+        }
+      ]
+    },
+    {
+      "topic": "US Supreme Court rules geofence warrants require constitutional protections",
+      "trend_score": 0.9131,
+      "src_count": 1,
+      "hn": {
+        "points": 362,
+        "comments": 164
+      },
+      "items": [
+        {
+          "id": "0bc81104b15c7aae524d4f62c2091bf64d8d625f",
+          "title": "US Supreme Court rules geofence warrants require constitutional protections",
+          "url": "https://theguardian.com/us-news/2026/jun/29/supreme-court-geofence-warrants-case-decision",
+          "source": "hackernews",
+          "category": "hot_topics",
+          "summary_ko": "",
+          "lang": "en",
+          "published_at": "2026-06-30T00:54:24+09:00",
+          "collected_at": "2026-06-30T07:37:49+09:00",
+          "metrics": {
+            "points": 362,
+            "comments": 164
+          }
+        }
+      ]
+    },
+    {
+      "topic": "Rocketlab acquires Iridium",
+      "trend_score": 0.9109,
+      "src_count": 1,
+      "hn": {
+        "points": 327,
+        "comments": 193
+      },
+      "items": [
+        {
+          "id": "6fa2a7a62fe559e9b17c37993caa8fa32c6dcfcf",
+          "title": "Rocketlab acquires Iridium",
+          "url": "https://investors.rocketlabcorp.com/news-releases/news-release-details/rocket-lab-acquire-iridium-historic-deal-creating-fully",
+          "source": "hackernews",
+          "category": "hot_topics",
+          "summary_ko": "",
+          "lang": "en",
+          "published_at": "2026-06-29T23:09:24+09:00",
+          "collected_at": "2026-06-30T07:37:49+09:00",
+          "metrics": {
+            "points": 327,
+            "comments": 193
+          }
+        }
+      ]
+    },
+    {
+      "topic": "Samsung, SK Hynix, Micron Sued in US over Memory Price Fixing",
+      "trend_score": 0.8954,
+      "src_count": 1,
+      "hn": {
+        "points": 315,
+        "comments": 156
+      },
+      "items": [
+        {
+          "id": "f94d3c28681b73a4185b59ae87801c63cfed11bc",
+          "title": "Samsung, SK Hynix, Micron Sued in US over Memory Price Fixing",
+          "url": "https://en.sedaily.com/international/2026/06/29/samsung-sk-hynix-micron-sued-in-us-over-memory-price-fixing",
+          "source": "hackernews",
+          "category": "hot_topics",
+          "summary_ko": "",
+          "lang": "en",
+          "published_at": "2026-06-29T20:58:48+09:00",
+          "collected_at": "2026-06-30T07:37:49+09:00",
+          "metrics": {
+            "points": 315,
+            "comments": 156
+          }
+        }
+      ]
+    },
+    {
+      "topic": "Instagram is incorporating users' photos in ads for Meta Glasses",
+      "trend_score": 0.8845,
+      "src_count": 1,
+      "hn": {
+        "points": 307,
+        "comments": 134
+      },
+      "items": [
+        {
+          "id": "44b4736092b9106d2250d9533da41fab884f5a09",
+          "title": "Instagram is incorporating users' photos in ads for Meta Glasses",
+          "url": "https://twitter.com/i/status/2071277885646868536",
+          "source": "hackernews",
+          "category": "hot_topics",
+          "summary_ko": "",
+          "lang": "en",
+          "published_at": "2026-06-29T22:26:35+09:00",
+          "collected_at": "2026-06-30T07:37:49+09:00",
+          "metrics": {
+            "points": 307,
+            "comments": 134
+          }
+        }
+      ]
+    },
+    {
+      "topic": "European ISPs Want Rightsholders Held Accountable for Overblocking Damage",
+      "trend_score": 0.858,
+      "src_count": 1,
+      "hn": {
+        "points": 310,
+        "comments": 80
+      },
+      "items": [
+        {
+          "id": "03eb9940d3f90205b69ea3671fb9b08184625bd2",
+          "title": "European ISPs Want Rightsholders Held Accountable for Overblocking Damage",
+          "url": "https://torrentfreak.com/european-isps-want-rightsholders-held-accountable-for-overblocking-damage",
+          "source": "hackernews",
+          "category": "hot_topics",
+          "summary_ko": "",
+          "lang": "en",
+          "published_at": "2026-06-30T01:07:15+09:00",
+          "collected_at": "2026-06-30T07:37:49+09:00",
+          "metrics": {
+            "points": 310,
+            "comments": 80
+          }
+        }
+      ]
+    },
+    {
+      "topic": "A native graphical shell for SSH",
+      "trend_score": 0.8225,
+      "src_count": 1,
+      "hn": {
+        "points": 208,
+        "comments": 92
+      },
+      "items": [
+        {
+          "id": "574b33a390109af20cffb0eb5135b4515ee8ace8",
+          "title": "A native graphical shell for SSH",
+          "url": "https://probablymarcus.com/blocks/2026/06/28/native-graphical-shell-for-SSH.html",
+          "source": "hackernews",
+          "category": "hot_topics",
+          "summary_ko": "",
+          "lang": "en",
+          "published_at": "2026-06-30T00:42:17+09:00",
+          "collected_at": "2026-06-30T07:37:49+09:00",
+          "metrics": {
+            "points": 208,
+            "comments": 92
+          }
+        }
+      ]
+    },
+    {
+      "topic": ".self: A new top-level domain designed to support self-hosting",
+      "trend_score": 0.8109,
+      "src_count": 1,
+      "hn": {
+        "points": 175,
+        "comments": 105
+      },
+      "items": [
+        {
+          "id": "3a499449f7aed86c8e2793ec6bbd77053a52c8dd",
+          "title": ".self: A new top-level domain designed to support self-hosting",
+          "url": "https://hccf.onmy.cloud/2026/06/21/reclaiming-our-digital-selves-hccfs-vision-for-a-human-centered-top-level-domain",
+          "source": "hackernews",
+          "category": "hot_topics",
+          "summary_ko": "",
+          "lang": "en",
+          "published_at": "2026-06-30T04:49:28+09:00",
+          "collected_at": "2026-06-30T07:37:49+09:00",
+          "metrics": {
+            "points": 175,
+            "comments": 105
+          }
+        }
+      ]
+    },
+    {
+      "topic": "Halvar's Guide to Entrepreneurship",
+      "trend_score": 0.774,
+      "src_count": 1,
+      "hn": {
+        "points": 191,
+        "comments": 44
+      },
+      "items": [
+        {
+          "id": "cb505be4bf7adcbf6f7c9823f9ec18fe4a510e1e",
+          "title": "Halvar's Guide to Entrepreneurship",
+          "url": "https://thomasdullien.github.io/guides/entrepreneurship",
+          "source": "hackernews",
+          "category": "hot_topics",
+          "summary_ko": "",
+          "lang": "en",
+          "published_at": "2026-06-26T00:28:24+09:00",
+          "collected_at": "2026-06-30T07:37:49+09:00",
+          "metrics": {
+            "points": 191,
+            "comments": 44
+          }
+        }
+      ]
+    },
+    {
+      "topic": "30-year sentence for transporting zines is a five-alarm fire for free speech",
+      "trend_score": 0.7399,
+      "src_count": 1,
+      "hn": {
+        "points": 139,
+        "comments": 44
+      },
+      "items": [
+        {
+          "id": "1dbf4d00ece16198152bd081b352659156a6574f",
+          "title": "30-year sentence for transporting zines is a five-alarm fire for free speech",
+          "url": "https://theintercept.com/2026/06/26/daniel-sanchez-estrada-zines-prairieland-free-speech",
+          "source": "hackernews",
+          "category": "hot_topics",
+          "summary_ko": "",
+          "lang": "en",
+          "published_at": "2026-06-29T06:42:39+09:00",
+          "collected_at": "2026-06-30T07:37:49+09:00",
+          "metrics": {
+            "points": 139,
+            "comments": 44
+          }
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "source": "github_trending",
+      "ok": true,
+      "item_count": 13,
+      "error_type": null,
+      "feed_built_at": null
+    },
+    {
+      "source": "anthropic",
+      "ok": true,
+      "item_count": 231,
+      "error_type": null,
+      "feed_built_at": null
+    },
+    {
+      "source": "openai",
+      "ok": true,
+      "item_count": 1039,
+      "error_type": null,
+      "feed_built_at": null
+    },
+    {
+      "source": "deepmind",
+      "ok": true,
+      "item_count": 100,
+      "error_type": null,
+      "feed_built_at": null
+    },
+    {
+      "source": "meta_ai",
+      "ok": true,
+      "item_count": 88,
+      "error_type": null,
+      "feed_built_at": null
+    },
+    {
+      "source": "mistral",
+      "ok": true,
+      "item_count": 54,
+      "error_type": null,
+      "feed_built_at": null
+    },
+    {
+      "source": "xai",
+      "ok": true,
+      "item_count": 39,
+      "error_type": null,
+      "feed_built_at": null
+    },
+    {
+      "source": "openai_codex",
+      "ok": true,
+      "item_count": 86,
+      "error_type": null,
+      "feed_built_at": null
+    },
+    {
+      "source": "cloudflare",
+      "ok": true,
+      "item_count": 20,
+      "error_type": null,
+      "feed_built_at": null
+    },
+    {
+      "source": "github_blog",
+      "ok": true,
+      "item_count": 10,
+      "error_type": null,
+      "feed_built_at": null
+    },
+    {
+      "source": "aws",
+      "ok": true,
+      "item_count": 20,
+      "error_type": null,
+      "feed_built_at": null
+    },
+    {
+      "source": "stripe",
+      "ok": true,
+      "item_count": 10,
+      "error_type": null,
+      "feed_built_at": null
+    },
+    {
+      "source": "meta_eng",
+      "ok": true,
+      "item_count": 9,
+      "error_type": null,
+      "feed_built_at": null
+    },
+    {
+      "source": "hackernews",
+      "ok": true,
+      "item_count": 20,
+      "error_type": null,
+      "feed_built_at": null
+    }
+  ]
+}
