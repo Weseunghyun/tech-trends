@@ -1,0 +1,17 @@
+id: F-a731e7b0
+slug: daily-schedule-deploy
+title: "일일 스케줄 실행·GitHub Pages 배포"
+status: in_progress
+modules:
+  - .github/daily.yml.example
+acceptance_criteria:
+  - id: AC-25ab49b0
+    ears: ubiquitous
+    text: "A daily local scheduled task (tt-daily-local, 07:36 KST) shall run collection, agent summarization, and git push of docs/data updates."
+  - id: AC-86438f2f
+    ears: ubiquitous
+    text: "The public dashboard shall be served from the repo docs/ directory via GitHub Pages without keys, login, or CORS configuration."
+  - id: AC-400e6cad
+    ears: optional
+    condition: "Where the local routine is unavailable"
+    text: "A GitHub Actions cron fallback (daily.yml.example, minimal contents:write permission) may run collection without agent summaries."

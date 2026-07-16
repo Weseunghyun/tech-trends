@@ -1,0 +1,24 @@
+id: F-3f2a684f
+slug: static-dashboard
+title: "정적 트렌드 대시보드 (탭·히스토리 페이징)"
+status: in_progress
+modules:
+  - docs/index.html
+  - docs/app.js
+  - docs/styles.css
+acceptance_criteria:
+  - id: AC-f9ae2ca0
+    ears: ubiquitous
+    text: "The dashboard shall fetch data only from the same origin (data/*.json) with zero external CDN/origin requests."
+    test_refs: ["tests/integration/test_collect_smoke.py"]
+  - id: AC-813e1d73
+    ears: ubiquitous
+    text: "The dashboard shall render 5 tabs (hot topics + 4 categories) with per-tab item counts and open item links in a new tab with rel=noopener."
+  - id: AC-fa52bde7
+    ears: event
+    condition: "When the user navigates dates"
+    text: "The dashboard shall page through the index.json date manifest (newest first) and load the selected day's snapshot."
+  - id: AC-5c298852
+    ears: unwanted
+    condition: "If index.json cannot be loaded"
+    text: "The dashboard shall fall back to latest.json, and show a readable error message if that also fails."

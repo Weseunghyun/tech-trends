@@ -1,0 +1,42 @@
+id: F-e61d612e
+slug: daily-collect-pipeline
+title: "일일 수집 파이프라인 (수집→정규화→중복제거→스코어링→렌더)"
+status: in_progress
+modules:
+  - scripts/collect.py
+  - scripts/normalize.py
+  - scripts/dedup.py
+  - scripts/score.py
+  - scripts/render.py
+  - scripts/http.py
+  - scripts/config.py
+  - scripts/sources/rss.py
+  - scripts/sources/hackernews.py
+acceptance_criteria:
+  - id: AC-c8a8f96b
+    ears: ubiquitous
+    text: "The system shall collect configured free RSS/API sources (GitHub Trending, AI lab blogs, Codex changelog, Hacker News) without any API key or login."
+    test_refs: ["tests/integration/test_collect_smoke.py"]
+  - id: AC-03b62866
+    ears: unwanted
+    condition: "If a single source fails during collection"
+    text: "The system shall continue collecting the remaining sources and record the failure as sources[].ok=false in the snapshot."
+    test_refs: ["tests/integration/test_failure_isolation.py"]
+  - id: AC-814e2747
+    ears: unwanted
+    condition: "If all sources fail"
+    text: "The system shall not overwrite the previous day's data and shall exit with a distinct non-zero exit code."
+    test_refs: ["tests/integration/test_failure_isolation.py"]
+  - id: AC-eb5b9919
+    ears: ubiquitous
+    text: "The system shall normalize URLs (https 강제·추적 파라미터 제거) and deduplicate items against the seen_urls ledger, pruning entries older than 30 days."
+    test_refs: ["tests/unit/test_dedup.py"]
+  - id: AC-97c01912
+    ears: ubiquitous
+    text: "The system shall compute hot-topic trend scores from HN points/comments and cross-source occurrence without fabricating missing metrics."
+    test_refs: ["tests/unit/test_score.py"]
+  - id: AC-92138d24
+    ears: event
+    condition: "When a daily collection run completes"
+    text: "The system shall write the dated JSON snapshot and refresh latest.json and index.json pointers."
+    test_refs: ["tests/integration/test_collect_smoke.py"]

@@ -1,0 +1,23 @@
+id: F-6dc57f2a
+slug: korean-article-summaries
+title: "본문 기반 한국어 상세 요약 파이프라인"
+status: in_progress
+depends_on:
+  - F-e61d612e
+modules:
+  - scripts/fetch_article.py
+  - scripts/collect.py
+acceptance_criteria:
+  - id: AC-0e9dc0f6
+    ears: event
+    condition: "When a feed provides only a title or a short raw summary"
+    text: "The system shall fetch the article body and persist it to docs/data/summary_input.json (gitignored) for the agent summarizer."
+    test_refs: ["tests/integration/test_collect_smoke.py"]
+  - id: AC-3df27e00
+    ears: ubiquitous
+    text: "The system shall inject agent-authored Korean summaries via `collect --summaries` without re-collecting sources."
+    test_refs: ["tests/integration/test_collect_smoke.py"]
+  - id: AC-3db63b30
+    ears: ubiquitous
+    text: "The committed snapshot shall exclude heavy fields (raw_summary, article_text) so only lean public data is published."
+    test_refs: ["tests/integration/test_collect_smoke.py"]
