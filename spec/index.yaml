@@ -1,0 +1,8 @@
+# Cladding · Tier C — generated feature index (`clad sync`). Do not edit by hand.
+# One line per feature → 1-file lookup + line-independent merges
+# (suggested .gitattributes: `spec/index.yaml merge=union`).
+features:
+  F-3f2a684f: {slug: static-dashboard, status: in_progress, modules: 3}
+  F-6dc57f2a: {slug: korean-article-summaries, status: in_progress, modules: 2}
+  F-a731e7b0: {slug: daily-schedule-deploy, status: in_progress, modules: 1}
+  F-e61d612e: {slug: daily-collect-pipeline, status: in_progress, modules: 9}

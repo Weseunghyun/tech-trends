@@ -17,7 +17,7 @@ features: []
 
 # Auto-maintained by `clad sync` (F-5b9f9f). Do not edit by hand.
 inventory:
-  features: 0
+  features: 4
   scenarios: 0
   capabilities: 8
   test_files: 0
