@@ -23,3 +23,6 @@ docs/data/summary_input.json
 
 # Cladding runtime state
 .cladding/
+
+# 파이프라인 내부 상태(dedup 원장 등) — 공개 배포 제외, 매 실행 diff가 커서 커밋 부적합
+state/

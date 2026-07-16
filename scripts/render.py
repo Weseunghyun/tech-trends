@@ -1,21 +1,32 @@
-"""산출물 작성 — 스냅샷 JSON·포인터(latest/index) 갱신·30일 prune (data-model / R5·R7).
+"""산출물 작성 — 스냅샷 JSON·포인터(latest/index) 갱신 (data-model / R5·R7).
 
-한국어 보존을 위해 ensure_ascii=False. 대시보드는 latest.json만 읽는다(동일 출처).
+한국어 보존을 위해 ensure_ascii=False. 모든 쓰기는 원자적(tmp + os.replace) —
+중단 시 잘린 JSON이 커밋되는 것을 방지한다(감사 F-04).
+
+일자 아카이브는 영구 보관한다(2026-07-16 결정): 파일이 하루 15~43KB로 연 ~12MB 수준이라
+GitHub Pages에 부담이 없고, "지난 트렌드 다시 둘러보기" 용도에 30일 삭제가 정면으로
+반한다. 30일 만료는 dedup 원장(last-seen)에만 적용된다.
 """
 
 from __future__ import annotations
 
 import json
-from datetime import date, timedelta
+import os
 from pathlib import Path
 
-from scripts.config import RETENTION_DAYS, SCHEMA_VERSION
+from scripts.config import SCHEMA_VERSION
 
 _DATE_GLOB = "20*-*.json"
 
 
+def _write_text_atomic(path: Path, text: str) -> None:
+    tmp = path.with_name(path.name + ".tmp")
+    tmp.write_text(text, encoding="utf-8")
+    os.replace(tmp, path)
+
+
 def _write_json(path: Path, obj: object) -> None:
-    path.write_text(json.dumps(obj, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    _write_text_atomic(path, json.dumps(obj, ensure_ascii=False, indent=2) + "\n")
 
 
 def build_snapshot(
@@ -47,23 +58,7 @@ def write_snapshot(snapshot: dict, out: Path) -> Path:
 
 def refresh_pointers(out: Path, day_file: Path, generated_at: str) -> None:
     """latest.json(당일 복사본)·index.json(매니페스트) 갱신."""
-    latest = out / "latest.json"
-    latest.write_text(day_file.read_text(encoding="utf-8"), encoding="utf-8")
+    _write_text_atomic(out / "latest.json", day_file.read_text(encoding="utf-8"))
 
     dates = sorted(p.stem for p in out.glob(_DATE_GLOB))
     _write_json(out / "index.json", {"dates": dates, "generated_at": generated_at})
-
-
-def prune_files(out: Path, today: date, days: int = RETENTION_DAYS) -> list[str]:
-    """days(기본 30)를 초과한 일자 파일 삭제. 삭제된 일자 목록 반환."""
-    keep_from = today - timedelta(days=days - 1)  # today 포함 days개
-    removed: list[str] = []
-    for f in out.glob(_DATE_GLOB):
-        try:
-            d = date.fromisoformat(f.stem)
-        except ValueError:
-            continue
-        if d < keep_from:
-            f.unlink()
-            removed.append(f.stem)
-    return removed

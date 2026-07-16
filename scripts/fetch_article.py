@@ -11,7 +11,7 @@ from __future__ import annotations
 import html
 import re
 
-from scripts.config import ARTICLE_TEXT_MAX
+from scripts.config import ARTICLE_MAX_BYTES, ARTICLE_TEXT_MAX
 from scripts.http import get_bytes
 
 _SCRIPT_STYLE = re.compile(r"<(script|style|noscript|svg|template)\b[^>]*>.*?</\1>", re.I | re.S)
@@ -45,7 +45,8 @@ def _body_text(html_text: str) -> str:
 def fetch_article_text(url: str) -> str:
     """기사 URL의 메타 설명 + 본문 텍스트를 합쳐 반환(컷). 실패/비HTML은 ""."""
     try:
-        raw = get_bytes(url)
+        # 임의 외부 URL — 크기 상한을 더 엄격하게(SSRF·크기 통제는 http 계층이 담당)
+        raw = get_bytes(url, max_bytes=ARTICLE_MAX_BYTES)
     except Exception:  # noqa: BLE001 — 본문 확보 실패는 격리(요약은 raw_summary로 폴백)
         return ""
     try:

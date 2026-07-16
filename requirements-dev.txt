@@ -1,0 +1,5 @@
+# 개발·검증 도구 — 런타임(requirements.txt)과 분리. 전부 정확 버전 핀(SEC-08).
+pytest==9.0.3
+ruff==0.15.17
+bandit==1.9.4
+pip-audit==2.10.1

@@ -1,15 +1,20 @@
 """US1 통합 스모크 — 수집 파이프라인이 검증된 항목·출처 링크·카테고리 컷을 산출하는지.
 
 네트워크 비의존: _dispatch를 모킹한다. SC-002(출처 링크 100%)·FR-017(카테고리 컷)·
-SC-006(시크릿 미출력) 회귀.
+SC-006(시크릿 미출력) 회귀. 날짜는 하드코딩하지 않는다 — 과거 "2026-06-13" 하드코딩이
+30일 창과 결합해 시한폭탄이 됐던 회귀(감사 R2/R11) 방지.
 """
 
 from __future__ import annotations
 
 import json
+from datetime import datetime
 from pathlib import Path
 
 from scripts import collect as collect_mod
+from scripts.config import KST
+
+TODAY = datetime.now(KST).date().isoformat()
 
 
 def _fake_dispatch(source):
@@ -35,7 +40,7 @@ def _stub_enrich(monkeypatch):
 def test_collect_produces_valid_items(monkeypatch, tmp_path):
     monkeypatch.setattr(collect_mod, "_dispatch", _fake_dispatch)
     _stub_enrich(monkeypatch)
-    snap = collect_mod.collect("2026-06-13", tmp_path)
+    snap = collect_mod.collect(TODAY, tmp_path, state_dir=tmp_path)
 
     # 모든 항목이 valid http(s) url 보유 (SC-002)
     all_items = [it for lst in snap["categories"].values() for it in lst]
@@ -55,7 +60,7 @@ def test_collect_produces_valid_items(monkeypatch, tmp_path):
 
     # latest.json 산출 (FR-005)
     latest = json.loads((tmp_path / "latest.json").read_text(encoding="utf-8"))
-    assert latest["date"] == "2026-06-13"
+    assert latest["date"] == TODAY
     assert (tmp_path / "index.json").exists()
 
 
@@ -63,25 +68,27 @@ def test_summary_injection(monkeypatch, tmp_path):
     monkeypatch.setattr(collect_mod, "_dispatch", _fake_dispatch)
     _stub_enrich(monkeypatch)
     # 1패스: 당일 스냅샷 생성
-    snap = collect_mod.collect("2026-06-13", tmp_path)
+    snap = collect_mod.collect(TODAY, tmp_path, state_dir=tmp_path)
+    assert snap["summaries_injected"] is False
     first = next(it for lst in snap["categories"].values() for it in lst)
     sfile = tmp_path / "summaries.json"
     sfile.write_text(json.dumps({first["id"]: "주입된 한글 요약"}), encoding="utf-8")
 
     # 2패스: 재수집 없이 주입만
-    collect_mod.inject_summaries(tmp_path, "2026-06-13", str(sfile))
+    collect_mod.inject_summaries(tmp_path, TODAY, str(sfile))
     latest = json.loads((tmp_path / "latest.json").read_text(encoding="utf-8"))
     injected = [
         it for lst in latest["categories"].values() for it in lst if it["id"] == first["id"]
     ]
     assert injected and injected[0]["summary_ko"] == "주입된 한글 요약"
+    assert latest["summaries_injected"] is True
 
 
 def test_summary_input_written(monkeypatch, tmp_path):
     monkeypatch.setattr(collect_mod, "_dispatch", _fake_dispatch)
     _stub_enrich(monkeypatch)
-    collect_mod.collect("2026-06-13", tmp_path)
-    # 요약 입력 파일(gitignore)이 생성되고 id별 항목을 담는다
+    collect_mod.collect(TODAY, tmp_path, state_dir=tmp_path)
+    # 요약 입력 파일(gitignore)이 생성되고 id별 항목을 담는다 — 스케줄 루틴이 의존하는 계약
     si = json.loads((tmp_path / "summary_input.json").read_text(encoding="utf-8"))
     assert si
     sample = next(iter(si.values()))
@@ -91,7 +98,7 @@ def test_summary_input_written(monkeypatch, tmp_path):
 def test_committed_snapshot_is_lean(monkeypatch, tmp_path):
     monkeypatch.setattr(collect_mod, "_dispatch", _fake_dispatch)
     _stub_enrich(monkeypatch)
-    collect_mod.collect("2026-06-13", tmp_path)
+    collect_mod.collect(TODAY, tmp_path, state_dir=tmp_path)
     latest = json.loads((tmp_path / "latest.json").read_text(encoding="utf-8"))
     # 커밋 파일에는 무거운 요약 입력 필드가 없어야 함
     for lst in latest["categories"].values():
@@ -101,7 +108,7 @@ def test_committed_snapshot_is_lean(monkeypatch, tmp_path):
 
 def test_dry_run_no_secret_output(monkeypatch, capsys, tmp_path):
     monkeypatch.setattr(collect_mod, "_dispatch", _fake_dispatch)
-    collect_mod.collect("2026-06-13", tmp_path / "nowrite", dry_run=True)
+    collect_mod.collect(TODAY, tmp_path / "nowrite", state_dir=tmp_path, dry_run=True)
     out = capsys.readouterr()
     combined = out.out + out.err
     # 토큰/키스러운 패턴이 출력에 없어야 함 (SEC-01)
@@ -110,7 +117,8 @@ def test_dry_run_no_secret_output(monkeypatch, capsys, tmp_path):
 
 
 def test_dashboard_has_no_external_cdn():
-    html = Path("docs/index.html").read_text(encoding="utf-8")
+    repo = Path(__file__).resolve().parents[2]
+    html = (repo / "docs" / "index.html").read_text(encoding="utf-8")
     # script/link가 외부 절대 URL을 참조하지 않아야 함 (SC-001 외부 CDN 0)
     assert "src=\"http" not in html
     assert "href=\"http" not in html
