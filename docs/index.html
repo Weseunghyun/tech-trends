@@ -3,46 +3,39 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- 화면 코드(껍데기) 캐시 무효화 — 새로고침 없이 항상 최신 화면 -->
-  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
-  <meta http-equiv="Pragma" content="no-cache">
+  <!-- CSP: 동일 출처만 — 외부 리소스·인라인 스크립트·임의 스킴 이중 차단(수집 데이터는 방어적으로 취급) -->
+  <meta http-equiv="Content-Security-Policy"
+        content="default-src 'none'; script-src 'self'; style-src 'self'; connect-src 'self'; img-src 'self' data:; base-uri 'none'; form-action 'none'">
+  <meta name="theme-color" content="#0f1419">
   <title>Tech Trends — 오늘의 AI·개발 트렌드</title>
-  <!-- styles/app은 캐시버스팅 쿼리로 매번 새로 받는다 -->
-  <script>
-    (function () {
-      var v = Date.now();
-      document.write('<link rel="stylesheet" href="styles.css?v=' + v + '">');
-      window.__ASSET_V = v;
-    })();
-  </script>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <!-- 화면 코드는 정적 로드(GitHub Pages max-age=600, 최대 10분 지연 수용) —
+       매일 바뀌는 건 데이터고, 데이터 fetch는 app.js가 신선도를 직접 관리한다 -->
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header class="site-header">
     <h1>Tech Trends</h1>
     <div class="meta" id="meta">
-      <span id="freshness">불러오는 중…</span>
+      <span id="freshness" role="status">불러오는 중…</span>
       <span id="meta-extra"></span>
     </div>
     <div class="datenav" id="datenav"></div>
   </header>
 
-  <nav class="tabs" id="tabs" role="tablist"><!-- 탭은 app.js가 채운다 --></nav>
+  <div class="tabs" id="tabs" role="tablist" aria-label="카테고리"><!-- 탭은 app.js가 채운다 --></div>
 
-  <main id="panels" aria-live="polite">
-    <p class="placeholder" id="placeholder">데이터를 불러오는 중…</p>
+  <main>
+    <div id="panels" role="tabpanel" tabindex="0" aria-label="트렌드 목록">
+      <p class="placeholder" id="placeholder">데이터를 불러오는 중…</p>
+    </div>
   </main>
 
   <footer class="site-footer">
     <span>무료 공개 RSS·API 수집 · 출처 링크 포함 · 매일 KST 08:00경 갱신</span>
   </footer>
 
-  <script>
-    // app.js를 캐시버스팅 쿼리로 동적 로드 — 항상 최신 화면 코드
-    (function () {
-      var s = document.createElement('script');
-      s.src = 'app.js?v=' + (window.__ASSET_V || Date.now());
-      document.body.appendChild(s);
-    })();
-  </script>
+  <noscript><p class="placeholder">이 대시보드는 JavaScript가 필요합니다.</p></noscript>
+  <script src="app.js" defer></script>
 </body>
 </html>
