@@ -1,0 +1,37 @@
+# Cladding · Tier B · SSoT — editable, cross-validated · Refreshed by: clad init --scan (LLM-refined)
+# 실제 파이프라인 단계 기준 능력 인벤토리. features[] 바인딩은 기능 샤드 생성 시 연결한다.
+schema: "0.1"
+source: README.md
+capabilities:
+  - id: collect-sources
+    title: "소스 수집 (RSS·공개 API)"
+    summary: "GitHub Trending RSS, AI 랩 블로그, OpenAI Codex changelog, Hacker News Algolia를 키·로그인 없이 매일 수집한다."
+    surface: feature
+  - id: normalize-dedup
+    title: "정규화·중복 제거"
+    summary: "소스별 항목을 공통 스키마로 정규화하고 seen_urls 기반으로 URL 중복을 제거한다."
+    surface: feature
+  - id: trend-scoring
+    title: "화제도 스코어링"
+    summary: "HN 포인트·댓글과 소스 교차 출현으로 트렌드 점수를 계산해 핫토픽을 뽑는다."
+    surface: feature
+  - id: summarize-korean
+    title: "한국어 요약 생성"
+    summary: "에이전트 LLM이 summary_input을 받아 오늘의 화두를 한국어로 요약한다 (별도 LLM 키 불필요)."
+    surface: feature
+  - id: render-data
+    title: "데이터 산출 (docs/data)"
+    summary: "날짜별 JSON, latest.json, index.json을 렌더링해 대시보드가 소비할 정적 데이터를 만든다."
+    surface: feature
+  - id: dashboard
+    title: "정적 대시보드"
+    summary: "빌드 스텝·외부 CDN 없이 vanilla HTML/JS/CSS로 데이터를 카드·탭 UI로 보여준다."
+    surface: feature
+  - id: github-pages
+    title: "배포 (GitHub Pages)"
+    summary: "공개 repo의 docs/를 GitHub Pages로 서빙해 폰·브라우저 어디서나 접근한다."
+    surface: infrastructure
+  - id: daily-schedule
+    title: "일일 스케줄 루틴"
+    summary: "클라우드 루틴(권장) 또는 GitHub Actions cron 예제로 매일 수집→커밋을 자동화한다."
+    surface: infrastructure

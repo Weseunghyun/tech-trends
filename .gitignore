@@ -20,3 +20,6 @@ node_modules/
 Thumbs.db
 # 요약 입력(에이전트 전용, 영문 본문 — 커밋 안 함)
 docs/data/summary_input.json
+
+# Cladding runtime state
+.cladding/

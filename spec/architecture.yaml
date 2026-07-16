@@ -1,0 +1,8 @@
+# Cladding · Tier B · SSoT — editable, cross-validated · Refreshed by: clad init --scan
+# `forbidden_imports` lists layer pairs the scan never observed in
+# your import graph — they are candidates, not enforced rules.
+# Prune the list to the ones you actually want to forbid before committing.
+layers:
+  - name: scripts
+    modules: ["scripts/**"]
+    forbidden_imports: []

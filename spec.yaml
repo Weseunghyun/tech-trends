@@ -1,0 +1,23 @@
+# Cladding · Tier A · SSoT — Iron Law sealed · Refreshed by: clad_create_feature / manual
+# tech-trends — Cladding spec
+# Features live in spec/features/<slug>-<hash>.yaml — one file per feature.
+# Edit shards there, run `clad sync` to validate, `clad check` to exercise
+# every Iron Law stage. See https://github.com/qwerfunch/ironclad for the standard.
+
+schema: "0.1"
+
+project:
+  name: tech-trends
+  language: python
+  description: "AI·개발 기술 트렌드 일일 대시보드. Python 수집기가 무료 RSS·공개 API를 매일 수집·정규화·중복제거·화제도 스코어링하고, 에이전트 LLM이 한국어 요약을 생성해 docs/data/ JSON으로 저…"
+  version: "0.0.1"
+  intent_summary: "AI·개발 기술 트렌드 일일 대시보드. Python 수집기가 무료 RSS·공개 API를 매일 수집·정규화·중복제거·화제도 스코어링하고, 에이전트 LLM이 한국어 요약을 생성해 docs/data/ JSON으로 저…"
+
+features: []
+
+# Auto-maintained by `clad sync` (F-5b9f9f). Do not edit by hand.
+inventory:
+  features: 0
+  scenarios: 0
+  capabilities: 8
+  test_files: 0
