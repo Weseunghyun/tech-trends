@@ -6,7 +6,8 @@
   <!-- CSP: 동일 출처만 — 외부 리소스·인라인 스크립트·임의 스킴 이중 차단(수집 데이터는 방어적으로 취급) -->
   <meta http-equiv="Content-Security-Policy"
         content="default-src 'none'; script-src 'self'; style-src 'self'; connect-src 'self'; img-src 'self' data:; base-uri 'none'; form-action 'none'">
-  <meta name="theme-color" content="#0f1419">
+  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#0c1016">
+  <meta name="theme-color" media="(prefers-color-scheme: light)" content="#f4f6f9">
   <title>Tech Trends — 오늘의 AI·개발 트렌드</title>
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <!-- 화면 코드는 정적 로드(GitHub Pages max-age=600, 최대 10분 지연 수용) —
@@ -20,10 +21,17 @@
       <span id="freshness" role="status">불러오는 중…</span>
       <span id="meta-extra"></span>
     </div>
+    <div id="catchup-slot"></div>
     <div class="datenav" id="datenav"></div>
   </header>
 
   <div class="tabs" id="tabs" role="tablist" aria-label="카테고리"><!-- 탭은 app.js가 채운다 --></div>
+
+  <div class="searchrow">
+    <input id="search" type="search" placeholder="검색 — 제목·요약" aria-label="트렌드 검색" autocomplete="off">
+    <button id="scopebtn" class="scopebtn" aria-pressed="false"
+            title="현재 날짜가 아니라 전체 아카이브에서 검색">전체 기간</button>
+  </div>
 
   <main>
     <div id="panels" role="tabpanel" tabindex="0" aria-label="트렌드 목록">

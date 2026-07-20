@@ -5,7 +5,7 @@
     inject_summaries(out, date_str, summaries_path), main(argv)
   - 테스트 심: scripts.collect._dispatch(source) -> raw 항목 리스트,
     scripts.collect._enrich_article_text (네트워크 차단용)
-  - scripts.config: SOURCES(14개), PER_CATEGORY=10, KST, MIN_OK_RATIO=0.5
+  - scripts.config: SOURCES(16개, 2026-07-20 확장), PER_CATEGORY=10, KST, MIN_OK_RATIO=0.5
   - scripts.dedup: load_ledger, mark_seen(정규화 키 역산 프로브)
 
 검증 케이스:
@@ -227,12 +227,13 @@ def test_main_rejects_malformed_date_with_exit_code_2(tmp_path, monkeypatch):
 
 
 def test_majority_failure_gate_preserves_latest_and_returns_1(tmp_path, monkeypatch):
-    """[스펙 4] 과반 임계 게이트: 14개 중 8개 소스 실패(성공 6/14 < MIN_OK_RATIO=0.5)
+    """[스펙 4] 과반 임계 게이트: 과반 이상 소스 실패(성공 비율 < MIN_OK_RATIO=0.5)
     -> latest.json 미작성(기존 파일 보존), main()이 1을 반환."""
-    assert len(SOURCES) == 14  # 스펙 명시값
+    assert len(SOURCES) == 16  # 스펙 명시값 (2026-07-20 reddit_localllama·hf_blog 추가로 14→16)
     assert MIN_OK_RATIO == 0.5  # 스펙 명시값
 
-    failing_ids = {s["id"] for s in SOURCES[:8]}  # 8개 실패 -> 성공 6/14
+    n_fail = len(SOURCES) // 2 + 1  # 과반 실패 -> 성공 비율이 임계 미만이 되도록
+    failing_ids = {s["id"] for s in SOURCES[:n_fail]}
     now_iso = datetime.now(KST).isoformat()
     ok_urls = {s["id"]: f"https://ok-feed.example.org/src-{i}" for i, s in enumerate(SOURCES)}
 

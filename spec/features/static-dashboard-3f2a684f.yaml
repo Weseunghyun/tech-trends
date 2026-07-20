@@ -13,7 +13,14 @@ acceptance_criteria:
     test_refs: ["tests/integration/test_collect_smoke.py"]
   - id: AC-813e1d73
     ears: ubiquitous
-    text: "The dashboard shall render 5 tabs (hot topics + 4 categories) with per-tab item counts and open item links in a new tab with rel=noopener."
+    text: "The dashboard shall render content tabs (hot topics + content categories + weekly digest) with per-tab item counts and open item links in a new tab with rel=noopener."
+  - id: AC-7d21c4ee
+    ears: event
+    condition: "When the user types a query"
+    text: "The dashboard shall filter the current view live by title/summary, and in '전체 기간' scope shall search every archived day (newest first, deduped by item id)."
+  - id: AC-9b3e51aa
+    ears: ubiquitous
+    text: "The dashboard shall dim previously clicked items (localStorage), clamp long summaries with an expand control, and offer a catch-up chip when 2+ days accumulated since the last visit."
   - id: AC-fa52bde7
     ears: event
     condition: "When the user navigates dates"

@@ -26,9 +26,10 @@ HTTP_MAX_REDIRECTS = 5  # 홉마다 목적지 재검증(SSRF 우회 방지)
 HTTP_MAX_BYTES = 10_000_000  # 응답 크기 상한 — 무제한 다운로드로 인한 메모리 소진 방지
 ARTICLE_MAX_BYTES = 2_000_000  # 기사 본문 fetch 상한(임의 외부 URL이라 더 엄격)
 
-# 카테고리 코드 → 표시명 (FR-007, 5탭 고정)
+# 카테고리 코드 → 표시명 (FR-007)
 CATEGORY_NAMES = {
     "ai_labs": "AI 랩 동향",
+    "community": "커뮤니티",
     "github_trending": "GitHub Trending",
     "codex": "OpenAI Codex",
     "eng_blogs": "엔지니어링/기술 블로그",
@@ -36,9 +37,9 @@ CATEGORY_NAMES = {
 }
 
 # 콘텐츠 탭(개별 항목 렌더). hot_topics는 최상위 HotTopic 집계로 별도 렌더.
-CONTENT_CATEGORIES = ["ai_labs", "github_trending", "codex", "eng_blogs"]
+CONTENT_CATEGORIES = ["ai_labs", "community", "github_trending", "codex", "eng_blogs"]
 
-# 소스 정의 — 닫힌 9개 식별자.
+# 소스 정의 — 닫힌 식별자 목록(현재 16개).
 # kind: "rss"(feedparser) | "hn"(Algolia JSON). category: 항목이 귀속될 카테고리 코드.
 # 모든 url은 https(verify=True)·클라우드 도달·로그인 불필요.
 SOURCES = [
@@ -110,6 +111,12 @@ SOURCES = [
      "urls": ["https://stripe.com/blog/feed.rss"]},
     {"id": "meta_eng", "kind": "rss", "category": "eng_blogs",
      "urls": ["https://engineering.fb.com/feed/"]},
+    # 커뮤니티 (2026-07-20 추가 — 로컬 도달 확인, 실패 격리로 보호)
+    {"id": "reddit_localllama", "kind": "rss", "category": "community",
+     "urls": ["https://www.reddit.com/r/LocalLLaMA/.rss"]},
+    # HF 블로그는 랩 동향 성격 (모델 릴리스·기법 발표의 주요 진원지)
+    {"id": "hf_blog", "kind": "rss", "category": "ai_labs",
+     "urls": ["https://huggingface.co/blog/feed.xml"]},
     {
         "id": "hackernews",
         "kind": "hn",

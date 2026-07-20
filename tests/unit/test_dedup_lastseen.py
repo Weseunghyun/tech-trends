@@ -14,14 +14,7 @@
 날짜는 datetime.now(KST) 기준 상대값만 사용한다(하드코딩 금지 규칙).
 """
 
-import sys
 from datetime import date, datetime, timedelta
-from pathlib import Path
-
-_ROOT = Path(__file__).resolve().parents[2]
-for _p in (_ROOT, _ROOT / "src"):
-    if _p.exists() and str(_p) not in sys.path:
-        sys.path.insert(0, str(_p))
 
 from scripts.config import KST
 from scripts.dedup import filter_new_items, mark_seen, prune
