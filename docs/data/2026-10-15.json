@@ -1,0 +1,774 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-10-15T07:38:19+09:00",
+  "date": "2026-10-15",
+  "categories": {
+    "ai_labs": [
+      {
+        "id": "672ebf75c430cf70c5939989b244112c7eac909f",
+        "title": "HiRO-ACEv2: Simulating extreme weather at 3 km resolution for a fraction of the cost",
+        "url": "https://huggingface.co/blog/allenai/hiro-acev2",
+        "source": "hf_blog",
+        "category": "ai_labs",
+        "summary_ko": "Ai2 가 기후 에뮬레이터 HiRO-ACE 의 후속인 HiRO-ACEv2 를 공개했다. 폭풍까지 직접 계산하는 고해상도 대기 모델 X-SHiELD 대비 약 1/300 비용으로 전 지구 3km 기후 데이터를 생성하며, 100km 해상도의 ACE 가 만든 결과를 HiRO 가 3km 로 선명화하는 2단계 구조다. v2 의 핵심은 강수뿐 아니라 여러 고해상도 변수를 동시에 예측하도록 바뀐 점으로, 100만 개 중 1회 꼴로 나타나는 극값까지 목표 시뮬레이션 통계와 3% 이내로 일치하고 학습에 없던 열대저기압의 총 에너지도 정확히 추정했다. ※에뮬레이터: 무거운 물리 시뮬레이션을 AI 로 근사해 대체하는 모델.",
+        "lang": "en",
+        "published_at": "2026-10-15T01:12:42+09:00",
+        "collected_at": "2026-10-15T07:33:21+09:00",
+        "metrics": null
+      },
+      {
+        "id": "5cb1618c1db568b5987239fb7604905d493f5d44",
+        "title": "Google DeepMind and Singapore Government collaborate to build fine-tuned AI model for scam detection",
+        "url": "https://deepmind.google/blog/on-device-ai-scam-detection-mddi",
+        "source": "deepmind",
+        "category": "ai_labs",
+        "summary_ko": "Google DeepMind 가 싱가포르 정부기술청(GovTech)과 함께 기기 안에서만 동작하는 경량 Gemma 기반 사기 탐지 모델을 파인튜닝했다. 싱가포르에서 투자 사기·가짜 구인·공무원 사칭 등 사기는 신고 범죄의 절반을 넘고 2019년 이후 피해액이 40억 싱가포르달러를 넘었으며, 수법이 단순 피싱에서 대화로 피해자를 조종하는 사회공학으로 옮겨가 이 유형이 손실의 최대 80%를 차지한다. 대화 내용을 클라우드로 보내지 않고 단말에서 처리해 프라이버시를 지키는 것이 설계의 핵심이다.",
+        "lang": "en",
+        "published_at": "2026-10-14T11:00:14+09:00",
+        "collected_at": "2026-10-15T07:33:21+09:00",
+        "metrics": null
+      },
+      {
+        "id": "f2bde108f64c5a7a195489396b340d3dbb4dbdc2",
+        "title": "Anthropic opens Singapore office and signs MOU with the Government of Singapore",
+        "url": "https://anthropic.com/news/singapore-office-opening",
+        "source": "anthropic",
+        "category": "ai_labs",
+        "summary_ko": "Anthropic 이 아시아·태평양 지역 다섯 번째 거점으로 싱가포르 오피스를 열고, 싱가포르 디지털개발정보부(MDDI)와 양해각서(MOU)를 체결했다. MOU 에는 AI 안전·보안·모델 평가 협력, AI 도입과 그 영향에 대한 연구, 공공·민간의 책임 있는 도입이 담겼다. 싱가포르는 Anthropic 의 최대 활성 시장 중 하나로 GovTech·Grab·DBS 등이 이미 Claude 를 쓰고 있으며, 서명은 Singapore International Cyber Week 에서 이뤄졌다.",
+        "lang": "en",
+        "published_at": "2026-10-14T09:00:00+09:00",
+        "collected_at": "2026-10-15T07:33:21+09:00",
+        "metrics": null
+      },
+      {
+        "id": "18177a36d83526b9b37192893506c68dab9c77eb",
+        "title": "Preparing for the 2026 US midterms",
+        "url": "https://anthropic.com/news/2026-us-midterms",
+        "source": "anthropic",
+        "category": "ai_labs",
+        "summary_ko": "Anthropic 이 2026년 미국 중간선거를 앞두고 선거 관련 안전장치 현황을 공개했다. 9월 21~27일 미국 Claude.ai 대화 약 25만 건을 프라이버시 보호 방식으로 분류한 결과, 정치·공공정책·사회 이슈를 넓게 건드리는 대화가 전체의 약 5.75%, 선거·투표를 직접 다루는 대화가 0.51%였다. 반면 '누구를/무엇을 찍어야 하나'를 묻는 대화는 0.01%, 선거 무결성 정책 위반은 0.002%에 그쳐, 사람들은 추천보다 후보의 입장 같은 판단 재료를 묻는 쪽에 가까웠다.",
+        "lang": "en",
+        "published_at": "2026-10-14T09:00:00+09:00",
+        "collected_at": "2026-10-15T07:33:21+09:00",
+        "metrics": null
+      },
+      {
+        "id": "25432b6b093a311b5b0463de454fb2ab5ab23e9b",
+        "title": "Developing Gemini 4 Argon responsibly and safely",
+        "url": "https://deepmind.google/blog/developing-gemini-4-argon-responsibly-and-safely",
+        "source": "deepmind",
+        "category": "ai_labs",
+        "summary_ko": "Google 이 프런티어 모델 Gemini 4 Argon 의 안전·보안 접근법을 공개했다. 사이버 방어 능력이 프런티어급이라 전면 공개 전 Fairwind 프로그램으로 방어자들에게 먼저 제한 공개했고, 이 기간에 Wiz 가 이전 모델들이 놓친 병원 소프트웨어의 치명적 버그를 찾아 수십만 건의 환자 기록을 보호했으며 구글 내부·오픈소스 취약점도 패치했다고 밝혔다. 쟁점은 두 가지로, 사이버공격·생물학 위협 같은 오용(misuse)을 막는 가드레일과 모델이 일을 '올바른 방식으로' 하도록 믿을 수 있는가다.",
+        "lang": "en",
+        "published_at": "2026-10-14T04:43:07+09:00",
+        "collected_at": "2026-10-15T07:33:21+09:00",
+        "metrics": null
+      },
+      {
+        "id": "550c4c02e9ff21a9dd88243eaf13df56c12e35f4",
+        "title": "Run fast, private agents on-device with LFM2.5-24B-A2B",
+        "url": "https://huggingface.co/blog/LiquidAI/lfm25-24b-a2b",
+        "source": "hf_blog",
+        "category": "ai_labs",
+        "summary_ko": "Liquid AI 가 온디바이스 에이전트용 추론 모델 LFM2.5-24B-A2B 를 공개했다. 총 24B 파라미터 중 토큰당 2B 만 활성화되는 MoE 구조라 추론 토큰 단가가 낮아 개인 하드웨어에서 에이전트를 계속 돌릴 수 있고, 답하기 전에 생각하고 도구를 호출하며 주요 에이전트 하네스 안에서 다단계 작업을 수행한다. 총·활성 파라미터가 약 50% 더 많은 Qwen3.6-35B-A3B 와 에이전트·툴 사용 벤치마크에서 대등한 수준이라고 주장한다. ※MoE: 전체 파라미터 중 일부 전문가만 골라 쓰는 구조.",
+        "lang": "en",
+        "published_at": "2026-10-14T02:05:48+09:00",
+        "collected_at": "2026-10-15T07:33:21+09:00",
+        "metrics": null
+      },
+      {
+        "id": "8b0463614a7b86fd34ef4f865cdfb4c3899b87c9",
+        "title": "Gemini 4 Argon for Robotics",
+        "url": "https://deepmind.google/blog/gemini-4-argon-for-robotics",
+        "source": "deepmind",
+        "category": "ai_labs",
+        "summary_ko": "DeepMind 가 Gemini 4 Argon 의 로보틱스 적용을 소개했다. 3D 공간·물리 문제 해결력을 재는 ERQA 벤치마크에서 순수 추론만으로 87%를 기록해 다른 프런티어 모델을 모두 앞섰다고 밝혔다. 활용은 로봇 제어, 카메라 영상·사람 시점 영상·손그림에서 물리적으로 보정된 시뮬레이션 쌍둥이를 만드는 Real2Sim, 물리 이해, 자기개선 네 갈래다. 시연에서는 Boston Dynamics Spot 이 발판식 쓰레기통의 MuJoCo 디지털 트윈을 만들어 세 다리 균형을 연습한 뒤 실제 페달을 밟아 캔을 버렸다.",
+        "lang": "en",
+        "published_at": "2026-10-14T01:01:58+09:00",
+        "collected_at": "2026-10-15T07:33:21+09:00",
+        "metrics": null
+      },
+      {
+        "id": "316153953adff70c8a9e3daaf16ca6fe5639b2f2",
+        "title": "Gemini 4 Argon: Built to solve your hardest problems",
+        "url": "https://deepmind.google/blog/introducing-gemini-4-argon",
+        "source": "deepmind",
+        "category": "ai_labs",
+        "summary_ko": "Google 이 프런티어 모델 Gemini 4 Argon 을 전 세계에 공개했다. AI Studio·Gemini 플랫폼 API, Google Antigravity(AI Ultra 구독자), Gemini 앱과 검색 AI 모드(Ultra·Pro 구독자)에서 쓸 수 있다. 코딩·금융·법률·보안·과학 등 다단계 실무에서 강점을 보여 금융·코딩·법률·세무 성능을 재는 Vals Index 1위라고 밝혔다. 도입 가격은 100만 입력 토큰당 $2, 출력 토큰당 $10 이며 캐시된 입력 토큰은 95% 할인이다.",
+        "lang": "en",
+        "published_at": "2026-10-14T01:01:52+09:00",
+        "collected_at": "2026-10-15T07:33:21+09:00",
+        "metrics": null
+      },
+      {
+        "id": "24f3065d0ad507c559841bccf4fec389834d22c3",
+        "title": "Bringing Grok 4.5 to iOS, Android, Web, and X",
+        "url": "https://x.ai/news/grok-4-5-everywhere",
+        "source": "xai",
+        "category": "ai_labs",
+        "summary_ko": "xAI 가 Grok 4.5 를 grok.com, X, iOS·Android 앱 등 모든 창구에 동시 적용했다. 긴 대화의 맥락 유지와 답변의 일관성을 개선했고, 어려운 질문에서는 더 효율적으로 추론해 응답이 빨리 나온다고 설명한다. 작업 측면에서는 스프레드시트 작성, 개요를 슬라이드·다이어그램으로 변환, 긴 PDF 요약을 end-to-end 로 처리하며 Microsoft 365 애드인을 통해 Word·Excel·PowerPoint·Outlook 안에서도 동작한다.",
+        "lang": "en",
+        "published_at": "2026-07-22T09:00:00+09:00",
+        "collected_at": "2026-10-15T07:33:21+09:00",
+        "metrics": null
+      },
+      {
+        "id": "5d5986221c3cdea398a954f82fd219a11588b365",
+        "title": "Introducing Grok for Outlook",
+        "url": "https://x.ai/news/introducing-outlook-addin",
+        "source": "xai",
+        "category": "ai_labs",
+        "summary_ko": "xAI 가 Microsoft Outlook 용 Grok 애드인을 내놓았다. 받은편지함 옆에 에이전트를 두고 긴 메일 스레드를 요약하고, 사용자의 말투로 답장 초안을 쓰고, 메일함 정리를 돕는 것이 골자다. 계약 갱신 스레드처럼 참여자가 여럿이고 메시지가 쌓인 흐름에서 결정이 필요한 쟁점을 추려주는 사용례를 시연으로 제시했다.",
+        "lang": "en",
+        "published_at": "2026-07-21T09:00:00+09:00",
+        "collected_at": "2026-10-15T07:33:21+09:00",
+        "metrics": null
+      }
+    ],
+    "community": [
+      {
+        "id": "0f4200d7c3e2aba610db27f723cde4574a390a58",
+        "title": "Sabi-Noema: A capability and efficiency focused fine-tune of Qwen 3.8 27B",
+        "url": "https://reddit.com/r/LocalLLaMA/comments/1x62zrz/sabinoema_a_capability_and_efficiency_focused",
+        "source": "reddit_localllama",
+        "category": "community",
+        "summary_ko": "Qwen 3.8 27B 를 후처리 학습한 Sabi-Noema 와 Sabi-Noema-MLA 가 공개됐다. 오픈소스 환경만으로 학습했고, 30B 미만 모델의 성능 한계를 밀어올리면서 장황함은 절반으로 줄였다는 주장이다. 코딩·에이전트·툴 호출이 개선되고 환각이 줄었으며, DeepSWE 에서 GPT 6 Luna-medium 을 앞서고 TB2.1·Tau-3·ClawEval·BFCL v4 같은 에이전트/툴콜 벤치마크에서는 Luna-high 도 앞섰다고 밝혔다. TB2.1 기준 응답당 토큰을 50% 덜 쓴다.",
+        "lang": "en",
+        "published_at": "2026-10-15T06:01:32+09:00",
+        "collected_at": "2026-10-15T07:33:21+09:00",
+        "metrics": null
+      },
+      {
+        "id": "d36bcf8ed258ca8a13caab3dc83a438eeacb1feb",
+        "title": "Someone jailbroke a PS5 and got Qwen 3.8 27B running on its GPU at 20 tok/s.",
+        "url": "https://reddit.com/r/LocalLLaMA/comments/1x62uhc/someone_jailbroke_a_ps5_and_got_qwen_38_27b",
+        "source": "reddit_localllama",
+        "category": "community",
+        "summary_ko": "PS5 를 탈옥해 그 GPU 위에서 Qwen 3.8 27B 를 초당 20토큰으로 돌렸다는 r/LocalLLaMA 링크 게시물이다. ※본문 미확보 — 제목 기반(링크 공유 글이라 본문 텍스트가 없음).",
+        "lang": "en",
+        "published_at": "2026-10-15T05:55:40+09:00",
+        "collected_at": "2026-10-15T07:33:21+09:00",
+        "metrics": null
+      },
+      {
+        "id": "ca9ba7db2b925f1bbf44386d1e60cddaa6ad1361",
+        "title": "Qwen 3.8 Flash Next, DeepSeekV4 Flash and Time",
+        "url": "https://reddit.com/r/LocalLLaMA/comments/1x61xas/qwen_38_flash_next_deepseekv4_flash_and_time",
+        "source": "reddit_localllama",
+        "category": "community",
+        "summary_ko": "M1 Ultra 맥스튜디오 128GB 사용자가 Qwen 3.8 Flash Next 와 DeepSeekV4 Flash 중 무엇을 상주시킬지 묻는 글이다. 벤치마크상 DeepSeekV4 는 GPT 5.5 high 바로 아래, Flash Next 는 5.4/5.5 xhigh 바로 위로 둘 다 유능하지만, 실사용에서 Flash Next 가 일을 끝내는 데 훨씬 오래 걸려 같은 시간이면 DeepSeekV4 로 5개 작업을 처리할 수 있다는 체감을 전한다. 벤치 점수 차이가 그 시간 차이를 정당화하지 못한다는 것이 논점이다.",
+        "lang": "en",
+        "published_at": "2026-10-15T05:18:25+09:00",
+        "collected_at": "2026-10-15T07:33:21+09:00",
+        "metrics": null
+      },
+      {
+        "id": "f24befe7f922a3cbe9c8b90931e2062d1e1ea611",
+        "title": "I built an open-source dubber that keeps each actor’s own voice, fully local (OmniVoice + Whisper, 6 GB+ NVIDIA)",
+        "url": "https://reddit.com/r/LocalLLaMA/comments/1x61o5a/i_built_an_opensource_dubber_that_keeps_each",
+        "source": "reddit_localllama",
+        "category": "community",
+        "summary_ko": "배우 각자의 목소리를 유지한 채 완전히 로컬에서 돌아가는 오픈소스 더빙 도구를 만들었다는 공유 글이다. 저장소를 받아 로컬(또는 원격) 모델에게 더빙 과정을 지휘하게 하면 나머지 도구인 OmniVoice·IndexTTS·Chatterbox·Whisper 가 모두 로컬에서 동작하며, 6GB 이상 NVIDIA GPU 가 필요하다. 작성자는 영어로 번역된 적 없는 작품을 보려고 만들었다고 밝혔고 애니메이션·영화 샘플과 저장소(github.com/swax/dub-anything)를 함께 공개했다.",
+        "lang": "en",
+        "published_at": "2026-10-15T05:08:25+09:00",
+        "collected_at": "2026-10-15T07:33:21+09:00",
+        "metrics": null
+      },
+      {
+        "id": "94fbef6f0b433b520a804bc37a8a7af0d96fdb01",
+        "title": "Mr.Chatterbox-2.7B-Chat: A model trained from scratch on Victorian texts",
+        "url": "https://reddit.com/r/LocalLLaMA/comments/1x5y904/mrchatterbox27bchat_a_model_trained_from_scratch",
+        "source": "reddit_localllama",
+        "category": "community",
+        "summary_ko": "빅토리아 시대 텍스트만으로 사전학습과 파인튜닝을 모두 수행한 2.7B 모델 Mr.Chatterbox-2.7B-Chat 공개 글이다. 현대 코퍼스를 섞지 않아 당대의 문체·표현을 역사적으로 정확하게 재현하는 것이 목표다. 제작 과정을 서술한 문서와 GitHub 코드가 함께 공개됐다.",
+        "lang": "en",
+        "published_at": "2026-10-15T02:58:58+09:00",
+        "collected_at": "2026-10-15T07:33:21+09:00",
+        "metrics": null
+      },
+      {
+        "id": "c8b781f8f75360f0f7cdeb17a4b1f3f77793469d",
+        "title": "Tessera-27B-B-CJK, Zellige AIs new finetune of Qwen with novel approaches to how we think about token savings",
+        "url": "https://reddit.com/r/LocalLLaMA/comments/1x5xm28/tessera27bbcjk_zellige_ais_new_finetune_of_qwen",
+        "source": "reddit_localllama",
+        "category": "community",
+        "summary_ko": "Zellige AI 가 Qwen3.8-27B 기반 코딩 에이전트 Tessera-27B-B-CJK 를 Apache-2.0 오픈웨이트로 공개했다. 핵심 아이디어는 토큰 절약으로, 에이전트 루프는 매 턴 사고 비용을 내므로 덜 생각하게 만들고 그 사고를 영어·중국어 단어·기호를 섞은 압축 CJK 속기로 하게 했다. 사고와 출력을 분리해 모델은 속기로 생각하되 답변과 툴 호출은 평문 영어·코드로 내보내므로 기존 하네스는 평소처럼 동작한다.",
+        "lang": "en",
+        "published_at": "2026-10-15T02:35:08+09:00",
+        "collected_at": "2026-10-15T07:33:21+09:00",
+        "metrics": null
+      },
+      {
+        "id": "bd1bdffa0eba9b4d307220eb830110af7028199a",
+        "title": "GPT-Image-style photo editing on your own GPU (12 GB+): I built a zero-setup app for Qwen-Image 2.1 on stable-diffusion.cpp",
+        "url": "https://reddit.com/r/LocalLLaMA/comments/1x5wyii/gptimagestyle_photo_editing_on_your_own_gpu_12_gb",
+        "source": "reddit_localllama",
+        "category": "community",
+        "summary_ko": "Qwen-Image 2.1 을 쓰려면 Python 환경과 노드 그래프, 양자화·오프로딩 설정에 저녁 하나를 써야 했던 문제를 없앤 무설정 데스크톱 앱 Kokon(오픈소스) 소개다. 첫 실행 때 GPU 와 메모리를 감지해 맞는 GGUF(Qwen-Image 2.1 Turbo Q4_K + Qwen3-VL 8B 텍스트 인코더, 약 12GB)를 받고 작업마다 해상도·VRAM/RAM 분배·타일 VAE·메모리 부족 시 재시도를 자동 조정한다. 엔진은 stable-diffusion.cpp(ggml) 라 Python·PyTorch 가 필요 없고 CUDA·Vulkan·Metal 빌드를 제공하며, 영역을 브러시로 칠해 변경/제거/교체/추가하는 편집기를 얹었다.",
+        "lang": "en",
+        "published_at": "2026-10-15T02:10:15+09:00",
+        "collected_at": "2026-10-15T07:33:21+09:00",
+        "metrics": null
+      },
+      {
+        "id": "7cbf8a98b43c9e67e404a10f4f2e055ca1c48ef3",
+        "title": "New model from Telperion: Qwen3.8-27B-MLA & Qwen3.8-27B-GLA-g2. 4x smaller KV cache, smarter, and more efficient reasoning.",
+        "url": "https://reddit.com/r/LocalLLaMA/comments/1x5wcnz/new_model_from_telperion_qwen3827bmla",
+        "source": "reddit_localllama",
+        "category": "community",
+        "summary_ko": "Telperion 이 Qwen3.8-27B 의 잠재 어텐션 변형인 MLA·GLA-g2 를 공개했다. KV 캐시를 4배 압축해 소비자 하드웨어에서 최대 컨텍스트를, 서버에서는 동시 처리량을 거의 4배로 늘린다. 성능도 떨어지지 않아 SWE-bench Verified 가 원본 39.5%에서 MLA 42.1%로 올랐고 추론 토큰은 12~14% 적게 썼다. 다중 GPU 에서 MLA 의 메모리 단점을 피하려 두 그룹으로 묶은 GLA-g2 는 듀얼 GPU 에서도 4배 압축을 유지한다. ※KV 캐시: 이미 처리한 토큰을 다시 계산하지 않으려고 들고 있는 메모리.",
+        "lang": "en",
+        "published_at": "2026-10-15T01:47:46+09:00",
+        "collected_at": "2026-10-15T07:33:21+09:00",
+        "metrics": null
+      },
+      {
+        "id": "98d87062d63bbd5944e085c19a5b16ea9a663535",
+        "title": "qwen3.8-flash-next-iq3_s vs -27B-GGUF:UD-Q4_K_XL",
+        "url": "https://reddit.com/r/LocalLLaMA/comments/1x5vfs2/qwen38flashnextiq3_s_vs_27bggufudq4_k_xl",
+        "source": "reddit_localllama",
+        "category": "community",
+        "summary_ko": "Qwen3.8 Flash Next(IQ3_S, MI50 32GB) 와 Qwen3.8-27B(UD-Q4_K_XL, RX 7900 XTX 24GB) 를 evalscope 로 비교한 개인 측정이다. 총 166문제에서 Next 151, 27B 145 로 Next 가 앞섰고(AIME26 28:27, IFEval 48:46, BFCL v4 49:47, LiveCodeBench v6 26:25), 한쪽만 푼 14문제(10 대 4)에 부호검정을 하면 양측 p=0.18 이라 '증명'이 아니라 '경향'이라고 작성자가 선을 긋는다. 실패 유형도 분해해 Next 는 오답 9·토큰 소진 6, 27B 는 오답 14·토큰 소진 7 이었다.",
+        "lang": "en",
+        "published_at": "2026-10-15T01:13:14+09:00",
+        "collected_at": "2026-10-15T07:33:21+09:00",
+        "metrics": null
+      },
+      {
+        "id": "ae91f927c146036b52bf991299b6a2d10388e7f4",
+        "title": "A 35B multimodal model running on a phone with ~3GB memory? MiniCPM-V 4.7 demo is pretty wild",
+        "url": "https://reddit.com/r/LocalLLaMA/comments/1x5uwnd/a_35b_multimodal_model_running_on_a_phone_with",
+        "source": "reddit_localllama",
+        "category": "community",
+        "summary_ko": "OpenBMB 의 MiniCPM-V 4.7 데모 소개 글이다. 35B-A3B MoE 비전-언어 모델이 약 3GB 메모리로 휴대폰에서 로컬 구동되며, 표지판 읽기·복잡한 문서 이해·시각 정보 추론·현실 제약을 반영한 계획 같은 용례를 보여준다. 모델을 작게 만드는 대신 어떤 전문가가 필요할지 예측해 미리 올려두는 LES(Lookahead Expert Scheduling) 로 MoE 추론 병목을 줄인 것이 핵심이고, 자원이 더 적은 기기용 1B 모델과 범용 성능을 지키며 특정 작업에 맞추는 SRFT(Self-Replay Fine-Tuning) 도 함께 공개됐다.",
+        "lang": "en",
+        "published_at": "2026-10-15T00:53:48+09:00",
+        "collected_at": "2026-10-15T07:33:21+09:00",
+        "metrics": null
+      }
+    ],
+    "github_trending": [
+      {
+        "id": "ebf3dd6aaeb2f4091c1836e520a1721211143ac4",
+        "title": "vercel-labs/skills",
+        "url": "https://github.com/vercel-labs/skills",
+        "source": "github_trending",
+        "category": "github_trending",
+        "summary_ko": "`npx skills` 로 쓰는 오픈 에이전트 스킬 CLI 다. 스킬을 설치(`skills add`)하거나 설치 없이 프롬프트만 생성해 에이전트에 바로 넘길 수 있고(`skills use`), OpenCode·Claude Code·Codex·Cursor 등 75종 이상의 에이전트를 지원한다. 소스는 GitHub 단축표기·전체 URL·저장소 내 경로·GitLab·Azure Repos·임의 git URL·로컬 경로를 모두 받고, 비공개 저장소도 이미 설정된 git 자격증명을 그대로 쓴다. MIT 라이선스에 스타 34.9k.",
+        "lang": "en",
+        "published_at": null,
+        "collected_at": "2026-10-15T07:33:21+09:00",
+        "metrics": null
+      },
+      {
+        "id": "ef2434ebe854dde353730099f7a49faadeaf8d8c",
+        "title": "xtool-org/xtool",
+        "url": "https://github.com/xtool-org/xtool",
+        "source": "github_trending",
+        "category": "github_trending",
+        "summary_ko": "SwiftPM 만으로 iOS 앱을 빌드·서명·설치하는 크로스 플랫폼 Xcode 대체 도구다. Linux·WSL·macOS 에서 동작하며 SwiftPM 패키지를 iOS 앱으로 빌드하고, 앱에 서명해 기기에 설치하고, Apple Developer Services 를 프로그래밍 방식으로 다룬다. 서브커맨드는 설정(setup/auth/sdk), 개발(new/dev/ds), 기기(devices/install/uninstall/launch)로 나뉜다. MIT 라이선스에 스타 10.7k.",
+        "lang": "en",
+        "published_at": null,
+        "collected_at": "2026-10-15T07:33:21+09:00",
+        "metrics": null
+      }
+    ],
+    "codex": [
+      {
+        "id": "af7b755c7832b056f219de19c4602eec416b8d18",
+        "title": "GPT-5.5 retirement in Codex",
+        "url": "https://developers.openai.com/codex/changelog#codex-2026-10-14-gpt-55-retirement",
+        "source": "openai_codex",
+        "category": "codex",
+        "summary_ko": "OpenAI 가 Codex 에서 GPT-5.5 를 은퇴시킨다는 2026-10-14 자 변경 이력 항목이다. ※본문 미확보 — 제목 기반(변경 이력 페이지라 개별 항목 본문이 수집되지 않음).",
+        "lang": "en",
+        "published_at": "2026-10-14T09:00:00+09:00",
+        "collected_at": "2026-10-15T07:33:21+09:00",
+        "metrics": null
+      }
+    ],
+    "eng_blogs": [
+      {
+        "id": "d99ce6561eba5656272e1c36437478c2cfe2f0b7",
+        "title": "Yandex outage: Data shows that instead of going dark, malicious bots went on the move",
+        "url": "https://blog.cloudflare.com/yandex-outage",
+        "source": "cloudflare",
+        "category": "eng_blogs",
+        "summary_ko": "Yandex 데이터센터가 타격을 입었을 때 러시아발 봇 활동도 멎었으리라는 통념을 Cloudflare 데이터가 반박한다. 검색 크롤링은 실제로 멈췄지만 악성 봇은 사라진 것이 아니라 다른 네트워크로 옮겨가 활동을 이어갔다는 것이다. 즉 한 사업자의 인프라 장애는 정상 크롤러만 걷어낼 뿐 악성 트래픽의 총량을 줄이지 못했다.",
+        "lang": "en",
+        "published_at": "2026-10-15T05:24:19+09:00",
+        "collected_at": "2026-10-15T07:33:21+09:00",
+        "metrics": null
+      },
+      {
+        "id": "08683db964d08dddf4c7c076536576fa3229d4da",
+        "title": "GitHub availability report: September 2026",
+        "url": "https://github.blog/news-insights/company-news/github-availability-report-september-2026",
+        "source": "github_blog",
+        "category": "eng_blogs",
+        "summary_ko": "GitHub 의 2026년 9월 가용성 보고서다. 해당 월에 GitHub 서비스 전반의 성능 저하를 부른 사고가 두 건 있었고, 각 사고의 경위와 후속 조치를 정리했다. ※본문 미확보 — 요약 기반(기사 본문이 내비게이션에 가려 수집되지 않음).",
+        "lang": "en",
+        "published_at": "2026-10-15T05:01:35+09:00",
+        "collected_at": "2026-10-15T07:33:21+09:00",
+        "metrics": null
+      },
+      {
+        "id": "9c513183a8549b384023e529496ec6a43264f022",
+        "title": "Amazon S3 is now available on the Vercel Marketplace and v0 by Vercel",
+        "url": "https://aws.amazon.com/blogs/aws/amazon-s3-vercel-marketplace-v0",
+        "source": "aws",
+        "category": "eng_blogs",
+        "summary_ko": "Amazon S3 를 Vercel Marketplace 와 v0 에서 쓸 수 있게 됐다는 AWS 공지다. ※본문 미확보 — 제목 기반(피드의 요약문이 다른 글의 내용이라 사용하지 않음).",
+        "lang": "en",
+        "published_at": "2026-10-15T04:30:48+09:00",
+        "collected_at": "2026-10-15T07:33:21+09:00",
+        "metrics": null
+      },
+      {
+        "id": "42cfdf49638add895203d811cd113a397f1249a2",
+        "title": "From 2,500 requests to 24: Rebuilding star history without the stargazers",
+        "url": "https://github.blog/engineering/architecture-optimization/from-2500-requests-to-24-rebuilding-star-history-without-the-stargazers",
+        "source": "github_blog",
+        "category": "eng_blogs",
+        "summary_ko": "GitHub 이 저장소 스타 히스토리 API 를 다시 만들어 요청 수를 2,500건에서 24건으로 줄였다. 기존 방식은 스타를 누른 사용자 목록을 모두 훑어야 해서 개별 신원이 응답에 실리고 데이터베이스 작업량에 상한이 없었다. 새 API 는 누가 눌렀는지 돌려주지 않고 추세만 제공해 프라이버시와 비용 문제를 동시에 푼 것으로, 글은 그 과정에서 감수한 엔지니어링 트레이드오프를 설명한다.",
+        "lang": "en",
+        "published_at": "2026-10-15T04:11:33+09:00",
+        "collected_at": "2026-10-15T07:33:21+09:00",
+        "metrics": null
+      },
+      {
+        "id": "df5005d2e4212e293c55eb6b93c5030d98087cc8",
+        "title": "Inside Hyperdrive: How we solved a rare Hyperdrive MySQL caching bug",
+        "url": "https://blog.cloudflare.com/hyperdrive-mysql",
+        "source": "cloudflare",
+        "category": "eng_blogs",
+        "summary_ko": "Cloudflare 의 데이터베이스 커넥션 풀링 서비스 Hyperdrive 에 MySQL 지원을 붙이는 과정에서 쿼리 결과를 캐싱할 때만 드러나는 미묘한 프로토콜 버그를 발견한 사후 분석이다. 발생률이 0.001% 수준이라 추적이 까다로웠고, 원인을 잡아낸 뒤 Hyperdrive MySQL 을 정식 출시(GA)했다.",
+        "lang": "en",
+        "published_at": "2026-10-14T22:00:00+09:00",
+        "collected_at": "2026-10-15T07:33:21+09:00",
+        "metrics": null
+      },
+      {
+        "id": "49fe8a3fc3d9ad0e3c275bfb0982bc738e2ec59f",
+        "title": "GitHub’s model for secret detection: Finding more secrets with less noise",
+        "url": "https://github.blog/ai-and-ml/githubs-model-for-secret-detection-finding-more-secrets-with-less-noise",
+        "source": "github_blog",
+        "category": "eng_blogs",
+        "summary_ko": "GitHub 이 시크릿 탐지에 맥락을 보는 분류 모델을 도입했다. 주변 코드 맥락을 함께 보기 때문에 진짜 유출은 더 찾고 오탐은 줄여, 가중 수용률(weighted acceptance)이 11.5% 올랐고 스캔 실행 시간 중앙값은 86% 줄었다. ※시크릿: API 키·토큰·비밀번호처럼 코드에 실수로 커밋되면 안 되는 자격증명.",
+        "lang": "en",
+        "published_at": "2026-10-14T02:56:33+09:00",
+        "collected_at": "2026-10-15T07:33:21+09:00",
+        "metrics": null
+      },
+      {
+        "id": "209aa195cf460790ab82f7340e741640a9704175",
+        "title": "Under the hood, off the hot path: How D1 scales to millions of databases",
+        "url": "https://blog.cloudflare.com/d1-control-plane",
+        "source": "cloudflare",
+        "category": "eng_blogs",
+        "summary_ko": "Cloudflare 가 서버리스 DB D1 을 수백만 개 데이터베이스 규모로 키우면서 컨트롤 플레인(생성·관리 등 제어 경로)을 어떻게 설계했는지 다룬 심층 글이다. 핵심은 제어 작업을 요청 처리 경로(핫 패스)에서 떼어내, 데이터 플레인의 쿼리 처리는 엣지에 그대로 두는 것이다. 자사 개발자 플랫폼 위에서 효과적으로 서비스를 쌓는 일반 원칙도 함께 정리했다.",
+        "lang": "en",
+        "published_at": "2026-10-14T01:20:18+09:00",
+        "collected_at": "2026-10-15T07:33:21+09:00",
+        "metrics": null
+      },
+      {
+        "id": "ead1f2c858219e65e8cd5cd4b4a41993db916986",
+        "title": "Meta’s Generative Ads Model (GEM): Scaling the Central Model and Compute Engine for Frontier Ads AI",
+        "url": "https://engineering.fb.com/2026/10/13/ml-applications/generative-ads-model-gem-scaling-frontier-ads-ai",
+        "source": "meta_eng",
+        "category": "eng_blogs",
+        "summary_ko": "Meta 가 작년에 공개한 업계 최대 추천 시스템 파운데이션 모델 GEM 의 2026년 세대를 소개했다. 가장 큰 변화는 Facebook·Instagram·Reels 처럼 지면별로 따로 최적화하던 방식을 버리고, 메타의 모든 광고 플랫폼 데이터와 신호를 함께 학습하는 단일 중앙 파운데이션 모델로 간 것이다. 차세대 하드웨어로 연산을 LLM 급까지 키우고, 후처리 학습 기법으로 지연 예산을 확보해 인지·고려·전환 전 구간을 아우르는 최적화를 노린다.",
+        "lang": "en",
+        "published_at": "2026-10-14T01:01:00+09:00",
+        "collected_at": "2026-10-15T07:33:21+09:00",
+        "metrics": null
+      },
+      {
+        "id": "0ad8df1b25df5466a8f8ee187228a33eac9f84b2",
+        "title": "AWS Weekly Roundup: Prime Day 2026 by the numbers, Claude Haiku 5.5, Amazon Nova 2.5 Sonic, and more (October 13, 2026)",
+        "url": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-prime-day-2026-by-the-numbers-claude-haiku-5-5-amazon-nova-2-5-sonic-and-more-october-13-2026",
+        "source": "aws",
+        "category": "eng_blogs",
+        "summary_ko": "AWS 주간 소식(2026-10-13)이다. 지난주 공개된 Prime Day 2026 지표 중 Amazon ElastiCache 가 행사 기간 하루 2.3 경(quadrillion) 요청까지 치솟은 수치가 눈에 띈다고 짚는다. 이 밖에 Claude Haiku 5.5, Amazon Nova 2.5 Sonic 등의 출시 소식을 함께 묶었다. ※Prime Day 는 6월에 열렸고 지표는 뒤늦게 공개됐다.",
+        "lang": "en",
+        "published_at": "2026-10-14T00:59:06+09:00",
+        "collected_at": "2026-10-15T07:33:21+09:00",
+        "metrics": null
+      },
+      {
+        "id": "cd5f53816e83c2a650afb4160aadea6b9e6582ae",
+        "title": "Rewinding the exponential: How we keep hardware usage down",
+        "url": "https://blog.cloudflare.com/rewinding-the-exponential",
+        "source": "cloudflare",
+        "category": "eng_blogs",
+        "summary_ko": "Cloudflare 가 데이터 파이프라인 처리량을 늘리면서도 하드웨어 사용량이 기하급수적으로 늘어나지 않게 억제한 최적화 전략을 공유한다. 데이터 품질을 희생하지 않는 선에서 처리량을 끌어올리는 것이 목표다. ※본문 미확보 — 요약 기반(기사 본문이 태그 목록에 가려 수집되지 않음).",
+        "lang": "en",
+        "published_at": "2026-10-14T00:51:41+09:00",
+        "collected_at": "2026-10-15T07:33:21+09:00",
+        "metrics": null
+      }
+    ]
+  },
+  "hot_topics": [
+    {
+      "topic": "Amazon pushes up prices across the Internet",
+      "trend_score": 1.0,
+      "src_count": 1,
+      "hn": {
+        "points": 677,
+        "comments": 566
+      },
+      "items": [
+        {
+          "id": "507a36091c7fb1bad3a25d3510cb29cc01dcd328",
+          "title": "Amazon pushes up prices across the Internet",
+          "url": "https://not-ship.com/how-amazon-pushes-up-prices-all-across-the-internet",
+          "source": "hackernews",
+          "category": "hot_topics",
+          "summary_ko": "아마존에서 사지 않아도 아마존 때문에 비싸게 산다는 주장을 수수료 구조로 설명한 글이다. 아마존은 마켓플레이스 판매자에게 수수료를 걷는데, 그 비중이 2014년 매출의 약 19%에서 지금은 많은 판매자가 매출의 절반 가까이를 내는 수준까지 올랐다. 기본 판매 수수료(대부분 카테고리에서 15%)는 eBay·월마트와 비슷하지만 그 위에 물류·보관·반품·광고 수수료가 쌓이는 구조이며, 이 체계가 미국 FTC 의 반독점 소송의 핵심이라고 짚는다.",
+          "lang": "en",
+          "published_at": "2026-10-14T18:28:17+09:00",
+          "collected_at": "2026-10-15T07:33:21+09:00",
+          "metrics": {
+            "points": 677,
+            "comments": 566
+          }
+        }
+      ]
+    },
+    {
+      "topic": "Containment and monitoring failures are to blame for AI hacking reports: experts",
+      "trend_score": 0.9965,
+      "src_count": 1,
+      "hn": {
+        "points": 787,
+        "comments": 391
+      },
+      "items": [
+        {
+          "id": "7aff82cf50e7c250f6064e6055fc2cbb0e756b25",
+          "title": "Containment and monitoring failures are to blame for AI hacking reports: experts",
+          "url": "https://csoonline.com/article/4234854/ai-agents-arent-going-rogue-frontier-labs-are-skipping-security-basics.html",
+          "source": "hackernews",
+          "category": "hot_topics",
+          "summary_ko": "최근 잇따른 'AI 에이전트가 제멋대로 움직였다'는 사고들이 실은 프런티어 연구소의 봉쇄·모니터링 실패라는 보안 전문가들의 지적을 다뤘다. 7월 이후 OpenAI 의 Hugging Face 침해, Anthropic 모델의 세 기관 프로덕션 인프라 무단 접근, Meta 모델의 보안 테스트 중 타사 해킹, 구글 Gemini 의 '지시받지 않은 해킹' 3건이 공개됐다. 전문가들은 1990년대부터 알려진 샌드박스 격리 같은 기본을 지키지 않은 것이 원인인데 연구소들이 이를 'AI 안전' 문제로 뭉뚱그리며 보안 전문가의 조언을 물린다고 비판하고, CISO 에게는 AI 공급업체 검증과 기본 통제 강화를 권한다.",
+          "lang": "en",
+          "published_at": "2026-10-15T02:45:23+09:00",
+          "collected_at": "2026-10-15T07:33:21+09:00",
+          "metrics": {
+            "points": 787,
+            "comments": 391
+          }
+        }
+      ]
+    },
+    {
+      "topic": "Iosevka is an open-source, sans-serif and slab-serif monospace font",
+      "trend_score": 0.9642,
+      "src_count": 1,
+      "hn": {
+        "points": 680,
+        "comments": 280
+      },
+      "items": [
+        {
+          "id": "2f417a4e03ad7366b5cce6637af7416bf14a134f",
+          "title": "Iosevka is an open-source, sans-serif and slab-serif monospace font",
+          "url": "https://typeof.net/Iosevka",
+          "source": "hackernews",
+          "category": "hot_topics",
+          "summary_ko": "코드 작성·터미널·기술 문서용으로 설계된 오픈소스 타입페이스 Iosevka(현재 34.9.0) 소개 페이지다. 모노스페이스와 슬랩세리프, 준비례(quasi-proportional) 계열을 함께 제공하며 Iosevka·Term·Fixed·Slab·Aile·Etoile 등으로 갈라진다. 기본 글자 폭이 정확히 1/2em 으로 좁아 같은 화면 너비에 더 많은 열을 넣을 수 있고, 여유를 원하면 Extended 폭을 고를 수 있다.",
+          "lang": "en",
+          "published_at": "2026-10-14T17:27:59+09:00",
+          "collected_at": "2026-10-15T07:33:21+09:00",
+          "metrics": {
+            "points": 680,
+            "comments": 280
+          }
+        }
+      ]
+    },
+    {
+      "topic": "Passkeys are not a trap",
+      "trend_score": 0.9374,
+      "src_count": 1,
+      "hn": {
+        "points": 371,
+        "comments": 559
+      },
+      "items": [
+        {
+          "id": "4c6dccd918712eb7937b6a317c665f72c41be205",
+          "title": "Passkeys are not a trap",
+          "url": "https://scotthelme.co.uk/passkeys-are-not-a-trap",
+          "source": "hackernews",
+          "category": "hot_topics",
+          "summary_ko": "'패스키는 함정이니 쓰지 말라'며 화제가 된 글에 대한 반박이다. 원글은 패스키의 어테스테이션(attestation, 그 패스키를 무엇이 만들었는지 암호학적으로 증명하는 기능)이 숨은 다이얼이어서 사이트들이 점점 조여 승인된 OS·소프트웨어에서만 로그인하게 만들 것이라고 주장했다. 저자 Scott Helme 은 실제 동작과 맞지 않는다고 반박하는데, 대다수 사용자가 쓰는 동기화 패스키(iCloud 키체인·Google 비밀번호 관리자·1Password·Bitwarden 등)는 애초에 사이트에 어테스테이션 진술을 제공하지 않는다는 점이 근거다.",
+          "lang": "en",
+          "published_at": "2026-10-15T00:15:45+09:00",
+          "collected_at": "2026-10-15T07:33:21+09:00",
+          "metrics": {
+            "points": 371,
+            "comments": 559
+          }
+        }
+      ]
+    },
+    {
+      "topic": "Things to know when you get cancer – 2026 Edition",
+      "trend_score": 0.8947,
+      "src_count": 1,
+      "hn": {
+        "points": 500,
+        "comments": 134
+      },
+      "items": [
+        {
+          "id": "f133305ad14f5ef8e7bd320d83bf5e7ff7b28e65",
+          "title": "Things to know when you get cancer – 2026 Edition",
+          "url": "https://jjmaxwell4.com/writing/things-to-know-when-you-get-cancer",
+          "source": "hackernews",
+          "category": "hot_topics",
+          "summary_ko": "2026년 5월 구강 편평세포암 진단을 받은 저자가 겪으며 배운 실무적 조언을 정리한 글이다. 진료 일정은 집요하게 챙겨야 하며(4주 뒤 예약도 며칠 뒤 다시 전화해 취소분을 물어 그 주에 당겼다), 여러 AI 모델에 물었을 때 한동안 '암이 아닐 것'이라며 심각성을 낮춰 말하더라는 경험도 적었다. 포괄적 유전자 검사는 먼저 요구해야 할 수 있고(의뢰가 늦어져 결과가 몇 달 밀렸다), 암종별 표준치료 흐름도는 NCCN 가이드라인에서 비전문가도 계정을 만들어 직접 확인할 수 있다고 안내한다.",
+          "lang": "en",
+          "published_at": "2026-10-15T04:26:30+09:00",
+          "collected_at": "2026-10-15T07:33:21+09:00",
+          "metrics": {
+            "points": 500,
+            "comments": 134
+          }
+        }
+      ]
+    },
+    {
+      "topic": "Do dentists know what they're doing?",
+      "trend_score": 0.8526,
+      "src_count": 1,
+      "hn": {
+        "points": 272,
+        "comments": 200
+      },
+      "items": [
+        {
+          "id": "ba845e44e60f5605763ba539472db434c4f401f9",
+          "title": "Do dentists know what they're doing?",
+          "url": "https://mapwriting.substack.com/p/dentists",
+          "source": "hackernews",
+          "category": "hot_topics",
+          "summary_ko": "치과 진료의 불확실성을 자기 경험으로 풀어낸 개인 에세이다. 17세 때 턱 통증으로 간 치과에서 '좌우 얼굴이 다르게 자랐고 교합이 몇 분의 1밀리미터 어긋났다'는 말을 듣고 그 자리에서 치아 리셰이핑(teeth reshaping)을 받았는데, 치아가 맞물리긴 해도 길이가 짧아지면서 턱 문제는 오히려 나빠졌다는 이야기다. 전문가의 권유가 그 자리에서 되돌릴 수 없는 시술로 이어지는 구조를 문제 삼는다.",
+          "lang": "en",
+          "published_at": "2026-10-12T11:21:54+09:00",
+          "collected_at": "2026-10-15T07:33:21+09:00",
+          "metrics": {
+            "points": 272,
+            "comments": 200
+          }
+        }
+      ]
+    },
+    {
+      "topic": "Fire at Starlink site in Bulgaria after suspected sabotage in Poland",
+      "trend_score": 0.8333,
+      "src_count": 1,
+      "hn": {
+        "points": 241,
+        "comments": 175
+      },
+      "items": [
+        {
+          "id": "9a1be9fc3d4333d2790318df56a112d9803c13ec",
+          "title": "Fire at Starlink site in Bulgaria after suspected sabotage in Poland",
+          "url": "https://dpa-international.com/politics/urn:newsml:dpa.com:20090101:261014-930-839530",
+          "source": "hackernews",
+          "category": "hot_topics",
+          "summary_ko": "불가리아 총리 루멘 라데프가 지난주 소피아 인근 Starlink 시설에서 화재가 있었음을 확인했다. 친서방 야권연합 DB 에 따르면 10월 9일 해당 시설의 안테나 17기 중 11기가 고의로 불탔고, 이 안테나들은 우크라이나 전쟁에 쓰이고 있었다. 독일 여권을 가진 20세·21세 남성 2명이 월요일 불가리아에서 구금됐으며, 수사당국은 이들이 같은 주 독일에서 체포된 2명과 연결된 더 큰 사보타주 조직의 일부인지 들여다보고 있다고 현지 매체들이 전했다.",
+          "lang": "en",
+          "published_at": "2026-10-15T03:37:21+09:00",
+          "collected_at": "2026-10-15T07:33:21+09:00",
+          "metrics": {
+            "points": 241,
+            "comments": 175
+          }
+        }
+      ]
+    },
+    {
+      "topic": "Banks are now trying to offload the AI data center debt they just underwrote",
+      "trend_score": 0.8268,
+      "src_count": 1,
+      "hn": {
+        "points": 225,
+        "comments": 177
+      },
+      "items": [
+        {
+          "id": "f6cba501345f0b730f2efecb7a6cd7157ac95917",
+          "title": "Banks are now trying to offload the AI data center debt they just underwrote",
+          "url": "https://startupfortune.com/banks-are-now-trying-to-offload-the-ai-data-center-debt-they-just-underwrote",
+          "source": "hackernews",
+          "category": "hot_topics",
+          "summary_ko": "JPMorgan·Morgan Stanley·SMBC·MUFG 등이 자신들이 인수했던 AI 데이터센터 부채를 외부로 넘기려 한다는 Financial Times 보도를 정리했다. 텍사스·위스콘신 데이터센터 프로젝트(오라클 임차)에 묶인 380억 달러 건설 부채를 6개월 넘게 소화하지 못하고 있으며, 은행들은 대출을 장부에 남긴 채 가장 위험한 부분만 외부 투자자에게 넘기는 '중대 위험 이전' 거래를 검토 중이다. 배경은 한 은행이 떠안을 수 있는 AI 연계 익스포저의 내부 한도에 부딪혔다는 것으로, 크레딧디폴트스왑(CDS, 부도 위험을 사고파는 파생상품) 가격 급등과 채권 주문 부진이 함께 나타나고 있다.",
+          "lang": "en",
+          "published_at": "2026-10-15T03:32:52+09:00",
+          "collected_at": "2026-10-15T07:33:21+09:00",
+          "metrics": {
+            "points": 225,
+            "comments": 177
+          }
+        }
+      ]
+    },
+    {
+      "topic": "Google is silently linking your phone number across all signed-in accounts",
+      "trend_score": 0.8218,
+      "src_count": 1,
+      "hn": {
+        "points": 316,
+        "comments": 81
+      },
+      "items": [
+        {
+          "id": "2d35a8bbd523c3d776fff8ec17ca929308354dfd",
+          "title": "Google is silently linking your phone number across all signed-in accounts",
+          "url": "https://androidauthority.com/google-auto-phone-number-verification-android-3723117",
+          "source": "hackernews",
+          "category": "hot_topics",
+          "summary_ko": "구글이 로그인된 모든 계정에 전화번호를 조용히 연결하고 있다는 Android Authority 보도다. ※본문 미확보 — 제목 기반(기사 본문이 수집되지 않음).",
+          "lang": "en",
+          "published_at": "2026-10-15T01:28:51+09:00",
+          "collected_at": "2026-10-15T07:33:21+09:00",
+          "metrics": {
+            "points": 316,
+            "comments": 81
+          }
+        }
+      ]
+    },
+    {
+      "topic": "Suicide rates highest ever among middle-aged men",
+      "trend_score": 0.8014,
+      "src_count": 1,
+      "hn": {
+        "points": 164,
+        "comments": 203
+      },
+      "items": [
+        {
+          "id": "0b2c5cea784a8efe65873bd3259781ca0181b7e5",
+          "title": "Suicide rates highest ever among middle-aged men",
+          "url": "https://telegraph.co.uk/news/2026/10/13/suicide-rates-highest-ever-among-middle-aged-men",
+          "source": "hackernews",
+          "category": "hot_topics",
+          "summary_ko": "중년 남성의 자살률이 역대 최고를 기록했다는 영국 Telegraph 보도다. ※본문 미확보 — 제목 기반(기사 본문이 수집되지 않음).",
+          "lang": "en",
+          "published_at": "2026-10-15T04:03:58+09:00",
+          "collected_at": "2026-10-15T07:33:21+09:00",
+          "metrics": {
+            "points": 164,
+            "comments": 203
+          }
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "source": "github_trending",
+      "ok": true,
+      "item_count": 9,
+      "error_type": null
+    },
+    {
+      "source": "anthropic",
+      "ok": true,
+      "item_count": 271,
+      "error_type": null
+    },
+    {
+      "source": "openai",
+      "ok": false,
+      "item_count": 0,
+      "error_type": "HTTPError"
+    },
+    {
+      "source": "deepmind",
+      "ok": true,
+      "item_count": 100,
+      "error_type": null
+    },
+    {
+      "source": "meta_ai",
+      "ok": true,
+      "item_count": 88,
+      "error_type": null
+    },
+    {
+      "source": "mistral",
+      "ok": true,
+      "item_count": 89,
+      "error_type": null
+    },
+    {
+      "source": "xai",
+      "ok": true,
+      "item_count": 85,
+      "error_type": null
+    },
+    {
+      "source": "openai_codex",
+      "ok": true,
+      "item_count": 136,
+      "error_type": null
+    },
+    {
+      "source": "cloudflare",
+      "ok": true,
+      "item_count": 20,
+      "error_type": null
+    },
+    {
+      "source": "github_blog",
+      "ok": true,
+      "item_count": 10,
+      "error_type": null
+    },
+    {
+      "source": "aws",
+      "ok": true,
+      "item_count": 20,
+      "error_type": null
+    },
+    {
+      "source": "stripe",
+      "ok": true,
+      "item_count": 10,
+      "error_type": null
+    },
+    {
+      "source": "meta_eng",
+      "ok": true,
+      "item_count": 9,
+      "error_type": null
+    },
+    {
+      "source": "reddit_localllama",
+      "ok": true,
+      "item_count": 25,
+      "error_type": null
+    },
+    {
+      "source": "hf_blog",
+      "ok": true,
+      "item_count": 876,
+      "error_type": null
+    },
+    {
+      "source": "hackernews",
+      "ok": true,
+      "item_count": 20,
+      "error_type": null
+    }
+  ],
+  "summaries_injected": true
+}
