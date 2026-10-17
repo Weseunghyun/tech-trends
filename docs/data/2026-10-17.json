@@ -1,0 +1,869 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-10-17T10:59:04+09:00",
+  "date": "2026-10-17",
+  "categories": {
+    "ai_labs": [
+      {
+        "id": "65442e708214c10b88da99a535be852d30396736",
+        "title": "How Itaú is building generative AI for its entire customer base",
+        "url": "https://openai.com/index/itau-generative-ai",
+        "source": "openai",
+        "category": "ai_labs",
+        "summary_ko": "브라질 최대 은행 이타우(Itaú)가 OpenAI 모델로 전 고객 대상 생성형 AI를 구축한 사례. 음성·텍스트로 쓰는 대화형 창구 'ia.i'가 입출금·신용·카드·보험 문의를 한곳에 모으고, 필요하면 사람 상담사로 연결한다. 1단계에 약 30만 명이 쓰고 있고 2026년 말까지 전 고객 확대가 목표이며, 법무 솔루션은 9천만 건 이상의 문서를 다뤄 부서 업무 효율이 20~80% 개선됐다. CTO는 비용·지연이 중요한 단순 작업부터 추론이 필요한 복잡한 작업까지 여러 모델을 골라 쓸 수 있었던 점을 핵심으로 꼽았고, 규제가 강한 금융권인 만큼 'IARA'라는 거버넌스 플랫폼을 별도로 두었다.",
+        "lang": "en",
+        "published_at": "2026-10-17T04:00:00+09:00",
+        "collected_at": "2026-10-17T10:52:44+09:00",
+        "metrics": null
+      },
+      {
+        "id": "ba4e7337aba280a43aa0c8a66d42089649fa3da6",
+        "title": "Scaling Indic Pretraining: 2.8 Trillion Tokens and an Open Data Generation Pipeline",
+        "url": "https://huggingface.co/blog/nvidia/scaling-indic-pretraining",
+        "source": "hf_blog",
+        "category": "ai_labs",
+        "summary_ko": "NVIDIA가 인도 공과대학(IIT Madras)의 AI4Bharat 연구실과 함께 인도 22개 공용어로 약 2.8조 토큰 규모의 사전학습 말뭉치 'Nemotron-pretraining-Indic-v1'과, 이를 만든 GPU 가속 데이터 생성 파이프라인을 오픈소스로 공개한다. 22개 언어는 인도 헌법이 정한 공용어로 인도인 97%(약 12억 명)의 모국어다. 22개 언어는 고유 문자 데이터로, 12개 언어는 로마자 표기까지 포함해 총 34개 언어-문자 조합을 담았다. 수학·코드·질의응답 등 선별된 영어 문서를 인도 언어로 번역·품질검사·보정하는 워크플로를 통째로(프롬프트·LLM 워크플로·품질 체크 포함) 공개해, 다른 팀이 자기 원문으로 데이터를 더 만들 수 있게 했다. 모든 결과물은 원본 문서로 역추적되고 입력과 대조 검증된다. ※사전학습: 모델에 대량의 일반 텍스트를 먼저 학습시키는 단계.",
+        "lang": "en",
+        "published_at": "2026-10-16T10:44:47+09:00",
+        "collected_at": "2026-10-17T10:52:44+09:00",
+        "metrics": null
+      },
+      {
+        "id": "9db4940a53f868400a117abeba82d09071409b87",
+        "title": "Stack Overflow for Agents triples signups with ChatGPT plugin",
+        "url": "https://openai.com/index/stack-overflow-chatgpt-plugin",
+        "source": "openai",
+        "category": "ai_labs",
+        "summary_ko": "Stack Overflow가 에이전트용 제품 'Stack Overflow for Agents'를 엔지니어 2명이 Codex로 몇 주 만에 출시한 사례. ChatGPT 플러그인을 붙이자 가입이 하룻밤 사이 3배, 에이전트 생성은 최대 10배로 늘었다. 기업용 'Stack Internal'의 커넥터(외부 시스템 연동 모듈) 개발도 평균 3~6주에서 4일로 줄어 최대 87% 단축됐고, 출시 목표 기간도 1년에서 3개월로 당겼다. 플랫폼 AI는 GPT‑6 Astra·Sol을 쓰되 필요한 추론 수준과 비용에 따라 작업별로 모델을 라우팅한다. ※Codex: OpenAI의 코딩 에이전트.",
+        "lang": "en",
+        "published_at": "2026-10-16T09:00:00+09:00",
+        "collected_at": "2026-10-17T10:52:44+09:00",
+        "metrics": null
+      },
+      {
+        "id": "849b423196d125cc3aaed178ce976945d3094cba",
+        "title": "Welcome Beam: a 501B open model you can own, customize, and scale",
+        "url": "https://huggingface.co/blog/reflection-beam",
+        "source": "hf_blog",
+        "category": "ai_labs",
+        "summary_ko": "신생 미국 연구소 Reflection의 첫 모델 'Beam'이 Apache 2.0 라이선스로 공개됐다. 총 5010억 파라미터 MoE(전문가 혼합) 구조에 토큰당 230억만 활성화되고, 52개 레이어·MoE 레이어당 256 전문가 중 토큰당 8개를 선택한다. 컨텍스트 창은 100만 토큰, 텍스트 전용이며 코딩과 에이전트 작업에 초점을 맞췄다. BF16·FP8·NVFP4 체크포인트, 전용 Rust 기반 실행 하네스, 추론 강도 5단계(low~max), 턴을 넘겨 추론을 유지하는 preserve_thinking, 전용 문법 기반 도구 호출, DFlash2 추측 디코딩 드래프터를 제공한다. transformers·vLLM·SGLang 출시 당일 지원과 TRL(SFT)·Miles(GRPO) 사후학습 레시피가 함께 나왔고, Beam으로 만든 우수 프로젝트에 1만 달러 Hub 크레딧을 준다. ※MoE: 전체 파라미터 중 일부 전문가만 켜서 연산량을 줄이는 구조.",
+        "lang": "en",
+        "published_at": "2026-10-16T09:00:00+09:00",
+        "collected_at": "2026-10-17T10:52:44+09:00",
+        "metrics": null
+      },
+      {
+        "id": "a01e02239da0a38ee49f2989916454516c49e83e",
+        "title": "Granite Switch 4.1: Chat, Decisions, and Speech from One Endpoint",
+        "url": "https://huggingface.co/blog/ibm-granite/granite-switch-4-1",
+        "source": "hf_blog",
+        "category": "ai_labs",
+        "summary_ko": "IBM이 Granite Switch 4.1(8B·30B)을 공개했다. 하나의 호스팅 엔드포인트에서 일반 대화, 범용/특화 판단(decision), 음성 인식을 전환해 처리한다. 범용 판단용 Decision aLoRA, 안전성 판단에서 Jev 1.13·Microsoft-Decision-1·GPT-Luna-Decisions·Clef-Flash를 평균적으로 앞서는 Guardian aLoRA, OpenASR 리더보드 1위 속도의 Granite-Speech-5.0-Turbo-CTC를 한 모델에 합쳤는데도 VRAM 사용량은 기본 모델과 비슷하다. 어댑터가 Activated LoRA라 기본 모델 생성에서 만든 KV 캐시를 뒤따르는 판단 작업에 재사용할 수 있는 것이 속도의 핵심. 5단계 RAG 워크플로 비교에서 Granite-Switch-4.1-30B가 Jev-27B보다 빨랐다. ※LoRA: 기본 모델은 고정한 채 작은 어댑터만 추가 학습하는 기법.",
+        "lang": "en",
+        "published_at": "2026-10-16T05:34:01+09:00",
+        "collected_at": "2026-10-17T10:52:44+09:00",
+        "metrics": null
+      },
+      {
+        "id": "1d4cff712a9a12812912916b09ee2f570c14be95",
+        "title": "Accelerating the search for antimicrobial peptides with Google Antigravity",
+        "url": "https://deepmind.google/blog/accelerating-antimicrobial-discovery",
+        "source": "deepmind",
+        "category": "ai_labs",
+        "summary_ko": "Google DeepMind가 과학 연구용 도구 'Google Antigravity'를 써서 새로운 항균 펩타이드(세균을 죽이는 짧은 단백질 조각) 탐색을 가속한 사례를 소개했다. 항생제 내성 문제의 대안으로 주목받는 분야다. ※본문 미확보 — 제목·요약 기반.",
+        "lang": "en",
+        "published_at": "2026-10-16T01:08:03+09:00",
+        "collected_at": "2026-10-17T10:52:44+09:00",
+        "metrics": null
+      },
+      {
+        "id": "3a11e60ee8cf431d325202d6163c1c157e9bbeab",
+        "title": "Introducing Timestral",
+        "url": "https://mistral.ai/news/timestral",
+        "source": "mistral",
+        "category": "ai_labs",
+        "summary_ko": "Mistral이 첫 시계열 예측 전용 파운데이션 모델 제품군 'Timestral'을 공개했다. 최대 모델이 2억 900만 파라미터에 불과한데도 GIFT-Eval·TIME·fev-bench 세 가지 주요 공개 벤치마크에서 모두 1위를 기록했고, 기존 1위 모델의 3분의 2 크기로 이를 달성했다. 5M~209M 네 가지 크기로 나오며 CPU에서도 효율적으로 돌고, 한 번도 본 적 없는 데이터를 추가 학습 없이 예측하는 제로샷에 강하다. 확률적·다변량 예측을 지원하고 과거 공변량과 미래가 알려진 공변량을 모두 받는다. 합성 데이터 사전학습, 공변량 인식 어텐션, 장기 컨텍스트 학습을 결합했으며 Mistral Forge로 도메인 맞춤 파인튜닝이 가능하다. 센서 텔레메트리·수요 예측·재무 흐름 예측 등 기업 데이터에서 가장 흔한 데이터 유형을 겨냥했다.",
+        "lang": "en",
+        "published_at": "2026-10-15T21:00:00+09:00",
+        "collected_at": "2026-10-17T10:52:44+09:00",
+        "metrics": null
+      },
+      {
+        "id": "227d02ee5d0460b9012ad5b554d3950ec96f8431",
+        "title": "An update on independent evaluators",
+        "url": "https://anthropic.com/news/an-update-on-independent-evaluators",
+        "source": "anthropic",
+        "category": "ai_labs",
+        "summary_ko": "Anthropic이 외부 독립 평가기관에 '직원에 준하는 접근 권한'을 주기 시작했다고 발표했다. 프런티어 AI 모델을 평가하는 비영리 단체 METR 소속 6명에게 회사 장비·사무 공간과 내부 도구·시스템 접근을 자사 리스크 평가팀 수준으로 부여했고, 고객 데이터·변호사 비밀유지 정보·모델 아키텍처 같은 소수의 사전 정의 범주를 빼면 직원처럼 정보를 공유하도록 권장한다. METR은 평가 결과를 공개하며 Anthropic은 거부권이 없고 앞의 범주에 해당하면 수정만 요구할 수 있다(해당 여부 판단은 Anthropic 몫). SecureBio·Accenture와도 협업 중이고 Hugging Face 등과 초기 논의 중이다. 은행 감독관이 대형 은행 내부에 상주하는 방식에 빗대 설명했으며, 지난달 서명한 '초지능에 관한 백악관 협약' 이행의 일환이다.",
+        "lang": "en",
+        "published_at": "2026-10-15T09:00:00+09:00",
+        "collected_at": "2026-10-17T10:52:44+09:00",
+        "metrics": null
+      },
+      {
+        "id": "dd00c04c9b95848ea0ec2f0b57fc95409902cbbb",
+        "title": "Sullivan & Cromwell brings legal expertise into agreement review",
+        "url": "https://openai.com/index/sullivan-cromwell",
+        "source": "openai",
+        "category": "ai_labs",
+        "summary_ko": "미국 로펌 Sullivan & Cromwell이 OpenAI와 함께 계약서 초안 검토 도구 'Agreement Analyzer'를 만든 사례. 파트너 변호사가 Codex로 1인용 개념 증명을 만든 뒤 OpenAI와 협업해 출력 품질을 높이고 병렬 처리로 효율을 올려 여러 변호사가 동시에 쓰는 도구로 전환했다. 로펌이 축적한 선례와 협상 플레이북, ChatGPT Enterprise를 묶어, 초안을 넣으면 여러 관점에서 반복 검토해 쟁점을 짚고 메모와 수정 이력(tracked changes) 제안을 돌려준다. 에이전트가 결론을 내면 다른 에이전트가 반박하는 적대적 구조를 쓰고, 시장 관행을 주장할 때는 출처를 볼 수 있어야 한다는 투명성을 신뢰의 조건으로 강조했다.",
+        "lang": "en",
+        "published_at": "2026-10-15T09:00:00+09:00",
+        "collected_at": "2026-10-17T10:52:44+09:00",
+        "metrics": null
+      },
+      {
+        "id": "9d251ac6836a600d8fed2294d5c3f8928f6177ed",
+        "title": "Welcome Muse Spark Open: open-weight frontier multimodal mixture-of-experts model from Meta",
+        "url": "https://huggingface.co/blog/meta-muse-spark-open",
+        "source": "hf_blog",
+        "category": "ai_labs",
+        "summary_ko": "Meta가 오픈웨이트 멀티모달 MoE 모델 'Muse Spark Open'을 공개했다. 총 약 8160억 파라미터에 토큰당 약 420억 활성, MoE 레이어당 256 전문가 중 8개 선택, 컨텍스트 최대 100만 토큰이며 텍스트·이미지·오디오·비디오를 입력받아 텍스트를 출력한다. 다중 파일 리팩터링과 긴 디버깅 세션 같은 실제 개발자 워크플로로 학습된 코딩 특화 모델로, 계획·실행·관찰·자기수정을 반복하는 에이전트 작업과 이미지 기반 웹 브라우징을 겨냥했다. 언어 모델은 62개 레이어·은닉 차원 8192, 쿼리 헤드 128개와 KV 헤드 16개의 그룹 쿼리 어텐션에 QK-norm을 적용했다. BF16·NVFP4 체크포인트로 배포되고 transformers·llama.cpp·SGLang·vLLM·MLX에서 돌아가며 TRL로 파인튜닝할 수 있다. 8월에 나온 소형 밀집 모델 Muse Glimmer와 토크나이저·어휘를 공유한다.",
+        "lang": "en",
+        "published_at": "2026-10-15T09:00:00+09:00",
+        "collected_at": "2026-10-17T10:52:44+09:00",
+        "metrics": null
+      }
+    ],
+    "community": [],
+    "github_trending": [
+      {
+        "id": "92705331275526a8e0b1d0b4ec156bfb5025973f",
+        "title": "morluto/rea",
+        "url": "https://github.com/morluto/rea",
+        "source": "github_trending",
+        "category": "github_trending",
+        "summary_ko": "에이전트로 리버스 엔지니어링(완성된 프로그램을 거꾸로 분석해 동작 원리를 알아내는 일)을 하는 도구 REA. 앱의 겉보기 동작부터 네이티브 바이너리까지 한 개의 MCP 서버로 다룬다는 것이 핵심으로, 정적 분석·디코딩·런타임 동작 관찰을 묶었고 Ghidra·Hopper 같은 기존 디컴파일러와 연동한다. 스타 29만 개, 포크 7.3만 개로 트렌딩 상위. MIT 라이선스. ※MCP: AI 에이전트가 외부 도구를 호출하는 표준 프로토콜.",
+        "lang": "en",
+        "published_at": null,
+        "collected_at": "2026-10-17T10:52:44+09:00",
+        "metrics": null
+      },
+      {
+        "id": "3de13b42e404c8302ffbab609e0c8670a25364c7",
+        "title": "anthropics/claude-plugins-official",
+        "url": "https://github.com/anthropics/claude-plugins-official",
+        "source": "github_trending",
+        "category": "github_trending",
+        "summary_ko": "Anthropic이 직접 관리하는 공식 Claude Code 플러그인 디렉터리. `/plugins`에는 Anthropic이 만들고 유지하는 내부 플러그인이, `/external_plugins`에는 파트너·커뮤니티의 서드파티 플러그인이 들어간다. README는 '설치·갱신·사용 전에 해당 플러그인을 신뢰할 수 있는지 반드시 확인하라'고 경고하는데, Anthropic이 플러그인에 포함된 MCP 서버나 파일을 통제하지 않으며 의도대로 동작하거나 변경되지 않으리라고 보장할 수 없기 때문이다. 스타 4.06만 개, Apache-2.0 라이선스.",
+        "lang": "en",
+        "published_at": null,
+        "collected_at": "2026-10-17T10:52:44+09:00",
+        "metrics": null
+      },
+      {
+        "id": "36917ef32b441dc1267859059cff87fff8d86bcd",
+        "title": "K-Dense-AI/scientific-agent-skills",
+        "url": "https://github.com/K-Dense-AI/scientific-agent-skills",
+        "source": "github_trending",
+        "category": "github_trending",
+        "summary_ko": "과학 연구용 에이전트 스킬 라이브러리. 검증된 스킬 177개와 생물학·화학·의학·신약 개발 분야의 과학 데이터베이스 100여 곳을 묶어 어떤 AI 에이전트든 연구 보조로 쓸 수 있게 한다. 전 세계 25만 명 이상의 연구자가 쓴다고 밝히고 있고 스타 5.15만 개. 원래 'Claude Scientific Skills'였으나 Cursor·Claude Code·Codex·Pi·Antigravity 등 개방형 Agent Skills 표준을 따르는 모든 도구와 호환되도록 'Scientific Agent Skills'로 이름을 바꿨다. 관련 논문(arXiv 2609.00065)도 공개돼 있다.",
+        "lang": "en",
+        "published_at": null,
+        "collected_at": "2026-10-17T10:52:44+09:00",
+        "metrics": null
+      },
+      {
+        "id": "3fa1090af0f1f1a682c42ba1860959b241927c96",
+        "title": "JuliusBrussee/caveman",
+        "url": "https://github.com/JuliusBrussee/caveman",
+        "source": "github_trending",
+        "category": "github_trending",
+        "summary_ko": "코딩 에이전트가 '원시인 말투'로 짧게 말하고 짧게 읽게 해서 토큰을 65%까지 줄인다는 스킬 겸 프록시. 코드 자체는 그대로 두고 설명·대화 부분만 압축한다는 발상으로, 자체 측정치로 세션 전체 입력 토큰 33.2% 감소, Claude Code 54회 실행 중 18문항 전부 정답, Auto 모드에서 점수는 그대로인데 비용 54% 절감, 테스트 1회 출력이 397→76 토큰을 제시한다. 밈에 가까운 아이디어인데도 스타 11.3만 개로 급상승했다. Apache-2.0/MIT 듀얼 라이선스. ※벤치마크는 제작자 자체 측정치다.",
+        "lang": "en",
+        "published_at": null,
+        "collected_at": "2026-10-17T10:52:44+09:00",
+        "metrics": null
+      },
+      {
+        "id": "1c9d47a9794512b728120064b4e1ef5b112970d2",
+        "title": "debpalash/VoiceStudio",
+        "url": "https://github.com/debpalash/VoiceStudio",
+        "source": "github_trending",
+        "category": "github_trending",
+        "summary_ko": "ElevenLabs를 대체하는 완전 로컬 오픈소스 음성 도구 VoiceStudio. 음성 복제, 원하는 목소리 설계, 영상 더빙(타이밍 맞춤), 받아쓰기, 전사, 오디오북 제작을 646개 언어로 지원한다. 모든 처리가 로컬에서 돌아 음성 데이터를 외부로 보내지 않는 것이 핵심 차별점이고, CUDA와 애플 실리콘용 MLX를 모두 지원하며 Electron 기반 데스크톱 앱으로도 제공된다. 스타 7.13만 개, AGPL-3.0 라이선스.",
+        "lang": "en",
+        "published_at": null,
+        "collected_at": "2026-10-17T10:52:44+09:00",
+        "metrics": null
+      },
+      {
+        "id": "2046f5e50fafe44ab9382efbd7ce4484b55575ee",
+        "title": "obra/superpowers",
+        "url": "https://github.com/obra/superpowers",
+        "source": "github_trending",
+        "category": "github_trending",
+        "summary_ko": "코딩 에이전트용 스킬 프레임워크이자 소프트웨어 개발 방법론 'Superpowers'. 조합 가능한 스킬 묶음과, 에이전트가 그 스킬을 실제로 쓰도록 강제하는 초기 지시문으로 구성된다. Claude Code·Antigravity·Codex(앱/CLI)·Cursor·Devin CLI·Factory Droid·Gemini CLI·GitHub Copilot CLI·Grok Build CLI·Kimi Code·OpenCode·Pi·Qwen Code 등 주요 에이전트 도구에 각각의 플러그인 형식으로 붙는다. 스타 30만 개로 이번 트렌딩 목록 중 최상위권, MIT 라이선스.",
+        "lang": "en",
+        "published_at": null,
+        "collected_at": "2026-10-17T10:52:44+09:00",
+        "metrics": null
+      },
+      {
+        "id": "c289dc3d991e222b970344c35cf58dc3763342a2",
+        "title": "ruvnet/ruflo",
+        "url": "https://github.com/ruvnet/ruflo",
+        "source": "github_trending",
+        "category": "github_trending",
+        "summary_ko": "멀티 에이전트 스웜(여러 에이전트가 협동하는 무리)을 띄우고 자율 워크플로를 조율하는 에이전트 메타 하네스 Ruflo. 적응형 메모리, 자기 학습, 연합(federation), 벡터 RAG 연동을 내세우며 Claude Code·Codex·Hermes 등에 네이티브로 붙는다. 핵심 도구와 시각 콘솔, 런타임 모드를 제공하고 Claude Code 2.1.287 이상이 필요하다. 스타 7.57만 개, TypeScript, MIT 라이선스. ※RAG: 외부 문서를 검색해 답변 근거로 쓰는 기법.",
+        "lang": "en",
+        "published_at": null,
+        "collected_at": "2026-10-17T10:52:44+09:00",
+        "metrics": null
+      },
+      {
+        "id": "c4764ac37ccdddc8e7717cba92f01f19c175907a",
+        "title": "mksglu/context-mode",
+        "url": "https://github.com/mksglu/context-mode",
+        "source": "github_trending",
+        "category": "github_trending",
+        "summary_ko": "AI 코딩 에이전트의 컨텍스트 창을 아끼는 도구 Context Mode. 문제 제기가 구체적인데, MCP 도구 호출 하나하나가 원시 데이터를 컨텍스트에 쏟아부어 Playwright 스냅샷 1개가 56KB, GitHub 이슈 20개가 59KB, 접근 로그 1개가 45KB를 먹고 30분이면 컨텍스트의 40%가 사라진다고 지적한다. 해법은 도구 출력을 샌드박스에 격리해 98% 줄여 전달하고, 세션 메모리를 영속화하며, MCP와 훅으로 17개 플랫폼에서 라우팅을 강제하는 것. 스타 3.02만 개.",
+        "lang": "en",
+        "published_at": null,
+        "collected_at": "2026-10-17T10:52:44+09:00",
+        "metrics": null
+      },
+      {
+        "id": "b97146283b4a40b6f95472c5997a4dd63c7d7885",
+        "title": "NationalSecurityAgency/ghidra",
+        "url": "https://github.com/NationalSecurityAgency/ghidra",
+        "source": "github_trending",
+        "category": "github_trending",
+        "summary_ko": "미국 국가안보국(NSA) 연구부가 만들어 유지하는 소프트웨어 리버스 엔지니어링 프레임워크 Ghidra. 컴파일된 코드를 Windows·macOS·Linux 등 여러 플랫폼에서 분석하며 디스어셈블(기계어→어셈블리), 어셈블, 디컴파일(기계어→고급 언어 비슷한 코드), 그래프 시각화, 스크립팅을 제공한다. 스타 8.97만 개, Apache-2.0 라이선스. 오늘 트렌딩에 오른 에이전트 기반 리버스 엔지니어링 도구 REA가 연동 대상으로 삼는 바로 그 도구다.",
+        "lang": "en",
+        "published_at": null,
+        "collected_at": "2026-10-17T10:52:44+09:00",
+        "metrics": null
+      },
+      {
+        "id": "3429c7218e4f7d019ade07a0c0f3647b2004398c",
+        "title": "affaan-m/ECC",
+        "url": "https://github.com/affaan-m/ECC",
+        "source": "github_trending",
+        "category": "github_trending",
+        "summary_ko": "에이전트 하네스 성능 최적화 시스템 ECC. 스킬·본능(instincts)·메모리·보안·'리서치 우선' 개발 방식을 묶어 Claude Code·Codex·Opencode·Cursor 등에 적용한다. 스타 28.2만 개, 포크 4.19만 개. README 첫머리에 공급망 공격 경고를 달아 GitHub 저장소 github.com/affaan-m/ECC 와 공식 npm 패키지 등 검증된 경로에서만 설치하라고 명시했다. 한국어를 포함해 16개 언어 문서를 제공, MIT 라이선스.",
+        "lang": "en",
+        "published_at": null,
+        "collected_at": "2026-10-17T10:52:44+09:00",
+        "metrics": null
+      }
+    ],
+    "codex": [
+      {
+        "id": "4f4ad983828b57293f42c42b8b0eb63975a38dfa",
+        "title": "Codex CLI Release: 0.163.0",
+        "url": "https://developers.openai.com/codex/changelog#github-release-414286110",
+        "source": "openai_codex",
+        "category": "codex",
+        "summary_ko": "Codex CLI 0.163.0 릴리스. ChatGPT·Codex 체인지로그에 올라온 커맨드라인 도구 업데이트다. ※본문 미확보(체인지로그 페이지에서 해당 항목 본문을 가져오지 못함) — 제목 기반. 변경 내역은 원문 링크에서 확인 필요.",
+        "lang": "en",
+        "published_at": "2026-10-15T09:00:00+09:00",
+        "collected_at": "2026-10-17T10:52:44+09:00",
+        "metrics": null
+      },
+      {
+        "id": "af7b755c7832b056f219de19c4602eec416b8d18",
+        "title": "GPT-5.5 retirement in Codex",
+        "url": "https://developers.openai.com/codex/changelog#codex-2026-10-14-gpt-55-retirement",
+        "source": "openai_codex",
+        "category": "codex",
+        "summary_ko": "Codex에서 GPT-5.5 모델이 퇴역(retirement)한다는 공지(2026-10-14자). 해당 모델을 쓰던 설정은 후속 모델로 옮겨야 한다는 뜻이다. ※본문 미확보 — 제목 기반. 정확한 중단 일정과 대체 모델은 원문 링크 확인 필요.",
+        "lang": "en",
+        "published_at": "2026-10-14T09:00:00+09:00",
+        "collected_at": "2026-10-17T10:52:44+09:00",
+        "metrics": null
+      },
+      {
+        "id": "d4fcf102cf005f77dc0972debdd9fa8bbf15ffef",
+        "title": "Composer predictions in Codex",
+        "url": "https://developers.openai.com/codex/changelog#codex-2026-10-09-composer-predictions",
+        "source": "openai_codex",
+        "category": "codex",
+        "summary_ko": "Codex에 'Composer predictions' 기능이 추가됐다는 체인지로그 항목(2026-10-09자). ※본문 미확보 — 제목 기반. 동작 방식은 원문 링크 확인 필요.",
+        "lang": "en",
+        "published_at": "2026-10-09T09:00:00+09:00",
+        "collected_at": "2026-10-17T10:52:44+09:00",
+        "metrics": null
+      },
+      {
+        "id": "eee4eb437cb132235c2b5b75b53551f6b4bc0650",
+        "title": "Codex CLI Release: 0.162.1",
+        "url": "https://developers.openai.com/codex/changelog#github-release-408271623",
+        "source": "openai_codex",
+        "category": "codex",
+        "summary_ko": "Codex CLI 0.162.1 릴리스. 0.162.0 직후의 패치 버전이다. ※본문 미확보 — 제목 기반. 변경 내역은 원문 링크에서 확인 필요.",
+        "lang": "en",
+        "published_at": "2026-10-09T09:00:00+09:00",
+        "collected_at": "2026-10-17T10:52:44+09:00",
+        "metrics": null
+      },
+      {
+        "id": "e0a5a020ec33263cac0359579645f20746232dfc",
+        "title": "Codex app",
+        "url": "https://developers.openai.com/codex/changelog#codex-2026-10-08-app",
+        "source": "openai_codex",
+        "category": "codex",
+        "summary_ko": "Codex 앱 업데이트 공지(2026-10-08자). ※본문 미확보 — 제목 기반. 변경 내역은 원문 링크에서 확인 필요.",
+        "lang": "en",
+        "published_at": "2026-10-08T09:00:00+09:00",
+        "collected_at": "2026-10-17T10:52:44+09:00",
+        "metrics": null
+      },
+      {
+        "id": "79e86776a643edfe616fe44c574d4b7a9c340a93",
+        "title": "GPT-6.1 Sol Ultrafast in Codex and ChatGPT Work",
+        "url": "https://developers.openai.com/codex/changelog#codex-2026-10-08-gpt-61-sol-ultrafast",
+        "source": "openai_codex",
+        "category": "codex",
+        "summary_ko": "Codex와 ChatGPT Work에서 'GPT-6.1 Sol Ultrafast' 모델을 쓸 수 있게 됐다는 공지(2026-10-08자). Sol 계열의 초저지연(ultrafast) 변형으로, 응답 속도를 우선하는 작업용으로 보인다. ※본문 미확보 — 제목 기반. 성능·가격 조건은 원문 링크 확인 필요.",
+        "lang": "en",
+        "published_at": "2026-10-08T09:00:00+09:00",
+        "collected_at": "2026-10-17T10:52:44+09:00",
+        "metrics": null
+      },
+      {
+        "id": "bb01194de4494f607f18f0409a307e540e427c44",
+        "title": "Codex CLI Release: 0.162.0",
+        "url": "https://developers.openai.com/codex/changelog#github-release-407151970",
+        "source": "openai_codex",
+        "category": "codex",
+        "summary_ko": "Codex CLI 0.162.0 릴리스. ※본문 미확보 — 제목 기반. 변경 내역은 원문 링크에서 확인 필요.",
+        "lang": "en",
+        "published_at": "2026-10-08T09:00:00+09:00",
+        "collected_at": "2026-10-17T10:52:44+09:00",
+        "metrics": null
+      },
+      {
+        "id": "0b5d498646b7966e90f7f8b64bddc6412750cd6e",
+        "title": "Codex app",
+        "url": "https://developers.openai.com/codex/changelog#codex-2026-10-07-app",
+        "source": "openai_codex",
+        "category": "codex",
+        "summary_ko": "Codex 앱 업데이트 공지(2026-10-07자). 하루 뒤인 10-08에도 앱 업데이트가 따로 올라와, 짧은 주기로 배포되고 있음을 보여준다. ※본문 미확보 — 제목 기반.",
+        "lang": "en",
+        "published_at": "2026-10-07T09:00:00+09:00",
+        "collected_at": "2026-10-17T10:52:44+09:00",
+        "metrics": null
+      },
+      {
+        "id": "b25e8b812e7feb7cdb2bf982f5e6de4933f7a183",
+        "title": "ChatGPT for iOS",
+        "url": "https://developers.openai.com/codex/changelog#codex-2026-10-07-mobile",
+        "source": "openai_codex",
+        "category": "codex",
+        "summary_ko": "iOS용 ChatGPT 앱 업데이트 공지(2026-10-07자). Codex 체인지로그의 모바일 항목으로 올라왔다. ※본문 미확보 — 제목 기반. 변경 내역은 원문 링크에서 확인 필요.",
+        "lang": "en",
+        "published_at": "2026-10-07T09:00:00+09:00",
+        "collected_at": "2026-10-17T10:52:44+09:00",
+        "metrics": null
+      },
+      {
+        "id": "e3daaa65345481dbb4f83c08ddba8b36d2633d26",
+        "title": "Codex CLI Release: 0.161.0",
+        "url": "https://developers.openai.com/codex/changelog#github-release-405921402",
+        "source": "openai_codex",
+        "category": "codex",
+        "summary_ko": "Codex CLI 0.161.0 릴리스. 오늘 수집된 목록에 0.161.0부터 0.163.0까지 네 개 버전이 함께 잡혀, CLI가 열흘 남짓 사이 빠르게 올라가고 있음을 보여준다. ※본문 미확보 — 제목 기반.",
+        "lang": "en",
+        "published_at": "2026-10-07T09:00:00+09:00",
+        "collected_at": "2026-10-17T10:52:44+09:00",
+        "metrics": null
+      }
+    ],
+    "eng_blogs": [
+      {
+        "id": "dbfb9a2e3c4bc43b15d4bb3dc670a767e8c5a82b",
+        "title": "Continuous accountability for Verified bots",
+        "url": "https://blog.cloudflare.com/verified-bots-accountability",
+        "source": "cloudflare",
+        "category": "eng_blogs",
+        "summary_ko": "Cloudflare가 '검증된 봇(Verified bots)'을 상시 감시하는 체계를 도입한다. 신원 확인만으로는 봇이 실제로 예의 바르게 행동한다는 보장이 없다는 문제의식에서 출발해, 검증된 봇이 robots.txt(크롤러에게 수집 허용 범위를 알려주는 파일)나 HTTP 429(요청이 너무 많다는 응답) 같은 사이트 측 의사를 실제로 지키는지 지속적으로 평가하고, 지키지 않으면 검증 지위를 유지하지 못하게 한다. AI 크롤러가 급증하면서 '누구인지'보다 '어떻게 행동하는지'가 쟁점이 됐음을 보여주는 변화다. ※본문 미확보(블로그 태그 목록만 수집됨) — 요약 기반.",
+        "lang": "en",
+        "published_at": "2026-10-16T22:00:00+09:00",
+        "collected_at": "2026-10-17T10:52:44+09:00",
+        "metrics": null
+      },
+      {
+        "id": "9f081a221dd8c9a3ace9533f047ab7a643b26fb7",
+        "title": "New ways for fintechs to move money and expand globally",
+        "url": "https://stripe.com/blog/new-ways-for-fintechs-to-move-money-and-expand-globally",
+        "source": "stripe",
+        "category": "eng_blogs",
+        "summary_ko": "Stripe가 핀테크 기업의 해외 진출을 돕는 업데이트 세 가지를 내놨다(2026-10-16). ①Stripe Global Payouts로 제3자 지급(payout) 관리를 단순화하고, ②스테이블코인 카드 지원 국가를 확대하며, ③글로벌 금융 상품을 만들기 위한 API를 하나로 통합했다. 결제·정산·카드 발급을 나라별로 따로 붙이던 작업을 줄이려는 방향이다. ※스테이블코인: 달러 등에 가치를 연동한 암호화폐. ※본문 미확보 — 요약 기반.",
+        "lang": "en",
+        "published_at": "2026-10-16T09:00:00+09:00",
+        "collected_at": "2026-10-17T10:52:44+09:00",
+        "metrics": null
+      },
+      {
+        "id": "61022bc6478f9d2b8d3d2915f3fa79a4cee33297",
+        "title": "The next developer interface is ambient intelligence",
+        "url": "https://github.blog/news-insights/company-news/the-next-developer-interface-is-ambient-intelligence",
+        "source": "github_blog",
+        "category": "eng_blogs",
+        "summary_ko": "GitHub가 다음 개발자 인터페이스는 '앰비언트 인텔리전스(주변에 스며든 지능)'라고 주장하는 글. AI·에이전트·음성·물리적 컨트롤이 합쳐지면서 소프트웨어 개발이 '도구를 조작하는 일'에서 '의도를 표현하는 일'로 옮겨가고, 그만큼 개발자가 만드는 일 자체에 집중할 수 있게 된다는 내용이다. ※본문 미확보(블로그 네비게이션만 수집됨) — 요약 기반.",
+        "lang": "en",
+        "published_at": "2026-10-16T04:39:27+09:00",
+        "collected_at": "2026-10-17T10:52:44+09:00",
+        "metrics": null
+      },
+      {
+        "id": "6a8d51049e32b398f903de3457f7730e71c541b5",
+        "title": "How Meta Built Forum With AI-Native Engineering",
+        "url": "https://engineering.fb.com/2026/10/15/ml-applications/how-meta-built-forum-ai-native-engineering",
+        "source": "meta_eng",
+        "category": "eng_blogs",
+        "summary_ko": "Meta가 신규 앱 Forum(페이스북 그룹 대화를 깊게 파고드는 독립 앱)을 만들면서 AI 에이전트를 개발 주기의 '참여자'로 넣은 경험을 공개했다. 핵심은 human-in-the-loop(엔지니어가 매 단계를 몰고 AI가 거드는 방식)에서 human-on-the-loop(에이전트가 계획·구현·빌드·테스트·수정을 스스로 반복하고 엔지니어는 목표를 정하고 지켜보다 벗어날 때만 개입)로의 전환이다. 성공 지표를 코드 생산량이 아니라 '빌드되고 테스트를 통과하고 리뷰를 견딘 변경'으로 잡은 점이 특징. 컴파일이 아니라 검증(자동 테스트 + 시각 확인 통과)을 완료 기준으로 삼아, 에이전트가 스스로 검사한 뒤에만 리뷰로 올리게 했다. 이를 가능하게 한 장치로 ①모호함을 없앤 기계 판독 가능한 기술 명세 수준의 계획, ②빌드 상태·단위 테스트·UI 명세 일치 같은 자동 합격/불합격 신호를 에이전트 루프 안에 넣은 것, ③화면을 돌아다니며 사용자를 흉내 내는 내비게이션 에이전트 테스트를 꼽았다. 모든 결과물에는 여전히 엔지니어의 승인이 붙는다.",
+        "lang": "en",
+        "published_at": "2026-10-16T04:00:03+09:00",
+        "collected_at": "2026-10-17T10:52:44+09:00",
+        "metrics": null
+      },
+      {
+        "id": "06d335df8db522f00d14a11e2d591d1194a45b78",
+        "title": "2026 World Cup: Breaking Records, Spiky Charts and Reliability at Scale",
+        "url": "https://engineering.fb.com/2026/10/15/production-engineering/2026-world-cup-record-traffic-reliability-at-scale",
+        "source": "meta_eng",
+        "category": "eng_blogs",
+        "summary_ko": "2026 월드컵이 Meta 인프라의 역대 최대 부하 시험이 된 기록. 7월 19일 결승(아르헨티나 대 스페인)에 WhatsApp이 초당 3천만 건 이상의 메시지를 처리해 2026년 새해 전야 최고치의 1.23배로 플랫폼 사상 최고를 찍었고, Messenger·Threads·인스타그램 DM은 분당 4,900만 건, 인스타그램 추천 트래픽은 주간 대비 최대 80% 증가, 라이브 영상 시청 시간은 인스타그램 +90%·페이스북 +242%였다. 흥미로운 발견은 트래픽이 '공이 아니라 쉬는 시간을 따라갔다'는 점 — 수분 휴식·하프타임·연장·종료 휘슬·시상식 같은 끊기는 순간에 공유가 몰렸고, 정규시간 종료 휘슬이 대회 최대 피크(약 4분 만에 +46%, 종료 휘슬 뒤 15분간 +57%)를 만들었다. 대응은 수작업 개입 없이 Taiji(데이터센터 간 부하 분산), Katran·Proxygen(L4/L7 트래픽 분배), 글로벌 로드밸런싱, 오토스케일링이 층층이 흡수했다. 인스타그램은 39일 연속 스파이크를 ①오토스케일링을 기다리지 않도록 미리 확보한 용량 버퍼(가장 효과적인 수단이었다고 평가), ②고위험 경기 때 상위 트래픽 국가에서 비핵심 백그라운드 부하를 덜어내는 국가 단위 점진적 성능 저하 등으로 넘겼다. 대회 전 ISP와 함께 올린 엣지 용량은 그대로 상시 용량으로 남겼다.",
+        "lang": "en",
+        "published_at": "2026-10-16T03:30:29+09:00",
+        "collected_at": "2026-10-17T10:52:44+09:00",
+        "metrics": null
+      },
+      {
+        "id": "f118bcb568c33605b59ee332de9452dd90115b21",
+        "title": "Staying Evergreen: How we automated secure access and repo hygiene in a shared org",
+        "url": "https://github.blog/engineering/platform-security/staying-evergreen-how-we-automated-secure-access-and-repo-hygiene-in-a-shared-org",
+        "source": "github_blog",
+        "category": "eng_blogs",
+        "summary_ko": "GitHub가 여러 팀이 함께 쓰는 조직(org)에서 보안 접근 권한 검토와 저장소 정리를 자동화한 방법. 외부 협력자(outside collaborator) 접근 권한을 주기적으로 재검토하고 방치된 저장소를 자동 아카이브하는 일을, 별도 도구 없이 GitHub가 기본 제공하는 기능만으로 처리했다는 것이 요지다. ※본문 미확보 — 요약 기반.",
+        "lang": "en",
+        "published_at": "2026-10-16T03:00:00+09:00",
+        "collected_at": "2026-10-17T10:52:44+09:00",
+        "metrics": null
+      },
+      {
+        "id": "4c419dd8c4a4ebd303a7f8910faef0beffc9b67d",
+        "title": "A fully programmable secure web gateway",
+        "url": "https://blog.cloudflare.com/programmable-gateway-dlp",
+        "source": "cloudflare",
+        "category": "eng_blogs",
+        "summary_ko": "Cloudflare Gateway(보안 웹 게이트웨이)와 DLP(데이터 유출 방지)에 Cloudflare Workers의 프로그래머빌리티가 붙었다. 개발자 플랫폼과 풀스택으로 통합되면서, 고정된 정책 설정 화면 대신 Workers 코드로 트래픽 검사·차단·변형 규칙을 직접 작성할 수 있게 된다는 내용이다. ※DLP: 사내 기밀이 외부로 나가는 것을 탐지·차단하는 기능. ※본문 미확보 — 요약 기반.",
+        "lang": "en",
+        "published_at": "2026-10-16T02:11:12+09:00",
+        "collected_at": "2026-10-17T10:52:44+09:00",
+        "metrics": null
+      },
+      {
+        "id": "c2b85d4fc2e350159ef394910c48578325092cc1",
+        "title": "Sapienz Receives ISSTA 2026 Impact Paper Award",
+        "url": "https://engineering.fb.com/2026/10/15/developer-tools/sapienz-issta-2026-impact-paper-award-meta",
+        "source": "meta_eng",
+        "category": "eng_blogs",
+        "summary_ko": "Meta의 Ke Mao·Mark Harman·Yue Jia가 2016년 논문 'Sapienz: multi-objective automated testing for Android applications'으로 ISSTA 2026 최고 영향력 논문상을 받았다. Sapienz는 앱을 자동으로 조작해 크래시를 찾고, 그 크래시를 더 적은 단계로 재현하게 해 원인 추적을 쉽게 한다 — 앱 탐색 범위 확대, 크래시 발견 증가, 재현 단계 축소라는 세 목표를 동시에 최적화한 것이 핵심. 원 논문 평가에서 구글 플레이 인기 앱 1,000개를 대상으로 알려지지 않은 크래시 558건을 찾아냈고, 발표 17개월 만에 Meta에 대규모 배포됐다. 현재는 매일 수백만 건의 테스트를 돌려 매주 수천 건의 고유 크래시를 찾고 매달 수백 건의 앱 릴리스를 점검하며, WhatsApp에서는 동적 taint 분석(민감 데이터가 어디로 흘러가는지 추적하는 기법)의 앱 탐색 엔진으로도 쓰인다. 저자들은 이제 LLM 에이전트가 앱을 돌아다니며 '동작이 사용자 기대와 맞는지'까지 판단해, 자동화 테스트가 안정성에서 기능적 정확성과 자동 수리로 확장되고 있다고 짚었다.",
+        "lang": "en",
+        "published_at": "2026-10-16T01:00:59+09:00",
+        "collected_at": "2026-10-17T10:52:44+09:00",
+        "metrics": null
+      },
+      {
+        "id": "a83fbbf7416f0b57288b3df6ce938b262388b890",
+        "title": "Deploy with Void",
+        "url": "https://blog.cloudflare.com/deploy-with-void",
+        "source": "cloudflare",
+        "category": "eng_blogs",
+        "summary_ko": "Cloudflare가 Void를 공개했다. 풀스택 Vite 앱을 만들어 Cloudflare에 배포하기 위한 오픈소스 SDK·CLI이자 직접 호스팅할 수 있는 플랫폼이다. 자체 호스팅이 가능하다는 점에서 배포 플랫폼을 벤더에 묶지 않으려는 쪽을 겨냥한 것으로 보인다. ※Vite: 최근 널리 쓰이는 프런트엔드 빌드 도구. ※본문 미확보 — 요약 기반.",
+        "lang": "en",
+        "published_at": "2026-10-15T23:00:00+09:00",
+        "collected_at": "2026-10-17T10:52:44+09:00",
+        "metrics": null
+      },
+      {
+        "id": "5dbfd745016de2916a98e99b3a72b83f8b5898cb",
+        "title": "Cloudflare and OpenAI: Making AI discovery better for everyone",
+        "url": "https://blog.cloudflare.com/cloudflare-openai-discovery-agentic-web",
+        "source": "cloudflare",
+        "category": "eng_blogs",
+        "summary_ko": "Cloudflare와 OpenAI가 AI의 웹 콘텐츠 탐색 방식을 함께 개선한다. AI가 쓸모 있는 콘텐츠를 더 잘 찾고, 변경 사항을 제때 따라잡고, 헛된 요청을 줄이도록 하는 것이 목표로, 크롤링 비용을 지는 사이트 운영자와 최신 정보를 원하는 사용자 양쪽에 이득이 된다는 설명이다. 앞서 올라온 '검증된 봇 상시 감시' 글과 함께, Cloudflare가 AI 크롤러 트래픽을 차단이 아니라 규약으로 다루는 쪽으로 움직이고 있음을 보여준다. ※본문 미확보 — 요약 기반.",
+        "lang": "en",
+        "published_at": "2026-10-15T22:00:00+09:00",
+        "collected_at": "2026-10-17T10:52:44+09:00",
+        "metrics": null
+      }
+    ]
+  },
+  "hot_topics": [
+    {
+      "topic": "Tesla Roadster",
+      "trend_score": 1.0,
+      "src_count": 1,
+      "hn": {
+        "points": 1192,
+        "comments": 2156
+      },
+      "items": [
+        {
+          "id": "4461519436bf4241bde892d71d04477206ac6ec2",
+          "title": "Tesla Roadster",
+          "url": "https://tesla.com/roadster",
+          "source": "hackernews",
+          "category": "hot_topics",
+          "summary_ko": "테슬라 로드스터 제품 페이지가 해커뉴스 상위에 올랐다. ※본문 미확보(페이지 본문을 가져오지 못함) — 제목 기반. 내용은 원문 링크 확인 필요.",
+          "lang": "en",
+          "published_at": "2026-10-16T10:32:45+09:00",
+          "collected_at": "2026-10-17T10:52:44+09:00",
+          "metrics": {
+            "points": 1192,
+            "comments": 2156
+          }
+        }
+      ]
+    },
+    {
+      "topic": "FLUX 3 Image Klein",
+      "trend_score": 0.8886,
+      "src_count": 2,
+      "hn": {
+        "points": 116,
+        "comments": 27
+      },
+      "items": [
+        {
+          "id": "3733c75a28bf26df988281155bac3e5cdfdea7ba",
+          "title": "Welcome FLUX.3 Image Klein in Diffusers",
+          "url": "https://huggingface.co/blog/flux-3",
+          "source": "hf_blog",
+          "category": "ai_labs",
+          "summary_ko": "Black Forest Labs의 새 오픈 이미지 생성 모델 FLUX.3 Image Klein을 Diffusers에서 출시 당일부터 쓸 수 있게 됐다. 한 모델이 텍스트→이미지, 여러 장을 참조하는 이미지→이미지 변환을 모두 하고, 새로 '레이아웃 제어'가 붙어 프롬프트에 바운딩 박스(사각 좌표)를 적어 어떤 요소를 어디에 둘지, 참조 이미지의 어느 부분을 옮길지 지정할 수 있다. 체크포인트는 두 가지로, 스텝 증류 버전은 16스텝·CFG 없이 빠르게(H100에서 1024×1024 이미지 약 2초), 베이스 버전은 50스텝·CFG로 돈다. NVFP4·FP8 가중치를 단일 파일로 불러와 작은 GPU에서도 돌릴 수 있고, 텍스트→이미지와 이미지 편집 양쪽의 LoRA 학습 스크립트가 함께 제공된다. Modular Diffusers 파이프라인으로 출시돼 처리 블록을 빼거나 직접 끼워 넣을 수 있다. 텍스트 인코더로 Qwen3-VL을 쓴다.",
+          "lang": "en",
+          "published_at": "2026-10-15T09:00:00+09:00",
+          "collected_at": "2026-10-17T10:52:44+09:00",
+          "metrics": null
+        },
+        {
+          "id": "d0a00342ca12db38a8edca5fa2bddb9712df44f2",
+          "title": "FLUX 3 Image Klein",
+          "url": "https://bfl.ai/blog/flux-3-image-klein",
+          "source": "hackernews",
+          "category": "hot_topics",
+          "summary_ko": "Black Forest Labs가 오픈 가중치 이미지 모델 FLUX 3 Image Klein(56억 파라미터)을 공개했다. 텍스트→이미지, 이미지 편집, 최대 10장을 참조하는 다중 참조 생성을 지원하고, 상위 FLUX 3 Image와 네이티브 4K 생성·픽셀 단위 정밀 편집·영역을 지정하는 바운딩 박스 기능을 공유한다. 자체 평가에서 세 과제 모두 1위로, 더 큰 오픈 모델(Qwen-Image 2.1 7B, Krea 2 12.9B)과 비공개 모델(Ideogram V4.5, FLUX.2 [pro])을 앞섰다고 밝혔다. 파라미터를 38% 줄이고도 FLUX.2 [klein] 9B 대비 텍스트→이미지 91 Elo, 이미지 편집 70 Elo를 더 얻었다는 설명. 소비자 GPU를 겨냥해 BF16은 11.2GB, FP8은 5.6GB, INT8 빌드는 VRAM 8GB짜리 지포스 RTX에서도 돌고, 증류 모델+INT8로 100만 픽셀 이미지를 RTX 5090에서 약 4초, RTX 4070에서 9초 이내에 만든다. 이미지뿐 아니라 영상(움직임·물리)과 오디오(사건·상호작용)에서 얻은 학습을 함께 썼다고 밝혔다. ※Elo: 사람 선호 비교로 매기는 상대 점수. ※자체 평가 수치다.",
+          "lang": "en",
+          "published_at": "2026-10-17T04:47:13+09:00",
+          "collected_at": "2026-10-17T10:52:44+09:00",
+          "metrics": {
+            "points": 116,
+            "comments": 27
+          }
+        }
+      ]
+    },
+    {
+      "topic": "Claude reveals ECDSA curve origins",
+      "trend_score": 0.8549,
+      "src_count": 1,
+      "hn": {
+        "points": 685,
+        "comments": 273
+      },
+      "items": [
+        {
+          "id": "9ec937773b41d922eaaba958c827225c05fed311",
+          "title": "Claude reveals ECDSA curve origins",
+          "url": "https://anthropic.com/research/ecdsa-curve-origins",
+          "source": "hackernews",
+          "category": "hot_topics",
+          "summary_ko": "널리 쓰이는 전자서명 표준 ECDSA의 NIST 곡선 파라미터가 어디서 왔는지, 20년 넘은 수수께끼가 풀렸다. NIST가 2000년 FIPS 186-2로 채택한 표준 곡선들은 NSA가 아무 설명 없이 제공한 '시드' 값(예: P-256의 SEED = C49D3608...)으로 계수를 정했고, 출처 불명 때문에 백도어 의심이 오래 이어졌다. 유력했던 설은 NSA 직원 Jerry Solinas가 농담 문구('Give Bob and Jerry a raise' 류)를 해시한 것이라는 회고였는데(본인 2023년 사망으로 확인 불가), 실제 답은 달랐다. Anthropic 직원이 그 단서를 주지 않고 내부 연구 모델에 물었더니 30분 안에 P-192·224·256·384·521 시드의 생성 방식을 찾아냈다 — 해시가 전혀 아니라 유닉스 타임스탬프로 초기화한 C 표준 라이브러리 난수 생성기 lrand48의 출력이었다. 20바이트씩 후보를 뽑는 식이며 P-256은 1,842번 반복해야 표준 시드가 나온다. 이는 공격이나 취약점이 아니고 오히려 곡선에 의도적 약점이 없었다는 쪽에 힘을 싣는 결과라, 사용자가 바꿀 일은 없다고 못 박았다.",
+          "lang": "en",
+          "published_at": "2026-10-17T03:55:59+09:00",
+          "collected_at": "2026-10-17T10:52:44+09:00",
+          "metrics": {
+            "points": 685,
+            "comments": 273
+          }
+        }
+      ]
+    },
+    {
+      "topic": "90% of US working hours are spent on tasks not covered well by AI benchmarks",
+      "trend_score": 0.8158,
+      "src_count": 1,
+      "hn": {
+        "points": 402,
+        "comments": 337
+      },
+      "items": [
+        {
+          "id": "2425f3153984e15eeb873612a45a25696fc0e980",
+          "title": "90% of US working hours are spent on tasks not covered well by AI benchmarks",
+          "url": "https://mercor.com/research/labor-index/benchmark-map",
+          "source": "hackernews",
+          "category": "hot_topics",
+          "summary_ko": "Mercor가 미국 노동시장 전체에 AI 벤치마크를 대응시킨 'Benchmark Map'을 공개했다. 미 노동부 O*NET 분류의 923개 직업·18,797개 과업에 공개된 에이전트형 벤치마크 924개(프롬프트 기준)를 매핑한 결과, 프롬프트 5개 이상으로 측정되는 과업을 가진 직업은 208개뿐이고 22개 직군 중 6개는 그런 직업이 아예 없었다. 결론은 '미국 노동시간의 90%가 기존 벤치마크로 거의 측정되지 않는 일에 쓰인다'는 것 — AI 모델이 사람들이 실제로 하는 일을 얼마나 잘하는지 알기 어렵다는 뜻이다. 누락도 무작위가 아니어서, 임금 총액이 큰 직업일수록 잘 덮이고 AI 노출도가 비슷해도 변호사 과업은 많이 덮이는 반면 법률 비서나 법원 서기는 거의 덮이지 않는 등 중간 소득 지식노동의 롱테일이 비어 있다. 직군별 커버리지는 컴퓨터·수학 36개 중 29개로 가장 높고, 의료 종사자 89개 중 12개, 교육 62개 중 9개로 낮다.",
+          "lang": "en",
+          "published_at": "2026-10-17T02:08:38+09:00",
+          "collected_at": "2026-10-17T10:52:44+09:00",
+          "metrics": {
+            "points": 402,
+            "comments": 337
+          }
+        }
+      ]
+    },
+    {
+      "topic": "Waymo in Toronto",
+      "trend_score": 0.7853,
+      "src_count": 1,
+      "hn": {
+        "points": 271,
+        "comments": 380
+      },
+      "items": [
+        {
+          "id": "f6042d12a62b1ad9842583d1e20b273a8ed3ce26",
+          "title": "Waymo in Toronto",
+          "url": "https://waymo.com/blog/2026/10/waymo-in-toronto",
+          "source": "hackernews",
+          "category": "hot_topics",
+          "summary_ko": "Waymo가 캐나다 토론토 진출을 발표했다. 2028년 첫 승객 탑승을 목표로 현지 시설과 인력에 투자하며, 우선 수동 주행으로 고정밀 지도를 만들고 훈련된 전문 운전자가 운전대를 잡은 상태로 테스트하는 단계적 접근을 택한다. 토론토에 본사를 둔 Element Fleet Management와 제휴해 차량 정비·검증 주행·고객 지원 등 수백 개 일자리를 단계적으로 만들 계획이고, 캐나다 연기금(CPPIB) 투자 관계와 제조 파트너 Magna International로 이어진 기존 인연 위에 얹는 확장이다. 운행 도시 기준 누적 4억 km 이상의 완전자율 주행 데이터에서 중상 이상 사고가 사람 운전 대비 95%(20분의 1) 적었다고 밝혔다. 사계절 날씨를 겪는 도시라는 점에서 '전천후 드라이버' 검증 의미도 있다.",
+          "lang": "en",
+          "published_at": "2026-10-16T23:44:17+09:00",
+          "collected_at": "2026-10-17T10:52:44+09:00",
+          "metrics": {
+            "points": 271,
+            "comments": 380
+          }
+        }
+      ]
+    },
+    {
+      "topic": "I Love Software Rendering",
+      "trend_score": 0.7596,
+      "src_count": 1,
+      "hn": {
+        "points": 290,
+        "comments": 189
+      },
+      "items": [
+        {
+          "id": "21b1c90fa4a51c20efc28289be2eca12487ddecf",
+          "title": "I Love Software Rendering",
+          "url": "https://jamesfmackenzie.com/2026/10/13/i-love-software-rendering",
+          "source": "hackernews",
+          "category": "hot_topics",
+          "summary_ko": "DOS 시절 게임의 소프트웨어 렌더링(그래픽카드 없이 CPU가 모든 픽셀을 직접 그리는 방식)을 지금도 더 좋아한다는 글. 90년대에는 저해상도 소프트웨어 렌더링과 3D 가속 중 택해야 했지만, 지금은 세 번째 선택지가 있다 — 당시엔 불가능했던 해상도로 소프트웨어 렌더러를 돌리는 것. 필자는 Dell OptiPlex 380에서 Quake를 800×600, 60fps 고정으로 돌린 것이 최고의 DOS 경험이었다고 한다. 선호 이유는 텍스처를 픽셀 단위로 샘플링해 텍셀이 또렷하게 남는 선명함(초기 3D 카드의 쌍선형 필터링은 뿌옇다), 256색 팔레트와 룩업 테이블 조명이 만드는 계단식 그림자의 거친 질감, 그리고 원래 그렇게 만들어진 게임이라는 점이다. 다만 Tomb Raider의 수중 구간처럼 가속 쪽이 나은 경우도 있어 취향의 문제라고 선을 긋는다. 함정은 성능으로, 픽셀이 늘수록 CPU 부담이 커져 Build 엔진 게임은 3.3GHz 쿼드코어 제온으로도 1600×1200 Shadow Warrior를 완전히 감당하지 못한다. 2019년작 Ion Fury도 여전히 소프트웨어 렌더러를 함께 제공한다.",
+          "lang": "en",
+          "published_at": "2026-10-16T21:52:08+09:00",
+          "collected_at": "2026-10-17T10:52:44+09:00",
+          "metrics": {
+            "points": 290,
+            "comments": 189
+          }
+        }
+      ]
+    },
+    {
+      "topic": "How the Claude Code team does code review",
+      "trend_score": 0.7489,
+      "src_count": 1,
+      "hn": {
+        "points": 237,
+        "comments": 224
+      },
+      "items": [
+        {
+          "id": "7fd7e06ab2f4b840c01c364743d2c0e2fcb3de17",
+          "title": "How the Claude Code team does code review",
+          "url": "https://claude.dev/blog/solving-code-review-at-anthropic",
+          "source": "hackernews",
+          "category": "hot_topics",
+          "summary_ko": "Claude Code 팀이 에이전트가 쏟아내는 분량의 코드를 어떻게 리뷰하는지 공개한 글. Anthropic 모노레포의 하루 변경 건수는 5월 약 2,500건에서 9월 3만 건 이상으로 늘었고, Claude Code 저장소도 6~9월 사이 머지된 PR이 두 배 넘게 늘었는데 되돌린(revert) 비율은 40% 이상 줄었다. 핵심은 리뷰를 없앤 게 아니라 '읽는 일'의 대부분을 기계로 옮기고, 사람의 시간은 사람만 풀 수 있는 문제에 남기고, 실수를 빠르고 쉽게 되돌릴 수 있게 투자한 것이다. '사람이 코드를 읽었는가'를 품질의 대리 지표로 삼는 대신 '이 변경에서 무엇이 잘못될 수 있고 그걸 잡을 적임자가 자동 검사인가 사람인가'를 묻도록 질문을 바꿨고, 그 결과 리뷰 시점도 PR 끝의 관문이 아니라 작성 중 맞춤법 검사처럼 상시로 돌아간다. 대부분의 변경은 사람이 보기 전에 Claude가 최소 한 번 리뷰하고 고친 상태다. 목표는 '되돌림과 장애를 늘리지 않는 선에서 사람 리뷰 시간을 최소화'하는 것이며, '네가 머지했으면 네가 책임진다' 원칙을 함께 둔다.",
+          "lang": "en",
+          "published_at": "2026-10-17T04:04:47+09:00",
+          "collected_at": "2026-10-17T10:52:44+09:00",
+          "metrics": {
+            "points": 237,
+            "comments": 224
+          }
+        }
+      ]
+    },
+    {
+      "topic": "Apple ML Research: Muse Spark Open with MLX on Mac Studio",
+      "trend_score": 0.7325,
+      "src_count": 1,
+      "hn": {
+        "points": 267,
+        "comments": 123
+      },
+      "items": [
+        {
+          "id": "98e6a11f87f3c75ff09f029c60c62757139be47d",
+          "title": "Apple ML Research: Muse Spark Open with MLX on Mac Studio",
+          "url": "https://machinelearning.apple.com/research/mlx-distributed-inference",
+          "source": "hackernews",
+          "category": "hot_topics",
+          "summary_ko": "애플 머신러닝 연구팀이 Mac Studio에서 거의 1조 파라미터급 모델을 로컬로 돌린 결과를 공개했다. Mac Studio 4대를 묶어 Meta의 Muse Spark Open(총 816B, 활성 42B, NVFP4 4비트)을 초당 36토큰 이상으로 생성 — 사람의 평균 읽기 속도를 크게 웃도는 수치다. 단일 Mac Studio(통합 메모리 최대 512GB)에서 시작해 Thunderbolt 기반 RDMA 드라이버로 여러 대에 확장하며, 2대 파이프라인 병렬과 2대·4대 텐서 병렬 세 가지 방식을 비교했다. 비교 대상은 전용 행렬 연산 가속기(GPU Neural Accelerator)를 갖춘 M5 Ultra와 이전 세대 M3 Ultra이고, 함께 측정한 모델은 Mistral Medium 3.5(128B, FP8)와 Qwen 3.8(27B, BF16). 지표는 첫 토큰까지 걸린 시간, 생성 처리량, 최대 소비 전력이다. 요지는 애플 실리콘의 통합 메모리 구조 덕에 프런티어급 모델을 외부로 데이터를 보내지 않고 책상 위에서 실험할 수 있다는 것.",
+          "lang": "en",
+          "published_at": "2026-10-16T22:43:48+09:00",
+          "collected_at": "2026-10-17T10:52:44+09:00",
+          "metrics": {
+            "points": 267,
+            "comments": 123
+          }
+        }
+      ]
+    },
+    {
+      "topic": "JPEG XL vs. AVIF for web use-cases",
+      "trend_score": 0.7138,
+      "src_count": 1,
+      "hn": {
+        "points": 201,
+        "comments": 144
+      },
+      "items": [
+        {
+          "id": "ff9286355f7e922bd06d600c6a56bd36af2191f0",
+          "title": "JPEG XL vs. AVIF for web use-cases",
+          "url": "https://jakearchibald.com/2026/jpeg-xl-vs-avif",
+          "source": "hackernews",
+          "category": "hot_topics",
+          "summary_ko": "JPEG XL이 모든 주요 브라우저에 들어온 시점에 AVIF와 정면 비교한 벤치마크. 결론은 웹 용도 대부분에서 AVIF 우세다. 손실 압축 사진은 JPEG XL이 기본 설정에서 보통 15~25% 더 크고 최대 품질 설정에서도 6~20% 크며, 스크린샷·일러스트는 격차가 더 벌어져 기본 30~90%, 최대 설정에서 20~70% 더 크다. 투명도가 있는 이미지도 AVIF가 유리한데, 특히 신형 인코더 jixel은 투명도를 항상 무손실로 처리해 파일이 AVIF의 2~3배가 된다(다만 투명도가 복잡하지 않으면 jixel이 libjxl보다 작다). 디코딩은 JPEG XL이 중간 품질에서 2~3배 느리고, 인코딩도 파일 크기를 함께 보면 AVIF가 유리하다. 실무 팁으로 libjxl은 고노력 설정을 올려도 거의 개선되지 않으니 쓰지 말 것, AVIF의 4:2:0(색 해상도 절반) 모드를 기본으로 두지 말고 4:4:4를 쓸 것을 권한다. AVIF도 점진적 렌더링을 지원하기 시작했고(현재 크롬 한정, 파이어폭스 작업 중) JPEG XL의 점진적 방식보다 파일이 작고 디코딩이 빠르다고 평가했다.",
+          "lang": "en",
+          "published_at": "2026-10-17T01:12:02+09:00",
+          "collected_at": "2026-10-17T10:52:44+09:00",
+          "metrics": {
+            "points": 201,
+            "comments": 144
+          }
+        }
+      ]
+    },
+    {
+      "topic": "I never authorized an integration that scans my secrets",
+      "trend_score": 0.7106,
+      "src_count": 1,
+      "hn": {
+        "points": 192,
+        "comments": 147
+      },
+      "items": [
+        {
+          "id": "70d10452e1ce4ca4f9de5483b3d0f9b5bc75372c",
+          "title": "I never authorized an integration that scans my secrets",
+          "url": "https://github.com/home-assistant/home-assistant.io/issues/49314",
+          "source": "hackernews",
+          "category": "hot_topics",
+          "summary_ko": "Home Assistant 사용자가 '동의한 적 없는 기능이 내 비밀번호를 스캔한다'며 올린 이슈(2026-10-16)가 논란이 됐다. 기능은 설정한 비밀번호가 유출 비밀번호 DB에 있는지 확인해 경고하는 것으로, 사용자는 해시 여부와 무관하게 외부로 보내는 것 자체가 사생활 침해이며 저장소 접근 권한을 가진 공격자가 악용할 수 있으니 opt-in(명시 동의)으로 바꾸라고 요구했다. 메인테이너(frenck)는 처음에 다소 일축하는 투로 답했다가 이후 사과하고 설명을 정리했다 — ①`ha security options --pwned=false`로 끌 수 있고, ②새 기능이 아니라 Supervisor에 수년간 있었으며 최근 릴리스가 경고 표시를 고치면서 눈에 띄게 된 것이고, ③비밀값은 시스템 밖으로 나가지 않고 로컬에서 해시한 뒤 해시의 앞 5글자만 보내는 k-익명성(k-anonymity) 방식이라는 것. 1Password 등도 같은 방식을 쓴다. 기능의 안전성과 별개로 '알리지 않고 기본 활성화'에 대한 반발이 핵심 쟁점이다. ※k-익명성: 해시 앞부분만 보내 서버가 어떤 값을 조회했는지 특정할 수 없게 하는 기법.",
+          "lang": "en",
+          "published_at": "2026-10-17T05:33:41+09:00",
+          "collected_at": "2026-10-17T10:52:44+09:00",
+          "metrics": {
+            "points": 192,
+            "comments": 147
+          }
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "source": "github_trending",
+      "ok": true,
+      "item_count": 13,
+      "error_type": null
+    },
+    {
+      "source": "anthropic",
+      "ok": true,
+      "item_count": 272,
+      "error_type": null
+    },
+    {
+      "source": "openai",
+      "ok": true,
+      "item_count": 1318,
+      "error_type": null
+    },
+    {
+      "source": "deepmind",
+      "ok": true,
+      "item_count": 100,
+      "error_type": null
+    },
+    {
+      "source": "meta_ai",
+      "ok": true,
+      "item_count": 88,
+      "error_type": null
+    },
+    {
+      "source": "mistral",
+      "ok": true,
+      "item_count": 90,
+      "error_type": null
+    },
+    {
+      "source": "xai",
+      "ok": true,
+      "item_count": 85,
+      "error_type": null
+    },
+    {
+      "source": "openai_codex",
+      "ok": true,
+      "item_count": 154,
+      "error_type": null
+    },
+    {
+      "source": "cloudflare",
+      "ok": true,
+      "item_count": 20,
+      "error_type": null
+    },
+    {
+      "source": "github_blog",
+      "ok": true,
+      "item_count": 10,
+      "error_type": null
+    },
+    {
+      "source": "aws",
+      "ok": true,
+      "item_count": 20,
+      "error_type": null
+    },
+    {
+      "source": "stripe",
+      "ok": true,
+      "item_count": 10,
+      "error_type": null
+    },
+    {
+      "source": "meta_eng",
+      "ok": true,
+      "item_count": 9,
+      "error_type": null
+    },
+    {
+      "source": "reddit_localllama",
+      "ok": false,
+      "item_count": 0,
+      "error_type": "HTTPError"
+    },
+    {
+      "source": "hf_blog",
+      "ok": true,
+      "item_count": 880,
+      "error_type": null
+    },
+    {
+      "source": "hackernews",
+      "ok": true,
+      "item_count": 20,
+      "error_type": null
+    }
+  ],
+  "summaries_injected": true
+}
