@@ -1,0 +1,615 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-10-19T09:13:04+09:00",
+  "date": "2026-10-19",
+  "categories": {
+    "ai_labs": [
+      {
+        "id": "66d5720ec836838d2d67b7f24d4c6f30004e00be",
+        "title": "Investing in the public benefit",
+        "url": "https://anthropic.com/news/public-benefit-fund",
+        "source": "anthropic",
+        "category": "ai_labs",
+        "summary_ko": "Anthropic 이 자사 주식 일부를 신설 법인 'Anthropic Public Benefit Fund'(공익 기금)에 출연한다고 발표했다. 주주 승인을 전제로 우선 지분 5% 를 넘기고, 기준 기업가치 대비 50% 오를 때마다 이사회 재량으로 2% 씩 추가하는 구조다. 창업자들의 지분 80% 기부 서약과 직원 지분 기부 매칭(직원 약 절반 참여)을 합치면 전체 주식의 약 20% 가 공익 목적에 묶인다. 기금은 501(c)(3) 재단이 아니라 전액 자회사 LLC 로 세워 기부 형태를 유연하게 가져가며, 보유 지분은 미국 안팎에서 로비·정치 기부에 쓰지 않는다. 용도 예시로 AI 로 인한 노동시장 충격 대응(이미 2억 달러 투입)을 들었다. ※공익법인(PBC): 주주 이익 외에 공익 목적도 정관에 명시하는 미국 회사 형태.",
+        "lang": "en",
+        "published_at": "2026-10-18T09:00:00+09:00",
+        "collected_at": "2026-10-19T09:08:39+09:00",
+        "metrics": null
+      },
+      {
+        "id": "ec20be66493b54867c4ccad733b27637801e084d",
+        "title": "Grok Build Plugin Marketplace",
+        "url": "https://x.ai/news/grok-plugin-marketplace",
+        "source": "xai",
+        "category": "ai_labs",
+        "summary_ko": "xAI 가 코딩 에이전트 'Grok Build' 에 내장 플러그인 마켓플레이스를 열었다. 플러그인 하나에 스킬·슬래시 명령·에이전트·훅·MCP 서버·LSP 를 묶어 설치 단위로 제공한다. 출시 파트너는 MongoDB(데이터 탐색·쿼리 최적화), Vercel(배포 관리), Sentry(스택트레이스 분석), Chrome DevTools(브라우저 제어·성능 트레이스), Cloudflare(Workers·Durable Objects), Superpowers 등이다. 터미널에서 `/marketplace` 로 찾아 `i` 키로 설치하거나 `grok plugin install <name> --trust` 로 설치하며, 원격 플러그인은 특정 커밋 SHA 에 고정되고 설치 시점에 핀을 검증한다. 카탈로그는 공개라 PR 로 자기 플러그인을 올릴 수 있다. ※MCP: 모델이 외부 도구·데이터에 붙는 표준 프로토콜. ※LSP: 에디터에 코드 분석 기능을 제공하는 언어 서버 규약.",
+        "lang": "en",
+        "published_at": "2026-06-11T09:00:00+09:00",
+        "collected_at": "2026-10-19T09:08:39+09:00",
+        "metrics": null
+      },
+      {
+        "id": "1f57478941aa61b91e830cb6b09d6c19923d82d1",
+        "title": "Grok Imagine 1.5 Preview",
+        "url": "https://x.ai/news/grok-imagine-1-5",
+        "source": "xai",
+        "category": "ai_labs",
+        "summary_ko": "xAI 의 이미지→영상 생성 모델 `grok-imagine-video-1.5-preview` 가 xAI API 에서 프리뷰로 열렸다. 정지 이미지 한 장과 움직임을 설명하는 프롬프트를 주면 카메라 워크·분위기·물리 거동까지 입혀 영상으로 만들고, 원본 프레임의 디테일과 조명을 유지해 재해석이 아니라 '이어 그리는' 결과를 낸다. 최대 720p 까지 생성 가능하고, 카메라 무빙·속도·사운드 디자인을 자연어로 지시한 뒤 해상도와 클립 길이를 지정한다. 프레임을 차례로 만들어 이어 붙이면 프로젝트 전체에서 일관된 룩의 긴 장면도 만들 수 있다. xai_sdk 의 `client.video.generate(prompt, model, image_url, duration, resolution)` 몇 줄로 호출한다.",
+        "lang": "en",
+        "published_at": "2026-06-03T09:00:00+09:00",
+        "collected_at": "2026-10-19T09:08:39+09:00",
+        "metrics": null
+      },
+      {
+        "id": "1410b1a514a711d0ac0a35a02c4a06184b3f21f6",
+        "title": "Composer 2.5",
+        "url": "https://x.ai/news/composer-2-5",
+        "source": "xai",
+        "category": "ai_labs",
+        "summary_ko": "xAI 의 코딩 모델 Composer 2.5 가 Grok Build 에서 쓸 수 있게 됐다. 길게 이어지는 작업(long-running task)과 복잡한 지시 따르기에 강점을 둔 빠른 모델이라고 소개한다. 터미널에서 `/model` 을 입력한 뒤 메뉴에서 Composer 2.5 를 고르면 전환되고, 무료로 시험해 볼 수 있다. ※본문이 짧아 벤치마크 수치나 가격 정보는 공개되지 않았다.",
+        "lang": "en",
+        "published_at": "2026-06-01T09:00:00+09:00",
+        "collected_at": "2026-10-19T09:08:39+09:00",
+        "metrics": null
+      },
+      {
+        "id": "79ae92d8dc3d038cfde9cc648b5205e8ecc82d96",
+        "title": "Grok Build 0.1 on API",
+        "url": "https://x.ai/news/grok-build-0-1",
+        "source": "xai",
+        "category": "ai_labs",
+        "summary_ko": "xAI 의 코딩 모델 `grok-build-0.1` 이 xAI API 퍼블릭 베타로 공개됐다. 웹 개발·디버깅·MCP 지원을 포함한 에이전틱 코딩 작업에 맞춰 학습한 모델로, Grok Build 제품을 구동하는 것과 동일한 모델이다. 초당 100 토큰 이상으로 서빙되고 가격은 입력 100만 토큰당 $1, 출력 $2 다. 코딩 외에 범용 에이전트·툴 호출 용도로도 저렴한 선택지로 제시한다. Grok Build 외에 Cursor, Hermes Agent, OpenClaw, Kilo Code, OpenCode 같은 하네스에서 잘 작동하며 OpenRouter 와 Vercel AI Gateway 에서도 쓸 수 있다. ※하네스(harness): 모델 주변을 감싸 도구 호출·메모리 등을 담당하는 실행 틀.",
+        "lang": "en",
+        "published_at": "2026-05-29T09:00:00+09:00",
+        "collected_at": "2026-10-19T09:08:39+09:00",
+        "metrics": null
+      },
+      {
+        "id": "75f401ff8fbc711a84ace5dddc8bd9983c6d3aa6",
+        "title": "AI Now Summit 2026",
+        "url": "https://mistral.ai/news/ai-now-summit-2026",
+        "source": "mistral",
+        "category": "ai_labs",
+        "summary_ko": "Mistral 이 AI Now Summit 2026 에서 산업 엔지니어링용 AI 스택을 공개하며 Airbus·BMW·ASML 과의 협력을 발표했다. Airbus 와는 설계부터 기내 기능까지 민항기·헬기·방산·우주 사업 전반에 AI 를 적용하면서 핵심 데이터 통제권을 유지하는 파트너십을, BMW 그룹과는 충돌 시뮬레이션 같은 복잡한 개발 과제를 위해 엔지니어링 데이터로 멀티모달 추론 모델을 만드는 'Large Industry Model'(LIM) 구상의 핵심 파트너 역할을 맡았다. ASML 과는 고성능 부품 설계 최적화와 대리 모델(surrogate model)·제어 루프 과제를 시작했다. 함께 발표된 에이전트 도구 Vibe 는 코딩·리서치 같은 장기 과제를 처리하며, 프랑스에 짓는 10MW 데이터센터로 컴퓨팅 통제력과 보안을 강화한다.",
+        "lang": "en",
+        "published_at": "2026-05-28T21:00:20+09:00",
+        "collected_at": "2026-10-19T09:08:39+09:00",
+        "metrics": null
+      },
+      {
+        "id": "6b398ac7c77d15ba00e6fcd3edd56e7314140179",
+        "title": "Vibe gets to work.",
+        "url": "https://mistral.ai/news/vibe-agent",
+        "source": "mistral",
+        "category": "ai_labs",
+        "summary_ko": "Mistral 이 Le Chat 을 'Vibe' 로 개편해 업무와 코딩을 하나의 에이전트·하나의 라이선스로 묶었다(기존 대화·설정·요금제는 그대로 이전). Work Mode 는 웹·모바일에서 계획을 먼저 세워 사용자 승인을 받은 뒤 커넥터를 넘나들며 작업하는데, Google Workspace·Outlook·SharePoint·Slack·GitHub 등 전사 지식 검색, DB·스프레드시트 기반 구조화 데이터 분석과 대화 안 차트 렌더링, Canvas 를 이용한 보고서·RFP·이사회 자료 초안 작성, 일·주·월 단위 반복 실행 예약, 재사용 가능한 스킬을 지원한다. Code Mode 는 GitHub 에 연결해 격리된 샌드박스에서 세션을 돌려 PR 까지 가며, 병렬 실행과 로컬 PC 가 꺼져 있어도 유지되는 세션을 지원한다. VS Code 확장도 함께 공개해 사이드 패널에서 프로젝트 전체를 읽고 수정·실행한다. 무료/Pro/Team/Enterprise 요금제로 제공된다.",
+        "lang": "en",
+        "published_at": "2026-05-28T21:00:09+09:00",
+        "collected_at": "2026-10-19T09:08:39+09:00",
+        "metrics": null
+      },
+      {
+        "id": "392e2ba0621cc49cd9d2e0b48635a55d6ac57990",
+        "title": "Introducing Search Toolkit",
+        "url": "https://mistral.ai/news/search-toolkit",
+        "source": "mistral",
+        "category": "ai_labs",
+        "summary_ko": "Mistral 이 프로덕션 검색 파이프라인을 조립식으로 만드는 오픈소스 프레임워크 'Search Toolkit' 을 퍼블릭 프리뷰로 내놨다. 문제의식은 수집(ingestion)·검색(retrieval)·평가(evaluation) 를 각각 다른 도구로 엮느라 자기 데이터에 질의 한 번 던지기까지 몇 주를 쓴다는 것으로, 셋을 공통 인터페이스 하나로 합쳐 통합 유지보수 대신 검색 품질에 시간을 쓰게 한다는 것이다. 사내 위키·티켓·문서 저장소·코드베이스처럼 구조가 제각각인 소스마다 파이프라인을 새로 짜지 않도록 일관된 처리·색인 패턴을 제공하고, 내장 평가 기능으로 RAG 결과가 나쁠 때 검색 탓인지 생성 탓인지를 분리해 측정한다. 법률·의료·금융 같은 도메인 특화 검색과 에이전트의 대량 자동 검색을 주 사용처로 들었으며, 클라우드·온프레미스·엣지 어디서든 돌아간다. ※RAG: 외부 문서를 찾아 붙여 답변 정확도를 높이는 방식.",
+        "lang": "en",
+        "published_at": "2026-05-28T20:42:21+09:00",
+        "collected_at": "2026-10-19T09:08:39+09:00",
+        "metrics": null
+      },
+      {
+        "id": "af8ab909d11bec7e789944bda5f1df560b22b1dc",
+        "title": "Introducing physics AI at Mistral: the foundation for engineering acceleration.",
+        "url": "https://mistral.ai/news/introducing-physics-ai-at-mistral",
+        "source": "mistral",
+        "category": "ai_labs",
+        "summary_ko": "Mistral 이 물리 시스템의 거동을 예측하는 'Physics AI' 모델군을 엔터프라이즈 사업의 새 축으로 선언하고, 이를 위해 Emmi AI 를 인수해 흡수했다. 문제의식은 방산·에너지 전환·지속가능 항공·AI 데이터센터·차세대 칩이 모두 더 빠른 하드웨어 개발에 달렸는데 물리 해석은 수십 년간 근본적으로 달라지지 않은 솔버에 묶여 있다는 것이다. 그 결과 엔지니어는 수천 개 변형을 탐색해야 할 자리에서 몇 개만 검토하고, 제품이 운영에 들어가면 솔버가 실시간 데이터를 따라가지 못해 설계 때 갖고 있던 물리 통찰을 잃는다. ASML·Airbus·Safran·Siemens Energy 를 파트너로 들었고, 기존 모델·에이전트 워크플로 도구·보안 배포와 묶어 엔지니어링 수명주기 전체를 덮는 단일 스택으로 제공한다고 밝혔다.",
+        "lang": "en",
+        "published_at": "2026-05-27T21:00:55+09:00",
+        "collected_at": "2026-10-19T09:08:39+09:00",
+        "metrics": null
+      },
+      {
+        "id": "20567da75ede4063681f6214372a21222a5482fd",
+        "title": "Physics AI research that’s shaping the industry.",
+        "url": "https://mistral.ai/news/physics-ai-research",
+        "source": "mistral",
+        "category": "ai_labs",
+        "summary_ko": "Mistral 이 Emmi AI 인수로 확보한 Physics AI 연구의 기반 논문들을 정리해 공개했다. 항공우주·자동차·반도체·에너지를 대상으로 한 기초 물리 AI 에 집중하겠다는 선언과 함께 주요 성과를 열거하는데, 2025-12-01 'Going with the Speed of Sound' 는 기존 항공 데이터셋이 2D 익형에 치우쳐 3D 현상을 놓친다는 지적 아래 천음속 영역 3D 날개 CFD 시뮬레이션 약 3만 샘플(체적·표면장 포함) 데이터셋을 내놨다. 2025-11-25 'Fluid Intelligence' 는 산업 규모 CFD 시뮬레이션을 구성 요소로 분해해 머신러닝 쪽과 CFD 쪽의 간극을 메우는 전망 논문이고, 2025-10-17 'AB-UPT for Automotive and Aerospace' 는 신경망 대리 모델 적용 사례에 데이터셋 2종을 추가했다. 2025-10-08 'GyroSwin' 은 자이로키네틱 플라즈마 난류의 5D 대리 모델을 다룬다. ※CFD: 전산유체역학. ※대리 모델(surrogate): 느린 시뮬레이션을 흉내 내는 빠른 근사 모델.",
+        "lang": "en",
+        "published_at": "2026-05-27T21:00:05+09:00",
+        "collected_at": "2026-10-19T09:08:39+09:00",
+        "metrics": null
+      }
+    ],
+    "community": [
+      {
+        "id": "dda295fa43feb9015c670a81ea0f6b40b212cfd0",
+        "title": "Little Sweet Room Challenge | Strata Fork | Qwen 3.8 FN NVFP4 | DeepSeek Harness",
+        "url": "https://reddit.com/r/LocalLLaMA/comments/1x9hpb3/little_sweet_room_challenge_strata_fork_qwen_38",
+        "source": "reddit_localllama",
+        "category": "community",
+        "summary_ko": "r/LocalLLaMA 의 사용자 체험담. DeepSeek 스레드에서 돌던 '작은 방 꾸미기' 챌린지(참조 이미지 4장을 붙인 프롬프트)를 Qwen 3.8 FN NVFP4 양자화 모델과 DeepSeek 하네스로 돌려본 결과를 공유했다. 약 27분이 걸렸고 모델이 작업을 스스로 단계별로 계획한 점, 배치·디자인·세부 디테일을 참조 이미지에 맞추려 한 점을 긍정적으로 평가했다. 특히 비전(이미지 입력) 기능이 정확도 판단과 위치 보정에 크게 기여했다며, Blender 를 2주 전부터 쓰기 시작한 초보인데도 LLM 에 맡겨 쓸 만했다고 전한다. 결론은 '비전 돌릴 수 있으면 무시하지 말라'. ※NVFP4: NVIDIA 의 4비트 부동소수점 양자화 포맷.",
+        "lang": "en",
+        "published_at": "2026-10-19T08:34:53+09:00",
+        "collected_at": "2026-10-19T09:08:39+09:00",
+        "metrics": null
+      },
+      {
+        "id": "af8de657f4ed1d9f1765c1d5ef030970163d0ae7",
+        "title": "Google Open Sources Harness2 for Self Improving AI Agents",
+        "url": "https://reddit.com/r/LocalLLaMA/comments/1x9gfnb/google_open_sources_harness2_for_self_improving",
+        "source": "reddit_localllama",
+        "category": "community",
+        "summary_ko": "Google 이 자기 개선형 AI 에이전트 프레임워크 'Harness2' 를 오픈소스로 공개했다는 소개 글이다. 여기서 하네스란 모델을 둘러싼 모든 것 — 시스템 프롬프트, 도구, 메모리, 스킬, 서브에이전트 — 을 가리키며, 보통은 사람이 한 번 설계해 두면 모든 작업에 그 고정 구성이 쓰인다. Harness2 는 에이전트가 과제마다 자기 하네스를 직접 다듬게 한다: 변경안을 제안하고 후보 버전 몇 개를 돌려 성능을 비교해 더 나은 것을 고르는 식이며, 정답 데이터나 별도 채점기(grader)가 필요 없고 모델 가중치는 건드리지 않는다. 작업이 끝나면 개선된 하네스와 교훈을 저장해 다음 과제가 처음부터 시작하지 않는다. Gemini 3.5 Flash 와 GLM-5 로 법률·사무·전문 업무 벤치마크에서 검증했고, 1회 수정만으로도 원래 하네스를 앞섰으며 반복할수록 점수가 올랐다고 한다. 저장소는 github.com/google-research/harness2.",
+        "lang": "en",
+        "published_at": "2026-10-19T07:33:51+09:00",
+        "collected_at": "2026-10-19T09:08:39+09:00",
+        "metrics": null
+      },
+      {
+        "id": "fc073807e5826f86c4663ae21d31c5596405d917",
+        "title": "Has anyone bought DGX Spark from AccelerAI?",
+        "url": "https://reddit.com/r/LocalLLaMA/comments/1x9g4uc/has_anyone_bought_dgx_spark_from_accelerai",
+        "source": "reddit_localllama",
+        "category": "community",
+        "summary_ko": "r/LocalLLaMA 에 올라온 구매 주의 문의. 'AccelerAI' 라는 곳이 NVIDIA DGX Spark 를 $4,499 에 보내준다고 하는데 업체 정보를 찾기 어렵다는 내용이다. 작성자는 64GB GB10 West 가 출시되기도 전부터 인스타그램 광고가 반복 노출됐고, LinkedIn 과 X 계정은 MoBagel 이라는 다른 회사를 가리킨다고 적었다. 실제 구매 경험이 있는지 묻는 글이며, 본문에 검증된 결론은 없다. ※DGX Spark: NVIDIA 의 개인용 소형 AI 개발 머신.",
+        "lang": "en",
+        "published_at": "2026-10-19T07:20:16+09:00",
+        "collected_at": "2026-10-19T09:08:39+09:00",
+        "metrics": null
+      },
+      {
+        "id": "6ba5dae36ebcbde4ed7f4cbe7ae5de470b17fc0d",
+        "title": "Hybrid Reasoning Agents",
+        "url": "https://reddit.com/r/LocalLLaMA/comments/1x9fc1x/hybrid_reasoning_agents",
+        "source": "reddit_localllama",
+        "category": "community",
+        "summary_ko": "r/LocalLLaMA 공유 글로, Together Computer 의 'HybridAgent'(잠재 공간에서 사고하고 텍스트로 행동하는 에이전트)를 소개한다. 요지는 '텍스트로 생각하지 말고 잠재 공간(latent space)에서 생각하라'는 것으로, 추론 속도가 빨라지고 토큰을 덜 쓰면서 성능도 올라가는 것으로 보인다는 평이다. 코드는 github.com/togethercomputer/HybridAgent, 모델은 Hugging Face 컬렉션에 있다. 다른 사람들도 써봤는지 묻는 글이다. (같은 날 Hacker News 에 올라온 arXiv 2610.18861 논문과 같은 작업이다.)",
+        "lang": "en",
+        "published_at": "2026-10-19T06:45:31+09:00",
+        "collected_at": "2026-10-19T09:08:39+09:00",
+        "metrics": null
+      },
+      {
+        "id": "8b02c8fbfd43230611941ec4a179d0b1218dc037",
+        "title": "I messed up. Buying Z9PE-D8 WS with 4 x16 Slots and 256GB DDR3 RDIMM",
+        "url": "https://reddit.com/r/LocalLLaMA/comments/1x9d8hs/i_messed_up_buying_z9ped8_ws_with_4_x16_slots_and",
+        "source": "reddit_localllama",
+        "category": "community",
+        "summary_ko": "r/LocalLLaMA 의 하드웨어 실패담 겸 조언 요청. x16 슬롯 4개와 DDR3 RDIMM 256GB 를 보고 ASUS Z9PE-D8 WS 메인보드를 샀는데, 갖고 있는 32GB GPU(V620 2장, Mi50 32GB 2장)를 **한 장도 인식하지 못한다**는 내용이다. 원래 계획은 Mi50 또는 V620 으로 Qwen3.6-35B-A3B 를 q4 로, 131k 컨텍스트 KV 캐시를 q8 로 돌려보는 것이었다. 작성자는 DDR3 RDIMM 을 재활용할 방법이 있으면 좋겠지만 기대하기 어렵다는 걸 알고 있다며, 메인보드와 램에 1,000 달러를 더 쓰지 않을 대안을 묻는다. (구형 보드의 Above-4G Decoding / Large BAR 미지원으로 대용량 VRAM GPU 가 열거되지 않는 전형적 사례로 보이나, 본문에 원인 진단은 없다.)",
+        "lang": "en",
+        "published_at": "2026-10-19T05:17:26+09:00",
+        "collected_at": "2026-10-19T09:08:39+09:00",
+        "metrics": null
+      },
+      {
+        "id": "727cf27952513ee18ad17586e052db8817704fab",
+        "title": "72 hours, four big open weights drops. The only one that fits in 24GB came from NVIDIA, of all companies.",
+        "url": "https://reddit.com/r/LocalLLaMA/comments/1x9d23j/72_hours_four_big_open_weights_drops_the_only_one",
+        "source": "reddit_localllama",
+        "category": "community",
+        "summary_ko": "r/LocalLLaMA 에서 72시간 사이 쏟아진 오픈 웨이트 모델 4종을 공식 저장소·모델카드 수치로 정리한 글. 목요일 Meta 의 Muse Spark Open 은 총 816B/활성 42B·컨텍스트 100만이고 '에이전틱 AI 를 데스크톱으로' 라고 홍보했지만, 실제로 필요한 '데스크톱' 은 512GB M5 Ultra Mac Studio 2대(애플이 '10월 말' 출시라며 가격도 안 밝힌 구성)이거나 256GB 4대(약 $38,000)다. 게다가 'Built with Muse Spark Open' 표기를 강제하고 매출 2,000만 달러를 넘으면 별도 계약을 요구하는 커스텀 라이선스이며, Meta 자체 모델카드의 Artificial Analysis 지수는 39 로 GLM 5.3(45)·Kimi K3(44) 보다 낮다. 같은 날 NVIDIA 의 Nemotron 3.5 Bolt 는 총 74B/활성 9B 에 2비트까지 양자화 인지 학습을 해 본체 22GB + 비전 프로젝터 1.7GB 로, 처음부터 24GB 에 맞춰 설계됐고 출시 당일 Unsloth GGUF 와 llama.cpp·Ollama·LM Studio 지원이 붙었다. 금요일에는 Reflection 이 총 501B/활성 23B 의 Beam 을 Apache 2.0 으로 공개했다. 글의 요지는 '24GB 에 들어가는 유일한 모델을 하필 NVIDIA 가 내놨다'는 아이러니.",
+        "lang": "en",
+        "published_at": "2026-10-19T05:10:16+09:00",
+        "collected_at": "2026-10-19T09:08:39+09:00",
+        "metrics": null
+      },
+      {
+        "id": "d1f85a554312e363087d752786a1f64366675cc8",
+        "title": "Is there a Strata for lfm 24b a2b",
+        "url": "https://reddit.com/r/LocalLLaMA/comments/1x9b3df/is_there_a_strata_for_lfm_24b_a2b",
+        "source": "reddit_localllama",
+        "category": "community",
+        "summary_ko": "r/LocalLLaMA 질문 글. LFM 24B A2B 모델을 RAM 16GB 환경에서 무리 없이 돌릴 수 있게 해주는 Strata 포크가 있는지 묻는다. 함께 초당 토큰 수(tps)는 어느 정도를 기대할 수 있는지, 어떤 양자화를 써야 하는지도 물었다. 답변이 달리기 전 상태의 질문 글이라 결론은 없다. ※A2B: 총 파라미터 24B 중 2B 만 활성화되는 MoE(전문가 혼합) 구성을 뜻한다.",
+        "lang": "en",
+        "published_at": "2026-10-19T03:52:45+09:00",
+        "collected_at": "2026-10-19T09:08:39+09:00",
+        "metrics": null
+      },
+      {
+        "id": "ac587e4f060853fe8ac30c9477704d71885d7fbc",
+        "title": "Embedding model can be used to search text inside image",
+        "url": "https://reddit.com/r/LocalLLaMA/comments/1x9acj4/embedding_model_can_be_used_to_search_text_inside",
+        "source": "reddit_localllama",
+        "category": "community",
+        "summary_ko": "r/LocalLLaMA 의 실험 공유. Q8 양자화 기준 약 330MB 인 EmbeddingGemma 2 임베딩 모델로 **이미지 안의 텍스트를 검색**할 수 있는지 몇 주간 시험한 결과다. 첨부 이미지는 텍스트 질의(임베딩 벡터)를 다듬어 갈 때 코사인 유사도가 어떻게 변하는지를 보여주며, 잘 되는 지점과 특이한 동작을 함께 드러낸다. 작성자는 영어·한국어·일본어가 섞인 스크린샷 22,448 장을 이미 색인해 뒀고 7개 세트가 더 남았다며 추가 테스트 아이디어를 구한다. 잠정 결론은 '330MB·768 임베딩 차원 크기 치고는 충분히 쓸 만하고, 언어를 넘나드는 의미 이해도 어느 정도 하지만 유사도 값은 꽤 낮게 나온다(크기 한계로 추정)'. 본인도 몇 개 세트만 비과학적으로 테스트한 것이니 감안해 달라고 덧붙였다.",
+        "lang": "en",
+        "published_at": "2026-10-19T03:22:43+09:00",
+        "collected_at": "2026-10-19T09:08:39+09:00",
+        "metrics": null
+      },
+      {
+        "id": "555d480e9c082c45225f923a013f2ed83dc43e22",
+        "title": "PSA: Power limit your 5090s!",
+        "url": "https://reddit.com/r/LocalLLaMA/comments/1x98bby/psa_power_limit_your_5090s",
+        "source": "reddit_localllama",
+        "category": "community",
+        "summary_ko": "r/LocalLLaMA 경고 글. RTX 5090 4장 구성 장비에서 성능 튜닝을 하다 **벽 콘센트와 플러그를 녹였다**는 내용이다. 작성자는 일반 13A 퓨즈 콘센트에 의존하지 말고 16~20A 소켓을 벽에 따로 넣었어야 했다고 적으며, 말 많던 12VHPWR 커넥터보다 벽 쪽이 먼저 녹은 게 오히려 놀랍다고 농담했다. 제목 그대로 다중 5090 구성에서는 전력 제한(power limit)을 걸라는 취지의 경험담이다. ※12VHPWR: 최신 고전력 GPU 용 보조전원 커넥터로, 발열·용융 사례가 여러 차례 보고된 규격.",
+        "lang": "en",
+        "published_at": "2026-10-19T02:02:33+09:00",
+        "collected_at": "2026-10-19T09:08:39+09:00",
+        "metrics": null
+      },
+      {
+        "id": "27fb8d94f9b5285ecf16d9bc6d982bf961ab9fba",
+        "title": "unsloth/DeepSeek-V4.1-Flash-1017-GGUF · Hugging Face",
+        "url": "https://reddit.com/r/LocalLLaMA/comments/1x95491/unslothdeepseekv41flash1017gguf_hugging_face",
+        "source": "reddit_localllama",
+        "category": "community",
+        "summary_ko": "r/LocalLLaMA 에 Hugging Face 저장소 `unsloth/DeepSeek-V4.1-Flash-1017-GGUF` 가 올라왔다는 짧은 공유 글. 작성 시점 기준 Unsloth 팀의 공식 문서나 발표는 아직 없는 상태라고만 적혀 있다. ※GGUF: llama.cpp 계열에서 쓰는 로컬 추론용 모델 파일 포맷으로, 이런 저장소 등장은 보통 로컬 실행 지원이 임박했다는 신호로 읽힌다. ※본문이 한 줄뿐이라 모델 사양·성능 정보는 없다.",
+        "lang": "en",
+        "published_at": "2026-10-18T23:51:58+09:00",
+        "collected_at": "2026-10-19T09:08:39+09:00",
+        "metrics": null
+      }
+    ],
+    "github_trending": [],
+    "codex": [],
+    "eng_blogs": []
+  },
+  "hot_topics": [
+    {
+      "topic": "The Elizabeth Holmes documentary “You Can See Everything” is deceiving",
+      "trend_score": 1.0,
+      "src_count": 1,
+      "hn": {
+        "points": 355,
+        "comments": 500
+      },
+      "items": [
+        {
+          "id": "66e85996d35583ceb5673e43c429b1c7f0d64ac6",
+          "title": "The Elizabeth Holmes documentary “You Can See Everything” is deceiving",
+          "url": "https://readtheprofile.com/p/elizabeth-holmes-documentary-you-can-see-everything",
+          "source": "hackernews",
+          "category": "hot_topics",
+          "summary_ko": "The Profile 의 Polina Pompliano 가 새 엘리자베스 홈즈 다큐멘터리 'You Can See Everything' 을 보고 쓴 글. 필자는 이 영화가 '속임수에 관한 이야기'일 거라 예상했는데, 실제로는 **관객을 실시간으로 속이는 작품**이었고 극장 전체가 거기에 넘어갔다고 말한다. 관객이 화면에 대고 소리를 지를 정도였는데 '범죄자!'라는 외침이 홈즈를 향한 것이 아니었다는 장면을 예로 든다. 핵심 논지는 우리가 어떤 사람에 대해 믿는 것의 상당 부분이 '그 이야기가 어떻게 전달됐는가'에서 온다는 점이다. 필자는 자주 잊히는 사실로 홈즈가 **환자 대상 사기 혐의 4건에서는 모두 무죄**를 받았고, 수감 사유는 7억 달러 이상을 투자한 투자자들을 고의로 오도했다는 배심원 판단이라는 점을 짚는다. 하지만 사회는 '좋은 사람인가 나쁜 사람인가' 식의 이분법을 원해 이 구분이 묻힌다는 것이다.",
+          "lang": "en",
+          "published_at": "2026-10-18T12:19:49+09:00",
+          "collected_at": "2026-10-19T09:08:39+09:00",
+          "metrics": {
+            "points": 355,
+            "comments": 500
+          }
+        }
+      ]
+    },
+    {
+      "topic": "Namecheap just seized and disabled all my domains",
+      "trend_score": 0.9553,
+      "src_count": 1,
+      "hn": {
+        "points": 388,
+        "comments": 187
+      },
+      "items": [
+        {
+          "id": "ed68806b92b72df539d2b311aa3749ccdf4d475f",
+          "title": "Namecheap just seized and disabled all my domains",
+          "url": "https://reddit.com/r/sysadmin/comments/1x8cycd/namecheap_just_seized_and_disabled_all_my_domains",
+          "source": "hackernews",
+          "category": "hot_topics",
+          "summary_ko": "r/sysadmin 글 'Namecheap 이 내 도메인을 전부 압류하고 비활성화했다' 가 Hacker News 상위에 올랐다. ※본문 미확보 — 수집 시 Reddit 의 봇 차단(캡차) 페이지가 반환되어 제목 기반으로만 표기한다. 도메인 등록대행사 계정 정지로 보유 도메인 전체가 한꺼번에 막히는 상황을 다루는 글로, 레지스트라 단일 의존의 위험을 환기하는 사례로 읽힌다. 실제 경위·Namecheap 측 해명은 원문 링크에서 확인해야 한다.",
+          "lang": "en",
+          "published_at": "2026-10-19T01:56:56+09:00",
+          "collected_at": "2026-10-19T09:08:39+09:00",
+          "metrics": {
+            "points": 388,
+            "comments": 187
+          }
+        }
+      ]
+    },
+    {
+      "topic": "Someone behind the software",
+      "trend_score": 0.8928,
+      "src_count": 1,
+      "hn": {
+        "points": 279,
+        "comments": 117
+      },
+      "items": [
+        {
+          "id": "a709c24b2f05ad3dcc271ee5c91df70141e496c4",
+          "title": "Someone behind the software",
+          "url": "https://karrisaarinen.com/posts/someone-behind-the-software",
+          "source": "hackernews",
+          "category": "hot_topics",
+          "summary_ko": "Linear 공동창업자 Karri Saarinen 의 에세이. 좋은 제품에는 만든 사람의 경험·관심사·'이건 이렇게 동작해야 한다'는 관점이 묻어 있고, 만든 이가 누구인지 몰라도 그 관점은 느껴진다는 주장이다. 업계는 소프트웨어를 공장 제품처럼 — 요구사항을 모으고 기능을 만들고 작동 여부를 측정하면 좋은 결과가 나온다는 식으로 — 말하고 이제는 그 파이프라인 전체를 에이전트로 자동화하자고 하지만, 같은 고객과 같은 기술을 가진 두 팀이 전혀 다른 것을 만드는 이유는 '보이는 것을 어떻게 이해하고 어떤 스타일로 만드는가'에 있다고 본다. Linear 가 프로세스나 데이터보다 직관을 중시한다고 할 때의 직관은 개인 취향이 아니라 경험으로 쌓인 관점이며, 데이터 뒤에 숨지 않고 판단하게 만드는 장치라는 설명이다. 필자는 최근 성공한 회사들의 제품조차 지저분해지고 있다고 느끼는데, 기술로 무엇을 더할 수 있는지에 생각이 쏠리고 **어떤 형태여야 하는지**에는 덜 쏠리기 때문이라고 진단한다. 개별 기능은 완벽히 작동하면서도 제품 전체를 나쁘게 만들 수 있고, 그걸 알아보려면 '이 제품이 무엇이어야 하는가'에 대한 믿음이 필요하다는 것이다.",
+          "lang": "en",
+          "published_at": "2026-10-19T01:32:00+09:00",
+          "collected_at": "2026-10-19T09:08:39+09:00",
+          "metrics": {
+            "points": 279,
+            "comments": 117
+          }
+        }
+      ]
+    },
+    {
+      "topic": "Florida's HOAs and condo associations are making the housing crisis worse",
+      "trend_score": 0.8718,
+      "src_count": 1,
+      "hn": {
+        "points": 154,
+        "comments": 263
+      },
+      "items": [
+        {
+          "id": "7e13c62a6d92fd82c9044ae30042a28a0b145438",
+          "title": "Florida's HOAs and condo associations are making the housing crisis worse",
+          "url": "https://hoaspy.com/hoa/fl/florida-hoa-housing-crisis.html",
+          "source": "hackernews",
+          "category": "hot_topics",
+          "summary_ko": "HOA Spy 가 플로리다 주택소유자협회(HOA)·콘도협회가 주거 위기를 어떻게 악화시키는지를 법원 기록과 카운티 등기로 집계했다. 지표는 플로리다 협회 104,659곳(세대 수가 기록된 27,377곳이 1,518,436세대 보유) 기준으로 **협회가 자기 회원을 상대로 낸 압류 소송 10,296건**, 유치권 주장 460,412건, 소송계속 통지(lis pendens) 277,047건, 협회가 당사자인 법원 기록 48,999건, 법인 자격이 소멸·실효된 협회 6,661곳이다. 미국 전체 협회 압류 소송의 73% 가 플로리다에 몰려 있다. 기사는 주거 위기를 가격·매물 수·'살던 사람이 계속 살 수 있는가' 세 축으로 보고 협회가 세 축 모두를 악화시킨다고 주장하며, 플로리다 법(HOA 는 주법 720.3085, 콘도는 718.116)이 미납 분담금에 대해 각 주택에 유치권과 압류권을 주기 때문에 작은 금액으로 시작한 채무가 압류로 이어진다고 짚는다. 단, 소송·유치권 건수는 '신청 건수'이지 실제로 집을 잃은 수는 아니라고 명시한다. ※HOA: 미국 주택단지 관리·분담금 징수를 맡는 자치 조직. ※lis pendens: 해당 부동산에 소송이 걸렸음을 공시하는 등기.",
+          "lang": "en",
+          "published_at": "2026-10-19T03:40:16+09:00",
+          "collected_at": "2026-10-19T09:08:39+09:00",
+          "metrics": {
+            "points": 154,
+            "comments": 263
+          }
+        }
+      ]
+    },
+    {
+      "topic": "RepRapMicron",
+      "trend_score": 0.8627,
+      "src_count": 1,
+      "hn": {
+        "points": 321,
+        "comments": 51
+      },
+      "items": [
+        {
+          "id": "643666daab59db726febdf9a370e3f7bb11438fa",
+          "title": "RepRapMicron",
+          "url": "https://github.com/VikOlliver/RepRapMicron/wiki",
+          "source": "hackernews",
+          "category": "hot_topics",
+          "summary_ko": "μRepRap(RepRapMicron) 은 **마이크론(1µm = 1/1000mm) 및 서브마이크론 단위로 제작할 수 있는 자기복제형 3D 프린터**를 목표로 하는 오픈 프로젝트의 위키다. 핵심 전제는 특수 장비가 아니라 흔하고 구하기 쉬운 재료만으로 이 정밀도를 달성하는 것이며, 초기 정밀도는 3D 프린팅한 현미경 부품으로 가능해졌다고 설명한다. RepRap 은 자기 부품을 스스로 출력해 복제하는 오픈소스 3D 프린터 계보이고, 그 아이디어를 미세 가공 영역으로 끌어내린 시도다. 위키는 Vik Olliver 가 2026-10-13 까지 37차례 수정했다. ※수집된 본문에 GitHub 사이트 내비게이션이 상당 부분 섞여 있어, 구체적 사양·현재 달성 정밀도는 원문 위키에서 확인이 필요하다.",
+          "lang": "en",
+          "published_at": "2026-10-18T22:48:48+09:00",
+          "collected_at": "2026-10-19T09:08:39+09:00",
+          "metrics": {
+            "points": 321,
+            "comments": 51
+          }
+        }
+      ]
+    },
+    {
+      "topic": "Show HN: Sphinx – A hook that quizzes you on your AI's code before shipping",
+      "trend_score": 0.8554,
+      "src_count": 1,
+      "hn": {
+        "points": 239,
+        "comments": 81
+      },
+      "items": [
+        {
+          "id": "d3c35db34ec3acb331d474191fe72e5ca99effdf",
+          "title": "Show HN: Sphinx – A hook that quizzes you on your AI's code before shipping",
+          "url": "https://sphinx-six-theta.vercel.app/",
+          "source": "hackernews",
+          "category": "hot_topics",
+          "summary_ko": "Show HN 에 올라온 'Sphinx' 는 AI 에이전트가 쓴 코드를 push 하기 전에 **작성자에게 그 코드가 실제로 무엇을 하는지 질문하는 Git 훅**이다. 표어는 '생각은 외주 줄 수 있어도 이해는 외주 줄 수 없다'. 보호 대상 브랜치에 push 하면 Git 이 멈추고, 대화 내역을 보지 않은 리뷰어 역할의 모델이 diff 만 읽고 '문제가 생기면 이 변경이 어떻게 동작하나'를 묻는다. 예시 문답은 웹훅 핸들러가 charge() 호출 **전에** 이벤트 ID 를 저장하도록 바뀐 상황에서 Stripe 재전송 시 무슨 일이 생기는지를 파고들어, 이중 청구가 아니라 '결제가 실패해도 다음 재시도가 청구를 건너뛰어 영영 과금되지 않는' 버그로 유도한다. 틀리면 이유를 배우고 새 시나리오로 다시 묻고, 맞히면 push 가 진행된다. `npm install -g sphinx-understand` 로 설치하며(Node 22.19+, macOS·Linux·WSL), 기존 코딩 에이전트나 OpenRouter 등 OpenAI 호환 엔드포인트를 적은 토큰으로 쓴다. Codex·Claude Code·Cursor·OpenCode·Pi 또는 순수 Git 과 함께 동작하고, 답변은 코딩 에이전트로 넘어가지 않으며 .env 와 키 파일은 열지 않는다. 급할 때 쓰는 `sphinx yolo` 는 통과시키되 건너뛴 기록을 남긴다. MIT 라이선스 무료 FOSS.",
+          "lang": "en",
+          "published_at": "2026-10-18T13:33:49+09:00",
+          "collected_at": "2026-10-19T09:08:39+09:00",
+          "metrics": {
+            "points": 239,
+            "comments": 81
+          }
+        }
+      ]
+    },
+    {
+      "topic": "Parser Combinators",
+      "trend_score": 0.8429,
+      "src_count": 1,
+      "hn": {
+        "points": 219,
+        "comments": 77
+      },
+      "items": [
+        {
+          "id": "3337df1b3bee92b12b4f54ec7990aee735144513",
+          "title": "Parser Combinators",
+          "url": "https://t3.at/blog/2026-10-17-parser-combinators",
+          "source": "hackernews",
+          "category": "hot_topics",
+          "summary_ko": "비엔나 개발자 Florian(T3 Blog)이 2026-10-17 에 올린 '파서 콤비네이터' 글로, 부제는 '정규표현식보다 낫다'. 파서 콤비네이터는 작은 파서들을 함수로 조합해 더 큰 파서를 만드는 기법으로, 정규식과 달리 중첩 구조를 다룰 수 있고 조합 과정이 코드로 드러나 읽고 테스트하기 쉽다는 점이 일반적인 장점으로 꼽힌다. 같은 블로그에는 타입 시스템 25부작, 색 이론 8부작, 'Classes are Coalgebras' 연재 등 이론 지향 시리즈가 함께 있다. ※본문 미확보 — 수집된 텍스트가 블로그 목차·내비게이션 위주라 이 글의 구체적 논지와 예제 코드는 원문에서 확인해야 한다.",
+          "lang": "en",
+          "published_at": "2026-10-18T17:19:53+09:00",
+          "collected_at": "2026-10-19T09:08:39+09:00",
+          "metrics": {
+            "points": 219,
+            "comments": 77
+          }
+        }
+      ]
+    },
+    {
+      "topic": "Hybrid Reasoning Agents: LLM agents that think in latent space, act through text",
+      "trend_score": 0.8158,
+      "src_count": 1,
+      "hn": {
+        "points": 157,
+        "comments": 92
+      },
+      "items": [
+        {
+          "id": "a5bb32320853f4db899f960fab78f0afa3dea1e6",
+          "title": "Hybrid Reasoning Agents: LLM agents that think in latent space, act through text",
+          "url": "https://arxiv.org/abs/2610.18861",
+          "source": "hackernews",
+          "category": "hot_topics",
+          "summary_ko": "arXiv 2610.18861 'Hybrid Reasoning Agents'(2026-10-13 제출, 45쪽). 문제 의식은 현재 LLM 에이전트가 추론과 상호작용을 모두 텍스트로 하는데, 잠재 추론(latent reasoning)은 내부적으로 효율적이지만 도구 호출을 못 하고 추론 과정이 들여다보이지 않는다는 것이다. HybridAgent 는 생성 과정 하나 안에서 잠재 추론 모드와 텍스트 상호작용 모드를 오가며, 경량 모듈 HybridLink 가 두 모드 전환을 맡고 연속 작업 메모리가 여러 턴에 걸쳐 혼합 문맥을 손실 없이 보존한다. 학습은 2단계로, HybridSFT 가 백본에게 HybridLink 와 협응하는 법을 가르쳐 도구 통합 생성을 안정화하고, HybridRL 이 '언제 잠재로 생각하고 언제 텍스트로 행동할지'를 학습한다. 모델 규모 3종, 수학·과학·의학·검색·에이전트 추론 11개 벤치마크에서 기존 텍스트 기반·잠재 기반 프론티어 에이전트 대비 **성능 10.4% 향상, 토큰 35.5~54.7% 절감, 추론 속도 1.8~2.6배, 비용 2.7~3.7배 절감**을 보고했다. 저자는 Jiaru Zou, Yunzhe Qi 등 8명(James Zou 포함). ※같은 날 r/LocalLLaMA 에도 공유된 Together Computer 의 HybridAgent 와 같은 작업이다.",
+          "lang": "en",
+          "published_at": "2026-10-19T05:48:14+09:00",
+          "collected_at": "2026-10-19T09:08:39+09:00",
+          "metrics": {
+            "points": 157,
+            "comments": 92
+          }
+        }
+      ]
+    },
+    {
+      "topic": "Show HN: The Zelda timeline to catch up before the Ocarina of Time remake",
+      "trend_score": 0.8157,
+      "src_count": 1,
+      "hn": {
+        "points": 156,
+        "comments": 93
+      },
+      "items": [
+        {
+          "id": "e9bd6e2a8f74e6f72b5da6a30fd2e7e36f79fc46",
+          "title": "Show HN: The Zelda timeline to catch up before the Ocarina of Time remake",
+          "url": "https://legendofhyrule.com/",
+          "source": "hackernews",
+          "category": "hot_topics",
+          "summary_ko": "Show HN 에 올라온 'The Legend of Hyrule' 은 **오카리나 오브 타임 리메이크 출시 전에 따라잡을 수 있도록 젤다 시리즈 연표를 정리한 사이트**다. 닌텐도 공식 연표를 따르며, 창세부터 '대격변(Upheaval)'까지를 잇고 오카리나 오브 타임 이후로는 아이 시대·어른 시대·패배한 영웅 시대 세 갈래로 분기하는 구조를 보여준다. 출시까지 남은 날짜 카운트다운과 '발매 순' 보기도 함께 제공한다. 각 작품은 줄거리 한두 문장으로 요약되는데, 하늘섬 스카이로프트에서 젤다가 지상으로 떨어지며 링크가 여신의 검을 드는 '스카이워드 소드', 바티가 피코리의 검을 부수고 젤다를 돌로 만드는 '이상한 모자', 가논돌프가 성역의 트라이포스를 노리고 링크가 7년을 오가는 '오카리나 오브 타임', 아가님이 7현자의 후손을 봉인 밖으로 보내는 '신들의 트라이포스', 유가가 7현자 후손을 그림으로 바꾸고 링크가 거울 세계 로우라레로 따라가는 '신들의 트라이포스 2' 등이 이어진다.",
+          "lang": "en",
+          "published_at": "2026-10-18T22:06:54+09:00",
+          "collected_at": "2026-10-19T09:08:39+09:00",
+          "metrics": {
+            "points": 156,
+            "comments": 93
+          }
+        }
+      ]
+    },
+    {
+      "topic": "Java sealed classes and exhaustive pattern matching",
+      "trend_score": 0.7982,
+      "src_count": 1,
+      "hn": {
+        "points": 129,
+        "comments": 99
+      },
+      "items": [
+        {
+          "id": "98043109ddbddf1c1c23d8dca12945170cde591d",
+          "title": "Java sealed classes and exhaustive pattern matching",
+          "url": "https://neilmadden.blog/2026/04/24/java-sealed-classes-and-exhaustive-pattern-matching",
+          "source": "hackernews",
+          "category": "hot_topics",
+          "summary_ko": "Neil Madden 의 글로, Java 17 의 **sealed class(봉인 클래스)와 switch 의 망라성(exhaustiveness) 검사**가 가져오는 호환성 함정을 다룬다. sealed 인터페이스는 허용되는 하위 타입을 명시적으로 나열하므로(중첩 클래스는 목록을 안 적으면 자동 포함) Haskell·ML 의 대수적 데이터 타입과 비슷해지고, 컴파일러가 가능한 경우를 전부 알기 때문에 switch 에서 **default 절 없이도 모든 case 를 다뤘는지 컴파일 타임에 검증**한다. 문제는 여기서 새로운 종류의 파괴적 변경이 생긴다는 점이다. 기존 sealed 타입에 TypeC 같은 하위 타입을 추가하면 그 타입을 쓰는 쪽의 switch 가 컴파일되지 않으므로, API 로 sealed 타입을 공개한다면 하위 타입 추가는 SemVer 상 **메이저 버전을 올려야 하는 변경**이 된다. 더 까다로운 건 소비자 코드를 다시 컴파일하지 않는 경우로, 컴파일 타임 오류를 낼 수 없어 런타임 문제로 넘어간다는 점이다. ※SemVer: 주.부.수 형식의 유의적 버전 규칙.",
+          "lang": "en",
+          "published_at": "2026-10-18T23:47:37+09:00",
+          "collected_at": "2026-10-19T09:08:39+09:00",
+          "metrics": {
+            "points": 129,
+            "comments": 99
+          }
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "source": "github_trending",
+      "ok": true,
+      "item_count": 13,
+      "error_type": null
+    },
+    {
+      "source": "anthropic",
+      "ok": true,
+      "item_count": 273,
+      "error_type": null
+    },
+    {
+      "source": "openai",
+      "ok": false,
+      "item_count": 0,
+      "error_type": "HTTPError"
+    },
+    {
+      "source": "deepmind",
+      "ok": true,
+      "item_count": 100,
+      "error_type": null
+    },
+    {
+      "source": "meta_ai",
+      "ok": true,
+      "item_count": 88,
+      "error_type": null
+    },
+    {
+      "source": "mistral",
+      "ok": true,
+      "item_count": 90,
+      "error_type": null
+    },
+    {
+      "source": "xai",
+      "ok": true,
+      "item_count": 85,
+      "error_type": null
+    },
+    {
+      "source": "openai_codex",
+      "ok": true,
+      "item_count": 154,
+      "error_type": null
+    },
+    {
+      "source": "cloudflare",
+      "ok": true,
+      "item_count": 20,
+      "error_type": null
+    },
+    {
+      "source": "github_blog",
+      "ok": true,
+      "item_count": 10,
+      "error_type": null
+    },
+    {
+      "source": "aws",
+      "ok": true,
+      "item_count": 20,
+      "error_type": null
+    },
+    {
+      "source": "stripe",
+      "ok": true,
+      "item_count": 10,
+      "error_type": null
+    },
+    {
+      "source": "meta_eng",
+      "ok": true,
+      "item_count": 9,
+      "error_type": null
+    },
+    {
+      "source": "reddit_localllama",
+      "ok": true,
+      "item_count": 25,
+      "error_type": null
+    },
+    {
+      "source": "hf_blog",
+      "ok": true,
+      "item_count": 880,
+      "error_type": null
+    },
+    {
+      "source": "hackernews",
+      "ok": true,
+      "item_count": 20,
+      "error_type": null
+    }
+  ],
+  "summaries_injected": true
+}
