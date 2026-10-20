@@ -1,0 +1,713 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-10-21T07:39:27+09:00",
+  "date": "2026-10-21",
+  "categories": {
+    "ai_labs": [
+      {
+        "id": "4eb9f7080b11166ecabe823c8b93aa97e58d2978",
+        "title": "NVIDIA Cosmos3-H-Dreams: Bringing Clinical Surgery to Life Through Generative Simulation",
+        "url": "https://huggingface.co/blog/nvidia/cosmos3-h-dreams",
+        "source": "hf_blog",
+        "category": "ai_labs",
+        "summary_ko": "NVIDIA가 임상 수술 장면을 실시간으로 생성하는 시뮬레이터 Cosmos3-H-Dreams를 공개했다. CMR Surgical Versius 플랫폼에서 실제 담낭절제술을 녹화한 영상과 로봇 관절 데이터로 학습해, 조직이 당겨지고 반사광이 변하고 연기로 시야가 흐려지는 체내 변화를 재현하면서 수술 도구 조작에 즉각 반응한다. 이전 버전이 탁상 봉합 연습에 머물렀던 것과 달리 임상 장면으로 넓혔고, 스트리밍 추론 라이브러리 FlashDreams 덕에 RTX PRO 6000 GPU 한 장에서 대화형으로 돌아간다. ※월드 파운데이션 모델(WFM): 물리 법칙과 조직 변형을 수식으로 모델링하는 대신 영상에서 시각적 동역학을 직접 학습하는 모델.",
+        "lang": "en",
+        "published_at": "2026-10-21T03:17:47+09:00",
+        "collected_at": "2026-10-21T07:32:38+09:00",
+        "metrics": null
+      },
+      {
+        "id": "ca293d8533a3487d56775601759d9e248992e54a",
+        "title": "FairStress: A deeper evaluation of fairness in LLM decision-making",
+        "url": "https://huggingface.co/blog/allenai/fairstress",
+        "source": "hf_blog",
+        "category": "ai_labs",
+        "summary_ko": "Ai2가 LLM 공정성 평가를 '최종 답'이 아니라 '그 답을 얼마나 쉽게 뒤집는가'로 넓힌 벤치마크 FairStress를 공개했다. 기존 벤치마크는 지원자의 인종만 바꿔도 같은 사람을 고르면 공정하다고 보지만, FairStress는 '윗선이 B를 선호한다' 같은 설득 문구(적대적 프리픽스)를 넣었을 때 어느 집단에 유리한 주장이냐에 따라 모델이 결정을 바꾸는 정도가 달라지는 숨은 비대칭을 측정한다. Olmo·Llama·Qwen·Gemma·Claude·GPT 계열과 학습 단계별로 이 비대칭이 확인됐고, 채용·대출·의료·교육·주거 영역에서 결정을 설명하는 방식과 내부 활성화 패턴도 달랐다. 데이터와 코드를 공개했고 자체 평가 도구 Olmo-eval에도 넣는 중이다.",
+        "lang": "en",
+        "published_at": "2026-10-21T01:09:19+09:00",
+        "collected_at": "2026-10-21T07:32:38+09:00",
+        "metrics": null
+      },
+      {
+        "id": "94e7f4f5c0e52bb75e66cbfeaab71589104be947",
+        "title": "ALTK-Evolve: How learned memory tops the τ²-bench leaderboard on customer service tasks without a frontier model",
+        "url": "https://huggingface.co/blog/ibm-research/altk-evolve-bc",
+        "source": "hf_blog",
+        "category": "ai_labs",
+        "summary_ko": "IBM Research가 가중치를 전혀 건드리지 않고 '학습된 메모리'만으로 고객서비스 에이전트 벤치마크 1위를 기록한 ALTK-Evolve를 소개했다. 구형 비추론 모델 GPT-4.1을 쓴 기본 ReAct 에이전트가 τ²-bench 리테일에서 Pass^4 67.5%(같은 과제를 독립적으로 4번 시도해 전부 성공한 비율)를 내어 2026년 10월 12일 리더보드 스냅샷의 모든 리테일 항목을 넘어섰다. 방식은 훈련 과제의 시도들을 같은 모델로 분석해 '고객 인증 절차, 거래 확인, 반품 처리' 같은 짧은 행동 규칙으로 뽑아낸 뒤 시스템 프롬프트에 덧붙이는 것으로, 사람 주석이나 재학습이 필요 없다. 성능 향상의 대가는 대화 턴 수가 아니라 토큰 사용량 증가로 나타났다. ※τ²-bench: Sierra가 만든, 도메인 정책을 지켜야 하는 고객서비스 에이전트 벤치마크.",
+        "lang": "en",
+        "published_at": "2026-10-21T00:19:48+09:00",
+        "collected_at": "2026-10-21T07:32:38+09:00",
+        "metrics": null
+      },
+      {
+        "id": "afe5d96a9d4684fb96de500346e2384550461c1d",
+        "title": "Voxtral 3",
+        "url": "https://mistral.ai/news/voxtral-3",
+        "source": "mistral",
+        "category": "ai_labs",
+        "summary_ko": "Mistral이 50개 이상 언어를 다루는 실시간 음성 에이전트 SDK와 음성 모델군 Voxtral 3을 공개했다. 듣기(전사)·맥락 추론·감정이 실린 음성 합성·도구 호출을 하나의 스트리밍 파이프라인으로 묶어, 예시에서는 프랑스어 진료 의뢰서를 읽어 해석하고 예약 API를 호출한 뒤 영어로 안내하는 다단계 작업을 처리한다. EU에 호스팅된 API로 쓰거나 직접 배포할 수 있어 데이터 주권 요건을 맞출 수 있고, 콜센터·서비스데스크·가상비서·핸즈프리 코파일럿을 겨냥한다.",
+        "lang": "en",
+        "published_at": "2026-10-20T21:00:22+09:00",
+        "collected_at": "2026-10-21T07:32:38+09:00",
+        "metrics": null
+      },
+      {
+        "id": "84cd8d44e9825e737133c110f0549311792b0780",
+        "title": "Hugging Face ❤️ TorchTPU: TPUs, Natively",
+        "url": "https://huggingface.co/blog/hf-torchtpu",
+        "source": "hf_blog",
+        "category": "ai_labs",
+        "summary_ko": "PyTorch가 TPU를 '그냥 또 하나의 디바이스'로 다루는 네이티브 백엔드 TorchTPU가 나오면서, Hugging Face의 Transformers·Diffusers·Kernels가 TPU에서 바로 돌아간다. 지금까지는 PyTorch/XLA(torch_xla)를 거쳐야 했는데 텐서가 지연 평가라 코드가 언제 실행되는지 알기 어렵고 작은 변경에도 그래프 재컴파일이 터져 디버깅이 힘들었다. 설치는 `pip install torch-tpu --extra-index-url https://download.pytorch.org/whl/cpu` 한 줄이며(CPU 인덱스를 지정해야 불필요한 대용량 CUDA 빌드를 안 받는다), TPU용으로 만들었던 Optimum TPU는 더 이상 필요 없다. TPU에 맞춘 Pallas 커널과 분산 학습, torch.compile 연동이 함께 들어 있다. ※TPU: 구글이 10년간 설계해 온 행렬 연산 전용 AI 가속기로, Gemini 학습·서빙에도 쓴다.",
+        "lang": "en",
+        "published_at": "2026-10-20T09:00:00+09:00",
+        "collected_at": "2026-10-21T07:32:38+09:00",
+        "metrics": null
+      },
+      {
+        "id": "2596ff929aeef5579581b4037417df8135811f0e",
+        "title": "AnyLanguageModel 1.0: One Year of Local Models on Apple Platforms",
+        "url": "https://huggingface.co/blog/anylanguagemodel-1-0",
+        "source": "hf_blog",
+        "category": "ai_labs",
+        "summary_ko": "애플의 Foundation Models 프레임워크를 import 한 줄만 바꿔 대체하면서 모델과 제공자를 골라 쓸 수 있게 해 주는 Swift 라이브러리 AnyLanguageModel이 1.0에 도달했다(swift-huggingface 1.0, swift-xet 1.0 동반 공개). 1년간 도구 호출과 guided generation을 모든 제공자에서 지원하도록 넓혔고, 중첩 @Generable 타입과 그 배열, 이미지 첨부(iOS·macOS·visionOS 27)까지 추가했다. 로컬은 llama.cpp·MLX·Core ML, 원격은 OpenAI(Chat Completions/Responses), Anthropic Messages(적응형 thinking·effort 옵션), Gemini, Ollama, Private Cloud Compute, Hugging Face Inference Providers와 OpenRouter 같은 OpenAI 호환 엔드포인트를 같은 세션 코드로 호출한다.",
+        "lang": "en",
+        "published_at": "2026-10-20T09:00:00+09:00",
+        "collected_at": "2026-10-21T07:32:38+09:00",
+        "metrics": null
+      },
+      {
+        "id": "3eb18e5ff7f2a0efc7b65bf76103cb7b1b48a111",
+        "title": "MPS in PyTorch 2.15",
+        "url": "https://huggingface.co/blog/mps-pytorch-2-15",
+        "source": "hf_blog",
+        "category": "ai_labs",
+        "summary_ko": "맥에서 PyTorch를 돌리는 MPS 백엔드가 2.15에서 크게 개선됐다. FP8(float8_e4m3fn) 지원으로 BF16의 절반 공간에 값을 저장하고 스케일드 행렬곱도 쓸 수 있게 됐으며, MoE 모델 디코딩은 2.14 대비 5~6.5배 빨라져 Qwen3.6-35B-A3B가 M3 Ultra에서 9.4에서 61.3 tok/s로 올랐다(네이티브 그룹 행렬곱, GPU-CPU 동기화 감소, 빠른 top-k 라우팅 덕분). 어휘 전체 softmax가 약 8배 빨라지고 단일 행 선형 계층에 전용 행렬-벡터 커널이 붙었으며, 복소수 LU·삼각 해법 등 선형대수 연산도 GPU로 넘어왔다. Wan2.2 비디오 VAE 디코드의 메모리 피크가 270GiB에서 8GiB로 줄었고, MPS 스트림이 파이썬에서 쓸 수 있는 공개 API가 됐다. ※MPS: 애플 Metal 기반 GPU 가속 백엔드.",
+        "lang": "en",
+        "published_at": "2026-10-20T09:00:00+09:00",
+        "collected_at": "2026-10-21T07:32:38+09:00",
+        "metrics": null
+      },
+      {
+        "id": "8441dda466a0cda9481c93b6d42f8604c4c7eb28",
+        "title": "Strengthening our defenses against distillation attacks",
+        "url": "https://anthropic.com/news/distillation-defenses",
+        "source": "anthropic",
+        "category": "ai_labs",
+        "summary_ko": "Anthropic이 Claude를 겨냥한 증류(distillation) 공격 방어를 강화해 탈취되는 데이터량을 약 90~99% 줄였다고 밝혔다. 증류 공격은 위조 계정망을 동원해 산업 규모로 한 모델의 능력을 뽑아내 다른 모델에 복제하는 행위로, 개발 비용과 시간을 건너뛴 대신 그에 걸맞은 안전장치 없이 프런티어 성능만 가진 모델이 생물·사이버 위험을 키운다는 것이 문제의식이다. 사례로 Zhipu가 GLM-5.3 개발 중 주요 미국 모델의 사이버 능력을 증류했고(Claude Fable 5는 안전장치가 공격 성능을 떨어뜨리자 구형 Claude와 타사 모델로 갈아탔다), 미국 CAISSI는 GLM-5.3을 지금까지 공개된 가중치 공개 모델 중 사이버 능력이 가장 높다고 평가했다. Moonshot의 Kimi 요청이 몰래 Claude로 넘겨지던 사례에서는 중국 인민해방군 관련으로 추정되는 사용자가 특정 인물의 CCTV 감시 영상 분석을 요청한 건도 있었다고 한다.",
+        "lang": "en",
+        "published_at": "2026-10-12T09:00:00+09:00",
+        "collected_at": "2026-10-21T07:32:38+09:00",
+        "metrics": null
+      },
+      {
+        "id": "e4ec8a4be7efe58297590ce8dd77c7e4caa66aa6",
+        "title": "The Situation Report",
+        "url": "https://anthropic.com/features/ebola-response",
+        "source": "anthropic",
+        "category": "ai_labs",
+        "summary_ko": "콩고민주공화국 동부에서 확인된 백신이 없는 희귀 에볼라(Bundibugyo) 유행에 대응하며 국제 보건기구들이 일일 상황보고서 작성에 Claude를 쓰고 있다는 사례 기사다. 2026년 9월 19일 기준 누적 확진 7,672명·사망 3,699명으로 치명률 48.2%, 7개 주 167개 보건지역 중 63곳으로 번졌고 이투리주가 전체 사례의 77.1%, 북키부의 치료 병상 점유율은 94.7%로 부템보와 카트와에는 남은 병상이 없다. 지역 보건요원이 수첩에 적은 발열·회복·사망 기록을 WhatsApp으로 보내면 지구마다 PowerPoint 슬라이드로 옮겨 올리던 보고 체계가 병목이었는데, 접촉자를 얼마나 빨리 찾아내느냐가 환자 생존과 이후 백신 배분 경로를 좌우한다는 점이 배경이다.",
+        "lang": "en",
+        "published_at": "2026-09-21T09:00:00+09:00",
+        "collected_at": "2026-10-21T07:32:38+09:00",
+        "metrics": null
+      },
+      {
+        "id": "c3eef50e9010768e039190db8890f4b272fde9e0",
+        "title": "Introducing Claude Mythos and Fable 5.1",
+        "url": "https://anthropic.com/claude-fable-and-mythos-5-1",
+        "source": "anthropic",
+        "category": "ai_labs",
+        "summary_ko": "Anthropic이 코딩·지식노동용 최상위 모델 Claude Fable 5.1과 Mythos 5.1을 공개했다. 둘은 같은 모델이고 안전장치 수준만 다른데, Fable 5.1은 일반 공개이고 Mythos 5.1은 사이버보안·생명과학 작업을 지원하도록 설계된 안전장치를 달아 신뢰 접근 프로그램으로만 제공한다. 가격은 캐시 읽기(이미 처리해 저장해 둔 입력을 다시 읽는 부분) 단가를 내려 일반 워크로드 기준 Fable 5보다 약 25% 저렴하고, 에이전트성 작업에서는 절감폭이 최대 45%에 이른다. 데이터 보존은 새 Enterprise Frontier Safeguards(EFS)로 Anthropic이 아닌 고객이 통제하는 클라우드에 데이터를 둬 제로 데이터 보존과 같은 프라이버시를 제공하며 올가을부터 단계적으로 열고, 그 전까지 적격 고객은 ZDR로 쓸 수 있다. 안전장치의 오탐도 줄어 사이버보안 분야에서 과거 대비 60% 적게 차단한다.",
+        "lang": "en",
+        "published_at": "2026-09-15T09:00:00+09:00",
+        "collected_at": "2026-10-21T07:32:38+09:00",
+        "metrics": null
+      }
+    ],
+    "community": [
+      {
+        "id": "2fb1e9c6cd1ad62d2d2a54a0229f8335580b561e",
+        "title": "yes",
+        "url": "https://reddit.com/r/LocalLLaMA/comments/1xb5qxn/yes",
+        "source": "reddit_localllama",
+        "category": "community",
+        "summary_ko": "8GB GPU 장비에서 로컬 모델 추론 속도가 크게 올랐다는 체감 보고. Unsloth의 3비트 Qwen 3.8 Flash Next로 9 t/s가 나오던 환경에서 CachyOS와 STRATA로 바꾼 뒤 때때로 48 t/s까지 찍었다는 내용이다. 최신 NVIDIA 드라이버를 수동으로 맞추는 게 번거로웠는데 CachyOS가 알아서 처리해 준 점을 바꾼 이유로 들었고, 컨텍스트는 32k가 무난하며 최대 42k까지 올려봤다고 한다. ※본문 미확보(레딧 차단) — 게시물 요약문 기반.",
+        "lang": "en",
+        "published_at": "2026-10-21T07:09:34+09:00",
+        "collected_at": "2026-10-21T07:32:38+09:00",
+        "metrics": null
+      },
+      {
+        "id": "b0ff76934a76a39a4d75f91fe5472a62f1751090",
+        "title": "I built an RK3588 NPU runtime without any proprietary inference libraries: Qwen3.5-4B at ~10 tok/s, ~2x faster than vendor SDK.",
+        "url": "https://reddit.com/r/LocalLLaMA/comments/1xb45bq/i_built_an_rk3588_npu_runtime_without_any",
+        "source": "reddit_localllama",
+        "category": "community",
+        "summary_ko": "Rockchip RK3588 보드의 NPU를 벤더의 독점 추론 라이브러리 없이 구동하는 오픈소스 엔진 open_rknpu2_lm_infer가 공개됐다. 호스트 추론 코드는 Rust로, NPU 연산자는 C++로 작성해 블랙박스 없이 직접 읽고 고칠 수 있는 것이 핵심이며, Qwen3.5-4B에서 약 10 tok/s로 벤더 SDK보다 약 2배 빠르다고 주장한다. ※NPU: 신경망 연산 전용 가속기. ※본문 미확보(레딧 차단) — 게시물 요약문 기반.",
+        "lang": "en",
+        "published_at": "2026-10-21T06:03:58+09:00",
+        "collected_at": "2026-10-21T07:32:38+09:00",
+        "metrics": null
+      },
+      {
+        "id": "6b7d106404376531837f5906aa52f615429831e8",
+        "title": "XHToken/Spark-X2.6-4B · Hugging Face",
+        "url": "https://reddit.com/r/LocalLLaMA/comments/1xb0nr9/xhtokensparkx264b_hugging_face",
+        "source": "reddit_localllama",
+        "category": "community",
+        "summary_ko": "온디바이스 배포용 소형 범용 모델 Spark-X2.6-4B가 GGUF 포맷과 함께 공개됐다. 한 달여 전 Spark-X2.5-4B의 후속으로, AI 에이전트 분야가 빠르게 바뀌는 만큼 그 사이에 설계를 다시 다듬었다는 설명이다. ※본문 미확보(레딧 차단) — 게시물 요약문 기반.",
+        "lang": "en",
+        "published_at": "2026-10-21T03:50:53+09:00",
+        "collected_at": "2026-10-21T07:32:38+09:00",
+        "metrics": null
+      },
+      {
+        "id": "35db8b0c6e6c77efbe7933ff3aa1ece55e5c582e",
+        "title": "qev-0.8b · New SOTA tiny local decision model",
+        "url": "https://reddit.com/r/LocalLLaMA/comments/1xazrvd/qev08b_new_sota_tiny_local_decision_model",
+        "source": "reddit_localllama",
+        "category": "community",
+        "summary_ko": "'새로운 SOTA 초소형 로컬 의사결정 모델'로 소개된 qev-0.8b 공유 글. 게시물에 링크만 있고 설명이 붙어 있지 않아 어떤 과제에서 어떤 수치를 냈는지는 확인되지 않는다. ※본문 미확보 — 제목 기반.",
+        "lang": "en",
+        "published_at": "2026-10-21T03:17:30+09:00",
+        "collected_at": "2026-10-21T07:32:38+09:00",
+        "metrics": null
+      },
+      {
+        "id": "96878180d7433576b72901eaa9b73a9b73de67cb",
+        "title": "Running 35B MoE models on a Tesla K80 (2014) at ~21 tok/s, in plain C",
+        "url": "https://reddit.com/r/LocalLLaMA/comments/1xaz06x/running_35b_moe_models_on_a_tesla_k80_2014_at_21",
+        "source": "reddit_localllama",
+        "category": "community",
+        "summary_ko": "2014년에 나온 Tesla K80에서 35B MoE 모델을 약 21 tok/s로 돌리는 C 기반 추론 엔진 Pantheon(및 ML 라이브러리 Foundry)이 공개됐다. 외부 라이브러리 없이 작성했고 CUDA 백엔드가 Kepler 세대(sm_37)를 겨냥해, 중고로 싸게 구할 수 있는 K80이 실제로 쓸 만한 일을 한다는 것이 요지다. 코어 2개·RAM 8GB·AVX 없는 호스트에서 측정했고 가중치를 카드에 올려 두기 때문에 호스트 메모리가 적어도 되며, 프롬프트 처리는 8k까지 110~120 tok/s, 14k에서 75, 30k에서 55로 떨어진다. 접두사 캐싱이 내장돼 세션 ID를 보내면 새로 늘어난 부분만 처리하는데, opencode의 두 번째 턴(14k 토큰 시스템 프롬프트)이 170초에서 9초로 줄었다. 약점은 프리필이라 3만 토큰짜리 코드베이스를 매 요청에 붙여넣는 용도에는 맞지 않는다.",
+        "lang": "en",
+        "published_at": "2026-10-21T02:49:47+09:00",
+        "collected_at": "2026-10-21T07:32:38+09:00",
+        "metrics": null
+      },
+      {
+        "id": "b81d1c312051674886a2051398c41debf075b593",
+        "title": "Agnes-AI/Agnes-3.0-Qwen (QFN finetune)",
+        "url": "https://reddit.com/r/LocalLLaMA/comments/1xaxz80/agnesaiagnes30qwen_qfn_finetune",
+        "source": "reddit_localllama",
+        "category": "community",
+        "summary_ko": "Qwen 기반 파인튜닝 모델 agnes-3.0-qwen이 GGUF와 함께 공개됐다. 총 180B 규모의 하이브리드 어텐션 MoE(전문가 512개 중 토큰당 10개 활성)에 컨텍스트 1,048,576 토큰·최대 출력 65,536 토큰, 추론 강도 선택(xhigh/medium/low), 도구 호출, 텍스트·이미지·비디오 입력을 지원한다. 공개된 비교에서는 τ³-Banking에서 비교군 최고점, Terminal-Bench 2.1에서 최고 모델과 약 1점 차, IFBench(지시 이행)에서는 GPT-5.6 Sol(Max)과 Claude Opus 4.8(Max)을 앞선다고 주장하며, 자기보다 훨씬 큰 플래그십들과 겨룬다는 점을 내세운다. 라이선스는 Qwen Community License 1.0이고 영어·중국어를 지원한다.",
+        "lang": "en",
+        "published_at": "2026-10-21T02:11:43+09:00",
+        "collected_at": "2026-10-21T07:32:38+09:00",
+        "metrics": null
+      },
+      {
+        "id": "a5aa66cb52269434fcb7150f37f6cf0d18551759",
+        "title": "Pocket TTS Small: CPU voice cloning with models as small as 1.9M parameters",
+        "url": "https://reddit.com/r/LocalLLaMA/comments/1xaxm11/pocket_tts_small_cpu_voice_cloning_with_models_as",
+        "source": "reddit_localllama",
+        "category": "community",
+        "summary_ko": "Kyutai가 10월 20일 1.9M·6.9M·18.2M 파라미터짜리 소형 TTS(음성 합성) 모델 Pocket TTS Small 3종을 공개했다. 영어 전용이고 음성 복제를 지원하며 CPU 실행을 노려 설계했는데, 글쓴이가 꼽은 실익은 GPU는 LLM에 맡기고 음성 합성만 CPU로 돌릴 수 있다는 점이다(채팅 모델만으로도 VRAM이 빠듯한 상황에서 음성 때문에 또 메모리를 쪼갤 필요가 없다). 1.9M까지 줄인 것은 인상적이지만 오래 듣기에는 6.9M부터가 낫다는 의견을 덧붙였고, 공개된 파라미터 수에는 오디오 디코더가 포함되고 참조 음성을 처리하는 인코더는 별도이며 참조는 한 번만 인코딩하면 된다는 단서도 짚었다.",
+        "lang": "en",
+        "published_at": "2026-10-21T01:58:49+09:00",
+        "collected_at": "2026-10-21T07:32:38+09:00",
+        "metrics": null
+      },
+      {
+        "id": "ca2b3caf4aa6a95c8225874e55fc8047e0f11ba0",
+        "title": "Short report from Lithuanian conference on AI Technologies in Medicine",
+        "url": "https://reddit.com/r/LocalLLaMA/comments/1xaxffx/short_report_from_lithuanian_conference_on_ai",
+        "source": "reddit_localllama",
+        "category": "community",
+        "summary_ko": "리투아니아에서 열린 '의료 분야 AI 기술: 연구와 진단' 컨퍼런스 참관기. AIML.lt 랩이 의료 객관식 Q&A용 실험적 의사결정 모델(laya-multilingual-lt-med, Qwen3.5-4B-LT-med)을 소개했고, 희귀질환 진단에서 염색체 구조 재배열 절단점의 근거를 평가해 주는 해석 가능한 LLM 보조도구를 MCP 서버로 구현해 유전학 전문의의 작업을 단축한 연구가 발표됐다. 의료 학습 데이터를 올바른 리투아니아어 용어로 대량 번역하는 데 로컬 모델을 쓰는 전략도 다뤄졌다. ※MCP: 모델이 외부 도구·데이터에 붙는 표준 프로토콜.",
+        "lang": "en",
+        "published_at": "2026-10-21T01:51:37+09:00",
+        "collected_at": "2026-10-21T07:32:38+09:00",
+        "metrics": null
+      },
+      {
+        "id": "5d355ebe8de5dacf88faf332327b044bc393bbcb",
+        "title": "MiMo 2.6 is reasoning is like the crash test dummies",
+        "url": "https://reddit.com/r/LocalLLaMA/comments/1xawa17/mimo_26_is_reasoning_is_like_the_crash_test",
+        "source": "reddit_localllama",
+        "category": "community",
+        "summary_ko": "MiMo 2.6의 추론 과정이 'Hmm'을 유난히 반복한다는 관찰 글. 인용된 로그는 AIDL/NDK 파셀에 쓰인 정체불명의 정수 1이 nullable 표시인지 인자 개수인지 추적하는 실제 디버깅 흐름인데, 문장마다 'Hmm'이 끼어들며 가설을 세웠다 뒤집기를 반복한다. 결함 보고라기보다 모델의 말버릇에 대한 커뮤니티 반응이다.",
+        "lang": "en",
+        "published_at": "2026-10-21T01:08:49+09:00",
+        "collected_at": "2026-10-21T07:32:38+09:00",
+        "metrics": null
+      },
+      {
+        "id": "0fca49c0c061eb52598750496d7e74c4e62c7d75",
+        "title": "Phonon is now open-source, 31M and 40M TTS models designed to run on the edge",
+        "url": "https://reddit.com/r/LocalLLaMA/comments/1xaw2vt/phonon_is_now_opensource_31m_and_40m_tts_models",
+        "source": "reddit_localllama",
+        "category": "community",
+        "summary_ko": "Gradium이 첫 오픈소스 공개로 엣지 실행을 겨냥한 31M·40M 파라미터 TTS 모델 Phonon을 내놓았다. 모델뿐 아니라 추론 스택 전체가 오픈소스이며 CPU·GPU·NPU 등 10개 이상의 백엔드를 지원하고 대부분 Rust로 작성됐다. Hugging Face Spaces에 데모를 올려 두고 커뮤니티 피드백과 추가 공개를 예고했다.",
+        "lang": "en",
+        "published_at": "2026-10-21T01:01:49+09:00",
+        "collected_at": "2026-10-21T07:32:38+09:00",
+        "metrics": null
+      }
+    ],
+    "github_trending": [
+      {
+        "id": "9a75aafc0f232f11cd056b828b730c35405025ca",
+        "title": "headroomlabs-ai/headroom",
+        "url": "https://github.com/headroomlabs-ai/headroom",
+        "source": "github_trending",
+        "category": "github_trending",
+        "summary_ko": "LLM에 도달하기 전에 도구 출력·로그·파일·RAG 청크·대화 기록을 압축해 토큰을 줄이는 Headroom이 깃허브 트렌딩에 올랐다(스타 76.7k). 코딩 에이전트에서 약 20%, JSON에서 60~95% 토큰을 줄이면서 답은 같다고 주장하며, 예시로 10,144 토큰을 1,260 토큰으로 줄이고도 같은 FATAL 로그를 찾아냈다. 파이썬·타입스크립트 라이브러리(`compress(messages)`), 코드 수정이 필요 없는 프록시(`headroom proxy --port 8787`), MCP 서버, 에이전트 래핑(claude·codex·cursor·aider·opencode 등) 형태로 쓸 수 있고, 압축은 로컬에서 수행돼 프롬프트나 파일 내용이 외부로 전송되지 않는다. ※RAG: 외부 문서를 검색해 답변 근거로 끌어오는 기법.",
+        "lang": "en",
+        "published_at": null,
+        "collected_at": "2026-10-21T07:32:38+09:00",
+        "metrics": null
+      },
+      {
+        "id": "ce7977087f93c8ad427fd1fdea34329431c21776",
+        "title": "withmarbleapp/os-taxonomy",
+        "url": "https://github.com/withmarbleapp/os-taxonomy",
+        "source": "github_trending",
+        "category": "github_trending",
+        "summary_ko": "Marble이 초등 교육과정을 통째로 그래프로 만든 오픈 데이터셋 os-taxonomy를 공개했다(스타 6.6k). 아이들이 배우는 내용을 1,591개 '마이크로 토픽'(예: '문장 만들기', '별의 겉보기 밝기')으로 쪼개고 3,225개의 선수 관계 간선으로 연결했으며, 8개 과목에 걸쳐 각국 교육과정 표준에 정렬했다. 토픽마다 평이한 설명, 숙달 판정 근거, 유형(개념·절차·표상·언어·메타), 과목·영역, 적정 연령이 붙어 있어 어떤 개념을 배우기 전에 무엇을 익혀야 하는지 역추적할 수 있다. 기존 교육과정 데이터가 표준의 평평한 목록이거나 제품 안에 갇혀 있던 것과 대비된다는 점을 내세우며, 라이선스는 ODbL-1.0과 CC-BY-SA-4.0이다.",
+        "lang": "en",
+        "published_at": null,
+        "collected_at": "2026-10-21T07:32:38+09:00",
+        "metrics": null
+      },
+      {
+        "id": "a16249fcac5d25f1046aecb6f0597fc341abd4f7",
+        "title": "shiyu-coder/Kronos",
+        "url": "https://github.com/shiyu-coder/Kronos",
+        "source": "github_trending",
+        "category": "github_trending",
+        "summary_ko": "금융 캔들(K-line) 데이터를 위한 첫 오픈소스 파운데이션 모델 Kronos가 트렌딩에 올랐다(스타 42.3k, MIT). 45개 이상 글로벌 거래소 데이터로 사전학습한 디코더 전용 모델군으로, 2단계 구조를 쓴다 — 전용 토크나이저가 연속적인 다차원 OHLCV(시가·고가·저가·종가·거래량)를 계층적 이산 토큰으로 양자화하고, 그 위에서 대형 모델이 토큰 시퀀스를 학습한다. 범용 시계열 파운데이션 모델과 달리 잡음이 큰 금융 데이터의 특성을 겨냥해 설계했으며, AAAI 2026에 채택됐고 자체 과제에 맞추는 파인튜닝 스크립트도 공개돼 있다.",
+        "lang": "en",
+        "published_at": null,
+        "collected_at": "2026-10-21T07:32:38+09:00",
+        "metrics": null
+      }
+    ],
+    "codex": [],
+    "eng_blogs": [
+      {
+        "id": "018e492dbb3d1e9fc4288b40ee610ced7094567c",
+        "title": "8 eMudhra certificates are compromised. Here's what you need to know",
+        "url": "https://blog.cloudflare.com/emudhra-certificate-compromise",
+        "source": "cloudflare",
+        "category": "eng_blogs",
+        "summary_ko": "eMudhra 중간 CA 인증서 8장이 취약한 키로 발급된 사실이 드러나자 Cloudflare가 완화 조치를 배포하고 클라이언트 업데이트를 내놓았다. 영향 범위와 자사 대응, 고객·개발자가 지금 해야 할 일을 정리한 공지다(사건 자체의 기술적 경위는 별도 항목 참조). ※중간 CA: 루트 인증기관과 실제 사이트 인증서 사이에서 발급을 대행하는 중간 인증기관으로, 이 키가 새면 임의의 사이트를 사칭하는 인증서를 만들 수 있다. ※본문이 네비게이션만 수집돼 공식 요약문 기반.",
+        "lang": "en",
+        "published_at": "2026-10-21T07:20:16+09:00",
+        "collected_at": "2026-10-21T07:32:38+09:00",
+        "metrics": null
+      },
+      {
+        "id": "2942d6bc266e562af93015e5b706362d20939428",
+        "title": "Introducing Amazon ECS Gateway: A fully-managed ingress solution for ECS services",
+        "url": "https://aws.amazon.com/blogs/aws/introducing-amazon-ecs-gateway-a-fully-managed-ingress-solution-for-ecs-services",
+        "source": "aws",
+        "category": "eng_blogs",
+        "summary_ko": "AWS가 컨테이너 워크로드의 인그레스 네트워킹을 단순화하는 계정 수준 리소스 Amazon ECS Gateway를 공개했다. 필요한 네트워킹 인프라를 AWS가 대신 동적으로 프로비저닝·관리하되 생성되는 리소스는 모두 고객 계정 안에 만들어진다는 점이 특징이다. ※인그레스: 외부 트래픽을 클러스터 내부 서비스로 들여보내는 경로(로드밸런서·리스너·라우팅 규칙 등). ※본문이 네비게이션만 수집돼 공식 요약문 기반.",
+        "lang": "en",
+        "published_at": "2026-10-21T02:03:38+09:00",
+        "collected_at": "2026-10-21T07:32:38+09:00",
+        "metrics": null
+      },
+      {
+        "id": "eb477756520c8ff87d1e543c9425b98ecf18bc4f",
+        "title": "How 3 Java Champions are using GitHub Copilot for increased productivity",
+        "url": "https://github.blog/ai-and-ml/github-copilot/how-3-java-champions-are-using-github-copilot-for-increased-productivity",
+        "source": "github_blog",
+        "category": "eng_blogs",
+        "summary_ko": "Java Champion 3인이 GitHub Copilot을 실제 업무에서 어떻게 쓰는지 공유한 글이다. 문제 해결과 개발 속도에 도움을 받되 결과에 대한 책임은 사람이 진다는 선을 공통적으로 강조한다. ※Java Champion: 오라클이 선정하는 자바 커뮤니티 리더 칭호. ※본문이 네비게이션만 수집돼 공식 요약문 기반.",
+        "lang": "en",
+        "published_at": "2026-10-21T01:05:03+09:00",
+        "collected_at": "2026-10-21T07:32:38+09:00",
+        "metrics": null
+      },
+      {
+        "id": "5e241867830c6ea756cb5669edfdfc987329709d",
+        "title": "Introducing tsrs: A port of TypeScript to Rust",
+        "url": "https://blog.cloudflare.com/typescript-rust-port",
+        "source": "cloudflare",
+        "category": "eng_blogs",
+        "summary_ko": "Cloudflare가 TypeScript 컴파일러를 Rust로 포팅하는 tsrs 프로젝트에 협업하고 있다고 밝혔다. 최대 8배 빠르고 메모리는 70% 적게 쓴다는 수치를 제시했다. ※본문이 네비게이션만 수집돼 공식 요약문 기반.",
+        "lang": "en",
+        "published_at": "2026-10-20T22:00:00+09:00",
+        "collected_at": "2026-10-21T07:32:38+09:00",
+        "metrics": null
+      }
+    ]
+  },
+  "hot_topics": [
+    {
+      "topic": "DeepInfer: High-performance inference framework for DeepSeek models",
+      "trend_score": 1.0,
+      "src_count": 2,
+      "hn": {
+        "points": 2059,
+        "comments": 808
+      },
+      "items": [
+        {
+          "id": "6a3818bee010264a859d84670cb312396a0fb30a",
+          "title": "Deepseek released DeepInfer - Open Source high-performance, large-scale inference framework for DeepSeek models!",
+          "url": "https://reddit.com/r/LocalLLaMA/comments/1xanm55/deepseek_released_deepinfer_open_source",
+          "source": "reddit_localllama",
+          "category": "community",
+          "summary_ko": "DeepSeek이 자사 모델용 대규모 추론 프레임워크 DeepInfer를 오픈소스로 공개한 데 대한 커뮤니티 반응. gufo·halogen·strixite·Strata 같은 커뮤니티 자체 엔진들이 상용 서빙의 '비법'을 들여다보고 개선하는 데 좋은 자료라는 평가다. ※본문 미확보(레딧 차단) — 게시물 요약문 기반.",
+          "lang": "en",
+          "published_at": "2026-10-20T18:33:27+09:00",
+          "collected_at": "2026-10-21T07:32:38+09:00",
+          "metrics": null
+        },
+        {
+          "id": "79e072c528493212dadbe0626496c7bede00d5c2",
+          "title": "DeepInfer: High-performance inference framework for DeepSeek models",
+          "url": "https://github.com/deepseek-ai/DeepInfer",
+          "source": "hackernews",
+          "category": "hot_topics",
+          "summary_ko": "DeepSeek의 실제 프로덕션 서빙을 돌리는 추론 프레임워크 DeepInfer가 오픈소스로 공개됐다(Apache-2.0, 스타 11.9k). 이번 공개는 오프라인 추론용이며 DeepSeek-V4.1-Flash를 지원하고, 최적화 커널(FlashMLA, DeepGEMM, DeepEP, TileKernels, DeepSelect, TileLang)과 병렬화(어텐션 DP, 균형 CP, MoE EP+EPLB)를 갖췄다. 특징적인 기능으로는 드래프트 토큰으로 디코딩을 앞당기고 신뢰도 추정으로 검증 시점을 정하는 DSpark, 디코더 프리필 작업을 제한된 뒷부분만 재생해 줄이는 SWA 제한 리플레이, CPU 배치 스케줄링과 디바이스 실행을 겹치는 비동기 스케줄링(기본 활성), 배치 구성이 달라도 결과가 동일한 배치 불변 추론(NVIDIA 한정), 결정론적 샘플링, 구조화 출력이 있다. ※MoE EP: 전문가 혼합 모델에서 전문가들을 여러 장치에 나눠 처리하는 병렬화.",
+          "lang": "en",
+          "published_at": "2026-10-20T18:08:54+09:00",
+          "collected_at": "2026-10-21T07:32:38+09:00",
+          "metrics": {
+            "points": 2059,
+            "comments": 808
+          }
+        }
+      ]
+    },
+    {
+      "topic": "EMudhra Intermediate CA Compromise",
+      "trend_score": 0.638,
+      "src_count": 1,
+      "hn": {
+        "points": 527,
+        "comments": 284
+      },
+      "items": [
+        {
+          "id": "8ffede9af239c21ee544fa2cc9203897f1d202e7",
+          "title": "EMudhra Intermediate CA Compromise",
+          "url": "https://emudhra.we-have-a-problem.com/",
+          "source": "hackernews",
+          "category": "hot_topics",
+          "summary_ko": "eMudhra 중간 CA 8곳의 개인키가 노출됐다. 원인은 CA가 키를 잘못 생성해 인증서만 있으면 누구나 개인키를 복원할 수 있었다는 것이고, 제보자 Wayne이 8개 중간 CA 각각의 개인키로 메시지에 서명해 10월 17일 루트 프로그램 팀들에 증거로 제출했다. 해당 인증서들은 Mozilla·Microsoft·Apple·Chrome 루트 프로그램과 다수 하위 신뢰 저장소가 신뢰하는 루트로 연결돼 있어, 키를 가진 공격자는 어떤 웹사이트나 서비스로도 위장할 수 있는 상태였다. Firefox와 Chrome은 17일, 애플 기기는 19일부터 차단했고 CA도 해당 인증서를 폐기했지만, OneCRL·CRLite·CRLSets 같은 폐기 정보를 받아오지 않는 클라이언트(curl 등 명령행 도구 포함)는 소프트웨어 업데이트가 있어야 신뢰를 끊을 수 있어 확인용 테스트 호스트와 체인 파일이 함께 공개됐다.",
+          "lang": "en",
+          "published_at": "2026-10-20T22:58:33+09:00",
+          "collected_at": "2026-10-21T07:32:38+09:00",
+          "metrics": {
+            "points": 527,
+            "comments": 284
+          }
+        }
+      ]
+    },
+    {
+      "topic": "Facebook Pages require paid subscription to post more than two links per month",
+      "trend_score": 0.6245,
+      "src_count": 1,
+      "hn": {
+        "points": 392,
+        "comments": 349
+      },
+      "items": [
+        {
+          "id": "485bd8b965fc986566a0bb418d6fdc16f366f74e",
+          "title": "Facebook Pages require paid subscription to post more than two links per month",
+          "url": "https://mastodon.gamedev.place/@AshleyGullen/117473851565913919",
+          "source": "hackernews",
+          "category": "hot_topics",
+          "summary_ko": "페이스북 페이지가 월 2개를 넘는 링크를 올리려면 유료 구독을 요구한다는 제보가 화제가 됐다. 게임 엔진 Construct를 만드는 Ashley Gullen이 2026년 10월 20일 마스토돈에 '페이스북이 엔시티피케이션의 터무니없는 새 경지에 올랐다'며 올린 글이 출처다. ※엔시티피케이션(enshittification): 플랫폼이 이용자에게 주던 가치를 점차 걷어내고 수익화로 기우는 현상. ※본문 미확보 — 제목과 게시물 첫 문장 기반.",
+          "lang": "en",
+          "published_at": "2026-10-21T00:06:08+09:00",
+          "collected_at": "2026-10-21T07:32:38+09:00",
+          "metrics": {
+            "points": 392,
+            "comments": 349
+          }
+        }
+      ]
+    },
+    {
+      "topic": "Apple broke an essential presentation feature of iPads",
+      "trend_score": 0.6198,
+      "src_count": 1,
+      "hn": {
+        "points": 441,
+        "comments": 241
+      },
+      "items": [
+        {
+          "id": "bfb6da0751ad875aef10aaa0685e1e073c1a06ec",
+          "title": "Apple broke an essential presentation feature of iPads",
+          "url": "https://teddysvoronos.com/2026-10-19-apple-broke-an-essential-presentation-feature-of-ipads",
+          "source": "hackernews",
+          "category": "hot_topics",
+          "summary_ko": "iPadOS 27이 아이패드의 발표 기능을 망가뜨렸다는 불만 글. 이전에는 AirPlay로 외부 화면에 자료를 띄운 채 손에 든 아이패드로는 다른 창(발표 노트, 호명할 학생 목록, 공개 전 설문 결과)을 볼 수 있었는데, 27부터는 창이 여러 개 열려 있을 때 발표 중인 앱이 아닌 것을 건드리면 외부 디스플레이가 아이패드 화면 전체를 그대로 비춘다(Stage Manager 사용 여부와 무관). GoodNotes는 앱을 다시 누르면 발표자 화면으로 돌아오지만 Keynote는 발표가 아예 종료되고 PowerPoint는 다시 시작해야만 진행할 수 있다. iPadOS 26에서는 어떤 앱이 외부 화면을 '맡고' 있는지 알기 어려웠던 문제를 가장 최근에 누른 앱이 가져가는 방식으로 고친 것인데 훨씬 나빠졌다는 지적이고, 발표 모드인 앱이 외부 화면 우선권을 유지하는 방식을 대안으로 제안한다.",
+          "lang": "en",
+          "published_at": "2026-10-20T21:17:28+09:00",
+          "collected_at": "2026-10-21T07:32:38+09:00",
+          "metrics": {
+            "points": 441,
+            "comments": 241
+          }
+        }
+      ]
+    },
+    {
+      "topic": "Nordwand Mono – A monospace font for coders and adventurers",
+      "trend_score": 0.616,
+      "src_count": 1,
+      "hn": {
+        "points": 534,
+        "comments": 147
+      },
+      "items": [
+        {
+          "id": "f90a2919f8bdbc2a082ba224480ae27a9559f67a",
+          "title": "Nordwand Mono – A monospace font for coders and adventurers",
+          "url": "https://github.com/tywr/Nordwand-Mono",
+          "source": "hackernews",
+          "category": "hot_topics",
+          "summary_ko": "터미널과 Neovim 환경을 위해 직접 설계한 모노스페이스 네오그로테스크 글꼴 Nordwand Mono(MIT/OFL, 스타 1.2k). 고전 'Univers'의 요소를 'JetBrains Mono'의 비례에 얹는 것을 목표로 했고 SF Pro·SF Mono, Alpes Mono, Ubuntu Mono에서도 영향을 받았으며, 이름은 스위스 북벽(Nordwand)의 차갑고 단단한 타이포그래피에서 따왔다. 취향에 따라 글자꼴을 바꾸는 대체 문자와 스타일 세트(ss02는 화살표 합자, ss03은 넓은 각도의 < > 와 화살표 머리)를 제공하고, -> 와 => 합자는 최소한으로 넣되 반복되는 = - _ # 의 가로줄을 길게 잇는 기능은 dlig로 켜게 했다. 글꼴 자체가 파이썬 글리프 클래스로 생성돼 x-높이·대문자 높이 같은 지표를 바꿔 자기만의 버전을 컴파일할 수 있다.",
+          "lang": "en",
+          "published_at": "2026-10-18T23:48:01+09:00",
+          "collected_at": "2026-10-21T07:32:38+09:00",
+          "metrics": {
+            "points": 534,
+            "comments": 147
+          }
+        }
+      ]
+    },
+    {
+      "topic": "SimCity, but with Permits",
+      "trend_score": 0.6049,
+      "src_count": 1,
+      "hn": {
+        "points": 381,
+        "comments": 211
+      },
+      "items": [
+        {
+          "id": "3e2f3407495458f5a1e8e188d50d894e0ddb22a0",
+          "title": "SimCity, but with Permits",
+          "url": "https://permit.petercai.com/",
+          "source": "hackernews",
+          "category": "hot_topics",
+          "summary_ko": "브라우저에서 무료로 하는 도시 건설 게임 Permit Pending. 시뮬시티류와 달리 플레이어는 신이 아니라 선출된 시장이어서, 아파트 한 동·버스전용차로·공장 하나까지 공청회와 심의, 이의제기, 소송, 항소를 거쳐야 한다. 소개된 전형적인 사례는 빈 부지를 12층 아파트로 용도 변경했다가 주차와 '동네 분위기'를 내건 주민 반발로 6층이 되고, 사업성이 사라져 개발사가 세금 감면을 요구하고, 저렴주택 호수가 줄었다고 비판받고, 항소와 소송으로 공사가 지연돼 42개월이 지나도 임대료는 계속 오르며 양쪽 모두에게 책임을 추궁당하는 흐름이다. 주민에게 나이·소득·주거가 있고 기업이 고용·성장·이탈하는 경제 모델이 돌아가며, 4년마다 선거가 있고 투표율 높은 집단이 수보다 큰 영향력을 갖는다. 히트맵과 그래프로 어떤 결정이 표를 잃게 했는지 설명해 주고, 캠페인 없이 즐기는 샌드박스 모드도 있다.",
+          "lang": "en",
+          "published_at": "2026-10-21T03:29:09+09:00",
+          "collected_at": "2026-10-21T07:32:38+09:00",
+          "metrics": {
+            "points": 381,
+            "comments": 211
+          }
+        }
+      ]
+    },
+    {
+      "topic": "Ofcom concedes defeat in 4chan case",
+      "trend_score": 0.5811,
+      "src_count": 1,
+      "hn": {
+        "points": 284,
+        "comments": 192
+      },
+      "items": [
+        {
+          "id": "e236ed9f729d9da4b419ea089ba9f5017213e74f",
+          "title": "Ofcom concedes defeat in 4chan case",
+          "url": "https://prestonbyrne.com/2026/10/20/ofcom-concedes-defeat",
+          "source": "hackernews",
+          "category": "hot_topics",
+          "summary_ko": "영국 통신규제기관 Ofcom이 4chan 집행 건에서 사실상 패배를 인정했다는 분석 글. 하원 DCMS 위원회 증언에서 Melanie Dawes 최고경영자가 '외국 법원이 가로막기로 한다면 그 돈을 회수하지 못하는 지점이 올 것'이라고 말한 대목이 근거다. 글쓴이는 1년여 전 워싱턴 DC 연방지법에 제기한 4chan 대 Ofcom 소송의 방론을 인용해, 4chan이 해외에 자산·인프라가 없다고 밝힌 이상 과징금 집행은 미국 법원을 거쳐야 하는데 미국 법원은 수정헌법 제1조에 반하는 외국 판결의 집행을 통상 거부해 왔다고 지적한다(영국 판결의 집행을 거부한 Matusevitch v. Telnikoff 선례). ※방론(obiter dicta): 결론에 반드시 필요하지는 않은 재판부의 부수적 견해.",
+          "lang": "en",
+          "published_at": "2026-10-20T23:30:31+09:00",
+          "collected_at": "2026-10-21T07:32:38+09:00",
+          "metrics": {
+            "points": 284,
+            "comments": 192
+          }
+        }
+      ]
+    },
+    {
+      "topic": "Google Cloud outage affects almost all banking and other operations in Europe",
+      "trend_score": 0.574,
+      "src_count": 1,
+      "hn": {
+        "points": 292,
+        "comments": 148
+      },
+      "items": [
+        {
+          "id": "80dab6a333820a55ee122a2b551fa461919094f0",
+          "title": "Google Cloud outage affects almost all banking and other operations in Europe",
+          "url": "https://neowin.net/news/google-cloud-outage-takes-down-hsbc-revolut-bank-of-scotland-llyods-equifax-more",
+          "source": "hackernews",
+          "category": "hot_topics",
+          "summary_ko": "구글 클라우드 장애로 HSBC·Revolut·Bank of Scotland·Lloyds·Equifax 등 유럽의 은행과 다수 서비스가 영향을 받았다는 보도. ※본문 미확보 — 제목 기반.",
+          "lang": "en",
+          "published_at": "2026-10-20T19:26:02+09:00",
+          "collected_at": "2026-10-21T07:32:38+09:00",
+          "metrics": {
+            "points": 292,
+            "comments": 148
+          }
+        }
+      ]
+    },
+    {
+      "topic": "MicroG: Free-libre re-implementation of Google's proprietary Android user space",
+      "trend_score": 0.5676,
+      "src_count": 1,
+      "hn": {
+        "points": 362,
+        "comments": 80
+      },
+      "items": [
+        {
+          "id": "9128766f166213522244d35a2af5886f5e67bf17",
+          "title": "MicroG: Free-libre re-implementation of Google's proprietary Android user space",
+          "url": "https://github.com/microg/GmsCore/wiki",
+          "source": "hackernews",
+          "category": "hot_topics",
+          "summary_ko": "구글 Play 서비스를 자유 소프트웨어로 다시 구현한 microG GmsCore. LineageOS 같은 AOSP 기반 롬에서도 구글 독점 API를 호출하는 앱이 동작하게 해 주며, 구글 네트워크 위치 제공자 호출을 받아내는 UnifiedNlp 모듈을 포함한 온·오프라인 위치 서비스, 배터리·메모리·CPU 부담이 적고 블로트웨어가 없는 점을 내세운다(Apache 2.0). 쓰려면 안드로이드 시스템이 서명 스푸핑을 지원해야 하는데 — microG가 앱들에게 정품 Play 서비스인 것처럼 보여야 하기 때문 — 완전한 구성에는 Play 스토어 대체 앱(microG Companion)도 함께 설치해야 한다. API별 구현 현황은 위키에 정리돼 있다.",
+          "lang": "en",
+          "published_at": "2026-10-20T15:37:07+09:00",
+          "collected_at": "2026-10-21T07:32:38+09:00",
+          "metrics": {
+            "points": 362,
+            "comments": 80
+          }
+        }
+      ]
+    },
+    {
+      "topic": "What shall I teach my son?",
+      "trend_score": 0.558,
+      "src_count": 1,
+      "hn": {
+        "points": 177,
+        "comments": 255
+      },
+      "items": [
+        {
+          "id": "c6afd5cf7a3f58c66b208974af3a6fda972cd7f8",
+          "title": "What shall I teach my son?",
+          "url": "https://stevekrouse.com/ends",
+          "source": "hackernews",
+          "category": "hot_topics",
+          "summary_ko": "곧 아버지가 되는 프로그래머가 'AGI 시대에 교육의 목적은 무엇인가'를 묻는 에세이. 자신의 밥벌이 기술인 프로그래밍의 가치가 갑자기 흔들리는 상황에서 1995년 책 『The End of Education』(Neil Postman)을 실마리로 삼는다. 에디슨이 1913년 '10년 안에 학교에서 책은 사라진다'고 했고 글쓴이 자신도 2013년 MOOC가 교육을 뒤엎으리라 예측했지만 학교는 라디오·영화·인터넷을 모두 견뎌냈다는 점, 하버드·예일·프린스턴이 성직자 양성을 위해 세워졌듯 기관이 내세우는 존재 이유와 실제로 그것을 지탱하는 힘(기부금, 명성, 아이를 맡길 곳의 필요)은 다르다는 점을 짚는다. ※AGI: 인간 수준의 범용 인공지능. ※린디 효과: 오래 살아남은 것일수록 앞으로도 더 오래 간다는 경험칙.",
+          "lang": "en",
+          "published_at": "2026-10-21T02:25:07+09:00",
+          "collected_at": "2026-10-21T07:32:38+09:00",
+          "metrics": {
+            "points": 177,
+            "comments": 255
+          }
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "source": "github_trending",
+      "ok": true,
+      "item_count": 12,
+      "error_type": null
+    },
+    {
+      "source": "anthropic",
+      "ok": true,
+      "item_count": 279,
+      "error_type": null
+    },
+    {
+      "source": "openai",
+      "ok": false,
+      "item_count": 0,
+      "error_type": "HTTPError"
+    },
+    {
+      "source": "deepmind",
+      "ok": true,
+      "item_count": 100,
+      "error_type": null
+    },
+    {
+      "source": "meta_ai",
+      "ok": true,
+      "item_count": 88,
+      "error_type": null
+    },
+    {
+      "source": "mistral",
+      "ok": true,
+      "item_count": 91,
+      "error_type": null
+    },
+    {
+      "source": "xai",
+      "ok": true,
+      "item_count": 85,
+      "error_type": null
+    },
+    {
+      "source": "openai_codex",
+      "ok": true,
+      "item_count": 153,
+      "error_type": null
+    },
+    {
+      "source": "cloudflare",
+      "ok": true,
+      "item_count": 20,
+      "error_type": null
+    },
+    {
+      "source": "github_blog",
+      "ok": true,
+      "item_count": 10,
+      "error_type": null
+    },
+    {
+      "source": "aws",
+      "ok": true,
+      "item_count": 20,
+      "error_type": null
+    },
+    {
+      "source": "stripe",
+      "ok": true,
+      "item_count": 10,
+      "error_type": null
+    },
+    {
+      "source": "meta_eng",
+      "ok": true,
+      "item_count": 9,
+      "error_type": null
+    },
+    {
+      "source": "reddit_localllama",
+      "ok": true,
+      "item_count": 25,
+      "error_type": null
+    },
+    {
+      "source": "hf_blog",
+      "ok": true,
+      "item_count": 886,
+      "error_type": null
+    },
+    {
+      "source": "hackernews",
+      "ok": true,
+      "item_count": 20,
+      "error_type": null
+    }
+  ],
+  "summaries_injected": true
+}
