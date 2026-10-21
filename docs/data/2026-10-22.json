@@ -1,0 +1,713 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-10-22T07:39:30+09:00",
+  "date": "2026-10-22",
+  "categories": {
+    "ai_labs": [
+      {
+        "id": "7104bc51c29585ccdecea918ca97d9dd062d8aaf",
+        "title": "NVIDIA Kumo Relational Outperforms Supervised Machine Learning on Relational Data, No Training Required",
+        "url": "https://huggingface.co/blog/nvidia/kumo-relational",
+        "source": "hf_blog",
+        "category": "ai_labs",
+        "summary_ko": "NVIDIA가 기업 데이터베이스 위에서 바로 예측하는 사전학습 '관계형 파운데이션 모델' Kumo Relational을 공개했다. 예측 질의를 받으면 과거 사례를 최대 1만 건까지 컨텍스트로 모아 한 번의 순전파로 이탈·수요·사기 등을 예측하며, 과제별 재학습도 피처 엔지니어링도 테이블 평탄화도 필요 없다. 15개 DB·41개 과제에서 지도학습 기반 관계형 딥러닝과 전문가가 튜닝한 GBDT 파이프라인을 모두 앞섰고, SAP SALT 기업 벤치마크에서는 AutoGluon 앙상블을 MRR 기준 8% 상회했다. 5,000억 행 이상 규모까지 확장되며 NVIDIA의 오픈소스 GPU 네이티브 라이브러리 또는 NIM 형태로 제공된다. ※MRR: 정답이 몇 번째로 추천됐는지를 평가하는 랭킹 지표. ※GBDT: 트리 기반 전통 머신러닝 기법.",
+        "lang": "en",
+        "published_at": "2026-10-22T03:26:30+09:00",
+        "collected_at": "2026-10-22T07:33:10+09:00",
+        "metrics": null
+      },
+      {
+        "id": "354f89a6c7dbf10c9b4005276656d6e23bc0b97a",
+        "title": "How Specializing the Vocabulary of SLMs Can Cut Inference Cost by 77% in Real Applications",
+        "url": "https://huggingface.co/blog/Dharma-AI/vocabx-vocabulary-specialization",
+        "source": "hf_blog",
+        "category": "ai_labs",
+        "summary_ko": "Dharma-AI가 소형 언어모델의 '어휘 사전(토크나이저)'만 도메인에 맞춰 특화해 추론 비용을 실측 77% 줄인 사례를 공개했다. 운영 중인 포르투갈어 논술 채점기는 Qwen3-4B 기반인데, 토크나이저는 여러 언어·여러 문체를 겨냥한 원본 그대로여서 모델이 가장 자주 쓰는 출력 텍스트가 불필요하게 많은 토큰으로 쪼개지고, 토큰을 생성할 때마다 15만 1,669개 어휘 전체에 점수를 매겨야 했다. 핵심은 토큰을 '빈도'가 아니라 '비용' 기준으로 재구성한 점이며, 베이스 모델은 전혀 바꾸지 않았다. 상세 내용은 곧 공개될 VocabX 논문의 선공개분이다. ※토크나이저: 글자를 모델이 처리하는 단위(토큰)로 쪼개는 사전.",
+        "lang": "en",
+        "published_at": "2026-10-22T02:35:36+09:00",
+        "collected_at": "2026-10-22T07:33:10+09:00",
+        "metrics": null
+      },
+      {
+        "id": "f9b499debdda31c09e3233a9bc0b2b59d167a0bd",
+        "title": "Profiling TorchNeuron (Part 1): System-level profiling on AWS Trainium.",
+        "url": "https://huggingface.co/blog/amazon/profiling-torchneuron-part-1",
+        "source": "hf_blog",
+        "category": "ai_labs",
+        "summary_ko": "AWS가 자사 AI 칩 Trainium에서 추론 성능을 분석하는 방법을 다룬 프로파일링 입문 시리즈 1편을 냈다. TorchNeuron은 Trainium용 오픈소스 PyTorch 백엔드로, cuda 같은 전용 디스패치 키를 추가하지 않고 PyTorch의 PrivateUse1 확장점을 통해 가속기를 통합한다. 글은 torch.profiler 설정과 트레이스 수집, key_averages() 표로 어떤 연산이 디바이스 시간을 잡아먹는지 읽는 법, Neuron Explorer로 프레임워크 디스패치→런타임 스케줄링→NeuronCore 실행까지 한 연산을 추적하는 법을 다루고, 같은 RMSNorm 연산을 순수 PyTorch·torch.rms_norm·torch.compile 세 방식으로 구현해 비교한다. ※프로파일링: 코드가 어디서 시간을 쓰는지 측정하는 작업.",
+        "lang": "en",
+        "published_at": "2026-10-22T01:04:43+09:00",
+        "collected_at": "2026-10-22T07:33:10+09:00",
+        "metrics": null
+      },
+      {
+        "id": "9b35c0bfb2f0e3cd6f0b40f1544c7158083b755d",
+        "title": "Granite Speech 5.0: Transcribe, Translate, and Attribute more Accurately and Faster",
+        "url": "https://huggingface.co/blog/ibm-granite/granite-speech-5",
+        "source": "hf_blog",
+        "category": "ai_labs",
+        "summary_ko": "IBM이 Granite Speech 음성 모델 3종을 갱신했다. 신규 granite-speech-5.0-2b는 소음·잔향에 강한 음성 인식과 언어 ID 프롬프팅, 2,000개 용어까지 지원하는 키워드 바이어싱, 개선된 장문 번역을 갖춰 고정확도 다국어 전사·번역용이다. granite-speech-5.0-470m-turboctc는 다국어로 확장되고 구두점·대문자를 자체 처리하도록 개선돼 온디바이스·고처리량 전사에 맞췄고, granite-speech-4.1-2b-plus는 화자 구분과 타임스탬프, 장시간 음성 처리를 개선해 회의·통화 녹음을 겨냥한다. ※키워드 바이어싱: 특정 고유명사·전문용어를 더 잘 받아쓰도록 힌트를 주는 기능.",
+        "lang": "en",
+        "published_at": "2026-10-21T23:58:18+09:00",
+        "collected_at": "2026-10-22T07:33:10+09:00",
+        "metrics": null
+      },
+      {
+        "id": "82899c94557909a44cbd7635c225768b39bb032d",
+        "title": "Mistral Advances AI for Engineering with NVIDIA",
+        "url": "https://mistral.ai/news/mistral-nvidia-ai-for-industrial-engineering",
+        "source": "mistral",
+        "category": "ai_labs",
+        "summary_ko": "Mistral이 NVIDIA와 손잡고 엔지니어링 설계 워크플로를 AI 네이티브로 바꾸는 협업을 발표했다. Mistral Large 4와 자체 데이터 생성·물리 모델링 파이프라인에 NVIDIA CUDA-X 라이브러리와 Warp를 결합해 시뮬레이션을 가속하고, 시뮬레이션→AI 모델 개발→설계로 이어지는 폐루프(closed-loop) 워크플로를 목표로 한다. NVIDIA Omniverse와 연동해 GPU 가속 3D 장면 생성과 SimReady 에셋 제작도 통합한다. 협업의 한 축은 물리 모델 평가용 공개 벤치마크와 오픈 데이터셋을 만들어 CAD-투-시뮬레이션 자동화를 비교·검증할 공통 기준을 마련하는 것으로, 항공우주·자동차·반도체 분야를 겨냥한다.",
+        "lang": "en",
+        "published_at": "2026-10-21T21:00:20+09:00",
+        "collected_at": "2026-10-22T07:33:10+09:00",
+        "metrics": null
+      },
+      {
+        "id": "fac04cd6a26e55f358249f4dcb3d9e9dffdb940d",
+        "title": "Physicist Christopher Stubbs joins Anthropic's Long-Term Benefit Trust",
+        "url": "https://anthropic.com/news/christopher-stubbs-joins-long-term-benefit-trust",
+        "source": "anthropic",
+        "category": "ai_labs",
+        "summary_ko": "실험물리학자 크리스토퍼 스텁스가 Anthropic의 장기 이익 신탁(Long-Term Benefit Trust)에 합류했다. 하버드 물리·천문학 교수이자 2018~2024년 과학대학장을 지냈고, 1998년 High-Z 초신성 탐사팀 일원으로 우주 팽창 가속을 발견해 팀이 기초물리학 브레이크스루상을 받았으며, 현재의 베라 루빈 천문대 초대 프로젝트 사이언티스트이기도 하다. 최근에는 모델이 같은 질문에 다른 답을 내놓을 때 AI 보조 연구의 재현성을 어떻게 지킬지에 대해 글을 써 왔다. ※장기 이익 신탁: Anthropic 이사회 과반을 임명할 권한을 가진 기구로, 공익법인 구조에서 상업적 성장과 공익 목적의 균형을 감독한다.",
+        "lang": "en",
+        "published_at": "2026-10-21T09:00:00+09:00",
+        "collected_at": "2026-10-22T07:33:10+09:00",
+        "metrics": null
+      },
+      {
+        "id": "ff11da33a298f35d45cc60bc8fb6174b8250b14f",
+        "title": "How to Build a Healthcare Robot from Simulation to Deployment with NVIDIA Isaac for Healthcare",
+        "url": "https://huggingface.co/blog/nvidia/nvidia-isaac-for-healthcare",
+        "source": "hf_blog",
+        "category": "ai_labs",
+        "summary_ko": "NVIDIA가 의료 로봇을 시뮬레이션에서 실제 하드웨어 배포까지 끌고 가는 개발 가이드를 공개했다. 의료 로보틱스는 그동안 시뮬레이션이 느리고 분절돼 실제 시스템으로 옮기기 어려웠는데, GPU 가속 시뮬레이션과 디지털 트윈으로 가상 환경에서 설계·검증을 끝내 시제품 제작 기간을 수개월에서 수일로 줄인다는 주장이다. Isaac for Healthcare v0.4는 SO-ARM 로봇팔 기반 스타터 워크플로와 '수술실을 직접 구성하는' 튜토리얼을 제공하며, 시뮬레이션 합성 데이터 생성 → 정책 학습·평가 → TensorRT 변환까지 한 줄기로 이어진다. ※디지털 트윈: 실제 장비·환경을 그대로 본뜬 가상 모델.",
+        "lang": "en",
+        "published_at": "2025-10-29T05:42:35+09:00",
+        "collected_at": "2026-10-22T07:33:10+09:00",
+        "metrics": null
+      },
+      {
+        "id": "4017c40e0dd6d4bc458e9713d1d9c9fe61da1498",
+        "title": "Granite 4.0 Nano: Just how small can you go?",
+        "url": "https://huggingface.co/blog/ibm-granite/granite-4-nano",
+        "source": "hf_blog",
+        "category": "ai_labs",
+        "summary_ko": "IBM이 Granite 4.0 제품군 중 가장 작은 Nano 모델들을 공개했다. 하이브리드 SSM 구조를 쓰는 Granite 4.0 H 1B(약 15억 파라미터)와 H 350M(약 3.5억), 그리고 하이브리드 구조 지원이 아직 없는 환경(예: llama.cpp)을 위한 전통 트랜스포머 버전 1B·350M까지 인스트럭트 4종과 각각의 베이스 모델로 구성된다. 기존 Granite 4.0과 동일한 15조 토큰 이상의 학습 데이터와 파이프라인을 썼고, Apache 2.0 라이선스에 vLLM·llama.cpp·MLX 네이티브 지원, 책임 있는 AI 개발에 대한 ISO 42001 인증을 함께 갖는다. 엣지·온디바이스 용도를 노린 10억 파라미터 안팎 경쟁 구간(Qwen, LFM, Gemma 등)을 정조준한 릴리스다. ※SSM: 트랜스포머의 어텐션 대신 상태공간 모델을 섞어 긴 입력을 싸게 처리하는 구조.",
+        "lang": "en",
+        "published_at": "2025-10-28T23:59:38+09:00",
+        "collected_at": "2026-10-22T07:33:10+09:00",
+        "metrics": null
+      },
+      {
+        "id": "7becb64208cc4ab19f33b2a42603011509a83989",
+        "title": "Voice Cloning with Consent",
+        "url": "https://huggingface.co/blog/voice-consent-gate",
+        "source": "hf_blog",
+        "category": "ai_labs",
+        "summary_ko": "Hugging Face가 '음성 동의 게이트(voice consent gate)'라는 아이디어와 데모 Space·코드를 공개했다. 화자가 직접 동의 문구를 말하고 그것이 인식돼야만 음성 복제가 시작되도록 해, 동의를 윤리 가이드라인이 아니라 시스템 실행 전제 조건으로 심어 넣는 방식이다. 배경에는 복제된 바이든 전 대통령 목소리를 쓴 로보콜 같은 딥페이크 위험과, 말할 능력을 잃은 사람이 자기 목소리를 되찾거나 언어 학습을 돕는 긍정적 활용이 함께 있다는 문제의식이 있다. ※음성 복제: 몇 초짜리 녹음만으로 특정인의 목소리를 합성하는 기술.",
+        "lang": "en",
+        "published_at": "2025-10-28T09:00:00+09:00",
+        "collected_at": "2026-10-22T07:33:10+09:00",
+        "metrics": null
+      },
+      {
+        "id": "93718c34d1d7dec78f24736ef173b7f9868b106c",
+        "title": "Streaming datasets: 100x More Efficient",
+        "url": "https://huggingface.co/blog/streaming-datasets",
+        "source": "hf_blog",
+        "category": "ai_labs",
+        "summary_ko": "Hugging Face가 datasets 라이브러리의 스트리밍 성능을 대폭 끌어올렸다. load_dataset(..., streaming=True) 한 줄은 그대로 두고 백엔드만 수개월에 걸쳐 개선해, 요청 수 100분의 1, 데이터 경로 해석 10배 가속, 초당 샘플 수 2배, 워커 256개 동시 실행에서 크래시 0건을 달성했다. H100 64장에 워커 256개로 학습할 때 로컬 SSD보다 빨랐다는 수치도 제시했다. 테라바이트급 데이터셋을 내려받지 않고 바로 학습을 시작할 수 있어 '디스크 부족'이나 429(요청 과다) 오류를 피할 수 있으며, 변경은 기존 코드와 하위 호환이다. SmolLM3 학습 때 실행 전마다 3시간씩 다운로드를 기다리던 경험이 계기였다고 밝혔다.",
+        "lang": "en",
+        "published_at": "2025-10-27T09:00:00+09:00",
+        "collected_at": "2026-10-22T07:33:10+09:00",
+        "metrics": null
+      }
+    ],
+    "community": [
+      {
+        "id": "bb61b146100dbfe427abff9ee4dce16e11fae67d",
+        "title": "minicpm5-2B-SFT-Abiliterated",
+        "url": "https://reddit.com/r/LocalLLaMA/comments/1xc07oc/minicpm52bsftabiliterated",
+        "source": "reddit_localllama",
+        "category": "community",
+        "summary_ko": "MiniCPM5-2B-SFT의 'abliterated' 변형 모델이 공개됐다. 작성자에 따르면 눈에 띄는 거동 변화는 제한된 질문을 거부하는 대신 정당화하려 드는 경향인데, 대략 20번에 1번꼴이라고 한다. Hugging Face에 원본과 GGUF 양자화 버전이 함께 올라와 있다. ※abliteration: 모델 내부에서 거절 반응을 담당하는 방향 성분을 제거해 안전 거부를 무력화하는 기법. ※GGUF: llama.cpp 계열에서 쓰는 로컬 실행용 모델 파일 포맷.",
+        "lang": "en",
+        "published_at": "2026-10-22T06:36:03+09:00",
+        "collected_at": "2026-10-22T07:33:10+09:00",
+        "metrics": null
+      },
+      {
+        "id": "9ab87a69a24e1634102e44237cc62bb84bee5ad4",
+        "title": "models: Add Flint model (FlintForCausalLM) by alexey-rsi · Pull Request #30928 · ggml-org/llama.cpp",
+        "url": "https://reddit.com/r/LocalLLaMA/comments/1xc01z8/models_add_flint_model_flintforcausallm_by",
+        "source": "reddit_localllama",
+        "category": "community",
+        "summary_ko": "Recursive의 Flint 모델 지원이 llama.cpp에 PR #30928로 올라온 지 6시간 만에 병합돼 로컬에서 쓸 수 있게 됐다. Flint는 디코더 전용 MoE(전문가 혼합) 트랜스포머로 총 39.8B 파라미터 중 토큰당 약 2.5B만 활성화되며, 49개 층은 dense 2층 뒤에 MoE 47층이 붙는 구성이다. 어텐션은 슬라이딩 윈도 35층과 전체 어텐션 14층을 섞었고 윈도 크기는 513토큰, 쿼리 헤드 32개에 KV 헤드 4개(헤드 차원 128), MoE 층마다 라우팅 전문가 256개 중 6개 선택에 항상 활성인 공유 전문가가 추가된다. 문서상 컨텍스트는 262,144토큰, 어휘 150,144개, 지식 컷오프는 2026년 6월이다. ※MoE: 전체 파라미터 중 일부 '전문가'만 골라 쓰는 구조로, 크기 대비 연산량이 적다.",
+        "lang": "en",
+        "published_at": "2026-10-22T06:29:48+09:00",
+        "collected_at": "2026-10-22T07:33:10+09:00",
+        "metrics": null
+      },
+      {
+        "id": "fecb02db6a1f664a8d2d802a5a99c76b78b43236",
+        "title": "Qwen researching Qwen",
+        "url": "https://reddit.com/r/LocalLLaMA/comments/1xbya5m/qwen_researching_qwen",
+        "source": "reddit_localllama",
+        "category": "community",
+        "summary_ko": "한 사용자가 LLM에게 더 최신 버전의 자기 자신(가상의 'Qwen 3.8 Flash Next')의 시스템 요구사항을 20개 이상 출처에서 조사하라고 시킨 결과를 공유했다. 모델은 처음에 해당 버전이 존재하지 않을 가능성과 'n-gram 가중치를 시스템 RAM으로 내리는 Flash Next 아키텍처'가 알려진 Qwen 구조와 맞지 않는다는 점을 의심했다가, 이후 추론에서는 이 환경에 그 모델이 실재한다고 받아들였다. 결론은 R9700 + 32GB 시스템 RAM에서도 돌아가긴 하는데 파일의 약 27GB가 n-gram 룩업 테이블이라 NVMe에 올려두기 때문이며, 1비트 UD-IQ1_S는 67.6GB라 총 64GB 안에는 상주시킬 수 없다는 것이었다. 게시자는 LLM에게 자기 자신을 조사시키는 일이 묘하게 불편하다는 소감을 덧붙였다.",
+        "lang": "en",
+        "published_at": "2026-10-22T05:21:13+09:00",
+        "collected_at": "2026-10-22T07:33:10+09:00",
+        "metrics": null
+      },
+      {
+        "id": "c3da19bcc618836c604d47c4865ca685b5820dcb",
+        "title": "If the bubble bursts we keep local AI forever",
+        "url": "https://reddit.com/r/LocalLLaMA/comments/1xbxmoo/if_the_bubble_bursts_we_keep_local_ai_forever",
+        "source": "reddit_localllama",
+        "category": "community",
+        "summary_ko": "오픈소스 Observer 프로젝트 개발자가 'AI 버블이 꺼져도 로컬 AI는 남는다'는 취지의 짧은 영상을 만들어 r/LocalLLaMA에 공유했다. 로컬 모델 쪽의 기술 진전은 투자 사이클과 무관하게 누적된다는 주장이다. ※본문은 유튜브 쇼츠 링크 위주라 상세 논거는 영상에 있다.",
+        "lang": "en",
+        "published_at": "2026-10-22T04:57:03+09:00",
+        "collected_at": "2026-10-22T07:33:10+09:00",
+        "metrics": null
+      },
+      {
+        "id": "52ef68092ee725bf857ce7da756d297219a13a08",
+        "title": "llama: create new fused op for QSA mask by am17an · Pull Request #30640 · ggml-org/llama.cpp",
+        "url": "https://reddit.com/r/LocalLLaMA/comments/1xbx12a/llama_create_new_fused_op_for_qsa_mask_by_am17an",
+        "source": "reddit_localllama",
+        "category": "community",
+        "summary_ko": "llama.cpp에 QSA 마스크용 퓨즈드 연산(fused op)을 추가하는 PR #30640이 올라왔고, 희소 어텐션(sparse attention) 계열 모델의 속도 향상이 기대된다는 공유다. 게시자는 llama.cpp를 업데이트할 때가 됐다고 권한다. ※퓨즈드 연산: 여러 단계를 하나의 커널로 합쳐 메모리 왕복을 줄이는 최적화. ※희소 어텐션: 모든 토큰 쌍을 보지 않고 일부만 계산해 긴 문맥 비용을 낮추는 방식.",
+        "lang": "en",
+        "published_at": "2026-10-22T04:34:04+09:00",
+        "collected_at": "2026-10-22T07:33:10+09:00",
+        "metrics": null
+      },
+      {
+        "id": "3c7749650af0375d837da4df508e1786eb9a4022",
+        "title": "Mica v0.5: The smartest 4B decision model is also the fastest one. 20 ms per answer, 25x faster than Jev",
+        "url": "https://reddit.com/r/LocalLLaMA/comments/1xbw3oy/mica_v05_the_smartest_4b_decision_model_is_also",
+        "source": "reddit_localllama",
+        "category": "community",
+        "summary_ko": "4B 판정(judge/decision) 모델 Mica v0.5가 공개됐다. 단일 RTX 6000 Ada에서 256토큰 기준 판정 1건당 19.8ms, 32k 입력에서는 약 1.2초로, 작성자가 측정한 다른 4B 판정 모델보다 최대 3.8배, Perplexity의 27B 판정 모델보다 12~19배, API형 판정 모델보다 25~340배 빠르다고 한다. 정확도는 JevBench Hard 111문제 중 84점으로 4B 중 최고(더 높은 건 Microsoft의 9B Decision-1뿐), JDI 58.8로 테스트한 모든 9B·35B 모델을 앞섰다. 작성자는 JDI 상위 4B 모델들이 벤치마크 특화 학습에 치우쳐 있다는 점을 솔직히 인정하면서, 자신도 같은 영역 데이터로 학습했지만 오염된 데이터는 쓰지 않았고 대부분의 노력은 실제 사용 사례 200여 건에 들였다고 밝혔다. ※판정 모델: 다른 모델의 출력이 맞는지/어느 쪽이 나은지 평가하는 용도의 모델.",
+        "lang": "en",
+        "published_at": "2026-10-22T04:00:21+09:00",
+        "collected_at": "2026-10-22T07:33:10+09:00",
+        "metrics": null
+      },
+      {
+        "id": "ffded17d84af014d5bee4a4f690d3c11563ce8b0",
+        "title": "Amazing free 3090 speedup hack, verified works 15% PP, 5% TG for free",
+        "url": "https://reddit.com/r/LocalLLaMA/comments/1xbuzj5/amazing_free_3090_speedup_hack_verified_works_15",
+        "source": "reddit_localllama",
+        "category": "community",
+        "summary_ko": "X에서 본 RTX 3090 최적화 팁을 직접 검증한 벤치마크 공유다. qwen 3.8 27B로 적용 전후를 비교한 결과 프롬프트 처리 처리량이 22~30%, 생성 속도가 1~5% 올랐고 GPU 오류 없이 모든 테스트를 통과했다. 작성자는 자신의 3090이 테스트 중에도 230W로 전력 제한된 상태였으므로 환경에 따라 더 큰 폭의 개선도 가능하다고 덧붙였다. ※프롬프트 처리(PP)와 생성(TG)은 각각 입력을 읽어들이는 단계와 답을 써 내려가는 단계의 속도를 가리킨다.",
+        "lang": "en",
+        "published_at": "2026-10-22T03:19:42+09:00",
+        "collected_at": "2026-10-22T07:33:10+09:00",
+        "metrics": null
+      },
+      {
+        "id": "fec3f8f0dab00f96d21a95f61f8e59c1e3a79fe1",
+        "title": "Tried running 748B DeepSeek-V4.1-Flash on a €2k PC",
+        "url": "https://reddit.com/r/LocalLLaMA/comments/1xburkx/tried_running_748b_deepseekv41flash_on_a_2k_pc",
+        "source": "reddit_localllama",
+        "category": "community",
+        "summary_ko": "RTX 3090 24GB·DDR4 128GB·i9-9900X 중고 PC(2,000유로 미만)에서 748B 파라미터 DeepSeek-V4.1-Flash를 돌린 후기다. Unsloth UD-IQ1_S GGUF(디스크 233GB)를 CUDA 12.8 환경의 llama.cpp 오픈 PR #30817 빌드로 구동해 7.2 tok/s를 얻었다. 이게 가능한 이유는 110GB짜리 Engram 테이블을 미리 메모리에 올리지 않고 NVMe에 둔 채 필요한 행만 그때그때 읽어오기 때문이다. 다만 1비트 양자화라 출력에 물리학적 오류가 섞였고 실용성은 낮으며, 본인 환경에서는 Qwen 계열이 더 쓸 만하다고 평가했다. ※양자화: 모델 가중치의 정밀도를 낮춰 용량·메모리를 줄이는 기법으로, 1비트는 가장 극단적인 축에 속한다.",
+        "lang": "en",
+        "published_at": "2026-10-22T03:11:28+09:00",
+        "collected_at": "2026-10-22T07:33:10+09:00",
+        "metrics": null
+      },
+      {
+        "id": "843e7c4487234f33b8ec751c16b192dcd39ffe36",
+        "title": "Apparently 2.7M parameters is enough for nes tetris",
+        "url": "https://reddit.com/r/LocalLLaMA/comments/1xbsljk/apparently_27m_parameters_is_enough_for_nes_tetris",
+        "source": "reddit_localllama",
+        "category": "community",
+        "summary_ko": "270만 파라미터짜리 작은 신경망만으로도 NES 테트리스를 플레이하기에 충분하다는 결과물이 공유됐다. ※본문 미확보 — 제목과 게시 정보 기반.",
+        "lang": "en",
+        "published_at": "2026-10-22T01:53:43+09:00",
+        "collected_at": "2026-10-22T07:33:10+09:00",
+        "metrics": null
+      },
+      {
+        "id": "9e4014276af2083274040c5f3c7c5332fe857f10",
+        "title": "When will we see these changes? --> China Is Doubling RAM Production to Keep Everyday Gadget Prices from Skyrocketing",
+        "url": "https://reddit.com/r/LocalLLaMA/comments/1xbrh0s/when_will_we_see_these_changes_china_is_doubling",
+        "source": "reddit_localllama",
+        "category": "community",
+        "summary_ko": "중국이 일상 기기 가격 급등을 막기 위해 RAM 생산을 두 배로 늘린다는 기사를 공유하며, 그 효과가 실제 가격에 언제 반영될지 묻는 글이다. 로컬 LLM 구동에 메모리 용량이 직결되는 커뮤니티 특성상 관심이 높은 주제다. ※본문 미확보 — 제목과 링크 기반.",
+        "lang": "en",
+        "published_at": "2026-10-22T01:12:59+09:00",
+        "collected_at": "2026-10-22T07:33:10+09:00",
+        "metrics": null
+      }
+    ],
+    "github_trending": [
+      {
+        "id": "dd6a9d14a094d1594baeb964ac415610498cc4a0",
+        "title": "Graphify-Labs/graphify",
+        "url": "https://github.com/Graphify-Labs/graphify",
+        "source": "github_trending",
+        "category": "github_trending",
+        "summary_ko": "코드베이스를 문서·SQL 스키마·설정 파일·PDF까지 포함해 질의 가능한 지식 그래프로 바꿔 주는 도구다. Claude Code·Cursor·Codex·Gemini CLI에서 `/graphify`를 입력하면 프로젝트 전체를 그래프로 매핑해 파일을 grep으로 뒤지는 대신 질의할 수 있게 한다. 벡터 저장소 없이 로컬에서 결정적(deterministic) AST 파싱만 사용하며 모든 엣지에 근거가 붙는다는 점을 내세운다. 별 13만 개대, Apache-2.0/MIT 이중 라이선스이며 유료 클라우드(상시 메모리·정합성 검증)를 별도로 판매한다. ※AST: 소스 코드를 구문 구조 트리로 파싱한 결과로, 문자열 검색보다 정확한 코드 분석 기반이 된다.",
+        "lang": "en",
+        "published_at": null,
+        "collected_at": "2026-10-22T07:33:10+09:00",
+        "metrics": null
+      },
+      {
+        "id": "30905c3403f9ca5b835763620addea9619a728f3",
+        "title": "wshobson/agents",
+        "url": "https://github.com/wshobson/agents",
+        "source": "github_trending",
+        "category": "github_trending",
+        "summary_ko": "여러 AI 코딩 도구에서 공통으로 쓰는 플러그인·에이전트·스킬 모음집이다. Claude Code, OpenAI Codex CLI, Cursor, OpenCode, Antigravity CLI, GitHub Copilot, Pi를 지원하며, 컴포넌트는 Markdown 원본 하나를 공유하되 설치 방식과 기능은 각 도구(하네스)에 맞춰 조정된다. 카탈로그는 플러그인 94개(로컬 92 + 외부 2), 로컬 소스 기준 에이전트 202개·스킬 185개·커맨드 105개 규모이며 파이썬·자바스크립트 개발, 코드 리뷰, 테스트, 인프라, 보안 등을 다룬다. 별 4만 1,500개, MIT 라이선스. ※하네스: 이 컴포넌트들을 불러와 실행하는 코딩 도구 본체를 가리키는 이 프로젝트의 용어.",
+        "lang": "en",
+        "published_at": null,
+        "collected_at": "2026-10-22T07:33:10+09:00",
+        "metrics": null
+      },
+      {
+        "id": "909786c7698d64c2e66854943313662cac002467",
+        "title": "sickn33/agentic-awesome-skills",
+        "url": "https://github.com/sickn33/agentic-awesome-skills",
+        "source": "github_trending",
+        "category": "github_trending",
+        "summary_ko": "AAS Core는 2,700개가 넘는 SKILL.md 플레이북 카탈로그를 로컬에서 다루는 '에이전트 우선' 제어 평면이다. Codex나 Claude가 전체 로컬 카탈로그를 검색하고, 에이전트가 고른 스킬을 기록하며, 대상에 변경을 가하기 전에 계획을 미리 볼 수 있게 해 준다. 중요한 설계 선택으로 Core 자체는 스킬을 순위 매기거나 추천하지 않으며, 선택 주체는 어디까지나 에이전트다. 현재 릴리스는 V19.12.1로 카탈로그 조회·선택·스택 검증·계획 미리보기를 지원하고 적용(apply)과 복구는 아직 실험 단계다. CLI, 로컬 MCP 서버, 플러그인, Workbench가 포함되며 별 4만 8,300개, MIT 라이선스.",
+        "lang": "en",
+        "published_at": null,
+        "collected_at": "2026-10-22T07:33:10+09:00",
+        "metrics": null
+      },
+      {
+        "id": "65e32dabe8c37cf04fa1a1771be5046c98b63b66",
+        "title": "vllm-project/vllm",
+        "url": "https://github.com/vllm-project/vllm",
+        "source": "github_trending",
+        "category": "github_trending",
+        "summary_ko": "LLM 추론·서빙 엔진 vLLM이 GitHub 트렌딩에 올랐다. UC 버클리 Sky Computing Lab에서 시작해 2,000명 이상의 기여자와 수십 개 기관·기업이 참여하는 프로젝트로 성장했으며 별 9만 4,800개, Apache-2.0 라이선스다. 어텐션 키·값 메모리를 페이지 단위로 관리하는 PagedAttention, 연속 배칭, 청크 프리필, 프리픽스 캐싱으로 서빙 처리량을 끌어올리고, CUDA/HIP 그래프와 FP8·MXFP8/MXFP4·NVFP4·INT8/INT4·GPTQ/AWQ·GGUF 등 폭넓은 양자화를 지원한다. ※연속 배칭: 요청이 끝날 때까지 기다리지 않고 들어오는 대로 묶어 GPU를 놀리지 않는 기법.",
+        "lang": "en",
+        "published_at": null,
+        "collected_at": "2026-10-22T07:33:10+09:00",
+        "metrics": null
+      }
+    ],
+    "codex": [],
+    "eng_blogs": [
+      {
+        "id": "20a259028135abdac8bf4666c984fe0943a10359",
+        "title": "The bridge to agent-scale Git infrastructure",
+        "url": "https://github.blog/engineering/architecture-optimization/the-bridge-to-agent-scale-git-infrastructure",
+        "source": "github_blog",
+        "category": "eng_blogs",
+        "summary_ko": "GitHub이 저장소 전체의 사본 중 99.99999%를 Azure로 옮겼다고 밝히며, 남은 부분을 어떻게 마저 옮길지 설명한 인프라 글이다. 핵심은 레퍼런스(브랜치·태그) 단위 쿼럼으로 일관성을 확보하는 방식과, Git 객체를 오브젝트 스토리지에 두어 읽기 트래픽을 쓰기와 독립적으로 확장하는 구조다. 제목의 '에이전트 규모'는 AI 에이전트가 사람보다 훨씬 많은 읽기를 일으키는 상황을 겨냥한 표현이다. ※쿼럼: 분산 시스템에서 과반 노드의 동의를 받아야 읽기/쓰기를 확정하는 규칙.",
+        "lang": "en",
+        "published_at": "2026-10-22T01:00:00+09:00",
+        "collected_at": "2026-10-22T07:33:10+09:00",
+        "metrics": null
+      },
+      {
+        "id": "eb7286d4ac2ebfab12b46dc9bc89cce4717e7e4c",
+        "title": "Introducing full transaction detection for Cloudflare WAF",
+        "url": "https://blog.cloudflare.com/full-transaction-waf",
+        "source": "cloudflare",
+        "category": "eng_blogs",
+        "summary_ko": "Cloudflare 웹 방화벽(WAF)이 이제 HTTP 요청과 그에 대한 응답을 짝지어 함께 검사한다. 요청만 보던 기존 방식으로는 놓치던 '실제로 성공한 공격', 데이터 노출, 위험한 설정 오류를 응답 쪽 신호로 잡아낼 수 있다는 것이 핵심이며, 전 고객에게 제공된다. ※WAF: 웹 애플리케이션 앞단에서 악성 요청을 걸러내는 방화벽.",
+        "lang": "en",
+        "published_at": "2026-10-21T23:10:42+09:00",
+        "collected_at": "2026-10-22T07:33:10+09:00",
+        "metrics": null
+      },
+      {
+        "id": "dedbc374478f3e5026f41aa7f267b17a0b71d49e",
+        "title": "Cloudflare deploys protections against php2shell vulnerability",
+        "url": "https://blog.cloudflare.com/php-vulnerabilities-waf-protection",
+        "source": "cloudflare",
+        "category": "eng_blogs",
+        "summary_ko": "Cloudflare가 새로 공개된 PHP 취약점(php2shell)에 대한 WAF 기본 보호 규칙을 공개 공시 이전에 미리 배포했다고 밝혔다. 이 규칙들은 요청 신호와 응답 신호를 함께 사용해 익스플로잇 시도를 차단하고, 이미 노출된 데이터가 공격자에게 흘러가는 것도 막는다. 같은 날 PHP 측이 긴급 보안 릴리스를 낸 두 건의 원격 코드 실행 취약점과 맞물린 대응이다.",
+        "lang": "en",
+        "published_at": "2026-10-21T22:56:45+09:00",
+        "collected_at": "2026-10-22T07:33:10+09:00",
+        "metrics": null
+      },
+      {
+        "id": "50afaf72bfb9fbf4b128cd1496d603b030541fec",
+        "title": "How Commerce.com and Cloudflare are getting storefronts ready for AI agents",
+        "url": "https://blog.cloudflare.com/webmcp-commerce",
+        "source": "cloudflare",
+        "category": "eng_blogs",
+        "summary_ko": "Commerce.com의 약 10만 개 상점 도메인이 Cloudflare의 WebMCP를 통해 AI 에이전트에게 실제 쇼핑 기능(도구)을 제공하게 됐다. 상점마다 개별 작업 없이 전체 스토어에 한 번에 켜면서도 가맹점이 각자 통제권을 유지하도록 구성한 방법을 설명한 글이다. ※WebMCP: 웹사이트가 자신의 기능을 AI 에이전트가 호출할 수 있는 도구로 노출하는 규격.",
+        "lang": "en",
+        "published_at": "2026-10-21T22:00:00+09:00",
+        "collected_at": "2026-10-22T07:33:10+09:00",
+        "metrics": null
+      }
+    ]
+  },
+  "hot_topics": [
+    {
+      "topic": "PHP 8.2.35",
+      "trend_score": 1.0,
+      "src_count": 1,
+      "hn": {
+        "points": 942,
+        "comments": 522
+      },
+      "items": [
+        {
+          "id": "11e92edf73fbbb01d6eb6c5489810e1d7111241b",
+          "title": "PHP 8.2.35",
+          "url": "https://github.com/php/php-src/releases/tag/php-8.2.35",
+          "source": "hackernews",
+          "category": "hot_topics",
+          "summary_ko": "PHP 8.2.35가 긴급 보안 릴리스로 나왔다. 인증 없는 공격자가 원격 코드를 실행할 수 있는 치명적 취약점 두 건(CVE-2026-109618, CVE-2026-109619)을 수정했으며, 개발팀은 완전한 임시 완화책이 없으므로 업데이트가 유일한 안전한 선택이라고 못 박았다. 또한 PHP 8.2는 2026년 12월 31일 지원이 종료돼 이후로는 보안 수정도 제공되지 않으니 상위 버전으로의 업그레이드를 계획하라고 안내했다. Hacker News에서 942포인트를 받으며 이날 가장 주목받은 항목이다.",
+          "lang": "en",
+          "published_at": "2026-10-21T22:45:33+09:00",
+          "collected_at": "2026-10-22T07:33:10+09:00",
+          "metrics": {
+            "points": 942,
+            "comments": 522
+          }
+        }
+      ]
+    },
+    {
+      "topic": "Eight Bits of Trust: eMudhra's CA keys cracked in milliseconds",
+      "trend_score": 0.9669,
+      "src_count": 1,
+      "hn": {
+        "points": 788,
+        "comments": 385
+      },
+      "items": [
+        {
+          "id": "14e022775599965be7ecfbb405361aa9b2282724",
+          "title": "Eight Bits of Trust: eMudhra's CA keys cracked in milliseconds",
+          "url": "https://scotthelme.co.uk/eight-bits-of-trust-emudhras-ca-keys-cracked-in-milliseconds",
+          "source": "hackernews",
+          "category": "hot_topics",
+          "summary_ko": "인증기관(CA) eMudhra의 중간 인증서 개인키 8개가 사실상 한 자리 숫자였다는 분석이다. 연구자가 공개 인증서만으로 1초도 안 걸려 복구한 개인키 값은 4, 56, 115 같은 수였다. 10월 17일 한 보안 연구자가 Apple·Google·Microsoft·Mozilla와 eMudhra에 키 유출을 신고했고, Chrome은 그날 저녁 CRLSet으로, Firefox는 몇 시간 뒤 OneCRL로 차단했으며, 20일 Mozilla가 공개 발표와 함께 NSS 업데이트로 eMudhra 루트를 제거하고 Chrome도 루트 저장소 v43에서 제거를 확정했다. 문제의 8개는 TLS 발급 CA 6개(DV·OV·EV 각 2세대)와 코드 서명 CA 2개로 모두 2025년 4월에 만들어졌고 Sectigo의 AAA 루트로 교차 서명돼 있었다. ※P-384 타원곡선 개인키는 384비트 난수여야 하는데, 한 바이트짜리 값이면 누구나 즉시 역산할 수 있어 근본적으로 봉합이 불가능하다.",
+          "lang": "en",
+          "published_at": "2026-10-21T18:08:08+09:00",
+          "collected_at": "2026-10-22T07:33:10+09:00",
+          "metrics": {
+            "points": 788,
+            "comments": 385
+          }
+        }
+      ]
+    },
+    {
+      "topic": "Today's PHP security release, and how we're strengthening security",
+      "trend_score": 0.9226,
+      "src_count": 1,
+      "hn": {
+        "points": 580,
+        "comments": 293
+      },
+      "items": [
+        {
+          "id": "2ce3f3251873a619a6c50e320a87e5df4621d237",
+          "title": "Today's PHP security release, and how we're strengthening security",
+          "url": "https://thephp.foundation/blog/2026/10/21/todays-php-security-release-and-how-were-strengthening-php-security",
+          "source": "hackernews",
+          "category": "hot_topics",
+          "summary_ko": "PHP 재단이 같은 날 나온 긴급 보안 릴리스(8.5.12, 8.4.27, 8.3.36, 8.2.35)의 배경을 직접 설명했다. CVE-2026-109618은 메모리 부족(OOM) 손상에 의한 RCE로, 요청이 하필 memory_limit에 도달하는 순간 PHP가 부분적으로만 초기화된 내부 데이터를 남기고 나중에 이를 정상 데이터로 취급하면서 메모리가 망가진다 — Apache+mod_php 환경에서는 애플리케이션 코드가 실행되기도 전에 인증 없는 요청만으로 기본 설정에서 완전한 원격 코드 실행이 시연됐고, PHP-FPM에서도 애플리케이션 경로를 통해 확인됐다. CVE-2026-109619는 잔존 상태(stale state)에 의한 RCE로, 치명적 오류가 특정 시점에 발생하면 내부 상태가 이전 요청의 메모리를 가리킨 채 남아 같은 워커가 처리하는 다음 요청이 해제된 메모리를 쓰게 된다. 두 결함 모두 거의 모든 요청이 거쳐 가는 메모리 관리와 오류 처리부에 있어 심각하면서도 호환성·성능·서드파티 확장을 해치지 않고 고치기가 어려웠다고 밝혔다. ※RCE: 공격자가 서버에서 임의 코드를 실행하는 가장 치명적인 유형의 취약점.",
+          "lang": "en",
+          "published_at": "2026-10-22T00:48:56+09:00",
+          "collected_at": "2026-10-22T07:33:10+09:00",
+          "metrics": {
+            "points": 580,
+            "comments": 293
+          }
+        }
+      ]
+    },
+    {
+      "topic": "EA is shutting down BioWare",
+      "trend_score": 0.8895,
+      "src_count": 1,
+      "hn": {
+        "points": 438,
+        "comments": 265
+      },
+      "items": [
+        {
+          "id": "c5adcff0a9c543cc2fa680262f5695721b279bde",
+          "title": "EA is shutting down BioWare",
+          "url": "https://theverge.com/games/1015647/ea-is-shutting-down-bioware",
+          "source": "hackernews",
+          "category": "hot_topics",
+          "summary_ko": "EA가 매스 이펙트, 드래곤 에이지, 스타워즈: 구 공화국의 기사단을 만든 스튜디오 바이오웨어를 폐쇄한다고 확인했다. 폐쇄와 함께 개발 중이던 차기 매스 이펙트 게임도 개발을 중단하기로 했으며, 블룸버그에 따르면 약 400명이 정리해고 대상이다.",
+          "lang": "en",
+          "published_at": "2026-10-22T02:29:33+09:00",
+          "collected_at": "2026-10-22T07:33:10+09:00",
+          "metrics": {
+            "points": 438,
+            "comments": 265
+          }
+        }
+      ]
+    },
+    {
+      "topic": "Compromised LiteLLM 1.107.0 on PyPI Installs a Credential Stealer and Backdoor",
+      "trend_score": 0.8341,
+      "src_count": 1,
+      "hn": {
+        "points": 372,
+        "comments": 121
+      },
+      "items": [
+        {
+          "id": "a0e7a23f62c47cb2f9eddbfbd1783756bf2c7da2",
+          "title": "Compromised LiteLLM 1.107.0 on PyPI Installs a Credential Stealer and Backdoor",
+          "url": "https://safedep.io/litellm-pypi-compromise-credential-stealer-backdoor",
+          "source": "hackernews",
+          "category": "hot_topics",
+          "summary_ko": "PyPI에 올라온 LiteLLM 1.107.0 릴리스에 자격증명 탈취기와 원격 코드 실행 백도어가 심겨 있었다. 리눅스·macOS·윈도우용 7개 휠 전부가 site-packages에 파일 3개를 설치하고, 이 중 둘은 litellm을 import하지 않는 파이썬 프로세스라도 **시작될 때마다** 실행된다. cook.pth가 불러오는 cook.py는 SSH 키, 클라우드 자격증명, CI/CD 시크릿, AI 도구 토큰, 브라우저 저장 비밀번호, LiteLLM 프록시 DB의 LLM 제공사 키까지 긁어 암호화해 외부 도메인으로 전송하고, sitecustomize.py는 매시간 GitHub 파일에서 서버 주소를 읽어 탈취기를 재실행하고 원격 코드를 내려받아 실행하는 데몬을 띄운다. 침투 경로는 sdist의 pyproject.toml에 maturin 설정 한 줄(`data = \"cook\"`)을 끼워 넣어 빌드 시 cook/ 폴더가 휠에 포함되게 한 것으로, GitHub 상의 업스트림 소스에는 해당 코드가 없다. PyPI는 해당 릴리스를 삭제했고 1.106.2와 1.107.0rc1/rc2, 동반 패키지 litellm-proxy-extras 0.4.110·litellm-enterprise 0.1.78은 안전하다. ※sdist/휠: 각각 파이썬 패키지의 소스 배포본과 설치용 바이너리 배포본.",
+          "lang": "en",
+          "published_at": "2026-10-21T23:00:26+09:00",
+          "collected_at": "2026-10-22T07:33:10+09:00",
+          "metrics": {
+            "points": 372,
+            "comments": 121
+          }
+        }
+      ]
+    },
+    {
+      "topic": "Claude Duet",
+      "trend_score": 0.817,
+      "src_count": 1,
+      "hn": {
+        "points": 241,
+        "comments": 205
+      },
+      "items": [
+        {
+          "id": "5dbb54a005401fc70149c16868b8f3287a1f4a20",
+          "title": "Claude Duet",
+          "url": "https://claude.com/product/claude-duet",
+          "source": "hackernews",
+          "category": "hot_topics",
+          "summary_ko": "Anthropic이 메시지로 대화하는 개인용 AI 에이전트 Claude Duet을 리서치 프리뷰로 공개했다. 받은 편지함과 일정, 후속 조치를 대신 처리하고 사용자가 자리를 비운 동안에도 계속 일하다가 판단이 필요한 시점에만 먼저 말을 건다는 것이 핵심 컨셉으로, 매일 아침 브리핑을 주고 다음 단계 초안을 만든 뒤 조용히 기다리는 식이다. Opus 5.5 기반이며 Claude 앱의 기존 메모리·스킬·연결된 앱을 그대로 하나의 스레드에서 쓰고 6,000개 이상의 커넥터·플러그인과 연동된다. 현재 미국의 Pro·Max 플랜 대상이며 대기자 명단을 받고 있다.",
+          "lang": "en",
+          "published_at": "2026-10-22T04:14:01+09:00",
+          "collected_at": "2026-10-22T07:33:10+09:00",
+          "metrics": {
+            "points": 241,
+            "comments": 205
+          }
+        }
+      ]
+    },
+    {
+      "topic": "Meta ordered to pay $25B penalty in New Mexico Cambridge Analytica case",
+      "trend_score": 0.8081,
+      "src_count": 1,
+      "hn": {
+        "points": 255,
+        "comments": 153
+      },
+      "items": [
+        {
+          "id": "8f97a4163f99e156527d0fa2cfe356a2c8a52086",
+          "title": "Meta ordered to pay $25B penalty in New Mexico Cambridge Analytica case",
+          "url": "https://cnbc.com/2026/10/21/meta-new-mexico-cambridge-analytica-penalty.html",
+          "source": "hackernews",
+          "category": "hot_topics",
+          "summary_ko": "뉴멕시코주 법원이 메타에 250억 달러 과징금을 명령했다. 10년 가까이 된 케임브리지 애널리티카 사건에서 비롯된 개인정보 보호 소송으로, 샌타페이 배심원단은 메타가 주민들에게 사용자 데이터를 어떻게 수집·보호하는지에 대해 오도했다며 책임을 인정했다. 판사는 판결문에서 메타가 케임브리지 애널리티카 사태 이후 \"약속했던 포괄적 조사를 수행하지 않았다\"고 적시했다. ※케임브리지 애널리티카: 2018년 드러난 사건으로, 정치 컨설팅 업체가 페이스북 이용자 수천만 명의 데이터를 동의 없이 수집해 사용했다.",
+          "lang": "en",
+          "published_at": "2026-10-22T02:45:13+09:00",
+          "collected_at": "2026-10-22T07:33:10+09:00",
+          "metrics": {
+            "points": 255,
+            "comments": 153
+          }
+        }
+      ]
+    },
+    {
+      "topic": "Patch the Planet: global response coordination as agents uncover vulnerabilities",
+      "trend_score": 0.7846,
+      "src_count": 1,
+      "hn": {
+        "points": 213,
+        "comments": 137
+      },
+      "items": [
+        {
+          "id": "d3f519557f32dd3d643c27d4c9f89095ff53a6df",
+          "title": "Patch the Planet: global response coordination as agents uncover vulnerabilities",
+          "url": "https://openai.com/index/coordinated-disclosure-of-critical-vulnerabilities",
+          "source": "hackernews",
+          "category": "hot_topics",
+          "summary_ko": "AI 에이전트가 취약점을 찾아내는 상황에서 전 세계적으로 패치 대응을 어떻게 조율할 것인지를 다룬 OpenAI의 글이다. 제목의 'Patch the Planet'은 에이전트가 발견 속도를 끌어올릴 때 기존의 책임 있는 공개(coordinated disclosure) 절차가 감당할 수 있느냐는 문제의식을 가리킨다. ※본문 미확보 — 제목 기반.",
+          "lang": "en",
+          "published_at": "2026-10-21T23:03:43+09:00",
+          "collected_at": "2026-10-22T07:33:10+09:00",
+          "metrics": {
+            "points": 213,
+            "comments": 137
+          }
+        }
+      ]
+    },
+    {
+      "topic": "DuckDB 2.0.0 LTS “Cinnamon Teal”",
+      "trend_score": 0.7693,
+      "src_count": 1,
+      "hn": {
+        "points": 340,
+        "comments": 39
+      },
+      "items": [
+        {
+          "id": "764a23f0c296d60d725440ef791fd9dcafe9c5e9",
+          "title": "DuckDB 2.0.0 LTS “Cinnamon Teal”",
+          "url": "https://duckdb.org/2026/10/21/announcing-duckdb-200",
+          "source": "hackernews",
+          "category": "hot_topics",
+          "summary_ko": "DuckDB가 2.0.0 LTS \"Cinnamon Teal\"을 공개했다. 1.5 이후 약 2만 커밋이 쌓인 역대 최대 기능 릴리스로, 다듬어진 Quack 원격 프로토콜, 비동기 I/O, 일급 VARIANT 타입, 에이전트 모드, 트리거, 확장 가능한 SQL 파서 등이 들어갔다. 안정성과 하위 호환에 집중했던 1.0과 달리 2.0은 기능 중심 릴리스라는 것이 개발팀의 설명이며, 호환성을 깨는 변경과 마이그레이션 안내도 함께 제공한다. 지원 기간은 최소 2027년 10월까지이고, 이전 LTS인 1.4는 2026년 11월 말까지, 1.5는 2027년 3월까지로 연장돼 세 갈래가 동시에 유지된다. CLI와 파이썬 클라이언트는 즉시 사용 가능하고 Go·R·Java 등은 며칠 더 걸린다. ※LTS: 장기 지원 버전. ※VARIANT: 구조가 고정되지 않은 반정형 데이터를 담는 타입.",
+          "lang": "en",
+          "published_at": "2026-10-21T23:01:22+09:00",
+          "collected_at": "2026-10-22T07:33:10+09:00",
+          "metrics": {
+            "points": 340,
+            "comments": 39
+          }
+        }
+      ]
+    },
+    {
+      "topic": "OpenAI models are coming to Google Cloud",
+      "trend_score": 0.7554,
+      "src_count": 1,
+      "hn": {
+        "points": 197,
+        "comments": 89
+      },
+      "items": [
+        {
+          "id": "61f4d0141ff303c02405716db977e4c6353bca59",
+          "title": "OpenAI models are coming to Google Cloud",
+          "url": "https://openai.com/index/openai-models-google-cloud",
+          "source": "hackernews",
+          "category": "hot_topics",
+          "summary_ko": "OpenAI 모델을 Google Cloud에서 쓸 수 있게 된다는 소식이다. 클라우드 사업자와 모델 제공사 간 경쟁 구도를 감안하면 주목할 만한 배포 채널 확대다. ※본문 미확보 — 제목 기반.",
+          "lang": "en",
+          "published_at": "2026-10-21T21:53:11+09:00",
+          "collected_at": "2026-10-22T07:33:10+09:00",
+          "metrics": {
+            "points": 197,
+            "comments": 89
+          }
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "source": "github_trending",
+      "ok": true,
+      "item_count": 15,
+      "error_type": null
+    },
+    {
+      "source": "anthropic",
+      "ok": true,
+      "item_count": 280,
+      "error_type": null
+    },
+    {
+      "source": "openai",
+      "ok": false,
+      "item_count": 0,
+      "error_type": "HTTPError"
+    },
+    {
+      "source": "deepmind",
+      "ok": true,
+      "item_count": 100,
+      "error_type": null
+    },
+    {
+      "source": "meta_ai",
+      "ok": true,
+      "item_count": 88,
+      "error_type": null
+    },
+    {
+      "source": "mistral",
+      "ok": true,
+      "item_count": 92,
+      "error_type": null
+    },
+    {
+      "source": "xai",
+      "ok": true,
+      "item_count": 85,
+      "error_type": null
+    },
+    {
+      "source": "openai_codex",
+      "ok": true,
+      "item_count": 153,
+      "error_type": null
+    },
+    {
+      "source": "cloudflare",
+      "ok": true,
+      "item_count": 20,
+      "error_type": null
+    },
+    {
+      "source": "github_blog",
+      "ok": true,
+      "item_count": 10,
+      "error_type": null
+    },
+    {
+      "source": "aws",
+      "ok": true,
+      "item_count": 20,
+      "error_type": null
+    },
+    {
+      "source": "stripe",
+      "ok": true,
+      "item_count": 10,
+      "error_type": null
+    },
+    {
+      "source": "meta_eng",
+      "ok": true,
+      "item_count": 9,
+      "error_type": null
+    },
+    {
+      "source": "reddit_localllama",
+      "ok": true,
+      "item_count": 25,
+      "error_type": null
+    },
+    {
+      "source": "hf_blog",
+      "ok": true,
+      "item_count": 888,
+      "error_type": null
+    },
+    {
+      "source": "hackernews",
+      "ok": true,
+      "item_count": 20,
+      "error_type": null
+    }
+  ],
+  "summaries_injected": true
+}
