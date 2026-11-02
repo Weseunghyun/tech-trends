@@ -1,0 +1,786 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-11-02T10:34:47+09:00",
+  "date": "2026-11-02",
+  "categories": {
+    "ai_labs": [
+      {
+        "id": "b2263e9f84127c7621047d154deaa4fa09bbff2b",
+        "title": "nemotron-halloween",
+        "url": "https://huggingface.co/blog/nvidia/nemotron-halloween",
+        "source": "hf_blog",
+        "category": "ai_labs",
+        "summary_ko": "NVIDIA 직원이 핼러윈용으로 만든 'MonsterHouse' 제작기. 집 외벽에 투사된 캐릭터가 사탕을 받으러 온 아이들의 말을 듣고 심술궂은 늙은 해적선 목소리로 대답하며, 예의를 갖추면 누그러지는 인터랙티브 프로젝션이다. NVIDIA Nemotron Voice Agent 스택(음성인식 Nemotron ASR, 언어모델 Nemotron 3.5 Bolt E4B 4GB, 음성합성 Magpie TTS Zeroshot, 얼굴 애니메이션 Audio2Face-3D)으로 구성했고 워크스테이션 한 대에서 전부 돌아간다. ※ASR: 음성을 텍스트로 바꾸는 기술, TTS: 텍스트를 음성으로 읽어주는 기술.",
+        "lang": "en",
+        "published_at": "2026-10-31T02:57:24+09:00",
+        "collected_at": "2026-11-02T10:27:46+09:00",
+        "metrics": null
+      },
+      {
+        "id": "f3538b6fb36f4f58fdca64e1b764cff7fa0ed810",
+        "title": "Granite Switch 4.1.1 — Update models like you update software",
+        "url": "https://huggingface.co/blog/ibm-granite/granite-switch-4-1-1",
+        "source": "hf_blog",
+        "category": "ai_labs",
+        "summary_ko": "IBM이 Granite Switch 4.1 공개 일주일여 만에 패치 릴리스 4.1.1을 냈다. 소프트웨어처럼 버전 번호의 의미를 그대로 지켜 4.1과 완전 하위 호환이고 마이그레이션이 필요 없다. 내용은 10개 언어를 지원하며 구두점·대소문자를 자체적으로 넣어주는 다국어 음성인식(ASR) 모델 갱신과, Jev Decision Index 테스트셋 성능을 높인 Decision 어댑터 갱신 두 가지다. 핵심은 속도인데, 새 ASR과 어댑터 학습 외에는 아무것도 재계산하지 않았다 — 베이스 모델은 그대로 두고 원하는 어댑터만 조합해 배포하는 모듈형 Switch 구조 덕분이며, IBM은 외부 개발자가 직접 어댑터를 만들 수 있도록 Adapter SDK와 튜토리얼을 준비 중이라고 밝혔다. ※어댑터: 거대 모델 전체를 다시 학습하지 않고 특정 능력만 덧붙이는 작은 추가 모듈.",
+        "lang": "en",
+        "published_at": "2026-10-29T22:37:07+09:00",
+        "collected_at": "2026-11-02T10:27:46+09:00",
+        "metrics": null
+      },
+      {
+        "id": "8ccea7e89b7030862a9f53eb527a17d29d33f0d5",
+        "title": "Le Chonk: Built for Coders, Trusted by Defenders.",
+        "url": "https://mistral.ai/news/mistral-large-4-oss",
+        "source": "mistral",
+        "category": "ai_labs",
+        "summary_ko": "Mistral이 이달 초 프리뷰로 공개했던 플래그십 모델 Mistral Large 4(별칭 'Le Chonk')의 가중치를 정식 공개했다. 1조(1T) 파라미터 규모의 네이티브 멀티모달 모델로, 프리뷰 이후 강화학습을 계속 확장해 코딩과 방어적 사이버보안 성능을 크게 끌어올렸으며 아직 성능 포화 조짐이 없다고 밝혔다. 추론 효율도 개선해 비용을 낮췄고, 비용-성능을 조절할 수 있는 3가지 추론 모드를 제공한다. 전량 유럽 인프라에서 처음부터 학습해 출처 이력이 명확하다는 점을 내세워 '소버린 AI'(자국 통제 가능한 AI) 용도의 자체 호스팅 기반으로 포지셔닝했다. 코딩 분야 오픈웨이트 모델 중 1위라고 주장한다.",
+        "lang": "en",
+        "published_at": "2026-10-29T21:00:07+09:00",
+        "collected_at": "2026-11-02T10:27:46+09:00",
+        "metrics": null
+      },
+      {
+        "id": "e1c742c1d925baf7505636d3c989a52bf3620d01",
+        "title": "Announcing Project ProtoStar: Making Publicly Funded Science AI-Ready",
+        "url": "https://huggingface.co/blog/announcing-project-protostar",
+        "source": "hf_blog",
+        "category": "ai_labs",
+        "summary_ko": "Hugging Face가 공적 자금으로 수행된 과학 연구의 데이터셋·모델·코드를 AI가 바로 쓸 수 있는 형태로 공개하도록 돕는 'Project ProtoStar'를 발표했다. 카네기멜런대·퍼듀대·조지아텍·애리조나주립대·조지워싱턴대가 Open Forum for AI(OFAI)를 통해 대학 연합으로 참여하고, Astera Institute, 인프라 파트너 Hugging Face, 커뮤니티 파트너 ORCA가 함께한다. 참여 기관은 양해각서(MOU)를 맺고 적합한 연구 산출물을 기계가 바로 읽을 수 있는(machine-actionable) 포맷으로 공개하기로 했다. 첫 번째 공개 챌린지는 카네기멜런대가 주최하는 '기후 리스크 인텔리전스'로 11월 2일 시작한다.",
+        "lang": "en",
+        "published_at": "2026-10-29T09:00:00+09:00",
+        "collected_at": "2026-11-02T10:27:46+09:00",
+        "metrics": null
+      },
+      {
+        "id": "a1765f446c5b64b5bbced0cf22070e131e3557ee",
+        "title": "Welcome Le Chonk: Mistral Large 4 on Hugging Face",
+        "url": "https://huggingface.co/blog/mistral-large4",
+        "source": "hf_blog",
+        "category": "ai_labs",
+        "summary_ko": "Hugging Face가 정리한 Mistral Large 4(Le Chonk)의 기술 해설. 텍스트와 이미지를 입력받아 텍스트를 생성하는 멀티모달·다국어 MoE 모델로, 총 1T 파라미터 중 토큰당 49B만 활성화하며 컨텍스트 창은 100만 토큰이다. 공식 배포는 FP8과 NVFP4 두 가지 변형이고 Unsloth와 llama.cpp 팀이 만든 GGUF도 있다. 라이선스는 MIT 파생인 Mistral Ecosystem Open-Weight License로 모델을 서비스형으로 재판매하는 것에는 제한을 둔다. 구조적으로는 전문가(expert) 선택과 어텐션 인덱서를 통한 과거 토큰 선택이라는 두 종류의 희소성을 결합했고 Pixtral 비전 인코더를 쓴다. Transformers·vLLM·llama.cpp 추론과 TRL 파인튜닝을 모두 지원한다. ※MoE(Mixture-of-Experts): 전체 파라미터 중 일부 전문가 모듈만 골라 써서 연산량을 줄이는 구조.",
+        "lang": "en",
+        "published_at": "2026-10-29T09:00:00+09:00",
+        "collected_at": "2026-11-02T10:27:46+09:00",
+        "metrics": null
+      },
+      {
+        "id": "85d975255b4f9d004ddb3cbeee15f8e8556ffee6",
+        "title": "Introducing AnySpeechRecognizer and AnyDecisionModel: Open Models for Speech and Decisions on Apple Platforms",
+        "url": "https://huggingface.co/blog/anydecisionmodel",
+        "source": "hf_blog",
+        "category": "ai_labs",
+        "summary_ko": "Apple 플랫폼용 Swift 패키지 두 개가 공개됐다. AnySpeechRecognizer는 Apple의 새 음성인식 API를 구현하되 인식 엔진을 고를 수 있게 해 NVIDIA의 Parakeet, 알리바바의 Qwen3-ASR을 Core ML로 기기 내에서 돌릴 수 있고, 누가 언제 말했는지 구분하는 화자 분리(speaker diarization)도 더했다. AnyDecisionModel은 예/아니오, 객관식, 평점 질문에 답하는데, 텍스트를 생성하는 대신 모델의 확률값에서 답을 끌어내 타입이 정해진 결과와 확률을 함께 돌려준다. MLX, Core AI, llama.cpp 등 백엔드를 선택할 수 있다. 글의 논지는 모든 걸 언어모델에 떠넘기지 말고 음성인식·분류 각각에 맞게 만들어진 더 빠르고 저렴한 모델을 쓰라는 것이다.",
+        "lang": "en",
+        "published_at": "2026-10-29T09:00:00+09:00",
+        "collected_at": "2026-11-02T10:27:46+09:00",
+        "metrics": null
+      },
+      {
+        "id": "f8059217fdc34ef4a165355976a7586a30a44078",
+        "title": "Scaleway on Hugging Face Inference Providers 🔥",
+        "url": "https://huggingface.co/blog/inference-providers-scaleway",
+        "source": "hf_blog",
+        "category": "ai_labs",
+        "summary_ko": "프랑스 클라우드 사업자 Scaleway가 Hugging Face의 Inference Provider(허브 모델 페이지에서 바로 쓰는 서버리스 추론 공급자)로 합류했다. gpt-oss, Qwen3, DeepSeek R1, Gemma 3 같은 오픈웨이트 모델을 허브에서 바로 호출할 수 있고, JS·Python 클라이언트 SDK에도 통합된다. 가격은 100만 토큰당 0.20유로부터인 종량제이며, 인프라가 프랑스 파리의 유럽 데이터센터에 있어 데이터 주권과 유럽 사용자 지연시간 면에서 유리하다. 구조화 출력, 함수 호출, 멀티모달을 지원하고 첫 토큰 응답이 200ms 미만이라고 밝혔다. ※참고: 2025년 9월 19일자 글로, 오늘 신규 공개된 소식은 아니다.",
+        "lang": "en",
+        "published_at": "2025-09-19T09:00:00+09:00",
+        "collected_at": "2026-11-02T10:27:46+09:00",
+        "metrics": null
+      },
+      {
+        "id": "626f189649a72d16cee81e8f0e82bf4e21c0c6e1",
+        "title": "Democratizing AI Safety with RiskRubric.ai",
+        "url": "https://huggingface.co/blog/riskrubric",
+        "source": "hf_blog",
+        "category": "ai_labs",
+        "summary_ko": "Hugging Face 허브에 50만 개 넘는 모델이 올라와 있지만 보안 측면에서 무엇을 골라야 할지 판단할 기준이 없다는 문제의식에서 출발한 RiskRubric.ai 소개. Cloud Security Alliance와 Noma Security가 주도하고 Haize Labs, Harmonic Security가 참여해 모델을 투명성·신뢰성·보안·프라이버시·안전성·평판 6개 축으로 평가한다. 모델마다 1,000개 이상의 신뢰성 테스트, 탈옥·프롬프트 인젝션을 노린 200개 이상의 적대적 보안 탐침, 구성요소 코드 스캔, 학습 데이터·방법론 문서 검토, 데이터 보존·유출 프라이버시 평가, 유해 콘텐츠 안전성 평가를 자동으로 돌려 각 축에 0~100점을 매긴다. ※프롬프트 인젝션: 외부 입력에 몰래 명령을 심어 AI를 오작동시키는 공격. ※참고: 2025년 9월 18일자 글이다.",
+        "lang": "en",
+        "published_at": "2025-09-18T09:00:00+09:00",
+        "collected_at": "2026-11-02T10:27:46+09:00",
+        "metrics": null
+      },
+      {
+        "id": "cee590182191706f23c36bbc96f49fe6b70fd224",
+        "title": "Public AI on Hugging Face Inference Providers 🔥",
+        "url": "https://huggingface.co/blog/inference-providers-publicai",
+        "source": "hf_blog",
+        "category": "ai_labs",
+        "summary_ko": "비영리 오픈소스 프로젝트인 Public AI Inference Utility가 Hugging Face의 Inference Provider로 합류해, 스위스 AI 이니셔티브와 AI Singapore 같은 공공·국가 주도 모델을 허브에서 바로 호출할 수 있게 됐다. 백엔드는 vLLM 기반이며 여러 파트너에 걸쳐 장애에 견디도록 분산 배치됐고, OpenAI 호환 API를 노출하는 서버들이 국가·산업 파트너가 기증한 클러스터 위에서 돌아간다. 글로벌 로드밸런싱 계층이 어느 나라의 연산 자원이 응답하든 투명하게 라우팅한다. 무료 공개 접근은 기증받은 GPU 시간과 광고 보조로 유지되고, 장기적으로는 국가·기관 분담금으로 안정화하는 것을 목표로 한다. ※참고: 2025년 9월 17일자 글이다.",
+        "lang": "en",
+        "published_at": "2025-09-17T09:00:00+09:00",
+        "collected_at": "2026-11-02T10:27:46+09:00",
+        "metrics": null
+      },
+      {
+        "id": "1b2700d0e54defe87ea9d3d7544905e2346c2c40",
+        "title": "`LeRobotDataset:v3.0`: Bringing large-scale datasets to `lerobot`",
+        "url": "https://huggingface.co/blog/lerobot-datasets-v3",
+        "source": "hf_blog",
+        "category": "ai_labs",
+        "summary_ko": "Hugging Face의 로보틱스 라이브러리 lerobot이 쓰는 데이터셋 포맷 LeRobotDataset이 v3.0으로 올라갔다. 기존 v2는 에피소드 하나당 파일 하나를 저장하는 방식이어서 수백만 에피소드 규모로 키울 때 파일시스템 한계에 부딪혔고, v3는 이를 해결한 것이 핵심이다. 이 포맷은 센서·모터 값, 여러 대의 카메라 영상, 원격조작 상태 같은 다양한 양식(modality)의 시계열 데이터를 하나의 인터페이스로 다루고, 수행 작업 설명·로봇 종류·샘플링 FPS 같은 메타데이터도 함께 저장해 허브에서 검색·색인할 수 있게 한다. v3부터는 거대 데이터셋을 디스크에 전부 내려받지 않고 배치 단위로 흘려 쓰는 스트리밍(StreamingLeRobotDataset)도 지원한다. SO-100 로봇팔, ALOHA-2, 실제 휴머노이드, 시뮬레이션, 자율주행 데이터까지 폭넓게 수용한다.",
+        "lang": "en",
+        "published_at": "2025-09-16T09:00:00+09:00",
+        "collected_at": "2026-11-02T10:27:46+09:00",
+        "metrics": null
+      }
+    ],
+    "community": [
+      {
+        "id": "c75d6eac47b41a7dd76f3bb3ec545440060cbe3c",
+        "title": "LFM3 Omni 2B is INCREDIBLE",
+        "url": "https://reddit.com/r/LocalLLaMA/comments/1xlk2kb/lfm3_omni_2b_is_incredible",
+        "source": "reddit_localllama",
+        "category": "community",
+        "summary_ko": "r/LocalLLaMA 게시물. Liquid AI가 새 옴니(멀티모달) 모델 LFM3 Omni 2B를 브라우저 안 WebGPU에서 바로 구동하는 데모를 자사 Hugging Face Space에 올렸고, 작성자가 그 영상을 공유하며 인상적이라고 평했다. 서버 없이 브라우저만으로 멀티모달 모델을 돌린다는 점이 화제다. ※WebGPU: 웹 브라우저에서 GPU 연산을 직접 쓰게 해주는 표준 API. ※본문은 링크 공유 형태로 상세 내용은 영상·Space에 있다.",
+        "lang": "en",
+        "published_at": "2026-11-02T10:17:50+09:00",
+        "collected_at": "2026-11-02T10:27:46+09:00",
+        "metrics": null
+      },
+      {
+        "id": "b7a941e0c7e9819e629d10e031c51e09b2aeae25",
+        "title": "\"Turnkey\" App for ebook to audio book",
+        "url": "https://reddit.com/r/LocalLLaMA/comments/1xljn4e/turnkey_app_for_ebook_to_audio_book",
+        "source": "reddit_localllama",
+        "category": "community",
+        "summary_ko": "r/LocalLLaMA 질문 글. TTS(음성합성) 모델도 많고 audio.cpp 같은 좋은 프레임워크와 프로토타입 UI도 있지만, 전자책 한 권을 통째로 넣으면 챕터 구분까지 깔끔하게 된 오디오북으로 바꿔주는 '턴키' 앱 — elevenreader 같은 완성도로, 급조된 바이브 코딩이 아니라 제대로 설계·유지보수되는 — 은 못 찾겠다는 하소연이다. 전제는 당연히 로컬에서 도는 오픈소스 모델만 쓴다는 것. 같은 고민을 하는 사람들의 추천을 구하는 글이다.",
+        "lang": "en",
+        "published_at": "2026-11-02T09:57:43+09:00",
+        "collected_at": "2026-11-02T10:27:46+09:00",
+        "metrics": null
+      },
+      {
+        "id": "14dde647501634dac723e68b1b5007d43c98d0ec",
+        "title": "Do we really need all these \"speed\" posts?",
+        "url": "https://reddit.com/r/LocalLLaMA/comments/1xljjf2/do_we_really_need_all_these_speed_posts",
+        "source": "reddit_localllama",
+        "category": "community",
+        "summary_ko": "r/LocalLLaMA의 커뮤니티 자성 글. 매일같이 '초당 300토큰 달성' 류의 속도 자랑 글이 올라오는데 막상 들여다보면 Q1_XXXS 같은 극단적 저비트 양자화에 greedy 디코딩, RAM에 없는 전문가 모듈은 아예 건너뛰는 설정 등 조건이 붙어 있다고 지적한다. 품질 저하를 재는 KLD 같은 벤치마크 데이터 없이 속도 숫자만 내놓는 글이 커뮤니티에 실제로 가치가 있느냐고 묻는다. ※양자화: 모델 가중치를 더 적은 비트로 압축해 메모리를 아끼는 기법으로, 과하면 품질이 떨어진다. ※KLD(KL divergence): 압축 전후 모델 출력 분포가 얼마나 달라졌는지 재는 지표.",
+        "lang": "en",
+        "published_at": "2026-11-02T09:52:40+09:00",
+        "collected_at": "2026-11-02T10:27:46+09:00",
+        "metrics": null
+      },
+      {
+        "id": "f64d65858f47dd9892c927db3c747b2da551725a",
+        "title": "Sorry Sam, my \"quite terrible\" home DRAM is at 100% now: patched Strata to make DeepSeek V4.1 agent sessions start 20× faster on a good old standard gaming GPU, no datacenter required",
+        "url": "https://reddit.com/r/LocalLLaMA/comments/1xljdnj/sorry_sam_my_quite_terrible_home_dram_is_at_100",
+        "source": "reddit_localllama",
+        "category": "community",
+        "summary_ko": "샘 올트먼이 \"세계적으로 한정된 DRAM을 모두가 자기 컴퓨터에 쌓아두고 5%만 쓰는 건 자원 배분상 끔찍하다\"고 말한 데 대한 반박성 실험기. 작성자는 RX 9070 XT 16GB, 5800X3D, DDR4 64GB, PCIe 3.0 NVMe라는 가정용 구성에서 DeepSeek V4.1 Flash를 100만 컨텍스트로 완전 오프라인 구동했고(1.75bpw 양자화, 연구소 발표 기준 원본 대비 과제 평균 98.7% 수준), 전문가 모듈을 VRAM·RAM·SSD에 나눠 얹었다. 생성 속도 약 7 tok/s는 견딜 만했지만 문제는 프롬프트 읽기였다 — OpenCode 세션을 새로 열 때마다 약 37K 토큰짜리 시스템 프롬프트와 도구 정의를 다시 읽느라 첫 토큰까지 약 100초가 걸렸다. 그래서 추론 엔진을 직접 패치해 이미 읽은 KV 캐시를 이어 붙이는(KV splice) 방식 등으로 에이전트 세션 시작을 20배 빠르게 만들었다. ※KV 캐시: 모델이 앞서 읽은 토큰의 계산 결과를 저장해 재사용하는 메모리.",
+        "lang": "en",
+        "published_at": "2026-11-02T09:44:53+09:00",
+        "collected_at": "2026-11-02T10:27:46+09:00",
+        "metrics": null
+      },
+      {
+        "id": "576cc80d6dc06ee2f4215c8d513caf5e655ea60a",
+        "title": "Qwen 3.8 Flash Next NVFP4 on 64gb RAM and 5090, Basalt. Ditched windows for it. Very hyped for qwen 4 model family now.",
+        "url": "https://reddit.com/r/LocalLLaMA/comments/1xlicia/qwen_38_flash_next_nvfp4_on_64gb_ram_and_5090",
+        "source": "reddit_localllama",
+        "category": "community",
+        "summary_ko": "RTX 5090과 64GB RAM 환경에서 Qwen 3.8 Flash Next를 NVFP4로 돌린 사용기. Windows 11이 VRAM 1.5GB와 RAM 6GB를 잡아먹는 탓에 전문가 모듈이 RAM으로 넘치고 CPU 부하가 커져 디코딩·프리필 속도가 70%나 떨어졌고, 리눅스(CachyOS)로 갈아타자 프리필이 9K 수준까지 올라갔다고 한다. 품질 면에서도 기존 dense 27B 모델보다 여러 과제에서 낫고 아직 못 하는 걸 못 찾았다는 평가이며, 프리필 속도는 27B 대비 2~3배다. 비전 어댑터까지 얹을 수 있어 코딩 시나리오에 도움이 된다고 덧붙였다. ※프리필(prefill): 입력 프롬프트를 읽어들이는 단계로, 길수록 첫 응답이 늦어진다.",
+        "lang": "en",
+        "published_at": "2026-11-02T08:56:49+09:00",
+        "collected_at": "2026-11-02T10:27:46+09:00",
+        "metrics": null
+      },
+      {
+        "id": "ca2782c6c3152e2d2b307992dec49cb0afd4faa7",
+        "title": "[GLB-3D-Coder] A tiny 4B coding model that creates 3D assets for Godot and other game engines",
+        "url": "https://reddit.com/r/LocalLLaMA/comments/1xlh0zw/glb3dcoder_a_tiny_4b_coding_model_that_creates_3d",
+        "source": "reddit_localllama",
+        "category": "community",
+        "summary_ko": "게임 엔진용 3D 에셋을 만들어주는 4B짜리 소형 코딩 모델 GLB-3D-Coder 공개. 모델이 Three.js 씬 코드를 작성하고 GLB로 내보내기 때문에 생성된 에셋을 Godot 같은 에디터로 바로 가져갈 수 있다. 복잡한 프롬프트가 필요 없고 모델 카드의 시스템 프롬프트를 쓴 뒤 \"마나 포션을 만들어줘\" 수준의 간단한 요청이면 되며, 영어 프롬프트가 가장 잘 동작한다. 아직 첫 동작 체크포인트로 학습이 진행 중이라 대부분 한 번에 성공하지만 일부는 재시도나 소소한 코드 수정이 필요하다고 솔직히 밝혔다. 권장 설정은 temperature 0.8, top-k 40이다. ※GLB: 3D 모델·텍스처를 한 파일에 담는 표준 포맷.",
+        "lang": "en",
+        "published_at": "2026-11-02T07:56:19+09:00",
+        "collected_at": "2026-11-02T10:27:46+09:00",
+        "metrics": null
+      },
+      {
+        "id": "fa89c725027e7702409e0b9b313e4ecf7a7da664",
+        "title": "Benchmarking: Qwen 27B, 35B, QFN180B; Nemotron Bolt 74B, Flint40B & Clover 35B (Q4 + KFlash) on MacBook M5 Max 2026 with Kapitsa (Apple Silicon Inference Engine)",
+        "url": "https://reddit.com/r/LocalLLaMA/comments/1xlgu8m/benchmarking_qwen_27b_35b_qfn180b_nemotron_bolt",
+        "source": "reddit_localllama",
+        "category": "community",
+        "summary_ko": "Apple Silicon 전용 추론 엔진 Kapitsa(오픈소스, 칩·모델별로 Metal 커널을 직접 튜닝) 0.2.26 업데이트와 M5 Max 탑재 2026년형 MacBook Pro 16인치(128GB) 벤치마크. 직전 M5 Max 측정 대비 Flash-Next 180B의 프롬프트 읽기가 46% 빨라졌고 27B의 생성이 8% 빨라졌으며, DiffuSpace의 Clover 35B가 카탈로그에 추가됐다. 주목할 기능은 SSD 오프로딩으로, RAM에 다 올라가지 않는 전문가 모듈을 SSD에서 스트리밍해 48GB MacBook Pro에서도 Qwen Flash-Next 180B를 61 tok/s로 돌린다. 6개 모델을 1K부터 32K 컨텍스트까지, 같은 Mac에서 각 모델별로 두 번째로 빠른 엔진과 비교해 측정했다.",
+        "lang": "en",
+        "published_at": "2026-11-02T07:47:41+09:00",
+        "collected_at": "2026-11-02T10:27:46+09:00",
+        "metrics": null
+      },
+      {
+        "id": "efbb5ea2ec8633d4638e1499dc7357bc6ad791c0",
+        "title": "Speedy is shockingly good for qwen3.8 FN",
+        "url": "https://reddit.com/r/LocalLLaMA/comments/1xlfhrd/speedy_is_shockingly_good_for_qwen38_fn",
+        "source": "reddit_localllama",
+        "category": "community",
+        "summary_ko": "Qwen3.8 Flash-Next를 돌리는 추론 런타임 세 가지(Strata, Avalon, Speedy)를 4090 + DDR5 128GB + 라이젠 9 7950X 환경에서 비교한 벤치마크. ISTA IQ3_S 양자화 기준으로 60K 컨텍스트에서 콜드 프리필이 Strata 54.7초, Avalon 22.4초, Speedy 13.7초였고, 198K 컨텍스트에서는 각각 187.2초, 71.2초, 44.1초로 격차가 벌어졌다. 프롬프트 읽기 속도는 Speedy가 4,389~4,622 tok/s로 Avalon(약 2,700~2,850)보다 1.6배, Strata 대비 4배 빨랐고 생성 속도도 104~110 tok/s로 가장 높았다. 전체 대화 왕복 시간 기준으로 Speedy가 Strata 대비 60K에서 64% 단축되는 등 전 구간에서 앞섰다.",
+        "lang": "en",
+        "published_at": "2026-11-02T06:49:36+09:00",
+        "collected_at": "2026-11-02T10:27:46+09:00",
+        "metrics": null
+      },
+      {
+        "id": "5ab7364379e3729b22162e857a65636ea2a2e686",
+        "title": "An updated 2.3bpw model for qwen 27b + 12 GB cards: ties Qwen3.6 BF16 on LiveCode Bench and reduces error by 37-57% vs a previous checkpoint",
+        "url": "https://reddit.com/r/LocalLLaMA/comments/1xlerw1/an_updated_23bpw_model_for_qwen_27b_12_gb_cards",
+        "source": "reddit_localllama",
+        "category": "community",
+        "summary_ko": "12GB VRAM짜리 RTX 30xx 암페어 카드용으로 만든 Qwen 27B의 2.3bpw 초저비트 양자화 모델 갱신 소식. 이전 체크포인트는 단일 12GB 카드에서 200K 컨텍스트를 가능하게 했지만 성능은 Qwen3.5 27B 언저리로 3.6에는 못 미쳤는데, 새 체크포인트는 LiveCode Bench에서 Qwen3.6 BF16 수준에 도달했다. 2000만 토큰 미만의 최소 사후학습만 적용해 과적합 위험을 줄였고, 2~3비트 사이 소수 비트폭(예: 2.5bpw)과 트렐리스 기반 인코딩을 쓰는 새 양자화 포맷(AmperInteger+)에 RCO 계열 최적화를 결합해 가능했다고 설명한다. 세 번 측정한 LCB 점수는 엄격한 채점 기준 84.3%(관대한 기준 88%)로, 이전 체크포인트 75%, 3.8 BF16의 90.3%와 비교된다. ※bpw: 가중치 하나당 비트 수로, 낮을수록 작아지지만 품질 손실 위험이 커진다.",
+        "lang": "en",
+        "published_at": "2026-11-02T06:19:36+09:00",
+        "collected_at": "2026-11-02T10:27:46+09:00",
+        "metrics": null
+      },
+      {
+        "id": "3f8ce1454fa233866ac8631d08e251fe1988b8bb",
+        "title": "Getting incredible results with a single RTX 3090ti and 128gb of ram. Deepseek-V4.1-Flash-1017 (35 tok/s decode) and Qwen3.8-Flash-Next (130 tok/s decode)",
+        "url": "https://reddit.com/r/LocalLLaMA/comments/1xlec67/getting_incredible_results_with_a_single_rtx",
+        "source": "reddit_localllama",
+        "category": "community",
+        "summary_ko": "6년 된 하드웨어 한 대(라이젠 스레드리퍼 3990X 64코어, DDR4 128GB, RTX 3090 Ti 24GB, 4TB NVMe, Gentoo 리눅스)에서 최신 대형 모델을 돌린 설정 공유. DeepSeek-V4.1-Flash-1017(552B MoE, 레이어 40, 레이어당 전문가 384개, 활성 파라미터 약 39B)을 35 tok/s로, Qwen3.8-Flash-Next를 130 tok/s로 디코딩한다고 측정값을 제시했다. 훨씬 좋은 하드웨어로 더 느린 속도를 보고하는 사람들이 있어 도움이 되길 바란다며, 양자화 파일과 다운로드 출처, 설정 순서까지 함께 정리해 올렸다. 몇 달 전 구형 모델일 때보다 훨씬 잘 돌아간다는 게 요지다.",
+        "lang": "en",
+        "published_at": "2026-11-02T06:01:42+09:00",
+        "collected_at": "2026-11-02T10:27:46+09:00",
+        "metrics": null
+      }
+    ],
+    "github_trending": [
+      {
+        "id": "5661de317a03586be54d55fa2efb782955b8d035",
+        "title": "Donchitos/Claude-Code-Game-Studios",
+        "url": "https://github.com/Donchitos/Claude-Code-Game-Studios",
+        "source": "github_trending",
+        "category": "github_trending",
+        "summary_ko": "Claude Code 세션 하나를 게임 개발 스튜디오처럼 꾸며주는 템플릿 저장소로, GitHub 트렌딩에 올랐다(스타 약 32.3K). 범용 어시스턴트 하나 대신 49개의 전문화된 서브에이전트를 실제 스튜디오 위계(비전을 지키는 디렉터, 각 영역을 책임지는 부서 리드, 실무 전문가)로 조직하고 72~74개의 워크플로 스킬을 함께 제공한다. 문제의식은 AI와 단둘이 게임을 만들면 구조가 없어서 매직 넘버를 하드코딩하거나 기획 문서를 건너뛰거나 스파게티 코드를 써도 아무도 막지 않고, QA 패스나 디자인 리뷰, '이게 게임의 방향에 맞느냐'는 질문도 없다는 점이다. 각 에이전트에 책임 범위와 에스컬레이션 경로, 품질 게이트를 정의해 결정은 사람이 하되 팀이 붙은 효과를 내게 한다. MIT 라이선스.",
+        "lang": "en",
+        "published_at": null,
+        "collected_at": "2026-11-02T10:27:46+09:00",
+        "metrics": null
+      },
+      {
+        "id": "239feae36314418f09e706d27c928595835f46d1",
+        "title": "milind-soni/OpenMausBot",
+        "url": "https://github.com/milind-soni/OpenMausBot",
+        "source": "github_trending",
+        "category": "github_trending",
+        "summary_ko": "Grok Bot의 오픈소스 대안을 표방하는 데스크톱 앱 OpenMausBot(구 OpenGrokBot, 스타 약 10.6K). 채팅 앱 사이드바의 봇 하나하나가 실제 에이전트로, 내부적으로는 Claude나 Codex가 로컬에서 돌아가며 각자 고유한 성격과 모델, 전용 클라우드 컴퓨터(봇이 쓸 수 있는 가상머신), 연결된 앱을 갖는다. 연락처처럼 대화하고, 작업하는 모습을 지켜보고, 중요한 것만 승인하는 사용 방식이다. Meta Muse, OpenAI dots, Manus의 Cue에 대한 오픈소스 대안이자 '쓰던 모델을 그대로 쓰는(bring-your-own-agent) 로컬 우선' 설계를 내세운다. macOS(애플 실리콘·인텔, 서명·공증된 dmg), Windows x64, Ubuntu 24.04용 배포본이 있고 Apache-2.0 라이선스다. xAI·Meta·OpenAI·Manus와 무관한 독립 프로젝트임을 명시한다.",
+        "lang": "en",
+        "published_at": null,
+        "collected_at": "2026-11-02T10:27:46+09:00",
+        "metrics": null
+      },
+      {
+        "id": "7e7a6ce6c81ff0b491dad3522f0eb9a3d19259e0",
+        "title": "lightpanda-io/browser",
+        "url": "https://github.com/lightpanda-io/browser",
+        "source": "github_trending",
+        "category": "github_trending",
+        "summary_ko": "AI 에이전트와 자동화를 위해 Zig로 처음부터 새로 만든 헤드리스 브라우저 Lightpanda(스타 약 40.2K). Chromium 포크도 WebKit 패치도 아닌 신규 구현이라는 점을 강조한다. AWS EC2 m5.large에서 실제 웹페이지 933개를 네트워크로 요청한 벤치마크 기준 100페이지 처리 시 최대 메모리가 123MB로 헤드리스 크롬의 2GB보다 약 16배 적고, 실행 시간은 5초 대 46초로 약 9배 빠르다. Homebrew·AUR·Nix로 설치하거나 나이틀리 바이너리를 내려받을 수 있다. 다만 리눅스 릴리스 바이너리가 glibc에 링크돼 있어 Alpine 같은 musl 배포판에서는 실행되지 않고, x86_64는 glibc 2.35, arm64는 2.38 이상이 필요하다. AGPL-3.0 라이선스. ※헤드리스 브라우저: 화면 없이 백그라운드로 웹페이지를 띄워 크롤링·자동화에 쓰는 브라우저.",
+        "lang": "en",
+        "published_at": null,
+        "collected_at": "2026-11-02T10:27:46+09:00",
+        "metrics": null
+      },
+      {
+        "id": "24ee0d11b76f3a78f0421ce98cecd98be66e55fc",
+        "title": "Orkas-AI/Orkas",
+        "url": "https://github.com/Orkas-AI/Orkas",
+        "source": "github_trending",
+        "category": "github_trending",
+        "summary_ko": "데스크톱에서 도는 오픈소스(MIT) 로컬 우선 멀티에이전트 앱 Orkas(스타 약 7.3K). 'Commander'에게 목표를 말하면 할 일 목록으로 쪼개 직접 처리하고, 큰 작업은 단계를 계획해 16개 내장 전문 에이전트와 사용자가 이미 쓰는 코딩·개인 에이전트(Claude Code, Codex, OpenCode, OpenClaw, Hermes-Agent)를 함께 투입한다. 프롬프트 하나에 답하고 끝나는 게 아니라 프로젝트를 계속 굴리는 것이 설계 목표로, 프로젝트가 목표·규칙·메모리·파일을 보관해 새 작업마다 맥락이 이어진다. 예약 자동화와 커넥터도 지원하며 macOS·Windows용 무료 앱이고 내장 모델이나 본인 API 키를 쓸 수 있다.",
+        "lang": "en",
+        "published_at": null,
+        "collected_at": "2026-11-02T10:27:46+09:00",
+        "metrics": null
+      },
+      {
+        "id": "fc81d743c9602d50293d93b937079ddd109f0f93",
+        "title": "THU-MAIC/OpenMAIC",
+        "url": "https://github.com/THU-MAIC/OpenMAIC",
+        "source": "github_trending",
+        "category": "github_trending",
+        "summary_ko": "칭화대 MAIC 팀의 오픈소스 멀티에이전트 인터랙티브 교실 OpenMAIC(스타 약 42.4K). 10월 29일 v1.3.0에서 지식베이스와 Pro 워크벤치를 개편해, 업로드한 파일이 삭제 전까지 소유자의 지식베이스에 폴더로 정리된 채 남고 대화마다 다시 파싱하지 않도록 한 번만 파싱되며, 작성창에서 @로 불러 쓰고 에이전트가 읽고 검색하고 정리할 수 있다. Pro 워크벤치에서는 첫 페이지가 생기기 전에 에이전트 작업 미리보기를 보여주고 교실 탭이 Learn/Edit로 나뉜다. 다만 이 업그레이드에는 릴리스 조건이 있어 기존 인스턴스를 모두 중지해야 하고 1.3.0 미만으로 롤백할 수 없으니 변경 이력을 먼저 읽으라고 경고한다. 10월 18일 v1.2.1에서는 Kimi·DeepSeek·Firecrawl이 웹 검색 공급자로 추가되는 등 웹 리서치 기능이 들어갔다. MIT 라이선스.",
+        "lang": "en",
+        "published_at": null,
+        "collected_at": "2026-11-02T10:27:46+09:00",
+        "metrics": null
+      },
+      {
+        "id": "6790a6c53c6649e4dd0f49771edfd7ec1242ff17",
+        "title": "bregman-arie/devops-exercises",
+        "url": "https://github.com/bregman-arie/devops-exercises",
+        "source": "github_trending",
+        "category": "github_trending",
+        "summary_ko": "DevOps·SRE 면접과 학습을 위한 문제·연습 모음 저장소로 현재 2,624개의 문제와 실습이 들어 있다. 다루는 범위는 리눅스, Jenkins, AWS, SRE, Prometheus, Docker, Python, Ansible, Git, 쿠버네티스, Terraform, OpenStack, SQL/NoSQL, Azure, GCP, DNS, Elastic, 네트워크, 가상화 등으로 폭넓다. 저장소 스스로 면접 준비에 쓸 수는 있지만 대부분의 문항이 실제 면접을 그대로 재현하지는 않는다고 FAQ에서 분명히 밝히고 있다. ※SRE: 구글에서 시작된 '사이트 신뢰성 엔지니어링'으로, 운영을 소프트웨어 공학으로 푸는 직무.",
+        "lang": "en",
+        "published_at": null,
+        "collected_at": "2026-11-02T10:27:46+09:00",
+        "metrics": null
+      },
+      {
+        "id": "83b625cc02e985dc839e7025f2dca55a7935d576",
+        "title": "vorssaint/vorssaint-utils",
+        "url": "https://github.com/vorssaint/vorssaint-utils",
+        "source": "github_trending",
+        "category": "github_trending",
+        "summary_ko": "메뉴 막대 아이콘 하나로 맥 유틸리티 십여 개를 대체하는 무료 오픈소스 macOS 툴킷 Vorssaint(스타 약 32.3K, GPL-3.0). 앱별 볼륨 조절, 실제로 쓸 만한 시스템 모니터, 개선된 앱 전환기, 창 스냅, Dock 미리보기, 클립보드 기록, 텍스트 스니펫, 파일 선반, 앱 삭제 도구 등 보통 하나씩 돈 주고 사는 기능들을 한데 모았고 계정·텔레메트리·구독이 없다. 필요한 기능만 골라 설치하는 방식이라 제거한 기능은 로딩되지 않고 UI에서도 사라지며, 다시 설치하면 설정이 복원되고 권한도 선택한 기능에 필요한 것만 요청한다. 오디오 쪽은 앱별 출력 장치 분리(음악은 스피커, 통화는 헤드셋), 100% 초과 볼륨 증폭, 단축키 출력 전환, 마이크 음소거 등을 제공하는데, 마이크 음소거는 Siri나 일부 앱이 여전히 들을 수 있어 프라이버시 잠금이 아니라고 스스로 못박았다. 10여 개 언어와 설정 내보내기를 지원한다.",
+        "lang": "en",
+        "published_at": null,
+        "collected_at": "2026-11-02T10:27:46+09:00",
+        "metrics": null
+      }
+    ],
+    "codex": [
+      {
+        "id": "5fbf53c1ad936fbdc7a8326687504d67fde6dcb5",
+        "title": "Codex CLI Release: 0.166.0",
+        "url": "https://developers.openai.com/codex/changelog#github-release-428320524",
+        "source": "openai_codex",
+        "category": "codex",
+        "summary_ko": "OpenAI Codex CLI의 0.166.0 버전이 릴리스됐다. ※본문 미확보 — 제목 기반. 변경 내용은 수집된 데이터에 포함되지 않았으므로 상세 내역은 링크된 체인지로그를 확인해야 한다.",
+        "lang": "en",
+        "published_at": "2026-10-29T09:00:00+09:00",
+        "collected_at": "2026-11-02T10:27:46+09:00",
+        "metrics": null
+      }
+    ],
+    "eng_blogs": [
+      {
+        "id": "826e500342a584571741f846dda7f1e7846ce9d8",
+        "title": "Game Off 2026: The theme is SHIFT",
+        "url": "https://github.blog/open-source/gaming/game-off-2026-the-theme-is-shift",
+        "source": "github_blog",
+        "category": "eng_blogs",
+        "summary_ko": "GitHub이 매년 11월 한 달간 여는 게임 잼 'Game Off'가 14회째를 맞았고, 2026년 주제는 SHIFT로 정해졌다. 기어를 바꾸든, 관점을 뒤집든, 현실을 비틀든, 그냥 특정 키를 누르는 것이든 SHIFT라는 단어에서 영감을 받아 게임을 만들면 된다. ※게임 잼: 정해진 기간 안에 주제에 맞는 게임을 만들어 내는 대회성 행사.",
+        "lang": "en",
+        "published_at": "2026-11-02T06:36:00+09:00",
+        "collected_at": "2026-11-02T10:27:46+09:00",
+        "metrics": null
+      },
+      {
+        "id": "16ec2c40ac77b51de85978f199fb0e9d3e432149",
+        "title": "4 real? Tracking exploitation and patching of eMudhra’s weak keys",
+        "url": "https://blog.cloudflare.com/emudhra-patching",
+        "source": "cloudflare",
+        "category": "eng_blogs",
+        "summary_ko": "Cloudflare가 인증기관 eMudhra의 취약 키 문제에 대한 후속 보고를 냈다. 핵심은 단 네 개의 키만 있으면 eMudhra 인증서를 쓰면서 패치하지 않은 인터넷 연결을 뚫을 수 있다는 것이다. 글은 Cloudflare가 어떻게 신속히 자사를 패치했는지, 실제 공격 시도의 흔적으로 무엇이 관측되는지, 그리고 인터넷의 나머지 영역이 얼마나 노출된 상태로 남아 있는지를 다룬다. ※인증기관(CA): HTTPS 통신에 쓰이는 인증서를 발급해 신뢰의 뿌리 역할을 하는 기관이라, 여기가 뚫리면 암호화 연결 자체가 무력해진다. ※수집된 본문이 도입부까지만 확보되어 세부 수치는 원문 참조.",
+        "lang": "en",
+        "published_at": "2026-10-31T02:38:50+09:00",
+        "collected_at": "2026-11-02T10:27:46+09:00",
+        "metrics": null
+      },
+      {
+        "id": "1c645bca188b35a5feea9099a54e93c597300e41",
+        "title": "Cloudflare services for private origins is now generally available",
+        "url": "https://blog.cloudflare.com/private-origins-public-to-private",
+        "source": "cloudflare",
+        "category": "eng_blogs",
+        "summary_ko": "Cloudflare가 비공개(프라이빗) 오리진 서버에 대한 자사 서비스 적용을 정식 출시(GA)했다. 인터넷에 직접 노출되지 않은 내부 서버로 들어오는 공개 트래픽에도 WAF(웹 방화벽), 봇 관리, 캐싱, Workers를 적용할 수 있게 된 것으로, Cloudflare One 연결성을 쓰는 모든 고객이 대상이다. 기존에는 공개 서비스를 Cloudflare 뒤에 두려면 오리진이 어떤 형태로든 외부에서 닿을 수 있어야 했던 제약을 줄여준다. ※오리진 서버: CDN 뒤에서 실제 콘텐츠를 들고 있는 원본 서버. ※수집된 본문이 도입부까지만 확보되어 세부 설정 방법은 원문 참조.",
+        "lang": "en",
+        "published_at": "2026-10-30T23:23:43+09:00",
+        "collected_at": "2026-11-02T10:27:46+09:00",
+        "metrics": null
+      },
+      {
+        "id": "b7d248bc90d8f8894945d45f3f39bc3a9f644b78",
+        "title": "Stripe on Stripe: What we learned moving $1B in vendor payments to Global Payouts",
+        "url": "https://stripe.com/blog/stripe-on-stripe-what-we-learned-moving-1b-in-vendor-payments-to-global-payouts",
+        "source": "stripe",
+        "category": "eng_blogs",
+        "summary_ko": "Stripe가 자사 벤더 대금 지급을 자체 제품인 Global Payouts로 옮긴 경험을 공개했다(이른바 'Stripe on Stripe'). 2026년 초부터 이전을 시작했고 Global Payouts는 160개국 이상의 수취인에게 지급할 수 있는 제품이다. 성과로 새 시장을 여는 데 걸리는 설정 기간이 6주에서 1주로 줄었고 지급 성공률은 99.9%를 기록했으며, 옮긴 대금 규모는 10억 달러다. 자사 제품을 스스로 운영에 적용하며 배운 점을 정리한 글이다. ※수집된 본문이 도입부까지만 확보되어 구체적 교훈은 원문 참조.",
+        "lang": "en",
+        "published_at": "2026-10-30T09:00:00+09:00",
+        "collected_at": "2026-11-02T10:27:46+09:00",
+        "metrics": null
+      },
+      {
+        "id": "2b2f487795f0e5d2db0f0a071b84108898ab827b",
+        "title": "Catching Bugs Before They Land: JiTTesting’s Human-on-the-Loop Approach at Full Scale",
+        "url": "https://engineering.fb.com/2026/10/29/security/catching-bugs-before-they-land-jittestings-human-on-the-loop-approach-at-full-scale",
+        "source": "meta_eng",
+        "category": "eng_blogs",
+        "summary_ko": "Meta가 LLM으로 코드 변경(diff)이 머지되기 전에 버그를 잡는 'Catching JiTTests'를 연구 프로토타입에서 실제 인프라로 전환한 결과를 공개했다. 수억 줄 규모 코드베이스에서 관건은 진짜 버그를 드러내는 강한 적발과 오탐일 수 있는 약한 적발을 구분하면서도 엔지니어의 속도를 떨어뜨리지 않는 것이었다. 이를 위해 변경의 의도와 위험을 추론해 실패 가능 지점을 겨냥하는 'intent-aware' 워크플로와, 모든 변경을 버그로 간주하고 동작 차이를 드러내는 테스트를 생성하는 'dodgy diff' 워크플로를 병행한다. 오탐 걸러내기는 규칙 기반에 더해 여러 최신 LLM의 판정을 합치는 'LLM-as-Judge' 앙상블을 쓰고, 사람 검토는 유지하되 약한 적발로 엔지니어가 불려 나가는 빈도를 줄이는 방향으로 설계했다. 시스템은 남는 연산 자원으로 야간에 돌며 전날 제출된 diff를 대상으로 한다. 논문 'Just-in-Time Catching Test Generation at Meta'에 상세 내용이 있다.",
+        "lang": "en",
+        "published_at": "2026-10-30T01:00:12+09:00",
+        "collected_at": "2026-11-02T10:27:46+09:00",
+        "metrics": null
+      },
+      {
+        "id": "efe72c6018e6d6bd8f41010af8ee654fb3ce4d8e",
+        "title": "Cloudflare DDoS Threat Report 2026 Q3: More swarms, fewer giants",
+        "url": "https://blog.cloudflare.com/ddos-threat-report-2026-q3",
+        "source": "cloudflare",
+        "category": "eng_blogs",
+        "summary_ko": "Cloudflare의 2026년 3분기 DDoS 위협 보고서. 분기 중 시간당 8,200건이 넘는 DDoS 공격을 차단했으며, 공격 양상이 거대한 단발 공격에서 짧고 잦은 타격으로 옮겨갔다는 것이 핵심 관측이다(제목의 '떼는 많아지고 거인은 줄었다'). CLDAP를 악용한 증폭 공격 벡터가 붕괴하듯 줄어든 점과 최근 봇넷 단속(takedown)이 끼친 영향도 함께 다룬다. ※DDoS: 다수의 장비로 트래픽을 몰아 서비스를 마비시키는 공격. ※CLDAP 증폭: 공개된 디렉터리 서버에 작은 질의를 보내 큰 응답을 피해자에게 쏟아붓는 기법. ※수집된 본문이 도입부까지만 확보되어 세부 통계는 원문 참조.",
+        "lang": "en",
+        "published_at": "2026-10-29T21:55:00+09:00",
+        "collected_at": "2026-11-02T10:27:46+09:00",
+        "metrics": null
+      }
+    ]
+  },
+  "hot_topics": [
+    {
+      "topic": "HackerTube: YouTube built from videos recommended by HN",
+      "trend_score": 1.0,
+      "src_count": 1,
+      "hn": {
+        "points": 2280,
+        "comments": 538
+      },
+      "items": [
+        {
+          "id": "a7e11bfba6b108f7c1476180c9300e668f472022",
+          "title": "HackerTube: YouTube built from videos recommended by HN",
+          "url": "https://karpathy.bearblog.dev/hacker-tube",
+          "source": "hackernews",
+          "category": "hot_topics",
+          "summary_ko": "안드레이 카파시가 금요일 밤 유튜브 추천이 과장된 썸네일과 저질 콘텐츠로 가득하다는 데 질려 토요일 하루 만에 대안 사이트 hackertube.org를 만든 과정. Claude Opus 5.5에게 '해커뉴스에서 추천된 영상들로 유튜브 클론을 만들자'고 지시했고, 모델이 HN 댓글을 전부 내려받아 걸러내고 Workflow 기능으로 Sonnet을 돌려 스팸을 제거한 뒤 영상을 추천하는 댓글 4만 개로 좁혔다. 결과물은 2007~2026년 사이 여러 사람이 추천한 유튜브 영상 6,454개를 150개 주제로 묶은 사이트로, 계정 없이 브라우저 로컬 세션에 상태를 저장하는 자체 추천과 키보드 단축키, 데이터 내보내기를 제공한다. 작성자는 자신이 한 '수작업'은 구글 클라우드에서 API 키 발급, VPS 준비, 도메인 구매 세 가지뿐이었고 코드를 읽거나 쓰거나 터미널 명령을 치는 전통적 엔지니어링은 더 이상 하지 않는다고 덧붙였다.",
+          "lang": "en",
+          "published_at": "2026-11-01T04:56:53+09:00",
+          "collected_at": "2026-11-02T10:27:46+09:00",
+          "metrics": {
+            "points": 2280,
+            "comments": 538
+          }
+        }
+      ]
+    },
+    {
+      "topic": "Show HN: HackerBooks – HackerTube, but for books mentioned on HN",
+      "trend_score": 0.8642,
+      "src_count": 1,
+      "hn": {
+        "points": 905,
+        "comments": 177
+      },
+      "items": [
+        {
+          "id": "664224e893fca135b62df0d42d5a81eab04f788c",
+          "title": "Show HN: HackerBooks – HackerTube, but for books mentioned on HN",
+          "url": "https://hackerbooks.org",
+          "source": "hackernews",
+          "category": "hot_topics",
+          "summary_ko": "위 HackerTube를 책 버전으로 옮긴 사이트 HackerBooks. 2007~2026년 해커뉴스 댓글에서 언급된 책 수천 권을 모아, 몇 명이 각각 언급했는지(같은 사람의 반복이 아니라 서로 다른 사람 수)를 기준으로 순위를 매긴다. 전체 기간 상위, 최다 추천, 떠오르는 책, 개인화된 For You, 주제별 보기 같은 화면과 키보드 단축키를 제공한다. 데이터는 open-index/hacker-news의 HN 댓글과 Open Library의 책 메타데이터를 쓰고, 구매 링크는 제휴 링크임을 밝히고 있다. Y Combinator나 해커뉴스와는 무관한 개인 프로젝트다.",
+          "lang": "en",
+          "published_at": "2026-11-02T00:58:28+09:00",
+          "collected_at": "2026-11-02T10:27:46+09:00",
+          "metrics": {
+            "points": 905,
+            "comments": 177
+          }
+        }
+      ]
+    },
+    {
+      "topic": "An Italian farmer found some unknown seeds in his attic and planted them",
+      "trend_score": 0.8546,
+      "src_count": 1,
+      "hn": {
+        "points": 769,
+        "comments": 199
+      },
+      "items": [
+        {
+          "id": "2eca43195b5e142f659654c754a3d4af8a2333b8",
+          "title": "An Italian farmer found some unknown seeds in his attic and planted them",
+          "url": "https://smithsonianmag.com/science-nature/italian-farmer-found-unknown-seeds-attic-with-nothing-lose-planted-them-result-biblical-180989644",
+          "source": "hackernews",
+          "category": "hot_topics",
+          "summary_ko": "1990년대 초 이탈리아 파르마의 농부 클라우디오 그로시가 다락을 치우다 정체 모를 씨앗 자루를 발견한 이야기. 1915년경 농장을 시작한 증조부가 남긴 것으로 추정되는 씨앗은 바싹 말라 갈라져 있어 싹이 날 리 없어 보였고, 그는 거름 더미에 쏟아붓고는 잊었다. 그런데 몇 종류의 밀이 싹을 틔웠고 그중 하나는 상업용 밀의 두 배인 약 6피트(약 1.8m) 높이로 자랐다. 가장 놀라운 건 이삭으로, 보통 밀은 이삭이 하나인데 이 밀은 긴 이삭 하나를 가운데 두고 짧은 이삭 여섯 개가 둘러싼 형태로 항상 일곱 개가 달렸다. 이 고대 품종이 현대 농업의 몇 가지 문제에 대한 답이 되었다는 것이 기사의 요지다.",
+          "lang": "en",
+          "published_at": "2026-11-01T07:41:06+09:00",
+          "collected_at": "2026-11-02T10:27:46+09:00",
+          "metrics": {
+            "points": 769,
+            "comments": 199
+          }
+        }
+      ]
+    },
+    {
+      "topic": "Patrick Stewart taught us what good men do with power",
+      "trend_score": 0.7984,
+      "src_count": 1,
+      "hn": {
+        "points": 365,
+        "comments": 260
+      },
+      "items": [
+        {
+          "id": "09b9e5a3654ce20e8c9be048c4a0f4346a4d921a",
+          "title": "Patrick Stewart taught us what good men do with power",
+          "url": "https://vox.com/politics/508526/patrick-stewart-jean-luc-picard-star-trek-liberalism",
+          "source": "hackernews",
+          "category": "hot_topics",
+          "summary_ko": "10월 말 세상을 떠난 패트릭 스튜어트와 그가 연기한 장뤽 피카드 함장을 정치 평론으로 풀어낸 Vox 칼럼. 1987년 스튜어트가 처음 엔터프라이즈호 함교에 섰을 때는 베를린 장벽이 아직 서 있었고 소련은 '스타트렉: 넥스트 제너레이션' 4시즌에 가서야 붕괴했는데, 이 시리즈는 냉전이 끝나가던 시점에 이미 탈냉전 세계를 그려낸 미국 패권기의 전형적 작품이었다고 평한다. 스타트렉의 무대인 연방(100개 이상 행성의 민주적 연합)과 그 군사·외교 조직 스타플릿을 설명하며, 오리지널 시리즈의 커크 시대 연방이 냉전기 미국의 자리에 서 있었던 것과 대비시킨다. 필자(대법원·헌법 담당 기자 Ian Millhiser)의 논지는 위대한 지도자와 국가에는 피카드 같은 역할 모델, 즉 권력을 쥔 좋은 사람이 그 권력으로 무엇을 하는지 보여주는 본보기가 필요하다는 것이다.",
+          "lang": "en",
+          "published_at": "2026-11-02T02:28:16+09:00",
+          "collected_at": "2026-11-02T10:27:46+09:00",
+          "metrics": {
+            "points": 365,
+            "comments": 260
+          }
+        }
+      ]
+    },
+    {
+      "topic": "Lenovo's 'encrypted' fingerprint USB is just an unencrypted SD card in a case",
+      "trend_score": 0.7769,
+      "src_count": 1,
+      "hn": {
+        "points": 390,
+        "comments": 142
+      },
+      "items": [
+        {
+          "id": "a2df9ff92e74a7b0c25c91768005cfdee478a2d9",
+          "title": "Lenovo's 'encrypted' fingerprint USB is just an unencrypted SD card in a case",
+          "url": "https://reddit.com/r/technology/comments/1xl2pr3/lenovos_encrypted_fingerprint_usb_drive_is_just",
+          "source": "hackernews",
+          "category": "hot_topics",
+          "summary_ko": "레노버가 '암호화' 지문인식 USB 드라이브로 판매한 제품이 실제로는 케이스 안에 암호화되지 않은 SD 카드를 넣어둔 것에 불과하다는 지적이 r/technology에서 화제가 됐다. 사실이라면 지문 인증은 기기 접근만 막을 뿐 저장 매체 자체를 꺼내면 데이터를 그대로 읽을 수 있다는 뜻이 된다. ※본문 미확보 — 제목 기반. 수집 과정에서 게시물 본문과 요약이 모두 비어 있어 근거 세부는 원문 링크를 확인해야 한다.",
+          "lang": "en",
+          "published_at": "2026-11-01T23:34:43+09:00",
+          "collected_at": "2026-11-02T10:27:46+09:00",
+          "metrics": {
+            "points": 390,
+            "comments": 142
+          }
+        }
+      ]
+    },
+    {
+      "topic": "The AI cost of JavaScript frameworks",
+      "trend_score": 0.7723,
+      "src_count": 1,
+      "hn": {
+        "points": 293,
+        "comments": 228
+      },
+      "items": [
+        {
+          "id": "761e5e0baaa44518e6ec8e34ee31abebde9850a3",
+          "title": "The AI cost of JavaScript frameworks",
+          "url": "https://nolanlawson.com/2026/10/28/the-ai-cost-of-javascript-frameworks",
+          "source": "hackernews",
+          "category": "hot_topics",
+          "summary_ko": "프런트엔드 개발 논의가 근거 없는 '분위기'로 흘러간다는 문제의식에서 출발한 Nolan Lawson의 벤치마크 글. 과거에는 React의 JSX를 타이핑하는 느낌이 좋아서 '가상 DOM은 빠르다' 같은 사후 합리화가 붙었다면, 개발자가 더 이상 손으로 코드를 치지 않는 에이전트 시대에는 'X 프레임워크가 에이전트에 더 낫다'는 주장이 똑같이 근거 없이 돌아다닌다고 지적한다(필자의 반문: \"에이전트한테 물어본 사람은 있나?\"). 그래서 직접 벤치마크를 설계했는데, PokéAPI로 작지만 자명하지 않은 포켓몬 앱을 정의하고 Next.js·Nuxt·SvelteKit 등 특정 프레임워크로 에이전트에게 만들게 한 뒤, 결과물을 명세 준수 테스트 스위트로 검증하는 방식이다. ※수집된 본문이 방법론 설명까지만 확보되어 최종 결과 수치는 원문 참조.",
+          "lang": "en",
+          "published_at": "2026-11-01T15:06:19+09:00",
+          "collected_at": "2026-11-02T10:27:46+09:00",
+          "metrics": {
+            "points": 293,
+            "comments": 228
+          }
+        }
+      ]
+    },
+    {
+      "topic": "Mathematics has changed. Let's act like it",
+      "trend_score": 0.7474,
+      "src_count": 1,
+      "hn": {
+        "points": 218,
+        "comments": 239
+      },
+      "items": [
+        {
+          "id": "280630936cfd1bf795435dd42e70dbe4ff491483",
+          "title": "Mathematics has changed. Let's act like it",
+          "url": "https://terrytao.wordpress.com/2026/11/01/mathematics-has-changed-lets-act-like-it",
+          "source": "hackernews",
+          "category": "hot_topics",
+          "summary_ko": "테렌스 타오의 블로그에 실린 프랭크 칼레가리의 기고문으로, OpenAI가 10월 6일 700편이 넘는 연구 논문을 한꺼번에 공개한 사건을 수학사의 분수령으로 규정하며 수학계가 어떻게 대응해야 하는지를 논한다. AI가 여러 수학 분야에서 획기적 기여를 할 수 있다는 건 이제 부정할 수 없지만, 일부 수학자들이 불행해하는 이유로 AI 기업들이 수학의 관행을 무시하는 태도를 든다 — 그 논문들은 뛰어난 아이디어가 있음에도 서술이 형편없고 인용·기여 표기에 대한 공동체의 기대를 어기며 일부는 아예 틀렸다는 것이다. 필자는 1조 달러짜리 기업의 행동보다 우리가 통제할 수 있는 영역, 즉 수학자를 채용하고 논문을 출판하고 학생을 가르치는 방식에 노력을 쏟는 편이 낫다고 주장한다. 또 랭글랜즈 프로그램의 모든 문제가 풀렸다 한들 '정수론이 끝났다'고 보는 건 주기율표를 만들었으니 화학이 끝났다는 말만큼 순진하다며, 중심 문제란 이해의 경계일 뿐 그걸 넘는 것은 끝이 아니라 새 영역의 시작임을 수학자들이 더 잘 설명해야 한다고 말한다.",
+          "lang": "en",
+          "published_at": "2026-11-02T03:28:42+09:00",
+          "collected_at": "2026-11-02T10:27:46+09:00",
+          "metrics": {
+            "points": 218,
+            "comments": 239
+          }
+        }
+      ]
+    },
+    {
+      "topic": "Ask HN: Which TV do you recommend for privacy?",
+      "trend_score": 0.7003,
+      "src_count": 1,
+      "hn": {
+        "points": 131,
+        "comments": 236
+      },
+      "items": [
+        {
+          "id": "242d15603b74aef5ab15a2774ee7ed81d6c57d8d",
+          "title": "Ask HN: Which TV do you recommend for privacy?",
+          "url": "https://news.ycombinator.com/item?id=50328896",
+          "source": "hackernews",
+          "category": "hot_topics",
+          "summary_ko": "프라이버시를 존중하는 TV를 추천해달라는 Ask HN 글(131점, 댓글 236개). 질문자는 60~80인치 4K 60Hz 이상을 원하고 비용은 더 낼 의향이 있으며, TV는 Apple TV의 디스플레이 역할만 했으면 한다고 밝혔다. 가장 추천이 많은 답변은 55인치 이상에서 '덤 TV'(스마트 기능 없는 순수 디스플레이)를 구할 수 없다는 결론에 도달한 사례로, 구글 TV 기반 TCL을 사서 이더넷·와이파이에 한 번도 연결하지 않은 채 USB로 노트북에 물려 adb로 거의 모든 앱을 삭제했다고 한다. 어떤 앱을 지워도 되는지 알아내느라 안드로이드가 망가져 몇 차례 공장 초기화를 했고 총 5~6시간이 걸렸으며, 온라인 시청이 필요하면 FreeBSD가 도는 미니 PC를 HDMI로 연결하고, 끝내 케이스를 열어 와이파이 안테나까지 떼어냈다고 덧붙였다. 다른 댓글에서는 Kogan TV처럼 첫 부팅 시 '입력 전용 화면'과 구글 TV OS 중 고르게 해주는 제품도 언급됐다. ※adb: 안드로이드 기기를 PC에서 제어하는 개발자 도구.",
+          "lang": "en",
+          "published_at": "2026-11-02T04:35:27+09:00",
+          "collected_at": "2026-11-02T10:27:46+09:00",
+          "metrics": {
+            "points": 131,
+            "comments": 236
+          }
+        }
+      ]
+    },
+    {
+      "topic": "AI delivers 'zero financial payoff' to most companies, Apollo economist says",
+      "trend_score": 0.6824,
+      "src_count": 1,
+      "hn": {
+        "points": 148,
+        "comments": 125
+      },
+      "items": [
+        {
+          "id": "b23877b88e691b4d2863ccf743aa1c192e2503c7",
+          "title": "AI delivers 'zero financial payoff' to most companies, Apollo economist says",
+          "url": "https://techcrunch.com/2026/10/25/ai-delivers-zero-financial-payoff-to-most-companies-according-to-apollo-economist",
+          "source": "hackernews",
+          "category": "hot_topics",
+          "summary_ko": "사모펀드 아폴로 글로벌 매니지먼트의 수석 이코노미스트 토르스텐 슬록이 낸 노트를 다룬 기사. 그는 S&P 500에서 알파벳·아마존·애플·메타·마이크로소프트·엔비디아·테슬라를 뺀 나머지를 'S&P 493'이라 부르며 분석했는데, 영업이익률과 직원 1인당 매출이 모두 제자리여서 AI가 생산성을 높이고 있다는 증거가 없다고 진단했다. 슬록은 \"막대한 투자와 광범위한 과열에도 불구하고 기술 업계 밖 미국 기업들에게 AI는 재무적 성과를 전혀 내지 못했다\"고 말했다. 비기술 기업이 단지 뒤처진 것뿐이냐는 질문에는 회의적이었는데, \"AI는 훌륭한 계산기일지 몰라도 비즈니스에서 지능은 대부분 판단력\"이며 AI는 책임, 신뢰, 문화, 암묵적 규칙, 윤리를 이해하지 못한다는 이유를 들었다. ※S&P 493: 시가총액 상위 빅테크 7곳을 제외한 나머지 기업군을 가리키는 표현.",
+          "lang": "en",
+          "published_at": "2026-11-02T07:10:45+09:00",
+          "collected_at": "2026-11-02T10:27:46+09:00",
+          "metrics": {
+            "points": 148,
+            "comments": 125
+          }
+        }
+      ]
+    },
+    {
+      "topic": "Landline phones will switch off across Britland in 100 days, no extensions",
+      "trend_score": 0.6648,
+      "src_count": 1,
+      "hn": {
+        "points": 132,
+        "comments": 107
+      },
+      "items": [
+        {
+          "id": "a34ac9dda36ff354b7608f1e97f0cee5a6944c81",
+          "title": "Landline phones will switch off across Britland in 100 days, no extensions",
+          "url": "https://theregister.com/networks/2026/11/01/landline-phones-will-switch-off-across-britland-in-100-days-no-extensions-openreach/5306673",
+          "source": "hackernews",
+          "category": "hot_topics",
+          "summary_ko": "영국 BT 그룹의 인프라 자회사 Openreach가 레거시 공중전화망(PSTN) 종료일인 2027년 1월 31일을 연기하지 않겠다고 못박았다. 이번 주 자사 망을 쓰는 통신사업자들에게 보낸 서한으로 다시 한번 경고한 것으로, 기사 작성 시점 기준 100일이 남았다. 즉 기존 아날로그 유선전화 서비스는 그 날짜에 끊기고 인터넷 기반(VoIP) 전화로 넘어가야 한다. ※PSTN: 구리선 기반의 전통적인 공중 교환 전화망. ※수집된 본문이 도입부까지만 확보되어 사업자별 대응 세부는 원문 참조.",
+          "lang": "en",
+          "published_at": "2026-11-02T00:33:49+09:00",
+          "collected_at": "2026-11-02T10:27:46+09:00",
+          "metrics": {
+            "points": 132,
+            "comments": 107
+          }
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "source": "github_trending",
+      "ok": true,
+      "item_count": 14,
+      "error_type": null
+    },
+    {
+      "source": "anthropic",
+      "ok": true,
+      "item_count": 286,
+      "error_type": null
+    },
+    {
+      "source": "openai",
+      "ok": false,
+      "item_count": 0,
+      "error_type": "HTTPError"
+    },
+    {
+      "source": "deepmind",
+      "ok": true,
+      "item_count": 100,
+      "error_type": null
+    },
+    {
+      "source": "meta_ai",
+      "ok": true,
+      "item_count": 88,
+      "error_type": null
+    },
+    {
+      "source": "mistral",
+      "ok": true,
+      "item_count": 93,
+      "error_type": null
+    },
+    {
+      "source": "xai",
+      "ok": true,
+      "item_count": 85,
+      "error_type": null
+    },
+    {
+      "source": "openai_codex",
+      "ok": true,
+      "item_count": 193,
+      "error_type": null
+    },
+    {
+      "source": "cloudflare",
+      "ok": true,
+      "item_count": 20,
+      "error_type": null
+    },
+    {
+      "source": "github_blog",
+      "ok": true,
+      "item_count": 10,
+      "error_type": null
+    },
+    {
+      "source": "aws",
+      "ok": true,
+      "item_count": 20,
+      "error_type": null
+    },
+    {
+      "source": "stripe",
+      "ok": true,
+      "item_count": 10,
+      "error_type": null
+    },
+    {
+      "source": "meta_eng",
+      "ok": true,
+      "item_count": 9,
+      "error_type": null
+    },
+    {
+      "source": "reddit_localllama",
+      "ok": true,
+      "item_count": 25,
+      "error_type": null
+    },
+    {
+      "source": "hf_blog",
+      "ok": true,
+      "item_count": 894,
+      "error_type": null
+    },
+    {
+      "source": "hackernews",
+      "ok": true,
+      "item_count": 20,
+      "error_type": null
+    }
+  ],
+  "summaries_injected": true
+}
