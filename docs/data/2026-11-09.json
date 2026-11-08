@@ -1,0 +1,724 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-11-09T08:38:30+09:00",
+  "date": "2026-11-09",
+  "categories": {
+    "ai_labs": [
+      {
+        "id": "2d0a64ac846ff02c385a454f53bdb6c357e7f381",
+        "title": "NVIDIA Releases 6 Million Multi-Lingual Reasoning Dataset",
+        "url": "https://huggingface.co/blog/nvidia/multilingual-reasoning-v1",
+        "source": "hf_blog",
+        "category": "ai_labs",
+        "summary_ko": "NVIDIA가 600만 건 규모의 다국어 추론(reasoning) 데이터셋을 허용적 라이선스로 공개했다. 기존 Nemotron 사후학습 데이터셋을 프랑스어·스페인어·독일어·이탈리아어·일본어 5개 언어로 번역한 것이다. 함께 공개된 Nemotron Nano 2 9B(90억 파라미터)는 Transformer와 Mamba를 섞은 하이브리드 구조로 동급 모델 대비 최대 6배 높은 토큰 생성 속도를 내고, '사고 예산(thinking budget)'을 조절해 추론 비용을 최대 60%까지 줄일 수 있다. ※Mamba: 어텐션 대신 상태공간 모델을 쓰는 아키텍처로, 긴 입력에서 메모리·속도가 유리하다.",
+        "lang": "en",
+        "published_at": "2025-08-21T07:13:18+09:00",
+        "collected_at": "2026-11-09T07:53:09+09:00",
+        "metrics": null
+      },
+      {
+        "id": "f792df6c93544c346b3ce77151f1dbec508376d1",
+        "title": "Generate Images with Claude and Hugging Face",
+        "url": "https://huggingface.co/blog/claude-and-mcp",
+        "source": "hf_blog",
+        "category": "ai_labs",
+        "summary_ko": "Claude를 Hugging Face의 MCP 서버에 연결해 Spaces에 올라온 최신 이미지 생성 모델을 그대로 쓰는 방법을 정리한 글이다. 장점은 Claude가 프롬프트 작성을 도와주고, 생성된 이미지를 직접 '보고' 수정 방향을 제안하며, 모델을 쉽게 갈아끼울 수 있다는 점이다. 자연스러운 사진류는 FLUX.1 Krea [dev], 글자가 들어간 이미지는 Qwen Image를 추천한다. 2025년 10월 Anthropic의 커넥터 정책 변경 이후에는 '커스텀 커넥터 추가'로 https://huggingface.co/mcp?login 을 직접 등록해야 한다. ※MCP: AI가 외부 도구·데이터에 접속하기 위한 표준 규약.",
+        "lang": "en",
+        "published_at": "2025-08-19T09:00:00+09:00",
+        "collected_at": "2026-11-09T07:53:09+09:00",
+        "metrics": null
+      },
+      {
+        "id": "c69dbd18bf0e639d6dd773de969060c799505eb8",
+        "title": "From Zero to GPU: A Guide to Building and Scaling Production-Ready CUDA Kernels",
+        "url": "https://huggingface.co/blog/kernel-builder",
+        "source": "hf_blog",
+        "category": "ai_labs",
+        "summary_ko": "CUDA 커널을 처음부터 만들어 프로덕션까지 배포하는 과정을 단계별로 안내하는 Hugging Face 가이드다. build.toml 매니페스트 작성, flake.nix로 재현 가능한 빌드 환경 고정, CUDA 커널 구현, PyTorch 네이티브 연산자로 등록, 빌드 후 Hub에 공유, 커스텀 연산 테스트까지 8단계로 이어진다. 후반부는 커널 버전 관리, 고정 버전 커널 사전 다운로드, 레거시 Python wheel 생성 같은 실제 운영에서 부딪히는 문제를 다룬다. ※CUDA 커널: GPU에서 직접 도는 연산 코드.",
+        "lang": "en",
+        "published_at": "2025-08-18T09:00:00+09:00",
+        "collected_at": "2026-11-09T07:53:09+09:00",
+        "metrics": null
+      },
+      {
+        "id": "c27ffc12655504a94dbbe091e1d0507258bab0a9",
+        "title": "MCP for Research: How to Connect AI to Research Tools",
+        "url": "https://huggingface.co/blog/mcp-for-research",
+        "source": "hf_blog",
+        "category": "ai_labs",
+        "summary_ko": "논문 찾기·코드 찾기·관련 모델 확인처럼 플랫폼을 계속 오가야 하는 연구 작업을 MCP로 자동화하는 방법을 설명한다. 저자는 연구 탐색을 세 단계 추상화로 정리하는데, (1) arXiv·GitHub·Hugging Face를 손으로 오가는 수작업, (2) 파이썬 스크립트로 크롤링·대조를 자동화하는 단계, (3) MCP로 AI가 자연어 요청만으로 이 도구들을 직접 호출하는 단계다. 체계적 문헌 조사처럼 여러 연구 줄기를 동시에 추적할 때 수작업 방식이 특히 비효율적이라는 점을 출발점으로 삼는다.",
+        "lang": "en",
+        "published_at": "2025-08-18T09:00:00+09:00",
+        "collected_at": "2026-11-09T07:53:09+09:00",
+        "metrics": null
+      },
+      {
+        "id": "ea8e0b180ce620e802c1ac3c0085059bb1508f3c",
+        "title": "Kimina-Prover-RL",
+        "url": "https://huggingface.co/blog/project-numina/kimina-prover-rl",
+        "source": "hf_blog",
+        "category": "ai_labs",
+        "summary_ko": "Project Numina가 Lean 4 형식 정리증명용 오픈소스 학습 파이프라인 kimina-prover-rl을 공개했다. DeepSeek-R1에서 영감을 받은 '먼저 추론하고 그다음 생성'하는 구조로, 기존 Kimina Prover 시스템의 핵심만 남기고 단순화해 오픈소스 Verl 프레임워크와 완전히 호환되게 만들었다. 함께 공개된 Kimina-Prover-RL-1.7B는 MiniF2F 벤치마크에서 Pass@32 76.63%를 기록해 같은 크기대 오픈소스 모델 중 최고 성적을 냈다. 포맷 보상과 오류 수정 단계가 파이프라인에 포함돼 있다. ※Lean 4: 수학 증명을 기계가 검증할 수 있게 쓰는 언어.",
+        "lang": "en",
+        "published_at": "2025-08-14T21:13:01+09:00",
+        "collected_at": "2026-11-09T07:53:09+09:00",
+        "metrics": null
+      },
+      {
+        "id": "26e569ef8845f4d73bd83de61724811a0f2b4da8",
+        "title": "Arm & ExecuTorch 0.7: Bringing Generative AI to the masses",
+        "url": "https://huggingface.co/blog/Arm/executorch-0-dot-7",
+        "source": "hf_blog",
+        "category": "ai_labs",
+        "summary_ko": "Arm이 자사 AI 가속 라이브러리 KleidiAI를 ExecuTorch 0.7 베타부터 기본 활성화한다고 밝혔다. XNNPack, MediaPipe, MNN, ONNX Runtime, llama.cpp 같은 주요 엣지 AI 프레임워크에 이미 들어가 있어 개발자가 코드를 고치지 않아도 모델 시작 속도·지연시간·메모리 사용량이 개선된다. 핵심은 2015년 Armv8.2부터 들어간 SDOT(8비트 정수 내적) 명령어라서, 최신 플래그십뿐 아니라 3~5년 된 구형 폰이나 라즈베리파이 5에서도 LLM을 돌릴 수 있다는 점이다.",
+        "lang": "en",
+        "published_at": "2025-08-13T23:55:10+09:00",
+        "collected_at": "2026-11-09T07:53:09+09:00",
+        "metrics": null
+      },
+      {
+        "id": "400793914d11a12ab32e1f3177c3cc3d5ba67366",
+        "title": "Neural Super Sampling is here!",
+        "url": "https://huggingface.co/blog/Arm/neural-super-sampling",
+        "source": "hf_blog",
+        "category": "ai_labs",
+        "summary_ko": "Arm이 모바일 GPU의 신경망 가속기(NX)에서 돌도록 최적화한 실시간 업스케일링 모델 NSS(Neural Super Sampling)를 공개했다. 저해상도 프레임들을 모아 고해상도 프레임을 재구성하는 방식으로, 시연용 'Enchanted Castle' 데모에서는 GPU 부하를 50% 줄이면서 540p를 1080p로 4ms 만에 올렸다. 모바일 게임과 XR처럼 전력이 빠듯한 환경을 겨냥했고, 모델 학습·검증에 쓸 Neural Graphics Dataset(참조 이미지와 모션·깊이 데이터)도 함께 내놨다. 다만 실제 지연시간은 GPU 구성·해상도에 따라 달라진다고 단서를 달았다.",
+        "lang": "en",
+        "published_at": "2025-08-12T23:52:08+09:00",
+        "collected_at": "2026-11-09T07:53:09+09:00",
+        "metrics": null
+      },
+      {
+        "id": "ce818bac42ba6e437a3590d7917741eba6cd5616",
+        "title": "TextQuests: How Good are LLMs at Text-Based Video Games?",
+        "url": "https://huggingface.co/blog/textquests",
+        "source": "hf_blog",
+        "category": "ai_labs",
+        "summary_ko": "MMLU·GPQA 같은 지식 벤치마크가 사실상 포화된 상황에서, 에이전트의 자율 탐색 능력을 재려고 만든 새 벤치마크 TextQuests를 소개한다. Infocom의 고전 텍스트 어드벤처 게임 25종을 그대로 환경으로 쓰는데, 사람도 클리어에 30시간 넘게 걸리고 수백 번의 정확한 행동이 필요한 게임들이다. 계속 길어지는 행동 이력 위에서 다단계 계획을 세워야 하므로 '긴 맥락 추론' 능력이 핵심 측정 대상이 된다. Balrog, ARC-AGI나 Claude·Gemini의 포켓몬 플레이 시연과 같은 흐름에 있는 작업이다.",
+        "lang": "en",
+        "published_at": "2025-08-12T09:00:00+09:00",
+        "collected_at": "2026-11-09T07:53:09+09:00",
+        "metrics": null
+      },
+      {
+        "id": "45cb752037397f31a7c1b2bb85a6a9d10f2371a7",
+        "title": "🇵🇭 FilBench - Can LLMs Understand and Generate Filipino?",
+        "url": "https://huggingface.co/blog/filbench",
+        "source": "hf_blog",
+        "category": "ai_labs",
+        "summary_ko": "필리핀 언어(타갈로그어·필리핀어·세부아노어)에 대한 LLM 성능을 체계적으로 측정하는 평가 스위트 FilBench가 공개됐다. 필리핀은 ChatGPT 트래픽 기준 세계 4위(미국·인도·브라질 다음)일 만큼 사용량이 많은데도 성능 근거가 스크린샷 수준의 일화뿐이었다는 문제의식에서 출발했다. 20개 이상의 최신 LLM을 유창성·언어 능력·번역·문화 지식으로 평가한 결과, 지역 특화 LLM은 아직 GPT-4에 못 미치지만 데이터 수집은 유망한 방향이고, 필리핀어 번역은 여전히 어려우며, 비용 대비로는 오픈 LLM이 합리적인 선택이라는 결론을 냈다.",
+        "lang": "en",
+        "published_at": "2025-08-12T09:00:00+09:00",
+        "collected_at": "2026-11-09T07:53:09+09:00",
+        "metrics": null
+      },
+      {
+        "id": "cd4f1553c85a7b0d728d13e4873207e0a26e8f7a",
+        "title": "Introducing AI Sheets: a tool to work with datasets using open AI models!",
+        "url": "https://huggingface.co/blog/aisheets",
+        "source": "hf_blog",
+        "category": "ai_labs",
+        "summary_ko": "Hugging Face가 코드 없이 데이터셋을 만들고 가공하는 오픈소스 도구 AI Sheets를 내놨다. 스프레드시트처럼 생긴 화면에서 프롬프트를 적으면 새 열이 생기고, 셀을 직접 고치거나 승인해 모델에 원하는 결과를 가르치는 방식이다. Hub의 수천 개 오픈 모델을 Inference Providers로 쓰거나 로컬 모델을 붙일 수 있고 OpenAI의 gpt-oss도 지원한다. 모델 비교·바이브 테스트, 기존 데이터셋에 분류 라벨 붙이기, LLM-as-Judge 평가 등에 쓰며, 설치 없이 Spaces에서 바로 써보거나 로컬에 띄울 수 있다.",
+        "lang": "en",
+        "published_at": "2025-08-08T09:00:00+09:00",
+        "collected_at": "2026-11-09T07:53:09+09:00",
+        "metrics": null
+      }
+    ],
+    "community": [
+      {
+        "id": "317dd2a04e3e265b5f236338c0fa2cebc4386b52",
+        "title": "Nous Research Arete-27B GGUF quants",
+        "url": "https://reddit.com/r/LocalLLaMA/comments/1xrarta/nous_research_arete27b_gguf_quants",
+        "source": "reddit_localllama",
+        "category": "community",
+        "summary_ko": "Nous Research의 Arete-27B 모델을 GGUF 형식으로 양자화한 파일이 공개됐다는 r/LocalLLaMA 공유 글이다. ※GGUF: llama.cpp 계열에서 쓰는 모델 파일 포맷으로, 양자화해 개인 PC에서도 돌릴 수 있게 만든 것. ※본문 미확보 — 제목 기반.",
+        "lang": "en",
+        "published_at": "2026-11-09T07:17:10+09:00",
+        "collected_at": "2026-11-09T07:53:09+09:00",
+        "metrics": null
+      },
+      {
+        "id": "930ce7a21f4019c7fc0d6488994a6273f316abf3",
+        "title": "Really cool 3d video on how the microduck ai robot works",
+        "url": "https://reddit.com/r/LocalLLaMA/comments/1xrai3x/really_cool_3d_video_on_how_the_microduck_ai",
+        "source": "reddit_localllama",
+        "category": "community",
+        "summary_ko": "'microduck' AI 로봇의 작동 원리를 3D 애니메이션으로 설명한 유튜브 영상을 공유한 글이다. 글쓴이는 잘 알려지지 않은 채널이지만 오픈소스에 로컬 AI를 쓰는 로봇이라 볼 만하다고 소개하며, 실제로 가지고 있는 사람이 있는지 묻고 있다. ※본문 미확보 — 제목과 게시글 소개문 기반.",
+        "lang": "en",
+        "published_at": "2026-11-09T07:05:32+09:00",
+        "collected_at": "2026-11-09T07:53:09+09:00",
+        "metrics": null
+      },
+      {
+        "id": "c5f863e409daa2adcac72ff753a663c12d5fda5f",
+        "title": "Resurrecting 2013 E-Waste: Native CUDA Mamba-1 & PyTorch 2.7.1 on Windows (Kepler–Turing, SM 3.5–7.5)",
+        "url": "https://reddit.com/r/LocalLLaMA/comments/1xr97iz/resurrecting_2013_ewaste_native_cuda_mamba1",
+        "source": "reddit_localllama",
+        "category": "community",
+        "summary_ko": "서랍에 묵혀둔 구형 NVIDIA GPU에서 최신 LLM 학습 스택을 돌릴 수 있게 윈도우용으로 포팅한 프로젝트다. 2013년경 Kepler부터 Turing까지(sm_35~sm_75) 지원하며, PyTorch 2.7.1을 CUDA 11.8로 레거시 SASS를 살려 커스텀 빌드하고, causal-conv1d 1.7.0과 Mamba-1(mamba_ssm)을 순수 네이티브 CUDA 커널로 함께 제공한다. 최신 AI 스택이 구형 GPU용으로는 아예 컴파일되지 않는 문제를 정면으로 푼 사례다.",
+        "lang": "en",
+        "published_at": "2026-11-09T06:09:11+09:00",
+        "collected_at": "2026-11-09T07:53:09+09:00",
+        "metrics": null
+      },
+      {
+        "id": "6b88c6a382a5344b658476c52bb0d760bb686b21",
+        "title": "Intel Arc Pro B70 32GB ($1,299) vs NVIDIA RTX 5090 ($6,500+) on Qwen3.8-27B: about 1/2 speed gen (1/3 speed prefill) for 1/5 price, after best setup",
+        "url": "https://reddit.com/r/LocalLLaMA/comments/1xr78s5/intel_arc_pro_b70_32gb_1299_vs_nvidia_rtx_5090",
+        "source": "reddit_localllama",
+        "category": "community",
+        "summary_ko": "32GB VRAM을 가진 인텔 Arc Pro B70($1,299)과 RTX 5090($6,500+)을 Qwen3.8-27B로 직접 비교한 후기다. 기본 설정으로는 성능이 매우 나빴지만 몇 가지 설정을 손본 뒤 생성 속도는 5090의 약 1/2, 프리필(입력 처리) 속도는 약 1/3까지 올라왔다. 가격을 VRAM 용량으로 나누면 GB당 약 41달러 대 200달러 이상이라, 글쓴이는 1/5 가격에 절반 성능이면 괜찮은 거래라고 평가했다. 같은 32GB인 B65는 100달러 싼 $1,199지만 더 느리다고 덧붙였다.",
+        "lang": "en",
+        "published_at": "2026-11-09T04:46:49+09:00",
+        "collected_at": "2026-11-09T07:53:09+09:00",
+        "metrics": null
+      },
+      {
+        "id": "063e3273dcec8a1d6f2185d03099dc7fc7ab5d78",
+        "title": "Kimi-K3.1-Pro-Coder (2.8T) | 1.77 TB -> 775 GB (-56%) | 36.8 TPS (Batch) / 10.8 TPS on 1x Blackwell | 96.7% on both AIME 2025 and LiveCodeBench",
+        "url": "https://reddit.com/r/LocalLLaMA/comments/1xr777l/kimik31procoder_28t_177_tb_775_gb_56_368_tps",
+        "source": "reddit_localllama",
+        "category": "community",
+        "summary_ko": "2.8조 파라미터짜리 Kimi-K3.1-Pro-Coder를 1.77TB에서 775GB로 56% 줄인 실험적 양자화 결과다. 원본은 VRAM에 올리는 것만으로도 80GB GPU 약 22장이 필요한데, 93개 레이어 전체를 GPU 1장 + 시스템 RAM + 빠른 NVMe 조합으로 돌리는 것이 목표였다. Blackwell GPU 1장에서 배치 처리 시 36.8 TPS, 단일 처리 시 10.8 TPS가 나왔고, AIME 2025와 LiveCodeBench 모두 96.7%를 기록했다. 글쓴이 스스로 775GB 양자화가 모두에게 쓸모 있는 건 아니며 한계 실험에 가깝다고 전제했다. ※TPS: 초당 생성 토큰 수.",
+        "lang": "en",
+        "published_at": "2026-11-09T04:45:03+09:00",
+        "collected_at": "2026-11-09T07:53:09+09:00",
+        "metrics": null
+      },
+      {
+        "id": "eedd0d2c2cc75be8eed291d0902fba7457e6a789",
+        "title": "Next-Concept Modeling: Fast, Parallel Coarse-to-Fine Text Generation: This will completely change everything!",
+        "url": "https://reddit.com/r/LocalLLaMA/comments/1xr6krp/nextconcept_modeling_fast_parallel_coarsetofine",
+        "source": "reddit_localllama",
+        "category": "community",
+        "summary_ko": "토큰을 하나씩 순차 생성하는 대신 개념 단위로 거칠게 뼈대를 잡고 병렬로 세부를 채우는 'Next-Concept Modeling' 방식을 소개한 글이다. 메모리 대역폭 효율이 여러 배 좋아져 병목이 대역폭에서 연산으로 옮겨간다는 것이 핵심 주장이다. 글쓴이는 이 방식이면 32GB VRAM에서도 Opus 5.5급 지능을 돌릴 수 있을 거라고 전망했는데, 이는 검증된 수치가 아니라 작성자 개인의 추정이다.",
+        "lang": "en",
+        "published_at": "2026-11-09T04:19:39+09:00",
+        "collected_at": "2026-11-09T07:53:09+09:00",
+        "metrics": null
+      },
+      {
+        "id": "4ba860a1ac1b78f48e379e6804424fae00fe8398",
+        "title": "Anyone tried this yet?",
+        "url": "https://reddit.com/r/LocalLLaMA/comments/1xr4ue4/anyone_tried_this_yet",
+        "source": "reddit_localllama",
+        "category": "community",
+        "summary_ko": "Terminal-RSI 프로젝트가 내놓은 Qwen3.8-27B 기반 터미널 에이전트 모델 Terminal-RSI-27B를 써본 사람이 있는지 묻는 글이다. 저장소 분석, 코드 수정, 의존성 복구, 과학 워크플로 재현처럼 실제 실행 환경과 주고받으며 결과 상태를 검증해야 하는 다단계 작업을 겨냥한 모델이다. 학습 방식은 검증된 실행 기록을 스스로 다시 쓰는 RSR(Recursive Self-Rewrite)과 비평자를 물려받는 RPR(Recursive Policy-Refine)을 번갈아 돌려, 성공한 탐색을 재현 가능한 행동으로 굳히고 부분적 진전도 엄격히 검증하는 구조다.",
+        "lang": "en",
+        "published_at": "2026-11-09T03:09:03+09:00",
+        "collected_at": "2026-11-09T07:53:09+09:00",
+        "metrics": null
+      },
+      {
+        "id": "6936b39baa5a7b3a1169290b1ff5e789bc7aef82",
+        "title": "What are people finding local models actually useful for?",
+        "url": "https://reddit.com/r/LocalLLaMA/comments/1xr4iv0/what_are_people_finding_local_models_actually",
+        "source": "reddit_localllama",
+        "category": "community",
+        "summary_ko": "로컬 모델을 실제로 어디에 유용하게 쓰고 있는지, 어떤 모델을 돌리는지 함께 공유해 보자는 r/LocalLLaMA 토론 글이다. 많은 사람이 가능성을 느껴 로컬 모델에 발을 들이지만 프런티어 모델과 비교하면 구체적인 쓸모를 찾기 어렵다는 문제의식에서 출발했다. 글쓴이는 RTX 6000 Blackwell 4장에 Fraser Price의 BRRR 구현으로 DeepSeek v4.1 Flash 1017을 돌리고 있으며 동시 요청 1개 기준 약 550 TPS가 나온다고 밝혔다.",
+        "lang": "en",
+        "published_at": "2026-11-09T02:56:13+09:00",
+        "collected_at": "2026-11-09T07:53:09+09:00",
+        "metrics": null
+      },
+      {
+        "id": "d38ad62885b617061478582c9a9f6935b394e736",
+        "title": "GPT-5.5 dataset across my used 25 billion tokens!",
+        "url": "https://reddit.com/r/LocalLLaMA/comments/1xr3ymf/gpt55_dataset_across_my_used_25_billion_tokens",
+        "source": "reddit_localllama",
+        "category": "community",
+        "summary_ko": "글쓴이가 직접 사용한 250억 토큰 분량의 GPT-5.5 사용 기록을 데이터셋으로 공개한 글이다. 도구 호출(tool call)이 12,121건 포함돼 있고, 다른 사용자가 개인정보 제거 작업을 도왔다고 밝혔다. ※본문 미확보 — 제목과 짧은 게시글 기반.",
+        "lang": "en",
+        "published_at": "2026-11-09T02:32:48+09:00",
+        "collected_at": "2026-11-09T07:53:09+09:00",
+        "metrics": null
+      },
+      {
+        "id": "e6a0860551b36efbb419db8cade6474cb3d8e9f5",
+        "title": "A Java LLM implementation based on Karpathy's GPT with alpaca_es_chat.jsonl",
+        "url": "https://reddit.com/r/LocalLLaMA/comments/1xr3qok/a_java_llm_implementation_based_on_karpathys_gpt",
+        "source": "reddit_localllama",
+        "category": "community",
+        "summary_ko": "Karpathy의 GPT 구현을 바탕으로 100% 순수 자바로 작성한 언어 모델 jUltraLLM을 공유한 글이다. 학습은 Intel Xeon E5-2640 v4 2.20GHz CPU와 DDR4 ECC 96GB, RTX 5050 GPU(TornadoVM 라이브러리 사용) 환경에서 진행했다. 스페인어 질의응답을 위해 alpaca_es_chat.jsonl 코퍼스로 학습한 모델이 저장소에 함께 들어 있다.",
+        "lang": "en",
+        "published_at": "2026-11-09T02:23:46+09:00",
+        "collected_at": "2026-11-09T07:53:09+09:00",
+        "metrics": null
+      }
+    ],
+    "github_trending": [
+      {
+        "id": "1ceb56a3b3745da84e0d2f1542867de60325d934",
+        "title": "vercel-labs/agent-browser",
+        "url": "https://github.com/vercel-labs/agent-browser",
+        "source": "github_trending",
+        "category": "github_trending",
+        "summary_ko": "AI 에이전트가 셸에서 한 번에 한 명령씩 브라우저를 조작하게 해 주는 Rust 기반 CLI 도구다. snapshot 명령이 페이지를 접근성 트리 형태의 압축된 텍스트로 돌려주고 각 요소에 @e1 같은 참조 번호를 붙이면, 에이전트는 그 번호로 클릭·입력하고 다시 읽어 결과를 확인하는 식으로 진행한다. 브라우저가 명령 사이에도 계속 떠 있어 각 단계가 짧은 셸 호출 하나로 끝난다. npm으로 전역 설치하며 현재 별 47.5천 개를 받았다. ※접근성 트리: 화면 요소의 역할·이름을 구조화한 데이터로, 스크린샷보다 토큰이 훨씬 적게 든다.",
+        "lang": "en",
+        "published_at": null,
+        "collected_at": "2026-11-09T07:53:09+09:00",
+        "metrics": null
+      },
+      {
+        "id": "10ba719313a0c83566e4fb1db426c34c44e8815e",
+        "title": "anthropics/skills",
+        "url": "https://github.com/anthropics/skills",
+        "source": "github_trending",
+        "category": "github_trending",
+        "summary_ko": "Anthropic이 Claude용 Agent Skills 구현을 모아 공개한 저장소로, 별 19만 개를 받으며 트렌딩에 올랐다. 스킬은 Claude가 필요할 때 동적으로 불러 쓰는 지시문·스크립트·리소스 묶음 폴더로, 회사 브랜드 가이드에 맞춰 문서를 만들거나 조직 고유의 데이터 분석 절차를 따르게 하는 식으로 특정 작업을 반복 가능하게 가르친다. 저장소 자체는 Anthropic의 구현체이고, 규격 자체는 agentskills.io에 따로 정리돼 있다.",
+        "lang": "en",
+        "published_at": null,
+        "collected_at": "2026-11-09T07:53:09+09:00",
+        "metrics": null
+      },
+      {
+        "id": "0d415288aaf69d6e289ec27d7b231fc97e513b9a",
+        "title": "meta/astryx",
+        "url": "https://github.com/meta/astryx",
+        "source": "github_trending",
+        "category": "github_trending",
+        "summary_ko": "Meta가 사내에서 8년간 키워 온 디자인 시스템 Astryx를 오픈소스로 공개했다. 사내에서 1만 3천 개 이상의 앱에 쓰이며 회사에서 가장 널리 쓰이고 규모가 큰 디자인 시스템이었다고 소개한다. React 19 이상과 StyleX 기반이며, 사람뿐 아니라 함께 일하는 AI 에이전트가 다루기 좋도록(agent ready) 설계한 점을 내세운다. 현재 베타 단계이고 문서·Storybook·샌드박스를 함께 제공한다. 별 16.6천 개. ※StyleX: Meta가 만든 CSS-in-JS 스타일링 라이브러리.",
+        "lang": "en",
+        "published_at": null,
+        "collected_at": "2026-11-09T07:53:09+09:00",
+        "metrics": null
+      },
+      {
+        "id": "eb8e266816bcb9cd038720702f241a6a4e457c2a",
+        "title": "sherlock-project/sherlock",
+        "url": "https://github.com/sherlock-project/sherlock",
+        "source": "github_trending",
+        "category": "github_trending",
+        "summary_ko": "사용자명 하나로 400개 이상의 소셜 네트워크에서 해당 계정이 존재하는지 추적하는 OSINT 도구다. ※OSINT: 공개된 정보만으로 수행하는 정보 수집. pipx·pip·uv나 Docker, dnf로 설치할 수 있고 Debian 13 이상 등 커뮤니티 패키지도 있지만, 제3자가 관리하는 ParrotOS·Ubuntu 24.04 패키지는 현재 깨진 상태이니 다른 설치 방법을 쓰라고 경고한다. 별 10.3만 개.",
+        "lang": "en",
+        "published_at": null,
+        "collected_at": "2026-11-09T07:53:09+09:00",
+        "metrics": null
+      },
+      {
+        "id": "e9e37faea4d91eeffcc3942ec6f6e673facad82d",
+        "title": "astral-sh/ruff",
+        "url": "https://github.com/astral-sh/ruff",
+        "source": "github_trending",
+        "category": "github_trending",
+        "summary_ko": "Rust로 작성된 파이썬 린터 겸 포매터로, Flake8이나 Black 같은 기존 도구보다 10~100배 빠른 것을 내세운다. Flake8·isort·Black의 기능을 그대로 대체할 수 있고 900개가 넘는 내장 규칙, pyproject.toml 설정, 변경되지 않은 파일을 건너뛰는 캐싱, 사용하지 않는 import 자동 제거 같은 자동 수정 기능을 갖췄다. Python 3.15 호환을 명시하고 있으며 별 5.11만 개. ※린터: 코드에서 오류·스타일 위반을 찾아 주는 검사 도구.",
+        "lang": "en",
+        "published_at": null,
+        "collected_at": "2026-11-09T07:53:09+09:00",
+        "metrics": null
+      },
+      {
+        "id": "3558f6c1aff3ffd2ad5df4a9b8280629676096f8",
+        "title": "tailwindlabs/tailwindcss",
+        "url": "https://github.com/tailwindlabs/tailwindcss",
+        "source": "github_trending",
+        "category": "github_trending",
+        "summary_ko": "미리 정의된 작은 유틸리티 클래스를 조합해 UI를 빠르게 만드는 유틸리티 우선(utility-first) CSS 프레임워크다. 별도 CSS 파일을 쓰지 않고 HTML 클래스만으로 커스텀 디자인을 구성하는 방식으로, 현재 별 9.86만 개를 받으며 트렌딩에 올라 있다. 상세 문서는 tailwindcss.com에서 제공한다.",
+        "lang": "en",
+        "published_at": null,
+        "collected_at": "2026-11-09T07:53:09+09:00",
+        "metrics": null
+      },
+      {
+        "id": "1e0c242426815874b278f3352bbd8b59522d7f90",
+        "title": "mbillow/localthings",
+        "url": "https://github.com/mbillow/localthings",
+        "source": "github_trending",
+        "category": "github_trending",
+        "summary_ko": "클라우드 계정 없이 집 안 네트워크만으로 삼성 가전을 Home Assistant에 연결하는 통합 컴포넌트다. SmartThings 앱과 연동되는 세탁기·건조기·냉장고·에어컨·오븐 등을 지원하며, 푸시를 지원하는 기기는 상태 변화를 즉시 보내고 나머지는 30초마다 확인한다. 초기 설정 이후에는 인터넷 연결 없이도 동작한다는 점이 핵심이다. 별 1.2천 개. ※Home Assistant: 오픈소스 홈 자동화 플랫폼.",
+        "lang": "en",
+        "published_at": null,
+        "collected_at": "2026-11-09T07:53:09+09:00",
+        "metrics": null
+      },
+      {
+        "id": "71e1011ca0b2ecb908a2f3768512aa5f91f4a49e",
+        "title": "ranxianglei/billion-context",
+        "url": "https://github.com/ranxianglei/billion-context",
+        "source": "github_trending",
+        "category": "github_trending",
+        "summary_ko": "긴 세션에서 컨텍스트를 압축해 토큰 사용량을 줄여 주는 플러그인이다. 100K 정도의 작은 컨텍스트 창으로도 수십억 토큰 규모의 '한 달짜리 단일 세션'을 이어갈 수 있고 토큰은 5분의 1로 줄어든다고 주장한다. 건강한 세션이면 접두사 캐시 적중률(prefix-cache hit)이 95~97% 수준으로 유지되는지를 지표로 보여 준다. npm으로 설치하며 중국어·영어 문서를 함께 제공한다. ※접두사 캐시: 대화 앞부분을 재사용해 비용과 지연을 줄이는 캐싱 방식.",
+        "lang": "en",
+        "published_at": null,
+        "collected_at": "2026-11-09T07:53:09+09:00",
+        "metrics": null
+      },
+      {
+        "id": "b95f6aa29001e5a7c2d835487a1f161969aa5b29",
+        "title": "dsx-ai-factory/nvke",
+        "url": "https://github.com/dsx-ai-factory/nvke",
+        "source": "github_trending",
+        "category": "github_trending",
+        "summary_ko": "NVIDIA가 베어메탈 GPU 서버 위에서 관리형 쿠버네티스 서비스를 직접 운영할 수 있게 해 주는 NVKE(NVIDIA Kubernetes Engine)다. 플랫폼 팀이 관리 플레인을 설치하면 고객용 워크로드 클러스터를 찍어낼 수 있고, 각 클러스터는 자체 컨트롤 플레인·etcd·노드 풀을 갖는다. 고객은 평소처럼 쿠버네티스 API와 kubectl로 자기 클러스터를 쓴다. 현재 프리뷰 단계이며 별 828개. ※베어메탈: 가상화 없이 물리 서버를 그대로 쓰는 환경.",
+        "lang": "en",
+        "published_at": null,
+        "collected_at": "2026-11-09T07:53:09+09:00",
+        "metrics": null
+      }
+    ],
+    "codex": [],
+    "eng_blogs": []
+  },
+  "hot_topics": [
+    {
+      "topic": "Goodbye Claude, hello Pi",
+      "trend_score": 1.0,
+      "src_count": 1,
+      "hn": {
+        "points": 662,
+        "comments": 418
+      },
+      "items": [
+        {
+          "id": "e66f4eeac8f3ba07dca3bf37622af135d8cf21c7",
+          "title": "Goodbye Claude, hello Pi",
+          "url": "https://caleb.software/posts/claude-to-pi.html",
+          "source": "hackernews",
+          "category": "hot_topics",
+          "summary_ko": "Claude Pro에 Claude Code가 포함된 이후 1년 넘게 써 온 개발자가 주 코딩 도구를 Pi로 갈아탄 이유를 정리한 글이다. 결정적 한 방이 아니라 작은 불편이 쌓인 결과라고 밝히며, 대표적으로 CLAUDE.md와 AGENTS.md를 복사하거나 심링크로 맞춰야 했던 번거로움(Anthropic이 AGENTS.md 지원을 발표했지만 글쓴이에겐 이미 늦었다), VSCode 연동에서 한 번에 한 세션만 IDE에 붙을 수 있어 두 번째 탭에서는 텍스트 선택이 컨텍스트로 넘어가지 않는 문제(2025년 12월부터 보고됐지만 무관한 버그의 중복으로 닫힘), 그리고 공식 GUI 확장은 내장 슬래시 명령 절반이 동작하지 않고 커스텀 상태줄도 없으며 서브에이전트 출력이 메인 대화에 뒤섞여 읽기 어렵다는 점을 들었다.",
+          "lang": "en",
+          "published_at": "2026-11-08T12:11:48+09:00",
+          "collected_at": "2026-11-09T07:53:09+09:00",
+          "metrics": {
+            "points": 662,
+            "comments": 418
+          }
+        }
+      ]
+    },
+    {
+      "topic": "Claude Code's \"Don't Ask Again\" exposes passwords in 1,122 public GitHub files",
+      "trend_score": 0.9803,
+      "src_count": 1,
+      "hn": {
+        "points": 570,
+        "comments": 387
+      },
+      "items": [
+        {
+          "id": "5186d80b7eef562645f5a129edb9b36422b5932f",
+          "title": "Claude Code's \"Don't Ask Again\" exposes passwords in 1,122 public GitHub files",
+          "url": "https://apiiro.com/blog/coding-agents-leaking-secrets-github-dont-ask-again",
+          "source": "hackernews",
+          "category": "hot_topics",
+          "summary_ko": "보안 업체 Apiiro가 코딩 에이전트의 권한 승인 UI 때문에 비밀정보가 유출된다고 지적한 분석 글이다. Claude Code에서 한 번 '다시 묻지 않기(Don't Ask Again)'를 누르면 그 선택이 설정 파일에 기록되는데, 그 과정에서 비밀번호가 담긴 명령이 그대로 남아 공개 GitHub 저장소 1,122개 파일에서 발견됐다는 내용이다. ※본문 미확보(페이지 본문이 추출되지 않음) — 제목 기반.",
+          "lang": "en",
+          "published_at": "2026-11-08T05:45:32+09:00",
+          "collected_at": "2026-11-09T07:53:09+09:00",
+          "metrics": {
+            "points": 570,
+            "comments": 387
+          }
+        }
+      ]
+    },
+    {
+      "topic": "Goldman Sachs is pulling Claude Code from its bankers and traders",
+      "trend_score": 0.9551,
+      "src_count": 1,
+      "hn": {
+        "points": 502,
+        "comments": 309
+      },
+      "items": [
+        {
+          "id": "68ff5ed661ee40ec6fde63d4b8aaa2495eb22ec2",
+          "title": "Goldman Sachs is pulling Claude Code from its bankers and traders",
+          "url": "https://thestateofai.com/news/goldman-sachs-claude-code-traders-bankers",
+          "source": "hackernews",
+          "category": "hot_topics",
+          "summary_ko": "골드만삭스가 자사 뱅커와 트레이더에게 제공하던 Claude Code를 회수하고 있다는 보도다. ※본문 미확보 — 제목 기반.",
+          "lang": "en",
+          "published_at": "2026-11-09T03:16:07+09:00",
+          "collected_at": "2026-11-09T07:53:09+09:00",
+          "metrics": {
+            "points": 502,
+            "comments": 309
+          }
+        }
+      ]
+    },
+    {
+      "topic": "Nvidia Board of Directors Is Investigating Jensen Huang",
+      "trend_score": 0.882,
+      "src_count": 1,
+      "hn": {
+        "points": 292,
+        "comments": 226
+      },
+      "items": [
+        {
+          "id": "a24fdfddefa6b5e43959db83295bc5951bdac094",
+          "title": "Nvidia Board of Directors Is Investigating Jensen Huang",
+          "url": "https://nvidianews.nvidia.com/news/statement-from-nvidia-board-of-directors",
+          "source": "hackernews",
+          "category": "hot_topics",
+          "summary_ko": "NVIDIA 이사회가 2026년 11월 8일 창업자 겸 CEO 젠슨 황에 대한 독립 조사를 시작한다고 공식 발표했다. 황 CEO가 외국 정보기관의 공작 대상이 됐다는 보도가 나온 데 따른 조치로, 사외이사들로 구성된 위원회가 외부 독립 법률자문의 지원을 받아 조사를 감독한다. 이사회는 미국의 국가안보·경제안보가 최우선이라고 밝히면서도, 현재로서는 국가안보나 NVIDIA의 기밀이 유출됐다고 볼 근거는 없다고 선을 그었다. 황 CEO 본인도 조사에 전적으로 협조하겠다고 했으며, 이사회는 그의 리더십에 대한 신뢰를 재확인했다.",
+          "lang": "en",
+          "published_at": "2026-11-09T05:26:43+09:00",
+          "collected_at": "2026-11-09T07:53:09+09:00",
+          "metrics": {
+            "points": 292,
+            "comments": 226
+          }
+        }
+      ]
+    },
+    {
+      "topic": "Llama-modchip: 284B DeepSeek on 64GB RAM, no GPU",
+      "trend_score": 0.8649,
+      "src_count": 1,
+      "hn": {
+        "points": 328,
+        "comments": 129
+      },
+      "items": [
+        {
+          "id": "5e9d3fd0e59ccb776c0fc24529575136232b3097",
+          "title": "Llama-modchip: 284B DeepSeek on 64GB RAM, no GPU",
+          "url": "https://github.com/synchopate/llama-modchip",
+          "source": "hackernews",
+          "category": "hot_topics",
+          "summary_ko": "GPU 없이 64GB RAM만 있는 CPU에서 2,840억 파라미터 DeepSeek-V4-Flash를 돌리는 프로젝트다. 59GiB 미만 메모리로 256K 컨텍스트를 처리하면서 프리필 44.4 tok/s, 생성 9.1~14.7 tok/s를 기록했고, 30B급 MoE 모델은 25~111 tok/s가 나온다. SwiGLU-H2, 체스 엔진 Stockfish의 PVS 탐색을 차용한 L3 기법, 13ms 만에 Claude Code 세션을 복원하는 기능 등을 담았다. 별 467개. ※MoE: 입력마다 전체가 아닌 일부 전문가 네트워크만 활성화해 연산량을 줄이는 구조.",
+          "lang": "en",
+          "published_at": "2026-11-08T19:22:04+09:00",
+          "collected_at": "2026-11-09T07:53:09+09:00",
+          "metrics": {
+            "points": 328,
+            "comments": 129
+          }
+        }
+      ]
+    },
+    {
+      "topic": "Writing as a thinking tool",
+      "trend_score": 0.8071,
+      "src_count": 1,
+      "hn": {
+        "points": 249,
+        "comments": 74
+      },
+      "items": [
+        {
+          "id": "9b0e30367cd4b6a60c346e16dd0892fb88dfeddb",
+          "title": "Writing as a thinking tool",
+          "url": "https://muratbuffalo.blogspot.com/2026/11/writing-as-thinking-tool.html",
+          "source": "hackernews",
+          "category": "hot_topics",
+          "summary_ko": "분산 시스템 연구자 Murat이 글쓰기를 '저장'이 아니라 '사고의 도구'로 보게 된 과정을 쓴 글이다. 중학생 때 긴 글을 읽어도 아무것도 남지 않아 절박하게 노트를 시작했고, 80년대 말 터키에 막 들어온 토니 부잔의 마인드맵을 따라 거미줄 같은 노트를 쌓으면서 읽은 내용을 '어느 가지에 걸 것인가'를 정하는 방식으로 이해했다고 회고한다. 그 효과의 이유는 10년 뒤 마누엘 블룸이 대학원생에게 준 조언에서 찾았는데, 유한 오토마타는 덧셈은 해도 곱셈은 못 하지만 튜링 머신은 테이프가 있어 가능하다는 비유로 종이가 사고의 외부 기억장치 역할을 한다는 설명이다.",
+          "lang": "en",
+          "published_at": "2026-11-08T19:41:52+09:00",
+          "collected_at": "2026-11-09T07:53:09+09:00",
+          "metrics": {
+            "points": 249,
+            "comments": 74
+          }
+        }
+      ]
+    },
+    {
+      "topic": "Outlook.com Is Quietly Rejecting Email from Domains Without DMARC",
+      "trend_score": 0.7936,
+      "src_count": 1,
+      "hn": {
+        "points": 161,
+        "comments": 137
+      },
+      "items": [
+        {
+          "id": "ec6779b05ebb24a90fced8bee83eb63c45b6ac78",
+          "title": "Outlook.com Is Quietly Rejecting Email from Domains Without DMARC",
+          "url": "https://mailroute.net/blog/outlook-rejecting-email-without-dmarc",
+          "source": "hackernews",
+          "category": "hot_topics",
+          "summary_ko": "2026년 11월 5일부터 Outlook.com·Hotmail·Live·MSN이 DMARC 레코드가 없는 도메인에서 오는 메일 일부를 아무 공지 없이 반송하기 시작했다. 마이크로소프트가 공식 규정으로 밝힌 대량 발송자뿐 아니라 소량 발송하는 일반 기업·개인 도메인도 영향을 받으며, 반송 메시지는 '550 5.7.1 Message rejected: Message lacks SPF/DKIM/DMARC Auth Records' 형태로 온다. 전체가 아니라 일부만 반송되기 때문에 '내 메일은 잘 가는데'라고 안심할 수 없다는 점이 함정이다. 해결책은 DNS에 TXT 레코드 하나(v=DMARC1; p=none)를 추가하는 것으로 끝나며, 이 설정은 다른 수신 서버의 처리 방식은 바꾸지 않는다. ※DMARC: 메일 발신 도메인이 위조됐는지 수신 측이 검증하게 해 주는 인증 규격.",
+          "lang": "en",
+          "published_at": "2026-11-09T04:20:32+09:00",
+          "collected_at": "2026-11-09T07:53:09+09:00",
+          "metrics": {
+            "points": 161,
+            "comments": 137
+          }
+        }
+      ]
+    },
+    {
+      "topic": "Agent memory needs its OpenTelemetry moment",
+      "trend_score": 0.7769,
+      "src_count": 1,
+      "hn": {
+        "points": 159,
+        "comments": 102
+      },
+      "items": [
+        {
+          "id": "e4d02fd5d90b0b91578d5aee1a1e14ee89a6a456",
+          "title": "Agent memory needs its OpenTelemetry moment",
+          "url": "https://lorekit.io/blog/open-agent-memory-format",
+          "source": "hackernews",
+          "category": "hot_topics",
+          "summary_ko": "AI 에이전트의 '기억' 저장 형식이 도구마다 제각각이라 서로 읽지 못하는 문제를 지적하며, 관측성 분야가 OpenTelemetry로 데이터 모델을 통일했듯 공용 규격이 필요하다고 주장하는 글이다. 저자는 일반적인 개발 환경에 이미 네 가지 이상의 형식이 공존한다고 꼽는데, 저장소마다 있는 AGENTS.md·CLAUDE.md와 .cursor/rules/*.mdc, Anthropic 메모리 도구가 쓰는 /memories 디렉터리, GitHub 쪽에 저장되는 Copilot의 저장소별 사실, 그리고 JSONL 지식 그래프를 쓰는 메모리 MCP 서버다. 각각은 그 자체로 합리적이지만 CI 에이전트가 배운 것을 에디터 에이전트가 읽을 수 없고, 커뮤니티에서 매주 새 메모리 도구가 나오면서 호환 불가능한 형식만 늘어난다는 것이다. 저자가 그중 하나인 LoreKit을 만들고 있다는 점은 글에서 직접 밝히고 있으며, 자기 형식이 정답이라는 주장이 아니라 지금이 합의할 시점이라는 제안이다.",
+          "lang": "en",
+          "published_at": "2026-11-08T17:40:23+09:00",
+          "collected_at": "2026-11-09T07:53:09+09:00",
+          "metrics": {
+            "points": 159,
+            "comments": 102
+          }
+        }
+      ]
+    },
+    {
+      "topic": "Petered",
+      "trend_score": 0.7678,
+      "src_count": 1,
+      "hn": {
+        "points": 156,
+        "comments": 89
+      },
+      "items": [
+        {
+          "id": "7cbf7714d7200cce9fbbcc0650de18bfc1f2042d",
+          "title": "Petered",
+          "url": "https://aworkinglibrary.com/writing/petered",
+          "source": "hackernews",
+          "category": "hot_topics",
+          "summary_ko": "'무능력의 수준까지 승진한다'는 피터의 법칙 이후에 무슨 일이 벌어지는지를 다룬 독서 노트다. 통념은 그 자리에서 정체한다는 것이지만, Gläßel과 Scharpf의 『Making a Career in Dictatorship』은 그 상태가 안정적이지 않고 '경력 압박'에 노출된다고 본다. 더 올라가지도 기대를 충족하지도 못하는 사람은 자리를 잃을 위험에 처하고, 그래서 조직의 지저분한 일이나 도덕적으로 문제가 있는 일을 떠맡아 가치를 증명하거나, 상급자를 무고하고 비밀을 폭로해 윗자리를 비워 스스로 올라가려 한다는 것이다. 글쓴이는 여기에 데이비드 그레이버의 『불쉿 잡』 — 상당수 관리직은 윗사람을 돋보이게 하려고 두는 봉건적 가신이라는 — 논의를 겹쳐, 이렇게 떠밀린 리더야말로 '가짜 증후군'이 아니라 진짜 가짜라고 정리한다.",
+          "lang": "en",
+          "published_at": "2026-11-08T19:56:43+09:00",
+          "collected_at": "2026-11-09T07:53:09+09:00",
+          "metrics": {
+            "points": 156,
+            "comments": 89
+          }
+        }
+      ]
+    },
+    {
+      "topic": "Declarative Dragging",
+      "trend_score": 0.7502,
+      "src_count": 1,
+      "hn": {
+        "points": 229,
+        "comments": 29
+      },
+      "items": [
+        {
+          "id": "62b8c6bdaaf878d38740019d9df3044f71c625ca",
+          "title": "Declarative Dragging",
+          "url": "https://declarative-dragging.github.io/",
+          "source": "hackernews",
+          "category": "hot_topics",
+          "summary_ko": "UIST 2026 최우수 논문으로 뽑힌 '선언적 드래그(Declarative Dragging)' 연구다. 드래그 앤 드롭을 만들려면 좌표 계산·피드백·애니메이션 코드를 일일이 짜야 해서 교육자나 수학자, 창작 도구 개발자들이 아예 포기하는 경우가 많다는 문제에서 출발한다. 제안하는 D2 방식은 반대로, 각 요소에 대해 '드래그하면 도달할 수 있는 미래 상태들'만 선언하면 엔진이 그 상태들을 미리 렌더링해 보고 위치를 추출한 뒤 부드러운 드래그 인터랙션을 자동으로 합성한다. 단순한 동작을 조합해 복잡한 동작을 만들 수 있고 부유·스냅·전환 같은 기능은 모디파이어로 덧붙인다. 웹 SVG 인터페이스용 라이브러리 Dragology로 구현했으며 대수·베지에 곡선·땋기·카드 더미 같은 데모를 공개했다.",
+          "lang": "en",
+          "published_at": "2026-11-05T02:05:07+09:00",
+          "collected_at": "2026-11-09T07:53:09+09:00",
+          "metrics": {
+            "points": 229,
+            "comments": 29
+          }
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "source": "github_trending",
+      "ok": true,
+      "item_count": 15,
+      "error_type": null
+    },
+    {
+      "source": "anthropic",
+      "ok": true,
+      "item_count": 286,
+      "error_type": null
+    },
+    {
+      "source": "openai",
+      "ok": false,
+      "item_count": 0,
+      "error_type": "HTTPError"
+    },
+    {
+      "source": "deepmind",
+      "ok": true,
+      "item_count": 100,
+      "error_type": null
+    },
+    {
+      "source": "meta_ai",
+      "ok": true,
+      "item_count": 88,
+      "error_type": null
+    },
+    {
+      "source": "mistral",
+      "ok": true,
+      "item_count": 94,
+      "error_type": null
+    },
+    {
+      "source": "xai",
+      "ok": true,
+      "item_count": 85,
+      "error_type": null
+    },
+    {
+      "source": "openai_codex",
+      "ok": true,
+      "item_count": 197,
+      "error_type": null
+    },
+    {
+      "source": "cloudflare",
+      "ok": true,
+      "item_count": 20,
+      "error_type": null
+    },
+    {
+      "source": "github_blog",
+      "ok": true,
+      "item_count": 10,
+      "error_type": null
+    },
+    {
+      "source": "aws",
+      "ok": true,
+      "item_count": 20,
+      "error_type": null
+    },
+    {
+      "source": "stripe",
+      "ok": true,
+      "item_count": 10,
+      "error_type": null
+    },
+    {
+      "source": "meta_eng",
+      "ok": true,
+      "item_count": 9,
+      "error_type": null
+    },
+    {
+      "source": "reddit_localllama",
+      "ok": true,
+      "item_count": 25,
+      "error_type": null
+    },
+    {
+      "source": "hf_blog",
+      "ok": true,
+      "item_count": 899,
+      "error_type": null
+    },
+    {
+      "source": "hackernews",
+      "ok": true,
+      "item_count": 20,
+      "error_type": null
+    }
+  ],
+  "summaries_injected": true
+}
