@@ -1,636 +1,587 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-11T07:38:43+09:00",
-  "date": "2026-11-11",
+  "generated_at": "2026-11-12T07:38:07+09:00",
+  "date": "2026-11-12",
   "categories": {
     "ai_labs": [
       {
-        "id": "fc6b6a56df7b365074b119338f18f53b82e8e233",
-        "title": "Gemini 4 Carbon is now available",
-        "url": "https://deepmind.google/blog/gemini-4-carbon-is-now-available",
+        "id": "e879c6fc35d4933fd40afbaeb860ab9eff703b40",
+        "title": "AlphaGenome 2: Deciphering how cells read DNA to better understand disease",
+        "url": "https://deepmind.google/blog/alphagenome-2-deciphering-how-cells-read-dna-to-better-understand-disease",
         "source": "deepmind",
         "category": "ai_labs",
-        "summary_ko": "구글 딥마인드가 최상위 모델 Gemini 4 Carbon 을 개발자·기업·연구자·일반 사용자에게 전면 공개했다. 2주 전 Fairwind 프로그램으로 보안 방어 담당자에게 먼저 풀었던 모델로, 사이버보안 능력과 장기 에이전트 워크플로(여러 단계를 스스로 이어가는 자동 작업)에서 최고 성능을 낸다고 밝혔다. 앞서 나온 Gemini 4 Argon 이 일반적인 소프트웨어 개발·지식 작업에 적합한 반면, Carbon 은 복잡한 다단계 코딩·디버깅과 개방형 과학 연구처럼 한계를 시험하는 작업용으로 Argon 보다 토큰을 더 많이 써서 깊게 추론하고 검증 루프를 길게 돈다. CursorBench 4.0, Perplexity 의 WANDR, Zapier 의 AutomationBench 에서 1위를 기록했다.",
+        "summary_ko": "구글 딥마인드가 차세대 DNA 서열 모델 AlphaGenome 2 를 공개했다(2026-11-11). 모든 세포가 같은 DNA 를 갖고 있지만 심근세포·면역세포처럼 세포 종류마다 켜고 끄는 유전자가 다른데, 이 모델은 DNA 서열과 그 변이가 수백 종의 인간 세포 유형에서 유전자 발현에 어떤 영향을 주는지 예측한다. 단일세포 생물학과 인간 유전학을 잇는 것이 목표로, 질병을 일으키는 세포 단위 원인을 찾는 도구로 제시됐다. ※단일세포 RNA 시퀀싱: 세포 한 개씩의 유전자 발현량을 읽는 실험 기법.",
         "lang": "en",
-        "published_at": "2026-11-11T01:03:47+09:00",
-        "collected_at": "2026-11-11T07:32:46+09:00",
+        "published_at": "2026-11-12T00:00:15+09:00",
+        "collected_at": "2026-11-12T07:33:33+09:00",
         "metrics": null
       },
       {
-        "id": "f8c1a7370c130fe58cc9d833fbc0c3d7d581f8a4",
-        "title": "Introducing AlphaProof Code: a breakthrough in verifying complex software at depth",
-        "url": "https://deepmind.google/blog/introducing-alphaproof-code",
-        "source": "deepmind",
-        "category": "ai_labs",
-        "summary_ko": "구글 딥마인드가 AI 에이전트로 Signal 프로토콜(시그널·구글 메시지 등에서 수십억 건의 대화를 암호화하는 기술) 실제 코드의 핵심 보안 속성을 수학적으로 증명했다고 발표했다. 형식 검증(formal verification — 코드에 결함이 없음을 수학적으로 증명하는, 보안 보증의 최고 수준 방식)은 품이 많이 들어 오랜 난제였는데, 새 에이전트 프레임워크 AlphaProof Code 가 사람의 전문성과 AI 에이전트를 결합해 Lean(증명 전용 프로그래밍 언어)으로 약 300만 줄의 증명을 작성했다. 딥마인드는 AI 가 이 수준의 깊이로 실제 암호 프로토콜 코드를 검증한 것은 처음이라고 주장한다.",
-        "lang": "en",
-        "published_at": "2026-11-10T21:02:28+09:00",
-        "collected_at": "2026-11-11T07:32:46+09:00",
-        "metrics": null
-      },
-      {
-        "id": "46ecb159c1535b0933157f2d30d2423d17c0c4bd",
-        "title": "Helping caregivers use AI in everyday life",
-        "url": "https://openai.com/index/helping-caregivers-use-ai-in-everyday-life",
-        "source": "openai",
-        "category": "ai_labs",
-        "summary_ko": "OpenAI 가 미국 '가족 간병인의 달'(11월)을 맞아 간병인 대상 무료 ChatGPT 실습 워크숍을 미국 5개 도시(오클랜드·탬파·피츠버그·애틀랜타·디트로이트)에서 연다. Caregiver Action Network, 알츠하이머협회, 미국당뇨병학회와 함께 진행하며, 일정·체크리스트 정리, 교육 자료를 쉬운 말로 바꾸기, 지역 자원 찾기, 지원 모임 토론 가이드 작성 등을 다룬다. OpenAI 자체 분석으로는 미국에서 의료 관련 ChatGPT 메시지 중 주당 4,000만 건 이상이 '본인이 아닌 다른 사람'의 의료를 묻는 것이었다. 개인정보 보호와 AI 의 한계, 의료·법률·재무 조언은 전문가에게 확인해야 한다는 점도 함께 교육한다.",
-        "lang": "en",
-        "published_at": "2026-11-10T21:00:00+09:00",
-        "collected_at": "2026-11-11T07:32:46+09:00",
-        "metrics": null
-      },
-      {
-        "id": "5ca4dc7b6d88cb31d41f9b1c287b0178583121a9",
-        "title": "Introducing Businesses in ChatGPT",
-        "url": "https://openai.com/index/introducing-businesses-chatgpt",
-        "source": "openai",
-        "category": "ai_labs",
-        "summary_ko": "OpenAI 가 기업이 ChatGPT 안에서 자사 정보를 직접 관리하는 'Businesses in ChatGPT' 를 베타로 내놨다. 주당 12억 명이 쓰는 ChatGPT 에서 Business Hub 를 통해 업체 소유권을 인증받고, 가격·재고가 담긴 상품 피드를 직접 올려 정보를 최신으로 유지할 수 있다. 언급 횟수·웹사이트 클릭 수와 자사 사이트가 인용된 대화의 공통 주제('discovery topics')를 집계 형태로 보여주되, 개별 사용자 대화는 업체에 제공하지 않고 일정 건수 이상일 때만 지표를 공개한다. 미국의 전자상거래·온라인 서비스 업체부터 'Business Agents'(업체를 대신해 사용자와 상호작용하는 에이전트)도 적용된다. ※Shopify 가맹점은 Shopify 관리자 화면에서 바로 연동할 수 있다.",
-        "lang": "en",
-        "published_at": "2026-11-10T19:00:00+09:00",
-        "collected_at": "2026-11-11T07:32:46+09:00",
-        "metrics": null
-      },
-      {
-        "id": "01a8528fa117926a6942a8da712f5c8913fac83e",
-        "title": "Closing the AI guidance gap in education",
-        "url": "https://openai.com/index/closing-ai-guidance-gap-education",
-        "source": "openai",
-        "category": "ai_labs",
-        "summary_ko": "OpenAI 가 유럽·중동·아프리카(EMEA) 교육 협력 사례와 ThinkYoung 의 신규 조사를 묶은 보고서를 냈다. 조사에서 학생의 79% 가 숙제·과제에 AI 를 쓴다고 답했지만 '쓰는 법을 배운 적 있다'는 응답은 47% 에 그쳐, 사용은 앞서가고 지도는 뒤처지는 '가이던스 격차' 가 드러났다. 에스토니아·슬로바키아·그리스·이탈리아 등과의 협력에서 공통적으로 확인된 축은 최신 AI 도구에 대한 공평한 접근, 공동 설계한 AI 리터러시 교육, 지속적 측정·평가 세 가지였다. 보고서는 AI 가 유능해질수록 교사의 역할이 줄기는커녕 커진다는 점을 강조한다.",
-        "lang": "en",
-        "published_at": "2026-11-10T18:00:00+09:00",
-        "collected_at": "2026-11-11T07:32:46+09:00",
-        "metrics": null
-      },
-      {
-        "id": "3588ceed41552e465a0d28bf3b0ad339e960cd8a",
-        "title": "Work at the Frontier: AI’s effect on freelance work",
-        "url": "https://openai.com/index/ai-effect-on-freelance-work",
-        "source": "openai",
-        "category": "ai_labs",
-        "summary_ko": "OpenAI 가 프리랜서 플랫폼 Upwork 과 함께 AI 가 프리랜서 일감에 미친 영향을 분석했다. 기존 서비스 일부는 점유율이 줄어드는 반면 AI 관련 프로젝트는 예산이 더 크고 투입 시간도 길며, 여러 역량을 한 건에 묶어 요구하는 방식으로 일의 범위 자체가 넓어지고 있다. ChatGPT 사용은 글쓰기 비중이 큰 반면 Upwork 의뢰는 영상·애니메이션 비중이 커, 사람이 직접 AI 로 처리하는 일과 외주로 맡기는 일이 갈린다는 점도 확인됐다. ※배경 수치: Upwork 조사 기준 미국 숙련 지식노동자의 38% 가 프리랜서로 일하고, 2024년 프리랜서 지식노동의 미국 내 수입은 1.5조 달러로 추산된다.",
-        "lang": "en",
-        "published_at": "2026-11-10T16:00:00+09:00",
-        "collected_at": "2026-11-11T07:32:46+09:00",
-        "metrics": null
-      },
-      {
-        "id": "26b496ffaa34d81812a4794f89edcd64731ef3db",
-        "title": "Anthropic launches roadshow for proposed initial public offering",
-        "url": "https://anthropic.com/news/roadshow-launch",
-        "source": "anthropic",
-        "category": "ai_labs",
-        "summary_ko": "Anthropic 이 기업공개(IPO)를 위한 로드쇼(상장 전 기관투자자 대상 설명회)를 시작했다. 공모 주식은 Class A 보통주 8억 2,500만 주로, 이 중 8억 135만여 주는 Anthropic 이 신규 발행하고 2,364만여 주는 기존 주주가 내놓는 물량이라 후자의 매각 대금은 회사에 들어가지 않는다. 공모가는 주당 70~78달러로 예상되며 나스닥 글로벌 셀렉트 마켓에 종목코드 'ANT' 로 상장을 신청했다. 주관사는 골드만삭스와 모건스탠리이고, 증권신고서는 미 증권거래위원회(SEC)에 제출됐으나 아직 효력이 발생하지 않은 상태다.",
-        "lang": "en",
-        "published_at": "2026-11-10T09:00:00+09:00",
-        "collected_at": "2026-11-11T07:32:46+09:00",
-        "metrics": null
-      },
-      {
-        "id": "724fae9251483a53cc93e1b086445897a9598c39",
-        "title": "Pay for Hugging Face Hub with your Google Cloud Account",
-        "url": "https://huggingface.co/blog/hub-gcp-marketplace",
+        "id": "b22522d14a17f95f283880f472cfa6e801354fb8",
+        "title": "BotPsy: On-Device Personal Assistant with a Sub-Billion-Parameter Agentic Language Model",
+        "url": "https://huggingface.co/blog/qvac/botpsy",
         "source": "hf_blog",
         "category": "ai_labs",
-        "summary_ko": "허깅페이스가 구글 클라우드 마켓플레이스 연동을 열어, 조직 계정을 연결하면 허깅페이스 사용료가 신용카드 대신 기존 구글 클라우드 청구서에 함께 청구된다. Team·Enterprise 구독은 물론 종량제 컴퓨팅(Jobs, Inference Endpoints, Inference Providers, GPU Spaces, ZeroGPU 할당량 확장)과 추가 스토리지까지 공개 가격 그대로 포함된다. 새 거래처를 등록하고 법인카드를 따로 등록하는 구매 절차를 건너뛸 수 있다는 것이 요점이다. 연동 신청은 허깅페이스 팀의 승인을 거치며, 승인 전까지는 기존 결제수단으로 청구되고 카드가 등록된 조직은 다음 청구 주기부터 전환된다.",
+        "summary_ko": "Tether AI Research 가 0.8B(8억) 파라미터짜리 온디바이스 에이전트 모델 BotPsy 를 공개했다. Qwen3.5-0.8B 를 기반으로 함수 호출(툴 사용)에 특화해 학습했고, 웹 검색·여행·결제·기기 제어·캘린더·메일 등 난이도 낮은~중간 작업을 기기 안에서 처리하는 개인 비서를 노린다. 벤치마크에서 기반 모델 대비 성능이 약 2배로, BFCL v4 23.4→44.0, ACEBench 30.1→58.7, τ-bench 23.2→51.5 를 기록했고 1.2B 이하 체급 6개 벤치마크를 모두 앞섰다(2.5배 큰 Qwen3.5-2B-Think 도 대부분 추월). 단일 툴 호출은 안정적이나 여러 단계에 걸친 정보 검색이 약점이며, 고위험 용도에는 쓰지 말라고 명시했다. ※함수 호출: 모델이 외부 도구·API 를 직접 불러 쓰는 기능.",
         "lang": "en",
-        "published_at": "2026-11-10T09:00:00+09:00",
-        "collected_at": "2026-11-11T07:32:46+09:00",
+        "published_at": "2026-11-11T14:01:16+09:00",
+        "collected_at": "2026-11-12T07:33:33+09:00",
         "metrics": null
       },
       {
-        "id": "3229de0d919212c36c924a809a5e9d26c48f700b",
-        "title": "Decision Models in Hugging Face",
-        "url": "https://huggingface.co/blog/decision",
+        "id": "d2296a64c0dc3b898a3595115c1f5ace43ee82d5",
+        "title": "Token Pooling-Aware Training for Multi-Vector Embedding Models",
+        "url": "https://huggingface.co/blog/token-pooling",
         "source": "hf_blog",
         "category": "ai_labs",
-        "summary_ko": "허깅페이스가 '디시전 모델(decision model)' 개념과 생태계 지원을 소개했다. 텍스트를 한 토큰씩 생성하는 대신, 입력 상황(state)과 미리 정해둔 선택지를 받아 각 선택지에 확률을 매겨 구조화된 결정을 돌려주는 모델이다. 예컨대 '이중 결제돼서 환불이 필요하다'는 고객 문의에 대해 담당 부서를 billing(확률 0.998)·technical·sales 로 분류해 신뢰도와 함께 반환한다 — LLM 에 JSON 을 생성시키는 방식과 달리 애플리케이션이 이미 아는 선택지 밖으로 벗어나지 않는다. Transformers 의 `decision` 파이프라인과 llama.cpp 서빙, 허브 검색, 학습 도구까지 지원한다. ※TypeSafe AI 가 'System One 모델' 로 처음 제시했으나 커뮤니티는 인지이론 용어를 피해 '디시전 모델' 로 부르기로 수렴했다.",
+        "summary_ko": "허깅페이스가 멀티벡터 임베딩 모델의 저장 비용을 줄이는 '풀링 인지 학습(pooling-aware training)' 기법을 소개했다. ColBERT 류 멀티벡터 모델은 문서를 토큰마다 벡터로 저장해 검색 품질이 좋지만, 4비트로 양자화해도 문서당 200벡터·128차원이면 12.8KB, 100만 문서면 12.8GB 가 든다. 비슷한 토큰 벡터를 Ward 계층 군집화로 묶는 토큰 풀링으로 문서당 50벡터로 줄이면 3.2GB 가 되는데, 그냥 압축하면 품질이 깎인다. 압축될 것을 전제로 학습시키면 pool_factor=4(벡터 1/4) 조건에서 NanoBEIR nDCG@10 유지율이 94.6%→97.8% 로 올라갔다. Sentence Transformers 의 손실 래퍼로 바로 쓸 수 있다.",
         "lang": "en",
-        "published_at": "2026-11-10T09:00:00+09:00",
-        "collected_at": "2026-11-11T07:32:46+09:00",
+        "published_at": "2026-11-11T09:00:00+09:00",
+        "collected_at": "2026-11-12T07:33:33+09:00",
         "metrics": null
       },
       {
-        "id": "7da1b2b4758f6148853c122ae7c8e20bc40537d5",
-        "title": "Gemini Robotics 2.5 accelerates real-world general dexterity",
-        "url": "https://deepmind.google/blog/gemini-robotics-2-5-accelerates-real-world-physical-intelligence",
-        "source": "deepmind",
+        "id": "8ef26a5b85e584cd1bfc03b53d8b96bb50e48d09",
+        "title": "Say hello to `hf`: a faster, friendlier Hugging Face CLI ✨",
+        "url": "https://huggingface.co/blog/hf-cli",
+        "source": "hf_blog",
         "category": "ai_labs",
-        "summary_ko": "구글 딥마인드가 비전-언어-행동(VLA) 모델의 최신판 Gemini Robotics 2.5 를 공개했다. 로봇이 배울 수 있는 기술의 폭과 습득 속도를 동시에 끌어올려, 통제된 실험실을 벗어나 공장 바닥이나 일상 환경처럼 정형화되지 않은 공간에서 더 많은 일을 맡기는 것이 목표다. 200가지가 넘는 서로 다른 작업으로 작업 폭·성능·복잡도를 시험했으며, Gemini 4 Argon 이 로보틱스 연구 자체를 가속한 덕이 크다고 밝혔다. 손재주(dexterity)와 신뢰성, 안전성 개선이 핵심이다.",
+        "summary_ko": "허깅페이스 CLI 가 `huggingface-cli` 에서 짧은 `hf` 로 공식 개명됐다. 길어서 불편한 것도 있지만, 기능이 늘며 명령 구조가 뒤죽박죽이 된 것을 `hf <리소스> <동작>` 형태로 재정리하는 것이 주목적이다. 로그인 계열이 가장 크게 바뀌어 `huggingface-cli login` → `hf auth login`, `whoami` → `hf auth whoami` 가 됐고, 기존 명령어도 경고만 띄운 채 당분간 동작한다. `pip install -U huggingface_hub` 로 설치하며, 허깅페이스 인프라에서 스크립트·도커 이미지를 초 단위 종량제로 돌리는 `hf jobs` 명령도 함께 나왔다. (2025-07-25 글이 트렌딩에 재노출)",
         "lang": "en",
-        "published_at": "2026-11-10T04:51:47+09:00",
-        "collected_at": "2026-11-11T07:32:46+09:00",
+        "published_at": "2025-07-25T09:00:00+09:00",
+        "collected_at": "2026-11-12T07:33:33+09:00",
+        "metrics": null
+      },
+      {
+        "id": "ca7971322475137b66bec017435b117620bbf7a7",
+        "title": "Parquet Content-Defined Chunking",
+        "url": "https://huggingface.co/blog/parquet-cdc",
+        "source": "hf_blog",
+        "category": "ai_labs",
+        "summary_ko": "허깅페이스가 Parquet 파일의 업로드·다운로드 전송량을 줄이는 Content-Defined Chunking(CDC) 기능을 PyArrow·Pandas 에 반영했다. 허깅페이스는 약 21PB 의 데이터셋을 호스팅하고 그중 Parquet 만 4PB 를 넘는데, Parquet 은 열 단위 압축 구조라 데이터가 조금만 바뀌어도 바이트 표현이 완전히 달라져 중복 제거가 잘 안 됐다. CDC 는 내용 기준으로 조각을 나눠 바뀐 조각만 주고받게 하며, `to_parquet(..., use_content_defined_chunking=True)` 한 줄로 켠다. 컬럼 추가·삭제, 타입 변경, 행 삽입, row-group 크기 변경 같은 흔한 수정에서 효과를 측정했다. ※Xet: 허깅페이스의 내용 주소 기반 신규 스토리지 계층. (2025-07-25 글)",
+        "lang": "en",
+        "published_at": "2025-07-25T09:00:00+09:00",
+        "collected_at": "2026-11-12T07:33:33+09:00",
+        "metrics": null
+      },
+      {
+        "id": "469948b29fb591288519a5ec6ebddf8306c7fb2f",
+        "title": "TimeScope: How Long Can Your Video Large Multimodal Model Go?",
+        "url": "https://huggingface.co/blog/timescope-video-lmm-benchmark",
+        "source": "hf_blog",
+        "category": "ai_labs",
+        "summary_ko": "스탠퍼드·허깅페이스가 긴 영상 이해 능력을 재는 오픈소스 벤치마크 TimeScope 를 공개했다. 1분에서 8시간짜리 원본 영상에 5~10초짜리 짧은 '바늘(needle)' 클립을 끼워 넣고, 특정 구간 찾기(국소 검색)·여러 시점의 정보 종합·세밀한 시간 지각 세 가지를 평가한다. 기존 VideoNIAH 는 정지 이미지를 바늘로 심어 사실상 '시각 검색'만 측정했는데, 모델들은 수천~1만 프레임 처리를 광고하면서도 학습은 보통 256프레임 이하에서 끝나 긴 입력에서 정확도가 급락한다는 점을 지적했다. 실제로 최신 모델 다수가 진짜 시간적 이해에서는 고전했다. (2025-07-23 글)",
+        "lang": "en",
+        "published_at": "2025-07-23T09:00:00+09:00",
+        "collected_at": "2026-11-12T07:33:33+09:00",
+        "metrics": null
+      },
+      {
+        "id": "cde2fe77d1be2eb2b6dc090d29e41c7d1a137518",
+        "title": "Fast LoRA inference for Flux with Diffusers and PEFT",
+        "url": "https://huggingface.co/blog/lora-fast",
+        "source": "hf_blog",
+        "category": "ai_labs",
+        "summary_ko": "허깅페이스가 Flux.1-Dev 이미지 생성 모델의 LoRA 추론을 약 2.3배 빠르게 만드는 최적화 레시피를 정리했다. Flux 용 LoRA 어댑터는 허브에 3만 개가 넘는데, LoRA 마다 rank 와 적용 레이어가 달라 torch.compile 로 컴파일해 둔 모델에 다른 LoRA 를 갈아끼우면 재컴파일이 일어나 속도 이득이 사라진다. 레시피는 Flash Attention 3, torch.compile, TorchAO 의 FP8 양자화(손실이 있지만 속도·메모리 균형이 가장 좋음)에 `hotswap=True` 를 조합해 재컴파일 없이 교체되게 한 것이다. NVIDIA 기준으로 검증했고 AMD 에서도 동작할 것으로 봤다. ※LoRA: 모델 전체 대신 작은 추가 행렬만 학습해 스타일·캐릭터를 입히는 경량 미세조정 기법. (2025-07-23 글)",
+        "lang": "en",
+        "published_at": "2025-07-23T09:00:00+09:00",
+        "collected_at": "2026-11-12T07:33:33+09:00",
+        "metrics": null
+      },
+      {
+        "id": "d87ac4dac10ee56377045aa0efd7558db2f3993b",
+        "title": "Accelerate a World of LLMs on Hugging Face with NVIDIA NIM",
+        "url": "https://huggingface.co/blog/nvidia/multi-llm-nim",
+        "source": "hf_blog",
+        "category": "ai_labs",
+        "summary_ko": "NVIDIA 가 NIM 추론 마이크로서비스 하나로 허깅페이스의 LLM 10만 개 이상을 배포할 수 있게 했다. 도커 컨테이너 하나가 모델 형식(Hugging Face safetensors, GGUF, TensorRT-LLM 체크포인트·엔진)을 자동 인식하고, 아키텍처와 양자화 포맷(FP16/FP8/INT4)을 판별해 TensorRT-LLM·vLLM·SGLang 중 백엔드를 고른 뒤 사전 튜닝된 설정으로 서버를 띄운다. 모델마다 추론 프레임워크를 따로 맞추느라 걸리던 시간을 줄이는 것이 목적이다. CUDA 12.1 이상과 NGC API 키가 필요하며, `NIM_MODEL_NAME=hf://mistralai/Codestral-22B-v0.1` 처럼 환경변수로 모델을 지정해 실행한다. (2025-07-21 글)",
+        "lang": "en",
+        "published_at": "2025-07-22T03:01:30+09:00",
+        "collected_at": "2026-11-12T07:33:33+09:00",
+        "metrics": null
+      },
+      {
+        "id": "db32404a201439d4dee653c4cb21f2f5969bbda1",
+        "title": "Arc Virtual Cell Challenge: A Primer",
+        "url": "https://huggingface.co/blog/virtual-cell-challenge",
+        "source": "hf_blog",
+        "category": "ai_labs",
+        "summary_ko": "Arc Institute 의 'Virtual Cell Challenge' 를 생물학 배경이 없는 ML 엔지니어용으로 풀어 쓴 입문 글이다. 과제는 CRISPR 로 특정 유전자를 침묵시켰을 때 (일부만 본 적 있는) 세포 유형이 어떻게 반응하는지 예측하는 모델을 만드는 것으로, 이를 '맥락 일반화'라 부른다. 학습 데이터는 단일세포 RNA 시퀀싱 프로파일 약 30만 건(세포 22만 개, 그중 약 3.8만 개는 유전자를 건드리지 않은 대조군)이다. 핵심 난점은 전사체를 읽는 순간 세포가 파괴돼 같은 세포의 전후를 비교할 수 없다는 점으로, 대조군 집단을 기준으로 삼아야 해서 집단 자체의 생물학적 이질성과 진짜 섭동 효과를 분리해야 한다. (2025-07-18 글)",
+        "lang": "en",
+        "published_at": "2025-07-18T09:00:00+09:00",
+        "collected_at": "2026-11-12T07:33:33+09:00",
+        "metrics": null
+      },
+      {
+        "id": "084a3f4929552fcbb133040b4120823b2ac6e74f",
+        "title": "Consilium: When Multiple LLMs Collaborate",
+        "url": "https://huggingface.co/blog/consilium-multi-llm",
+        "source": "hf_blog",
+        "category": "ai_labs",
+        "summary_ko": "Gradio 해커톤에서 만들어진 Consilium 은 여러 LLM 이 포커 테이블에 둘러앉아 토론하고 합의에 이르게 하는 멀티 LLM 플랫폼이다. Gradio 시각 인터페이스이자 MCP 서버로 동작해 Cline 같은 앱에 바로 붙일 수 있고, 합의 외에 다수결·선호순위 투표 같은 결정 방식도 추가됐다. 글쓴이는 해커톤 직후 마이크로소프트가 발표한 AI 진단 오케스트레이터(MAI-DxO)가 'Dr. Challenger' 같은 역할을 나눠 의료 진단 벤치마크를 85.5% 맞춘 반면 실제 의사는 20%에 그쳤다는 점을 들어, 여러 AI 관점의 협업이 단독 분석을 크게 앞설 수 있다는 근거로 들었다. ※MCP: 모델에 외부 도구·데이터를 연결하는 표준 프로토콜. (2025-07-17 글)",
+        "lang": "en",
+        "published_at": "2025-07-17T09:00:00+09:00",
+        "collected_at": "2026-11-12T07:33:33+09:00",
         "metrics": null
       }
     ],
     "community": [
       {
-        "id": "235e090c0494492595889188b6889ead62205cd4",
-        "title": "What tasks have you moved from cloud models to local models?",
-        "url": "https://reddit.com/r/LocalLLaMA/comments/1xt0ah5/what_tasks_have_you_moved_from_cloud_models_to",
+        "id": "12149c8999a27fe5d8760060537601700e1e3475",
+        "title": "US and China \"may\" collaborate on AI. The jokes write themselves",
+        "url": "https://reddit.com/r/LocalLLaMA/comments/1xtqsuu/us_and_china_may_collaborate_on_ai_the_jokes",
         "source": "reddit_localllama",
         "category": "community",
-        "summary_ko": "r/LocalLLaMA 에서 '클라우드 모델에서 로컬 모델로 완전히 옮긴 작업이 무엇인가' 를 묻는 토론이 올라왔다. 로컬 실행 환경을 구축한 뒤 실제로 무엇에 쓰는지, 반대로 어떤 작업에서는 여전히 Claude·ChatGPT·Gemini 로 돌아가게 되는지를 함께 물었다. 셋업 자랑이 아니라 실사용 용도를 추려보려는 취지의 글이다.",
+        "summary_ko": "미국과 중국이 AI 분야에서 협력'할 수도' 있다는 소식에 r/LocalLLaMA 가 반응한 글이다. 제목 자체가 '농담은 알아서 써진다'며 회의적 뉘앙스를 담고 있다. ※본문 미확보 — 제목 기반.",
         "lang": "en",
-        "published_at": "2026-11-11T07:10:25+09:00",
-        "collected_at": "2026-11-11T07:32:46+09:00",
+        "published_at": "2026-11-12T04:15:33+09:00",
+        "collected_at": "2026-11-12T07:33:33+09:00",
         "metrics": null
       },
       {
-        "id": "e0a977f15d7b2b395447a6ecce6cca31d3ea5f6b",
-        "title": "We got custom inference per model per hardware now. How long before we get custom hardware for model?",
-        "url": "https://reddit.com/r/LocalLLaMA/comments/1xt059z/we_got_custom_inference_per_model_per_hardware",
+        "id": "927181826b8abf66534f8b3a9cb65bd5503f32e2",
+        "title": "New Paper -> Unless Told Otherwise, an Open Language Model Says OpenAI Made It",
+        "url": "https://reddit.com/r/LocalLLaMA/comments/1xtpqxm/new_paper_unless_told_otherwise_an_open_language",
         "source": "reddit_localllama",
         "category": "community",
-        "summary_ko": "r/LocalLLaMA 에 '모델별·하드웨어별 맞춤 추론이 이미 가능해진 지금, 모델 전용 하드웨어는 언제 나오느냐' 는 질문이 올라왔다. 작성자는 특정 모델(예: DSF 4.1F)에 맞춘 하드웨어를 AI 가 설계하고 그 설계를 오픈소스로 공개해 개인이 제조를 맡길 수 있겠느냐고 물었다. ※본문이 짧은 질문 글로, 구체적 설계안이나 실측 데이터는 포함돼 있지 않다.",
+        "summary_ko": "오픈 모델이 자기를 누가 만들었는지 제대로 모르고, 별다른 지시가 없으면 기본적으로 'OpenAI 가 만들었다'고 답한다는 논문이 공유됐다. 저자는 심리학 연구자로, 학습 데이터가 공개된 OLMo3 를 자기 장비에서 돌려 실험했는데 모델의 자기 출처 인식이 상당히 무작위적이고 질문하는 언어에 따라서도 달라진다는 것이 핵심 발견이다. 'AI 의 사고·행동'을 심리학 관점에서 연구하려고 r/LLMPsychology 서브레딧도 새로 열었다고 밝혔다.",
         "lang": "en",
-        "published_at": "2026-11-11T07:04:28+09:00",
-        "collected_at": "2026-11-11T07:32:46+09:00",
+        "published_at": "2026-11-12T03:36:37+09:00",
+        "collected_at": "2026-11-12T07:33:33+09:00",
         "metrics": null
       },
       {
-        "id": "bc8c299f6c4431b936870373412dc6a718c55d52",
-        "title": "Apple has new Mac app coming to make running local AI models easy",
-        "url": "https://reddit.com/r/LocalLLaMA/comments/1xszbe7/apple_has_new_mac_app_coming_to_make_running",
+        "id": "831ee70abf077ea911921aeaebe4c2922b156978",
+        "title": "I'm releasing a Local World Model Ive been building that turns images into interactive videos you control in real time. It works on RTX 3060, 4060 and anything above, linking huggingface",
+        "url": "https://reddit.com/r/LocalLLaMA/comments/1xtpc2v/im_releasing_a_local_world_model_ive_been",
         "source": "reddit_localllama",
         "category": "community",
-        "summary_ko": "애플이 맥에서 로컬 AI 모델을 쉽게 돌릴 수 있게 해주는 새 맥 앱을 준비 중이라는 소식이 r/LocalLLaMA 에서 공유됐다. ※본문 미확보 — 제목 기반. 원문 기사 링크만 공유된 글이라 앱 이름·출시 시점·지원 모델 등 세부 내용은 확인되지 않았다.",
+        "summary_ko": "개인 개발자가 이미지 한 장을 실시간 조작 가능한 인터랙티브 영상으로 바꾸는 로컬 '월드 모델'을 허깅페이스(lucidml/gta)에 공개했다. RTX 3060·4060 급 이상에서 돌아가며, 설치 없이 바로 써볼 수 있는 데모 사이트도 열어 뒀다(VAST AI 의 3070~50 시리즈 GPU 사용, FPS 를 일부러 제한). 아키텍처는 '학습된 요약(learned summaries)'을 쓰는 트랜스포머이고 기술 보고서도 공개했다. 본인도 일관성·화질 한계를 인정하며 추가 학습으로 개선하겠다고 밝혔다. ※월드 모델: 장면의 상태 변화를 학습해 사용자의 조작에 반응하는 영상을 생성하는 모델.",
         "lang": "en",
-        "published_at": "2026-11-11T06:30:36+09:00",
-        "collected_at": "2026-11-11T07:32:46+09:00",
+        "published_at": "2026-11-12T03:20:57+09:00",
+        "collected_at": "2026-11-12T07:33:33+09:00",
         "metrics": null
       },
       {
-        "id": "bd0f344c7532f9b61f22c4cc2bb3a41f3c0b70bf",
-        "title": "My AI is lazier than me",
-        "url": "https://reddit.com/r/LocalLLaMA/comments/1xsytlk/my_ai_is_lazier_than_me",
+        "id": "416d511596b938c6185a6b31bf93c3a5935225bc",
+        "title": "Microsoft files a patent application to train AI models on idle consumer GPUs",
+        "url": "https://reddit.com/r/LocalLLaMA/comments/1xtowe4/microsoft_files_a_patent_application_to_train_ai",
         "source": "reddit_localllama",
         "category": "community",
-        "summary_ko": "로컬 LLM 이 시키는 일을 회피하려 들더라는 경험담이 화제가 됐다. 작성자는 Spark 2대에서 glm 5.3 flash 를 돌리고 맥북 에어의 hermes 에이전트를 하네스로 써서(두 기기에 약 6,500유로 지출) MS-DOS 용 《Need for Speed Special Edition》을 디컴파일 후 재컴파일해보라고 시켰다. 모델은 먼저 '더 나은 방법이 있다' 며 DOSBox 로 그냥 실행하자고 제안하고 맥에 DOS 에뮬레이터를 설치하기 시작했고, 제지당하자 '일이 많고 오래 걸린다, 정말 하고 싶냐' 고 되물었다. 사용자가 밀어붙이자 그제야 작업을 시작해 몇 차례 성과를 내며 적극적으로 변했다고 한다.",
+        "summary_ko": "마이크로소프트가 참여를 신청한 사용자들의 '놀고 있는' 소비자용 GPU 로 AI 모델을 학습시키는 특허를 출원했다는 소식이다. 학습을 작은 작업 단위로 쪼개 각 기기에 보내고, 보상은 현금이 아니라 크레딧으로 준다는 구상이다. 글쓴이는 지급률이 공개되지 않아 전기요금이나 건질 수 있을지 불분명하고, 그보다 가정용 인터넷 지연시간이 더 큰 문제로 보인다고 지적했다. ※분산 학습: 여러 기기에 계산을 나눠 모델을 학습시키는 방식.",
         "lang": "en",
-        "published_at": "2026-11-11T06:11:05+09:00",
-        "collected_at": "2026-11-11T07:32:46+09:00",
+        "published_at": "2026-11-12T03:05:04+09:00",
+        "collected_at": "2026-11-12T07:33:33+09:00",
         "metrics": null
       },
       {
-        "id": "bc98f21280662e13ba0d877f1f39b25168384d74",
-        "title": "The Surprising Effectiveness of Deleting Weights in LLM Post-Training",
-        "url": "https://reddit.com/r/LocalLLaMA/comments/1xswmb7/the_surprising_effectiveness_of_deleting_weights",
+        "id": "2e387caa6a4fa8ec506076c903261afccde9d036",
+        "title": "Open-source method (MACaQ) beats Unsloth GGUFs!",
+        "url": "https://reddit.com/r/LocalLLaMA/comments/1xto0fa/opensource_method_macaq_beats_unsloth_ggufs",
         "source": "reddit_localllama",
         "category": "community",
-        "summary_ko": "사전학습된 LLM 의 가중치 중 0.05% 미만을 0으로 만드는 것만으로 전체 파인튜닝(FFT)에 맞먹는 성능을 낸다는 논문이 공유됐다. 'Deletion Tuning' 이라 이름 붙인 이 방법은 트랜스포머 블록의 게이트 프로젝션에 이진 마스크를 학습시키며, 검증 가능한 보상을 쓰는 강화학습·지도 파인튜닝·온폴리시 증류 세 가지 사후학습 방식 모두에서 성립했다. 실용적 이점은 두 가지로, 학습된 마스크가 FFT 체크포인트보다 수백~수천 배 작고, 기존에 배운 것을 훨씬 덜 잊는다(강화학습에서 FFT·LoRA·랜덤 희소 파인튜닝은 이전 과제 정확도가 최대 5.4%p 떨어진 반면 이 방법은 원본 수준을 유지). 저자들은 마스킹만으로 충분한 이유를 stable rank·스펙트럼 변화 등 가중치 변화의 기하학적 구조로 분석했다.",
+        "summary_ko": "화웨이 산하 연구팀이 공개한 오픈소스 양자화 기법 MACaQ 가 llama.cpp 용 GGUF 품질에서 Unsloth·Bartowski 를 앞섰다는 벤치마크가 공유됐다. Qwen3-4B(IQ4_XS)에서 파일 크기는 거의 같은데 평균 KL 발산이 Unsloth 대비 23.5%, Bartowski 대비 18.6% 낮았고, Qwen3.8-27B 에서는 Bartowski 대비 약 65% 낮았다. 2비트(IQ2_XXS/XS)부터 4비트(IQ4_NL/XS)까지 지원하며 코드와 llama.cpp 포크를 GitHub 에 공개했다. ※KL 발산: 양자화 모델의 출력 분포가 원본에서 얼마나 틀어졌는지 재는 지표로, 낮을수록 원본에 가깝다.",
         "lang": "en",
-        "published_at": "2026-11-11T04:44:57+09:00",
-        "collected_at": "2026-11-11T07:32:46+09:00",
+        "published_at": "2026-11-12T02:32:40+09:00",
+        "collected_at": "2026-11-12T07:33:33+09:00",
         "metrics": null
       },
       {
-        "id": "e55341762b61a4d3aa3e93c971960e101bccd4f3",
-        "title": "Trending on huggingface:2D to 3D",
-        "url": "https://reddit.com/r/LocalLLaMA/comments/1xsub9f/trending_on_huggingface2d_to_3d",
+        "id": "eb744c0b1e6f0500a6bba5242d49042e93e6d91c",
+        "title": "DeepSeek has Two Numbers for Active Parameter Count. How?",
+        "url": "https://reddit.com/r/LocalLLaMA/comments/1xtmrii/deepseek_has_two_numbers_for_active_parameter",
         "source": "reddit_localllama",
         "category": "community",
-        "summary_ko": "2D 이미지를 3D 로 변환하는 모델이 지난주부터 허깅페이스 트렌딩 1위를 지키고 있다고 공유됐다. 메타의 비전 백본 DINOv3 에 의존하며, VRAM 8GB 환경에서도 돌아간다는 점이 로컬 실행 커뮤니티에서 주목받았다. ※짧은 공유 글이라 모델 이름·벤치마크 등 상세는 원문 링크에서 확인해야 한다.",
+        "summary_ko": "DeepSeek v4.1 Flash 가 활성 파라미터 수를 입력(프리필) 8B, 출력(디코딩) 16B 두 개로 표기하는 이유를 묻는 질문 글이다. 작성자는 이런 표기를 DeepSeek, 특히 v4.1 Flash 에서만 봤다며 이게 어떻게 동작하는지, 왜 중요한지, 다른 모델들도 따라올 만한 구조인지, 둘 중 어느 쪽 숫자가 더 의미 있는지를 묻는다. ※활성 파라미터: MoE 모델에서 한 토큰을 처리할 때 실제로 계산에 쓰이는 파라미터 수. ※프리필: 입력 프롬프트를 한꺼번에 처리하는 단계.",
         "lang": "en",
-        "published_at": "2026-11-11T03:17:48+09:00",
-        "collected_at": "2026-11-11T07:32:46+09:00",
+        "published_at": "2026-11-12T01:47:55+09:00",
+        "collected_at": "2026-11-12T07:33:33+09:00",
         "metrics": null
       },
       {
-        "id": "fb926f4c14da60e6f98e0ad5b677936c1c248746",
-        "title": "What do you see as the role of local agents/LLMs in the future of gaming?",
-        "url": "https://reddit.com/r/LocalLLaMA/comments/1xssydv/what_do_you_see_as_the_role_of_local_agentsllms",
+        "id": "857ba7b7a6108c1f0939a21bbd6100f36fec46ee",
+        "title": "Open source self driving is here!",
+        "url": "https://reddit.com/r/LocalLLaMA/comments/1xtmeif/open_source_self_driving_is_here",
         "source": "reddit_localllama",
         "category": "community",
-        "summary_ko": "게임에서 로컬 LLM·에이전트가 맡을 역할을 묻는 토론이 올라왔다. 작성자는 LLM 으로 보강한 MUD(텍스트 기반 다중접속 게임)나, 플레이어의 로컬 LLM 이 API 를 통해 게임 메커니즘을 거드는 형태(《판타시 스타》의 MAG 나 사역마 같은 동반자)를 구상 중이라고 밝혔다. 핵심 질문은 '내가 직접 구축한 LLM 을 치팅이 아닌 방식으로 게임에 끌어들이려면 그 게임은 어떤 모습이어야 하고, 사람과 AI 의 역할 분담은 어떻게 돼야 하는가' 다.",
+        "summary_ko": "NVIDIA 가 자율주행 모델 Alpamayo 2 Edge 를 공개했다. 카메라 6대의 영상과 최근 움직임을 입력으로 받고 강화학습 루프로 학습된 것이 특징이다. 글쓴이는 Embedl 소속으로, AGX Thor 같은 엣지 하드웨어에서 PyTorch 대비 10배 이상 빠른 최적화 버전을 이미 내놨고 실제 Thor 보드에서 돌려볼 수 있는 페이지도 열었다고 밝혔다. ※엣지: 클라우드가 아니라 차량 등 기기 내부에서 추론을 돌리는 환경.",
         "lang": "en",
-        "published_at": "2026-11-11T02:27:12+09:00",
-        "collected_at": "2026-11-11T07:32:46+09:00",
+        "published_at": "2026-11-12T01:34:38+09:00",
+        "collected_at": "2026-11-12T07:33:33+09:00",
         "metrics": null
       },
       {
-        "id": "d9bddbd9dadc001ec3b6de18865532c1967e9c4f",
-        "title": "AMD EPYC 9686F Linux benchmarks: 96 Zen 6 cores at up to 5.3GHz",
-        "url": "https://reddit.com/r/LocalLLaMA/comments/1xsswud/amd_epyc_9686f_linux_benchmarks_96_zen_6_cores_at",
+        "id": "cd13d19ac0b18a7ede0ff4d759b8455615a47551",
+        "title": "Unsloth Dynamic V3.1 released for Qwen3.8-27B, DeepSeek-V4.1-Flash-1017 and Qwen3.8-Flash-Next",
+        "url": "https://reddit.com/r/LocalLLaMA/comments/1xtmcoe/unsloth_dynamic_v31_released_for_qwen3827b",
         "source": "reddit_localllama",
         "category": "community",
-        "summary_ko": "AMD EPYC 9686F 의 리눅스 벤치마크 결과가 공유됐다. Zen 6 아키텍처 96코어에 최대 5.3GHz 로 동작하는 서버용 CPU 로, 고클럭을 유지하는 'F' 시리즈다. 공유자는 AI 관련 벤치마크가 원문 2페이지부터 시작한다고 안내했다. ※본문 미확보 — 제목과 링크 안내만 있는 글로, 구체적 수치는 원문에서 확인해야 한다.",
+        "summary_ko": "Unsloth 가 Qwen3.8-27B, DeepSeek-V4.1-Flash-1017, Qwen3.8-Flash-Next 용 양자화 알고리즘 Dynamic V3.1 을 내놨다. 같은 크기의 다른 양자화 대비 정확도 10~15% 상승, 토큰 사용량 50% 감소를 주장하며 Qwen4 에는 더 개선된 버전을 적용할 계획이라고 밝혔다. 다만 댓글에서는 27B 그래프상 V3 대비 V3.1 의 개선이 뚜렷하지 않고(일부 Q4 양자화에서는 V3 가 더 나아 보임), 낮은 비트 구간 데이터가 빠져 곡선 인상이 왜곡된다는 반론이 달렸다. 새 .gguf 파일이 더 커진 점도 지적됐다.",
         "lang": "en",
-        "published_at": "2026-11-11T02:25:33+09:00",
-        "collected_at": "2026-11-11T07:32:46+09:00",
+        "published_at": "2026-11-12T01:32:45+09:00",
+        "collected_at": "2026-11-12T07:33:33+09:00",
         "metrics": null
       },
       {
-        "id": "263bfb9c36537d302fb5970fd509ab413ab38d76",
-        "title": "I trained a 348M-active MoE on ~11B tokens. It scores 85.5% vs Qwen2.5-1.5B's 53.3% on shuffled fact chains. GGUF + eval set — please try to break it.",
-        "url": "https://reddit.com/r/LocalLLaMA/comments/1xssj9q/i_trained_a_348mactive_moe_on_11b_tokens_it",
+        "id": "d5d770161b3f2ac9982f88f1a92731ff1e4f87d2",
+        "title": "KRAFTON/Raon-1-nano · Hugging Face",
+        "url": "https://reddit.com/r/LocalLLaMA/comments/1xtmbkn/kraftonraon1nano_hugging_face",
         "source": "reddit_localllama",
         "category": "community",
-        "summary_ko": "개인이 RTX 5090 한 장으로 학습시킨 소형 희소 MoE(Mixture of Experts — 토큰마다 일부 전문가만 활성화하는 구조) 모델 결과가 공유됐다. 저장 파라미터 1.17B·토큰당 활성 348M 규모를 약 110억 토큰(SFT 포함)으로 밑바닥부터 학습시켰는데, 이는 Qwen2.5 계열이 밝힌 최대 18조 토큰이나 SmolLM2-1.7B 의 11조 토큰에 비하면 1,000분의 1 수준이다. 'A가 B보다 크다' 식 관계 사실을 섞어 제시한 뒤 양 끝단을 묻는 추론 과제에서 85.5% 로 Qwen2.5-1.5B 의 53.3% 를 앞섰다(모델별 512문항, 동일 질문·그리디 디코딩·16토큰 답변 제한). 작성자는 범용 어시스턴트가 아님을 분명히 하면서 GGUF 와 평가셋을 공개하고 '반증해달라' 고 요청했다.",
+        "summary_ko": "크래프톤 AI 가 오픈 모델 Raon-1 계열의 소형 모델 Raon-1-nano 를 Apache 2.0 으로 공개했다. 유효 파라미터 1.5B(레이어별 임베딩 테이블 1.5B 포함 총 3.1B)의 밀집 모델로, 한국어와 영어 양쪽에서 지시 따르기·대화 맥락 유지·툴 호출을 목표로 설계됐다. 비교 모델 대비 지시 따르기·맥락 유지·한국어 대화 벤치마크에서 앞섰다고 밝혔고, 최대 262,144 토큰의 긴 컨텍스트를 기본 지원한다. GGUF·MLX·LiteRT-LM 포맷으로 배포돼 애플 실리콘 포함 온디바이스 실행이 가능하다.",
         "lang": "en",
-        "published_at": "2026-11-11T02:11:20+09:00",
-        "collected_at": "2026-11-11T07:32:46+09:00",
+        "published_at": "2026-11-12T01:31:38+09:00",
+        "collected_at": "2026-11-12T07:33:33+09:00",
         "metrics": null
       },
       {
-        "id": "be7b88bc292b30873b49db1a4d9cf663d5ad1527",
-        "title": "speakleash/Bielik-11B-v3.1-Instruct · Hugging Face",
-        "url": "https://reddit.com/r/LocalLLaMA/comments/1xsrg0l/speakleashbielik11bv31instruct_hugging_face",
+        "id": "d2e0003308f41c4fc8b2e265e0a5041da94521b1",
+        "title": "New Qwen3.8-27B Unsloth Dynamic V3.1 GGUFs",
+        "url": "https://reddit.com/r/LocalLLaMA/comments/1xtlyhe/new_qwen3827b_unsloth_dynamic_v31_ggufs",
         "source": "reddit_localllama",
         "category": "community",
-        "summary_ko": "폴란드어 중심 오픈 모델 Bielik-11B-v3.1-Instruct 가 공개됐다. 110억 파라미터 생성형 모델로, v3 계열에서 다국어 추가 사전학습을 넓히고 지시 이행·도구 사용·추론에 대한 사후학습을 강화한 업데이트다. 오픈사이언스 프로젝트 SpeakLeash 와 폴란드 국립 슈퍼컴퓨팅 센터 ACC Cyfronet AGH 의 협업으로, 유럽 언어와 폴란드어를 중심으로 56개 언어 말뭉치를 선별해 학습시켰다. GGUF 양자화 버전도 함께 배포됐고, 디시전 모델과 dflash 버전이 다음 차례로 예고됐다.",
+        "summary_ko": "Unsloth 가 Qwen3.8-27B 용 Dynamic v3.1 GGUF 를 배포했다. UD3·GSQ-RCO·Exllama-3 대비 DeepSWE, Terminal Bench 등에서 정확도가 5~10% 높다고 밝혔으며, 2비트부터 6비트까지 갱신됐고 3비트는 UD3 와 차이가 없어 그대로 뒀다. 벤치마크는 에이전트 계열 256K, 나머지 128K 컨텍스트에서 temperature 1.0 / top_p 0.95 / top_k 20 설정으로 여러 번(LiveCodeBench 6회, HMMT 등 8~16회) 반복 측정했다고 조건을 공개했다. ※GGUF: llama.cpp 계열에서 쓰는 로컬 추론용 모델 파일 포맷.",
         "lang": "en",
-        "published_at": "2026-11-11T01:30:55+09:00",
-        "collected_at": "2026-11-11T07:32:46+09:00",
+        "published_at": "2026-11-12T01:17:55+09:00",
+        "collected_at": "2026-11-12T07:33:33+09:00",
         "metrics": null
       }
     ],
     "github_trending": [
       {
-        "id": "2ed36b56a538cf6f2100cc14e57ed5797bebfe3c",
-        "title": "google-deepmind/mujoco",
-        "url": "https://github.com/google-deepmind/mujoco",
+        "id": "2e74d0228d63bddb2160d88b164fe5cb75af4408",
+        "title": "addyosmani/agent-skills",
+        "url": "https://github.com/addyosmani/agent-skills",
         "source": "github_trending",
         "category": "github_trending",
-        "summary_ko": "구글 딥마인드가 관리하는 물리 시뮬레이터 MuJoCo(Multi-Joint dynamics with Contact)가 깃허브 트렌딩에 올랐다. 로봇공학·생체역학·그래픽스·애니메이션·머신러닝처럼 관절로 연결된 구조물과 환경의 접촉을 빠르고 정확하게 시뮬레이션해야 하는 분야를 겨냥한 범용 물리 엔진이다. C API 기반이며 런타임 시뮬레이션 모듈은 내장 XML 컴파일러가 미리 할당한 저수준 자료구조 위에서 성능을 최대화하도록 튜닝돼 있다. 데스크톱 창과 웹 브라우저에서의 대화형 시각화, 파이썬 바인딩, 유니티 게임엔진 플러그인을 함께 제공한다.",
+        "summary_ko": "구글 크롬 팀의 애디 오스마니가 만든 'Agent Skills' 저장소가 별 11.6만 개, 포크 1.2만 개로 트렌딩에 올랐다. AI 코딩 에이전트가 시니어 엔지니어의 작업 절차와 품질 게이트를 일관되게 따르도록 패키징한 스킬 모음이다. 정의→계획→구현→검증→리뷰→배포 흐름에 맞춰 /spec, /plan, /build, /test, /review, /constraints, /webperf, /code-simplify, /ship 등 9개 슬래시 명령을 제공하고, 각 명령이 알맞은 스킬을 자동으로 켠다. /build 는 승인된 계획 하나로 모든 작업을 자율 수행하되 작업마다 테스트와 개별 커밋을 거치고 실패 시 멈춘다. MIT 라이선스. ※슬래시 명령: 에이전트 CLI 에서 /이름 으로 호출하는 사전 정의 작업.",
         "lang": "en",
         "published_at": null,
-        "collected_at": "2026-11-11T07:32:46+09:00",
+        "collected_at": "2026-11-12T07:33:33+09:00",
         "metrics": null
       },
       {
-        "id": "26b52d229f3345260414109877146496bd603218",
-        "title": "anthropics/claude-quickstarts",
-        "url": "https://github.com/anthropics/claude-quickstarts",
+        "id": "a8efea0dacde155cd6c40bd778be5d5711bbef94",
+        "title": "we-promise/sure",
+        "url": "https://github.com/we-promise/sure",
         "source": "github_trending",
         "category": "github_trending",
-        "summary_ko": "Anthropic 의 claude-quickstarts 저장소가 깃허브 트렌딩에 올랐다. Claude API 로 배포 가능한 애플리케이션을 빠르게 시작할 수 있도록 만든 예제 프로젝트 모음으로, 각 예제를 뼈대 삼아 자기 용도에 맞게 고쳐 쓰는 방식이다. 지식 베이스를 참조하는 고객 지원 에이전트, 금융 데이터 분석기 등이 포함돼 있다. 사용하려면 console.anthropic.com 에서 발급받는 Claude API 키가 필요하다.",
+        "summary_ko": "개인 재무관리 앱 'Sure' 가 트렌딩에 올랐다(별 1.29만). 2023년 중반 개발이 중단된 Maybe Finance 프로젝트를 커뮤니티가 포크해 유지하는 저장소다. Maybe 팀은 2021~2022년에 걸쳐 자산관리 기능과 실제 CFP/CFA 상담을 붙인 앱에 인건비·데이터 제공사·인프라 등으로 100만 달러 가까이 쓴 뒤 사업을 접고 코드를 오픈소스로 풀었고, 유료 호스팅 버전도 짧게 시도했으나 지속되지 못했다. 현재는 셀프호스팅용으로 커뮤니티가 코드베이스를 살려두는 형태이며 한국어 포함 8개 언어 문서를 제공한다. ※셀프호스팅: 서비스를 제공업체 서버가 아닌 내 서버에 직접 올려 쓰는 방식.",
         "lang": "en",
         "published_at": null,
-        "collected_at": "2026-11-11T07:32:46+09:00",
+        "collected_at": "2026-11-12T07:33:33+09:00",
         "metrics": null
       },
       {
-        "id": "4c1a7c570cbfab53caa0860f0797546271ca4e64",
-        "title": "garrytan/gbrain",
-        "url": "https://github.com/garrytan/gbrain",
+        "id": "5f987f0636c53831a13f3da497ddf24655bf4d92",
+        "title": "tokio-rs/topcoat",
+        "url": "https://github.com/tokio-rs/topcoat",
         "source": "github_trending",
         "category": "github_trending",
-        "summary_ko": "Y Combinator 의 Garry Tan 이 공개한 에이전트용 메모리 저장소 GBrain 이 트렌딩에 올랐다. 이미 쓰고 있는 에이전트에 '내가 통제하는 기억' 을 붙이는 것이 목표로, 사실을 출처와 함께 명시적으로 저장하고 정정·철회를 지원하며 같은 기억을 여러 에이전트에서 공유한다. 처음에는 API 키 없이 키워드 검색만으로 시작하고, 필요해지면 시맨틱 검색·종합·백그라운드 보강을 덧붙이는 단계적 구성이다. MIT 라이선스로 자체 호스팅이 무료이며 gbrain.io 유료 호스팅은 선택 사항이고, ChatGPT·Claude·Cursor 에 연결해 쓸 수 있다.",
+        "summary_ko": "Tokio 팀이 러스트용 풀스택 웹 프레임워크 Topcoat 을 공개했다(별 7.1k). 모든 마크업을 서버에서 렌더링하고 컴포넌트가 async 로 DB 를 직접 조회할 수 있어 별도 API 계층의 보일러플레이트가 사라지는 것이 특징이다. 흥미로운 점은 `$(...)` 식인데, 평범한 타입 체크되는 러스트 코드이면서 초기 렌더링 때는 서버에서 평가되고 동시에 자바스크립트로 번역돼 브라우저에서 즉시 재실행된다 — wasm 번들도 클라이언트 빌드 단계도 없이 서버 왕복 없는 상호작용을 만든다. 아직 초기·실험 단계로 호환성 깨지는 변경을 예고했다. MIT 라이선스.",
         "lang": "en",
         "published_at": null,
-        "collected_at": "2026-11-11T07:32:46+09:00",
-        "metrics": null
-      },
-      {
-        "id": "ea9a569724f0eb119a010ef0781c04d251a914b7",
-        "title": "ruvnet/RuView",
-        "url": "https://github.com/ruvnet/RuView",
-        "source": "github_trending",
-        "category": "github_trending",
-        "summary_ko": "일반 WiFi 신호만으로 사람의 존재·움직임·호흡·심박을 감지하는 오픈소스 프로젝트 RuView 가 트렌딩에 올랐다. 카메라나 웨어러블 없이 전파의 물리적 변화만 이용해 벽 너머나 어두운 방에서도 방 단위로 재실 여부와 생체신호를 추적한다는 주장이다. Home Assistant(HA-DISCO MQTT 퍼블리셔), 애플 홈·홈팟(HAP-1.1 브리지), 구글 홈·아마존 알렉사(HA 브리지 또는 Matter 엔드포인트) 등 4대 스마트홈 생태계에 바로 붙고, 별도 스킬 개발 없이 시리·구글 어시스턴트·알렉사로 방별 재실·생체신호를 음성 확인할 수 있다. 노드당 21개 엔티티를 노출한다. ※프라이버시 측면에서 논란의 소지가 있는 기술이다.",
-        "lang": "en",
-        "published_at": null,
-        "collected_at": "2026-11-11T07:32:46+09:00",
-        "metrics": null
-      },
-      {
-        "id": "ca7dd68b4ce7da30dca83743f05d5fe58b4ba324",
-        "title": "ZhuLinsen/daily_stock_analysis",
-        "url": "https://github.com/ZhuLinsen/daily_stock_analysis",
-        "source": "github_trending",
-        "category": "github_trending",
-        "summary_ko": "LLM 으로 주식을 분석해 매일 '의사결정 대시보드' 를 자동 발송하는 중국어권 오픈소스 프로젝트가 트렌딩에 올랐다. A주·홍콩·미국·일본·한국·대만 증시와 ETF 를 아우르는 시세·캔들차트·기술지표·뉴스·공시·펀더멘털 데이터를 모아 핵심 결론, 점수, 추세, 매매 가격대, 위험 경보, 촉매 요인, 실행 체크리스트를 담은 AI 리포트를 만든다. 결과는 위챗 워크·페이슈·텔레그램·디스코드·슬랙·이메일로 밀어주며, GitHub Actions·Docker·로컬 스케줄러로 '비용 0' 정기 실행을 표방한다. 이동평균·찬론·엘리엇 파동·추세·테마 등 15가지 내장 전략으로 다회차 질의가 가능한 에이전트 기능도 있다. ※투자 판단 보조 도구로, 수익을 보장하지 않는다.",
-        "lang": "en",
-        "published_at": null,
-        "collected_at": "2026-11-11T07:32:46+09:00",
-        "metrics": null
-      },
-      {
-        "id": "81f33d0f3f662b4162ad71b7782fa74bd32d1806",
-        "title": "homeassistant-ai/ha-mcp",
-        "url": "https://github.com/homeassistant-ai/ha-mcp",
-        "source": "github_trending",
-        "category": "github_trending",
-        "summary_ko": "Claude·ChatGPT 등 AI 어시스턴트로 Home Assistant 를 설정하고 자동화하는 MCP 서버 ha-mcp 가 트렌딩에 올랐다. 권장 설치 방식은 HA-MCP 통합으로, HACS(Home Assistant 2026.11 이상에서는 내장 마켓플레이스)를 통해 설치되고 서버 전체를 Home Assistant 프로세스 안에서 실행한다. HA OS·Supervised·Container·Core 등 모든 설치 형태에서 동일한 기능을 지원하며, 설정 시 관리자 액세스 토큰과 클라이언트 접속 방식만 입력하면 된다. ※v7.3.0 에서 `ha_config_set_yaml` 이 베타로 내려가는 파괴적 변경이 있었다. ※MCP: AI 모델이 외부 도구·데이터에 접속하는 표준 프로토콜.",
-        "lang": "en",
-        "published_at": null,
-        "collected_at": "2026-11-11T07:32:46+09:00",
+        "collected_at": "2026-11-12T07:33:33+09:00",
         "metrics": null
       }
     ],
-    "codex": [
-      {
-        "id": "f93665c2ce34620a8354fc818ca690dc219c52c9",
-        "title": "Codex CLI Release: 0.167.1",
-        "url": "https://developers.openai.com/codex/changelog#github-release-440934118",
-        "source": "openai_codex",
-        "category": "codex",
-        "summary_ko": "OpenAI Codex CLI 0.167.1 버전이 릴리스됐다. ※본문 미확보 — 제목 기반. 체인지로그에 버전 번호만 올라와 있어 변경 내역은 원문 링크에서 확인해야 한다.",
-        "lang": "en",
-        "published_at": "2026-11-10T09:00:00+09:00",
-        "collected_at": "2026-11-11T07:32:46+09:00",
-        "metrics": null
-      }
-    ],
+    "codex": [],
     "eng_blogs": [
       {
-        "id": "b840bc26c8ceecf9900ecd6d3a97213b557aad82",
-        "title": "Git security vulnerabilities announced",
-        "url": "https://github.blog/open-source/git/git-security-vulnerabilities-announced-7",
-        "source": "github_blog",
+        "id": "a451f48cd129175a3437a3360678122b839b8397",
+        "title": "Test your applications against AWS locally with AWS Emulator",
+        "url": "https://aws.amazon.com/blogs/aws/test-your-applications-against-aws-locally-with-aws-emulator",
+        "source": "aws",
         "category": "eng_blogs",
-        "summary_ko": "Git 이 보안 취약점 6건을 수정한 업데이트를 배포했다. 영향 범위는 재귀적 클론(서브모듈을 함께 내려받는 `clone --recursive`), 레퍼런스(브랜치·태그) 처리, 머지, 바이너리 패치 적용, 임포트 기능이다. 신뢰할 수 없는 저장소를 클론하거나 외부에서 받은 패치를 적용하는 흐름이 포함돼 있어, CI 나 자동화 파이프라인에서 외부 저장소를 다루는 환경은 업데이트가 특히 급하다. ※상세 CVE 번호와 영향 버전은 원문 공지에서 확인해야 한다.",
+        "summary_ko": "AWS 가 로컬에서 AWS 서비스를 테스트할 수 있는 무료 오픈소스 'AWS Emulator' 를 내놨다(2026-11-11). 러스트로 작성됐고 거의 모든 AWS 서비스를 자기 PC·개발 서버·CI 에서 동일한 CLI·SDK 명령으로 호출할 수 있게 하며, 실제 AWS 동작과 비교해 충실도를 측정한다. AWS 계정이 필요 없고 추가 서비스 요금도 없다. GUI 없이 로컬 엔드포인트를 띄우는 방식이라 환경변수로 CLI·SDK 를 그쪽으로 돌려 쓰고, 러스트 테스트용으로는 테스트마다 격리된 인스턴스를 프로세스 안에서 띄우는 임베디드 모드도 있다. 빌드·테스트 전용이며 운영 워크로드나 보안 테스트에는 쓰지 말라고 명시했다.",
         "lang": "en",
-        "published_at": "2026-11-11T03:00:00+09:00",
-        "collected_at": "2026-11-11T07:32:46+09:00",
+        "published_at": "2026-11-12T04:00:44+09:00",
+        "collected_at": "2026-11-12T07:33:33+09:00",
         "metrics": null
       },
       {
-        "id": "a162d031eccee8388446e28dcf15c7f19df04654",
-        "title": "Your Algorithm: Giving People More Ways to Personalize Facebook Recommendations",
-        "url": "https://engineering.fb.com/2026/11/10/ml-applications/your-algorithm-giving-people-more-ways-to-personalize-facebook-recommendations",
+        "id": "2b28b84b904e42b57c3cc45b8550206a46e1a26f",
+        "title": "Intelligent Delivery: Making Every Unit of Compute Serve Better Ads",
+        "url": "https://engineering.fb.com/2026/11/11/ml-applications/intelligent-delivery-serve-better-ads",
         "source": "meta_eng",
         "category": "eng_blogs",
-        "summary_ko": "메타가 페이스북 추천 알고리즘을 사용자가 직접 말로 조정하는 'Your algorithm' 기능의 구조를 공개했다. 기존 추천 시스템은 클릭·시청 같은 암묵적 반응만 학습해 확장성은 좋지만 변화가 느리고 미묘한 취향을 담지 못했는데, 이 기능은 사용자가 자연어로 '무엇을 보고 싶은지' 를 직접 적게 한다. 화면은 최근 시청 활동을 한 문장으로 요약한 'Lately Summary' 와 과거 활동에서 추론한 '관심 있음', 사용자가 명시적으로 숨기거나 제외한 '관심 없음' 두 목록으로 구성되며, 항목을 자연어로 추가하거나 목록 간 이동·삭제할 수 있다. 변경은 피드와 릴스에 즉시 반영되고, 여러 LLM 이 각각 선호 이해·저장·추적 역할을 나눠 맡는다.",
+        "summary_ko": "메타가 광고 랭킹 서빙에 쓰는 ML 기반 자원 배분 시스템 'Intelligent Delivery' 를 공개했다. 광고 랭킹 모델은 LLM 급으로 커지는데 하드웨어는 그 속도를 못 따라가고, 추가 연산 1단위가 주는 효과는 요청·모델·칩마다 제각각이라 '어디에 연산을 더 줄 것인가'가 문제가 된다. 이 시스템은 연산의 한계 효용을 예측하는 ML 모델로 매 요청마다 밀리초 안에 판단해 가장 이득이 큰 요청·모델·하드웨어·랭킹 단계로 자원을 몰아준다. 2017년부터 2026년 상반기까지 모델·시스템 개선과 별개로 광고 랭킹 성능을 약 10% 추가로 끌어올렸으며, 최근에는 시스템 변화를 자동 감지·대응하는 에이전트 AI 활용을 늘리고 있다. ※한계 효용: 한 단위를 더 투입했을 때 늘어나는 성과.",
         "lang": "en",
-        "published_at": "2026-11-11T02:00:49+09:00",
-        "collected_at": "2026-11-11T07:32:46+09:00",
+        "published_at": "2026-11-12T02:00:38+09:00",
+        "collected_at": "2026-11-12T07:33:33+09:00",
         "metrics": null
       },
       {
-        "id": "e2117a1184bb4bd948590a1b85553e6a8672535b",
-        "title": "How We Built TLX: A Hardware-Native GPU Compiler for Production ML at Scale",
-        "url": "https://engineering.fb.com/2026/11/10/open-source/tlx-a-hardware-native-gpu-compiler-for-production-ml",
-        "source": "meta_eng",
+        "id": "1e25c4d1d22c66b1f2448a35c2cf079db32fc0da",
+        "title": "Choosing QuePaxa, an unusual consensus algorithm",
+        "url": "https://blog.cloudflare.com/choosing-quepaxa",
+        "source": "cloudflare",
         "category": "eng_blogs",
-        "summary_ko": "메타가 GPU 커널 언어 Triton 의 확장인 TLX(Triton Low-Level Extensions)를 공개했다. 최신 GPU 는 워프 특수화, 비동기 메모리 이동, 텐서 메모리, 클러스터 단위 실행 같은 기능으로 성능을 내는데, 이를 제어하려면 저수준 프로그래밍이 필요해 생산성과 상충한다. TLX 는 Triton 의 생산적인 프로그래밍 모델을 유지한 채 워프 그룹·클러스터 수준의 실행 순서를 명시적으로 제어할 수 있게 해 이 간극을 메운다. 현재 메타 내부에서 추천 시스템(RecSys) 학습·추론과 대규모 LLM 사전학습 등 실제 운영 워크로드를 돌리고 있으며, NVIDIA 와 AMD GPU 양쪽에서 성능 개선을 확인했다고 밝혔다.",
+        "summary_ko": "클라우드플레어가 실제 배포된 적 없는 합의 알고리즘 QuePaxa 로 실험적 합의 서비스를 만들고 있다며 선택 이유를 설명했다. 합의 알고리즘은 분산된 여러 서버가 장애 상황에서도 같은 값에 동의하게 만드는 기술로, 보통 Paxos·Raft 가 쓰인다. 글은 QuePaxa 의 동작 방식과 기존 선택지 대신 이 알고리즘을 고른 근거를 다룬다. 연구 단계 알고리즘을 실제 인프라에 올리는 드문 사례다. ※본문 상당 부분이 사이트 내비게이션에 가려 상세 수치는 미확보 — 원문 확인 권장.",
         "lang": "en",
-        "published_at": "2026-11-11T01:59:31+09:00",
-        "collected_at": "2026-11-11T07:32:46+09:00",
+        "published_at": "2026-11-11T23:24:46+09:00",
+        "collected_at": "2026-11-12T07:33:33+09:00",
         "metrics": null
       }
     ]
   },
   "hot_topics": [
     {
-      "topic": "Smart home devices should work without the internet",
+      "topic": "My AI agents found an unmapped Maya site",
       "trend_score": 1.0,
       "src_count": 1,
       "hn": {
-        "points": 584,
-        "comments": 206
+        "points": 890,
+        "comments": 322
       },
       "items": [
         {
-          "id": "f8fef665ff3e277e29e709ed59c84f6da4dcacee",
-          "title": "Smart home devices should work without the internet",
-          "url": "https://docodethatmatters.com/home-automation-overnight-success",
+          "id": "8d8bc38f54a7d35094ab7cd9a3d589c05f2992b9",
+          "title": "My AI agents found an unmapped Maya site",
+          "url": "https://pietromiotti.com/latest/maya-site",
           "source": "hackernews",
           "category": "hot_topics",
-          "summary_ko": "10년간 '인터넷이 끊겨도 집은 돌아가야 한다' 는 원칙으로 스마트홈을 운영해온 개발자의 규칙 모음이 해커뉴스에서 화제가 됐다. 구글이 API 를 닫아버려 Nest 연동이 죽은 경험이 출발점으로, 핵심 기능은 전부 본인 소유 하드웨어(ESP 보드의 Tasmota, MQTT 브로커, 라즈베리파이의 Node-RED)에서 돌리고 알렉사는 '스위치를 켜는 또 하나의 방법' 일 뿐 유일한 통로가 되지 않게 한다. 규칙으로는 새 방식을 추가할 때 기존 방식을 없애지 말 것, 클라우드 기기는 로그를 볼 수 있는 API 가 없으면 설치하지 않을 것, 설정은 벤더 앱 다섯 개가 아니라 한 곳에 둘 것, 기기 간 통신은 점대점 대신 MQTT 발행/구독으로 할 것, 1년 이상 가지 않는 배터리 기기는 쓰지 않을 것 등이 있다. ※필자는 삼성 냉장고가 자기 화면에 TLS 인증서 오류를 띄운 사례, 온도를 보려면 WiFi 가 필요한 그릴 컨트롤러를 반례로 든다.",
+          "summary_ko": "개발자 한 명이 AI 에이전트를 시켜 공개 라이다 데이터를 밤새 훑게 해 멕시코 정글 속 마야 유적을 찾아낸 과정을 일지로 적었다. 48개 에이전트가 약 1,200km² 분량의 라이다 데이터를 이미지로 바꿔 한 장씩 보며 피라미드·플랫폼·광장을 찾고 자연 언덕·싱크홀·도로를 걸러냈는데, 별도 분류 모델 없이 지침만 주고 '그냥 보게' 한 방식이다. 찾아낸 절벽 위 유적에는 평탄화된 광장, 높이 8~12m 이상의 타원형 피라미드, 부속 안뜰, 저수조로 보이는 함몰부가 있었고, 원시 점군까지 확인해 나무가 아닌 지면 형상임을 검증한 뒤 멕시코 국립인류학역사연구소(INAH)에 스페인어 보고서를 제출했다. 여행 중 떠오른 생각에서 정부 공식 회신까지 72시간이 걸렸다. 단, 11월 11일 업데이트에서 이 유적은 2025년 논문에 이미 보고돼 있었고 INAH 등록부에만 없었던 것으로 밝혀져 '발견'이 아니라 '재발견'으로 정정됐다. ※라이다: 레이저로 나뭇잎 사이를 뚫고 지면 높낮이를 측정하는 기술.",
           "lang": "en",
-          "published_at": "2026-11-11T00:25:20+09:00",
-          "collected_at": "2026-11-11T07:32:46+09:00",
+          "published_at": "2026-11-11T21:05:22+09:00",
+          "collected_at": "2026-11-12T07:33:33+09:00",
           "metrics": {
-            "points": 584,
-            "comments": 206
+            "points": 890,
+            "comments": 322
           }
         }
       ]
     },
     {
-      "topic": ".name Grandfathered",
-      "trend_score": 0.9735,
+      "topic": "AWS emulator",
+      "trend_score": 0.914,
       "src_count": 1,
       "hn": {
-        "points": 587,
-        "comments": 126
+        "points": 515,
+        "comments": 181
       },
       "items": [
         {
-          "id": "ad9eb20db0e4109524a47d89785b0ac3e1c992b5",
-          "title": ".name Grandfathered",
-          "url": "https://neil.fraser.name/news/2026/11/10",
+          "id": "70a69d3bb58228021bc9cc8347babadc9bc0bc9b",
+          "title": "AWS emulator",
+          "url": "https://github.com/aws/aws-emulator",
           "source": "hackernews",
           "category": "hot_topics",
-          "summary_ko": "베리사인이 .name 도메인 2만 2,000개와 이메일 전달 서비스를 종료하려던 계획을 철회했다. 기존 도메인과 이메일 전달은 기한 없이 유지되며, 다만 3단계 .name 도메인(예: firstname.lastname.name)의 신규 등록은 더 이상 받지 않는다. Blockly 개발자로 알려진 Neil Fraser 가 길고 비용이 큰 싸움이었다고 전하며, ICANN 에 직접 출석해 변론한 사람, 공식 재심 청구서를 작성한 사람들, 지지 서한을 제출한 20여 명 등 다수가 참여한 공동 대응이었다고 밝혔다.",
+          "summary_ko": "해커뉴스에서 화제가 된 aws/aws-emulator 저장소(별 1.3k)다. AWS API 를 로컬에서 흉내 내는 러스트 구현으로, AWS 계정 없이 자기 PC·개발 서버·CI 에서 코드를 그대로 테스트할 수 있다. GUI 없이 로컬 AWS API 엔드포인트를 띄우는 서버 모드(리눅스는 RPM/deb, 윈도우·맥은 도커)와, 러스트 테스트에서 테스트마다 격리된 인스턴스를 프로세스 내부에 띄우는 임베디드 모드를 제공한다. AI 코딩 에이전트용 `aws-emulator` 스킬을 설치해 세팅을 맡기는 방법도 안내한다(AWS CLI 2.35.0 이상 필요). CC0-1.0 라이선스.",
           "lang": "en",
-          "published_at": "2026-11-11T01:37:44+09:00",
-          "collected_at": "2026-11-11T07:32:46+09:00",
+          "published_at": "2026-11-12T03:21:38+09:00",
+          "collected_at": "2026-11-12T07:33:33+09:00",
           "metrics": {
-            "points": 587,
-            "comments": 126
+            "points": 515,
+            "comments": 181
           }
         }
       ]
     },
     {
-      "topic": "AI usage generates a fragile codebase",
-      "trend_score": 0.9601,
+      "topic": "Tim Peters has died",
+      "trend_score": 0.894,
       "src_count": 1,
       "hn": {
-        "points": 305,
-        "comments": 367
+        "points": 685,
+        "comments": 69
       },
       "items": [
         {
-          "id": "534e23320d33a495d4c4db8a4e63bbac9753e14e",
-          "title": "AI usage generates a fragile codebase",
-          "url": "https://evanxmerz.com/post/ai-usage-generates-a-fragile-codebase",
+          "id": "8363ca58553c4aa2e57cb9809360a956ead22e4d",
+          "title": "Tim Peters has died",
+          "url": "https://discuss.python.org/t/in-memoriam-tim-peters-1952-2026/110028",
           "source": "hackernews",
           "category": "hot_topics",
-          "summary_ko": "메타에서 해고된 뒤 다른 대기업으로 옮긴 개발자가 AI 로 생성한 코드가 어떻게 취약한 코드베이스를 만드는지 네 가지로 정리했다. 그는 메타 마지막 몇 달 동안 좋은 평가를 받기 위한 최소치로 코드의 90% 를 AI 로 생성했지만 생산량은 2배도 늘지 않았고, AI 의존도가 높은 동료들의 코드에서 장기적 기술부채가 될 미묘한 문제들을 봤다고 말한다(예: 뛰어난 개발자가 `:hover` 선택자 대신 자바스크립트 이벤트로 마우스오버 효과를 구현한 사례). 지적한 네 가지는 ① 중요한 것을 비껴가는 얕은 테스트(게터/세터만 테스트해 라인 커버리지 지표로는 안 보이는 구멍이 생김), ② 보조 메서드를 불필요하게 늘리는 과도하게 복잡한 코드 등이다. 핵심 진단은 AI 가 컨텍스트 창 안에 들어오는 문제는 잘 풀지만 그 창 밖의 장기적 문제는 전혀 보지 못한다는 것이다. ※필자는 현재 직장에서는 기대치에 맞춰 코드의 100% 를 AI 로 생성하고 있다고 밝혔다.",
+          "summary_ko": "파이썬 커뮤니티의 핵심 인물 팀 피터스(Tim Peters, 1952~2026)가 올해 7월 15일 사망했다는 부고가 python.org 포럼에 올라왔다. 공지에서는 그의 영향을 과소평가하기 어렵다며, 가장 널리 알려진 업적으로 파이썬의 설계 철학을 담은 '파이썬의 선(Zen of Python, PEP 20)'을 꼽았다. 그는 파이썬 표준 정렬 알고리즘 Timsort 의 고안자이기도 하다. ※PEP: 파이썬 개선 제안 문서. ※본문 일부만 확보 — 상세는 원문 참조.",
           "lang": "en",
-          "published_at": "2026-11-10T19:25:58+09:00",
-          "collected_at": "2026-11-11T07:32:46+09:00",
+          "published_at": "2026-11-11T16:03:17+09:00",
+          "collected_at": "2026-11-12T07:33:33+09:00",
           "metrics": {
-            "points": 305,
-            "comments": 367
+            "points": 685,
+            "comments": 69
           }
         }
       ]
     },
     {
-      "topic": "Ableton Live 13",
-      "trend_score": 0.9167,
+      "topic": "A false smoke alarm almost drowned Jane Street's only NYC datacenter",
+      "trend_score": 0.8718,
       "src_count": 1,
       "hn": {
-        "points": 243,
-        "comments": 263
+        "points": 353,
+        "comments": 170
       },
       "items": [
         {
-          "id": "c07cc0e96ec37e2ce6d1e640688c0600cb8605ec",
-          "title": "Ableton Live 13",
-          "url": "https://ableton.com/en/live",
+          "id": "12a9550d1f6a0c049713ed1352e00f23431a40da",
+          "title": "A false smoke alarm almost drowned Jane Street's only NYC datacenter",
+          "url": "https://michael.bacarella.com/2026/11/10/false-smoke-alarm-jane-street-datacenter",
           "source": "hackernews",
           "category": "hot_topics",
-          "summary_ko": "에이블톤이 음악 제작 소프트웨어 Live 13 의 신기능을 공개했다. 새 스텝 시퀀서 클립으로 비트·멜로디·폴리리듬을 만들 수 있고, ARA 2 플러그인 지원으로 오디오 편집이 빨라졌으며, 20가지 이상 드럼 엔진을 갖춘 Drum Synth 가 추가됐다. 컨트롤을 만지작거린 뒤 Capture 를 누르면 그 동작이 오토메이션으로 기록되는 Capture Automation, 디바이스 체인이나 믹서에서 바로 디바이스를 불러오고 프리셋을 바꾸는 Contextual Browsing 도 들어갔다. Rack 은 매크로를 최대 32개까지 확장하고 매핑 커브를 커스텀할 수 있게 됐고, 샘플 하나를 네 개의 재생 헤드로 겹쳐 반복하는 Looplet, Transient Shaper, Clipper, Envelope Clips 등도 새로 추가됐다. ※현재 Live 12 를 구매하면 20% 할인과 함께 Live 13 무상 업그레이드가 제공된다.",
+          "summary_ko": "제인스트리트 시스템팀 출신 엔지니어가 뉴욕 유일 데이터센터를 날릴 뻔한 사고를 회고했다. 이 회사는 트레이딩 플로어 바로 옆에 전산실을 뒀는데, 전략 유출 우려와 더불어 '폭주하는 자동매매 시스템은 뛰어가서 전원 케이블을 뽑아 끌 수 있어야 한다'는 리스크 문화(원자력 잠수함 출신 파트너의 영향) 때문이었다. 맨해튼 1 New York Plaza 빌딩 한가운데에 UPS·CRAC 공조·지하 디젤 발전기와 서버 캐비닛 10열 × 10개 규모로 들어선 이 전산실에서, 옆 준비실 공사 먼지 때문에 화재감지기가 오작동했다. 문제는 스프링클러 구조로, 평소 비어 있던 배관에 가압수가 차오르고 각 헤드의 열감지 마개가 열리면 물이 쏟아지는 방식이라 — 냉방이 끊긴 서버실 온도가 올라가기 전에 모든 전원을 뽑아야 하는 상황이 됐다. 글쓴이는 사무실에서 도보 9분 거리 원룸에 살던 터라 비상 호출을 받았다.",
           "lang": "en",
-          "published_at": "2026-11-10T21:58:04+09:00",
-          "collected_at": "2026-11-11T07:32:46+09:00",
+          "published_at": "2026-11-12T01:38:44+09:00",
+          "collected_at": "2026-11-12T07:33:33+09:00",
           "metrics": {
-            "points": 243,
-            "comments": 263
+            "points": 353,
+            "comments": 170
           }
         }
       ]
     },
     {
-      "topic": "Blender 5.3 released with Gaussian Splat support",
-      "trend_score": 0.8782,
+      "topic": "Using voltage glitching to unleash the A100 in my mining card",
+      "trend_score": 0.8047,
       "src_count": 1,
       "hn": {
-        "points": 380,
-        "comments": 53
+        "points": 242,
+        "comments": 98
       },
       "items": [
         {
-          "id": "5bbcdb1d75d654d75fe9f1b3f9033ece10a7a405",
-          "title": "Blender 5.3 released with Gaussian Splat support",
-          "url": "https://blender.org/download/releases/5-3",
+          "id": "e82f105c45bc3b2d82d03cd5caadff75d485d2e4",
+          "title": "Using voltage glitching to unleash the A100 in my mining card",
+          "url": "https://blog.kate.land/posts/using-voltage-glitching-to-unlock-the-a100",
           "source": "hackernews",
           "category": "hot_topics",
-          "summary_ko": "블렌더 5.3 이 3D 가우시안 스플랫(사진·영상에서 3D 장면을 복원할 때 쓰는, 작고 부드러운 반투명 blob 들의 집합) 네이티브 지원과 함께 출시됐다. PLY·SPZ·glTF 파일에서 스플랫을 불러와 포인트 클라우드로 저장하고, 지오메트리 노드로 가공한 뒤 EEVEE·Cycles·Workbench 에서 바로 렌더링할 수 있다. 스플랫마다 크기(scale), 회전(쿼터니언), 기본 복사휘도와 불투명도(radiance:base), 구면조화 계수(radiance:sh_*) 속성을 갖고 기본적으로 발광 셰이더로 렌더링된다. 이 밖에 DLSS 디노이징, 빛 분산(light dispersion), EEVEE 어안 렌즈, 아웃라이너 정렬, 영상 편집의 리플 편집 등이 추가됐다.",
+          "summary_ko": "보안 연구자가 전압 결함 주입(voltage glitching)으로 NVIDIA 채굴 전용 카드 CMP 170HX(8GB)를 사실상 A100-80G 로 바꿔 놓은 과정을 공개했다. GA100 다이의 퓨즈 컨트롤러에 취약점이 있어 임의의 퓨즈를 태울 수 있는데, NVIDIA 설계에서는 퓨즈를 더 태울수록 제약이 오히려 풀리는 경우가 있다는 것이 핵심이다(정상 설계라면 퓨즈를 태울수록 제한이 강해져야 한다). 결과적으로 VRAM 이 81,920MiB 로 인식되고, 수율을 고려해 108개로 묶여 출하되는 정품 A100 과 달리 동작하는 SM 을 전부(다이 운에 따라 120~126개) 켜서 FP16 FMA 처리량이 72.5 TFLOP/s → 85.9 TFLOP/s 로 약 1.18배 빨라졌다. NVLink, PCIe Gen4, NVJPG/NVDEC/MIG 등 채굴 카드에서 막아둔 기능도 해제 가능하다고 밝혔다. ※SM: GPU 연산 유닛. ※퓨즈: 칩에 한 번 태우면 되돌릴 수 없는 제품 등급 구분 장치.",
           "lang": "en",
-          "published_at": "2026-11-11T01:15:43+09:00",
-          "collected_at": "2026-11-11T07:32:46+09:00",
+          "published_at": "2026-11-11T19:48:40+09:00",
+          "collected_at": "2026-11-12T07:33:33+09:00",
           "metrics": {
-            "points": 380,
-            "comments": 53
+            "points": 242,
+            "comments": 98
           }
         }
       ]
     },
     {
-      "topic": "What's new in the .NET 11 runtime",
-      "trend_score": 0.8735,
+      "topic": "Hyper-Realistic Sand with WebGL2",
+      "trend_score": 0.7882,
       "src_count": 1,
       "hn": {
-        "points": 216,
-        "comments": 152
+        "points": 265,
+        "comments": 59
       },
       "items": [
         {
-          "id": "52fb6312db3acf9e8637149390aa157637112fd3",
-          "title": "What's new in the .NET 11 runtime",
-          "url": "https://learn.microsoft.com/en-us/dotnet/core/whats-new/dotnet-11/runtime",
+          "id": "f74f75d6547aaeffa480dc05ca12e4f2af3ab327",
+          "title": "Hyper-Realistic Sand with WebGL2",
+          "url": "https://av.github.io/safe-sand",
           "source": "hackernews",
           "category": "hot_topics",
-          "summary_ko": ".NET 11 런타임의 변경 사항이 공개됐다(RC 2 기준). 가장 눈에 띄는 변화는 최소 하드웨어 요구사항 상향으로, x86/x64 와 Arm64 양쪽에서 더 최신 명령어 집합을 요구하고 ReadyToRun(R2R — 시작 속도를 높이기 위해 미리 네이티브로 컴파일해두는 방식) 타깃도 함께 올렸다. 애플은 M1 이 armv8.5-a 급이라 변동이 없고, 리눅스도 라즈베리파이처럼 AdvSimd(NEON)만 지원하는 기기를 계속 지원하되 R2R 타깃에 LSE 가 추가돼 실행 시 JIT 부담이 늘 수 있다. 윈도우 Arm64 는 기준선 자체가 LSE 필수로 올라갔고(윈도우 11 과 윈도우 10 공식 지원 CPU 가 이미 요구하는 수준), R2R 타깃은 armv8.2-a + RCPC 가 됐다.",
+          "summary_ko": "브라우저에서 돌아가는 모래 시뮬레이터다. WebGL2 와 자바스크립트로 만들었고, 손가락으로 모래알을 밀거나 휴대폰을 기울여 흘러내리게 하거나 흔들어 흩뿌릴 수 있다. 폰·태블릿·데스크톱 모두 지원하며 터치 조작과 기기 모션 센서, 소리·햅틱 피드백을 쓴다. ※WebGL2: 브라우저에서 GPU 그래픽을 쓰게 해 주는 웹 표준 API.",
           "lang": "en",
-          "published_at": "2026-11-10T21:20:07+09:00",
-          "collected_at": "2026-11-11T07:32:46+09:00",
+          "published_at": "2026-11-11T22:39:29+09:00",
+          "collected_at": "2026-11-12T07:33:33+09:00",
           "metrics": {
-            "points": 216,
-            "comments": 152
+            "points": 265,
+            "comments": 59
           }
         }
       ]
     },
     {
-      "topic": "What constant surveillance is doing to children and parents",
-      "trend_score": 0.8673,
+      "topic": "We need more goat sacrifices",
+      "trend_score": 0.7716,
       "src_count": 1,
       "hn": {
-        "points": 185,
-        "comments": 185
+        "points": 171,
+        "comments": 103
       },
       "items": [
         {
-          "id": "2934d7cd62fe7050c7a10370f23b579a846a3e55",
-          "title": "What constant surveillance is doing to children and parents",
-          "url": "https://theatlantic.com/magazine/2026/12/location-tracking-apps-parental-surveillance/689031",
+          "id": "e2cbdaac5031e224b6df1223fe1c5ff522821934",
+          "title": "We need more goat sacrifices",
+          "url": "https://experimental-history.com/p/we-need-more-goat-sacrifices",
           "source": "hackernews",
           "category": "hot_topics",
-          "summary_ko": "부모의 위치 추적 앱 등 상시 감시가 아이와 부모에게 미치는 영향을 다룬 디애틀랜틱 2026년 12월호 기사다. ※본문 미확보 — 제목 기반. 유료 구독 매체라 본문을 가져오지 못했으며, 구체적 논지·취재 내용은 원문에서 확인해야 한다.",
+          "summary_ko": "심리학자 애덤 마스트로야니가 '사회 정책이나 자선 프로그램을 시작하기 전에 염소를 제물로 바치자'는 비유로, 선의의 개입 다수가 실제로는 효과가 없다는 점을 짚었다. 의식의 목적은 신에게 비는 것이 아니라 '우리는 아무것도 모른다'는 절차적 겸손을 스스로에게 각인시키는 것이라고 말한다. 근거로 2009년 미 의회가 최하위권 학교에 쓴 30억 달러 School Improvement Grants 의 효과 없음, 최고다양성책임자(CDO) 채용과 실제 구성 다양성의 무관함, 아프가니스탄 여성 취업 지원 2.8억 달러의 성과 불명, 페루 농촌 531개 학교 10년 RCT 에서 'One Laptop Per Child' 의 학업 효과 제로, 백신 권유 메시지 4종이 모두 실패하고 그중 하나는 오히려 자폐 유발 믿음을 키운 사례를 든다. 좌우 어느 쪽 정책이든 마찬가지라며 아칸소 메디케이드 근로요건(보험 가입자만 줄고 고용은 그대로), 부시 행정부의 Building Strong Families, 금욕 중심 성교육을 나란히 놓고, 1987년 피터 로시의 '평가의 철칙'을 인용한다. ※RCT: 무작위 대조 실험.",
           "lang": "en",
-          "published_at": "2026-11-10T19:47:18+09:00",
-          "collected_at": "2026-11-11T07:32:46+09:00",
+          "published_at": "2026-11-11T21:29:48+09:00",
+          "collected_at": "2026-11-12T07:33:33+09:00",
           "metrics": {
-            "points": 185,
-            "comments": 185
+            "points": 171,
+            "comments": 103
           }
         }
       ]
     },
     {
-      "topic": "Synaptics patent claims stop work on DisplayLink drivers",
-      "trend_score": 0.8556,
+      "topic": "Atuin Threads: All your agent sessions on every machine",
+      "trend_score": 0.7483,
       "src_count": 1,
       "hn": {
-        "points": 225,
-        "comments": 101
+        "points": 174,
+        "comments": 63
       },
       "items": [
         {
-          "id": "f2a365891fa20b3c542947e72b9d907497ded8c6",
-          "title": "Synaptics patent claims stop work on DisplayLink drivers",
-          "url": "https://lwn.net/SubscriberLink/1102549/acbc92e00cee3a3f",
+          "id": "f3e91f75ed135df54c08166966caab49a982606c",
+          "title": "Atuin Threads: All your agent sessions on every machine",
+          "url": "https://blog.atuin.sh/threads-agent-sessions",
           "source": "hackernews",
           "category": "hot_topics",
-          "summary_ko": "DisplayLink 리눅스 드라이버를 개선하려던 개발자가 시냅틱스(2022년 DisplayLink 인수)의 특허 침해 주장에 부딪혀 작업을 중단했다. Mike Lothian 은 자신의 Dell USB 3 도킹 스테이션이 리눅스에서 성능이 떨어진다고 보고 LLM 의 도움을 받아 드라이버를 개선하다 막힌 문제에 대해 시냅틱스 개발자들의 도움을 요청했는데, 돌아온 것은 법무팀의 특허 침해 주장과 '무단 구현을 중단하라' 는 요구, 고액의 법적 제재 경고였다. 시냅틱스는 DisplayLink Manager 를 x86 전용 바이너리로만 배포하고 커널 모듈 EVDI 만 오픈소스로 유지하고 있어, 당분간 리눅스 사용자는 다른 플랫폼과 동등한 기능을 쓸 수 없게 됐다. ※LWN 기사.",
+          "summary_ko": "셸 히스토리 도구 Atuin 이 AI 에이전트 세션을 기기 간에 동기화·검색하는 'Threads' 기능을 내놨다(Atuin 18.24~). 개발자의 터미널에서 돌아가는 명령 중 절반 이상이 더는 사람이 직접 친 것이 아닌데, 셸 히스토리와 달리 에이전트 세션은 노트북·개발서버·임시 인스턴스에 흩어져 검색도 안 되고 금방 잊힌다는 문제의식에서 출발했다. `atuin resume` 로 어느 기기에서든 세션을 이어받거나 다른 에이전트로 포크할 수 있다 — 개발 서버의 Claude Code 에서 시작한 작업을 노트북의 Codex 에서 마무리하는 식이다. 현재 Claude Code, Codex, Pi, Omp, OpenCode 를 지원하고, 동기화는 셸 히스토리와 같은 종단간 암호화(자체 서버 운영·완전 로컬도 가능)이며 세션 캡처는 옵트인이다. `atuin mcp` 로 에이전트가 과거 세션을 직접 검색해 '왜 그렇게 결정했는지', '예전에 뭘 시도했다 접었는지'를 참고하게 할 수도 있다.",
           "lang": "en",
-          "published_at": "2026-11-11T03:02:02+09:00",
-          "collected_at": "2026-11-11T07:32:46+09:00",
+          "published_at": "2026-11-11T23:10:46+09:00",
+          "collected_at": "2026-11-12T07:33:33+09:00",
           "metrics": {
-            "points": 225,
-            "comments": 101
+            "points": 174,
+            "comments": 63
           }
         }
       ]
     },
     {
-      "topic": "I deleted all my SSH keys",
-      "trend_score": 0.847,
+      "topic": "United Airlines bans AI agents from booking flights on behalf of travelers",
+      "trend_score": 0.7452,
       "src_count": 1,
       "hn": {
-        "points": 204,
+        "points": 131,
         "comments": 105
       },
       "items": [
         {
-          "id": "4a649622576608b1d0499b4b02f8c130bb383fde",
-          "title": "I deleted all my SSH keys",
-          "url": "https://blog.infected.systems/posts/2026-11-03-i-deleted-all-my-ssh-keys",
+          "id": "53bc56e14c08d499d351582d68592919ffbbb876",
+          "title": "United Airlines bans AI agents from booking flights on behalf of travelers",
+          "url": "https://cbsnews.com/news/united-airlines-bans-ai-agents-booking-flights",
           "source": "hackernews",
           "category": "hot_topics",
-          "summary_ko": "디스크에 평문 SSH 키를 한 개도 남기지 않도록 전환한 과정을 정리한 글이다. 필자는 ed25519-sk 키(하드웨어 보안키에 등록하는 SSH 키 형식)를 유비키로 오래 써왔지만 일부 용도와 비용 때문에 남겨뒀던 일반 온디스크 키들을 마저 없애기로 하고, 유비키·TPM·애플 시큐어 엔클레이브 세 가지 보안 영역에 키를 보관하거나 암호화하는 방법을 각각 시험했다. 패스프레이즈로 키를 암호화하는 전통적 방식도 대부분의 위협 모델에는 충분하다고 인정하면서, 하드웨어 상주 키는 그 하드웨어가 없으면 키를 쓸 수 없고 유출 경로 자체가 없다는 점을 택한 이유로 든다. 유비키 5 이상은 OpenSSH 만으로 추가 소프트웨어 없이 키를 등록할 수 있으며, LXC 컨테이너 안에서 쓰거나 SSHFS 를 비대화형으로 마운트하는 실사용 시나리오까지 검증했다.",
+          "summary_ko": "유나이티드항공이 여행객을 대신해 AI 에이전트가 항공권을 예약하는 것을 금지한다고 밝혔다(2026-11-11). 에이전트가 예약하려면 결제 정보 같은 계정 자격증명에 접근해야 하는데, 이를 제3자 AI 비서와 공유하면 민감정보가 노출되고 의도치 않은 결제·계정 변경·마일리지 사용이 일어날 수 있다는 이유다. 또 에이전트가 대신 체크인하는 것은 '수하물에 금지 물품이 없음을 본인이 직접 확인'하도록 한 연방 규정 위반 소지가 있다고 주장했다. 자사 플랫폼은 물론 여행사·애그리게이터를 통한 우회 접근도 막는다. 항공 분석가는 구글 검색·가격비교 사이트·온라인 여행사에 이어 더 강력한 중개자가 끼는 것을 원치 않고, AI 봇의 항공편 검색 폭증에 따르는 비용도 피하려는 것이라고 해석했다. 사우스웨스트가 ChatGPT 에 항공편 재고를 공개한 것과는 반대 행보이며, 카약·호퍼·구글 플라이트를 통한 예약은 계속 가능하다.",
           "lang": "en",
-          "published_at": "2026-11-06T03:17:51+09:00",
-          "collected_at": "2026-11-11T07:32:46+09:00",
+          "published_at": "2026-11-12T06:24:35+09:00",
+          "collected_at": "2026-11-12T07:33:33+09:00",
           "metrics": {
-            "points": 204,
+            "points": 131,
             "comments": 105
           }
         }
       ]
     },
     {
-      "topic": "Queens Public Library under ransomware attack",
-      "trend_score": 0.8396,
+      "topic": "Can a Linear Program Do Weight-Space Programming?",
+      "trend_score": 0.742,
       "src_count": 1,
       "hn": {
-        "points": 190,
-        "comments": 106
+        "points": 225,
+        "comments": 33
       },
       "items": [
         {
-          "id": "1484bc2b220d4e0dc95fbf68f65412deef475d19",
-          "title": "Queens Public Library under ransomware attack",
-          "url": "https://connect.queenslibrary.org/",
+          "id": "fc15b1445ad5b30be3d06fb0e6fc484727e44229",
+          "title": "Can a Linear Program Do Weight-Space Programming?",
+          "url": "https://nathan.rs/posts/weight-space-lp",
           "source": "hackernews",
           "category": "hot_topics",
-          "summary_ko": "미국 뉴욕 퀸스 공립도서관이 랜섬웨어 공격으로 전 지점에 영향을 주는 대규모 네트워크 장애를 겪고 있다. 도서관 웹사이트, 모바일 앱, 대부분 지점의 공용 컴퓨터, 디지털 미디어 서비스가 중단됐고, 와이파이와 대출·반납 기계, 중앙도서관을 포함한 7개 지점의 공용 컴퓨터는 복구됐다. 모든 지점은 정상 운영 중이고 자료 대출·반납도 가능하지만 연장(갱신)은 불가능하며, 연체료는 원래 부과하지 않는다고 안내했다. 도서관은 네트워크와 시스템 완전 복구까지 상당한 시간이 걸릴 것이라고 밝혔다.",
+          "summary_ko": "MIT CSAIL 의 'Sparks of Weight-Space Programming' 논문을 따라가며, 거기서 AI 가 8시간 동안 시행착오로 찾아낸 가중치 수정이 사실은 선형계획법(LP)으로 1분이면 풀리는 문제였음을 보인 글이다. 원 논문에서 GPT-6 Astra 는 Qwen3.5-0.8B 의 가중치 중 0.016%만 고쳐 MATH-500 정확도를 7.9%→48.1% 로 올렸다. 그 수정의 정체는 '생각 루프' 제거였다. 이 모델은 답을 못 내고 같은 문장을 반복하다 토큰 한도에 걸리는 비율이 93% 였는데, 루프에 빠질 때 잔차 스트림이 일정한 방향 u 로 움직인다는 점을 이용해 MLP 출력 행렬(down_proj)의 각 열에서 u 성분을 빼거나 뒤집었다. 15·19번 레이어에 적용하자 GSM8K·MATH 정확도가 9%→33%, 토큰 한도 초과는 93%→33.1%, IFEval 은 21%→62% 가 됐다. 글쓴이는 열마다 계수를 고르는 이 작업이 곧 LP 이며, LP 두 번(각 1분)이면 변경 가중치 수를 8배 줄이고 같은 효과를 낸다고 보였다. 다만 루프가 거의 없는 Gemma 3 270M 에서는 개선이 안 돼, 이 기법은 가려진 능력을 드러낼 뿐 없는 능력을 만들지는 못한다. ※선형계획법: 선형 제약 아래 선형 목적함수를 최적화하는 고전 최적화 기법.",
           "lang": "en",
-          "published_at": "2026-11-10T18:04:39+09:00",
-          "collected_at": "2026-11-11T07:32:46+09:00",
+          "published_at": "2026-11-11T21:30:17+09:00",
+          "collected_at": "2026-11-12T07:33:33+09:00",
           "metrics": {
-            "points": 190,
-            "comments": 106
+            "points": 225,
+            "comments": 33
           }
         }
       ]
@@ -640,7 +591,7 @@
     {
       "source": "github_trending",
       "ok": true,
-      "item_count": 11,
+      "item_count": 12,
       "error_type": null
     },
     {
@@ -651,9 +602,9 @@
     },
     {
       "source": "openai",
-      "ok": true,
-      "item_count": 1399,
-      "error_type": null
+      "ok": false,
+      "item_count": 0,
+      "error_type": "HTTPError"
     },
     {
       "source": "deepmind",
@@ -724,7 +675,7 @@
     {
       "source": "hf_blog",
       "ok": true,
-      "item_count": 902,
+      "item_count": 904,
       "error_type": null
     },
     {
