@@ -1,0 +1,677 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-11-17T07:41:11+09:00",
+  "date": "2026-11-17",
+  "categories": {
+    "ai_labs": [
+      {
+        "id": "f26f2a4dfd6b9b957c1544d02f570339b8f668d2",
+        "title": "Broadening access to AI for scientists",
+        "url": "https://openai.com/index/expanding-chatgpt-for-academic-researchers",
+        "source": "openai",
+        "category": "ai_labs",
+        "summary_ko": "OpenAI가 7월 파일럿으로 시작한 'ChatGPT for Academic Researchers' 프로그램을 확대해, 전 세계 연구자 최대 20만 명에게 ChatGPT를 무료 제공한다. 다음 지원 접수는 11월 23일(월) 시작이며 선착순으로 5만 건의 신규 지원권을 배정하고, 한 건당 본인과 협업자 2명까지 ChatGPT Plus를 무료로 쓸 수 있다. 파일럿 이후 33개국 2만 명이 참여했고, 결핵 치료 단축을 위한 신약 표적 탐색(브리검 여성병원·하버드 의대)이나 플로리다 자연사박물관의 AI 생물다양성 연구 같은 사례가 나왔다. 프로그램을 통해 공유된 데이터는 기본적으로 모델 학습에 쓰지 않는다.",
+        "lang": "en",
+        "published_at": "2026-11-17T02:00:00+09:00",
+        "collected_at": "2026-11-17T07:33:23+09:00",
+        "metrics": null
+      },
+      {
+        "id": "b1c71d07875ac772d826f89afdf2886a79e196cc",
+        "title": "Strengthening the fight against online child sexual abuse with new tools and support",
+        "url": "https://openai.com/index/strengthening-online-child-safety",
+        "source": "openai",
+        "category": "ai_labs",
+        "summary_ko": "OpenAI가 아동 성착취물(CSAM) 대응 도구 묶음을 공개했다. 핵심은 새 이미지 분류기로, 기존에 알려지지 않은 신규 이미지까지 시각적 징후로 탐지하고 점수를 매겨 검토자가 우선순위를 정하도록 돕는다. 특히 'AI로 생성된 CSAM인지'를 따로 알려주는 신호를 갖춘 첫 범용 공개 분류기라고 밝혔다. 이와 함께 유해 행동을 중단시키고 도움으로 연결하는 개입 장치, 개발자용 실무 가이드, 아동 안전 수사기관 지원도 함께 제공한다. ※CSAM: child sexual abuse material, 아동 성학대 이미지물.",
+        "lang": "en",
+        "published_at": "2026-11-17T02:00:00+09:00",
+        "collected_at": "2026-11-17T07:33:23+09:00",
+        "metrics": null
+      },
+      {
+        "id": "f891bd93f3d21469060271c5a85b2a7a2e8b4138",
+        "title": "Science at the Frontier: How scientists use ChatGPT",
+        "url": "https://openai.com/index/science-at-the-frontier",
+        "source": "openai",
+        "category": "ai_labs",
+        "summary_ko": "OpenAI 경제연구팀이 여름 학술 파일럿 참가 과학자 1,819명의 과학 관련 대화 58만 건 이상을 분석하고 251명을 설문한 보고서 'Science at the Frontier'를 냈다. 설문 참가자들은 같은 품질의 결과를 AI 없이 내려면 1.9배의 시간이 걸렸을 것이라고 답했고, 68%는 연구 아이디어를 발전시키는 데 ChatGPT를 썼다고 답했다. 98%는 자기 분야에서 AI가 발견 속도를 높일 것으로 기대했다. 문헌 검토부터 근거 분석, 아이디어 전개까지 연구 전 과정에 쓰이되, 작업을 위임한 뒤에도 연구자가 계속 개입하는 패턴이 관찰됐다.",
+        "lang": "en",
+        "published_at": "2026-11-16T21:00:00+09:00",
+        "collected_at": "2026-11-17T07:33:23+09:00",
+        "metrics": null
+      },
+      {
+        "id": "91e58e2ea930c2fabc271a22401b1d1a40419d3b",
+        "title": "LVMH’s Media Division announces strategic partnership with OpenAI",
+        "url": "https://openai.com/index/lvmh-media-division-partnership",
+        "source": "openai",
+        "category": "ai_labs",
+        "summary_ko": "LVMH 그룹의 미디어 부문과 OpenAI가 11월 16일 파리에서 전략적 제휴를 체결했다. 산하 매체 전반에 OpenAI 도구와 ChatGPT Enterprise를 배포해 기자들이 자료 조사, 문서 비교, 초벌 번역 같은 작업에 AI를 쓰도록 하고, 그만큼 취재·분석·현장 보도에 시간을 더 쓰게 하는 것이 목표다. 동시에 LVMH 미디어 부문의 기사 콘텐츠를 ChatGPT 안에서 더 잘 노출시켜 독자·광고주 대상 개인화와 매출 성장도 노린다. ※LVMH 미디어 부문: 레제코(Les Echos), 르 파리지앵 등을 보유한 미디어 사업부.",
+        "lang": "en",
+        "published_at": "2026-11-16T18:00:00+09:00",
+        "collected_at": "2026-11-17T07:33:23+09:00",
+        "metrics": null
+      },
+      {
+        "id": "ebd9eb94963902d268e98b387f55dc19a0c20460",
+        "title": "Our first phase of embedded assessments",
+        "url": "https://openai.com/index/our-first-phase-of-embedded-assessments",
+        "source": "openai",
+        "category": "ai_labs",
+        "summary_ko": "OpenAI가 Apollo Research, METR, Transluce, Goodfire 등 독립 평가기관 4곳과 '임베디드 평가(embedded assessments)' 1단계 계약을 맺었다. 외부 전문가가 장기간 내부 모델과 시스템에 깊이 접근해 모델 정렬(alignment)과 안전장치의 실효성을 검증하는 방식으로, 평가자는 모델 체크포인트·소스코드·학습 및 평가 데이터·모니터링 시스템·기술 문서와 담당 연구원과의 논의까지 받는다. 보안 통제된 현장 환경, 감독 및 분쟁 조정 절차, 이해상충 공시와 쿨오프 기간, 공개 및 책임 있는 공개(디스클로저) 기간 같은 프로토콜도 함께 규정했다.",
+        "lang": "en",
+        "published_at": "2026-11-16T17:00:00+09:00",
+        "collected_at": "2026-11-17T07:33:23+09:00",
+        "metrics": null
+      },
+      {
+        "id": "b0ded74e06b06613ea577f6c99012354ee06d70e",
+        "title": "Advancing computer-use agents for healthcare teams",
+        "url": "https://openai.com/index/advancing-computer-use-for-healthcare-teams",
+        "source": "openai",
+        "category": "ai_labs",
+        "summary_ko": "OpenAI가 의료 현장용 '컴퓨터 사용(computer-use) 에이전트'의 성능·안전성·비용 측정 결과를 공개했다. 컴퓨터 사용 에이전트는 사람처럼 화면을 클릭하고 입력하며 여러 애플리케이션을 오가며 다단계 업무를 처리하는 AI로, 예컨대 의사가 MRI를 권고하면 전자의무기록에서 필요한 정보를 찾아 보험사 포털에 입력해 사전승인 요청을 완성하는 식이다. Abridge, Ambience, Cigna Healthcare, CVS Health 등과 함께 사전승인·전원 의뢰·퇴원 계획·내원 간 환자 연락 업무에 적용 중이며, OpenAI API와 ChatGPT for Healthcare/Clinicians로 바로 쓸 수 있다. HIPAA 준수 워크플로, 승인 절차와 에이전트 접근 권한 설정, 감사 로그 기록을 지원한다. ※HIPAA: 미국 의료정보 보호법.",
+        "lang": "en",
+        "published_at": "2026-11-16T15:00:00+09:00",
+        "collected_at": "2026-11-17T07:33:23+09:00",
+        "metrics": null
+      },
+      {
+        "id": "cfcc7acb02e9ca7944d1e900e1dedbf4b8c78667",
+        "title": "More ways to move care forward with ChatGPT for Healthcare",
+        "url": "https://openai.com/index/more-ways-to-move-care-forward-with-chatgpt-for-healthcare",
+        "source": "openai",
+        "category": "ai_labs",
+        "summary_ko": "ChatGPT for Healthcare에 세 가지가 추가됐다. ① 기존 의료 소프트웨어를 가로질러 다단계 업무를 수행하는 컴퓨터 사용 에이전트, ② 의학적 근거를 찾아 평가하고 출처를 인용하는 '신뢰할 수 있는 임상 검색' 개선, ③ 20개가 넘는 신규 헬스케어 플러그인이다. 의료진이 전자의무기록(EHR), 병원 규정, 예약 시스템, 보험사 포털을 일일이 오가며 정보를 짜맞추던 작업을 한 대화 안으로 모으는 것이 목표다.",
+        "lang": "en",
+        "published_at": "2026-11-16T15:00:00+09:00",
+        "collected_at": "2026-11-17T07:33:23+09:00",
+        "metrics": null
+      },
+      {
+        "id": "e3915f7e4cf071c4232933d2f6f49995917fa34a",
+        "title": "The King’s Trust and OpenAI launch £1m partnership",
+        "url": "https://openai.com/index/the-kings-trust-and-openai",
+        "source": "openai",
+        "category": "ai_labs",
+        "summary_ko": "영국 청년 지원 자선단체 '킹스 트러스트(The King's Trust)'와 OpenAI가 100만 파운드(약 18억 원) 규모 파트너십을 발표했다. 향후 18개월간 영국 청년 최대 2만 5천 명에게 실무형 AI 역량 교육을 제공하며, 학업·취업·직업훈련 어디에도 속하지 않은 이른바 NEET 청년을 우선 대상으로 한다. 킹스 트러스트는 앞으로 몇 달 안에 국가 공인 AI 자격 과정도 함께 출범할 예정이다. 오픈유니버시티의 2026년 조사에서 NEET 상태인 16~24세의 68%가 취업 전망을 위해 재교육·업스킬을 받을 의향이 있다고 답한 점이 근거로 제시됐다. ※NEET: Not in Education, Employment or Training.",
+        "lang": "en",
+        "published_at": "2026-11-16T09:00:00+09:00",
+        "collected_at": "2026-11-17T07:33:23+09:00",
+        "metrics": null
+      },
+      {
+        "id": "3899b6e8ee3cc1f1e22e1d88662f051be1f7932a",
+        "title": "At Holiday Extras, dots get to work before anyone asks",
+        "url": "https://openai.com/business/customer-stories/holiday-extras-dots",
+        "source": "openai",
+        "category": "ai_labs",
+        "summary_ko": "영국 여행 테크 기업 Holiday Extras가 OpenAI의 'dots'(상시 상주하며 먼저 움직이는 개인 AI 에이전트)를 쓰는 사례. AI 혁신 담당 VP인 Liam Thompson은 앱 신기능 출시 다음 날 요청하지도 않은 성과 리포트를 받았는데, 그의 dot이 출시를 스스로 인지하고 ChatGPT 플러그인으로 Google BigQuery에서 데이터를 끌어와 정리해준 것이다. 그는 하루 두 시간가량 출퇴근길에 dot과 대화하며 다가올 회의를 정리하고, 과거 며칠씩 걸리던 애니메이션 작업이 약 10분으로 줄었다고 말한다. 회사는 ChatGPT Enterprise를 기반으로 쓰고 Codex로 사내 전문지식을 소프트웨어로 바꾸는 구조를 함께 돌리고 있다.",
+        "lang": "en",
+        "published_at": "2026-11-16T09:00:00+09:00",
+        "collected_at": "2026-11-17T07:33:23+09:00",
+        "metrics": null
+      },
+      {
+        "id": "853b24ff0d6ecd3fcd61e6830268745171134fbb",
+        "title": "Hugging Face and OpenRouter join forces to make open-weight models easy to run",
+        "url": "https://huggingface.co/blog/openrouter",
+        "source": "hf_blog",
+        "category": "ai_labs",
+        "summary_ko": "Hugging Face가 자체 추론 라우터를 OpenRouter의 라우터로 교체했다. 이제 Hub의 언어 모델 요청은 OpenRouter를 거쳐 80개 이상 추론 제공사 중 실시간 가격·속도·안정성 측정값을 기준으로 최적 제공사에 배정되고, 실패하면 다른 제공사로 자동 재시도한다. 사용자 코드는 그대로 두고 Hugging Face 토큰 하나로 호출할 수 있으며, 라우터는 OpenAI의 Chat Completions·Responses API와 Anthropic의 Messages API를 모든 채팅 모델에 대해 지원한다. 단, 사용자가 직접 등록한 제공사 API 키(custom provider keys) 처리 방식에는 호환성이 깨지는 변경이 포함돼 확인이 필요하다.",
+        "lang": "en",
+        "published_at": "2026-11-16T09:00:00+09:00",
+        "collected_at": "2026-11-17T07:33:23+09:00",
+        "metrics": null
+      }
+    ],
+    "community": [
+      {
+        "id": "d75df0c00521daa4f15e1d11f437a5a05cb24c83",
+        "title": "whisper base and an 11M param BERT i distilled from a 2B model, both running in the browser to caption videos",
+        "url": "https://reddit.com/r/LocalLLaMA/comments/1xy25lw/whisper_base_and_an_11m_param_bert_i_distilled",
+        "source": "reddit_localllama",
+        "category": "community",
+        "summary_ko": "Blender 튜토리얼 쇼츠를 만드는 개발자가 매번 렌더 결과를 외부 자막 서비스에 올리기 싫어서 브라우저 안에서 모델을 돌리는 자막 도구를 만들었다. 음성 인식은 transformers.js로 onnx-community/whisper-base_timestamped를 쓰고, 실제 GPU가 있으면 WebGPU(fp32), 아니면 WASM(디코더는 q8)으로 돌린다 — 소프트웨어 WebGPU 어댑터는 WASM보다 느려서 그쪽도 WASM으로 보낸다. 가장 공들인 부분은 어떤 단어를 강조하고 어디서 줄을 바꿀지, 빠진 구두점·대문자를 고치는 '자막 태거'로, 수작업 규칙으로 시작했다가 2B 모델에서 증류한 11M 파라미터 BERT-mini(토큰당 8개 라벨, 약 12MB, q8/WASM)로 대체했다. 학습 데이터는 4070 Ti Super에서 llama.cpp로 분당 190개 스크립트씩 뽑았고, 홀드아웃 데이터에서 기존 규칙을 이겼을 때만 교체했다.",
+        "lang": "en",
+        "published_at": "2026-11-17T06:40:43+09:00",
+        "collected_at": "2026-11-17T07:33:23+09:00",
+        "metrics": null
+      },
+      {
+        "id": "77b4f68a8ed7ce4e550f400c49a515d1912fb70f",
+        "title": "Best MoE engine?",
+        "url": "https://reddit.com/r/LocalLLaMA/comments/1xy0d5o/best_moe_engine",
+        "source": "reddit_localllama",
+        "category": "community",
+        "summary_ko": "로컬 LLM 추론 엔진 비교 후기. 글쓴이는 한 달간 Strata를 썼는데 llama.cpp보다 설정과 속도가 훨씬 낫지만, 컨텍스트 압축(compaction) 이후 모델이 자기 맥락을 착각하고 과도하게 생각하는 문제가 있었다고 한다. 어제부터 Basalt로 옮겨보니 더 빠르고 오류도 적고 추론 품질도 더 정확했으며, 같은 Qwen3.8 FlashNext-ud-q4_k_xl 모델 기준 출력 속도가 70~110 tok/s에서 110~170 tok/s로 올랐다는 것이 요지다. 단 GPU 1장에 VRAM·RAM·SSD를 합쳐 100GB 이상인 환경을 전제로 한 후기다. ※MoE: Mixture of Experts, 입력마다 일부 전문가 블록만 활성화하는 모델 구조.",
+        "lang": "en",
+        "published_at": "2026-11-17T05:31:36+09:00",
+        "collected_at": "2026-11-17T07:33:23+09:00",
+        "metrics": null
+      },
+      {
+        "id": "52003d9b3559a3a63592e684282514e95001ed99",
+        "title": "I am sick of doomposting about demise of local AI",
+        "url": "https://reddit.com/r/LocalLLaMA/comments/1xxzk23/i_am_sick_of_doomposting_about_demise_of_local_ai",
+        "source": "reddit_localllama",
+        "category": "community",
+        "summary_ko": "'로컬 AI는 끝났다'는 비관론에 지쳤다는 커뮤니티 의견글. 글쓴이는 Qwen 팀이 Qwen 4를 내겠다고 명시했고 알리바바도 최근 컨퍼런스에서 오픈웨이트 공개를 계속하겠다고 약속했는데도, 트위터와 레딧에는 '오픈웨이트는 이번 세대가 마지막'이라는 식의 근거 없는 소문이 돈다고 지적한다. 사람들이 더 나쁜 현실을 지어내 미리 슬퍼하는 '학습된 무력감'에 빠지면 나쁜 일이 오히려 더 용인되고 반발도 줄어 자기실현적 예언이 된다는 주장이다.",
+        "lang": "en",
+        "published_at": "2026-11-17T05:01:18+09:00",
+        "collected_at": "2026-11-17T07:33:23+09:00",
+        "metrics": null
+      },
+      {
+        "id": "6fcddfcae5f8e1a8055fdb1cc87cfbb36d3b96d5",
+        "title": "I don't get all the Strata hates around here",
+        "url": "https://reddit.com/r/LocalLLaMA/comments/1xxz46x/i_dont_get_all_the_strata_hates_around_here",
+        "source": "reddit_localllama",
+        "category": "community",
+        "summary_ko": "로컬 추론 엔진 Strata에 쏟아지는 비난이 과하다는 반박글. 글쓴이는 Strata가 무료이고, 개발자가 하드웨어 동작을 깊이 이해해 가격이 치솟은 그래픽카드를 못 바꾸는 평범한 사양에서도 큰 모델을 돌릴 수 있게 만든 결과물이라고 평가한다. 512GB RAM Mac Studio나 3090 8장을 가진 사람이라면 애초에 쓸 이유가 없는 도구인데, 그런 환경의 일부 사용자들이 상시 조롱만 한다는 것이다. 무료로 내놓은 작업물에 계속 비난이 쏟아지면 원작자가 개발을 이어갈 동기를 잃는다는 점을 지적하며, Ornith 등 다른 모델에도 같은 패턴이 반복된다고 덧붙인다.",
+        "lang": "en",
+        "published_at": "2026-11-17T04:45:10+09:00",
+        "collected_at": "2026-11-17T07:33:23+09:00",
+        "metrics": null
+      },
+      {
+        "id": "0ec449425e5c09934c2f70f9e6ee324dab2889b2",
+        "title": "miHoYo Gamer: A Generalist Game Agent",
+        "url": "https://reddit.com/r/LocalLLaMA/comments/1xxy7eb/mihoyo_gamer_a_generalist_game_agent",
+        "source": "reddit_localllama",
+        "category": "community",
+        "summary_ko": "miHoYo(호요버스)가 공개한 범용 게임 에이전트 'miHoYo Gamer'를 소개하는 링크 공유글. ※본문 미확보 — 제목과 링크만 수집됨(레딧 본문 없음).",
+        "lang": "en",
+        "published_at": "2026-11-17T04:11:42+09:00",
+        "collected_at": "2026-11-17T07:33:23+09:00",
+        "metrics": null
+      },
+      {
+        "id": "3225d53d50a70bbcb4582bf5046ba514f49b9298",
+        "title": "Small Gemma 4 tokenizers were recently updated by Google - fix for an issue that caused nonsense output when encountering certain tokens",
+        "url": "https://reddit.com/r/LocalLLaMA/comments/1xxxs0a/small_gemma_4_tokenizers_were_recently_updated_by",
+        "source": "reddit_localllama",
+        "category": "community",
+        "summary_ko": "구글이 소형 Gemma 4 모델들의 토크나이저를 최근 업데이트했다. 특정 토큰을 만나면 출력이 엉뚱한 문자열로 깨지던 문제에 대한 수정으로, 예시는 Gemma 4 E4B지만 E2B와 12B에도 같은 수정이 적용됐다. 글쓴이는 이 수정이 이미 배포된 GGUF 양자화 파일들에까지 반영될지는 확실치 않다고 덧붙였다. ※토크나이저: 텍스트를 모델이 처리하는 토큰 단위로 쪼개는 전처리기. ※GGUF: llama.cpp 계열에서 쓰는 모델 파일 포맷.",
+        "lang": "en",
+        "published_at": "2026-11-17T03:55:18+09:00",
+        "collected_at": "2026-11-17T07:33:23+09:00",
+        "metrics": null
+      },
+      {
+        "id": "18addbe0f795d115052d2ae05b9c3bcea9fe2130",
+        "title": "Open weight models account for 30% usage at enterprises to save money",
+        "url": "https://reddit.com/r/LocalLLaMA/comments/1xxxbt9/open_weight_models_account_for_30_usage_at",
+        "source": "reddit_localllama",
+        "category": "community",
+        "summary_ko": "기업의 LLM 사용 중 오픈웨이트 모델 비중이 7월 거의 0%에서 30%까지 올라왔다는 통계 공유글(출처는 X 게시물). 주로 비용 절감 목적이며, 대량 배치 처리나 코딩처럼 호출량이 많은 워크로드에서 상용 API 대신 쓰이는 패턴이라고 설명한다. ※오픈웨이트: 가중치가 공개돼 직접 내려받아 돌릴 수 있는 모델.",
+        "lang": "en",
+        "published_at": "2026-11-17T03:38:24+09:00",
+        "collected_at": "2026-11-17T07:33:23+09:00",
+        "metrics": null
+      },
+      {
+        "id": "ba33c9d72629ae8ae1701dda52d976346ff30ab2",
+        "title": "nvidia/Nemotron-Labs-Sigma 8B/3B",
+        "url": "https://reddit.com/r/LocalLLaMA/comments/1xxwg6w/nvidianemotronlabssigma_8b3b",
+        "source": "reddit_localllama",
+        "category": "community",
+        "summary_ko": "NVIDIA가 Nemotron-Labs-Sigma 8B/3B를 공개했다. 토큰을 하나씩 순차 생성하는 기존 방식과 달리, 16차원 연속 토큰 임베딩 공간에서 가우시안 노이즈를 걷어내는 '연속 확산(continuous diffusion) 언어 모델'로, 디노이저 네트워크와 토큰 임베딩을 우도 최적화로 함께 학습한다. 텍스트는 블록 단위로 병렬 디코딩되며 각 블록을 설정 가능한 횟수만큼 디노이징 단계(DDPM/DDIM 샘플러)로 다듬고, 이미 확정된 토큰은 일반적인 KV 캐시로 재사용한다. 단계 수를 줄이면 품질을 조금 내주고 큰 속도 이득을 얻으며, 연속 표현 덕에 소수 단계 증류나 생성 궤적 조종에도 유리하다. 공개된 것은 베이스 모델 위에 명령 수행용으로 지도 미세조정(SFT)한 변형이다.",
+        "lang": "en",
+        "published_at": "2026-11-17T03:06:03+09:00",
+        "collected_at": "2026-11-17T07:33:23+09:00",
+        "metrics": null
+      },
+      {
+        "id": "98cdaa98b0d935f3bbe2f8a4f21f398b0d4387f8",
+        "title": "[NEW RELEASE] - Supra2.5-65M Base and Instruct - our next generation state-of-the art small model family - first model!",
+        "url": "https://reddit.com/r/LocalLLaMA/comments/1xxw9ik/new_release_supra2565m_base_and_instruct_our_next",
+        "source": "reddit_localllama",
+        "category": "community",
+        "summary_ko": "SupraLabs가 초소형 모델 제품군의 신작 Supra2.5-65M(베이스·인스트럭트)을 Hugging Face에 공개했다. 파라미터 65M으로 '토스터에서도 돌아갈' 수준이면서 자사 기존 50M·100M 모델보다 성능이 낫다고 주장한다. RTX A6000 2장으로 로컬에서 4일간 고품질 데이터 1,000억 토큰을 학습했고, F16·Q8_0·Q4_K_M GGUF 양자화본도 함께 제공한다. 다음 세대인 Supra3는 내년 초 공개 예정이라고 밝혔다.",
+        "lang": "en",
+        "published_at": "2026-11-17T02:59:17+09:00",
+        "collected_at": "2026-11-17T07:33:23+09:00",
+        "metrics": null
+      },
+      {
+        "id": "21c8b2b44c9b90b8f1880f1b25c52e2fac239fe2",
+        "title": "Under 9gb model comparison",
+        "url": "https://reddit.com/r/LocalLLaMA/comments/1xxvr5z/under_9gb_model_comparison",
+        "source": "reddit_localllama",
+        "category": "community",
+        "summary_ko": "9GB 이하로 돌릴 수 있는 소형 모델들을 한 표로 비교한 커뮤니티 정리글. 대상은 K2-Horizon-7B(IFM, 7B 덴스, 512K 컨텍스트), Granite 4.2-8B(IBM), Qwen3.5-9B(하이브리드 delta-net, 262K~약 1M 확장, 텍스트+비전+비디오), MiMo-V2.6-Distill-Qwen-9B(샤오미), LFM2.5-8B-A1B(Liquid, 8.3B 중 1.5B 활성 MoE), Gemma 4 E4B(구글, 유효 4.5B/총 8B), LFM3-VL-2B 등이다. 라이선스는 Apache-2.0이 다수이고 MiMo는 MIT, Liquid 계열은 자체 LFM 1.0 라이선스다. 글쓴이 스스로 점수가 각 연구소 자체 발표치이고 측정 하네스도 제각각이라 그대로 믿지 말라고 단서를 달았다.",
+        "lang": "en",
+        "published_at": "2026-11-17T02:39:46+09:00",
+        "collected_at": "2026-11-17T07:33:23+09:00",
+        "metrics": null
+      }
+    ],
+    "github_trending": [
+      {
+        "id": "52adf762d4075bfab29f2cf8673a9747c2f4005f",
+        "title": "google-labs-code/stitch-skills",
+        "url": "https://github.com/google-labs-code/stitch-skills",
+        "source": "github_trending",
+        "category": "github_trending",
+        "summary_ko": "Google Labs가 공개한 'stitch-skills' 저장소. Google Stitch(디자인 도구)의 MCP 서버와 함께 쓰는 에이전트 스킬 모음으로, 각 스킬이 Agent Skills 공개 표준을 따르기 때문에 Codex, Antigravity, Gemini CLI, Claude Code, Cursor, OpenCode 같은 여러 코딩 에이전트에서 호환된다. 플러그인 묶음(stitch-design, stitch-build, stitch-utilities)을 한 번에 설치하는 방식을 권장하며, 예를 들어 Codex에서는 마켓플레이스를 추가한 뒤 필요한 플러그인만 sparse 체크아웃으로 내려받는다. ※MCP: Model Context Protocol, 에이전트가 외부 도구·데이터에 붙는 표준 프로토콜.",
+        "lang": "en",
+        "published_at": null,
+        "collected_at": "2026-11-17T07:33:23+09:00",
+        "metrics": null
+      },
+      {
+        "id": "dfedfa4966b602195df85786c0cf603c85c9fec5",
+        "title": "ggml-org/ggml",
+        "url": "https://github.com/ggml-org/ggml",
+        "source": "github_trending",
+        "category": "github_trending",
+        "summary_ko": "llama.cpp의 토대가 되는 텐서 라이브러리 ggml이 GitHub 트렌딩에 올랐다(스타 약 16.1k, 포크 2.1k). 의존성 없는 순수 C/C++ 구현으로 x86, ARM, RISC-V, LoongArch, PowerPC, s390x, WebAssembly까지 교차 플랫폼을 지원하고, x86·ARM·RISC-V용 SIMD 최적화 커널을 갖췄다. 백엔드는 CPU·GPU·NPU는 물론 브라우저까지 포괄하며, 2~8비트 정수 양자화에 더해 MXFP4·NVFP4 마이크로스케일링 포맷도 지원하고 런타임 중 메모리 할당이 전혀 없는 설계다. ※양자화: 모델 가중치를 저정밀도로 줄여 메모리와 연산을 아끼는 기법.",
+        "lang": "en",
+        "published_at": null,
+        "collected_at": "2026-11-17T07:33:23+09:00",
+        "metrics": null
+      },
+      {
+        "id": "c6524b3bb676a860909056e7c34a6e95fe7b9208",
+        "title": "elementalsouls/Claude-BugHunter",
+        "url": "https://github.com/elementalsouls/Claude-BugHunter",
+        "source": "github_trending",
+        "category": "github_trending",
+        "summary_ko": "버그 헌팅과 외부 레드팀 업무용 Claude Code 스킬 번들 'Claude-BugHunter'. 82~83개 스킬, 15개 슬래시 명령, 24개 핵심 취약점 분류에 걸쳐 정리한 681개 공개 리포트 패턴(그중 433개는 개별 출처가 인용돼 검증 가능)을 담았고, 기업 아이덴티티·인프라 공격 매트릭스와 교전(engagement) 폴더 스캐폴딩, Burp MCP 연동도 포함한다. 보안 연구자 Sachin Sharma가 만들었으며, 권한이 부여된 레드팀·버그바운티 업무와 DVWA·OWASP Juice Shop·Hacker101 같은 공개 훈련 플랫폼에서 검증했다고 소개한다. ※레드팀: 방어 체계를 시험하기 위해 공격자 역할을 맡는 보안 활동.",
+        "lang": "en",
+        "published_at": null,
+        "collected_at": "2026-11-17T07:33:23+09:00",
+        "metrics": null
+      },
+      {
+        "id": "3781448153b0315f0191ae6ec316f2a44eb1f887",
+        "title": "NVIDIA/SkillEvaluator",
+        "url": "https://github.com/NVIDIA/SkillEvaluator",
+        "source": "github_trending",
+        "category": "github_trending",
+        "summary_ko": "NVIDIA가 공개한 'SkillEvaluator'는 AI 에이전트 스킬과 플러그인을 평가하는 다계층 프레임워크다. 품질 게이트 검사로 시작해, 스킬을 넣었을 때와 뺐을 때의 실행 결과를 비교하는 라이브 에이전트 평가까지 단계적으로 올라가며, 스킬 간 의미 중복 탐지와 합성 평가 데이터셋 생성도 지원한다. CLI 직접 실행, 저장소 CI 연동, 에이전트 연결의 세 가지 방식이 모두 같은 결과를 내도록 설계됐고 `pip install skillevaluator` 후 API 키 없이 Tier 1 검사를 돌릴 수 있다. NVIDIA의 Verified Skills 파이프라인의 일부이며, 평가 대상인 '에이전트 스킬'은 Agent Skills 명세를 따르는 지시문·보조 파일 폴더를 뜻한다.",
+        "lang": "en",
+        "published_at": null,
+        "collected_at": "2026-11-17T07:33:23+09:00",
+        "metrics": null
+      }
+    ],
+    "codex": [],
+    "eng_blogs": [
+      {
+        "id": "85ba9cf467fad77b652d0a8b24d612a683c3730f",
+        "title": "AWS Weekly Roundup: AWS Nitro Sandboxes, AWS Emulator, and more (November 16, 2026)",
+        "url": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-aws-nitro-sandboxes-aws-emulator-and-more-november-16-2026",
+        "source": "aws",
+        "category": "eng_blogs",
+        "summary_ko": "AWS 주간 소식 정리(11월 16일자)로, 이번 주 머리기사는 AWS Nitro Sandboxes와 AWS Emulator다. AWS Emulator는 지난주 출시된 것으로, 개발자와 코딩 에이전트가 자기 머신에서 AWS를 그대로 돌려보며 테스트할 수 있게 해준다. 글쓴이는 같은 메시지가 두 번 전달되는 상황(중복 전달)처럼 정상 시나리오 데모만으로는 드러나지 않는 경계 사례를, 변경이 작을 때 손쉽게 조사할 수 있다는 점을 이 도구의 가치로 꼽았다. ※본문 대부분이 사이트 네비게이션으로 수집돼 개별 서비스 상세는 원문 참조.",
+        "lang": "en",
+        "published_at": "2026-11-17T02:55:46+09:00",
+        "collected_at": "2026-11-17T07:33:23+09:00",
+        "metrics": null
+      }
+    ]
+  },
+  "hot_topics": [
+    {
+      "topic": "Many of Amazon’s Black Friday and Cyber Monday “deals” offered no savings",
+      "trend_score": 1.0,
+      "src_count": 1,
+      "hn": {
+        "points": 765,
+        "comments": 466
+      },
+      "items": [
+        {
+          "id": "cb381b007fd719356ed75f88263a7a738cfd555d",
+          "title": "Many of Amazon’s Black Friday and Cyber Monday “deals” offered no savings",
+          "url": "https://groundworkcollaborative.org/news/amazons-decoy-deals-groundwork-investigation-reveals-nearly-1-in-3-black-friday-and-cyber-monday-deals-advertised-by-amazon-offered-no-savings-to-shoppers-nearly-1-in-10-w",
+          "source": "hackernews",
+          "category": "hot_topics",
+          "summary_ko": "미국 정책연구단체 Groundwork Collaborative가 아마존의 블랙프라이데이·사이버먼데이 '특가'를 조사한 보고서 'Deal or Decoy?'를 냈다. 2024·2025년 아마존 자체 딜 페이지에 '올해 최고의 할인'으로 올라온 상품 350개 이상의 가격을 추적한 결과, 약 3개 중 1개는 실제 할인이 전혀 없었다 — 세일 직전 한 달 동안 같거나 더 싼 값에 팔리던 상품이었다. 나아가 약 10개 중 1개는 세일 기간 가격이 직전 한 달보다 오히려 비쌌다. 보고서 저자는 Breyon Williams, Elizabeth Pancotti, Lindsay Owens다.",
+          "lang": "en",
+          "published_at": "2026-11-16T22:39:07+09:00",
+          "collected_at": "2026-11-17T07:33:23+09:00",
+          "metrics": {
+            "points": 765,
+            "comments": 466
+          }
+        }
+      ]
+    },
+    {
+      "topic": "Technical issue at JPMorgan Chase triggers online banking delays for US banks",
+      "trend_score": 0.9835,
+      "src_count": 1,
+      "hn": {
+        "points": 637,
+        "comments": 488
+      },
+      "items": [
+        {
+          "id": "13f7e0f611d760038b7dc71c6eee21942ec772e3",
+          "title": "Technical issue at JPMorgan Chase triggers online banking delays for US banks",
+          "url": "https://apnews.com/article/bank-outage-chase-wells-fargo-truist-50fee2693c22f597fa6ca51a97ef2cda",
+          "source": "hackernews",
+          "category": "hot_topics",
+          "summary_ko": "JPMorgan Chase의 기술 장애로 미국 여러 은행의 온라인 뱅킹에 지연이 발생했다는 AP 보도(Chase, Wells Fargo, Truist 등이 언급됨). ※본문 미확보 — 제목 기반.",
+          "lang": "en",
+          "published_at": "2026-11-17T03:31:30+09:00",
+          "collected_at": "2026-11-17T07:33:23+09:00",
+          "metrics": {
+            "points": 637,
+            "comments": 488
+          }
+        }
+      ]
+    },
+    {
+      "topic": "Software is breaking down at a systemic level",
+      "trend_score": 0.854,
+      "src_count": 1,
+      "hn": {
+        "points": 297,
+        "comments": 180
+      },
+      "items": [
+        {
+          "id": "08b6934a6d5493a2ab091e8aeaf1d54ed8c20060",
+          "title": "Software is breaking down at a systemic level",
+          "url": "https://breck-mckye.com/blog/2026/11/software-is-breaking-down-at-a-systemic-level",
+          "source": "hackernews",
+          "category": "hot_topics",
+          "summary_ko": "개발자 Jimmy Breck-McKye가 최근 소프트웨어 장애들이 개별 사고가 아니라 '시스템 차원의 붕괴'라고 주장하는 글. 그는 이틀간 이어진 마이크로소프트 글로벌 장애와 미국 전역 항공기를 묶어둔 FAA 지상대기 명령이 같은 주말에 겹친 일, 4주 전 전 세계 웹사이트의 약 70%가 쓰는 PHP의 치명적 취약점(PHP2Shell) 사태, 그리고 터무니없이 약한 개인키 때문에 수천 장의 SSL 인증서가 뚫린 eMudhra 사건을 늘어놓는다. 원인은 제각각인데 양상은 기묘하게 닮았다는 것이 핵심 — 예컨대 MS 장애는 데이터센터 간 통신이 끊긴 네트워크 설정 실패에서 시작해, 어떤 서비스도 정상 상태로 복구될 틈을 얻지 못하는 연쇄 실패로 번진 것으로 보인다. AI도 원인의 일부지만(공격자가 몇 시간 만에 복잡한 취약점을 찾아낸다) 동시에 증상일 뿐이며, 진짜 문제는 소프트웨어를 만드는 방식 전체에 있다는 결론이다.",
+          "lang": "en",
+          "published_at": "2026-11-17T03:17:17+09:00",
+          "collected_at": "2026-11-17T07:33:23+09:00",
+          "metrics": {
+            "points": 297,
+            "comments": 180
+          }
+        }
+      ]
+    },
+    {
+      "topic": "Nvidia was in trouble before the Jensen Huang mess",
+      "trend_score": 0.8321,
+      "src_count": 1,
+      "hn": {
+        "points": 221,
+        "comments": 212
+      },
+      "items": [
+        {
+          "id": "c5bef0f0bbad278636133f29796c453b70279913",
+          "title": "Nvidia was in trouble before the Jensen Huang mess",
+          "url": "https://wired.com/story/nvidia-was-already-in-trouble-before-the-jensen-huang-mess",
+          "source": "hackernews",
+          "category": "hot_topics",
+          "summary_ko": "WIRED 분석 기사: 젠슨 황 CEO가 축출되기 전부터 엔비디아는 이미 압박을 받고 있었다는 내용이다. 현재 AI 가속기 시장 점유율은 Silicon Analysis 기준 80%지만, AMD가 2022년 2%에서 2026년 7~10%까지 올라왔고 구글·아마존·마이크로소프트는 비용 절감과 엔비디아 의존 탈피를 위해 자체 칩을 키우고 있다. 익명을 요구한 한 대형 AI 기업 CEO는 \"오늘 팔리는 제품은 2~3년 전에 설계된 것\"이라며, 지휘봉을 넘겨받은 CFO 콜레트 크레스(또는 정식 후임자)가 2년 뒤 칩 산업의 방향을 지금 결정해야 하는 시점에 리더십 공백이 왔다는 점을 문제로 짚는다.",
+          "lang": "en",
+          "published_at": "2026-11-17T00:24:09+09:00",
+          "collected_at": "2026-11-17T07:33:23+09:00",
+          "metrics": {
+            "points": 221,
+            "comments": 212
+          }
+        }
+      ]
+    },
+    {
+      "topic": "The Secret ThinkPad Powerbutton Code to Bring Dead Laptops Back to Life (2007)",
+      "trend_score": 0.8244,
+      "src_count": 1,
+      "hn": {
+        "points": 283,
+        "comments": 111
+      },
+      "items": [
+        {
+          "id": "8e076526cd1a861967759f4bd539b0d06fa07260",
+          "title": "The Secret ThinkPad Powerbutton Code to Bring Dead Laptops Back to Life (2007)",
+          "url": "https://masnick.com/posts/the-secret-thinkpad-powerbutton-code-to-bring-dead-laptops-back-to-life",
+          "source": "hackernews",
+          "category": "hot_topics",
+          "summary_ko": "2007년 글이 다시 올라온 것으로, 완전히 먹통이 된 씽크패드를 되살리는 'IBM 지원센터의 비밀 전원 버튼 코드' 이야기다. 글쓴이는 새로 산 Lenovo 씽크패드 z61t가 발표 한 시간 전에 죽었는데 — 슬립 표시등도, 배터리 표시등도 켜지지 않고 본체는 뜨거웠으며 배터리를 뺐다 끼워도 소용없었다 — IBM 상담원이 \"이상하게 들릴 것\"이라고 전제하며 특정 전원 버튼 조작 순서를 알려줬다고 전한다. 요즘 노트북에서도 통하는, 잔류 전력을 빼내는 하드 리셋 계열 민간요법의 원조 격 글이다.",
+          "lang": "en",
+          "published_at": "2026-11-16T20:39:31+09:00",
+          "collected_at": "2026-11-17T07:33:23+09:00",
+          "metrics": {
+            "points": 283,
+            "comments": 111
+          }
+        }
+      ]
+    },
+    {
+      "topic": "Frame – 31.5\" color ePaper display",
+      "trend_score": 0.8235,
+      "src_count": 1,
+      "hn": {
+        "points": 236,
+        "comments": 157
+      },
+      "items": [
+        {
+          "id": "048976bfa01b4f9cb1a5d9dd6b72df806e8af11b",
+          "title": "Frame – 31.5\" color ePaper display",
+          "url": "https://trmnl.com/blog/introducing-frame",
+          "source": "hackernews",
+          "category": "hot_topics",
+          "summary_ko": "전자잉크 대시보드 기기 TRMNL이 세 번째 제품 'Frame'을 공개하고 예약 판매를 시작했다. 수제 원목 프레임에 31.5인치 풀컬러 ePaper 디스플레이를 넣은 제품으로, 첫 물량은 약 470대뿐이며 2026년 안에 일부만 출하하고 대부분은 2027년 초 배송 예정이다. 창업자는 2013년 뉴욕 카페·갤러리에 지역 예술을 걸던 ArtSpot(결국 실패해 5년 뒤 투자자에게 13% 이자를 더해 상환)의 비전을 이어받은 제품이라고 설명한다. 출시 이후 가장 많았던 요구가 컬러였고, 흑백 기기에서 사진과 예술 작품이 예상보다 훌륭하게 보인 경험(커뮤니티 멤버가 영화 '조스'를 1비트로 한 프레임씩 재생한 사례 등)이 컬러 도입의 계기가 됐다. ※ePaper: 전원을 끊어도 화면이 유지되는 전자잉크 디스플레이.",
+          "lang": "en",
+          "published_at": "2026-11-17T01:23:22+09:00",
+          "collected_at": "2026-11-17T07:33:23+09:00",
+          "metrics": {
+            "points": 236,
+            "comments": 157
+          }
+        }
+      ]
+    },
+    {
+      "topic": "Grazing sheep in fields with solar arrays",
+      "trend_score": 0.7902,
+      "src_count": 1,
+      "hn": {
+        "points": 175,
+        "comments": 149
+      },
+      "items": [
+        {
+          "id": "fd2df089a059d2fb885efba4737feda05f0eb6e6",
+          "title": "Grazing sheep in fields with solar arrays",
+          "url": "https://news.cornell.edu/stories/2026/10/sheep-grazing-solar-fields-offers-farmers-economic-ecological-gains",
+          "source": "hackernews",
+          "category": "hot_topics",
+          "summary_ko": "코넬대 농업생명과학대 연구 두 편이 태양광 발전소 부지에 양을 방목하는 '솔라 그레이징'의 효과를 정량화했다. 헥타르당 양 2마리 밀도로 방목했더니 제초기로 관리한 대조 구역보다 야생벌·꿀벌·무당벌레 같은 이로운 곤충 개체수가 38% 늘었고, 증가분의 대부분은 꿀벌 83% 증가에서 나왔다(Environmental Research Letters 10월 7일 게재). 다른 한 편은 농가가 솔라 그레이징 양 떼를 수익성 있게 늘리도록 돕는 의사결정 지원 도구를 제시한다. ※영농형 태양광(agrivoltaics): 같은 땅에서 농업과 태양광 발전을 병행하는 방식.",
+          "lang": "en",
+          "published_at": "2026-11-17T02:27:46+09:00",
+          "collected_at": "2026-11-17T07:33:23+09:00",
+          "metrics": {
+            "points": 175,
+            "comments": 149
+          }
+        }
+      ]
+    },
+    {
+      "topic": "Jiff 1.0: A datetime library for Rust",
+      "trend_score": 0.7805,
+      "src_count": 1,
+      "hn": {
+        "points": 259,
+        "comments": 56
+      },
+      "items": [
+        {
+          "id": "36cf899b1962ca458278be2d442587bf9a4714c5",
+          "title": "Jiff 1.0: A datetime library for Rust",
+          "url": "https://burntsushi.net/jiff",
+          "source": "hackernews",
+          "category": "hot_topics",
+          "summary_ko": "ripgrep 제작자 Andrew Gallant(BurntSushi)가 Rust용 날짜·시간 라이브러리 Jiff 1.0을 발표했다. Jiff는 타임존 처리를 API 전면에 내세워 서머타임 관련 고질적 실수를 자동으로 막는 것이 설계 목표이며, 이미 uv, Cargo, Starship, fd, Nushell, mise, Jujutsu, uutils/coreutils 등 주요 프로젝트에서 쓰이고 AWS LLRT의 Temporal 구현 기반으로도 쓰인다. 다른 라이브러리의 공개 API에 등장하는 생태계 기반 블록 역할을 염두에 두고, 중대한 결함이 발견되지 않는 한 1.0 API를 무기한 유지하겠다고 약속했다(호환성 깨지는 릴리스는 생태계에 큰 고통을 주므로 가볍게 내지 않겠다는 것). 0.2에서 1.0 사이 변경점은 CHANGELOG에 정리돼 있다.",
+          "lang": "en",
+          "published_at": "2026-11-17T01:53:39+09:00",
+          "collected_at": "2026-11-17T07:33:23+09:00",
+          "metrics": {
+            "points": 259,
+            "comments": 56
+          }
+        }
+      ]
+    },
+    {
+      "topic": "Microsoft blames monster email outage on software defect introduced in July fix",
+      "trend_score": 0.758,
+      "src_count": 1,
+      "hn": {
+        "points": 153,
+        "comments": 104
+      },
+      "items": [
+        {
+          "id": "3e717a645f365d43a10c3cccac5da250a29d9850",
+          "title": "Microsoft blames monster email outage on software defect introduced in July fix",
+          "url": "https://theregister.com/saas/2026/11/16/microsoft-blames-monster-email-outage-on-software-defect-introduced-in-july-fix/5310026",
+          "source": "hackernews",
+          "category": "hot_topics",
+          "summary_ko": "마이크로소프트가 지난주의 대규모 이메일(Exchange) 장애 원인을 7월에 적용한 코드 변경에 잠복해 있던 소프트웨어 결함이라고 밝혔다. 여름에 넣은 수정이 가을에 터진 셈으로, 결함이 그사이 쌓여 롤백(이전 버전으로 되돌리기)으로는 해결되지 않아 엔지니어들이 '패치를 패치하는' 방식으로 급히 대응해야 했다는 것이 The Register의 요지다. 같은 시기 마이크로소프트는 윈도우 정품 인증 장애도 수습 중이었다.",
+          "lang": "en",
+          "published_at": "2026-11-16T22:18:22+09:00",
+          "collected_at": "2026-11-17T07:33:23+09:00",
+          "metrics": {
+            "points": 153,
+            "comments": 104
+          }
+        }
+      ]
+    },
+    {
+      "topic": "BugMeNot Has Closed",
+      "trend_score": 0.6899,
+      "src_count": 1,
+      "hn": {
+        "points": 105,
+        "comments": 58
+      },
+      "items": [
+        {
+          "id": "2e5a0fc95d1ee053ee69777617edd02e46217e95",
+          "title": "BugMeNot Has Closed",
+          "url": "https://bugmenot.com/",
+          "source": "hackernews",
+          "category": "hot_topics",
+          "summary_ko": "공유 계정으로 가입 장벽을 우회하게 해주던 서비스 BugMeNot이 문을 닫았다. 사이트에는 \"BugMeNot has closed. Thanks to everyone who envisioned a better internet.\"(더 나은 인터넷을 꿈꿨던 모든 분들께 감사한다)라는 한 줄만 남았다. 2000년대 초부터 뉴스 사이트 등의 강제 회원가입에 대한 저항의 상징으로 쓰이던 서비스다.",
+          "lang": "en",
+          "published_at": "2026-11-17T06:32:17+09:00",
+          "collected_at": "2026-11-17T07:33:23+09:00",
+          "metrics": {
+            "points": 105,
+            "comments": 58
+          }
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "source": "github_trending",
+      "ok": true,
+      "item_count": 12,
+      "error_type": null
+    },
+    {
+      "source": "anthropic",
+      "ok": true,
+      "item_count": 288,
+      "error_type": null
+    },
+    {
+      "source": "openai",
+      "ok": true,
+      "item_count": 1421,
+      "error_type": null
+    },
+    {
+      "source": "deepmind",
+      "ok": true,
+      "item_count": 100,
+      "error_type": null
+    },
+    {
+      "source": "meta_ai",
+      "ok": true,
+      "item_count": 88,
+      "error_type": null
+    },
+    {
+      "source": "mistral",
+      "ok": true,
+      "item_count": 94,
+      "error_type": null
+    },
+    {
+      "source": "xai",
+      "ok": true,
+      "item_count": 85,
+      "error_type": null
+    },
+    {
+      "source": "openai_codex",
+      "ok": true,
+      "item_count": 197,
+      "error_type": null
+    },
+    {
+      "source": "cloudflare",
+      "ok": true,
+      "item_count": 20,
+      "error_type": null
+    },
+    {
+      "source": "github_blog",
+      "ok": true,
+      "item_count": 10,
+      "error_type": null
+    },
+    {
+      "source": "aws",
+      "ok": true,
+      "item_count": 20,
+      "error_type": null
+    },
+    {
+      "source": "stripe",
+      "ok": true,
+      "item_count": 10,
+      "error_type": null
+    },
+    {
+      "source": "meta_eng",
+      "ok": true,
+      "item_count": 9,
+      "error_type": null
+    },
+    {
+      "source": "reddit_localllama",
+      "ok": true,
+      "item_count": 25,
+      "error_type": null
+    },
+    {
+      "source": "hf_blog",
+      "ok": true,
+      "item_count": 908,
+      "error_type": null
+    },
+    {
+      "source": "hackernews",
+      "ok": true,
+      "item_count": 20,
+      "error_type": null
+    }
+  ],
+  "summaries_injected": true
+}
