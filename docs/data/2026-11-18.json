@@ -1,0 +1,737 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-11-18T08:14:22+09:00",
+  "date": "2026-11-18",
+  "categories": {
+    "ai_labs": [
+      {
+        "id": "549a77347d5e1e5f25e081258d641a2b8758c868",
+        "title": "Introducing GPT-6.2 Astra and Sol",
+        "url": "https://openai.com/index/introducing-gpt-6-2-astra-sol",
+        "source": "openai",
+        "category": "ai_labs",
+        "summary_ko": "OpenAI가 최상위 모델 GPT-6.2 Astra와 범용 모델 GPT-6.2 Sol을 공개했다. Astra는 다단계 전문 업무를 평가하는 Agents' Last Exam에서 기존 GPT-6 Astra보다 5.2점 높은 신기록을 1/3 미만 비용으로 달성했고, 과학 업무 평가인 Terminal-Bench-Science 0.1에서도 9%p 앞섰다. API 가격은 Astra 기준 입력 100만 토큰당 $8·출력 $40으로 이전 대비 20% 인하됐고 캐시된 입력은 $0.40(60% 할인)이다. Sol은 GPT-6.1 Sol의 가격을 유지하면서 실제 코드베이스 수정 품질을 보는 FrontierCode 2.0에서 Astra와 0.5점 차이를 약 1/5 비용으로 낸다. 두 모델 모두 같은 작업을 더 적은 출력 토큰으로 끝내는 데 초점을 뒀다. ※Agents' Last Exam/FrontierCode: 모델이 긴 호흡의 실무·코드 작업을 끝까지 해내는지 측정하는 벤치마크.",
+        "lang": "en",
+        "published_at": "2026-11-18T02:45:00+09:00",
+        "collected_at": "2026-11-18T08:09:28+09:00",
+        "metrics": null
+      },
+      {
+        "id": "c6c361c53bc4ce2d407e4ebf6ba55c1f510e586f",
+        "title": "Introducing ChatGPT for Sales",
+        "url": "https://openai.com/index/introducing-chatgpt-for-sales",
+        "source": "openai",
+        "category": "ai_labs",
+        "summary_ko": "OpenAI가 영업 조직을 겨냥한 'ChatGPT for Sales'를 출시했다(11월 17일). 신규 Sales 플러그인이 공략할 계정 선정, 콜 준비, 후속 메일 초안 작성 같은 일상 영업 업무를 바로 쓸 수 있는 워크플로로 제공하고, 여기에 30개 이상의 신규·확장 파트너 플러그인이 더해져 팀이 이미 쓰는 도구(CRM, 프로스펙팅 툴, 고객 통화 기록 등)의 정보를 ChatGPT 안에서 끌어다 쓸 수 있다. 핵심 아이디어는 팀원·도구·CRM에 흩어진 고객 맥락을 한곳에 모아 리서치와 반복 작업 시간을 줄이는 것이다. ※CRM: 고객 관계 관리 시스템(예: Salesforce).",
+        "lang": "en",
+        "published_at": "2026-11-17T17:00:00+09:00",
+        "collected_at": "2026-11-18T08:09:28+09:00",
+        "metrics": null
+      },
+      {
+        "id": "590cb0b9c5dd23f2eba579fcd818b4e2cc2cf4ac",
+        "title": "Strengthening NATO and allied cyber defenses with AI",
+        "url": "https://openai.com/index/strengthening-nato-allied-cyber-defences-ai",
+        "source": "openai",
+        "category": "ai_labs",
+        "summary_ko": "OpenAI가 NATO 및 동맹국 사이버 기관과 협력해 방어 목적의 보안 업무에 자사 AI를 투입하고 있다고 밝혔다. NATO 통신정보국(NCIA)에 고급 사이버보안 모델을 제공 중이며, NATO는 이 작업에서 월 최대 3,000억(300B) 토큰의 입출력을 사용했다. 용도는 소프트웨어 검토, 의심 활동 조사, 취약점 검증, 수정안 개발·테스트 등 '인가된 보안 업무'로 한정된다. 또 NATO 사이버방어협력센터(CCDCOE)가 주관한 2026년 Crossed Swords 훈련을 지원해, 참가자들이 사람의 감독을 유지한 채 AI 에이전트를 직접 만들고 배포·평가하는 새 훈련 과정을 운영했다. ※Daybreak: OpenAI의 보안 전문 제품군 이름.",
+        "lang": "en",
+        "published_at": "2026-11-17T09:00:00+09:00",
+        "collected_at": "2026-11-18T08:09:28+09:00",
+        "metrics": null
+      },
+      {
+        "id": "0604bc2b50fc0c3b8a76f769a5779b3de6da7db5",
+        "title": "Astra for Law leads in legal intelligence",
+        "url": "https://openai.com/index/astra-law-6-2",
+        "source": "openai",
+        "category": "ai_labs",
+        "summary_ko": "OpenAI가 법률 특화 설정인 'Astra for Law'를 업데이트하고, ChatGPT Enterprise 고객 전원이 Trusted Access Program을 통해 API 포함 접근을 신청할 수 있게 했다. Harvey LAB-AA 평가에서 1위를 기록했는데, 2위인 일반 GPT-6.2 Astra보다 만점 획득 비율이 약 40% 높았다. Vals AI Legal Research Bench에서는 모든 검증을 통과한 답변 비율이 두 달이 채 안 되는 사이 약 46%에서 53.8%로 올랐고, 법률 검색 인덱스도 1/3 이상 확장됐다. Astra for Law는 GPT-6.2 Astra에 법률 검색 인덱스와 '쟁점 조사 → 판례·법령 비교 형량 → 답변 작성' 지침을 결합한 모델 구성이다. 9월부터 Cooley, Ropes & Gray, Sullivan & Cromwell 등 소수 로펌에 먼저 제공돼 왔다.",
+        "lang": "en",
+        "published_at": "2026-11-17T09:00:00+09:00",
+        "collected_at": "2026-11-18T08:09:28+09:00",
+        "metrics": null
+      },
+      {
+        "id": "58da9c66b1456ac9aeddc4f19253eafcdf8c1d8b",
+        "title": "Introducing OpenAI for Chile",
+        "url": "https://openai.com/index/introducing-openai-for-chile",
+        "source": "openai",
+        "category": "ai_labs",
+        "summary_ko": "OpenAI가 칠레 정부(과학기술지식혁신부 주관)와 'OpenAI for Chile' 파트너십을 체결했다. 공공행정의 책임 있는 AI 도입, 공무원 역량 강화, 현지 스타트업의 AI 애플리케이션 개발 지원이 골자다. 칠레의 국가 AI 정책·실행계획 위에 얹는 형태이며, 양해각서(MOU)는 캘리포니아에서 열린 Semafor 콘퍼런스 현장에서 Ximena Lincolao 장관이 서명했다. 미국 상무부의 American SI Exports Program 지원을 받으며 OpenAI는 이 프로그램의 핵심 파트너다. ※MOU: 법적 구속력이 약한 협력 합의 문서.",
+        "lang": "en",
+        "published_at": "2026-11-17T09:00:00+09:00",
+        "collected_at": "2026-11-18T08:09:28+09:00",
+        "metrics": null
+      },
+      {
+        "id": "f054a54f8228cfac7fd4da0a2c6fb1329eca8a22",
+        "title": "How Revolut raises ambition without lowering the bar",
+        "url": "https://openai.com/business/customer-stories/revolut",
+        "source": "openai",
+        "category": "ai_labs",
+        "summary_ko": "핀테크 Revolut이 OpenAI 모델과 Codex를 도입한 사례. 작업 착수부터 기능 머지까지 코딩 시간을 30~60% 줄였고, 7년치 설계 문서를 AI가 읽을 수 있는 컨텍스트로 변환하는 데 하루, 보안 코드 리뷰에서 1~2일을 절감했다고 밝혔다. Revolut은 40개 이상 시장, 80만 개 기업 고객을 두고 소규모·린 팀이 빠르게 움직이는 문화라 ChatGPT·Codex가 잘 맞았다는 설명이다. 소프트웨어 엔지니어링뿐 아니라 금융 범죄(자금세탁 등) 조사 업무 확장에도 적용하고 있으며, '구현은 위임하되 책임은 위임하지 않는다'는 원칙으로 보안 기준을 유지한다고 강조했다.",
+        "lang": "en",
+        "published_at": "2026-11-16T18:30:00+09:00",
+        "collected_at": "2026-11-18T08:09:28+09:00",
+        "metrics": null
+      },
+      {
+        "id": "a045ec708b22e25ec5571bca0d5528181f8baac7",
+        "title": "ChatGPT Ads increases its market presence in 44 countries",
+        "url": "https://openai.com/ads/blog/chatgpt-ads-increases-its-market-presence",
+        "source": "openai",
+        "category": "ai_labs",
+        "summary_ko": "OpenAI가 Aleph를 44개국 ChatGPT Ads 독점 리셀러로 선정했다(11월 12일). 해당 국가의 브랜드·대행사는 이제 현지 법인을 통해 현지 통화 인보이스 발행, 결제 조건, 온보딩, 캠페인 지원, 교육을 받을 수 있다. 대상은 중남미 14개국, 유럽·중앙아시아 16개국, 중동·아프리카 10개국, 아시아태평양 4개국이다. 기존 글로벌 기술 파트너나 셀프서비스 ChatGPT Ads Manager를 통한 구매도 그대로 유지되며, 이번 발표가 특정 국가를 타게팅하는 캠페인 집행 자체를 제한하지는 않는다. OpenAI는 현재까지 10만 명 이상의 마케터가 ChatGPT에 광고를 집행했다고 밝혔다.",
+        "lang": "en",
+        "published_at": "2026-11-12T09:00:00+09:00",
+        "collected_at": "2026-11-18T08:09:28+09:00",
+        "metrics": null
+      },
+      {
+        "id": "23b94c697622500fcf7d46f91907d47f40d35583",
+        "title": "CodeRabbit scales agentic software development and ships 20x more",
+        "url": "https://openai.com/index/coderabbit-codex-daybreak",
+        "source": "openai",
+        "category": "ai_labs",
+        "summary_ko": "AI 코드 리뷰 업체 CodeRabbit의 도입 사례. 공동창업자 Harjot Gill은 \"코딩 에이전트를 도입하면 모든 회사가 가장 먼저 부딪히는 병목이 코드 리뷰\"라고 지적한다. CodeRabbit은 AI가 생성한 코드를 검증·통제하는 거버넌스 플랫폼으로 2만 개 이상 조직과 15만 개 이상 오픈소스 프로젝트가 사용 중이다. OpenAI 모델의 가격 대비 성능 개선 덕분에 리뷰에 투입하는 AI 에이전트 수를 늘릴 수 있었고, Codex로 같은 엔지니어링 인원을 유지하면서 소프트웨어 출시량을 20배로 늘렸다고 밝혔다. 신제품 CodeRabbit Secure는 Daybreak와 Codex 모델을 결합해 보안 전문 에이전트가 취약점을 찾고 고친다.",
+        "lang": "en",
+        "published_at": "2026-11-09T17:00:00+09:00",
+        "collected_at": "2026-11-18T08:09:28+09:00",
+        "metrics": null
+      },
+      {
+        "id": "932fe34bad728f30ad4ef609d13a6e2a6ef01f4d",
+        "title": "Kuken Industries searches 70 years of drawings in minutes",
+        "url": "https://openai.com/index/kuken",
+        "source": "openai",
+        "category": "ai_labs",
+        "summary_ko": "일본 쿠켄공업(Kuken Industries)이 OpenAI API로 70년치 냉각탑 도면 검색 도구를 만든 사례. 교체 부품에 맞는 원본 도면을 찾는 시간이 기존 약 1시간에서 4.5분으로 줄었고, 연간 도면 검색 시간은 90% 감소할 것으로 전망한다. 쿠켄은 일본 냉각탑 시장 점유율 상위 업체로, 70년에 걸쳐 설비를 개량해 와 모델명·부품명 검색만으로는 여러 도면이 섞여 나왔고, 원본 도면 없이는 교체 부품을 처음부터 설계·제작해야 하는 경우도 있었다. 부품 번호나 스크린샷으로 검색할 수 있게 되면서, 선배에게 물어봐야 했던 신입 엔지니어도 스스로 기록을 찾고 과거 설계 판단을 학습할 수 있게 됐다.",
+        "lang": "en",
+        "published_at": "2026-11-09T17:00:00+09:00",
+        "collected_at": "2026-11-18T08:09:28+09:00",
+        "metrics": null
+      },
+      {
+        "id": "041eb172e023ffb634e85bc9ed923085f6ee9624",
+        "title": "How VistaPrint helps small businesses get the word out",
+        "url": "https://openai.com/ads/customers/vistaprint",
+        "source": "openai",
+        "category": "ai_labs",
+        "summary_ko": "인쇄·판촉물 업체 VistaPrint의 ChatGPT Ads 집행 사례. 미국에서 전환 최적화 캠페인을 돌린 결과 광고비 대비 매출(ROAS) 5.9배, 직전 클릭 중심 캠페인 대비 주문당 비용 약 90% 절감을 기록했고, ChatGPT Ads로 연결된 미국 사이트 전환의 과반이 신규 고객이었다. 핵심 인사이트는 소상공인이 \"무엇을 인쇄할지\"보다 \"무엇을 달성하고 싶은지\"를 먼저 안다는 점이다. VistaPrint는 제품 중심 메시지에서 '간판·굿즈로 무엇을 할 수 있는가' 중심으로 메시지를 바꿔, 고객 의도가 아직 형성되는 대화 단계에서 선택지를 제시하는 전략을 폈다. ※ROAS: 광고비 1원당 발생한 매출.",
+        "lang": "en",
+        "published_at": "2026-11-09T09:00:00+09:00",
+        "collected_at": "2026-11-18T08:09:28+09:00",
+        "metrics": null
+      }
+    ],
+    "community": [],
+    "github_trending": [
+      {
+        "id": "1004f5b1d037c0c2fe304003270d8c81c8403abd",
+        "title": "getarcaneapp/arcane",
+        "url": "https://github.com/getarcaneapp/arcane",
+        "source": "github_trending",
+        "category": "github_trending",
+        "summary_ko": "Arcane은 \"모두를 위한 현대적 Docker 관리 도구\"를 표방하는 셀프호스팅 웹 UI다(GitHub 스타 9.3k, 포크 509). Go와 SvelteKit으로 작성됐고 컨테이너·docker-compose 관리를 브라우저에서 다룰 수 있게 해준다. 현재 main 브랜치가 v3이며 직전 2.x 계열은 release/2.x.x 브랜치에 있다. 기능 요청 창구는 GitHub Discussions로 옮겼고 Issues는 버그 리포트 전용으로 운영한다. BSD-3-Clause 라이선스이며, 공급망 투명성을 위해 SBOM(소프트웨어 구성 명세서)을 공개하고 Crowdin으로 번역 기여를 받는다. ※SBOM: 소프트웨어에 포함된 구성요소 목록으로, 취약점 추적에 쓰인다.",
+        "lang": "en",
+        "published_at": null,
+        "collected_at": "2026-11-18T08:09:28+09:00",
+        "metrics": null
+      },
+      {
+        "id": "1c8f472767ef8e4430d8463ff2d6fb63b0140d34",
+        "title": "DeanChensj/jiangshan-map",
+        "url": "https://github.com/DeanChensj/jiangshan-map",
+        "source": "github_trending",
+        "category": "github_trending",
+        "summary_ko": "江山时序(Chronicles of the Realm)는 기원전 403년 전국시대부터 현재까지 중국 역사를 훑는 인터랙티브 지도 타임라인이다(스타 7.6k, 포크 911). 18개 왕조, 198개 영토 스냅샷을 담았고, 타임라인을 끌어 시대를 넘나들며 옛 지명이 오늘날 어디인지(고대-현대 지명 계보)와 한시(漢詩)에 등장하는 경로를 따라갈 수 있다. 영어·중국어 간체/번체·일본어 UI를 지원하며 웹 데모가 공개돼 있다. 건강(建康, 육조의 수도), 황주(소동파가 유배 중 적벽부를 쓴 곳) 같은 지명을 현대 지도 위에서 짚어보는 식의 활용을 내세운다.",
+        "lang": "en",
+        "published_at": null,
+        "collected_at": "2026-11-18T08:09:28+09:00",
+        "metrics": null
+      },
+      {
+        "id": "01e478ba125afa0c8a152dffa4c867cb312e0121",
+        "title": "mvanhorn/last30days-skill",
+        "url": "https://github.com/mvanhorn/last30days-skill",
+        "source": "github_trending",
+        "category": "github_trending",
+        "summary_ko": "last30days-skill은 Reddit, X, YouTube, 해커뉴스, Polymarket, 일반 웹을 한 번에 조사해 근거가 붙은 요약을 만들어 주는 AI 에이전트 스킬이다(스타 69k, 포크 6.1k로 이번 목록 중 압도적 1위). 편집자가 아니라 업보트·좋아요·실제 베팅 금액으로 순위를 매기는 '에이전트 주도 검색엔진'을 표방한다. 현재 v4 파이프라인이며 실제 동작 규격은 skills/last30days/SKILL.md에 있다. Claude Code는 플러그인 마켓플레이스로 설치하면 자동 업데이트되고, Codex·Cursor·Copilot·Gemini CLI 등 50개 이상 Agent Skills 호스트는 `npx skills add`로 설치한다. 별도 설정 없이 Reddit·HN·Polymarket·GitHub는 바로 동작한다. ※Polymarket: 사건 결과에 실제 돈을 거는 예측 시장.",
+        "lang": "en",
+        "published_at": null,
+        "collected_at": "2026-11-18T08:09:28+09:00",
+        "metrics": null
+      },
+      {
+        "id": "14832d8209b1a065a42f45170960b4963ddc015a",
+        "title": "google-research/paper-orchestra",
+        "url": "https://github.com/google-research/paper-orchestra",
+        "source": "github_trending",
+        "category": "github_trending",
+        "summary_ko": "PaperOrchestra는 Google Cloud AI Research가 공개한, AI 연구 논문 작성을 자동화하는 멀티 에이전트 프레임워크다(스타 2.9k). 정제되지 않은 사전 자료(아이디어, 실험 로그)를 받아 투고 가능한 수준의 LaTeX 원고로 변환하며, 문헌 종합과 그래프·개념도 같은 시각 자료 생성까지 포함한다. 개요 작성, 문헌 조사, 섹션 집필, 내용 다듬기, 플로팅을 각각 전담하는 에이전트들이 오케스트라처럼 협업하는 구조다. Apache-2.0 라이선스로 공개됐다. ※LaTeX: 학술 논문 조판에 쓰이는 문서 작성 시스템.",
+        "lang": "en",
+        "published_at": null,
+        "collected_at": "2026-11-18T08:09:28+09:00",
+        "metrics": null
+      },
+      {
+        "id": "ca4a8dd162908ceb22b4219d3f819f0a5cd7cea5",
+        "title": "sveltejs/svelte",
+        "url": "https://github.com/sveltejs/svelte",
+        "source": "github_trending",
+        "category": "github_trending",
+        "summary_ko": "Svelte가 다시 GitHub 트렌딩에 올랐다(스타 89.6k, 포크 6.3k). Svelte는 런타임 가상 DOM 대신 컴파일러 방식을 쓰는 웹 프레임워크로, 선언적으로 작성한 컴포넌트를 DOM을 정확히 필요한 부분만 갱신하는 효율적인 JavaScript로 변환한다. MIT 라이선스 오픈소스이며 개발은 전적으로 자원봉사자들이 이끌고, Open Collective 후원금은 주로 호스팅 등 개발 관련 비용에 쓰인다. 공개 로드맵에서 현재 작업 중인 내용을 확인할 수 있다. ※가상 DOM: React 등이 쓰는 방식으로, 변경분을 메모리에서 비교한 뒤 화면에 반영한다.",
+        "lang": "en",
+        "published_at": null,
+        "collected_at": "2026-11-18T08:09:28+09:00",
+        "metrics": null
+      },
+      {
+        "id": "45b453e349d12cc977d80308a01593056fcbff0c",
+        "title": "kajisho5/ffmpeg-skill",
+        "url": "https://github.com/kajisho5/ffmpeg-skill",
+        "source": "github_trending",
+        "category": "github_trending",
+        "summary_ko": "ffmpeg-skill은 코딩 에이전트에게 로컬 영상 편집 능력을 주는 도구 모음이다. 기계가 읽을 수 있는 계약(contract)을 갖춘 42개의 FFmpeg 도구와 MCP 서버로 구성돼 Claude Code, Cursor, Codex 등 MCP 클라이언트가 영상을 편집한 뒤 자기 결과물을 스스로 검사한다. 클라우드도 API 키도 필요 없고 Python 표준 라이브러리만 쓴다. 컷 편집, 자막(팝 애니메이션·가라오케 효과), 종횡비 재구성(9:16 크롭 등), 무음 구간 제거, 라우드니스 정규화(-14 LUFS 등), 플랫폼별 내보내기를 지원한다. 모든 before/after 데모는 `python3 demos/build.py`로 직접 재생성할 수 있고 영상 대부분은 FFmpeg 자체 테스트 소스를 쓴 합성 영상이다. ※MCP: 에이전트가 외부 도구를 호출하는 표준 프로토콜. ※라우드니스 정규화: 영상 음량을 플랫폼 기준에 맞추는 작업.",
+        "lang": "en",
+        "published_at": null,
+        "collected_at": "2026-11-18T08:09:28+09:00",
+        "metrics": null
+      }
+    ],
+    "codex": [
+      {
+        "id": "b1701f65afd88f5c95a33b1d10d1b005978f8a94",
+        "title": "GPT-6.2 Astra and GPT-6.2 Sol in Work and Codex",
+        "url": "https://developers.openai.com/codex/changelog#codex-gpt-62-astra",
+        "source": "openai_codex",
+        "category": "codex",
+        "summary_ko": "Codex 체인지로그 항목으로, GPT-6.2 Astra와 GPT-6.2 Sol이 ChatGPT Work와 Codex에서 사용 가능해졌다는 내용이다. 같은 날 발표된 GPT-6.2 모델 공개와 짝을 이루는 배포 소식으로 보인다. ※본문 미확보 — 제목·링크 기반.",
+        "lang": "en",
+        "published_at": "2026-11-17T09:00:00+09:00",
+        "collected_at": "2026-11-18T08:09:28+09:00",
+        "metrics": null
+      },
+      {
+        "id": "5dece74a761adfd35d4a89531bde722cfce3ef2e",
+        "title": "Codex app",
+        "url": "https://developers.openai.com/codex/changelog#codex-2026-11-12-app",
+        "source": "openai_codex",
+        "category": "codex",
+        "summary_ko": "Codex 앱 업데이트(2026-11-12자 체인지로그 항목). ※본문 미확보 — 제목·링크 기반. 상세 변경 내역은 OpenAI Codex 체인지로그 원문을 확인해야 한다.",
+        "lang": "en",
+        "published_at": "2026-11-12T09:00:00+09:00",
+        "collected_at": "2026-11-18T08:09:28+09:00",
+        "metrics": null
+      },
+      {
+        "id": "023b6471f85115a9b3b18ff13ea96459134aac0d",
+        "title": "Codex app",
+        "url": "https://developers.openai.com/codex/changelog#codex-2026-11-10-app",
+        "source": "openai_codex",
+        "category": "codex",
+        "summary_ko": "Codex 앱 업데이트(2026-11-10자 체인지로그 항목). ※본문 미확보 — 제목·링크 기반. 상세 변경 내역은 OpenAI Codex 체인지로그 원문을 확인해야 한다.",
+        "lang": "en",
+        "published_at": "2026-11-10T09:00:00+09:00",
+        "collected_at": "2026-11-18T08:09:28+09:00",
+        "metrics": null
+      },
+      {
+        "id": "9507c3fc3257b17c8f8ad4f5d5874d7083c47f07",
+        "title": "Codex app",
+        "url": "https://developers.openai.com/codex/changelog#codex-2026-11-05-app",
+        "source": "openai_codex",
+        "category": "codex",
+        "summary_ko": "Codex 앱 업데이트(2026-11-05자 체인지로그 항목). ※본문 미확보 — 제목·링크 기반. 상세 변경 내역은 OpenAI Codex 체인지로그 원문을 확인해야 한다.",
+        "lang": "en",
+        "published_at": "2026-11-05T09:00:00+09:00",
+        "collected_at": "2026-11-18T08:09:28+09:00",
+        "metrics": null
+      },
+      {
+        "id": "d47b681cc17bc836e9eb306fb733dddd79b7a8f4",
+        "title": "Codex app",
+        "url": "https://developers.openai.com/codex/changelog#codex-2026-11-03-app",
+        "source": "openai_codex",
+        "category": "codex",
+        "summary_ko": "Codex 앱 업데이트(2026-11-03자 체인지로그 항목). ※본문 미확보 — 제목·링크 기반. 상세 변경 내역은 OpenAI Codex 체인지로그 원문을 확인해야 한다.",
+        "lang": "en",
+        "published_at": "2026-11-03T09:00:00+09:00",
+        "collected_at": "2026-11-18T08:09:28+09:00",
+        "metrics": null
+      },
+      {
+        "id": "5478921ec7b9347b15552532e73462cbcf4739a0",
+        "title": "Codex app",
+        "url": "https://developers.openai.com/codex/changelog#codex-2026-10-29-app",
+        "source": "openai_codex",
+        "category": "codex",
+        "summary_ko": "Codex 앱 업데이트(2026-10-29자 체인지로그 항목). ※본문 미확보 — 제목·링크 기반. 상세 변경 내역은 OpenAI Codex 체인지로그 원문을 확인해야 한다.",
+        "lang": "en",
+        "published_at": "2026-10-29T09:00:00+09:00",
+        "collected_at": "2026-11-18T08:09:28+09:00",
+        "metrics": null
+      },
+      {
+        "id": "00449ad2e476642c8730cb637a40b5552a66923f",
+        "title": "Codex app",
+        "url": "https://developers.openai.com/codex/changelog#codex-2026-10-27-app",
+        "source": "openai_codex",
+        "category": "codex",
+        "summary_ko": "Codex 앱 업데이트(2026-10-27자 체인지로그 항목). ※본문 미확보 — 제목·링크 기반. 상세 변경 내역은 OpenAI Codex 체인지로그 원문을 확인해야 한다.",
+        "lang": "en",
+        "published_at": "2026-10-27T09:00:00+09:00",
+        "collected_at": "2026-11-18T08:09:28+09:00",
+        "metrics": null
+      },
+      {
+        "id": "c7075c829d3c736b160af3789b44cca8bdf99fc0",
+        "title": "Codex app",
+        "url": "https://developers.openai.com/codex/changelog#codex-2026-10-23-app",
+        "source": "openai_codex",
+        "category": "codex",
+        "summary_ko": "Codex 앱 업데이트(2026-10-23자 체인지로그 항목). ※본문 미확보 — 제목·링크 기반. 상세 변경 내역은 OpenAI Codex 체인지로그 원문을 확인해야 한다.",
+        "lang": "en",
+        "published_at": "2026-10-23T09:00:00+09:00",
+        "collected_at": "2026-11-18T08:09:28+09:00",
+        "metrics": null
+      },
+      {
+        "id": "5500d2995ee54f05ae410de9f9b7ea033102982b",
+        "title": "Codex app",
+        "url": "https://developers.openai.com/codex/changelog#codex-2026-10-20-app",
+        "source": "openai_codex",
+        "category": "codex",
+        "summary_ko": "Codex 앱 업데이트(2026-10-20자 체인지로그 항목). ※본문 미확보 — 제목·링크 기반. 상세 변경 내역은 OpenAI Codex 체인지로그 원문을 확인해야 한다.",
+        "lang": "en",
+        "published_at": "2026-10-20T09:00:00+09:00",
+        "collected_at": "2026-11-18T08:09:28+09:00",
+        "metrics": null
+      },
+      {
+        "id": "1c2c2d4ffeccd9635a6e852c0e33f61cdf70c20e",
+        "title": "Codex app",
+        "url": "https://developers.openai.com/codex/changelog#codex-2026-10-15-app",
+        "source": "openai_codex",
+        "category": "codex",
+        "summary_ko": "Codex 앱 업데이트(2026-10-15자 체인지로그 항목). ※본문 미확보 — 제목·링크 기반. 상세 변경 내역은 OpenAI Codex 체인지로그 원문을 확인해야 한다.",
+        "lang": "en",
+        "published_at": "2026-10-15T09:00:00+09:00",
+        "collected_at": "2026-11-18T08:09:28+09:00",
+        "metrics": null
+      }
+    ],
+    "eng_blogs": [
+      {
+        "id": "340c2ff0827fd3fe7b0b05f19a9d3a248385dc97",
+        "title": "Quad9’s withdrawal from France: A canary in the coal mine",
+        "url": "https://blog.cloudflare.com/quad9-withdrawal-from-france",
+        "source": "cloudflare",
+        "category": "eng_blogs",
+        "summary_ko": "Cloudflare가 공개 DNS 리졸버 Quad9의 프랑스 철수를 \"탄광 속 카나리아\"(재앙의 전조)로 규정하며 DNS 단계 차단 의무화의 위험을 짚은 글이다. 공개 리졸버에게 콘텐츠 필터 역할을 강제하는 것이 기술적으로 결함이 있고 개방형 인터넷을 위협한다는 주장이다. ※DNS 리졸버: 도메인 이름을 IP 주소로 바꿔주는 서버. 여기서 특정 도메인을 막으면 그 리졸버를 쓰는 전 세계 사용자에게 영향이 번질 수 있다. ※본문 전체 미확보 — 수집된 본문이 사이트 내비게이션으로 채워져 요약은 기사 설명문 기준.",
+        "lang": "en",
+        "published_at": "2026-11-18T05:24:27+09:00",
+        "collected_at": "2026-11-18T08:09:28+09:00",
+        "metrics": null
+      },
+      {
+        "id": "dfa52e89374f249c9ad7bda8ce81f32b64c5e2a7",
+        "title": "Maintainers don’t need more AI bug reports. They need fixes.",
+        "url": "https://github.blog/open-source/maintainers/maintainers-dont-need-more-ai-bug-reports-they-need-fixes",
+        "source": "github_blog",
+        "category": "eng_blogs",
+        "summary_ko": "GitHub과 Microsoft의 'Codename MDASH' 파일럿 결과. AI가 쏟아낸 수천 건의 원시 탐지 결과를 그대로 던지는 대신, 검증을 거쳐 99건의 비공개 리포트로 추려 널리 쓰이는 오픈소스 프로젝트 6곳에 전달했고 수정 제안까지 함께 붙였다. 메인테이너들은 이미 절반 이상을 수정했다. 제목이 말하는 요지는 \"메인테이너에게 필요한 건 AI 버그 리포트가 더 많아지는 것이 아니라 고칠 수 있는 형태의 제보\"라는 것으로, AI 보안 스캔이 오픈소스 유지보수자에게 떠넘기는 검증 부담 문제를 겨냥한다. ※본문 전체 미확보 — 수집된 본문이 사이트 내비게이션으로 채워져 요약은 기사 설명문 기준.",
+        "lang": "en",
+        "published_at": "2026-11-18T03:29:29+09:00",
+        "collected_at": "2026-11-18T08:09:28+09:00",
+        "metrics": null
+      },
+      {
+        "id": "964aca3f2d3b92c6f78e6fa8c28267fc597c6681",
+        "title": "Building the Agent Host Protocol for sessions that continue across devices",
+        "url": "https://github.blog/engineering/engineering-principles/building-the-agent-host-protocol-for-sessions-that-continue-across-devices",
+        "source": "github_blog",
+        "category": "eng_blogs",
+        "summary_ko": "GitHub이 개방형 표준인 Agent Host Protocol(AHP)을 만든 과정을 소개한 글이다. 목표는 AI 에이전트 세션을 특정 도구에 가두지 않고 에디터, 앱, 휴대폰, 클라우드 사이에서 끊김 없이 이어가는 것이다. 즉 노트북 에디터에서 시작한 에이전트 작업을 이동 중 휴대폰에서 이어받는 식의 사용을 염두에 둔 프로토콜이다. ※본문 전체 미확보 — 수집된 본문이 사이트 내비게이션으로 채워져 요약은 기사 설명문 기준.",
+        "lang": "en",
+        "published_at": "2026-11-18T03:20:40+09:00",
+        "collected_at": "2026-11-18T08:09:28+09:00",
+        "metrics": null
+      },
+      {
+        "id": "9cd1e83b07fe6ebcdbda108ef85533b3a5bb44d3",
+        "title": "Four Continents, Four New AWS Heroes: Closing Out 2026",
+        "url": "https://aws.amazon.com/blogs/aws/four-continents-four-new-aws-heroes-closing-out-2026",
+        "source": "aws",
+        "category": "eng_blogs",
+        "summary_ko": "AWS가 re:Invent 2026을 앞두고 4개 대륙에서 새 AWS Hero 4명을 선정해 발표했다. AWS Hero는 지식 공유, 커뮤니티 운영, 다른 개발자를 돕는 도구 제작 등 각자의 방식으로 빌더 커뮤니티에 기여해 온 사람들에게 주는 인정 프로그램이다. ※re:Invent: AWS가 매년 말 여는 최대 규모 연례 콘퍼런스. ※본문 전체 미확보 — 수집된 본문이 사이트 내비게이션으로 채워져 요약은 기사 설명문 기준.",
+        "lang": "en",
+        "published_at": "2026-11-18T02:06:43+09:00",
+        "collected_at": "2026-11-18T08:09:28+09:00",
+        "metrics": null
+      }
+    ]
+  },
+  "hot_topics": [
+    {
+      "topic": "New Evidence Shows School Phone Bans Are Gradually Improving Test Scores",
+      "trend_score": 1.0,
+      "src_count": 1,
+      "hn": {
+        "points": 1113,
+        "comments": 547
+      },
+      "items": [
+        {
+          "id": "a589afa528f0533282048399d2fc6d28bc9b81ac",
+          "title": "New Evidence Shows School Phone Bans Are Gradually Improving Test Scores",
+          "url": "https://nytimes.com/2026/11/17/upshot/school-phone-bans-study-scores.html",
+          "source": "hackernews",
+          "category": "hot_topics",
+          "summary_ko": "뉴욕타임스 Upshot 기사로, 학교 휴대폰 금지 정책이 시험 성적을 점진적으로 끌어올리고 있다는 새 연구 결과를 다룬다. ※본문 미확보(유료 기사) — 제목 기반.",
+          "lang": "en",
+          "published_at": "2026-11-17T20:45:51+09:00",
+          "collected_at": "2026-11-18T08:09:28+09:00",
+          "metrics": {
+            "points": 1113,
+            "comments": 547
+          }
+        }
+      ]
+    },
+    {
+      "topic": "Apple Services Down",
+      "trend_score": 0.9084,
+      "src_count": 1,
+      "hn": {
+        "points": 577,
+        "comments": 315
+      },
+      "items": [
+        {
+          "id": "2722a52f92b90e369ab24917f83858f407768e80",
+          "title": "Apple Services Down",
+          "url": "https://developer.apple.com/system-status",
+          "source": "hackernews",
+          "category": "hot_topics",
+          "summary_ko": "해커뉴스에서 'Apple Services Down'으로 공유된 애플 개발자 시스템 상태(System Status) 페이지. App Store Connect, TestFlight, Xcode Cloud, 인증서·프로파일 등 개발자용 서비스의 가동 상태를 실시간으로 보여주는 공식 대시보드다. 애플 서비스 장애가 의심될 때 개발자들이 가장 먼저 확인하는 페이지로, 장애 발생 시 해커뉴스 상단에 올라오곤 한다. ※수집된 본문은 페이지 메뉴 구조뿐이라 당시 장애 내용·범위는 확인되지 않았다.",
+          "lang": "en",
+          "published_at": "2026-11-18T02:47:14+09:00",
+          "collected_at": "2026-11-18T08:09:28+09:00",
+          "metrics": {
+            "points": 577,
+            "comments": 315
+          }
+        }
+      ]
+    },
+    {
+      "topic": "Highly classified US national security communications network goes down",
+      "trend_score": 0.8917,
+      "src_count": 1,
+      "hn": {
+        "points": 387,
+        "comments": 498
+      },
+      "items": [
+        {
+          "id": "654cd43c8408614727c94ad20e74fcbb6e7748f2",
+          "title": "Highly classified US national security communications network goes down",
+          "url": "https://cnn.com/2026/11/17/politics/highly-classified-national-security-communications-network-goes-down",
+          "source": "hackernews",
+          "category": "hot_topics",
+          "summary_ko": "CNN 보도로, 미국의 고도 기밀(highly classified) 국가안보 통신망에 장애가 발생했다는 내용이다. ※본문 미확보 — 제목 기반. 장애 원인·지속 시간·영향 범위는 확인되지 않았다.",
+          "lang": "en",
+          "published_at": "2026-11-18T00:38:28+09:00",
+          "collected_at": "2026-11-18T08:09:28+09:00",
+          "metrics": {
+            "points": 387,
+            "comments": 498
+          }
+        }
+      ]
+    },
+    {
+      "topic": "Nvidia stopped disclosing Singapore sales as revenues hit $104B",
+      "trend_score": 0.8045,
+      "src_count": 1,
+      "hn": {
+        "points": 286,
+        "comments": 154
+      },
+      "items": [
+        {
+          "id": "3da82e8464b9048f538e74a780b8caa51a82289d",
+          "title": "Nvidia stopped disclosing Singapore sales as revenues hit $104B",
+          "url": "https://ft.com/content/dbde7a30-548c-4f9d-a4be-7898a0c24dcf",
+          "source": "hackernews",
+          "category": "hot_topics",
+          "summary_ko": "파이낸셜타임스 보도로, 엔비디아가 분기 매출이 1,040억 달러에 이르는 가운데 싱가포르 지역 매출 공시를 중단했다는 내용이다. 싱가포르 매출은 실제 칩이 어디로 가는지와 어긋난다는 지적을 받아 왔던 항목이라 수출 통제 맥락에서 주목받는 수치다. ※본문 미확보(유료 기사) — 제목 기반.",
+          "lang": "en",
+          "published_at": "2026-11-18T02:12:06+09:00",
+          "collected_at": "2026-11-18T08:09:28+09:00",
+          "metrics": {
+            "points": 286,
+            "comments": 154
+          }
+        }
+      ]
+    },
+    {
+      "topic": "How the Claude Code team thinks about verification",
+      "trend_score": 0.8006,
+      "src_count": 1,
+      "hn": {
+        "points": 246,
+        "comments": 192
+      },
+      "items": [
+        {
+          "id": "069078b2b4e3b49ad04d84cbfcaa101100088aff",
+          "title": "How the Claude Code team thinks about verification",
+          "url": "https://claude.dev/blog/how-the-claude-code-team-thinks-about-verification",
+          "source": "hackernews",
+          "category": "hot_topics",
+          "summary_ko": "Claude Code 팀이 코딩 에이전트의 '검증(verification)'을 어떻게 다루는지 정리한 글(Addy Osmani, 11월 16일). 이 팀 코드의 약 90%는 Claude가 작성하고 리뷰하므로, 에이전트가 자기 작업을 증거로 입증하게 하는 검증 루프가 핵심 설계 요소가 된다. 검증 루프가 없으면 결과를 사람이 일일이 확인해야 해 동시에 돌릴 수 있는 에이전트가 1~2개에 그치지만, 있으면 수십~수백 개를 병렬로 돌릴 수 있다는 것이다. 내부 실험에서 별도의 채점(grader) 에이전트가 루브릭으로 결과를 검사하게 했더니 일반 프롬프트 루프 대비 작업 성공률이 최대 10%p 올랐고, 어려운 문제일수록 개선 폭이 컸다. 투자 가치가 높은 테스트로 end-to-end, 속성(property), 차분(differential) 테스트 세 가지를 꼽는다. ※속성 테스트: 개별 입출력 대신 \"항상 성립해야 할 성질\"을 무작위 입력으로 검사. ※차분 테스트: 두 구현의 출력을 비교해 차이를 찾는 방식.",
+          "lang": "en",
+          "published_at": "2026-11-17T19:20:40+09:00",
+          "collected_at": "2026-11-18T08:09:28+09:00",
+          "metrics": {
+            "points": 246,
+            "comments": 192
+          }
+        }
+      ]
+    },
+    {
+      "topic": "What is the best harness for each model?",
+      "trend_score": 0.7966,
+      "src_count": 1,
+      "hn": {
+        "points": 312,
+        "comments": 110
+      },
+      "items": [
+        {
+          "id": "715137d9352475f8997e26e644117fd1f3fb6332",
+          "title": "What is the best harness for each model?",
+          "url": "https://runta.com/blog/introducing-frontierharness-eval-v1-1",
+          "source": "hackernews",
+          "category": "hot_topics",
+          "summary_ko": "RUNTA가 Baseten과 함께 만든 FrontierHarness Eval v1.1 결과. 22개 코딩 에이전트 하네스 × 5개 모델 × 62개 과제 × 4회 반복, 총 27,280회 실행에 830억(83B) 토큰을 써 v1.0 대비 76배 규모로 측정했다. 결론은 \"모델을 바꾸면 하네스도 같이 바꾸는 걸 고려해야 한다\"는 것이다. 모델마다 가성비 1위 하네스가 전부 달랐고(GLM-5.3엔 Codex CLI, GLM-5.3 Flash엔 Pi, DeepSeek V4.1 Flash엔 ZCode, Muse엔 Oh My Pi, Kimi-K3엔 Alma), 비용 순위도 크게 요동쳤다. 과제당 비용 기준 중간값 하네스가 22자리 중 11자리를 이동했고, Codex CLI는 GLM-5.3에서 1위였다가 Kimi-K3에서는 16위로 떨어졌다. 모델을 고정해도 가장 비싼 하네스가 가장 싼 쪽의 1.8~5.0배 비용이 들었다. ※하네스: 모델을 감싸 도구 호출·반복·컨텍스트 관리를 수행하는 에이전트 실행 프레임워크(예: Codex CLI).",
+          "lang": "en",
+          "published_at": "2026-11-17T23:53:43+09:00",
+          "collected_at": "2026-11-18T08:09:28+09:00",
+          "metrics": {
+            "points": 312,
+            "comments": 110
+          }
+        }
+      ]
+    },
+    {
+      "topic": "MAI Code 2 and Code 2 Flash",
+      "trend_score": 0.771,
+      "src_count": 1,
+      "hn": {
+        "points": 239,
+        "comments": 111
+      },
+      "items": [
+        {
+          "id": "23791fed6fa0ce2cf147df5fff91647eae30b11e",
+          "title": "MAI Code 2 and Code 2 Flash",
+          "url": "https://microsoft.ai/news/introducing-mai-code-2-and-mai-code-2-flash",
+          "source": "hackernews",
+          "category": "hot_topics",
+          "summary_ko": "마이크로소프트가 Ignite에서 자체 코딩 모델 MAI Code 2와 MAI Code 2 Flash를 공개했다(11월 17일). 기업의 일상적 코딩 업무에 초점을 맞춰 가격 대비 성능을 노린 모델로, 기초과학 연구나 아주 긴 호흡의 에이전트 작업에는 아직 튜닝하지 않았다고 명시했다. DeepSWE 1.1, Terminal Bench 2.1, SWE-Atlas, FrontierCode v1.1 네 벤치마크 평균에서 MAI Code 2는 GPT-6.1 Sol 성능의 98%를 40% 비용에, Claude Opus 5.5 성능의 96%를 단 5% 비용에 낸다고 주장했다. 프런트엔드 앱 블라인드 평가에서는 GPT-6 Sol보다 64% 비율로 선호됐다. Flash는 코드 설명·부분 수정 같은 대량 작업용으로 GPT-6 Luna·Claude Haiku 5.5 대비 각각 65%·20% 비용이다. 파생 모델 MAI Work Flash는 Excel·PowerPoint·Word·Teams·FabricIQ 등 M365 제품군에 투입되고 있다. 두 모델 모두 GitHub Copilot에서 사용 가능하다.",
+          "lang": "en",
+          "published_at": "2026-11-18T03:25:13+09:00",
+          "collected_at": "2026-11-18T08:09:28+09:00",
+          "metrics": {
+            "points": 239,
+            "comments": 111
+          }
+        }
+      ]
+    },
+    {
+      "topic": "Java4Shell: RCE in OpenJDK when processing Base64",
+      "trend_score": 0.7646,
+      "src_count": 1,
+      "hn": {
+        "points": 272,
+        "comments": 75
+      },
+      "items": [
+        {
+          "id": "86aeaafbc09d88846590d14f9b44eedf44af460f",
+          "title": "Java4Shell: RCE in OpenJDK when processing Base64",
+          "url": "https://calif.io/java4shell",
+          "source": "hackernews",
+          "category": "hot_topics",
+          "summary_ko": "OpenJDK의 Base64 디코더에서 발견된 메모리 손상 취약점 'Java4Shell'(CVE-2026-114938). CVSS 4.0 기준 9.2점(CRITICAL)이며, 인증 없는 원격 공격자가 힙 메모리를 덮어쓰고 Heartbleed처럼 메모리 내용을 읽어내거나 원격 코드 실행(RCE)까지 도달할 수 있다. 원인은 Base64를 빠르게 디코딩하려고 쓰는 x86-64 전용 CPU 명령어 기반 최적화 코드의 버그로, 잘못된 입력이 인접 메모리를 덮어쓴다. 트리거는 'A' 64개 뒤에 '=' 하나를 붙인 문자열만으로 충분하고(구버전 OpenJDK 17은 'A' 128개), Base64가 인증 프로토콜·파일 업로드·네트워크 메시지에 광범위하게 쓰이는 탓에 노출면이 매우 넓다. 연구진은 널리 배포된 여러 Java 애플리케이션의 기본 설정에서 RCE를 실증했다고 밝혔다. ※RCE: 공격자가 서버에서 임의 명령을 실행하는 것, 가장 심각한 등급의 취약점. ※Heartbleed: 2014년 OpenSSL의 메모리 누출 취약점.",
+          "lang": "en",
+          "published_at": "2026-11-18T06:11:28+09:00",
+          "collected_at": "2026-11-18T08:09:28+09:00",
+          "metrics": {
+            "points": 272,
+            "comments": 75
+          }
+        }
+      ]
+    },
+    {
+      "topic": "jQuery 4.1.0",
+      "trend_score": 0.7528,
+      "src_count": 1,
+      "hn": {
+        "points": 204,
+        "comments": 105
+      },
+      "items": [
+        {
+          "id": "6f099656459b9bfaed5508615dbf44a94b25dbfb",
+          "title": "jQuery 4.1.0",
+          "url": "https://github.com/jquery/jquery/releases/tag/4.1.0",
+          "source": "hackernews",
+          "category": "hot_topics",
+          "summary_ko": "jQuery 4.1.0이 릴리스됐다(11월 17일, timmywil). 공식 블로그 글 제목이 \"jQuery 4.1.0 and 3.8.0 released: Passing the torch(횃불을 넘기며)\"로, 메인테이너 교체를 시사한다. 주요 변경으로 Ajax의 jqXHR에 responseURL 필드 추가, 코어에서 getElementsByTagName/ClassName을 querySelectorAll로 대체, 배열 범위를 벗어나던 루프 리팩터링, CSS에서 XML 문서 지원을 위한 createElementNS 사용이 있다. 보안 측면에서는 식별자 매칭의 ReDoS를 수정했고, Safari 27의 정규식 인터프리터 버그 우회와 jQuery.uniqueSort 중복 제거 최적화도 들어갔다. form-associated 커스텀 엘리먼트 직렬화 지원이 추가됐으며, 기계 생성(AI) 기여에 대한 가이드라인 문서도 새로 넣었다. ※ReDoS: 악의적 입력으로 정규식 처리를 폭주시켜 서비스를 마비시키는 공격.",
+          "lang": "en",
+          "published_at": "2026-11-18T04:50:40+09:00",
+          "collected_at": "2026-11-18T08:09:28+09:00",
+          "metrics": {
+            "points": 204,
+            "comments": 105
+          }
+        }
+      ]
+    },
+    {
+      "topic": "350 years ago, Ole Rømer discovered that light has a finite speed",
+      "trend_score": 0.7245,
+      "src_count": 1,
+      "hn": {
+        "points": 197,
+        "comments": 63
+      },
+      "items": [
+        {
+          "id": "aa7b1d783c6b1d0c1e6409a55e77459859e0bbe9",
+          "title": "350 years ago, Ole Rømer discovered that light has a finite speed",
+          "url": "https://sciencenorway.no/culture-history-history-of-science/350-years-ago-this-man-discovered-that-light-has-a-finite-speed/2737969",
+          "source": "hackernews",
+          "category": "hot_topics",
+          "summary_ko": "350년 전 덴마크 천문학자 올레 뢰머(Ole Rømer)가 빛의 속도가 유한함을 처음 입증한 이야기(노르웨이 과학매체, 11월 16일). 1676년 9월 뢰머는 파리 과학아카데미 회원들 앞에서 \"11월 9일 목성의 위성 이오가 목성 그림자에서 예상보다 10분 늦게 빠져나올 것\"이라고 예측했고, 실제로 맞았다. 그 전까지 사람들은 빛이 한 지점에서 다른 지점으로 순간적으로 이동한다고 믿었는데, 지구와 목성 사이 거리 변화에 따라 이오의 식(蝕) 관측 시각이 어긋나는 현상을 빛의 이동 시간으로 설명한 것이다. 뢰머는 1671년 파리로 건너가 10년간 과학아카데미 회원으로 활동했으며, 이 발견은 이후 우주를 이해하는 방식의 토대가 됐다.",
+          "lang": "en",
+          "published_at": "2026-11-18T04:25:27+09:00",
+          "collected_at": "2026-11-18T08:09:28+09:00",
+          "metrics": {
+            "points": 197,
+            "comments": 63
+          }
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "source": "github_trending",
+      "ok": true,
+      "item_count": 15,
+      "error_type": null
+    },
+    {
+      "source": "anthropic",
+      "ok": true,
+      "item_count": 288,
+      "error_type": null
+    },
+    {
+      "source": "openai",
+      "ok": true,
+      "item_count": 1429,
+      "error_type": null
+    },
+    {
+      "source": "deepmind",
+      "ok": true,
+      "item_count": 100,
+      "error_type": null
+    },
+    {
+      "source": "meta_ai",
+      "ok": true,
+      "item_count": 88,
+      "error_type": null
+    },
+    {
+      "source": "mistral",
+      "ok": true,
+      "item_count": 94,
+      "error_type": null
+    },
+    {
+      "source": "xai",
+      "ok": true,
+      "item_count": 85,
+      "error_type": null
+    },
+    {
+      "source": "openai_codex",
+      "ok": true,
+      "item_count": 206,
+      "error_type": null
+    },
+    {
+      "source": "cloudflare",
+      "ok": true,
+      "item_count": 20,
+      "error_type": null
+    },
+    {
+      "source": "github_blog",
+      "ok": true,
+      "item_count": 10,
+      "error_type": null
+    },
+    {
+      "source": "aws",
+      "ok": true,
+      "item_count": 20,
+      "error_type": null
+    },
+    {
+      "source": "stripe",
+      "ok": true,
+      "item_count": 10,
+      "error_type": null
+    },
+    {
+      "source": "meta_eng",
+      "ok": true,
+      "item_count": 9,
+      "error_type": null
+    },
+    {
+      "source": "reddit_localllama",
+      "ok": false,
+      "item_count": 0,
+      "error_type": "HTTPError"
+    },
+    {
+      "source": "hf_blog",
+      "ok": true,
+      "item_count": 908,
+      "error_type": null
+    },
+    {
+      "source": "hackernews",
+      "ok": true,
+      "item_count": 20,
+      "error_type": null
+    }
+  ],
+  "summaries_injected": true
+}
