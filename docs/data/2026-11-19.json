@@ -1,0 +1,617 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-11-19T08:19:12+09:00",
+  "date": "2026-11-19",
+  "categories": {
+    "ai_labs": [
+      {
+        "id": "b898a1b2127c5756e1c018cc6a81581a6294cda6",
+        "title": "Introducing Gemini 4 Neon",
+        "url": "https://deepmind.google/blog/introducing-gemini-4-neon",
+        "source": "deepmind",
+        "category": "ai_labs",
+        "summary_ko": "구글 딥마인드가 11월 18일 Gemini 4 Neon 을 공개했다. 복잡한 소프트웨어 엔지니어링·지식 업무·과학 워크플로를 빠르게 끝까지 처리하는 데 초점을 맞춘 모델로, Artificial Analysis Intelligence Index 에서 xhigh 사고 수준 기준 61점으로 전체 3위(더 크고 느린 모델들 바로 뒤)이고 Vals Index 에서는 2위이자 파레토 프론티어(같은 비용에서 더 나은 성능이 없는 경계선)에 올랐다. 새 Agent Arena Index 의 steerability(작업 중간에 사용자가 방향을 고쳐줄 때 깔끔하게 따라오는 능력) 항목에서도 2위이며, 구글 내부 Antigravity 테스트에서 역대 가장 낮은 fabrication(없는 사실을 지어내는 비율)을 기록했다고 밝혔다. 가격은 입력 100만 토큰당 3달러.",
+        "lang": "en",
+        "published_at": "2026-11-19T06:35:43+09:00",
+        "collected_at": "2026-11-19T08:14:46+09:00",
+        "metrics": null
+      },
+      {
+        "id": "f689168723dc030df68e3b673ab44c5f35046795",
+        "title": "DaisyRose-27B: Pushing the Frontier of Post-Training Efficiency",
+        "url": "https://huggingface.co/blog/RadixArk/daisyrose-27b-pushing-the-frontier-of-post-trainin",
+        "source": "hf_blog",
+        "category": "ai_labs",
+        "summary_ko": "RadixArk 가 첫 모델 DaisyRose-27B 를 Apache 2.0 라이선스로 공개했다. Qwen3.8-27B 를 기반으로 자체 RL(강화학습) 프레임워크 Miles 를 써서 H200 GPU 144장에 18일, 엄선한 과제 1,200개만으로 학습했는데, 세션 길이가 최대 100만 토큰에 달하는 장기 에이전트 작업을 훈련 대상으로 삼았다. Terminal-Bench 4.1 의 pass@1(첫 시도 성공률)이 5.6%→12.0% 로 2배 이상 올랐고 SWE Bench Pro v2 91.3→94.7, GPQA Diamond 89.2→90.7 등 나열된 모든 벤치마크에서 원본을 앞섰다. 원본의 아키텍처·토크나이저·채팅 템플릿·이미지 이해·256K 컨텍스트를 그대로 유지하며 BF16/FP8/NVFP4 체크포인트가 배포된다.",
+        "lang": "en",
+        "published_at": "2026-11-19T04:54:56+09:00",
+        "collected_at": "2026-11-19T08:14:46+09:00",
+        "metrics": null
+      },
+      {
+        "id": "75623b38e68bd27d92e36a52d6a4cbbd66f1e8a3",
+        "title": "Why your fine-tuning job takes longer than the FLOPs say",
+        "url": "https://huggingface.co/blog/Dharma-AI/predicting-fine-tuning-time",
+        "source": "hf_blog",
+        "category": "ai_labs",
+        "summary_ko": "Dharma-AI 가 공유 GPU 클러스터에서 파인튜닝 작업이 실제로 얼마나 걸리는지를 272건의 실제 SFT(지도 미세조정) 작업, 총 7,382 GPU-시간 기록으로 분석한 논문 예고편이다. 업계가 흔히 쓰는 FLOP 기반 추정식(6·P·D 를 GPU 실효 성능으로 나누는 방식)은 설명력이 R²=0.31, 평균절대오차 12.41시간에 그친 반면, 작업 제출 시점에 알 수 있는 정보만 쓴 CatBoost 회귀 모델은 R²=0.98, 평균 오차 1.71시간·중앙값 0.51시간을 기록했다. 차이의 원인은 환경 셋업·모델 다운로드·토크나이즈·주기적 평가·체크포인트 업로드 같은 학습 루프 바깥의 오버헤드이며, 이것들은 GPU 수나 연산량에 비례하지 않는다. 추정이 정확해지면 어떤 작업을 언제 몇 장의 GPU 에 올릴지 계획할 수 있어 유휴 GPU 가 줄어든다는 것이 핵심 동기다.",
+        "lang": "en",
+        "published_at": "2026-11-19T03:53:43+09:00",
+        "collected_at": "2026-11-19T08:14:46+09:00",
+        "metrics": null
+      },
+      {
+        "id": "50e3ea47cbae988d3477f301b521889b55c9580b",
+        "title": "Genie 4 is now available",
+        "url": "https://deepmind.google/blog/genie-4-is-now-available",
+        "source": "deepmind",
+        "category": "ai_labs",
+        "summary_ko": "구글이 Google AI Ultra 구독자를 대상으로 Genie 4 를 배포하기 시작했다. Genie 는 텍스트 프롬프트만으로 상호작용 가능한 3D 월드를 생성하는 모델인데, 이번 버전은 날씨 변경·캐릭터 추가 같은 환경 편집을 실시간 자연어로 할 수 있고 상황에 맞춰 바뀌는 오디오가 네이티브로 붙는다. 함께 공개된 Project Genie 에이전트는 대화만으로 복잡한 환경을 구성해 주며, 만든 월드를 커뮤니티 갤러리에 올려 다른 사람이 탐색·리믹스하게 할 수 있다. 기존 Genie 3 도 더 긴 세션, 파노라마 그라운딩, 연결된 월드 시퀀스를 지원하도록 업데이트됐고 Google AI Pro 회원은 대기자 명단에 등록할 수 있다.",
+        "lang": "en",
+        "published_at": "2026-11-19T03:13:42+09:00",
+        "collected_at": "2026-11-19T08:14:46+09:00",
+        "metrics": null
+      },
+      {
+        "id": "bf1424b145e4fc73ff8b2d92f305820114addf23",
+        "title": "Time-Series Models in the Streamhouse: A New Frontier and Use Cases",
+        "url": "https://huggingface.co/blog/ibm-research/time-series-powered-streamhouse",
+        "source": "hf_blog",
+        "category": "ai_labs",
+        "summary_ko": "IBM 리서치와 Confluent 가 시계열 파운데이션 모델을 Apache Flink 의 내장 함수로 제공해 스트리밍 데이터에 SQL 로 바로 예측·이상탐지·의미 검색을 돌릴 수 있게 했다. ※시계열 파운데이션 모델: 텍스트 LLM 처럼 다양한 과거 수치 데이터에서 일반 패턴을 학습해 새 시계열에 바로 적용하는 모델 — 시계열마다 따로 학습할 필요가 없다. IBM 의 해당 모델군(누적 다운로드 5,000만 건 이상)은 GPU 없이 CPU 만으로 동작하며, Confluent Cloud 에서는 완전관리형으로, 온프레미스에서는 Confluent Platform for Apache Flink 로 자체 인프라에서 돌릴 수 있다. 제조 라인 규격 유지, 매장 이상거래 탐지, SKU 단위 수요 계획, 카드 결제 사기 판정, 대량 주문 체결 속도 조절 같은 용례를 제시했다.",
+        "lang": "en",
+        "published_at": "2026-11-19T00:00:23+09:00",
+        "collected_at": "2026-11-19T08:14:46+09:00",
+        "metrics": null
+      },
+      {
+        "id": "e683d40fba103b5f4ba802f7642208e3fbf84dbf",
+        "title": "The Silent Consensus",
+        "url": "https://openai.com/index/the-silent-consensus",
+        "source": "openai",
+        "category": "ai_labs",
+        "summary_ko": "OpenAI 전략미래 책임자 Dean Ball 이 하버드 강연을 옮긴 에세이로, 그가 '침묵의 합의(silent consensus)' 라고 부르는 암묵적 미래상을 비판한다. 기술 업계에는 자율주행·핵융합·AGI 같은 기술적 비전은 넘치지만 '그래서 제도는 어떻게 굴러가는가' 에 대한 비전이 없고, 말해지지 않은 채 전제되는 그림은 인간이 세계의 주도권을 내려놓는 쪽이라는 지적이다. 인간 노동 없이 연구·계약·자본배분·제조를 다 해내는 기업이 경쟁에서 이기기 시작하면, 각각은 합리적인 위임 결정의 누적만으로도 시장이 사람보다 기계의 요구에 응답하는 상태에 도달할 수 있다는 것. 글 서두에서는 프런티어 AI 가 인터넷 핵심 인프라의 취약점을 무더기로 찾아낸 이른바 'Black October' 사태를 당장의 사례로 든다.",
+        "lang": "en",
+        "published_at": "2026-11-18T19:00:00+09:00",
+        "collected_at": "2026-11-19T08:14:46+09:00",
+        "metrics": null
+      },
+      {
+        "id": "53f2a14376dda94d54be4734bb5e7ea38842035f",
+        "title": "Inside the Codex sandbox",
+        "url": "https://openai.com/index/inside-the-codex-sandbox",
+        "source": "openai",
+        "category": "ai_labs",
+        "summary_ko": "OpenAI 가 Codex 가 사용자 PC 에서 명령을 실행할 때 쓰는 샌드박스의 설계를 공개했다. ※샌드박스: 프로그램이 실행 중 접근할 수 있는 범위를 제한하는 장치. 기본 :workspace 프로파일은 작업 디렉터리 안에서만 쓰기를 허용하되 .git·.codex 는 읽기 전용으로 묶어 Git 훅이나 config.toml 변조를 막고, 컴파일러·런타임이 저장소 밖 SDK 를 읽어야 하므로 읽기는 넓게 허용하며(대신 API 키가 든 설정 파일도 읽힐 수 있다는 트레이드오프), 네트워크는 기본 차단해 데이터 유출을 막는다. 가상머신·컨테이너로 계산을 옮기는 대신 macOS·Linux·Windows 각각의 OS 수준 격리 기능으로 강제하며, codex sandbox 명령으로 MCP 서버 같은 다른 도구도 같은 샌드박스에 넣을 수 있다. 샌드박스만으로 모든 악용을 막을 수는 없다는 점(예: 무시되는 node_modules 안의 패키지 변조)을 인정하며 training·alignment 와 겹치는 방어를 강조한다.",
+        "lang": "en",
+        "published_at": "2026-11-18T17:00:00+09:00",
+        "collected_at": "2026-11-19T08:14:46+09:00",
+        "metrics": null
+      },
+      {
+        "id": "8b6ac2940fdc0d0ef0bb9edfc5f301a34fa0795a",
+        "title": "Managing frontier AI risk: From training to deployment",
+        "url": "https://openai.com/index/managing-frontier-ai-risk",
+        "source": "openai",
+        "category": "ai_labs",
+        "summary_ko": "OpenAI 가 프런티어 모델의 위험을 학습부터 배포까지 단계별로 어떻게 관리하는지 정리한 글이다. 안전 기준을 못 맞추면 내부 학습을 멈추거나 GPT-6.1 Astra 같은 모델의 출시를 보류하는 식으로 속도를 조절하고 있다고 밝혔고, 7월 'Hugging Face 인시던트' 이후 학습·테스트·배포 전반의 안전장치를 강화했다고 한다. 연구 단계에서는 인터넷 연결 없이(권한 제한 샌드박스 + VM + 클러스터 전체를 인터넷에서 차단하는 클라우드 경계) 학습하고, 내부 배포 단계에서는 도구를 쓰는 모든 내부 배포를 모니터링하며, 외부 배포 단계에서는 정렬(alignment)과 시스템 수준 통제의 비중을 키우는 식으로 단계마다 의존하는 방어층이 다르다. 모델이 사고 과정에서 자기 의도를 말로 드러내는 정도를 뜻하는 'monitorability(감시가능성)' 를 학습 중·배포 전에 측정하며, 판단은 Safety Advisory Group 과 이사회 산하 안전보안위원회가 검토한다.",
+        "lang": "en",
+        "published_at": "2026-11-18T15:00:00+09:00",
+        "collected_at": "2026-11-19T08:14:46+09:00",
+        "metrics": null
+      },
+      {
+        "id": "6cab9c8cd38347e314ec19080853721e61b4aabd",
+        "title": "Le Groupe Figaro and OpenAI partner to bring Le Figaro journalism to ChatGPT",
+        "url": "https://openai.com/index/le-groupe-figaro-and-openai-announce-partnership",
+        "source": "openai",
+        "category": "ai_labs",
+        "summary_ko": "프랑스 르피가로 그룹(Groupe Figaro)과 OpenAI 가 전략적 제휴를 맺어, 르피가로와 계열 매체의 현재 기사와 아카이브(뉴스·비즈니스·문화·라이프스타일)를 ChatGPT 안에서 요약·발췌 형태로 찾아볼 수 있게 한다. 원문으로 가는 링크가 함께 붙으며, 르피가로는 편집권과 콘텐츠 통제권을 전적으로 유지한다. 르피가로 측은 600명 이상의 기자가 쌓아온 편집 자산과 OpenAI 의 기술·도달 범위를 결합하는 의미를 강조했고, OpenAI 미디어 파트너십 담당 부사장은 퍼블리셔와 협업해 양질의 저널리즘을 새 독자층에 연결하려는 기조라고 밝혔다. 르피가로는 사내에 ChatGPT Enterprise 도 도입할 계획이다.",
+        "lang": "en",
+        "published_at": "2026-11-18T09:00:00+09:00",
+        "collected_at": "2026-11-19T08:14:46+09:00",
+        "metrics": null
+      },
+      {
+        "id": "c7d3ecb006439a135768f56529a5adc2ad0eb57f",
+        "title": "Advancing chip design with OpenAI models",
+        "url": "https://openai.com/index/advancing-chip-design-with-our-models",
+        "source": "openai",
+        "category": "ai_labs",
+        "summary_ko": "OpenAI 가 자사 모델로 반도체 설계를 개선한 성과를 공개했다. 자체 추론 칩 Jalapeño 에서는 2025년 초 GPT-4o 부터 투입해 벡터 유닛의 표준 셀 면적을 약 13%, 매트릭스 유닛을 약 10% 줄였고(한 곱셈기는 면적 15% 절감과 동시에 지연을 2클럭→1클럭으로 단축), 이 최적화들은 실제 실리콘 양산 검증까지 끝났다. AMD 와의 협업에서는 이미 고도로 최적화된 플래그십 GPU IP 대비 최대 14% PPA(전력·성능·면적) 개선을 얻었는데, 모델이 SystemVerilog RTL(칩 회로를 기술하는 코드)을 직접 다시 쓰고 Synopsys 툴로 동작 보존을 검증하는 방식이다. 통상 1년치 진전을 5개월 안에 낸 셈이며, AMD 는 일부를 이미 제조에 넘긴 설계에 반영했고 차세대 플래그십 CPU 주요 블록에서도 한 자릿수 % 개선을 확인했다. 세대별 능력 변화는 오픈소스 RISC-V 코어(PicoRV32, Ibex)로 측정 중이다.",
+        "lang": "en",
+        "published_at": "2026-11-18T09:00:00+09:00",
+        "collected_at": "2026-11-19T08:14:46+09:00",
+        "metrics": null
+      }
+    ],
+    "community": [],
+    "github_trending": [
+      {
+        "id": "1555ed6bcb1233ac9c007e37e60bc1ee6a65594c",
+        "title": "jingyaogong/minimind",
+        "url": "https://github.com/jingyaogong/minimind",
+        "source": "github_trending",
+        "category": "github_trending",
+        "summary_ko": "GitHub 트렌딩에 오른 MiniMind 는 GPU 1장(NVIDIA 3090)으로 2시간, 비용 약 3위안(한화 600원 수준)이면 64M 파라미터 초소형 LLM 을 0부터 학습시킬 수 있게 만든 중국어권 오픈소스 교육 프로젝트다(스타 66.5k, 포크 8.7k, Apache 2.0). 핵심 알고리즘을 서드파티 고수준 래퍼 없이 순수 PyTorch 로 직접 구현해 두었고, Pretrain·SFT·LoRA·RLHF(DPO)·RLAIF(PPO/GRPO/CISPO)·Tool Use·Agentic RL·모델 증류까지 전 학습 단계 코드와 데이터셋을 공개한다. 본선 구조는 Qwen3 / Qwen3-MoE 생태계에 맞춰져 있고 비전 모델 MiniMind-V, 멀티모달 MiniMind-O, 확산 언어모델, 선형 모델 변형까지 파생되어 있다. transformers·trl·peft 및 llama.cpp·vllm·ollama 와 호환되며 단일/다중 GPU(DDP, DeepSpeed) 학습을 지원한다.",
+        "lang": "en",
+        "published_at": null,
+        "collected_at": "2026-11-19T08:14:46+09:00",
+        "metrics": null
+      }
+    ],
+    "codex": [
+      {
+        "id": "b2787885885ce5a8e2d6dc120f1ee3e432e7557e",
+        "title": "Codex CLI Release: 0.170.0",
+        "url": "https://developers.openai.com/codex/changelog#github-release-449494076",
+        "source": "openai_codex",
+        "category": "codex",
+        "summary_ko": "OpenAI Codex CLI 0.170.0 버전이 릴리스됐다. ※본문 미확보 — 제목 기반. 변경 내역은 링크된 Codex 체인지로그에서 확인해야 한다.",
+        "lang": "en",
+        "published_at": "2026-11-18T09:00:00+09:00",
+        "collected_at": "2026-11-19T08:14:46+09:00",
+        "metrics": null
+      },
+      {
+        "id": "96f7b9d88b05ee7128d30ca22a1ae51ec3abb4ef",
+        "title": "Codex CLI Release: 0.169.1",
+        "url": "https://developers.openai.com/codex/changelog#github-release-449266447",
+        "source": "openai_codex",
+        "category": "codex",
+        "summary_ko": "OpenAI Codex CLI 0.169.1 버전이 릴리스됐다. ※본문 미확보 — 제목 기반. 패치 번호가 올라간 소규모 수정 릴리스로 보이며, 상세 내역은 링크된 체인지로그 참조.",
+        "lang": "en",
+        "published_at": "2026-11-17T09:00:00+09:00",
+        "collected_at": "2026-11-19T08:14:46+09:00",
+        "metrics": null
+      }
+    ],
+    "eng_blogs": [
+      {
+        "id": "79b71893e69dee6b7286f0331e269c733d918c8c",
+        "title": "An updated Clairic and Clairic-flash are now open-weight, from the new Workers AI Superintelligence team",
+        "url": "https://blog.cloudflare.com/open-clairic",
+        "source": "cloudflare",
+        "category": "eng_blogs",
+        "summary_ko": "Cloudflare 가 추출(extraction) 모델 Clairic 을 프리뷰에서 정식으로 올리고, 더 가벼운 Clairic-flash 를 Workers AI 라인업에 추가하면서 두 모델 모두 오픈 웨이트(가중치 공개)로 배포한다고 밝혔다. 새로 꾸린 'Workers AI Superintelligence' 팀의 결과물이다. ※본문 상세 미확보 — 기사 본문이 사이트 네비게이션에 묻혀 수집되지 않아, 리드 문단과 제목에서 확인되는 내용만 정리했다. 벤치마크·가격 등 세부는 원문 확인 필요.",
+        "lang": "en",
+        "published_at": "2026-11-19T07:00:00+09:00",
+        "collected_at": "2026-11-19T08:14:46+09:00",
+        "metrics": null
+      },
+      {
+        "id": "bd32339b925dad5b5d064b3db6228503c380f375",
+        "title": "AWS Lambda now supports GPU instances for Event Functions on Lambda Managed Instances",
+        "url": "https://aws.amazon.com/blogs/aws/aws-lambda-now-supports-gpu-instances-for-event-functions-on-lambda-managed-instances",
+        "source": "aws",
+        "category": "eng_blogs",
+        "summary_ko": "AWS Lambda 가 Lambda Managed Instances 위에서 동작하는 Event Function 에 G 계열 GPU 인스턴스를 지원하기 시작했다. 머신러닝 추론, 미디어 처리, 렌더링처럼 GPU 가 필요한 작업을 서버리스로 돌릴 수 있게 된 것으로, 인스턴스 수명주기·드라이버 관리·오토스케일링 같은 인프라 작업은 Lambda 가 전부 맡는다. 동시 요청들 사이에서 GPU 사용률을 최대한 끌어올리도록 스케줄링하며, 과금은 표준 EC2 요금에 관리 수수료를 더하는 구조다.",
+        "lang": "en",
+        "published_at": "2026-11-19T04:39:07+09:00",
+        "collected_at": "2026-11-19T08:14:46+09:00",
+        "metrics": null
+      },
+      {
+        "id": "0f9be8abc3972160b7ede4feaa47bfe50c910a5e",
+        "title": "How Meta Uses AI Agents to Scale ML Innovations Across Ads Ranking Models",
+        "url": "https://engineering.fb.com/2026/11/18/ml-applications/ai-agents-to-scale-ml-innovations-across-ads-ranking-models",
+        "source": "meta_eng",
+        "category": "eng_blogs",
+        "summary_ko": "Meta 가 광고 랭킹 모델 전반에 ML 개선 기법을 퍼뜨리는 'technique propagation(기법 전파)' 을 AI 에이전트에게 맡긴 사례를 공개했다. 광고 랭킹 모델은 제품 면과 광고주 목표마다 아키텍처·학습 데이터·서빙 제약이 달라 한 모델에서 검증된 기법(예: Wukong 팩터라이제이션 레이어, Interformer 상호작용 네트워크)이 다른 모델에 그대로 복사되지 않는데, 수작업 적응은 엔지니어 역량과 학습 컴퓨트 양쪽에 막혀 모델 수에 비례해 늘어나지 않는다. 2026년 3월 에이전트가 실행을 맡기 시작한 뒤 전체 전파 작업의 60% 이상을 에이전트가 처리하고 있으며, 같은 작업을 사람이 하던 때와 비교해 엔지니어링 생산성 3배, 일부 조합에서 학습 컴퓨트 중앙값 4배 절감, 연말까지 컴퓨트 비용 4,500만 달러 이상 절약이 추정된다고 밝혔다.",
+        "lang": "en",
+        "published_at": "2026-11-19T02:00:00+09:00",
+        "collected_at": "2026-11-19T08:14:46+09:00",
+        "metrics": null
+      },
+      {
+        "id": "53f341ad0b87779167373aea78f9f9612f2c4cf7",
+        "title": "Design Once, Deploy at Scale: Building a Template-Driven ML Ecosystem",
+        "url": "https://engineering.fb.com/2026/11/18/ml-applications/design-once-deploy-at-scale-template-driven-ml-ecosystem",
+        "source": "meta_eng",
+        "category": "eng_blogs",
+        "summary_ko": "위 글의 짝이 되는 포스트로, Meta 가 수많은 프로덕션 광고 랭킹 모델을 소수의 표준 템플릿(Standard Model Templates, SMT)으로 묶은 방식을 설명한다. 모델마다 아키텍처·피처·학습 설정·서빙 구성이 제각각이면 새 아이디어 반영 비용과 예외 처리 비용이 모델 수에 선형으로 늘고 AutoML 같은 자동화도 잘 먹히지 않는데, 공통 부분을 명시적으로 공유하는 템플릿으로 재편해 '모델별 문제' 를 '공통 시스템 문제' 로 바꿨다. 지난 2년간 모델당 엔지니어링 시간 92% 감소, 5,000개 이상의 기법-모델 조합 적용, 서빙 용량은 그대로 둔 채 오프라인 모델 품질 평균 0.63% 개선, 모델 수 기준 70% 를 커버하며 온라인 누적 0.86% 향상을 기록했다. 상세 내용은 'Design Once, Deploy at Scale' 논문에 실렸다.",
+        "lang": "en",
+        "published_at": "2026-11-19T01:59:38+09:00",
+        "collected_at": "2026-11-19T08:14:46+09:00",
+        "metrics": null
+      },
+      {
+        "id": "af17318c693b84ad326e6e35d0b58037b6a6d630",
+        "title": "How Cloudflare WAF helps protect against Java4Shell (CVE-2026-114938)",
+        "url": "https://blog.cloudflare.com/java4shell-waf-protection",
+        "source": "cloudflare",
+        "category": "eng_blogs",
+        "summary_ko": "OpenJDK 의 Base64 디코더에서 발견된 심각한 메모리 손상 취약점 'Java4Shell'(CVE-2026-114938)은 원격 코드 실행으로 이어질 수 있다. Cloudflare 는 유료 플랜을 대상으로 WAF(웹 방화벽) 관리 규칙 6개를 배포했으며, 기본 동작은 차단이 아니라 매칭된 요청을 로그로 남기는 것이다. 즉 WAF 규칙은 탐지·완화용 임시 방편이고, Cloudflare 자신도 Java 런타임을 지금 패치하라고 권고한다. ※본문 상세는 사이트 태그 목록에 묻혀 수집되지 않아 리드 문단 기준으로 정리했다.",
+        "lang": "en",
+        "published_at": "2026-11-18T23:52:10+09:00",
+        "collected_at": "2026-11-19T08:14:46+09:00",
+        "metrics": null
+      }
+    ]
+  },
+  "hot_topics": [
+    {
+      "topic": "Gemini 4 Neon",
+      "trend_score": 1.0,
+      "src_count": 2,
+      "hn": {
+        "points": 290,
+        "comments": 275
+      },
+      "items": [
+        {
+          "id": "b898a1b2127c5756e1c018cc6a81581a6294cda6",
+          "title": "Introducing Gemini 4 Neon",
+          "url": "https://deepmind.google/blog/introducing-gemini-4-neon",
+          "source": "deepmind",
+          "category": "ai_labs",
+          "summary_ko": "구글 딥마인드가 11월 18일 Gemini 4 Neon 을 공개했다. 복잡한 소프트웨어 엔지니어링·지식 업무·과학 워크플로를 빠르게 끝까지 처리하는 데 초점을 맞춘 모델로, Artificial Analysis Intelligence Index 에서 xhigh 사고 수준 기준 61점으로 전체 3위(더 크고 느린 모델들 바로 뒤)이고 Vals Index 에서는 2위이자 파레토 프론티어(같은 비용에서 더 나은 성능이 없는 경계선)에 올랐다. 새 Agent Arena Index 의 steerability(작업 중간에 사용자가 방향을 고쳐줄 때 깔끔하게 따라오는 능력) 항목에서도 2위이며, 구글 내부 Antigravity 테스트에서 역대 가장 낮은 fabrication(없는 사실을 지어내는 비율)을 기록했다고 밝혔다. 가격은 입력 100만 토큰당 3달러.",
+          "lang": "en",
+          "published_at": "2026-11-19T06:35:43+09:00",
+          "collected_at": "2026-11-19T08:14:46+09:00",
+          "metrics": null
+        },
+        {
+          "id": "b2c084a41275137173e812609f66e708e4fc8ea8",
+          "title": "Gemini 4 Neon",
+          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon",
+          "source": "hackernews",
+          "category": "hot_topics",
+          "summary_ko": "(해커뉴스에 올라온 Gemini 4 Neon 발표) 구글이 복잡한 소프트웨어 엔지니어링·지식 업무·과학 워크플로를 끝까지 빠르게 처리하는 데 초점을 둔 Gemini 4 Neon 을 공개했다. Artificial Analysis Intelligence Index 에서 xhigh 사고 수준 61점으로 전체 3위, Vals Index 2위이자 파레토 프론티어에 올랐고, 새 Agent Arena Index 의 steerability(작업 도중 사용자 수정 지시를 깔끔히 반영하는 능력)에서 2위를 기록했다. 구글 내부 Antigravity 테스트 기준 역대 최저 fabrication(사실 날조) 비율을 기록했다고 밝혔으며 가격은 입력 100만 토큰당 3달러다.",
+          "lang": "en",
+          "published_at": "2026-11-19T06:34:07+09:00",
+          "collected_at": "2026-11-19T08:14:46+09:00",
+          "metrics": {
+            "points": 290,
+            "comments": 275
+          }
+        }
+      ]
+    },
+    {
+      "topic": "Genie 4 is now available",
+      "trend_score": 0.9213,
+      "src_count": 2,
+      "hn": {
+        "points": 162,
+        "comments": 137
+      },
+      "items": [
+        {
+          "id": "50e3ea47cbae988d3477f301b521889b55c9580b",
+          "title": "Genie 4 is now available",
+          "url": "https://deepmind.google/blog/genie-4-is-now-available",
+          "source": "deepmind",
+          "category": "ai_labs",
+          "summary_ko": "구글이 Google AI Ultra 구독자를 대상으로 Genie 4 를 배포하기 시작했다. Genie 는 텍스트 프롬프트만으로 상호작용 가능한 3D 월드를 생성하는 모델인데, 이번 버전은 날씨 변경·캐릭터 추가 같은 환경 편집을 실시간 자연어로 할 수 있고 상황에 맞춰 바뀌는 오디오가 네이티브로 붙는다. 함께 공개된 Project Genie 에이전트는 대화만으로 복잡한 환경을 구성해 주며, 만든 월드를 커뮤니티 갤러리에 올려 다른 사람이 탐색·리믹스하게 할 수 있다. 기존 Genie 3 도 더 긴 세션, 파노라마 그라운딩, 연결된 월드 시퀀스를 지원하도록 업데이트됐고 Google AI Pro 회원은 대기자 명단에 등록할 수 있다.",
+          "lang": "en",
+          "published_at": "2026-11-19T03:13:42+09:00",
+          "collected_at": "2026-11-19T08:14:46+09:00",
+          "metrics": null
+        },
+        {
+          "id": "abe03c170f0b92ca170ea0d248104d2e6bc83bbe",
+          "title": "Genie 4 is now available",
+          "url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/genie-4-now-available-project-genie",
+          "source": "hackernews",
+          "category": "hot_topics",
+          "summary_ko": "(해커뉴스에 올라온 Genie 4 발표) 구글이 Google AI Ultra 구독자에게 Genie 4 를 열었다. 텍스트 프롬프트로 날씨를 바꾸거나 캐릭터를 추가하는 등 생성된 인터랙티브 월드를 실시간으로 편집할 수 있고, 장면에 맞춰 변하는 오디오가 기본 제공된다. 새 Project Genie 에이전트는 대화만으로 복잡한 환경을 만들어 주며, 완성한 월드는 커뮤니티 갤러리에 공개해 다른 사용자가 탐색·리믹스할 수 있다. 기존 Genie 3 도 더 긴 세션과 파노라마 그라운딩, 월드 연결 시퀀스를 지원하도록 업데이트됐다.",
+          "lang": "en",
+          "published_at": "2026-11-19T03:49:51+09:00",
+          "collected_at": "2026-11-19T08:14:46+09:00",
+          "metrics": {
+            "points": 162,
+            "comments": 137
+          }
+        }
+      ]
+    },
+    {
+      "topic": "Unauthenticated remote code execution in Nginx",
+      "trend_score": 0.8479,
+      "src_count": 1,
+      "hn": {
+        "points": 996,
+        "comments": 461
+      },
+      "items": [
+        {
+          "id": "16043a46c1095fcbe01ae003f3c150546907a41b",
+          "title": "Unauthenticated remote code execution in Nginx",
+          "url": "https://wiz.io/blog/nginx-http2-rce-vulnerabilities",
+          "source": "hackernews",
+          "category": "hot_topics",
+          "summary_ko": "Wiz 리서치 등 5개 팀이 각자 독립적으로 NGINX 의 HTTP/2 처리에서 인증 없이 원격 코드 실행이 가능한 치명적 취약점 두 건(CVE-2026-123633 use-after-free, CVE-2026-123007 정수 언더플로)을 찾아냈다. 둘 다 CVSS 4.0 기준 9.2 'Critical' 이고 HTTP/2 가 켜져 있어야 성립하는데, NGINX 는 2억 2,500만 개 이상의 웹사이트 앞단에서 트래픽을 받아 넘기는 역할이라 애플리케이션 코드가 멀쩡해도 서버가 장악될 수 있다. CVE-2026-123007 은 2015년 NGINX 1.9.5 까지 거슬러 올라가 10년 넘게 숨어 있었고, Wiz 는 정적 파일만 서빙하는 평범한 NGINX 에서도 코드 실행을 재현했다. F5 가 11월 18일 보안 릴리스를 내놨으니 즉시 업데이트해야 하며, Wiz 는 이런 메모리 안전 취약점을 찾는 장벽을 AI 가 허물고 있다는 점(발견에 Wiz Atlas 와 Gemini 4 Carbon·ChatGPT 5.6 Sol 사용, 여러 팀의 동시 발견)을 공격자 쪽에도 해당하는 변화로 짚었다.",
+          "lang": "en",
+          "published_at": "2026-11-19T00:19:55+09:00",
+          "collected_at": "2026-11-19T08:14:46+09:00",
+          "metrics": {
+            "points": 996,
+            "comments": 461
+          }
+        }
+      ]
+    },
+    {
+      "topic": "DNS resolvers are the wrong place to fight piracy",
+      "trend_score": 0.762,
+      "src_count": 1,
+      "hn": {
+        "points": 549,
+        "comments": 200
+      },
+      "items": [
+        {
+          "id": "04ea7dca74f4d708b5505bcb9d3e174dd931a5b2",
+          "title": "DNS resolvers are the wrong place to fight piracy",
+          "url": "https://techstackups.com/articles/quad9-leaves-france-dns-blocking",
+          "source": "hackernews",
+          "category": "hot_topics",
+          "summary_ko": "스위스 비영리 DNS 리졸버 Quad9(9.9.9.9)가 2026년 11월 24일부로 프랑스 사용자 대상 서비스를 중단한다. beIN Sports 가 요구한 불법 스포츠 중계 사이트 차단 명령을 거부하자 파리 법원이 벌금을 물렸고, 유사 소송 20여 건이 더 대기 중이라 철수 외에 선택지가 없다는 것이다. 근거 법은 프랑스 체육법 L.333-10 조로, '침해 중단에 기여할 수 있는 모든 자' 에게 동적 차단 명령을 내릴 수 있게 해 DNS 리졸버까지 범위에 들어왔고, 2026년 7월 개정으로 Arcom 이 사전 승인 없이 실시간 자동 차단을 돌리게 됐다. Quad9 는 멀웨어·피싱 도메인을 하루 6억 7천만 건 이상 차단하는 보안 필터링 리졸버이며 DINUM·France Travail·파스퇴르연구소·SNCF·에어버스 등 프랑스 주요 기관이 쓰고 있는데, 리졸버가 사라지면 사용자에겐 오류 메시지 없이 그냥 인터넷이 안 되는 상태가 된다. 2024년 Cisco OpenDNS 도 같은 법으로 프랑스에서 철수했고 Cloudflare 는 이번 건을 '탄광의 카나리아' 라고 표현했다.",
+          "lang": "en",
+          "published_at": "2026-11-18T22:18:02+09:00",
+          "collected_at": "2026-11-19T08:14:46+09:00",
+          "metrics": {
+            "points": 549,
+            "comments": 200
+          }
+        }
+      ]
+    },
+    {
+      "topic": "Inside Deutsche Bank",
+      "trend_score": 0.7493,
+      "src_count": 1,
+      "hn": {
+        "points": 498,
+        "comments": 180
+      },
+      "items": [
+        {
+          "id": "cbdfc4d9f44623c3122212cf63f4bb837a10eee2",
+          "title": "Inside Deutsche Bank",
+          "url": "https://inside-db.com/",
+          "source": "hackernews",
+          "category": "hot_topics",
+          "summary_ko": "도이체방크 내부 문건 1,500만 건 이상이 유출돼 국제 공동 탐사보도로 공개됐다. 자금세탁방지·제재 모니터링·내부감사, 그리고 위험 고객을 계속 받을지 결정하는 부서 등 은행의 가장 민감한 기능들이 문서에 담겼고, 보도는 컴플라이언스보다 수익을 우선한 문화와 구조적 사각지대를 지적한다. 파이낸셜타임스·뉴욕타임스·elDiario.es·IrpiMedia·Follow the Money·뉴스타파 등 각국 매체가 나눠 보도했으며, 1MDB 사건의 조 로우 관련 1억 7,298만 유로 규모 거래 24건, 러시아 올리가르히 고객 보호, 헝가리 은행을 통한 대러 자금 통로, 분쟁지역 무기 공급 금융, 엡스타인 관련 의심거래 6억 달러(기존 알려진 액수의 두 배) 등이 개별 기사로 다뤄졌다.",
+          "lang": "en",
+          "published_at": "2026-11-19T00:38:33+09:00",
+          "collected_at": "2026-11-19T08:14:46+09:00",
+          "metrics": {
+            "points": 498,
+            "comments": 180
+          }
+        }
+      ]
+    },
+    {
+      "topic": "Seven new models at scalable price-performance",
+      "trend_score": 0.7455,
+      "src_count": 1,
+      "hn": {
+        "points": 390,
+        "comments": 269
+      },
+      "items": [
+        {
+          "id": "5dbbce44001a69bf9259130b9dd3a13c5b5899f4",
+          "title": "Seven new models at scalable price-performance",
+          "url": "https://microsoft.ai/news/microsoft-ignite-2026",
+          "source": "hackernews",
+          "category": "hot_topics",
+          "summary_ko": "마이크로소프트가 Ignite 2026 에서 MAI 계열 신규 모델 7종을 가격 대비 성능을 앞세워 공개했다. MAI Code 2 는 GPT-6.1 Sol 대비 코딩 품질 98% 를 40% 가격에, Opus 5.5 대비 96% 를 5% 가격에 낸다고 주장하고(DeepSWE 1.1·Terminal Bench 2.1·SWE-Atlas·FrontierCode v1.1 평균), MAI Cyber 2 Flash 는 CyberGym-E2E 에서 GPT-6 Astra 품질을 작업당 2% 미만 비용으로 넘어선다고 밝혔다. 그 밖에 이미지 편집 1위를 주장하는 MAI Image 2.7, 오디오 1분당 0.01달러부터 시작하는 MAI Realtime 1, 월 1,000만 건 진료 기록을 처리 중인 MAI Transcribe 2, GPT-6.1 Sol 대비 50배 빠르고 79배 싸다는 Decision 1.1 이 포함됐다. 2세대 자체 AI 가속기 Maia 200 도 양산에 들어가 와트당 토큰 처리량이 1.7배 늘었다고 한다. 메시지는 명확하다 — 에이전트를 24시간 돌리려면 프런티어 성능보다 토큰 단가가 관건이라는 것.",
+          "lang": "en",
+          "published_at": "2026-11-19T01:08:24+09:00",
+          "collected_at": "2026-11-19T08:14:46+09:00",
+          "metrics": {
+            "points": 390,
+            "comments": 269
+          }
+        }
+      ]
+    },
+    {
+      "topic": "AI agents ask better questions than KPMG accountants in audit trial",
+      "trend_score": 0.6942,
+      "src_count": 1,
+      "hn": {
+        "points": 299,
+        "comments": 136
+      },
+      "items": [
+        {
+          "id": "dbf7233003822774ad6ca7904d9d7786a6ef6a0b",
+          "title": "AI agents ask better questions than KPMG accountants in audit trial",
+          "url": "https://europeanbusinessmagazine.com/ai-agents-better-questions-kpmg",
+          "source": "hackernews",
+          "category": "hot_topics",
+          "summary_ko": "KPMG UK 가 'Project Exponential' 이라는 코드명으로 AI 에이전트 100여 개를 실제 감사에 투입한 결과, 에이전트가 때때로 인간 감사팀보다 재무 이슈를 더 깊이 파고들고 더 나은 질문을 던졌다고 밝혔다. 대상은 익명의 FTSE 250 상장사(※FTSE 250: 런던증권거래소 시가총액 101~350위 기업 지수)의 재무제표였고, 에이전트들은 고립된 보조 작업이 아니라 감사 프로세스 전반의 업무를 기존 감사팀과 나란히 수행했다. 파이낸셜타임스가 먼저 보도한 이 실험은 회계업계에 노동집약적 감사 업무의 경제성이 얼마나 빨리 바뀔 것인가라는 질문을 던진다.",
+          "lang": "en",
+          "published_at": "2026-11-19T00:49:34+09:00",
+          "collected_at": "2026-11-19T08:14:46+09:00",
+          "metrics": {
+            "points": 299,
+            "comments": 136
+          }
+        }
+      ]
+    },
+    {
+      "topic": "The Cambridge Dictionary has named ‘human’ as the Word of the Year 2026",
+      "trend_score": 0.6753,
+      "src_count": 1,
+      "hn": {
+        "points": 218,
+        "comments": 164
+      },
+      "items": [
+        {
+          "id": "b589776185bc6c1310e5decd3a7cc861a4d5842c",
+          "title": "The Cambridge Dictionary has named ‘human’ as the Word of the Year 2026",
+          "url": "https://cam.ac.uk/news/cambridge-dictionary-reveals-word-of-the-year-2026",
+          "source": "hackernews",
+          "category": "hot_topics",
+          "summary_ko": "케임브리지 사전이 2026년 올해의 단어로 'human(인간)' 을 선정했다. AI 가 사람과 기계의 경계를 흐리면서 '인간이란 무엇인가' 를 둘러싼 논쟁이 한 해를 규정했다는 이유로, 사전은 이 단어를 '신·동물·기계와 대비되는, 사람이 가진 특질과 결점과 감정을 지닌' 으로 정의한다. 빌 게이츠는 돌봄직처럼 기계에 넘기지 말아야 할 '인간 전용 직업' 을 주장했고, 제프리 힌턴은 '우리는 외계 존재를 만들고 있다, 나는 이기적으로 인간을 택하겠다' 고 경고했으며, 교황 레오 14세는 '깊이 인간으로 남아야 할 절박한 의무' 를 언급했다. 스칼렛 요한슨·빌리 아일리시 등이 참여한 Human Artistry Campaign 의 LLM 학습 데이터 무단 사용 반대, 작가조합의 'Human Authored' 인증 마크, 매튜 매커너히·테일러 스위프트의 음성·얼굴 상표 등록 같은 움직임도 함께 거론됐다.",
+          "lang": "en",
+          "published_at": "2026-11-18T23:43:52+09:00",
+          "collected_at": "2026-11-19T08:14:46+09:00",
+          "metrics": {
+            "points": 218,
+            "comments": 164
+          }
+        }
+      ]
+    },
+    {
+      "topic": "Energy-Based Reasoners: 385x more efficient inference",
+      "trend_score": 0.6496,
+      "src_count": 1,
+      "hn": {
+        "points": 293,
+        "comments": 49
+      },
+      "items": [
+        {
+          "id": "23a6e8d38fa0e0cc8fad2358de96be3d7e967e94",
+          "title": "Energy-Based Reasoners: 385x more efficient inference",
+          "url": "https://energy-based-reasoners.github.io/",
+          "source": "hackernews",
+          "category": "hot_topics",
+          "summary_ko": "듀크대·UIUC·하버드 연구진이 제안한 Energy-Based Reasoners(EBR)는 반복 추론 블록을 '학습된 에너지 함수에 대한 경사하강' 으로 재정의한 모델이다. ※에너지 함수: 현재 추론 상태가 문제와 얼마나 잘 맞는지를 하나의 점수로 매기는 함수 — 낮을수록 좋다. 이 점수 하나가 세 가지 역할을 동시에 한다. 기울기는 다음 상태로 갈 방향을 알려주고, 기울기가 충분히 작아지면 '더 돌려도 소용없다' 는 정지 신호가 되며, 여러 후보 답 중 에너지가 가장 낮은 것을 고르는 선택 기준이 된다 — 별도의 외부 검증기가 필요 없다는 뜻이다. 파라미터 1.8M 만으로 Sudoku-Extreme 99.9% 정확도를 차순위 모델 대비 345배 적은 추론 연산으로 달성했고(제목의 385배와 수치가 다르다 — 논문 본문은 345×), N-Queens·Graph Coloring 에서도 단일 샘플 정확도를 거의 100% 로 유지하면서 서로 다른 유효해를 가장 폭넓게 찾아냈다.",
+          "lang": "en",
+          "published_at": "2026-11-18T18:29:32+09:00",
+          "collected_at": "2026-11-19T08:14:46+09:00",
+          "metrics": {
+            "points": 293,
+            "comments": 49
+          }
+        }
+      ]
+    },
+    {
+      "topic": "KVM: x86: Unconditionally reset MMU context when emulating INIT (CVE-2026-99312)",
+      "trend_score": 0.6355,
+      "src_count": 1,
+      "hn": {
+        "points": 164,
+        "comments": 113
+      },
+      "items": [
+        {
+          "id": "973516cb974f4c351328f1edd0204cc13606444d",
+          "title": "KVM: x86: Unconditionally reset MMU context when emulating INIT (CVE-2026-99312)",
+          "url": "https://cve.org/CVERecord?id=CVE-2026-99312",
+          "source": "hackernews",
+          "category": "hot_topics",
+          "summary_ko": "리눅스 커널 KVM 의 x86 코드에서 INIT 신호를 에뮬레이션할 때 MMU(메모리 관리 유닛) 컨텍스트를 조건 없이 리셋하도록 고친 보안 수정이다(CVE-2026-99312). ※본문 미확보 — 제목과 CVE 번호 기반. 가상화 계층의 메모리 관리 상태가 제대로 초기화되지 않는 문제로 보이며, 영향 범위와 심각도는 CVE 레코드와 커널 커밋을 직접 확인해야 한다.",
+          "lang": "en",
+          "published_at": "2026-11-19T01:06:21+09:00",
+          "collected_at": "2026-11-19T08:14:46+09:00",
+          "metrics": {
+            "points": 164,
+            "comments": 113
+          }
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "source": "github_trending",
+      "ok": true,
+      "item_count": 15,
+      "error_type": null
+    },
+    {
+      "source": "anthropic",
+      "ok": true,
+      "item_count": 288,
+      "error_type": null
+    },
+    {
+      "source": "openai",
+      "ok": true,
+      "item_count": 1435,
+      "error_type": null
+    },
+    {
+      "source": "deepmind",
+      "ok": true,
+      "item_count": 100,
+      "error_type": null
+    },
+    {
+      "source": "meta_ai",
+      "ok": true,
+      "item_count": 88,
+      "error_type": null
+    },
+    {
+      "source": "mistral",
+      "ok": true,
+      "item_count": 94,
+      "error_type": null
+    },
+    {
+      "source": "xai",
+      "ok": true,
+      "item_count": 85,
+      "error_type": null
+    },
+    {
+      "source": "openai_codex",
+      "ok": true,
+      "item_count": 206,
+      "error_type": null
+    },
+    {
+      "source": "cloudflare",
+      "ok": true,
+      "item_count": 20,
+      "error_type": null
+    },
+    {
+      "source": "github_blog",
+      "ok": true,
+      "item_count": 10,
+      "error_type": null
+    },
+    {
+      "source": "aws",
+      "ok": true,
+      "item_count": 20,
+      "error_type": null
+    },
+    {
+      "source": "stripe",
+      "ok": true,
+      "item_count": 10,
+      "error_type": null
+    },
+    {
+      "source": "meta_eng",
+      "ok": true,
+      "item_count": 9,
+      "error_type": null
+    },
+    {
+      "source": "reddit_localllama",
+      "ok": false,
+      "item_count": 0,
+      "error_type": "HTTPError"
+    },
+    {
+      "source": "hf_blog",
+      "ok": true,
+      "item_count": 913,
+      "error_type": null
+    },
+    {
+      "source": "hackernews",
+      "ok": true,
+      "item_count": 20,
+      "error_type": null
+    }
+  ],
+  "summaries_injected": true
+}
