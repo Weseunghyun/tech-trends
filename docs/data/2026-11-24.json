@@ -1,0 +1,507 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-11-24T07:36:45+09:00",
+  "date": "2026-11-24",
+  "categories": {
+    "ai_labs": [
+      {
+        "id": "1d0c151fefed0deaf7f3ec56aad3faaff42e5184",
+        "title": "OpenAI and Cisco introduce Shirudo",
+        "url": "https://openai.com/index/introducing-shirudo",
+        "source": "openai",
+        "category": "ai_labs",
+        "summary_ko": "OpenAI와 Cisco가 리눅스용 오픈소스 런타임 'Shirudo'(일본어 '방패')를 공개했다. 취약점 패치를 테스트·배포하는 데 수일~수주가 걸리는 동안 서비스를 중단하지 않고 보호하는 것이 목적으로, '실드(shield)'라는 임시 방어막이 취약점을 노리는 동작만 차단하고 정상 요청은 통과시키는지 먼저 검증한 뒤 운영자 승인을 거쳐 서비스 재시작 없이 적용된다. 통제된 테스트에서 Codex가 생성한 실드가 가동 중인 Elasticsearch에 대한 Java4Shell 익스플로잇 시도를 재시작 없이 차단했다. Greg Brockman(OpenAI 사장·공동창업자)은 \"버그를 오늘 찾아도 내일 모든 시스템에 패치할 수는 없다\"며, 같은 소프트웨어를 쓰는 팀이 많으므로 도구를 공개적으로 만드는 것이 합리적이라고 밝혔다. ※익스플로잇: 취약점을 악용하는 공격 코드.",
+        "lang": "en",
+        "published_at": "2026-11-24T06:20:00+09:00",
+        "collected_at": "2026-11-24T07:32:37+09:00",
+        "metrics": null
+      },
+      {
+        "id": "ca38829e731287133c5ce858c81137975894da48",
+        "title": "RoboTrack: Point tracking for real-world robotic manipulation",
+        "url": "https://huggingface.co/blog/allenai/robotrack",
+        "source": "hf_blog",
+        "category": "ai_labs",
+        "summary_ko": "Ai2(Allen Institute for AI)가 실제 로봇 조작 환경을 위한 포인트 트래킹 벤치마크·학습 데이터 모음 'RoboTrack'을 공개했다. 평가용 RoboTrack-Bench는 DROID·Ego-Exo4D·MolmoAct 2·EgoVerse에서 가져온 307개 영상에 사람이 검수한 2,522개 포인트 궤적을 붙인 것으로, 정돈된 책상 환경을 넘어 물체가 뒤엉키고 그리퍼에 가려지며 1인칭·3인칭 시점이 섞인 장면을 담았다. 시뮬레이션 학습 데이터 RoboTrack-15M을 기존 트래커 학습에 추가하면 실제 조작 영상 성능이 올라갔고, 함께 공개한 모델 RoboTracker(AllTracker 파인튜닝)와 RoboTracker-Warp(CoWTracker 기반)는 각 베이스라인 대비 로봇 벤치마크 3종 평균 AJ가 개선됐으며 RoboTracker-Warp는 평가한 5개 벤치마크 중 4개에서 최고 성능을 기록했다. 실제 로봇에서 습식 실험실의 피펫 취급을 유도하는 데도 적용했다. ※포인트 트래킹: 한 프레임의 특정 지점이 이후 프레임 어디로 이동했는지(가려졌다 다시 나타나는 구간 포함) 추적하는 기술. ※AJ: 포인트 추적 정확도 지표.",
+        "lang": "en",
+        "published_at": "2026-11-24T02:20:37+09:00",
+        "collected_at": "2026-11-24T07:32:37+09:00",
+        "metrics": null
+      },
+      {
+        "id": "61dcf1169479ac822b31a5cef7d46fd39c77927b",
+        "title": "Finding faster quantum algorithms with agents and formal verification",
+        "url": "https://deepmind.google/blog/finding-faster-quantum-algorithms-with-agents-and-formal-verification",
+        "source": "deepmind",
+        "category": "ai_labs",
+        "summary_ko": "Google DeepMind이 Gemini 4 에이전트 팀과 형식 검증을 결합해 기존 양자 알고리즘을 개선하고 훨씬 효율적인 양자 회로를 만들어낸 논문을 공개했다. 최고 수준의 양자 알고리즘을 써도 핵융합·화학·효소 시뮬레이션 같은 중요한 응용은 초기 양자 하드웨어가 감당할 수 있는 자원을 넘어선다는 문제의식에서 출발했으며, 최적화된 회로가 장차 핵융합 에너지나 신약 설계 같은 과제의 시뮬레이션에 쓰일 수 있다고 본다. 후속 연구를 위해 Lean 라이브러리와 문제 모음을 오픈소스로 공개한다. 저자는 Sergey Shirobokov, Ben Jaderberg, Ryan Babbush. ※형식 검증: 수학적 증명으로 코드·알고리즘의 정확성을 보장하는 기법. ※Lean: 정리 증명 보조 도구(proof assistant). ※양자 회로: 양자 컴퓨터가 알고리즘을 수행하는 구체적 명령 묶음.",
+        "lang": "en",
+        "published_at": "2026-11-24T01:59:40+09:00",
+        "collected_at": "2026-11-24T07:32:37+09:00",
+        "metrics": null
+      },
+      {
+        "id": "f8a4e02f421246931880184e0500ae92d6ece8c1",
+        "title": "Connected intelligence for in-house legal",
+        "url": "https://openai.com/business/learn/connected-intelligence-for-in-house-legal",
+        "source": "openai",
+        "category": "ai_labs",
+        "summary_ko": "OpenAI의 사내 법무팀(in-house legal) 대상 웨비나 안내 페이지다. OpenAI의 Stacey Wang·Craig Bruney, LECG의 Mary O'Carroll, Cooley 로펌의 Richard Segal이 참여해 AI가 사내 법무팀이 비즈니스 맥락을 연결하고 재사용 가능한 업무 흐름을 구축하며 외부 자문(outside counsel)을 더 효율적으로 활용하도록 돕는 방법을 다룬다. ※본문 미확보 — 영상 웨비나 페이지라 소개문 기반.",
+        "lang": "en",
+        "published_at": "2026-11-23T17:00:00+09:00",
+        "collected_at": "2026-11-24T07:32:37+09:00",
+        "metrics": null
+      },
+      {
+        "id": "680b35173b971311b4b8603cf638c317fd3576b6",
+        "title": "Richpanel helps companies automate 50% of support in 30 days",
+        "url": "https://openai.com/business/customer-stories/richpanel-ai-customer-support",
+        "source": "openai",
+        "category": "ai_labs",
+        "summary_ko": "고객지원 자동화 업체 Richpanel이 OpenAI 모델로 도입 30일 만에 지원 업무의 50%를 자동화한 사례다. 핵심은 '지능이 아니라 그 주변 전부가 병목'(Amit RG CEO)이라는 진단으로, 사람 상담원이 고객 한 명을 응대하는 데 20~30개 도구를 쓰고 그 절차는 문서화된 적조차 없다는 점에 착안했다. Richpanel은 보통 전담 엔지니어가 붙어야 하는 에이전트 초기 설정 작업 자체를 AI에게 맡긴 'Boss AI'(고객들이 붙인 이름)를 만들어, 프론트라인 상담·코파일럿·품질보증 에이전트가 어떤 도구를 어떻게 호출할지 절차를 작성하게 했다. 정확도가 중요한 Boss AI에는 GPT-6 Astra와 GPT-6.1 Sol을, 수십만 건을 처리하는 실제 고객 대화에는 비용을 고려해 GPT-6 Luna를 쓰는 식으로 모델을 나눴다.",
+        "lang": "en",
+        "published_at": "2026-11-23T17:00:00+09:00",
+        "collected_at": "2026-11-24T07:32:37+09:00",
+        "metrics": null
+      },
+      {
+        "id": "6fd4c32fe34a4cba398f7bd59cf540fcd9787faa",
+        "title": "How to build and maintain an agentic evaluation",
+        "url": "https://huggingface.co/blog/agentic-evals",
+        "source": "hf_blog",
+        "category": "ai_labs",
+        "summary_ko": "Hugging Face가 에이전트형 AI 평가(eval)를 설계·유지하는 방법을 정리한 장문의 가이드를 냈다. 평가란 시스템에 과제를 주고 답·행동을 채점해 점수를 내는 것인데, 도메인 전문성이 반영된 과제 정의와 신뢰할 만한 채점, 그리고 결과가 실제로 그 주장을 뒷받침하는지 확인까지가 모두 실제 노동이며, 방법·코드·데이터를 비공개로 두면 외부 검증과 재활용이 어려워진다는 것이 논지다. 무엇을 재사용·수정·검증할지, 벤치마크가 틀렸을 때 드러나는 교훈(공개 리뷰의 필요성, 코드뿐 아니라 주장 자체의 검증, 오염 vs 포화 구분), 전략적 오픈소스 공개 체크리스트를 다루고, 부록에 물리 실험실 에이전트 배치를 8단계로 따라가는 실례를 붙였다. Hugging Face 허브는 약 3,500개 평가 리더보드를 호스팅 중이다. ※오염(contamination): 평가 문제가 학습 데이터에 섞여 점수가 부풀려지는 현상. ※포화(saturation): 모델들이 만점에 가까워져 변별력을 잃는 현상.",
+        "lang": "en",
+        "published_at": "2026-11-23T09:00:00+09:00",
+        "collected_at": "2026-11-24T07:32:37+09:00",
+        "metrics": null
+      },
+      {
+        "id": "6687f7be62c34e4af8b14ad1fa0bb36ceef40b28",
+        "title": "How OpenAI’s Performance Factory keeps ChatGPT fast",
+        "url": "https://openai.com/index/how-openai-performance-factory-keeps-chatgpt-fast",
+        "source": "openai",
+        "category": "ai_labs",
+        "summary_ko": "OpenAI가 ChatGPT의 성능 저하를 Codex 에이전트로 자동 탐지·수정하는 사내 시스템 'Performance Factory'를 공개했다. 클라우드에서 돌아가며 ① 워크플로를 설정할 수 있는 태스크 서비스 ② 작업을 배분하는 디스패치 루프 ③ 클라우드 Codex ④ 변화가 생기면 에이전트를 깨우는 구독 기능의 네 부분으로 구성되고, 첫 워크플로인 'Regression Workflow'는 성능 경보가 뜨면 태스크를 열어 에이전트가 근본 원인을 찾고 적대적 리뷰(adversarial review)로 진단을 교차 검증한 뒤 수정까지 시도한다. 글은 팀의 작업 방식이 ① Codex 이전(지표·로그·트레이스를 수작업 조사, 누적된 성능 도구만 30개 이상) ② Codex를 동료로 두고 함께 조사 ③ 조사 절차를 공용 스킬로 묶어 자동화하는 단계로 진화했다고 정리한다. 교훈으로 엔지니어의 주의력 보호, 에이전트 변경분 자체의 평가, 반복 실패의 자가 복구 전환을 꼽았다. 작성자는 Okay Zed, Cyrus Forbes.",
+        "lang": "en",
+        "published_at": "2026-11-19T17:00:00+09:00",
+        "collected_at": "2026-11-24T07:32:37+09:00",
+        "metrics": null
+      },
+      {
+        "id": "a2fb00344062975fa7ac8b40f7787e8b1769674a",
+        "title": "Get started with Daybreak Blue",
+        "url": "https://openai.com/business/learn/daybreak-blue-onboarding-demo",
+        "source": "openai",
+        "category": "ai_labs",
+        "summary_ko": "OpenAI의 'Daybreak Blue' 온보딩 과정을 따라가는 제품 데모 영상 페이지다. 초기 설정 경험과 시작 방법을 중심으로 보여준다. ※본문 미확보 — 영상 데모 페이지라 제목·소개문 기반.",
+        "lang": "en",
+        "published_at": "2026-11-19T09:00:00+09:00",
+        "collected_at": "2026-11-24T07:32:37+09:00",
+        "metrics": null
+      },
+      {
+        "id": "e29ac258c013c12c7631d54deada12189b653035",
+        "title": "Explore the Codex Security Plugin",
+        "url": "https://openai.com/business/learn/codex-security-plugin-demo",
+        "source": "openai",
+        "category": "ai_labs",
+        "summary_ko": "OpenAI의 'Codex Security Plugin' 데모 영상 페이지다. 플러그인을 처음 설정하는 단계부터 실행 결과를 검토하는 단계까지의 작업 흐름을 녹화 화면으로 보여준다. ※본문 미확보 — 영상 데모 페이지라 제목·소개문 기반.",
+        "lang": "en",
+        "published_at": "2026-11-19T09:00:00+09:00",
+        "collected_at": "2026-11-24T07:32:37+09:00",
+        "metrics": null
+      },
+      {
+        "id": "53f2a14376dda94d54be4734bb5e7ea38842035f",
+        "title": "Inside the Codex sandbox",
+        "url": "https://openai.com/index/inside-the-codex-sandbox",
+        "source": "openai",
+        "category": "ai_labs",
+        "summary_ko": "OpenAI가 코딩 에이전트 Codex가 사용자 PC에서 명령을 실행할 때 적용하는 샌드박스의 설계를 상세히 공개했다. 에이전트 보호를 '심층 방어(defense in depth)'로 접근하며, 가장 흔하면서 위험한 동작인 로컬 명령 실행을 사용자가 정한 파일시스템·네트워크 제한 안에서만 수행하게 한다. 사용자는 '권한 프로파일(permission profile)'로 세션별 제약을 정의하는데, 예컨대 사진 정리 작업에는 ~/Pictures 읽기·쓰기만 허용하고 네트워크를 막아 업로드를 차단하거나, 코드 리뷰에는 온라인 문서 접근은 열되 소스 파일은 읽기 전용으로 둘 수 있다. 글은 기본값을 정할 때의 트레이드오프, 네트워크 프록시 구현, macOS·리눅스·윈도우별 구현 차이, `codex sandbox` 명령 사용법과 MCP 서버를 샌드박싱하는 예제까지 다룬다. 작성자는 Michael Bolin. ※샌드박스: 프로그램이 실행 중 접근할 수 있는 범위를 제한하는 격리 장치. ※MCP: 모델이 외부 도구와 연결되는 표준 프로토콜.",
+        "lang": "en",
+        "published_at": "2026-11-18T17:00:00+09:00",
+        "collected_at": "2026-11-24T07:32:37+09:00",
+        "metrics": null
+      }
+    ],
+    "community": [],
+    "github_trending": [],
+    "codex": [],
+    "eng_blogs": [
+      {
+        "id": "9f50a7fbeba1dd18aa4dd68d577f0daa5ce780cd",
+        "title": "Probing DNS at Cloudflare",
+        "url": "https://blog.cloudflare.com/probing-dns-at-cloudflare",
+        "source": "cloudflare",
+        "category": "eng_blogs",
+        "summary_ko": "Cloudflare가 사내 테스트 프레임워크를 각 팀이 확장해 네트워크 프로토콜용 테스트 도구를 만들 수 있게 한 과정을, DNS에 적용한 사례를 중심으로 풀어낸 엔지니어링 글이다. ※본문 미확보 — 수집된 페이지 텍스트가 블로그 태그 목록 등 내비게이션으로 채워져 소개문 기반으로만 작성.",
+        "lang": "en",
+        "published_at": "2026-11-23T23:00:00+09:00",
+        "collected_at": "2026-11-24T07:32:37+09:00",
+        "metrics": null
+      }
+    ]
+  },
+  "hot_topics": [
+    {
+      "topic": "Nvidia Reinstates Jensen Huang as CEO",
+      "trend_score": 1.0,
+      "src_count": 1,
+      "hn": {
+        "points": 1773,
+        "comments": 2879
+      },
+      "items": [
+        {
+          "id": "354bf133bd07149d059d6f2e1be7c506663e08fc",
+          "title": "Nvidia Reinstates Jensen Huang as CEO",
+          "url": "https://cnbc.com/2026/11/23/nvidia-jensen-huang-ceo.html",
+          "source": "hackernews",
+          "category": "hot_topics",
+          "summary_ko": "Nvidia 이사회가 11월 23일 젠슨 황(Jensen Huang)을 CEO로 즉시 복귀시켰고 주가는 하루 31% 급등했다. 황은 혼외 관계 보도(그중 한 명은 중국 정보기관 요원으로 지목) 이후 11월 13일 사임했으며, 11월 8일 혼외 관계를 시인한 뒤 주가는 약 33% 빠진 상태였다(11월 6일 종가 186.64달러). 이사회는 \"미국 정부 고위층의 의견을 들었다\"며 복귀가 국가안보 위험을 초래하지 않는다고 확신한다고 밝혔고, 소식통에 따르면 정부 고위 관계자가 지난주 후반 이사회에 국가안보법 위반이 없다고 전달한 것이 복귀 논의의 발단이 됐다. 트럼프 대통령은 CNBC에 이사회와 \"직간접적으로\" 대화했으며 황이 \"잘못한 것이 없다\"고 말했다. 뉴욕타임스는 상대 여성 Alice Huang이 관계가 지속되던 기간 중 최소 일부 시점에 중국 국가안전부 소속 요원과 접촉했다고 보도했다.",
+          "lang": "en",
+          "published_at": "2026-11-23T23:00:18+09:00",
+          "collected_at": "2026-11-24T07:32:37+09:00",
+          "metrics": {
+            "points": 1773,
+            "comments": 2879
+          }
+        }
+      ]
+    },
+    {
+      "topic": "Ladybird is now in alpha",
+      "trend_score": 0.8616,
+      "src_count": 1,
+      "hn": {
+        "points": 1147,
+        "comments": 287
+      },
+      "items": [
+        {
+          "id": "e82796adc98a0ae27247cdee8f12c8b52451b78b",
+          "title": "Ladybird is now in alpha",
+          "url": "https://ladybird.org/posts/alpha",
+          "source": "hackernews",
+          "category": "hot_topics",
+          "summary_ko": "밑바닥부터 직접 만든 자체 엔진을 쓰는 브라우저 Ladybird가 알파 단계에 들어서 macOS·리눅스용 빌드를 내려받을 수 있게 됐다(기존 엔진의 포크가 아님). 개발자 Andreas Kling은 알파인 만큼 일부 사이트는 깨지고 때때로 크래시가 난다고 명시하면서, 브라우저 안에서 깨진 사이트를 신고하고 크래시 리포트를 직접 읽어본 뒤 전송 여부를 고를 수 있다고 설명했다. 보안은 아직 보장하지 않으니 보안 연구자들이 적극적으로 뚫어보고 방법을 알려달라고 요청했다. 알파는 롤링 채널이라 자동 업데이트가 수시로 배포되며, 웹 개발자를 위해 WebDriver와 Firefox DevTools 프로토콜을 지원한다. ※롤링 채널: 버전을 끊어 출시하지 않고 계속 갱신되는 배포 방식. ※WebDriver: 브라우저 자동화 테스트 표준.",
+          "lang": "en",
+          "published_at": "2026-11-24T01:13:12+09:00",
+          "collected_at": "2026-11-24T07:32:37+09:00",
+          "metrics": {
+            "points": 1147,
+            "comments": 287
+          }
+        }
+      ]
+    },
+    {
+      "topic": "GLM-5.4: Toward generalized coding with our first loop transformer",
+      "trend_score": 0.8543,
+      "src_count": 1,
+      "hn": {
+        "points": 990,
+        "comments": 326
+      },
+      "items": [
+        {
+          "id": "5094532b4e2e63d2f4ca43eedb036db817dbcfaa",
+          "title": "GLM-5.4: Toward generalized coding with our first loop transformer",
+          "url": "https://z.ai/blog/glm-5.4",
+          "source": "hackernews",
+          "category": "hot_topics",
+          "summary_ko": "z.ai가 'GLM-5.4'를 공개하며 자사 첫 루프 트랜스포머(loop transformer)를 적용해 범용 코딩 능력으로 나아간다고 밝혔다. ※본문 미확보 — 제목 기반.",
+          "lang": "en",
+          "published_at": "2026-11-23T19:06:43+09:00",
+          "collected_at": "2026-11-24T07:32:37+09:00",
+          "metrics": {
+            "points": 990,
+            "comments": 326
+          }
+        }
+      ]
+    },
+    {
+      "topic": "Dario is hyping the dangers so OSS models are illegal and he stays in control",
+      "trend_score": 0.8515,
+      "src_count": 1,
+      "hn": {
+        "points": 802,
+        "comments": 466
+      },
+      "items": [
+        {
+          "id": "3c69fd56490c162200433eb3c0fddbb48cc47836",
+          "title": "Dario is hyping the dangers so OSS models are illegal and he stays in control",
+          "url": "https://twitter.com/ylecun/status/2124550037912920090",
+          "source": "hackernews",
+          "category": "hot_topics",
+          "summary_ko": "얀 르쿤(Yann LeCun, 튜링상 수상자·전 Meta 수석 AI 과학자)이 X에 올린 게시물이 해커뉴스에 올라왔다. 다리오 아모데이(Anthropic CEO)가 GPT-2 시절부터 위험을 과장해온 것은 오픈소스 모델을 불법화하고 자신이 통제권을 쥐기 위함이며, 통제권을 가질 수 없어 OpenAI를 떠난 것이라고 주장했다. 오스만 제국이 교리 통제를 위해 아랍어 인쇄기를 금지한 일에 빗대 \"새로운 형태의 중세적 반계몽주의\"라고 표현했다. 게시물은 1.3M 조회를 기록했으며, 아모데이가 의회 청문회에서 오픈소스 AI의 위험을 강조한 발언을 둘러싼 논쟁의 연장선이다. ※이 항목은 개인 의견 게시물이며 사실 보도가 아니다.",
+          "lang": "en",
+          "published_at": "2026-11-24T02:07:26+09:00",
+          "collected_at": "2026-11-24T07:32:37+09:00",
+          "metrics": {
+            "points": 802,
+            "comments": 466
+          }
+        }
+      ]
+    },
+    {
+      "topic": "Free alternative TV network built from the Internet Archive's forgotten videos",
+      "trend_score": 0.8147,
+      "src_count": 1,
+      "hn": {
+        "points": 901,
+        "comments": 158
+      },
+      "items": [
+        {
+          "id": "048482af0e5e0d6317462b47259826e6bcd33021",
+          "title": "Free alternative TV network built from the Internet Archive's forgotten videos",
+          "url": "https://spelunkr.tv",
+          "source": "hackernews",
+          "category": "hot_topics",
+          "summary_ko": "인터넷 아카이브(Internet Archive)에 묻혀 있던 영상들을 24시간 동기화 채널로 편성해 케이블 TV처럼 보여주는 무료 사이트 SPELUNKR이다. 스스로를 \"케이블 TV인데 더 괴상한 것\"이라고 소개한다. ※본문 미확보 — 수집된 페이지 텍스트가 486자뿐이라 소개문 기반.",
+          "lang": "en",
+          "published_at": "2026-11-23T10:13:51+09:00",
+          "collected_at": "2026-11-24T07:32:37+09:00",
+          "metrics": {
+            "points": 901,
+            "comments": 158
+          }
+        }
+      ]
+    },
+    {
+      "topic": "XNU Linux: Full OS X GUI Userspace on Linux",
+      "trend_score": 0.7957,
+      "src_count": 1,
+      "hn": {
+        "points": 587,
+        "comments": 241
+      },
+      "items": [
+        {
+          "id": "35cfea2e7f27295dde4eaba2fa78de20aadf3621",
+          "title": "XNU Linux: Full OS X GUI Userspace on Linux",
+          "url": "https://github.com/AFK-surf/xnulinux",
+          "source": "hackernews",
+          "category": "hot_topics",
+          "summary_ko": "XNU(macOS 커널)를 리눅스의 로드 가능 커널 모듈로 만들어, arm64 리눅스 위에서 macOS GUI 유저스페이스를 통째로 돌리는 프로젝트다(GitHub 스타 1.9k). 하이퍼바이저를 끼우지 않고 XNU가 CPU와 MMU를 직접 제어해 macOS 프로세스와 리눅스 프로세스가 같은 CPU에서 나란히 실행되며, 리눅스는 작은 인터페이스 모듈(fki.ko)을 통해 메모리·타이머·파일·네트워크·GPU를 빌려준다. 기본 우분투 커널에서 `insmod xnu.ko`만으로 애플 설치 프로그램이 만든 macOS 27 시스템 디스크를 부팅해 loginwindow·WindowServer·Dock·Finder·Safari·Chrome이 뜨는 데스크톱까지 올라간다. NVIDIA DGX Spark 베어메탈(우분투 24.04.5 LTS aarch64)에서 CPU 4개·RAM 8GiB로 구동한 사례와 GPU 브리지를 켠 상태의 Safari 동작 화면도 함께 제시한다. ※유저스페이스: 커널 바깥에서 도는 응용 프로그램 영역. ※MMU: 메모리 관리 장치.",
+          "lang": "en",
+          "published_at": "2026-11-23T12:49:24+09:00",
+          "collected_at": "2026-11-24T07:32:37+09:00",
+          "metrics": {
+            "points": 587,
+            "comments": 241
+          }
+        }
+      ]
+    },
+    {
+      "topic": "Per Arm's request, this site will be discontinued on 4 December 2026 :(",
+      "trend_score": 0.7803,
+      "src_count": 1,
+      "hn": {
+        "points": 669,
+        "comments": 130
+      },
+      "items": [
+        {
+          "id": "e6efe33a083e8a553950e662757bced84dac4180",
+          "title": "Per Arm's request, this site will be discontinued on 4 December 2026 :(",
+          "url": "https://arm.jonpalmisc.com/",
+          "source": "hackernews",
+          "category": "hot_topics",
+          "summary_ko": "AArch64 명령어 집합과 시스템 레지스터(Armv8-A·Armv9-A) 레퍼런스 문서를 제공해온 비공식 사이트 'Jon's Arm Reference'가 Arm 법무팀의 사이트 폐쇄 요구(불응 시 법적 조치 통보)에 따라 2026년 12월 4일 문을 닫는다고 공지했다. 운영자 Jon은 수년간 많은 사람에게 유용한 자료를 제공할 수 있어 기쁘다며 Arm 내부 이용자들에게까지 감사를 전하고, 북마크와 링크가 깨지지 않게 할 방법은 찾아보겠다고 밝혔다.",
+          "lang": "en",
+          "published_at": "2026-11-24T04:17:55+09:00",
+          "collected_at": "2026-11-24T07:32:37+09:00",
+          "metrics": {
+            "points": 669,
+            "comments": 130
+          }
+        }
+      ]
+    },
+    {
+      "topic": "Kagi Mail (public beta)",
+      "trend_score": 0.7308,
+      "src_count": 1,
+      "hn": {
+        "points": 291,
+        "comments": 221
+      },
+      "items": [
+        {
+          "id": "109d2f6894af143d37d95b70b6eb6203c3133f4a",
+          "title": "Kagi Mail (public beta)",
+          "url": "https://blog.kagi.com/kagi-mail-public-beta",
+          "source": "hackernews",
+          "category": "hot_topics",
+          "summary_ko": "검색 서비스 Kagi가 이메일·캘린더 서비스 'Kagi Mail' 퍼블릭 베타를 열었다. @kagimail.com 주소 또는 보유 도메인을 쓸 수 있고, 60일 무료 체험 후 연 99달러(세금 별도)이며 Kagi Ultimate 요금제에는 포함된다. 호스팅과 메일·캘린더 앱까지 전 계층을 직접 만들되 Stalwart 서버와 IMAP·JMAP·CalDAV 같은 개방형 표준·오픈소스 인프라 위에 올려, Kagi 앱 대신 기존에 쓰던 호환 클라이언트를 그대로 써도 된다(락인 없음). 기본 제공 사양은 무제한 별칭·무제한 도메인·캘린더·50GB 저장공간이고, \"베타 사용자가 제품 피드백을 보내는 메일에 라벨을 붙여달라\"처럼 자연어로 분류 규칙을 지시하면서 규칙별로 권한을 따로 부여하는 기능을 내세운다. 광고와 추적 없음을 원칙으로 한다. ※JMAP·CalDAV: 메일·일정 동기화 표준 프로토콜. ※락인: 특정 서비스에 묶여 이전이 어려워지는 것.",
+          "lang": "en",
+          "published_at": "2026-11-24T02:17:01+09:00",
+          "collected_at": "2026-11-24T07:32:37+09:00",
+          "metrics": {
+            "points": 291,
+            "comments": 221
+          }
+        }
+      ]
+    },
+    {
+      "topic": "Nespresso's project to reduce grams of coffee per capsule",
+      "trend_score": 0.7246,
+      "src_count": 1,
+      "hn": {
+        "points": 246,
+        "comments": 268
+      },
+      "items": [
+        {
+          "id": "8776d749c446fe5431ea0ad699a3c633262f502e",
+          "title": "Nespresso's project to reduce grams of coffee per capsule",
+          "url": "https://alvinbunk.wordpress.com/2026/11/01/nespresso-project-olympus",
+          "source": "hackernews",
+          "category": "hot_topics",
+          "summary_ko": "네스프레소가 캡슐당 커피 그램 수를 줄이는 내부 프로젝트 'Project Olympus'를 진행 중이라는 사실이 유출된 내부 문서와 함께 공개됐다. 문서에 따르면 2026년부터 일부 Vertuo 레시피에 '레시피 최적화'를 적용해 분쇄·로스팅 기법 개선으로 캡슐 중량을 소폭 줄이되 맛·추출량·카페인은 그대로 유지한다고 주장하며, 1차(2026년 1분기 전환 예정)는 DOUBLE ESPRESSO SCURO·FORTADO·RISTRETTO INTENSO 등 6개 SKU, 2차는 MELOZIO·STORMIO 등 8개 SKU가 대상이다. 문서에는 소비자가 캡슐이 가벼워진 것을 눈치채고 문의할 경우 '가치 축소가 아니라 공정 혁신'임을 강조하라는 응대 지침까지 포함돼 있다. 글쓴이는 2026년 8월 내부 직원에게 제보받은 뒤, r/nespresso에 레시피 변경을 묻는 글이 올라온 것을 보고 9월 5일경 공개를 결심했다고 밝혔으며, 상당수 소비자가 불만을 표하며 대체 제품으로 옮기는 것을 고려 중이라고 전한다. ※SKU: 개별 판매 품목 단위.",
+          "lang": "en",
+          "published_at": "2026-11-23T08:57:45+09:00",
+          "collected_at": "2026-11-24T07:32:37+09:00",
+          "metrics": {
+            "points": 246,
+            "comments": 268
+          }
+        }
+      ]
+    },
+    {
+      "topic": "Apple removed my open-source app from EU App Stores after 9 years",
+      "trend_score": 0.7152,
+      "src_count": 1,
+      "hn": {
+        "points": 403,
+        "comments": 80
+      },
+      "items": [
+        {
+          "id": "42afc3642f4faa6a2d116e6788582dca02d10f2b",
+          "title": "Apple removed my open-source app from EU App Stores after 9 years",
+          "url": "https://github.com/glushchenko/fsnotes/discussions/2056",
+          "source": "hackernews",
+          "category": "hot_topics",
+          "summary_ko": "오픈소스 노트 앱 FSNotes의 개발자가 9년간 서비스해온 앱이 유럽 App Store에서 삭제됐는데 애플이 문의에 응답하지 않는다는 공개 서한을 올렸다. 개발자는 App Store Connect에서 EU 디지털서비스법(DSA) 관련 컴플라이언스 정보를 모두 채우고 우크라이나 정부 사업자 등록부의 공식 서류까지 제출했으며, 11월 5일(케이스 23353628)과 11월 17일(케이스 23573022) 두 건의 지원 요청을 열었지만 단 한 번도 답을 받지 못했다고 밝혔다. 그동안 앱 순위와 검색 노출이 사라지고 있어 설령 내일 복구되더라도 잃은 시간·사용자·수익은 보상받을 수 없다는 점을 가장 답답해한다. 우크라이나 개발자로 일하기가 점점 어려워진다는 심경도 덧붙였다. FSNotes는 GitHub에서 소스와 무료 빌드로 계속 제공되지만 수익 없이 독립 프로젝트를 유지하기는 매우 어렵다고 적었다. ※DSA: EU 디지털서비스법, 플랫폼 사업자에 사업자 정보 확인 의무 등을 부과.",
+          "lang": "en",
+          "published_at": "2026-11-24T03:48:10+09:00",
+          "collected_at": "2026-11-24T07:32:37+09:00",
+          "metrics": {
+            "points": 403,
+            "comments": 80
+          }
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "source": "github_trending",
+      "ok": true,
+      "item_count": 16,
+      "error_type": null
+    },
+    {
+      "source": "anthropic",
+      "ok": true,
+      "item_count": 290,
+      "error_type": null
+    },
+    {
+      "source": "openai",
+      "ok": true,
+      "item_count": 1450,
+      "error_type": null
+    },
+    {
+      "source": "deepmind",
+      "ok": true,
+      "item_count": 100,
+      "error_type": null
+    },
+    {
+      "source": "meta_ai",
+      "ok": true,
+      "item_count": 88,
+      "error_type": null
+    },
+    {
+      "source": "mistral",
+      "ok": true,
+      "item_count": 94,
+      "error_type": null
+    },
+    {
+      "source": "xai",
+      "ok": true,
+      "item_count": 85,
+      "error_type": null
+    },
+    {
+      "source": "openai_codex",
+      "ok": true,
+      "item_count": 211,
+      "error_type": null
+    },
+    {
+      "source": "cloudflare",
+      "ok": true,
+      "item_count": 20,
+      "error_type": null
+    },
+    {
+      "source": "github_blog",
+      "ok": true,
+      "item_count": 10,
+      "error_type": null
+    },
+    {
+      "source": "aws",
+      "ok": true,
+      "item_count": 20,
+      "error_type": null
+    },
+    {
+      "source": "stripe",
+      "ok": true,
+      "item_count": 10,
+      "error_type": null
+    },
+    {
+      "source": "meta_eng",
+      "ok": true,
+      "item_count": 9,
+      "error_type": null
+    },
+    {
+      "source": "reddit_localllama",
+      "ok": false,
+      "item_count": 0,
+      "error_type": "HTTPError"
+    },
+    {
+      "source": "hf_blog",
+      "ok": true,
+      "item_count": 916,
+      "error_type": null
+    },
+    {
+      "source": "hackernews",
+      "ok": true,
+      "item_count": 20,
+      "error_type": null
+    }
+  ],
+  "summaries_injected": true
+}
