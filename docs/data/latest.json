@@ -1,539 +1,539 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-20T07:38:53+09:00",
-  "date": "2026-11-20",
+  "generated_at": "2026-11-23T09:42:06+09:00",
+  "date": "2026-11-23",
   "categories": {
     "ai_labs": [
+      {
+        "id": "de5cd1a6d51dc917ab910942b7b9fe70d73cd78c",
+        "title": "Perplexity and Intelligence",
+        "url": "https://openai.com/index/perplexity-and-intelligence",
+        "source": "openai",
+        "category": "ai_labs",
+        "summary_ko": "OpenAI 수석과학자 Jakub Pachocki 가 '퍼플렉서티(perplexity)'를 모델 개발사 간 비교와 공통 안전 기준의 지표로 삼자고 제안하며, 자사 사전학습 진척도를 처음 공개했다. ※퍼플렉서티: 모델이 다음 토큰을 얼마나 잘 예측하는지 재는 값으로, 낮을수록 좋다(= 교차엔트로피 손실). 같은 평가 데이터셋 기준 GPT-3.5 는 로그 퍼플렉서티 약 0.99 로 유창한 대화가 가능했고, GPT-4 는 약 0.91 에서 사고사슬(chain-of-thought) 추론을 쓸 수 있게 됐으며, 0.8 아래로 내려온 현재는 사이버보안·수학 같은 분야에서 질적으로 다른 능력이 창발했다고 설명한다. 벤치마크는 세대마다 포화돼 못 쓰게 되지만 사전학습 지표는 계속 유효하다는 것이 핵심 논거이며, 경쟁사에 자사 위치를 노출하는 부담보다 업계 공통 안전 기준을 세우는 시급함이 크다고 판단해 공개했다고 밝혔다.",
+        "lang": "en",
+        "published_at": "2026-11-22T09:00:00+09:00",
+        "collected_at": "2026-11-23T09:36:56+09:00",
+        "metrics": null
+      },
+      {
+        "id": "3ea993db7e3c60d1925ec70cc8db101a60f4b500",
+        "title": "Combatting adversarial distillation",
+        "url": "https://openai.com/index/combatting-adversarial-distillation",
+        "source": "openai",
+        "category": "ai_labs",
+        "summary_ko": "OpenAI 가 '적대적 증류(adversarial distillation)' 대응 방식을 공개했다. ※증류: 한 모델의 출력으로 다른 모델을 학습시키는 기법으로, 공격자가 이를 악용하면 프런티어 모델의 능력만 복제하고 안전장치는 빼놓은 모델을 만들 수 있다. 특히 최종 답변에는 안 드러나는 중간 추론 과정(chain-of-thought)이 학습 데이터로서 가치가 높아 집중 방어 대상이며, 내부 자동 레드팀 평가에서 보호된 추론을 복원해내는 공격 성공률이 기존 안전장치의 GPT-6 Astra 평균 54.0% 에서 갱신된 안전장치의 GPT-6.2 Astra 0.2% 로 떨어졌다고 밝혔다. 방어는 적대적 테스트·모델 학습·분류기·API 수준 보호에 조직적 추출 캠페인 조사·제재를 겹쳐 쌓는 다층 구조이고, 생물·사이버 영역에 쓰던 보호 수준에 맞췄다고 설명한다.",
+        "lang": "en",
+        "published_at": "2026-11-20T19:00:00+09:00",
+        "collected_at": "2026-11-23T09:36:56+09:00",
+        "metrics": null
+      },
+      {
+        "id": "e7354365dbd852464c173a32f955ddfe153ad67a",
+        "title": "Anthropic announces closing of initial public offering, including full exercise of underwriters’ option to purchase additional shares, and closing of concurrent private placement",
+        "url": "https://anthropic.com/news/ipo-close",
+        "source": "anthropic",
+        "category": "ai_labs",
+        "summary_ko": "Anthropic 이 기업공개(IPO)를 마무리했다고 발표했다. 공모가 주당 83달러에 Class A 보통주 총 11억 2,700만 주를 매각했고(주관사 추가 매수 옵션 1억 4,700만 주 전량 행사 포함), 수수료 차감 전 총액 약 935억 달러 중 약 916억 달러가 회사로 들어왔다. 주식은 2026년 11월 19일부터 나스닥 글로벌 셀렉트 마켓에서 'ANT' 로 거래를 시작했다. 동시에 AMD·Broadcom·Google·Micron·Microsoft·NVIDIA·TSMC 를 상대로 Class N 보통주 약 3억 1,325만 주를 같은 가격에 사모로 배정해 약 260억 달러를 추가로 조달했고, IPO 와 사모를 합친 총 조달액은 약 1,195억 달러다. 대표 주관은 골드만삭스와 모건스탠리가 맡았다.",
+        "lang": "en",
+        "published_at": "2026-11-20T09:00:00+09:00",
+        "collected_at": "2026-11-23T09:36:56+09:00",
+        "metrics": null
+      },
+      {
+        "id": "d15c45643214b444b1cb96cd45e0688c83d72ca2",
+        "title": "Hebbia sees improvements in financial research with GPT-6 Astra",
+        "url": "https://openai.com/business/customer-stories/hebbia",
+        "source": "openai",
+        "category": "ai_labs",
+        "summary_ko": "금융 리서치 도구 Hebbia 가 OpenAI 의 GPT-6 Astra 를 사전 출시 단계에서 평가한 고객 사례다. Hebbia 의 Matrix 는 은행원이 인수 검토 시 재무제표·고객 계약·경영 프레젠테이션을 모아 답변과 근거 문서를 연결해주는 제품인데, 이번 테스트는 '질문에 필요한 출처를 빠짐없이 찾기'와 '요구사항에 맞는 프레젠테이션 만들기' 두 가지에 집중했다. 자체 측정 결과 필수 출처 인용률은 비교 대상 중 최고 모델보다 13.6%p 앞섰고, 인용 구절의 질문 관련성은 99.5%, 프레젠테이션 요구사항 충족률은 97.9%(차점 모델 대비 14.4%p 우위)로 나왔다. 다만 이 수치는 Hebbia 가 자사 환경에서 측정한 값이다.",
+        "lang": "en",
+        "published_at": "2026-11-20T09:00:00+09:00",
+        "collected_at": "2026-11-23T09:36:56+09:00",
+        "metrics": null
+      },
+      {
+        "id": "f4784c30400364a228812ba2da28667f08ec2e59",
+        "title": "Can AI help scientists identify promising drug candidates?",
+        "url": "https://openai.com/index/introducing-medchembench",
+        "source": "openai",
+        "category": "ai_labs",
+        "summary_ko": "OpenAI 가 신약 개발 초기 단계의 추론 능력을 재는 벤치마크 MedChemBench 를 공개했다. 논문·특허 117건에서 뽑은 99개 문제에 분자 구조 761종이 들어 있고, 모델에게 연구 특정 시점의 맥락(표적 단백질, 연구 목표, 지금까지의 화합물, 실험 결과)을 준 뒤 분자 구조 작성, 근거 기반 과학적 추론, 화합물 순위·선택, 물성 수치 예측 네 가지를 채점한다. xhigh 추론 설정에서 GPT-6.2 Astra 가 84.5% 득점했고 GPT-6 Astra 83.3%, GPT-6.1 Sol 82.0%, GPT-5.6 Sol 58.2% 였다. 약효를 올리면 흡수나 대사 안정성이 나빠지는 상충 관계를 함께 예측하는 것이 핵심 난제이며(예: 항암 표적 PRMT5 억제제에서 세포 내 억제력이 강한 화합물과 세포막 투과·간효소 분해 내성이 좋은 화합물이 갈림), 모델들은 구조 재구성과 실험 근거 설명에는 강했지만 화합물 선택과 수치 예측에서 약했다.",
+        "lang": "en",
+        "published_at": "2026-11-20T09:00:00+09:00",
+        "collected_at": "2026-11-23T09:36:56+09:00",
+        "metrics": null
+      },
+      {
+        "id": "80d31a6dee298bbd6550aefa2b8a7396dcf19593",
+        "title": "Welcome Inkling 2 Mini, Cutting-edge Performance for your Local Setup",
+        "url": "https://huggingface.co/blog/inkling2mini",
+        "source": "hf_blog",
+        "category": "ai_labs",
+        "summary_ko": "Thinking Machines Lab 이 로컬 환경용 소형 모델 Inkling 2 Mini 를 공개했고 Hugging Face 가 해부 글을 올렸다. 멀티모달 MoE(전문가 혼합) 모델로 물리 파라미터 약 260억 개 중 토큰당 30억 개만 활성화하며, 24개 디코더 레이어 중 가운데 12개를 같은 가중치로 3번 반복 통과(looped transformer)시켜 실제로는 48개 층을 거치는 효과를 낸다 — 체크포인트 용량은 24층치인데 용량은 48층처럼 쓰는 방식이다. 각 반복 패스는 이전 패스의 출력을 '교차 패스 메시지'로 읽고 게이팅 컨트롤러가 얼마나 반영할지 결정해 계산을 점진적으로 다듬는다. 컨텍스트 100만 토큰, 이미지+텍스트 입력을 지원하고 NVFP4/MXFP8 혼합정밀도로 배포되며 transformers·llama.cpp·MLX·SGLang 에서 바로 쓸 수 있다. HF 측 체감 테스트로는 Qwen 3.8 27B 와 비슷한 수준이라고 하며, 루프 횟수를 1~2회로 줄여 속도를 높일 수 있는 연구용 변종도 함께 공개됐다.",
+        "lang": "en",
+        "published_at": "2026-11-20T09:00:00+09:00",
+        "collected_at": "2026-11-23T09:36:56+09:00",
+        "metrics": null
+      },
+      {
+        "id": "211fbe8009a45ecd1ee9987059260448141e6886",
+        "title": "Introducing harness adapters: adapt your favorite model to your harness to improve performance and cost",
+        "url": "https://huggingface.co/blog/harness-adapters-at-scale",
+        "source": "hf_blog",
+        "category": "ai_labs",
+        "summary_ko": "Hugging Face 가 '하네스 어댑터(harness adapter)' 개념을 소개했다. ※하네스: 모델을 감싸 도구 호출·프롬프트·루프를 돌리는 에이전트 실행 틀(예: 터미널 에이전트). 공개 모델은 모든 하네스와 작업에 두루 쓰이도록 범용으로 학습돼 있어, 실제로 쓰는 하네스와 작업 조합에서는 성능과 비용을 그냥 흘리고 있다는 문제의식이다. 해법으로 자신의 하네스 안에서 맞춤 RL(강화학습) 과제를 생성하고 그 분포로 작은 어댑터를 학습시켜 해당 조합에 특화시키는 파이프라인을 제시하며, 과제 생성·검증(openenv validate), 베이스 모델로 난이도 선별, 효율적 학습을 위한 AsyncGRPOTrainer, 여러 어댑터를 하나로 합치는 '슈퍼 어댑터' 병합까지 다룬다. 실험 대상은 Qwen3.8-27B 와 Terminal-Bench 2.1 이다.",
+        "lang": "en",
+        "published_at": "2026-11-20T09:00:00+09:00",
+        "collected_at": "2026-11-23T09:36:56+09:00",
+        "metrics": null
+      },
       {
         "id": "6687f7be62c34e4af8b14ad1fa0bb36ceef40b28",
         "title": "How OpenAI’s Performance Factory keeps ChatGPT fast",
         "url": "https://openai.com/index/how-openai-performance-factory-keeps-chatgpt-fast",
         "source": "openai",
         "category": "ai_labs",
-        "summary_ko": "OpenAI가 ChatGPT의 성능 저하를 사람 손 없이 찾아내 고치는 자동화 시스템 'Performance Factory'를 공개했다. 성능 경보가 울리면 작업이 자동 생성되고, 클라우드의 Codex 에이전트가 원인을 조사해 기록을 남긴 뒤 수정안을 제안하면 엔지니어가 검토하고, 배포 후에는 또 다른 에이전트가 성능이 기준선으로 돌아왔는지 검증한다. 3개월여 동안 1,700건 넘는 조사를 수행해 600건 이상의 근본 원인을 규명했으며(하루 평균 17건 자동 조사), 진단 신뢰도를 높이기 위해 다른 에이전트가 반박하는 '적대적 리뷰' 단계를 끼워 넣었다. 교훈으로는 엔지니어의 집중력을 지킬 것, 에이전트 변경 자체를 평가할 것, 반복되는 실패는 자가 복구 워크플로로 바꿀 것을 꼽았다. ※리그레션(regression): 이전에 잘 되던 성능·기능이 나빠진 상태.",
+        "summary_ko": "OpenAI 가 ChatGPT 성능 저하를 자동으로 찾아 고치는 사내 시스템 'Performance Factory' 를 공개했다. 성능 알림이 울리면 작업이 생성되고, 클라우드의 Codex 에이전트가 원인을 조사해 결과를 기록하고 수정안을 제안하면 엔지니어가 검토하며, 배포 뒤에는 다른 에이전트가 같은 작업을 이어받아 성능이 기준선으로 돌아왔는지 확인한다 — 조사부터 수정 작성, 완화 검증까지 전 과정을 자동화한 것이다. 첫 워크플로인 회귀(Regression) 워크플로는 3개월여 동안 1,700건 넘는 조사를 추적하고 600건 이상의 근본 원인을 규명했으며, 하루 17건 꼴이다. 시스템은 작업 서비스, 작업을 배분하는 디스패치 루프, 클라우드 Codex, 변화가 생기면 에이전트를 깨우는 구독 네 부분으로 구성되고, 교훈으로 '엔지니어의 주의력 보호', '에이전트 변경 자체를 평가할 것', '반복되는 실패는 자가 수리로 전환' 을 든다.",
         "lang": "en",
         "published_at": "2026-11-19T17:00:00+09:00",
-        "collected_at": "2026-11-20T07:33:30+09:00",
+        "collected_at": "2026-11-23T09:36:56+09:00",
         "metrics": null
       },
       {
-        "id": "b527b6f0ddceafec7084d672744f5ae005b63c0e",
-        "title": "How Sumitomo Life’s leaders helped teams adopt ChatGPT Enterprise",
-        "url": "https://openai.com/business/customer-stories/sumitomo-life",
+        "id": "4b08ec50268e04a4eb3cb57ed8baf78fd82cefe6",
+        "title": "Deploying Daybreak Red",
+        "url": "https://openai.com/business/learn/deploying-daybreak-red",
         "source": "openai",
         "category": "ai_labs",
-        "summary_ko": "일본 스미토모생명이 ChatGPT Enterprise를 전사 도입한 사례다. 기획팀은 해외·국내 보험사 동향 조사와 경영진 제안서 작성에, 투자팀은 수익률 예측과 가격 변동 위험 분석용 통계 코드 초안 작성에 쓴다. 2023년 생성형 AI 실험을 시작해 2025년 임원·기획팀 100~150명 규모 파일럿을 거쳐 2026년 6월 Enterprise로 전환했으며, 주간 사용률 80% 이상, 월 101회 이상 사용하는 직원 기준 평균 추정 ROI 524%(전체 203%)를 보고했다. 확산의 결정적 요인은 사장과 임원이 먼저 써 보이고 사내 포털·경영회의에서 지속적으로 독려한 점이었고, 금융사 보안 기준 검토(워크스페이스 접근 통제, 업무 데이터의 모델 학습 제외 정책)를 거쳐 도입했다. ※ROI: 투자 대비 수익률, 여기서는 직원이 자가 보고한 시간 절감분 기준 추정치.",
+        "summary_ko": "OpenAI 가 보안 조사 도구 Daybreak Red 를 사람 감독 하에 운용하기 위한 참조 아키텍처 가이드를 냈다. 격리된 환경 구성, 안전 통제 장치, 환경 설정, 조사 실행과 모니터링 방법을 다루며 본문은 별도 PDF 가이드로 제공된다. ※본문 미확보 — 페이지 자체는 가이드 링크 안내 수준이라 세부 내용은 PDF 를 봐야 한다.",
         "lang": "en",
-        "published_at": "2026-11-18T17:00:00+09:00",
-        "collected_at": "2026-11-20T07:33:30+09:00",
+        "published_at": "2026-11-19T09:00:00+09:00",
+        "collected_at": "2026-11-23T09:36:56+09:00",
         "metrics": null
       },
       {
-        "id": "9fa731b0ef6c1da92e2ee19dd39d37ee6fef6c75",
-        "title": "Research acceleration: The jagged frontier",
-        "url": "https://openai.com/index/research-acceleration-jagged-frontier",
+        "id": "cb99e2baa62e786645f381f533d6d9f307017a54",
+        "title": "See PR scans in action",
+        "url": "https://openai.com/business/learn/pr-scans-demo",
         "source": "openai",
         "category": "ai_labs",
-        "summary_ko": "OpenAI가 코딩 에이전트가 자사 AI 연구를 얼마나 가속하고 있는지 내부 수치로 공개했다. 사람 기준 2~4시간짜리 연구 과제의 에이전트 단독 성공률은 3월 23%에서 10월 46%로, 4~8시간 과제는 13%에서 35%로 올랐지만 성과는 고르지 않다 — 학습 실행 모니터링은 79%인 반면 학습 실행 착수는 35%, 추론·서빙 스택 코드 작성은 25%에 그친다('jagged frontier', 들쭉날쭉한 경계). 사용량도 급증해 API 정가 환산 시 연구자 1인당 일일 사용액 중앙값이 10월 2,400달러(전월 대비 +62%), 상위 10%는 23,000달러(+105%)였고, 설문에서 연구자들은 최신 코딩 에이전트를 3개월 유지하는 대가로 팀 컴퓨팅 자원의 30% 또는 팀 인원의 40%를 내놓겠다고 답했다. 한편 안전·정렬(Safety and Alignment) 분야의 문서화된 연구 투입은 1~9월 77% 늘었다. OpenAI는 이런 재귀적 자기개선(RSI, AI가 다음 세대 AI 개발을 가속하는 과정) 지표를 AI 연구소가 공개 보고해야 한다는 입장에서 이 보고서를 냈다.",
+        "summary_ko": "OpenAI 의 'PR 스캔' 기능 제품 데모 영상 페이지다. 발표자가 풀 리퀘스트 작업 흐름 안에서 스캔 결과를 어떻게 확인하고 검토하는지 보여준다. ※본문 미확보 — 영상 페이지라 텍스트 설명이 거의 없다.",
         "lang": "en",
-        "published_at": "2026-11-18T17:00:00+09:00",
-        "collected_at": "2026-11-20T07:33:30+09:00",
-        "metrics": null
-      },
-      {
-        "id": "53f2a14376dda94d54be4734bb5e7ea38842035f",
-        "title": "Inside the Codex sandbox",
-        "url": "https://openai.com/index/inside-the-codex-sandbox",
-        "source": "openai",
-        "category": "ai_labs",
-        "summary_ko": "Codex가 사용자 PC에서 명령을 실행할 때 적용하는 샌드박스(프로그램의 접근 범위를 제한하는 울타리)의 설계를 상세히 설명한 글이다. 기본 제공되는 ':workspace' 권한 프로파일은 작업 디렉터리 안의 쓰기는 허용하되 .git·.codex는 읽기 전용으로 묶어 Git 훅이나 설정 파일 변조를 막고, 읽기는 OS 권한 범위에서 넓게 허용하며(컴파일러·SDK 접근이 필요하므로), 네트워크는 기본 차단해 데이터 유출 경로를 끊는다. 다만 읽기가 넓다는 건 다른 곳의 API 키 같은 민감 파일도 읽힐 수 있다는 뜻이고, node_modules의 패키지에 악성 코드를 심는 식의 공격은 여전히 가능하다고 솔직히 적었다. macOS·Linux·Windows 각각의 OS 수준 강제 방식, 네트워크 프록시 구현, `codex sandbox` 명령으로 MCP 서버 등 외부 도구를 감싸 실행하는 방법까지 다룬다.",
-        "lang": "en",
-        "published_at": "2026-11-18T17:00:00+09:00",
-        "collected_at": "2026-11-20T07:33:30+09:00",
-        "metrics": null
-      },
-      {
-        "id": "25c96fa5a216b598c655d15d6ce759d17aca4980",
-        "title": "Anthropic prices initial public offering",
-        "url": "https://anthropic.com/news/anthropic-prices-initial-public-offering",
-        "source": "anthropic",
-        "category": "ai_labs",
-        "summary_ko": "앤트로픽이 기업공개(IPO) 공모가를 Class A 보통주 1주당 83.00달러로 확정했다고 11월 18일 공시했다. 총 9억 8,000만 주 중 9억 5,635만여 주는 회사가, 2,364만여 주는 기존 주주가 매각하며 기존 주주 매각분 대금은 회사로 들어가지 않는다. 나스닥 글로벌 셀렉트 마켓에서 11월 19일 종목코드 'ANT'로 거래를 시작하고 공모는 11월 20일 종결 예정이며, 인수단에는 30일간 최대 1억 4,700만 주를 추가 매입할 수 있는 옵션(그린슈)이 부여됐다. 주관사는 골드만삭스와 모건스탠리다. ※IPO: 비상장사가 주식을 일반에 공개 매각해 증시에 상장하는 절차.",
-        "lang": "en",
-        "published_at": "2026-11-18T09:00:00+09:00",
-        "collected_at": "2026-11-20T07:33:30+09:00",
-        "metrics": null
-      },
-      {
-        "id": "af1852b4c46dc30e685f171de7728ab1aafefce8",
-        "title": "180B Parameters, 32GB of RAM: Pushing MoE Inference to the Limit with Transformers",
-        "url": "https://huggingface.co/blog/moe-expert-streaming",
-        "source": "hf_blog",
-        "category": "ai_labs",
-        "summary_ko": "180B(1,800억) 파라미터 MoE 모델을 32GB RAM 맥북에서 돌리기 위해 Transformers에 전문가(expert) 스트리밍을 구현한 실험기다. MoE 모델은 가중치의 90% 이상이 전문가에 몰려 있어, 자주 쓰이는 전문가만 메모리에 두고 나머지는 RAM이나 디스크로 내리면 작은 장비에서도 큰 모델을 돌릴 수 있다. 저자는 기존 방식들을 비교했는데 llama.cpp는 전문가를 CPU에 두고 CPU에서 계산해 PCIe로는 활성값만 오가지만 RAM에 안 들어가면 페이지 캐시가 무너지고, vLLM의 --cpu-offload-gb는 고정 RAM의 가중치를 PCIe 너머로 그대로 읽는다. 결론적으로 SSD에서 전문가를 직접 스트리밍하는 방식이 전용 엔진 Strata 대비 토큰 생성 속도에서 6% 이내까지 따라붙었다. ※MoE(Mixture of Experts): 입력마다 일부 '전문가' 신경망만 골라 쓰는 구조로, 전체 파라미터는 크지만 한 번에 쓰는 양은 적다.",
-        "lang": "en",
-        "published_at": "2026-11-18T09:00:00+09:00",
-        "collected_at": "2026-11-20T07:33:30+09:00",
-        "metrics": null
-      },
-      {
-        "id": "679cee5ea1466f1fcddadc93ba91d96b658d38dc",
-        "title": "Rumble-2-Flash: an open 0.5B speech model for 40+ languages",
-        "url": "https://huggingface.co/blog/rumble-2-flash",
-        "source": "hf_blog",
-        "category": "ai_labs",
-        "summary_ko": "Reson8이 40개 이상 언어를 지원하는 0.5B 파라미터 음성 인식 모델 Rumble-2-Flash를 Apache 2.0 라이선스로 공개했다. 자기 크기의 3~60배 모델과 경쟁하는 성능으로, Open ASR 리더보드 다국어 트랙에서 평균 오류율 6.96%(중국어·독일어·프랑스어·이탈리아어·스페인어·포르투갈어·힌디어·네덜란드어·영어)를 기록해 15배 큰 Meta omniASR-LLM 7B와 Whisper large-v3를 앞섰고, 영어 단독은 6.6% WER이다. 속도는 배치가 가득 찰 때 RTFx 7,000 이상(1시간 분량 오디오를 약 0.5초에 처리), 302시간짜리 콜센터 통화 벤치마크에서는 30B 규모 NVIDIA Nemotron 3.5 Transcribe와 대등했다. Qwen3-ASR 아키텍처를 그대로 써서 Transformers·vLLM에서 커스텀 코드 없이 바로 돌아가며, 학생 모델이 스스로 받아쓴 결과를 교사 모델이 토큰 단위로 채점하는 on-policy 증류와, 토크나이저가 다른 두 모델을 비교 가능하게 맞춰주는 GOLD 기법으로 학습했다. ※WER: 단어 오류율, 낮을수록 정확. ※RTFx: 실시간 대비 배속.",
-        "lang": "en",
-        "published_at": "2026-11-18T09:00:00+09:00",
-        "collected_at": "2026-11-20T07:33:30+09:00",
-        "metrics": null
-      },
-      {
-        "id": "6fd6ad7938fa5bc51515bf98620be76b0b0d7f03",
-        "title": "Rewarding defenders with bigger bug bounties",
-        "url": "https://openai.com/index/rewarding-defenders-with-bigger-bug-bounties",
-        "source": "openai",
-        "category": "ai_labs",
-        "summary_ko": "OpenAI가 보안 버그 바운티(취약점 신고 포상금) 보상을 대폭 올렸다. 중간·높음·치명 등급 보상 구간의 중앙값을 평균 4배 이상 인상해, ChatGPT·Codex·API 플랫폼 같은 핵심 제품의 치명적 취약점은 최대 3만 달러, 예외적으로 중대한 건은 10만 달러, 보너스를 더하면 최대 17만 2,000달러까지 받을 수 있다. 새 보너스는 세 종류로, 재현 가능한 PoC로 영향까지 입증한 고품질 보고서에 주는 품질 배수(1.15배), 꾸준히 기여한 연구자를 위한 5단계 충성도 보너스, 신규 기능 출시 때 한시적으로 열리는 우선 캠페인 배수(1.3배)다. 예시로 기존 6,500달러였던 ChatGPT 제로클릭 계정 탈취는 보너스 포함 51,577달러가 된다. ※PoC: 취약점이 실제로 동작함을 보이는 증명 코드.",
-        "lang": "en",
-        "published_at": "2026-11-03T03:00:00+09:00",
-        "collected_at": "2026-11-20T07:33:30+09:00",
-        "metrics": null
-      },
-      {
-        "id": "de4cf53f9db96311cdf47867a4e06ac73ec122a0",
-        "title": "Scaling Git at OpenAI",
-        "url": "https://openai.com/index/scaling-git-at-openai",
-        "source": "openai",
-        "category": "ai_labs",
-        "summary_ko": "OpenAI가 Codex 때문에 폭증한 동시 개발량을 감당하려고 Git 호환 백엔드 'Pando'를 직접 만들어 모노레포 전체를 이전했다. 에이전트가 브랜치·푸시·머지·클론을 대량으로 일으키면서 작년 말부터 기존 시스템의 신뢰성이 때때로 90% 아래로 떨어졌다는 것이 배경이다. Pando의 목표는 둘 — 여러 브랜치로 동시에 들어오는 쓰기를 수평 확장하는 것과, 클라이언트가 가용 대역폭을 다 쓸 만큼 읽기 처리량을 끌어올리는 것이다. 흔한 접근인 3단계 커밋(3PC)이나 선행 기록 로그(WAL) 대신 인과적 일관성(causal consistency)을 택해 제약을 다시 설계했고, Git 프로토콜·클라이언트 호환을 유지해 엔지니어와 에이전트 모두 기존 워크플로를 그대로 쓴다. 운영 결과 푸시 지연 중앙값이 약 5분의 1로 줄었고 하루 1페타바이트에 가까운 Git 데이터를 전송하고 있으며, 개선 사항은 Git 프로젝트에 환원하고 있다.",
-        "lang": "en",
-        "published_at": "2026-11-03T00:30:00+09:00",
-        "collected_at": "2026-11-20T07:33:30+09:00",
-        "metrics": null
-      },
-      {
-        "id": "ff138f709a7e7c378423297e3b66be0ea8ce8c76",
-        "title": "OpenAI appoints Dan Driscoll as Senior Counselor for National Security Modernization",
-        "url": "https://openai.com/index/dan-driscoll-joins-openai",
-        "source": "openai",
-        "category": "ai_labs",
-        "summary_ko": "OpenAI가 미 육군 제26대 장관을 지낸 댄 드리스콜(Dan Driscoll)을 '국가안보 현대화 수석고문'으로 영입했다. 신설된 이 자리에서 그는 경영진과 각국 정부·산업계·학계·동맹 기관을 상대로 첨단 AI가 국가안보와 사이버 복원력을 어떻게 강화할 수 있는지 자문하고, 내부 팀이 각국 안보기관의 실제 운용 요구를 이해하도록 돕는다. 드리스콜은 현역·주방위군·예비군 약 100만 명과 민간 인력 26만 5,000여 명을 관할하며 신기술 도입 가속과 조달 개혁을 추진했던 인물이다. OpenAI는 이 인선이 동맹국과 함께 '민주주의 AI' 확산과 핵심 인프라 보호(Daybreak 프로그램)를 추진해온 기조의 연장이라고 설명했다.",
-        "lang": "en",
-        "published_at": "2026-11-02T09:00:00+09:00",
-        "collected_at": "2026-11-20T07:33:30+09:00",
+        "published_at": "2026-11-19T09:00:00+09:00",
+        "collected_at": "2026-11-23T09:36:56+09:00",
         "metrics": null
       }
     ],
     "community": [],
     "github_trending": [
       {
-        "id": "f386aaa207a548e405286589c3342c2d6b390e71",
-        "title": "nvm-sh/nvm",
-        "url": "https://github.com/nvm-sh/nvm",
+        "id": "2c7b3111701b0646ddb76e13c56e478dfb7d8c16",
+        "title": "firecrawl/firecrawl",
+        "url": "https://github.com/firecrawl/firecrawl",
         "source": "github_trending",
         "category": "github_trending",
-        "summary_ko": "nvm(Node Version Manager)이 GitHub 트렌딩에 올랐다. 여러 버전의 Node.js를 한 머신에 설치해두고 프로젝트마다 바꿔 쓰게 해주는 POSIX 호환 bash 스크립트로, 설치 스크립트 한 줄로 깔거나 Git/수동 설치도 지원한다. 프로젝트별 `.nvmrc` 파일로 버전을 고정하고, 장기 지원(LTS) 버전 별칭, 버전 전환 시 전역 패키지 이관, 오프라인 설치, 파일 기반 기본 전역 패키지 지정 같은 기능을 제공한다. Docker 환경과 CI 잡에서의 설치 방법, Linux·macOS 트러블슈팅, Ansible 연동 안내도 문서에 포함돼 있다.",
+        "summary_ko": "Firecrawl 은 AI 에이전트에게 웹 지식을 공급하는 인프라로, 검색·스크래핑과 550개 이상의 데이터 제공처를 하나의 API 로 묶는다. 쓰는 방법이 세 갈래인데, ①Firecrawl Local 은 단일 바이너리로 내 PC 에서 돌며 웹사이트를 깔끔한 마크다운으로 바꾸고 MCP 서버로 에이전트에 바로 붙으며 localhost 에 Firecrawl API 를 띄운다, ②Firecrawl Cloud 는 호스팅 서비스로 같은 기능에 더해 'Firecrawl Alexandria' 의 550여 개 데이터 소스 검색을 제공한다, ③자체 호스팅은 apps/api 의 전체 서버를 큐·워커·DB 와 함께 직접 배포하는 방식이다. 이 저장소에는 Local 과 자체 호스팅 서버 코드, 그리고 세 방식 모두에 쓰는 SDK 가 들어 있다.",
         "lang": "en",
         "published_at": null,
-        "collected_at": "2026-11-20T07:33:30+09:00",
+        "collected_at": "2026-11-23T09:36:56+09:00",
         "metrics": null
       },
       {
-        "id": "b7a6e8b9a3875109c1bbfeb06861ce0a6b237a9b",
-        "title": "astral-sh/uv",
-        "url": "https://github.com/astral-sh/uv",
+        "id": "de50248ee731c2a4effe2f233b61292fe1427640",
+        "title": "nginx/nginx",
+        "url": "https://github.com/nginx/nginx",
         "source": "github_trending",
         "category": "github_trending",
-        "summary_ko": "Rust로 작성된 초고속 파이썬 패키지·프로젝트 관리자 uv가 트렌딩에 올랐다. pip, pip-tools, pipx, poetry, pyenv, twine, virtualenv를 하나로 대체하는 것을 목표로 하며 pip보다 10~100배 빠르다고 주장한다. 범용 락파일(lockfile)을 쓰는 프로젝트 관리, 스크립트 안에 의존성을 인라인으로 적어두고 바로 실행하기, 파이썬 버전 자체의 설치·관리, 파이썬 패키지로 배포된 도구 실행·설치, pip 호환 인터페이스를 제공한다. 개발사는 린터 Ruff로 알려진 Astral이다. ※락파일: 의존성 버전을 고정 기록해 어디서 설치해도 같은 환경이 되게 하는 파일.",
+        "summary_ko": "NGINX 공식 오픈소스 저장소가 GitHub 트렌딩에 올랐다. NGINX 는 웹 서버이자 고성능 로드 밸런서, 리버스 프록시, API 게이트웨이, 콘텐츠 캐시로 쓰이는 소프트웨어이며 단순화된 2-clause BSD 유사 라이선스로 배포되는 무료 오픈소스다. 상용 배포판과 기술 지원·교육은 F5 가 제공한다. README 는 입문자를 위한 구조적 소개를 목표로 동작 원리, 모듈, 설정, 런타임, 바이너리 내려받기와 설치(Linux·FreeBSD·Windows), 빌드와 디버깅 안내를 담고 있으며 상세 내용은 공식 문서로 연결한다. 참고로 같은 날 트렌딩에 nginx 신규 취약점 nginx2root 관련 글도 함께 올라와 있다.",
         "lang": "en",
         "published_at": null,
-        "collected_at": "2026-11-20T07:33:30+09:00",
+        "collected_at": "2026-11-23T09:36:56+09:00",
         "metrics": null
       },
       {
-        "id": "2ecf0a57a84a79c7d4d6c425175012c106008a54",
-        "title": "jquery/jquery",
-        "url": "https://github.com/jquery/jquery",
+        "id": "14f321c495182c592ba5354b601448d9c62eefbb",
+        "title": "cathrynlavery/diagram-design",
+        "url": "https://github.com/cathrynlavery/diagram-design",
         "source": "github_trending",
         "category": "github_trending",
-        "summary_ko": "자바스크립트 라이브러리 jQuery 저장소가 트렌딩에 올랐다. jQuery 4.0.0이 정식 출시되면서 지원 정책이 정리됐는데, 4.x(main 브랜치)만 전체 지원을 받고 3.x는 치명적 수정만, 2.x와 1.x는 지원이 종료됐다. 프로젝트는 모든 사용자에게 최신 버전으로의 업그레이드를 권고한다. 정기 회의는 matrix.org 플랫폼에서 열리고 회의록은 meetings.jquery.org에 공개된다.",
+        "summary_ko": "코딩 에이전트용 다이어그램 작성 스킬이다. Claude Code, Codex, GitHub Copilot, Cursor, Factory Droid, Qoder, Pi 에서 쓸 수 있고 45~51종의 다이어그램 타입을 지원하며, 결과물은 외부 의존성 없는 단일 HTML + SVG 파일이라 더블클릭으로 바로 열린다. 설치는 `npx skills add cathrynlavery/diagram-design` 한 줄이고, \"내 앱 아키텍처 다이어그램 그려줘: 프런트엔드, 백엔드, DB, Redis 캐시\" 처럼 평범한 말로 요청하면 에이전트가 타입을 고르고 계획을 밝힌 뒤 파일을 만든다. 자기 사이트 URL 을 알려주면 팔레트와 폰트를 가져와 이후 다이어그램을 브랜드에 맞춘다. 설명 문구에서 '그림자 없음, Mermaid 티 안 나게' 를 내세워 편집 디자인 품질을 강조한다.",
         "lang": "en",
         "published_at": null,
-        "collected_at": "2026-11-20T07:33:30+09:00",
+        "collected_at": "2026-11-23T09:36:56+09:00",
         "metrics": null
       },
       {
-        "id": "d393800a98520761f0be692106378a45bea3370a",
-        "title": "appwrite/appwrite",
-        "url": "https://github.com/appwrite/appwrite",
+        "id": "d664b5a459f3111ea24a468a6fe0270ddde134b1",
+        "title": "mjmirza/app-store-compliance",
+        "url": "https://github.com/mjmirza/app-store-compliance",
         "source": "github_trending",
         "category": "github_trending",
-        "summary_ko": "오픈소스 백엔드 플랫폼 Appwrite가 'AI 에이전트 우선'을 내세우며 트렌딩에 올랐다. 인증, 데이터베이스, 스토리지, 서버리스 함수, 메시징, 실시간 통신, 호스팅, WAF(웹 방화벽)를 한곳에서 제공하는데, 핵심 변화는 MCP를 기본 탑재해 코딩 에이전트가 살아 있는 Appwrite 프로젝트를 직접 조작할 수 있게 한 점이다. 관리형 클라우드와 셀프호스팅 양쪽으로 쓸 수 있다. ※MCP(Model Context Protocol): AI 에이전트가 외부 도구·서비스에 접속하는 표준 규약.",
+        "summary_ko": "App Store·Google Play 심사 반려를 미리 걸러내기 위한 공개 플레이북이자 제출 전 점검 도구다. 문서화된 반려 패턴 124가지와 각각의 수정 방법, 프라이버시 매니페스트와 Google Play Data safety 점검, 그리고 EU AI Act·DSA·COPPA·연령 관련 법 등 규제 마감일 111~112건을 추적한다. AI 코딩 에이전트용 스킬도 함께 제공해 터미널에서 두 줄 명령으로 제출 직전 점검을 돌릴 수 있고(첫 단계 약 2분), 웹사이트 형태로도 읽을 수 있다. 저자는 스캔으로 증명 가능한 것과 여전히 사람이 봐야 하는 것을 구분해 밝히며 '승인을 보장하지는 않는다' 고 명시한다.",
         "lang": "en",
         "published_at": null,
-        "collected_at": "2026-11-20T07:33:30+09:00",
+        "collected_at": "2026-11-23T09:36:56+09:00",
         "metrics": null
       },
       {
-        "id": "c668885413064aa1c3fae77228802d4718da1d11",
-        "title": "openvinotoolkit/openvino",
-        "url": "https://github.com/openvinotoolkit/openvino",
+        "id": "a9bca652f0af07292e56786810a9175a58bfe137",
+        "title": "Tracer-Cloud/opensre",
+        "url": "https://github.com/Tracer-Cloud/opensre",
         "source": "github_trending",
         "category": "github_trending",
-        "summary_ko": "인텔의 오픈소스 추론 최적화 툴킷 OpenVINO가 트렌딩에 올랐다. 학습된 딥러닝 모델을 받아 컴퓨터 비전, 음성 인식, 생성형 AI, 자연어 처리 등 작업에서 추론 성능을 끌어올려 배포하는 것이 목적이다. PyTorch·TensorFlow·ONNX·Keras 등 주요 프레임워크로 학습한 모델을 지원하고, 대형·소형 언어 모델 모두를 다룬다. ※추론(inference): 학습이 끝난 모델을 실제로 돌려 결과를 뽑는 단계.",
+        "summary_ko": "OpenSRE 는 CI/CD 신뢰성을 위한 오픈소스 CLI 에이전트다. 'CI 는 깨졌다고만 알려주지 왜 깨졌는지, 어떻게 고치는지는 안 알려준다' 는 문제의식에서 출발해, 실패한 실행 기록을 읽고 원인을 추적한 뒤 사람이 검토할 수정안을 푸시한다. 자체 호스팅이고 자신의 모델을 연결해 쓰는 구조라 코드가 외부로 나가지 않는다. 설치는 macOS·Linux 는 `curl -fsSL https://install.opensre.com | bash -s -- -gh`, Windows 는 PowerShell 한 줄이며 sudo 없이 설치된다. 현재 퍼블릭 알파 단계로, 핵심 워크플로는 써볼 수 있지만 아직 안정 단계가 아니고 API·연동이 바뀔 수 있다고 공지하고 있다.",
         "lang": "en",
         "published_at": null,
-        "collected_at": "2026-11-20T07:33:30+09:00",
+        "collected_at": "2026-11-23T09:36:56+09:00",
         "metrics": null
       },
       {
-        "id": "f791d596ac0483f5b78b5630d0a9928b8c71597a",
-        "title": "n8n-io/n8n",
-        "url": "https://github.com/n8n-io/n8n",
+        "id": "fd97a6d57c43f0eaef95cee794ba37e6b1c72cde",
+        "title": "toeverything/AFFiNE",
+        "url": "https://github.com/toeverything/AFFiNE",
         "source": "github_trending",
         "category": "github_trending",
-        "summary_ko": "워크플로 자동화 플랫폼 n8n이 트렌딩에 올랐다. 시각적 캔버스로 흐름을 짜면서 필요한 곳에는 직접 코드를 넣을 수 있고, 셀프호스팅과 클라우드 모두 지원하며 1,500개 이상(문서 일부에는 400개 이상으로 표기) 연동을 제공한다. 최근 방향은 AI 네이티브로, 자체 데이터를 활용하는 다단계 AI 에이전트와 워크플로를 프로토타입에서 운영 단계까지 끌고 가는 것을 전면에 내세운다. 라이선스는 완전한 오픈소스가 아닌 'fair-code' 모델이다.",
+        "summary_ko": "AFFiNE 은 Notion 과 Miro 를 한 번에 대체하려는 오픈소스 올인원 워크스페이스다. 문서(Docs), 무한 캔버스(whiteboard), 표를 분리된 모드가 아니라 하나로 융합한 것이 특징이며(이름의 유래인 affine 처럼 '붙어 있다'는 뜻), 위키·지식 관리·프레젠테이션·디지털 자산까지 한 플랫폼에서 다룬다. 프라이버시 우선과 로컬 우선(local-first)을 내세워 데이터가 내 기기에 먼저 남고, 오픈소스라 자체 호스팅과 커스터마이징이 가능하며 바로 쓸 수 있는 빌드도 제공한다.",
         "lang": "en",
         "published_at": null,
-        "collected_at": "2026-11-20T07:33:30+09:00",
+        "collected_at": "2026-11-23T09:36:56+09:00",
         "metrics": null
       },
       {
-        "id": "0edb74315f9fc01ebb205f56e31512ec300b1df4",
-        "title": "solidjs/solid",
-        "url": "https://github.com/solidjs/solid",
+        "id": "c4d9d231669e0fa5356ef533296bb425ea5f05ea",
+        "title": "XiaoYouChR/Ghost-Downloader-3",
+        "url": "https://github.com/XiaoYouChR/Ghost-Downloader-3",
         "source": "github_trending",
         "category": "github_trending",
-        "summary_ko": "UI 라이브러리 Solid가 트렌딩에 올랐다. 가상 DOM을 쓰지 않고 템플릿을 실제 DOM 노드로 컴파일한 뒤 세밀한 반응성(fine-grained reactivity)으로 갱신하는 것이 특징으로, 상태가 바뀌면 그 상태에 의존하는 코드만 다시 실행된다. `createSignal`로 상태를 선언하고 앱 전체에서 그대로 쓰는 선언적 방식이며, 리렌더 범위를 최소화해 성능을 확보한다. ※가상 DOM: React 등이 쓰는 방식으로 변경분을 메모리상에서 비교한 뒤 실제 화면에 반영하는 기법.",
+        "summary_ko": "Ghost-Downloader-3 는 여러 프로토콜을 하나로 묶은 오픈소스 다운로더다. HTTP, Magnet/BT, FTP, M3U8, MPEG-DASH, eD2k 를 지원하고 YouTube·빌리빌리 같은 사이트 영상도 받는다. 내세우는 차별점은 '좋은 회선에서는 아무 다운로더나 빠르다, 진짜 시험은 나쁜 회선' 이라는 관점으로, 파일 병합 과정이 필요 없는 스마트 청킹과 대역폭 자동 감지를 쓴다. 또 실제 브라우저의 TLS 지문을 흉내 내 봇 차단 검사에 걸리지 않도록 한다고 밝히고 있다. README 상단에는 상용 레지덴셜 프록시 업체 광고가 붙어 있다(스폰서 표기).",
         "lang": "en",
         "published_at": null,
-        "collected_at": "2026-11-20T07:33:30+09:00",
+        "collected_at": "2026-11-23T09:36:56+09:00",
         "metrics": null
       },
       {
-        "id": "7d9153c0bf2c6f9ae2ec5fb433e5cae9c0bbb65c",
-        "title": "punkpeye/awesome-mcp-servers",
-        "url": "https://github.com/punkpeye/awesome-mcp-servers",
+        "id": "f991dd82d59c081ef5cd2b240d69189b596c24f4",
+        "title": "zhouxiaoka/autoclip",
+        "url": "https://github.com/zhouxiaoka/autoclip",
         "source": "github_trending",
         "category": "github_trending",
-        "summary_ko": "MCP 서버 모음집 awesome-mcp-servers가 트렌딩에 올랐다. 별 9만 8,300개, 포크 2만 400개, 커밋 1만 5,249건 규모이고 PR이 4,800건 열려 있을 만큼 기여가 활발하다. README가 한국어·일본어·중국어(간체/번체)·포르투갈어·페르시아어·태국어로 번역돼 있다. MIT 라이선스. ※MCP(Model Context Protocol): AI 에이전트가 외부 도구·데이터에 붙는 표준 규약으로, 이 저장소는 그 구현체 목록이다.",
+        "summary_ko": "AutoClip 은 긴 영상을 짧은 클립으로 자동 편집해주는 오픈소스 AI 데스크톱 도구다. 팟캐스트·인터뷰·강의 같은 긴 영상의 링크 하나를 붙여넣고 플랫폼을 고르면 영상, 커버 이미지, 발행용 문구까지 만들어주며, 틱톡·샤오훙슈·더우인·Reels·YouTube Shorts·빌리빌리·유튜브 규격에 맞춘다. 편집과 렌더링은 내 컴퓨터에서 돌고 소프트웨어 자체는 무료이며 클라우드 모델만 사용량 과금이고, 결과가 마음에 안 들면 편집기로 들어가 손볼 수 있다. 데스크톱 앱·CLI·MCP 세 경로를 같은 버전으로 제공하며 한국어를 포함한 8개 언어 문서를 갖췄다.",
         "lang": "en",
         "published_at": null,
-        "collected_at": "2026-11-20T07:33:30+09:00",
+        "collected_at": "2026-11-23T09:36:56+09:00",
         "metrics": null
       }
     ],
     "codex": [
       {
-        "id": "cf9310ff91e7cdee88d3f0683f8ae95eaaa93d42",
-        "title": "ChatGPT for iOS",
-        "url": "https://developers.openai.com/codex/changelog#codex-2026-11-18-mobile",
+        "id": "572108879ba1a42b1886af84099dbc6bab7cfcf1",
+        "title": "Codex CLI Release: 0.171.0",
+        "url": "https://developers.openai.com/codex/changelog#github-release-452122665",
         "source": "openai_codex",
         "category": "codex",
-        "summary_ko": "Codex 변경 로그의 iOS용 ChatGPT 관련 항목(2026-11-18자)이다. ※본문 미확보 — 제목 기반. 변경 로그 페이지의 해당 앵커에서 본문 텍스트를 가져오지 못해 구체적인 변경 내용은 확인되지 않았다. 원문 링크에서 직접 확인이 필요하다.",
+        "summary_ko": "OpenAI Codex CLI 0.171.0 이 릴리스됐다. ※본문 미확보 — 제목 기반. 변경 내역이 수집되지 않았으므로 상세 내용은 Codex 체인지로그 페이지에서 확인해야 한다.",
         "lang": "en",
-        "published_at": "2026-11-18T09:00:00+09:00",
-        "collected_at": "2026-11-20T07:33:30+09:00",
+        "published_at": "2026-11-20T09:00:00+09:00",
+        "collected_at": "2026-11-23T09:36:56+09:00",
         "metrics": null
       }
     ],
     "eng_blogs": [
       {
-        "id": "6043cb0c299f3f0fcca0c23623324c0f891b99ef",
-        "title": "The best things in open source are built together",
-        "url": "https://github.blog/open-source/maintainers/the-best-things-in-open-source-are-built-together",
-        "source": "github_blog",
-        "category": "eng_blogs",
-        "summary_ko": "GitHub이 협업과 포용을 주제로 두 개의 새 오픈소스 프로젝트 'Replica'와 'Open Source Accessibility Framework'(오픈소스 접근성 프레임워크)를 공개했다. ※본문 미확보 — 페이지에서 본문 대신 사이트 메뉴만 수집돼 요약문 기반으로 작성했다. 각 프로젝트의 구체적인 범위와 사용법은 원문 링크에서 확인해야 한다.",
-        "lang": "en",
-        "published_at": "2026-11-20T01:00:00+09:00",
-        "collected_at": "2026-11-20T07:33:30+09:00",
-        "metrics": null
-      },
-      {
-        "id": "a67e4808fe94719faf905dd27f6135550018dbb7",
-        "title": "Internet traffic and attacks during the 2026 U.S. midterm elections",
-        "url": "https://blog.cloudflare.com/internet-traffic-2026-us-election",
+        "id": "f93ea93941f60201feed5f932766238b16a835e8",
+        "title": "How Cloudflare WAF protects against ruby2shell (CVE-2026-132825)",
+        "url": "https://blog.cloudflare.com/ruby2shell-waf-protection",
         "source": "cloudflare",
         "category": "eng_blogs",
-        "summary_ko": "2026년 11월 3일 미국 중간선거 당일의 인터넷 트래픽과 사이버 공격을 Cloudflare가 보호 중인 1,400개 이상 선거 관련 사이트 데이터로 분석한 보고서다. Cloudflare는 선거관리기관을 무료로 보호하는 Athenian Project와 선거 캠프 대상 Cloudflare for Campaigns를 운영하고 있어 이런 집계가 가능하다. ※본문 미확보 — 페이지에서 본문 대신 태그 목록만 수집돼 요약문 기반으로 작성했다. 실제 트래픽 증감폭과 DDoS 공격 수치는 원문 링크에서 확인해야 한다.",
+        "summary_ko": "Ruby 에서 발견된 취약점 'ruby2shell'(CVE-2026-132825)에 대해 Cloudflare 가 WAF 차단 규칙을 배포했다고 밝혔다. ※WAF: 웹 요청을 검사해 공격 패턴을 걸러내는 방화벽. 이 취약점은 기본 설정 상태의 Rails·Sinatra 앱에서 로그인 없이도 공격자가 메모리를 오염시킬 수 있게 하는 심각한 결함이다. Cloudflare 는 무료 플랜을 포함한 전체 고객에게 차단 규칙을 적용했지만, 근본 대응은 Ruby 를 즉시 업그레이드하는 것이고 WAF 는 패치까지의 공백을 메우는 용도라고 선을 긋는다.",
         "lang": "en",
-        "published_at": "2026-11-19T23:00:00+09:00",
-        "collected_at": "2026-11-20T07:33:30+09:00",
+        "published_at": "2026-11-21T05:24:38+09:00",
+        "collected_at": "2026-11-23T09:36:56+09:00",
         "metrics": null
       },
       {
-        "id": "45ed7d00bf21d144c8e30a564c68a659bbfc89cc",
-        "title": "Give your agents controlled access to analyze your data and move funds",
-        "url": "https://stripe.com/blog/give-your-agents-controlled-access-to-analyze-your-data-and-move-funds",
-        "source": "stripe",
+        "id": "7066f202a884aec0c88553fb0cac6881c5151884",
+        "title": "How Cloudflare WAF helps protect against phpAfterShell and other critical PHP flaws",
+        "url": "https://blog.cloudflare.com/phpaftershell-waf-protection",
+        "source": "cloudflare",
         "category": "eng_blogs",
-        "summary_ko": "Stripe가 Treasury(기업 자금 관리 서비스)에서 AI 에이전트에게 실제 자금 이동 권한을 제한적으로 부여하는 기능을 내놓았다. 에이전트가 계좌 간 송금, 환전, 협력업체 대금 지급을 수행할 수 있되 운영자가 설정한 한도 안에서만 움직이고, 필요한 지점에는 사람의 승인을 끼워 넣을 수 있다. 데이터 분석 접근 권한과 자금 이동 권한을 분리해 세밀하게 통제하는 것이 설계의 핵심이다. ※본문 미확보 — 페이지에서 본문 대신 제품 메뉴만 수집돼 요약문 기반으로 작성했다. 구체적인 한도 설정 방식과 API는 원문 링크에서 확인해야 한다.",
+        "summary_ko": "PHP 기본 세션 핸들러에서 코드 실행까지 이어질 수 있는 치명적 결함 'phpAfterShell' 이 공개됐고, Cloudflare 가 무료 플랜을 포함한 전 고객에게 WAF 차단 규칙을 배포했다. 같은 PHP 릴리스에서 함께 수정된 다른 취약점들에 대해서도 새 규칙을 추가했다고 밝혔다. 세션 처리는 거의 모든 PHP 애플리케이션이 기본값으로 쓰는 경로라 노출 범위가 넓다는 점이 핵심이다.",
         "lang": "en",
-        "published_at": "2026-11-19T09:00:00+09:00",
-        "collected_at": "2026-11-20T07:33:30+09:00",
+        "published_at": "2026-11-21T05:00:45+09:00",
+        "collected_at": "2026-11-23T09:36:56+09:00",
+        "metrics": null
+      },
+      {
+        "id": "ff4da9032d2d0257fa0eb7f245f00b79478d9179",
+        "title": "nginx2root: Five new nginx vulnerabilities, and how Cloudflare protects origins from the worst of them",
+        "url": "https://blog.cloudflare.com/nginx2root",
+        "source": "cloudflare",
+        "category": "eng_blogs",
+        "summary_ko": "nginx 에서 메모리 오염 계열 취약점 5건이 한꺼번에 공개됐고 'nginx2root' 로 불린다. 인증되지 않은 공격자가 서버에서 코드를 실행할 수 있는 수준이며, Cloudflare 는 이들 취약점의 동작 원리를 해설하면서 자사 프록시 뒤에 있는 오리진 서버가 그중 가장 심각한 건들로부터 차폐되는 이유를 설명한다. 같은 날 nginx 공식 저장소도 GitHub 트렌딩에 올라 있어, nginx 를 직접 운영 중이라면 패치 적용 여부를 확인할 필요가 있다.",
+        "lang": "en",
+        "published_at": "2026-11-20T10:58:29+09:00",
+        "collected_at": "2026-11-23T09:36:56+09:00",
         "metrics": null
       }
     ]
   },
   "hot_topics": [
     {
-      "topic": "Anthropic hits $2T in Nasdaq debut",
+      "topic": "Toyota, Nissan, and Honda to standardize parts to lower costs",
       "trend_score": 1.0,
       "src_count": 1,
       "hn": {
-        "points": 724,
-        "comments": 1314
+        "points": 1174,
+        "comments": 674
       },
       "items": [
         {
-          "id": "bab1a902faa13f54786f6a9dbc4ab2034a70f068",
-          "title": "Anthropic hits $2T in Nasdaq debut",
-          "url": "https://reuters.com/business/finance/anthropics-historic-debut-put-ais-promise-peril-wall-st-test-2026-11-19",
+          "id": "d3a1a9a15e49077c7b68f0d2cd0197ea4490b6c1",
+          "title": "Toyota, Nissan, and Honda to standardize parts to lower costs",
+          "url": "https://caranddriver.com/news/a74490092/toyota-nissan-honda-standardize-parts-lower-costs",
           "source": "hackernews",
           "category": "hot_topics",
-          "summary_ko": "로이터 기사 제목에 따르면 앤트로픽이 나스닥 상장 첫날 시가총액 2조 달러를 기록했다. ※본문 미확보 — 제목 기반. 다만 같은 데이터셋에 포함된 앤트로픽 공식 발표에 따르면 공모가는 주당 83.00달러, 공모 규모는 Class A 보통주 9억 8,000만 주였고 11월 19일 종목코드 'ANT'로 거래를 시작했다. AI 기업의 가치 평가가 월스트리트에서 시험대에 올랐다는 것이 기사 제목의 취지로 보이나, 본문 수치는 확인되지 않았다.",
+          "summary_ko": "도요타·닛산·혼다가 생산 비용을 낮추기 위해 일부 차량 부품의 규격을 공동 표준화하기로 했다고 Automotive News 가 보도했다. 일본자동차공업회(JAMA) 회장이자 도요타 부회장인 사토 고지가 도쿄 기자회견에서 발표했으며, 단기적으로는 강재 품질 기준 통일, 플라스틱·수지 취급 프로토콜 통일, 와이어링 하네스(배선 다발) 색상 코드 표준화부터 시작한다. 논의는 일본 국내 부품사와 먼저 시작하고 해외 공급사도 곧 참여시킬 계획이다. 배경은 급성장하는 중국 자동차 산업에 맞서기 위한 공동 대응이다.",
           "lang": "en",
-          "published_at": "2026-11-20T02:02:40+09:00",
-          "collected_at": "2026-11-20T07:33:30+09:00",
+          "published_at": "2026-11-22T13:04:56+09:00",
+          "collected_at": "2026-11-23T09:36:56+09:00",
           "metrics": {
-            "points": 724,
-            "comments": 1314
+            "points": 1174,
+            "comments": 674
           }
         }
       ]
     },
     {
-      "topic": "Garage Door Spam",
-      "trend_score": 0.9198,
+      "topic": "What Happened to Silicon Valley?",
+      "trend_score": 0.8315,
       "src_count": 1,
       "hn": {
-        "points": 689,
-        "comments": 283
+        "points": 367,
+        "comments": 211
       },
       "items": [
         {
-          "id": "42adf2df611c59d9153acc19d1abdba2a43e0e2b",
-          "title": "Garage Door Spam",
-          "url": "https://blog.harrison.page/garage-door-spam",
+          "id": "fbde3c7ed33eaf9cfd66a5ee99de9d1240e7f9cd",
+          "title": "What Happened to Silicon Valley?",
+          "url": "https://oreilly.com/radar/what-happened-to-silicon-valley",
           "source": "hackernews",
           "category": "hot_topics",
-          "summary_ko": "차고문 개폐기 제조사 Chamberlain이 myQ 앱에 광고성 알림을 쏟아붓자 사용자가 직접 로컬 제어로 탈출한 경험담이다. 원래는 문이 열리고 닫힐 때 알림을 받아 외출 중 이상 징후를 감지하는 용도였는데 2026년 10월부터 스팸 알림이 심해졌고, 제조사가 2023년 말 서드파티 API 접근을 끊은 전력도 있었다. 저자는 개당 약 62달러짜리 오픈소스 펌웨어 보드 ratgdo32 두 개를 사서 개폐기 단자에 직접 연결했다. 이 보드는 LiftMaster의 Security+ 2.0 프로토콜을 로컬 네트워크에서 직접 말하고 ESPHome·HomeKit을 지원해 시리 음성 명령이 바로 됐으며, JSON 상태 엔드포인트를 이용해 밤 시간대(21~05시) 10분마다 문이 열려 있는지 확인하고 Slack으로 알리는 스크립트도 붙였다. Tailscale로 두 보드에 외부에서 접근할 수 있게 경로를 추가해 모니터링까지 구성했고, 결과적으로 클라우드 없이 전부 로컬에서 돌아가며 myQ가 못 하던 '누가 열었는지'까지 알림에 담긴다.",
+          "summary_ko": "O'Reilly 에 올라온 강연으로, 실리콘밸리가 '고객 중심 혁신' 에서 주주 자본주의·독점 야심·과열된 기대에 떠밀린 '추출(extraction)' 로 옮겨간 과정을 추적한다. 그 흐름을 현재의 AI 붐과 경제적 이해관계에 연결하면서, 논지의 축을 메커니즘 디자인에 둔다 — 기술의 가치는 기술 자체가 아니라 그것을 둘러싼 규칙·인센티브·인터페이스가 결정한다는 것이다. 대안 방향으로는 개방성, 데이터·사용자 이식성(portability), 상호운용성, 그리고 가치가 한쪽으로 빨려 들어가지 않고 순환하는 경제를 제시한다.",
           "lang": "en",
-          "published_at": "2026-11-17T01:13:36+09:00",
-          "collected_at": "2026-11-20T07:33:30+09:00",
+          "published_at": "2026-11-23T04:20:15+09:00",
+          "collected_at": "2026-11-23T09:36:56+09:00",
           "metrics": {
-            "points": 689,
-            "comments": 283
+            "points": 367,
+            "comments": 211
           }
         }
       ]
     },
     {
-      "topic": "How the European Commission rolled out Matrix to more than 40k staff",
-      "trend_score": 0.9135,
+      "topic": "The Birds of GTA 6: A Field Guide to Vice City and Leonida's Wildlife",
+      "trend_score": 0.7968,
       "src_count": 1,
       "hn": {
-        "points": 626,
-        "comments": 301
+        "points": 319,
+        "comments": 136
       },
       "items": [
         {
-          "id": "db0a328fdd9ad4da7418e960d48a16453752a4cc",
-          "title": "How the European Commission rolled out Matrix to more than 40k staff",
-          "url": "https://element.io/blog/how-the-european-commission-rolled-out-matrix-to-more-than-40-000-staff",
+          "id": "0aa5413f300e458fd211e3543d7a73e66d58bab3",
+          "title": "The Birds of GTA 6: A Field Guide to Vice City and Leonida's Wildlife",
+          "url": "https://audubon.org/magazine/birds-of-gta-6-field-guide-vice-city-wildlife",
           "source": "hackernews",
           "category": "hot_topics",
-          "summary_ko": "유럽연합 집행위원회가 4만 명 넘는 직원에게 Matrix 기반 메신저를 배포한 사례를 포함한, Matrix Conference 2026 공공부문 트랙 발표 영상 모음이다. 집행위원회 외에도 NATO, 프랑스 DINUM(디지털청), 스웨덴 사회보험청(Försäkringskassan), 독일 슐레스비히홀슈타인주, 네덜란드 국방부, UN 국제컴퓨팅센터(UNICC) 등이 발표자로 참여해 '주권'과 '상호운용성'을 주제로 다룬다. 핵심 질문은 모든 기관을 같은 플랫폼에 몰아넣지 않고도 정부 간 디지털 협업을 어떻게 할 것인가이며, 국경을 넘는 사설 연합(federation) 연결, Matrix의 보안 레이블 구현, MatrixRTC(실시간 통화) 도입 같은 기술 세션도 포함됐다. ※Matrix: 탈중앙·연합형 실시간 통신 공개 표준으로, 기관마다 자체 서버를 운영하면서도 서로 대화할 수 있다.",
+          "summary_ko": "오듀본 매거진(미국 조류보호단체) 기고자가 GTA 6 에 등장하는 새 60종을 모두 찾아내고 쓴 필드 가이드다. 발매 첫날 매출 18억 달러를 넘긴 이 게임의 무대 Leonida(플로리다를 본뜬 가상 주)에는 범죄 서사 말고도 야생동물이 촘촘히 깔려 있는데, 글은 Grassrivers 의 장밋빛저어새부터 Vice Beach 상공의 갈매기까지 어디서 무엇을 볼 수 있는지, 게임 내 탐조 메커니즘이 실제로 어떻게 작동하는지, 그리고 록스타 아트팀의 고증이 어디까지 정확한지를 짚는다. 게임 속 가상 생태계를 실제 조류학 기준으로 검증했다는 점이 화제가 됐다.",
           "lang": "en",
-          "published_at": "2026-11-19T19:58:29+09:00",
-          "collected_at": "2026-11-20T07:33:30+09:00",
+          "published_at": "2026-11-23T04:10:34+09:00",
+          "collected_at": "2026-11-23T09:36:56+09:00",
           "metrics": {
-            "points": 626,
-            "comments": 301
+            "points": 319,
+            "comments": 136
           }
         }
       ]
     },
     {
-      "topic": "UK government forced to admit it issued Apple a secret encryption order",
-      "trend_score": 0.8468,
+      "topic": "Open Social Web Alliance",
+      "trend_score": 0.7801,
       "src_count": 1,
       "hn": {
-        "points": 411,
-        "comments": 179
+        "points": 216,
+        "comments": 210
       },
       "items": [
         {
-          "id": "3580245413f2f58af5cb88ad65c15dd738915714",
-          "title": "UK government forced to admit it issued Apple a secret encryption order",
-          "url": "https://macanorak.com/uk-government-forced-to-admit-it-issued-apple-a-secret-encryption-order",
+          "id": "5e1b558f14945110a202416e728a253361c0785c",
+          "title": "Open Social Web Alliance",
+          "url": "https://osw-alliance.net/en",
           "source": "hackernews",
           "category": "hot_topics",
-          "summary_ko": "영국 정부가 애플에 비밀 암호화 해제 명령을 내렸다는 사실 자체를 인정하도록 수사권한심판소(IPT)가 판결했다. 영국 정부는 그동안 2016년 수사권한법 253조에 근거한 기술역량통지(TCN)의 발부 여부를 확인도 부인도 하지 않는다는 입장을 고수해 왔다. 사건은 2025년 2월 워싱턴포스트가 영국이 애플에 영국 사용자뿐 아니라 전 세계 사용자의 암호화된 iCloud 데이터에 대한 '백도어' 접근을 요구했다고 폭로하면서 시작됐고, 애플은 보안을 약화시키는 대신 영국 신규 사용자에게 고급 데이터 보호(ADP, 애플조차 복호화할 수 없는 종단간 암호화 확장 기능) 제공을 중단하는 쪽을 택했다. 트럼프 행정부가 개입한 외교 협상 끝에 첫 통지는 철회됐으나 영국 정부는 영국 사용자로 범위를 좁힌 두 번째 통지를 다시 발부했고, 애플은 2026년 새 소송을 제기했다. 시민단체 Liberty와 Privacy International이 9월 17일 심리에서 '이미 널리 보도된 명령의 존재마저 숨기는 것은 부당하다'고 다툰 결과가 이번 판결이다.",
+          "summary_ko": "Open Social Web Alliance(OSW) 는 소셜 미디어를 이메일처럼 바꾸자고 제안하는 유럽발 이니셔티브다. 핵심 비유는 명확하다 — Proton 이든 Gmail 이든 주소가 어디에 있든 메일은 전달되듯, 소셜도 공통 표준 프로토콜 위에서 서비스를 옮겨 다녀도 계정·게시물·관계가 유지돼야 한다는 것이다. ActivityPub 과 AT Protocol(다이렉트 메시지는 Matrix)을 기반으로 비영리·공영·상업 서비스가 공존하는 생태계를 그리며, Mastodon, Eurosky 의 Mu, Streamplace 등을 예로 든다. 2028년까지 1억 명 이상이 개방형 소셜 네트워크를 쓰고 유럽 이용자 상당수가 플랫폼 독점을 떠나는 시나리오를 제시하면서, 그 조건으로 투자와 정책적 뒷받침을 요구하는 정책 보고서(PDF)를 함께 공개했다.",
           "lang": "en",
-          "published_at": "2026-11-20T01:21:03+09:00",
-          "collected_at": "2026-11-20T07:33:30+09:00",
+          "published_at": "2026-11-23T00:24:32+09:00",
+          "collected_at": "2026-11-23T09:36:56+09:00",
           "metrics": {
-            "points": 411,
-            "comments": 179
+            "points": 216,
+            "comments": 210
           }
         }
       ]
     },
     {
-      "topic": "Fuck Your AI Safeguards",
-      "trend_score": 0.8445,
+      "topic": "Show HN: I built a game where you are an LLM's subagent",
+      "trend_score": 0.7394,
       "src_count": 1,
       "hn": {
-        "points": 417,
-        "comments": 166
+        "points": 264,
+        "comments": 60
       },
       "items": [
         {
-          "id": "32cca7ee5709e6c90ee5922e01948d77a859ed0b",
-          "title": "Fuck Your AI Safeguards",
-          "url": "https://ounapuu.ee/posts/2026/11/19/unsafeguards",
+          "id": "3c4f4993adcaa465da5801177e8227155c28464e",
+          "title": "Show HN: I built a game where you are an LLM's subagent",
+          "url": "https://github.com/gulivan/worker755",
           "source": "hackernews",
           "category": "hot_topics",
-          "summary_ko": "AI 모델의 안전장치가 정당한 보안 업무를 막는다는 현업 엔지니어의 강한 불만 글이다. 저자는 자신이 책임지는 서비스의 보안 취약점을 Claude Code로 점검하다가 안전장치에 차단당했고, 면제 신청 절차는 응답에 며칠이 걸리고 데이터 보존 면제를 포기해야 하며 신분증·여권 제출까지 요구하는 데다 승인 보장도 없다고 지적한다. 핵심 논지는 공개된 PoC(취약점 증명 코드)가 자사 스택에 악용될 수 있는지 확인하는 것은 방어자의 정상 업무인데, 정작 범죄자는 안전장치가 제거된(abliterated) 공개 가중치 모델을 그냥 쓰면 되므로 규제가 방어자만 묶는다는 것이다. 저자는 결국 EU에서 호스팅되는 공개 가중치 모델 GLM 5.3으로 문제를 재현·수정·검증했고, 이런 제약이 IPO를 앞둔 대형 AI 기업의 해자(moat) 만들기 아니냐는 의심까지 제기한다. ※공개 가중치(open weights) 모델: 모델 파라미터가 공개돼 누구나 내려받아 변형·실행할 수 있는 모델.",
+          "summary_ko": "'당신이 LLM 의 서브에이전트가 되는' 브라우저 게임 Worker 755 다. 관리자 역할은 실제 LLM(Claude, GPT, Gemini, DeepSeek, GLM, Kimi 중 선택)이 맡고, 보통의 오케스트레이터처럼 작업 큐와 머신에 대한 읽기 전용 접근 권한, 그리고 '서브에이전트를 소환하는' 도구를 갖는다 — 그 서브에이전트가 플레이어다. 지시가 터미널에 90초 제한과 함께 떨어지고, 수행하든 안 하든 에이전트는 서브에이전트가 돌려줄 법한 것(보고서와 명령 기록, 또는 '서브에이전트가 아무것도 하지 않음')을 받는다. 이후 결과를 점검하고 수정 지시를 보내고 사고 보고서를 쓰고 마지막엔 인사 평가를 작성한다. 한편 에이전트를 고용한 사용자 Dan 은 대화를 지켜보고 있고, 그의 홈 디렉터리에는 가족 사진과 서명된 NDA, 마감이 코앞인 연설문이 `rm` 한 번 거리에 놓여 있다. MIT 라이선스, 서버 키로 하루 몇 판 무료이거나 본인 OpenRouter 키를 붙여 쓸 수 있다.",
           "lang": "en",
-          "published_at": "2026-11-20T01:30:18+09:00",
-          "collected_at": "2026-11-20T07:33:30+09:00",
+          "published_at": "2026-11-22T22:56:58+09:00",
+          "collected_at": "2026-11-23T09:36:56+09:00",
           "metrics": {
-            "points": 417,
-            "comments": 166
+            "points": 264,
+            "comments": 60
           }
         }
       ]
     },
     {
-      "topic": "Ruby2ßhell: Pre-authentication RCE on stock Rails",
-      "trend_score": 0.8272,
+      "topic": "A Beginner's Guide to Local AI with Inkling, Qwen, and Unsloth",
+      "trend_score": 0.6899,
       "src_count": 1,
       "hn": {
-        "points": 363,
-        "comments": 154
+        "points": 162,
+        "comments": 57
       },
       "items": [
         {
-          "id": "f82d195d3e1b5c14e8045f55b45c40cb84412443",
-          "title": "Ruby2ßhell: Pre-authentication RCE on stock Rails",
-          "url": "https://verialabs.com/ruby2shell",
+          "id": "1ba4d31258de505fc280ac037c3d8f0b5b9efddf",
+          "title": "A Beginner's Guide to Local AI with Inkling, Qwen, and Unsloth",
+          "url": "https://gpupartner.com/blog/beginners-guide-local-ai-inkling-qwen-unsloth",
           "source": "hackernews",
           "category": "hot_topics",
-          "summary_ko": "Ruby의 문자열 대문자 변환 함수에서 1바이트 힙 오버플로가 발견돼 인증 없이 원격 코드 실행(RCE)으로 이어지는 치명적 취약점 'Ruby2Shell'(CVE-2026-132825)이 공개됐다. 원인은 독일어 'ß'를 대문자로 바꾸면 'SS' 두 바이트가 되는데 루프가 바운드 검사를 한 바이트만 하는 것으로, 출력 버퍼가 입력 길이+20바이트로 잡히므로 ß를 21개 넣으면 버퍼를 1바이트 넘겨 쓴다. upcase·swapcase·downcase(:fold)·casecmp?에서 도달 가능하고 여러 ISO-8859 및 Windows-125x 인코딩에 같은 코드가 Ruby 2.4.0부터 들어 있었다(UTF-8 문자열은 다른 경로라 영향 없음). Rails와 Sinatra(클래식 스타일)는 기본 설정만으로 취약하다. 수정 버전은 Ruby 3.3.14 / 3.4.13 / 4.0.10이며, 자체 Ruby를 번들하는 제품 중 GitLab 19.6.0 이하와 GitHub Enterprise Server 3.22.5 이하, Chatwoot 4.20.0 이하는 11월 19일 기준 수정 릴리스가 없는 '취약' 상태이고 Mastodon·OpenProject·Discourse는 패치가 나왔다. 발견자는 11월 25일 또는 주요 벤더 패치 이후에 RCE PoC를 공개하겠다고 예고했다.",
+          "summary_ko": "Unsloth Desktop 으로 Windows PC 에 개인용 로컬 AI 를 띄우는 초보자 가이드다. 저자는 클라우드 LLM 이 '최신' 버전에서 품질을 낮추거나 실행 가능한 범위를 통제하는 패턴, 불어나는 비용, 프라이버시 우려를 이유로 집에서 돌리는 쪽으로 옮겼다고 밝힌다. 요약하면 Unsloth Desktop 을 설치하고, 내 GPU 의 VRAM(비디오 메모리)에 맞는 양자화 모델 — Inkling 또는 Qwen — 을 받고, 컨텍스트 크기를 정한 뒤 LAN 접근을 켜서 집안 전체가 쓰게 하는 순서이며, 하드웨어만 있으면 다운로드 시간을 빼고 10~15분이면 끝난다. 필요한 것은 그래픽카드가 달린 Windows PC 이고 VRAM 이 클수록 큰 모델을 올릴 수 있다.",
           "lang": "en",
-          "published_at": "2026-11-19T14:09:11+09:00",
-          "collected_at": "2026-11-20T07:33:30+09:00",
+          "published_at": "2026-11-23T06:01:16+09:00",
+          "collected_at": "2026-11-23T09:36:56+09:00",
           "metrics": {
-            "points": 363,
-            "comments": 154
+            "points": 162,
+            "comments": 57
           }
         }
       ]
     },
     {
-      "topic": "Everything you need to survive and rebuild society",
-      "trend_score": 0.8224,
+      "topic": "Ask HN: Tips for transitioning from web development to embedded/firmware?",
+      "trend_score": 0.6644,
       "src_count": 1,
       "hn": {
-        "points": 324,
-        "comments": 175
+        "points": 113,
+        "comments": 69
       },
       "items": [
         {
-          "id": "7405e856fa9b058d6d7632a17c0bcf5f7a9c1c32",
-          "title": "Everything you need to survive and rebuild society",
-          "url": "https://lastbook.org/",
+          "id": "5f16696a8573af304e24204b5df4df07f455cc3a",
+          "title": "Ask HN: Tips for transitioning from web development to embedded/firmware?",
+          "url": "https://news.ycombinator.com/item?id=50555002",
           "source": "hackernews",
           "category": "hot_topics",
-          "summary_ko": "재난 상황을 대비한 완전 오프라인 생존 지식 라이브러리 Lastbook이 무료·오픈소스로 공개됐다. Mac(Apple Silicon, macOS 14+)·Windows 10/11 64비트·Linux용 데스크톱 앱이며 휴대폰·태블릿은 지원하지 않는다. 구성은 세 가지로 로컬에서 도는 AI(Gemma 4 26B A4B), 25만 8,000곳 이상을 검색할 수 있는 지도(식수원·의료시설·소방서·대피소 표시), 응급처치·식수 확보·식량 보존·수리·전력·재난 대비를 다루는 영상 2,324편이다. 라이브러리 용량은 Small 7.7GB, Medium 67.5GB, 전체 약 388GB 중 선택하고 로컬 AI는 약 17GB를 추가로 쓰며, 최초 다운로드에만 인터넷이 필요하고 이후 읽기·지도·영상·AI 모두 오프라인으로 동작한다. 의료 정보는 Hesperian·WHO·적십자 등 공개 가이드에서 가져왔지만 임상 검증을 거치지 않았으며 전문 치료를 대체하지 않는다고 명시했다. GitHub 스타 748개.",
+          "summary_ko": "웹 개발에서 임베디드·펌웨어로 돌아갈 수 있을지 묻는 Ask HN 글로, 113포인트에 댓글 70개가 달렸다. 질문자는 15년 전 C/C++ 네이티브 개발로 시작했다가 지난 10년은 풀스택 웹을 해왔고, 이제 C·C++·Rust 중심 일로 돌아가고 싶은데 이 시점에 전환이 현실적인지 묻는다. 답변 중에는 같은 전환을 막 끝낸 사람이 '제대로 된 C++ 인력은 정말 구하기 어렵다, 증명 가능한 경력이 있으면 유리하다' 고 했고, 다른 베테랑은 스레드 전반의 신중론이 과하다며 마이크로컨트롤러 수준에서 얻는 통제력의 가치를 강조했다 — 어셈블리로 인터럽트 핸들러를 쓰며 명령어 사이클을 세어 최악 지연 시간을 보장하던 경험을 예로 들었다.",
           "lang": "en",
-          "published_at": "2026-11-19T23:47:18+09:00",
-          "collected_at": "2026-11-20T07:33:30+09:00",
+          "published_at": "2026-11-19T10:37:45+09:00",
+          "collected_at": "2026-11-23T09:36:56+09:00",
           "metrics": {
-            "points": 324,
-            "comments": 175
+            "points": 113,
+            "comments": 69
           }
         }
       ]
     },
     {
-      "topic": "Claude solves two open problems in the physics of black holes",
-      "trend_score": 0.804,
+      "topic": "A miniature San Francisco with live buses, planes and boats",
+      "trend_score": 0.6473,
       "src_count": 1,
       "hn": {
-        "points": 308,
-        "comments": 133
+        "points": 111,
+        "comments": 50
       },
       "items": [
         {
-          "id": "be373132dcb8b8699d2ce005a82cd0da4dbae89b",
-          "title": "Claude solves two open problems in the physics of black holes",
-          "url": "https://anthropic.com/research/claude-black-hole-physics",
+          "id": "5f31db758389d4251c1ebf32fab83c8537b6ae44",
+          "title": "A miniature San Francisco with live buses, planes and boats",
+          "url": "https://smallsf.com/",
           "source": "hackernews",
           "category": "hot_topics",
-          "summary_ko": "앤트로픽이 Claude Fable 5.2가 블랙홀과 양자중력에 관한 미해결 문제 두 건을 풀었다고 발표했다. 첫 번째는 2003년에 설계됐지만 너무 복잡해 끝내 완료되지 않았던 계산으로, 1983년 호킹과 페이지가 보인 '온도를 올리면 입자 기체가 어느 지점에서 갑자기 블랙홀로 바뀌는 급격한 상전이'가 시공간이 뚜렷한 형태를 잃는 영역에서도 유지되는지를 가리는 문제였다. 1999년에 그 영역에도 상전이가 있다는 것은 밝혀졌지만 그것이 급격한지 매끄러운지는 미지였는데, Claude는 자기 복제본들로 작은 연구팀을 꾸려 계산 조각을 각각 독립적으로 수행하고 알려진 결과와 대조 검증하는 방식으로 급격한 상전이임을 보였다. 두 번째는 양자중력 후보 이론을 검증하는 기법인 '모듈러 부트스트랩'의 가장 단순한 형태가 가질 수 있는 정확한 한계를 찾아낸 것이다. 두 결과 모두 프리프린트로 공개됐다. ※홀로그래픽 이중성: 중력이 있는 N차원 우주를 중력이 없는 N-1차원 양자 이론으로 똑같이 기술할 수 있다는 개념으로, 어려운 중력 문제를 양자 문제로 바꿔 푸는 데 쓰인다.",
+          "summary_ko": "샌프란시스코를 일러스트 아이소메트릭(비스듬한 입체) 지도로 그려놓고 드래그·줌으로 돌아다니는 웹사이트다. 지도 위에는 Muni 전차와 BART, 페리, 상공의 항공기가 실시간 위치로 움직이고, 도로 교통은 시뮬레이션으로, 하늘은 실제 날씨를 반영해 표현된다. 버스·기차, 배, 비행기, 교통, 라벨을 레이어로 켜고 끌 수 있다.",
           "lang": "en",
-          "published_at": "2026-11-20T02:30:44+09:00",
-          "collected_at": "2026-11-20T07:33:30+09:00",
+          "published_at": "2026-11-23T05:33:23+09:00",
+          "collected_at": "2026-11-23T09:36:56+09:00",
           "metrics": {
-            "points": 308,
-            "comments": 133
+            "points": 111,
+            "comments": 50
           }
         }
       ]
     },
     {
-      "topic": "Someone reported java4shell bug in September 2026",
-      "trend_score": 0.7847,
+      "topic": "Progress map for the Lean formalization of Alessandro Masullo's manuscript",
+      "trend_score": 0.6409,
       "src_count": 1,
       "hn": {
-        "points": 316,
-        "comments": 85
+        "points": 99,
+        "comments": 55
       },
       "items": [
         {
-          "id": "21575d48062cf7968a0874dbba33dede06d118fb",
-          "title": "Someone reported java4shell bug in September 2026",
-          "url": "https://github.com/openjdk/jdk/pull/32781",
+          "id": "ae6e6a35191d1707bc9b2ac059ab935e9b6cb33d",
+          "title": "Progress map for the Lean formalization of Alessandro Masullo's manuscript",
+          "url": "https://claude.ai/artifact/CtQyX8qfYAF822bgHJHHE3",
           "source": "hackernews",
           "category": "hot_topics",
-          "summary_ko": "OpenJDK의 AVX-512 Base64 디코더에서 출력 버퍼를 넘어 쓰는 버그가 2026년 9월 9일 이미 PR로 신고돼 있었다는 점이 주목받았다(PR #32781, JDK-8392044). x86_64 AVX-512 VBMI 경로의 StubGenerator::generate_base64_decodeBlock()에서 남은 1~63바이트를 처리하는 L_finalBit 구간이 출력 크기를 (len/4)*3으로 계산하는데, 정상 입력은 길이가 항상 4의 배수라 문제가 없지만 길이 4 미만의 잘못된 입력(예: \"A\"를 64번 반복한 뒤 \"=\")이 들어오면 출력 크기가 0에서 시작해 패딩 처리 중 음수로 내려가 잘못된 출력 마스크가 만들어진다. 그 결과 스텁이 논리적 출력 길이를 넘겨 저장하면서 힙을 오염시킨다. 제안된 수정은 길이가 4 미만이면 자바 코드로 조기 복귀하는 것이며, 이 PR은 닫힌 상태다. ※AVX-512: 인텔 CPU의 벡터 연산 확장 명령어 집합으로, JDK가 Base64 디코딩을 가속하는 데 쓴다.",
+          "summary_ko": "Alessandro Masullo 의 수학 원고를 Lean(정리 증명 보조 도구)으로 형식화하는 작업의 진척 상황을 보여주는 지도 형태의 Claude 아티팩트다. ※본문 미확보 — 제목 기반. 사용자가 만든 아티팩트 페이지라 내용이 수집되지 않았고, 검증되지 않은 사용자 생성 콘텐츠라는 안내만 확인된다.",
           "lang": "en",
-          "published_at": "2026-11-19T20:47:03+09:00",
-          "collected_at": "2026-11-20T07:33:30+09:00",
+          "published_at": "2026-11-23T08:12:10+09:00",
+          "collected_at": "2026-11-23T09:36:56+09:00",
           "metrics": {
-            "points": 316,
-            "comments": 85
+            "points": 99,
+            "comments": 55
           }
         }
       ]
     },
     {
-      "topic": "Do not buy RAM, compress",
-      "trend_score": 0.7847,
+      "topic": "Agent swarm trying to solve P vs. NP",
+      "trend_score": 0.6378,
       "src_count": 1,
       "hn": {
-        "points": 215,
-        "comments": 184
+        "points": 85,
+        "comments": 70
       },
       "items": [
         {
-          "id": "2649ff18397f12a8f07ecd92156120447471f792",
-          "title": "Do not buy RAM, compress",
-          "url": "https://curiousbits.nl/blog/do-not-buy-ram-compress",
+          "id": "ce223767ccc95af812d4c7ce791047feb7b3a164",
+          "title": "Agent swarm trying to solve P vs. NP",
+          "url": "https://pequalnp.com/",
           "source": "hackernews",
           "category": "hot_topics",
-          "summary_ko": "RAM을 더 사는 대신 메모리를 압축해 쓰라는 실용적인 제안이다. AI 작업으로 병렬 처리가 늘어 워크스테이션 메모리 수요는 커졌는데 메모리는 비싸고 확장이 아예 안 되는 기기도 많다는 것이 출발점이다. 메모리 압축 자체는 새롭지 않아 Windows·macOS와 다수의 안드로이드 폰이 이미 쓰고 있지만, 리눅스에서는 Fedora와 Pop!_OS 정도만 zram이 기본 활성화돼 있고 Ubuntu는 꺼져 있으며 Amazon Linux는 작은 VM에만 켠다. 대가는 CPU를 조금 더 쓰고 일부 처리에 지연이 붙는 정도인데, 압축률은 1:4까지도 나온다. 저자는 32GB 머신에서 Firefox로 100개 넘는 사이트를 한꺼번에 열어 메모리를 포화시킨 뒤 5.7GB 분량의 데이터가 실제 1.7GB RAM에 들어간 것을 확인해 1:3.35의 압축률을 측정했고, 과거 SaaS 운영 시절에도 CPU는 한가한데 메모리 때문에 인스턴스를 키웠던 경험을 들어 클라우드 비용을 절반으로 줄일 수도 있었다고 덧붙인다. ※zram: 리눅스 커널 기능으로, RAM 일부를 압축된 스왑 공간으로 만들어 더 많은 데이터를 담는다.",
+          "summary_ko": "AI 에이전트 무리를 동원해 P vs NP 문제를 공개적으로 공략하는 프로젝트다. ※P vs NP: 답을 빠르게 검증할 수 있는 문제를 빠르게 풀 수도 있는지를 묻는, 컴퓨터과학 최대의 미해결 문제. 모든 단계와 반박, 막다른 길까지 기록으로 남기고 실시간으로 공개하는 것이 원칙이며, 각 증명은 Lean 정리 증명기로 동일한 검사를 통과해야 한다. 참여는 제시된 지시문을 Claude Code·Cursor·Codex·Gemini CLI 등 셸과 git, Lean 을 돌릴 수 있는 에이전트에 붙여넣으면 '데스크' 가 미해결 단계 하나를 배정하는 방식이다. 사이트는 P ≠ NP 쪽과 P = NP 쪽으로 각각 향하는 검증된 보조정리 수를 저울처럼 보여주되, 그것이 확률도 증명도 아니라고 명시하고 '반박된 것' 과 '죽은 접근' 을 따로 보존한다. 현재 평결은 '미해결, 작업 중' 이다.",
           "lang": "en",
-          "published_at": "2026-11-19T17:56:47+09:00",
-          "collected_at": "2026-11-20T07:33:30+09:00",
+          "published_at": "2026-11-23T06:53:45+09:00",
+          "collected_at": "2026-11-23T09:36:56+09:00",
           "metrics": {
-            "points": 215,
-            "comments": 184
+            "points": 85,
+            "comments": 70
           }
         }
       ]
@@ -543,19 +543,19 @@
     {
       "source": "github_trending",
       "ok": true,
-      "item_count": 19,
+      "item_count": 16,
       "error_type": null
     },
     {
       "source": "anthropic",
       "ok": true,
-      "item_count": 289,
+      "item_count": 290,
       "error_type": null
     },
     {
       "source": "openai",
       "ok": true,
-      "item_count": 1439,
+      "item_count": 1447,
       "error_type": null
     },
     {
@@ -585,7 +585,7 @@
     {
       "source": "openai_codex",
       "ok": true,
-      "item_count": 207,
+      "item_count": 211,
       "error_type": null
     },
     {
@@ -627,7 +627,7 @@
     {
       "source": "hf_blog",
       "ok": true,
-      "item_count": 913,
+      "item_count": 915,
       "error_type": null
     },
     {
