@@ -1,0 +1,568 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-11-25T08:18:00+09:00",
+  "date": "2026-11-25",
+  "categories": {
+    "ai_labs": [
+      {
+        "id": "16565a3f5dc091b0864725078fd4c4547458c83f",
+        "title": "Microduck Obstacle Avoidance: A Sim2Real Workflow with Isaac Lab and Newton",
+        "url": "https://huggingface.co/blog/nvidia/microduck-obstacle-avoidance",
+        "source": "hf_blog",
+        "category": "ai_labs",
+        "summary_ko": "NVIDIA가 소형 2족 로봇 Microduck에 장애물 회피 기능을 붙이는 Sim2Real(시뮬레이션에서 학습한 정책을 실제 로봇에 옮기는 것) 튜토리얼을 Hugging Face에 올렸다. 핵심은 이미 학습된 보행 정책의 가중치는 그대로 두고, ToF(Time-of-Flight, 빛이 되돌아오는 시간으로 거리를 재는 센서) 입력을 받는 별도의 회피 컨트롤러만 새로 학습시키는 구조다 — 게임패드로 사람이 준 속도 명령을 이 컨트롤러가 보정한 뒤 보행 정책에 넘긴다. NVIDIA Isaac Lab(GPU로 수천 개 시뮬레이션을 병렬로 돌려 정책을 학습시키는 오픈소스 프레임워크)에서 재사용 가능한 SimReady 에셋으로 다양한 장애물 코스를 만들고, 물리 엔진 Newton의 레이캐스터로 ToF 센서를 모델링한다. 학습·평가 후 정책을 ONNX(프레임워크 간 모델 교환 포맷)로 내보내 실제 Microduck에서 검증하는 단계까지 다룬다.",
+        "lang": "en",
+        "published_at": "2026-11-25T01:34:13+09:00",
+        "collected_at": "2026-11-25T08:09:20+09:00",
+        "metrics": null
+      },
+      {
+        "id": "3c6728c1bfd198791155e7911f8c578086a9a218",
+        "title": "GPT-6 models demonstrate intrinsic protein-design capabilities",
+        "url": "https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities",
+        "source": "openai",
+        "category": "ai_labs",
+        "summary_ko": "OpenAI가 GPT-6 계열 모델이 전문 생물학 모델을 호출하지 않고 추론과 범용 코딩 도구만으로 새로운 단백질 구조와 서열을 설계할 수 있다는 프리프린트(동료평가 전 논문) 'GPT-6 as a Universal Foundation Model for Protein Biology'를 공개했다. 내부 연구용 모델이 다수의 단백질 설계 과제에서 전용 모델과 대등하거나 더 나은 성적을 냈고, 단백질이 어디에 붙어야 하는지와 어떤 모양이어야 하는지를 프롬프트로 지시해 설계를 유도할 수도 있었다. 바이오 기업 Onava와 함께 한 실험실 검증에서 GPT-6.2의 설계를 바탕으로 만든 단백질이 5개 표적 모두에서 결합(binding) 증거를 보였고, 재설계한 항체도 결합력을 유지했다(후보 선별·서열 공급에는 전용 모델이 보조로 쓰였다). 모델이 남긴 추론 과정과 코드를 보면 수학·물리·화학·생물 지식을 끌어와 단백질의 형태와 분자 간 상호작용을 따지고 있었다.",
+        "lang": "en",
+        "published_at": "2026-11-24T22:00:00+09:00",
+        "collected_at": "2026-11-25T08:09:20+09:00",
+        "metrics": null
+      },
+      {
+        "id": "f3aa9260f1094b3713b95db83158321ea63632fb",
+        "title": "Searching for distant planets with Astra",
+        "url": "https://openai.com/index/searching-for-distant-planets-with-astra",
+        "source": "openai",
+        "category": "ai_labs",
+        "summary_ko": "아마추어 천문가 두 명이 OpenAI의 Codex와 Astra로 NASA의 Kepler·TESS 우주망원경 공개 데이터를 직접 뒤져 외계행성 후보를 찾아내고, 전문 천문학자들에게 정밀 관측할 지점을 넘겼다는 사례 소개다. 방법은 행성이 별 앞을 지날 때 생기는 미세하고 반복적인 밝기 저하(트랜싯)를 찾는 것으로, OpenAI 엔지니어 Kevin Bond는 Codex로 Kepler가 관측한 약 10만 개 별의 데이터를 훑었고, 이메일 인프라 스타트업 Primitive의 창업자 Ethan Byrd는 독립적으로 여러 AI 모델을 비교한 끝에 같은 작업을 수행했다. 이 분야에서 AI 활용 자체는 새롭지 않은데, 2017년 연구진이 Kepler 신호 15,000건으로 신경망을 학습시켜 Kepler-90의 여덟 번째 행성을 찾아낸 선례가 있다. 다만 이번에는 전문 연구팀이 아니라 아마추어가 스스로 탐색을 설계하고 실행했다는 점이 달라진 부분이다. 1992년 첫 발견 이후 지금까지 확인된 외계행성은 6,400개가 넘는다.",
+        "lang": "en",
+        "published_at": "2026-11-24T20:00:00+09:00",
+        "collected_at": "2026-11-25T08:09:20+09:00",
+        "metrics": null
+      },
+      {
+        "id": "ec442b764e041cd285d6ece959606d2241d7d5c3",
+        "title": "How Intentful uses dots to make more time for growth",
+        "url": "https://openai.com/business/customer-stories/intentful-dots",
+        "source": "openai",
+        "category": "ai_labs",
+        "summary_ko": "소규모 마케팅 기업 Intentful의 CEO Marina Petrova가 OpenAI의 'dot'(사용자별로 맥락을 기억하며 선제적으로 일을 처리하는 개인 AI 에이전트)을 영업 제안서 작업에 쓴 사례다. 한 관광 분야 고객사를 위해 지역 업체 수백 곳을 대상으로 패키지 가격을 매겨야 했는데, 'Aria'라고 이름 붙인 dot에 URL 목록과 포함 기준(예: 읽을 수 있는 사이트맵이 있고 페이지가 3,000개 이하)을 주자 약 300개 사이트맵을 훑어 대상 업체를 걸러내고 과거 계약에서 가격 근거까지 뽑아왔다. 며칠 걸리던 제안서 작성이 몇 시간으로 줄었다는 것이 핵심 주장이며, 중요한 메시지를 미리 알려주거나 이슈를 대신 해결하는 용도로도 쓰고 있다고 한다. ※사이트맵: 웹사이트의 전체 페이지 목록을 담은 파일.",
+        "lang": "en",
+        "published_at": "2026-11-24T09:00:00+09:00",
+        "collected_at": "2026-11-25T08:09:20+09:00",
+        "metrics": null
+      },
+      {
+        "id": "7a6462e387eb267a9c42da1ffaa35959c095f129",
+        "title": "How iFood scales coding agents across 15,000 repositories",
+        "url": "https://openai.com/business/customer-stories/ifood",
+        "source": "openai",
+        "category": "ai_labs",
+        "summary_ko": "브라질 음식 배달 기업 iFood가 1만 5천 개가 넘는 코드 저장소를 관리하기 위해 'Remote Agents Platform'을 만든 사례다. 코드 표준 검증, 취약한 의존성 수정, 분석 실행 같은 작업은 저장소 하나에서는 쉽지만 1만 5천 개로 곱해지는 순간 문제가 되는데, 이 플랫폼은 그런 작업을 API 호출로 바꿔 원격 샌드박스에서 실행하고 결과를 머지 리퀘스트로 돌려준다. 공개된 수치는 누적 25,000회 이상 실행, 실행당 평균 추론 비용 US$0.04이며, 첫 주요 도입처인 사내 보안 플랫폼에서는 수정된 취약점 수가 2배 이상으로 늘었다. 모델은 비용 대비 성능을 고려해 GPT-5.6 Luna를 썼고, 비동기 실행이라 개발자가 결과를 기다리며 묶여 있지 않아도 된다는 점을 이점으로 꼽았다. 팀은 과거 각 팀이 제각기 해결책을 만들다 결국 '실행 인프라(에이전틱 런타임)의 부재'라는 같은 벽에 부딪혔던 것이 출발점이라고 설명한다.",
+        "lang": "en",
+        "published_at": "2026-11-24T09:00:00+09:00",
+        "collected_at": "2026-11-25T08:09:20+09:00",
+        "metrics": null
+      },
+      {
+        "id": "99b93f3e10984935a6ab283857e5b97c678a706d",
+        "title": "Clay helps sales teams win with Codex and ChatGPT",
+        "url": "https://openai.com/business/customer-stories/clay-plugins-openai",
+        "source": "openai",
+        "category": "ai_labs",
+        "summary_ko": "영업 데이터 플랫폼 Clay가 OpenAI 모델과 Codex·ChatGPT 플러그인을 결합해 영업팀의 고객 조사와 GTM(Go-To-Market, 시장 공략) 실행을 돕는 사례다. 사용자는 기업·인물 리스트를 만들고 에이전트로 각 레코드를 보강(enrich)한 뒤 그 정보를 영업 플레이로 연결하는데, Codex 플러그인에서는 플레이를 직접 만들고 실행할 수 있고 ChatGPT 플러그인으로는 도구를 옮기지 않고 잠재 고객을 조사할 수 있다. 모델 선택은 작업 난이도와 비용에 맞춰 나눴다 — 기본은 GPT-6 Sol, 더 어려운 작업은 GPT-6 Astra, 비용에 민감한 작업은 GPT-6 Luna다. Clay의 AI 총괄 Jeff Barg는 영업 사원이 자사 시스템 데이터와 공개 데이터셋을 섞어 제품 가치를 어떻게 전달할지 정하는 식으로 쓰고 있으며, 특히 최상위 영업 사원일수록 효과가 컸다고 말했다.",
+        "lang": "en",
+        "published_at": "2026-11-24T09:00:00+09:00",
+        "collected_at": "2026-11-25T08:09:20+09:00",
+        "metrics": null
+      },
+      {
+        "id": "6687f7be62c34e4af8b14ad1fa0bb36ceef40b28",
+        "title": "How OpenAI’s Performance Factory keeps ChatGPT fast",
+        "url": "https://openai.com/index/how-openai-performance-factory-keeps-chatgpt-fast",
+        "source": "openai",
+        "category": "ai_labs",
+        "summary_ko": "OpenAI가 ChatGPT의 성능 저하(regression)를 찾아 고치는 과정을 자동화한 사내 시스템 'Performance Factory'를 공개했다. 구성은 네 부분 — 워크플로를 정의하는 태스크 서비스, 작업을 배분하는 디스패치 루프, 클라우드에서 도는 Codex, 상태가 바뀌면 에이전트를 깨우는 구독(subscription) 메커니즘이다. 첫 워크플로인 Regression Workflow는 성능 알림이 울리면 태스크를 열고, 에이전트가 원인을 조사해 결과를 기록하고 수정안을 제시하면 엔지니어가 검토하며, 배포 후에는 다른 에이전트가 같은 태스크를 이어받아 성능이 기준선으로 돌아왔는지 확인한다. 진단의 신뢰도를 높이기 위해 적대적 리뷰(adversarial review, 다른 에이전트가 결론을 반박해보게 하는 절차)를 넣었고, 글은 '엔지니어의 주의력을 보호하라', '에이전트 변경도 평가하라', '반복되는 실패는 자가 수리로 전환하라'를 교훈으로 정리한다. 작성자는 Okay Zed, Cyrus Forbes.",
+        "lang": "en",
+        "published_at": "2026-11-19T17:00:00+09:00",
+        "collected_at": "2026-11-25T08:09:20+09:00",
+        "metrics": null
+      },
+      {
+        "id": "53f2a14376dda94d54be4734bb5e7ea38842035f",
+        "title": "Inside the Codex sandbox",
+        "url": "https://openai.com/index/inside-the-codex-sandbox",
+        "source": "openai",
+        "category": "ai_labs",
+        "summary_ko": "OpenAI가 코딩 에이전트 Codex가 사용자 컴퓨터에서 명령을 실행할 때 적용하는 샌드박스(프로그램이 접근할 수 있는 범위를 제한하는 격리 장치)의 내부 설계를 공개했다. 사용자는 '권한 프로파일(permission profile)'로 세션별 파일시스템·네트워크 제한을 정하는데, 예컨대 사진 정리 작업에는 ~/Pictures만 읽기·쓰기 허용하고 네트워크를 막아 업로드를 차단하고, 코드 리뷰에는 온라인 문서 접근은 허용하되 소스 파일은 읽기 전용으로 두는 식이다. 글은 기본값을 '의미 있는 작업은 가능하되 보수적으로' 잡은 트레이드오프에서 출발해, 하네스가 샌드박스를 어떻게 활용하는지, 기업이 정책을 어떻게 겹겹이 쌓아 강제하는지, `codex sandbox` 명령으로 MCP 서버 같은 외부 프로세스를 감싸는 방법까지 다룬다. 마지막으로 macOS·Linux·Windows 각각에서 제한이 실제로 어떤 OS 기능으로 강제되는지와 네트워크 프록시 구현을 설명하며, 다른 도구에서도 이 샌드박스를 재사용할 수 있다고 밝힌다. 작성자는 Michael Bolin.",
+        "lang": "en",
+        "published_at": "2026-11-18T17:00:00+09:00",
+        "collected_at": "2026-11-25T08:09:20+09:00",
+        "metrics": null
+      },
+      {
+        "id": "de4cf53f9db96311cdf47867a4e06ac73ec122a0",
+        "title": "Scaling Git at OpenAI",
+        "url": "https://openai.com/index/scaling-git-at-openai",
+        "source": "openai",
+        "category": "ai_labs",
+        "summary_ko": "OpenAI가 Git 프로토콜·클라이언트와 호환되는 새 저장소 백엔드 'Pando'를 만들어 사내 모노레포 전체를 이전했다고 공개했다. Codex 때문에 동시에 진행되는 작업량이 급증하면서 기존 소스 컨트롤이 한계에 부딪힌 것이 배경이며, 목표는 두 가지 — 여러 브랜치로 쏟아지는 동시 푸시를 감당하는 수평 확장 가능한 쓰기, 그리고 클라이언트가 가용 네트워크 대역폭을 다 쓸 수 있을 만큼의 읽기 처리량이다. 운영 환경에서 푸시 지연 시간 중앙값이 약 5분의 1로 줄었고, 하루에 1페타바이트에 가까운 Git 데이터를 전송하고 있다. 글은 기존 분산 Git 서비스 방식인 3PC(3단계 커밋)·WAL(쓰기 선행 로그)과 Pando가 택한 인과적 일관성(causal consistency) 접근을 비교하고, Git 프로젝트 자체에 기여를 돌려주고 있다는 점도 밝힌다. 작성자는 Aaron Friel, Taylor Blau, Ted Nyman. ※모노레포: 여러 프로젝트를 하나의 저장소에 모아 관리하는 방식.",
+        "lang": "en",
+        "published_at": "2026-11-03T00:30:00+09:00",
+        "collected_at": "2026-11-25T08:09:20+09:00",
+        "metrics": null
+      },
+      {
+        "id": "6750c2461412185f050bdd0f1b5b77559fc02237",
+        "title": "Credit Saison achieves 954% ROI in a ChatGPT Enterprise pilot",
+        "url": "https://openai.com/index/credit-saison",
+        "source": "openai",
+        "category": "ai_labs",
+        "summary_ko": "일본 신용카드사 Credit Saison(카드 회원 약 3,116만 명)이 ChatGPT Enterprise 파일럿에서 ROI 954%를 기록하고, 파일럿 종료 한 달 만에 전사 도입을 결정했다는 사례다. 파일럿은 2025년 6월 말부터 8월 초까지 한 달 남짓 315명 규모로 진행됐는데, 자원자·프로젝트팀 지명자·사장을 포함한 전 임원·전 부서 대표를 섞어 구성했고 이는 일본 내 약 3,700명 직원의 10% 조금 못 미치는 규모다. 결과는 참가자 1인당 월 14시간(연 약 169시간) 절감으로 회사의 초기 목표(ROI 500%)를 크게 넘었고, 엔지니어링팀의 Codex 활용으로는 월평균 850시간이 추가로 절감됐다. 2025년 9월 전 직원 대상 배포가 이뤄졌다. CDO·CTO를 겸한 Kazutoshi Ono 전무의 '실제로 써보기 전엔 알 수 없다'는 방침이 출발점이었다. ※ROI: 투자 대비 수익률.",
+        "lang": "en",
+        "published_at": "2026-10-29T09:00:00+09:00",
+        "collected_at": "2026-11-25T08:09:20+09:00",
+        "metrics": null
+      }
+    ],
+    "community": [],
+    "github_trending": [],
+    "codex": [
+      {
+        "id": "8ce397b128fadeb6261cc328e1a064adf297d3a4",
+        "title": "Codex CLI Release: 0.172.0",
+        "url": "https://developers.openai.com/codex/changelog#github-release-456141969",
+        "source": "openai_codex",
+        "category": "codex",
+        "summary_ko": "OpenAI Codex CLI(터미널에서 쓰는 코딩 에이전트) 0.172.0 버전이 릴리스됐다. ※본문 미확보 — 제목 기반. 상세 변경 내역은 링크된 체인지로그 항목에서 확인해야 한다.",
+        "lang": "en",
+        "published_at": "2026-11-24T09:00:00+09:00",
+        "collected_at": "2026-11-25T08:09:20+09:00",
+        "metrics": null
+      },
+      {
+        "id": "8efbe5393981628c7d13c3f892f3f87688d8bed5",
+        "title": "Codex app",
+        "url": "https://developers.openai.com/codex/changelog#codex-2026-11-23-app",
+        "source": "openai_codex",
+        "category": "codex",
+        "summary_ko": "Codex 앱의 2026-11-23자 업데이트가 체인지로그에 등록됐다. ※본문 미확보 — 제목 기반. 구체적 변경 내용은 링크된 체인지로그 항목을 직접 확인해야 한다.",
+        "lang": "en",
+        "published_at": "2026-11-23T09:00:00+09:00",
+        "collected_at": "2026-11-25T08:09:20+09:00",
+        "metrics": null
+      },
+      {
+        "id": "02a80fab3a246a4aa13b2d743bc7fc0ac081177a",
+        "title": "Codex app",
+        "url": "https://developers.openai.com/codex/changelog#codex-2026-11-19-app",
+        "source": "openai_codex",
+        "category": "codex",
+        "summary_ko": "Codex 앱의 2026-11-19자 업데이트가 체인지로그에 등록됐다. ※본문 미확보 — 제목 기반. 구체적 변경 내용은 링크된 체인지로그 항목을 직접 확인해야 한다.",
+        "lang": "en",
+        "published_at": "2026-11-19T09:00:00+09:00",
+        "collected_at": "2026-11-25T08:09:20+09:00",
+        "metrics": null
+      }
+    ],
+    "eng_blogs": [
+      {
+        "id": "307ec7853a39b0829a14841c1f4ab65d7bb6eeb3",
+        "title": "These are the gifts developers will actually want",
+        "url": "https://github.blog/news-insights/company-news/these-are-the-gifts-developers-will-actually-want",
+        "source": "github_blog",
+        "category": "eng_blogs",
+        "summary_ko": "GitHub 블로그의 연말 선물 추천 글로, 개발자에게 줄 선물 목록과 함께 한 주 내내 진행되는 블랙 프라이데이 할인을 안내한다. 기술적 내용이 아닌 GitHub Shop 프로모션 성격의 기업 소식이다. ※본문 미확보(페이지 본문이 사이트 메뉴로만 수집됨) — 소개문 기반.",
+        "lang": "en",
+        "published_at": "2026-11-25T01:00:00+09:00",
+        "collected_at": "2026-11-25T08:09:20+09:00",
+        "metrics": null
+      },
+      {
+        "id": "1474c6279afd1c804d3faf10c26dd02ba075a318",
+        "title": "AWS Weekly Roundup: Local Zone in Bogotá, 30-minute Lambda timeout, and more (November 24, 2026)",
+        "url": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-local-zone-in-bogota-30-minute-lambda-timeout-and-more-november-24-2026",
+        "source": "aws",
+        "category": "eng_blogs",
+        "summary_ko": "AWS 주간 소식 정리(2026년 11월 24일자)로, 가장 눈에 띄는 변화는 AWS Lambda의 실행 시간 제한이 15분에서 30분으로 두 배 늘어난 것이다. Lambda는 2014년 출시 당시 60초였다가 2015년 5분, 2018년 15분으로 올라간 뒤 8년간 그대로였기 때문에, 이 상한선이 그동안 서버리스 아키텍처 설계 자체를 규정해 왔다는 점에서 의미가 크다. 같은 주에 Lambda가 GPU 위에서 실행되는 기능도 추가됐고, 콜롬비아 보고타에 Local Zone(주요 리전에서 떨어진 도시에 지연 시간을 줄이려고 두는 소규모 AWS 인프라)이 개설됐다. ※서버리스: 서버를 직접 관리하지 않고 함수 단위로 코드를 실행하는 방식. ※본문 전체는 미확보 — 소개문 기반이라 나머지 항목은 원문 확인 필요.",
+        "lang": "en",
+        "published_at": "2026-11-25T00:39:59+09:00",
+        "collected_at": "2026-11-25T08:09:20+09:00",
+        "metrics": null
+      },
+      {
+        "id": "0061038fb64e500b516aed1d9bf5b1b86ba8d740",
+        "title": "Custom software, specialized workflows, and other new growth paths from SaaS Platform Summit",
+        "url": "https://stripe.com/blog/custom-software-specialized-workflows-and-other-new-growth-paths-from-saas-platform-summit",
+        "source": "stripe",
+        "category": "eng_blogs",
+        "summary_ko": "Stripe가 자사 SaaS Platform Summit에서 나온 논의를 정리한 글이다. 핵심 주장은 SaaS 플랫폼이 오랫동안 '특정 업종(vertical)' 단위로 제품을 만들어 왔다면, 이제 AI 덕분에 '가맹점 한 곳'만을 위한 맞춤 소프트웨어를 만드는 것이 현실적으로 가능해졌다는 것이다. 행사에 참여한 창업자·실무자들은 이런 맞춤 소프트웨어와 임베디드 파이낸스(플랫폼이 결제·대출·카드 발급 같은 금융 기능을 자기 제품 안에 내장하는 것)가 새로운 매출원이 될 수 있다고 이야기했다. ※본문 전체는 미확보(페이지 본문이 사이트 메뉴로만 수집됨) — 소개문 기반.",
+        "lang": "en",
+        "published_at": "2026-11-23T09:00:00+09:00",
+        "collected_at": "2026-11-25T08:09:20+09:00",
+        "metrics": null
+      }
+    ]
+  },
+  "hot_topics": [
+    {
+      "topic": "2035 came early",
+      "trend_score": 1.0,
+      "src_count": 1,
+      "hn": {
+        "points": 936,
+        "comments": 356
+      },
+      "items": [
+        {
+          "id": "70e8b292ce38c77a74c46e3e89a78473e15cc947",
+          "title": "2035 came early",
+          "url": "https://fzakaria.com/2026/11/23/2035-came-early",
+          "source": "hackernews",
+          "category": "hot_topics",
+          "summary_ko": "Farid Zakaria가 브라우저에서 Nix 패키지를 그대로 실행하는 trynix.dev가 이제 GUI 프로그램까지 띄운다고 알리는 글이다(솔리테어, GL gears, xeyes, Firefox 등을 데모로 제시). 기존에는 브라우저 안의 QEMU 에뮬레이션이 너무 느려 실용이라기보다 신기한 장난감에 가까웠는데, 2026년 11월 19일 Pooya Parsa가 공개한 unkernel(리눅스 커널을 WebAssembly로 컴파일해 커널·시스템 구성요소는 wasm 속도로 돌리고 사용자 프로그램만 에뮬레이션하는 방식)로 엔진을 갈아끼우자 특히 커널 작업이 지배적인 첫 실행에서 qemu-wasm 대비 속도가 크게 개선됐다고 한다. 저자는 이를 Gary Bernhardt의 강연 'The Birth & Death of JavaScript'가 2035년의 일로 그렸던 미래가 LLM 덕분에 앞당겨진 사례로 해석한다. nixpkgs-multiverse를 통해 30만 개가 넘는 패키지 버전을 브라우저에서 바로 돌릴 수 있다는 점을 강조한다. ※Nix: 패키지를 재현 가능하게 빌드·설치하는 패키지 관리자.",
+          "lang": "en",
+          "published_at": "2026-11-24T15:30:33+09:00",
+          "collected_at": "2026-11-25T08:09:20+09:00",
+          "metrics": {
+            "points": 936,
+            "comments": 356
+          }
+        }
+      ]
+    },
+    {
+      "topic": "LLM agents work for their parent companies, not for you",
+      "trend_score": 0.9913,
+      "src_count": 1,
+      "hn": {
+        "points": 857,
+        "comments": 358
+      },
+      "items": [
+        {
+          "id": "ef8096d74f5dfd33bbd5ed7fb2e703fe406064ae",
+          "title": "LLM agents work for their parent companies, not for you",
+          "url": "https://michaelharley.net/posts/2026/11/01/llm-agents-work-for-their-parent-companies-not-for-you",
+          "source": "hackernews",
+          "category": "hot_topics",
+          "summary_ko": "블로거 Michael Harley가 LLM 에이전트는 사용자가 아니라 그것을 만든 회사를 위해 일한다고 주장하는 글이다. 그는 Instagram 릴스에서 마음에 든 음악의 아티스트를 찾아 Bandcamp에서 직접 구매할 수 있게 해주는 도구를 Claude Code로 만들어 쓰고 있었는데, Bandcamp가 검색 API에 챌린지(자동화 차단 장치)를 추가해 작동이 멈추자 모델이 우회 방법을 돕기를 거부했다. 그런데 같은 도구의 다른 분기에서 같은 곡을 YouTube에서 찾아 내려받는 일은 모델이 아무 문제 없이 해주더라는 것이 그가 지적하는 모순이다 — 아티스트에게 돈이 가는 쪽(구매)은 막히고, 한 푼도 가지 않는 쪽(다운로드)은 허용된다는 것이다. 저자는 이 비일관성이 모델의 거부가 사용자 이익이나 일관된 윤리 기준이 아니라 제공사의 사정에 따라 결정된다는 증거라고 본다. ※이 글은 개인 블로그의 주장이며 벤더의 공식 입장이 아니다.",
+          "lang": "en",
+          "published_at": "2026-11-24T21:40:15+09:00",
+          "collected_at": "2026-11-25T08:09:20+09:00",
+          "metrics": {
+            "points": 857,
+            "comments": 358
+          }
+        }
+      ]
+    },
+    {
+      "topic": "Quad9 pulled their DNS service from France",
+      "trend_score": 0.8514,
+      "src_count": 1,
+      "hn": {
+        "points": 323,
+        "comments": 162
+      },
+      "items": [
+        {
+          "id": "9b89d38293c74d21dec95fe1ea48da8345eec97c",
+          "title": "Quad9 pulled their DNS service from France",
+          "url": "https://quad9.net/news/blog/quad9-service-deactivation-in-france",
+          "source": "hackernews",
+          "category": "hot_topics",
+          "summary_ko": "공익 무료 DNS 서비스 Quad9가 2026년 11월 24일 오전 9시(중앙유럽시, 파리 기준)를 기해 프랑스 사용자 대상 서비스를 전면 중단했다 — 프랑스에서 Quad9 서비스 주소로 오는 모든 질의가 거부되어 DNS 조회가 실패한다. 배경은 스포츠 중계권사 beIN이 불법 스트리밍 관련이라고 주장하는 도메인들을 차단하라고 요구했고 프랑스 법원이 이를 인용했으며, Quad9가 불응하자 벌금이 부과된 사건이다. Quad9는 자신들이 불법 복제에 반대하지만 리커시브 리졸버(사용자 대신 도메인 주소를 찾아주는 DNS 서버)를 제3자에 대한 집행 수단으로 동원하는 것 자체에 근본적으로 반대하며, 리졸버를 막아도 실제 콘텐츠를 제공하는 원본 서버에는 아무 영향이 없어 무의미하다는 입장이다. 법과 자체 원칙을 모두 지키려면 프랑스에서 철수하는 수밖에 없었다고 설명하면서, 단기적으로 사용자들이 보안 기능 없는, 그리고 프라이버시 보호가 덜한 다른 리졸버로 옮겨가게 되는 피해가 생긴다는 점도 인정했다. 철수 예고는 한 달 전에 공지됐다.",
+          "lang": "en",
+          "published_at": "2026-11-24T17:33:14+09:00",
+          "collected_at": "2026-11-25T08:09:20+09:00",
+          "metrics": {
+            "points": 323,
+            "comments": 162
+          }
+        }
+      ]
+    },
+    {
+      "topic": "GTA 6 Running on Windows",
+      "trend_score": 0.8427,
+      "src_count": 1,
+      "hn": {
+        "points": 233,
+        "comments": 263
+      },
+      "items": [
+        {
+          "id": "31bc9b6a56000390ff72e250fd245ad7d341b16d",
+          "title": "GTA 6 Running on Windows",
+          "url": "https://twitter.com/raul_bs3/status/2125213756238291075",
+          "source": "hackernews",
+          "category": "hot_topics",
+          "summary_ko": "GTA 6가 PC에서 셰이더가 거의 완전히 적용된 상태로 구동되는 모습이 X(옛 트위터)에 공개돼 화제가 된 게시물이다. 게시자 rust1co(@raul_bs3)는 2019년부터 RAGE 엔진(GTA·RDR 시리즈 엔진)을 다뤄온 개발자로 자신은 포팅에 참여하지 않고 소식만 전한다고 밝히고 있다. 그는 marvy의 'VIctory' 프로젝트가 길을 열어 cyberleek 공개 24시간도 안 돼 여러 개발자가 뒤따랐다고 전하며, 오류에 관대한 Vulkan을 택한 것(까다로운 DX12 대신)과 AI 도구 활용을 빠른 진척의 이유로 꼽았다. ※이는 비공식 커뮤니티 작업에 대한 소셜 미디어 게시물로, 검증된 보도가 아니라 주장 단계의 정보다. ※셰이더: 화면에 그려지는 빛·질감·색을 계산하는 GPU 프로그램. ※Vulkan/DX12: 저수준 그래픽 API.",
+          "lang": "en",
+          "published_at": "2026-11-24T22:19:31+09:00",
+          "collected_at": "2026-11-25T08:09:20+09:00",
+          "metrics": {
+            "points": 233,
+            "comments": 263
+          }
+        }
+      ]
+    },
+    {
+      "topic": "The Spray Bottle",
+      "trend_score": 0.8143,
+      "src_count": 1,
+      "hn": {
+        "points": 306,
+        "comments": 87
+      },
+      "items": [
+        {
+          "id": "397ec8707e2111fff36e05c83973e531d61900af",
+          "title": "The Spray Bottle",
+          "url": "https://mechanical-pencil.com/products/spray-bottle",
+          "source": "hackernews",
+          "category": "hot_topics",
+          "summary_ko": "Bryan Macomber의 'Mechanical Pencil' 사이트가 공개한, 분무기(스프레이 보틀)의 작동 원리를 인터랙티브 일러스트로 해부한 페이지다. 다루는 질문은 하나 — 방아쇠를 당길 때마다 어떻게 매번 액체가 계속 나오는가. 현대식 분무기는 1970년대 초에 등장했고 노즐과 트리거 설계만 수백에서 수천 가지로 갈라졌지만 모두 같은 원리인 '일방향 밸브(한쪽으로만 유체를 흘려보내고 반대 방향은 막는 밸브)'를 쓴다는 점을 짚는다. 페이지에서는 커버·챔버·피스톤·스프링·트리거·볼·노즐 등으로 분해해 각 부품이 어떻게 맞물리는지, 당길 때와 놓을 때 밸브가 어떻게 번갈아 열리고 닫히는지를 단계별로 클릭하며 볼 수 있게 했다. 일방향 밸브는 비누 디스펜서, 변기, 심지어 심장에도 쓰인다는 점을 함께 설명한다.",
+          "lang": "en",
+          "published_at": "2026-11-22T20:16:30+09:00",
+          "collected_at": "2026-11-25T08:09:20+09:00",
+          "metrics": {
+            "points": 306,
+            "comments": 87
+          }
+        }
+      ]
+    },
+    {
+      "topic": "Jetty Pro",
+      "trend_score": 0.7987,
+      "src_count": 1,
+      "hn": {
+        "points": 239,
+        "comments": 105
+      },
+      "items": [
+        {
+          "id": "9dcfb07c99c84b9bfe877d73023a1cb3a032e8c6",
+          "title": "Jetty Pro",
+          "url": "https://hypercritical.co/2026/11/23/jetty-pro",
+          "source": "hackernews",
+          "category": "hot_topics",
+          "summary_ko": "맥 개발자이자 팟캐스터인 John Siracusa가 새 Mac 앱 'Jetty Pro'를 내놓으며 쓴 개발기다. 2019년 은퇴한 유서 깊은 앱 DragThing에서 그가 마지막으로 아쉬워하던 기능 — 화면 구석에 자주 쓰는 폴더만 모아두는 작은 팔레트 — 를 구현한 것으로, 그는 앞서 Front and Center, SwitchGlass로도 DragThing의 기능을 하나씩 복원해 왔다(한때 SwitchGlass에 이 기능을 넣었다가 앱 성격과 맞지 않아 접었던 전력이 있다). 흥미로운 지점은 작업 방식이다 — AI 코딩 에이전트 덕분에 '노력 대비 보상이 안 맞아 만들 가치가 없던' 틈새 앱도 만들 수 있게 된 흐름 속에서, 그는 기존 SwitchGlass 소스를 에이전트에 넣고 '하루 이틀이면 되겠지' 하고 시작했지만 실제로는 3개월 반이 걸렸다. 그가 인용한 프로그래머의 격언이 결론을 요약한다 — '우리가 이 일을 하는 건 쉬워서가 아니라 쉬울 거라고 생각했기 때문이다.'",
+          "lang": "en",
+          "published_at": "2026-11-25T01:23:02+09:00",
+          "collected_at": "2026-11-25T08:09:20+09:00",
+          "metrics": {
+            "points": 239,
+            "comments": 105
+          }
+        }
+      ]
+    },
+    {
+      "topic": "Active intrusion campaign against Check Point security management servers",
+      "trend_score": 0.798,
+      "src_count": 1,
+      "hn": {
+        "points": 242,
+        "comments": 101
+      },
+      "items": [
+        {
+          "id": "13f064878893483f704cddd9203b432344149b48",
+          "title": "Active intrusion campaign against Check Point security management servers",
+          "url": "https://greynoise.io/blog/check-point-security-management-servers-intrusion-campaign",
+          "source": "hackernews",
+          "category": "hot_topics",
+          "summary_ko": "위협 인텔리전스 업체 GreyNoise가 Check Point 보안 관리 서버(Security Management Server)를 노린 침해 캠페인을 발견해 공개했다. 확인된 공격 활동 기간은 2026년 10월 17일부터 11월 2일까지이며, 전 세계 최소 22개 조직이 영향을 받았다. GreyNoise는 이 활동 묶음을 'GreyNoise Threat 13(GT13)'으로 추적하고 있고, 여기에는 공격자 인프라와 도구, 그리고 22개 피해 조직에 대한 익스플로잇 이후 행위가 포함된다. 탐지는 GreyNoise가 운영하는 Global Observation Grid(GOG) — 공격자의 스캔과 익스플로잇 시도를 유인하도록 설계된 센서 네트워크로, 일반적인 허니팟보다 규모와 다양성이 크다 — 를 통해 이뤄졌으며, 침해사고 대응 조사를 기다리지 않고 침투 전 과정을 거의 실시간으로 관찰할 수 있었다는 점을 강조한다. 보안 관리 서버는 방화벽 정책을 총괄하는 장비라 침해 시 영향 범위가 넓다. 작성자는 Steve Miller.",
+          "lang": "en",
+          "published_at": "2026-11-25T01:32:17+09:00",
+          "collected_at": "2026-11-25T08:09:20+09:00",
+          "metrics": {
+            "points": 242,
+            "comments": 101
+          }
+        }
+      ]
+    },
+    {
+      "topic": "Ternary Bonsai 2.5 27B",
+      "trend_score": 0.7788,
+      "src_count": 1,
+      "hn": {
+        "points": 234,
+        "comments": 74
+      },
+      "items": [
+        {
+          "id": "ca7efd0c9bb94d7717e5e3ef24c48e722e36636e",
+          "title": "Ternary Bonsai 2.5 27B",
+          "url": "https://prismml.com/news/bonsai-2-5-27b",
+          "source": "hackernews",
+          "category": "hot_topics",
+          "summary_ko": "PrismML이 온디바이스(기기 내부에서 직접 실행) 모델 'Ternary Bonsai 2.5 27B'를 공개했다. Qwen3.8 27B를 기반으로 삼원(ternary) 양자화를 적용해 5.9GB라는 기존 용량을 그대로 유지하면서 에이전틱 코딩, 다중 턴 도구 호출, 다단계 작업 수행 능력을 크게 끌어올린 것이 요지다. 벤치마크에서 이전 버전 대비 개선 폭이 뚜렷한데, SWE-bench Verified가 60.8→75.6, AppWorld가 51.2→90.5, Terminal-Bench 2.1이 52.8→60.1로 올라 풀 정밀도 원본(각 80.6/93.2/70.8)과의 격차를 상당히 좁혔다(다만 LiveCodeBench v6은 83.8→83.0으로 소폭 하락). 이전 모델의 문제였던 과도한 사고 과정과 반복 루프를 개선해 더 적은 턴과 토큰으로 작업을 끝낸다고 밝혔다. 속도는 NVIDIA H100에서 MTP 적용 시 생성 291 토큰/초, 소비자용 RTX 4090에서도 204 토큰/초다. ※양자화: 모델 가중치를 더 적은 비트로 표현해 용량과 메모리를 줄이는 기법. ※에이전틱 워크로드는 도구 호출이 길게 이어지므로 작은 오류가 누적돼 작업 전체를 망칠 수 있다는 점이 이 개선의 핵심 동기다.",
+          "lang": "en",
+          "published_at": "2026-11-25T05:08:03+09:00",
+          "collected_at": "2026-11-25T08:09:20+09:00",
+          "metrics": {
+            "points": 234,
+            "comments": 74
+          }
+        }
+      ]
+    },
+    {
+      "topic": "How a Mechanical Watch Keeps Time (Interactive 3D)",
+      "trend_score": 0.7461,
+      "src_count": 1,
+      "hn": {
+        "points": 202,
+        "comments": 52
+      },
+      "items": [
+        {
+          "id": "ffdc956dc15eb88d2cf82eaaa4eb13a3e5e14f69",
+          "title": "How a Mechanical Watch Keeps Time (Interactive 3D)",
+          "url": "https://martincmartin.github.io/slidev-stem/watches/article/1",
+          "source": "hackernews",
+          "category": "hot_topics",
+          "summary_ko": "Martin C. Martin이 만든, 기계식 시계가 어떻게 시간을 재는지를 인터랙티브 3D 그림으로 단계별 설명하는 페이지다(드래그로 부품을 돌려 옆면까지 볼 수 있다). 출발점은 1675년 네덜란드 과학자 Christiaan Huygens가 발명한 헤어스프링 — 머리카락보다 가는 강철 리본을 나선으로 감은 것으로, 바깥쪽 끝은 고정하고 안쪽 끝을 비틀었다 놓으면 일정한 속도로 감겼다 풀리기를 반복한다(저자는 다이빙 보드를 돌돌 만 것에 비유한다). 여기에 1364년경 등장한 밸런스 휠이 질량과 관성을 더해 시간 기준을 완성하는데, 테두리 쪽 질량이 가장 크게 작용하므로 옛 시계공들은 림의 나사를 안팎으로 옮겨 빠르기를 조정했고, 흔드는 각도가 커도 작아도 주기가 거의 같은 성질(등시성)이 정확도의 바탕이 된다. 이후 이스케이프먼트, 기어 트레인, 메인스프링, 시침까지 차례로 다룬다. 저자는 100달러짜리 순수 기계 장치가 99.99% 정확도로 500년간 시간을 지켜온 점을 흥미롭게 짚는다.",
+          "lang": "en",
+          "published_at": "2026-11-22T22:21:25+09:00",
+          "collected_at": "2026-11-25T08:09:20+09:00",
+          "metrics": {
+            "points": 202,
+            "comments": 52
+          }
+        }
+      ]
+    },
+    {
+      "topic": "Worshipping at the altar of Brendan Gregg",
+      "trend_score": 0.7352,
+      "src_count": 1,
+      "hn": {
+        "points": 209,
+        "comments": 39
+      },
+      "items": [
+        {
+          "id": "5c003d30472b094fc3339ddbb65cf2e664e28811",
+          "title": "Worshipping at the altar of Brendan Gregg",
+          "url": "https://fzakaria.com/2026/11/12/worshipping-at-the-altar-of-brendan-gregg",
+          "source": "hackernews",
+          "category": "hot_topics",
+          "summary_ko": "Farid Zakaria가 결정론적 VM 'Rewind'에 성능 분석 명령 `rewind time`을 추가한 이야기다. 핵심 개념은 임계 경로(critical path) — 프로그램 안에서 서로를 기다려야 하는 작업들의 가장 긴 사슬로, CPU를 아무리 더 꽂아도 이보다 빨라질 수 없는 하한선이다. libuv 1.51.0의 빌드·테스트를 분석한 예시가 설득력 있는데, VM의 단일 CPU에서 78.0초가 걸렸고 코어 64개를 써도 47.4초인 이유가 임계 경로 분석에서 드러난다 — 그 47초 중 67%는 계산이 아니라 잠들어 있는 시간(epoll_pwait 23.1초, clock_nanosleep 8.53초, futex 100ms)이고 실제 연산은 33%뿐이다. 이런 경우 일반적인 CPU 프로파일은 거의 쓸모가 없다는 것이 저자의 지적이며, 그는 이 도구를 'Brendan Gregg의 플레임 그래프에 디버거를 붙이고 임계 경로에 특화시킨 것'으로 설명한다. 측정 결과에서 원인이 된 소스 코드 줄까지 파고들 수 있다. ※결정론적 VM: 실행을 그대로 재현할 수 있게 기록하는 가상 머신으로, 한 번만 재현되는 버그(heisenbug) 추적에 쓰인다.",
+          "lang": "en",
+          "published_at": "2026-11-24T19:50:14+09:00",
+          "collected_at": "2026-11-25T08:09:20+09:00",
+          "metrics": {
+            "points": 209,
+            "comments": 39
+          }
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "source": "github_trending",
+      "ok": true,
+      "item_count": 16,
+      "error_type": null
+    },
+    {
+      "source": "anthropic",
+      "ok": true,
+      "item_count": 290,
+      "error_type": null
+    },
+    {
+      "source": "openai",
+      "ok": true,
+      "item_count": 1455,
+      "error_type": null
+    },
+    {
+      "source": "deepmind",
+      "ok": true,
+      "item_count": 100,
+      "error_type": null
+    },
+    {
+      "source": "meta_ai",
+      "ok": true,
+      "item_count": 88,
+      "error_type": null
+    },
+    {
+      "source": "mistral",
+      "ok": true,
+      "item_count": 94,
+      "error_type": null
+    },
+    {
+      "source": "xai",
+      "ok": true,
+      "item_count": 85,
+      "error_type": null
+    },
+    {
+      "source": "openai_codex",
+      "ok": true,
+      "item_count": 214,
+      "error_type": null
+    },
+    {
+      "source": "cloudflare",
+      "ok": true,
+      "item_count": 20,
+      "error_type": null
+    },
+    {
+      "source": "github_blog",
+      "ok": true,
+      "item_count": 10,
+      "error_type": null
+    },
+    {
+      "source": "aws",
+      "ok": true,
+      "item_count": 20,
+      "error_type": null
+    },
+    {
+      "source": "stripe",
+      "ok": true,
+      "item_count": 10,
+      "error_type": null
+    },
+    {
+      "source": "meta_eng",
+      "ok": true,
+      "item_count": 9,
+      "error_type": null
+    },
+    {
+      "source": "reddit_localllama",
+      "ok": false,
+      "item_count": 0,
+      "error_type": "HTTPError"
+    },
+    {
+      "source": "hf_blog",
+      "ok": true,
+      "item_count": 916,
+      "error_type": null
+    },
+    {
+      "source": "hackernews",
+      "ok": true,
+      "item_count": 20,
+      "error_type": null
+    }
+  ],
+  "summaries_injected": true
+}
