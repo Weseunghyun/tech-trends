@@ -1,0 +1,494 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-11-27T08:38:30+09:00",
+  "date": "2026-11-27",
+  "categories": {
+    "ai_labs": [
+      {
+        "id": "02a088434703556c0ebb46d05bae744860572362",
+        "title": "Introducing the llama.cpp benchmark dashboard for AMD Ryzen and Radeon",
+        "url": "https://huggingface.co/blog/ggml-org/llamacpp-amd-bench",
+        "source": "hf_blog",
+        "category": "ai_labs",
+        "summary_ko": "Hugging Face 와 ggml-org 가 AMD Ryzen·Radeon 에서 llama.cpp 의 로컬 추론 성능을 추적하는 공개 벤치마크 대시보드를 열었다. 하드웨어(Radeon 8060S·AI Pro R9700S), 모델, llama.cpp 빌드, 양자화를 골라 PP512(입력 512 토큰 처리 속도)와 TG128(128 토큰 생성 속도)을 초당 토큰 수로 비교하고, 빌드별 추이와 컨텍스트가 길어질 때의 생성 속도 변화까지 볼 수 있다. 벤치마크는 llama-install.sh 로 배포되는 공식 빌드를 대상으로 매주 자동 실행되며 설정당 10회 반복, Flash Attention 켜고 끈 두 경우를 모두 측정한다. 워크플로와 원본 결과가 전부 공개돼 재사용·검증이 가능하다. ※양자화: 모델 가중치를 저정밀도로 줄여 메모리와 속도를 버는 기법(Q4_K_M 등).",
+        "lang": "en",
+        "published_at": "2026-11-26T20:37:17+09:00",
+        "collected_at": "2026-11-27T08:34:44+09:00",
+        "metrics": null
+      },
+      {
+        "id": "d3aa48daa62df5852a1b067eacae1265bc9a1872",
+        "title": "Building on Nemotron 3.5 Parse: Open Data, Fine-Tuning, and Faster Inference",
+        "url": "https://huggingface.co/blog/nvidia/building-on-nemotron-35-parse-open-data-fine-tunin",
+        "source": "hf_blog",
+        "category": "ai_labs",
+        "summary_ko": "NVIDIA 가 문서 이미지를 구조화 데이터로 바꾸는 소형 모델 Nemotron 3.5 Parse 에 이어, 학습에 쓴 합성 데이터셋 3종과 파인튜닝 레시피, 추론 가속용 DFlash2 스펙큘레이터를 공개했다. 데이터셋은 합성 차트 998만 건, 합성 표 100만 건, 다국어 OCR 790만 건 규모다. 학습은 지도 미세조정(SFT)으로 문서 읽기 능력을 가르친 뒤 검증 가능한 보상 기반 강화학습(RLVR, GRPO)으로 다듬는 2단계인데, 동일 조건 비교에서 같은 내용을 반복 출력하는 '루프' 페이지가 126건→29건으로 약 77% 줄고, 9,000 토큰 한도까지 늘어진 출력도 185건→35건으로 감소했으며 종합 점수는 66.24→71.38(표 +5.18, 차트 +4.15)로 올랐다. 수치가 적혀 있지 않은 막대그래프도 축과 막대 높이로 값을 추론한다. ※RLVR: 정답을 기계적으로 검증해 보상을 주는 강화학습.",
+        "lang": "en",
+        "published_at": "2026-11-26T14:05:36+09:00",
+        "collected_at": "2026-11-27T08:34:44+09:00",
+        "metrics": null
+      },
+      {
+        "id": "c01600d4160315a40e5564c4bfecf9eb9d193b50",
+        "title": "Swarms, Flocks, Gangs: How to build, train, and evaluate multi-agent systems",
+        "url": "https://huggingface.co/blog/training-swarms",
+        "source": "hf_blog",
+        "category": "ai_labs",
+        "summary_ko": "Hugging Face 가 '에이전트 떼(swarm)를 직접 학습시키는 법' 연재의 1편을 올렸다. 핵심 질문은 '에이전트를 여러 개 붙이면 정말 협력해서 좋아지는가, 아니면 단지 토큰을 더 쓴 것인가'다. 글은 최근의 대규모 스웜 성과들을 그대로 믿지 말라고 짚는다 — Noam Brown 은 OpenAI 의 Navier-Stokes 결과 중 다중 에이전트 협력의 기여가 10% 미만이라고 추정했고, Anthropic 의 취약점 탐색 실험에서도 협력 에이전트가 버그를 더 찾긴 했지만 같은 디렉터리로 조건을 맞추면 100만 토큰당 성과는 비슷했다고 전한다. 그래서 공정한 비교는 '같은 예산'이어야 한다는 것 — 토큰 총량을 4등분해 받은 에이전트 4개가 전부를 혼자 쓰는 1개를 이기는지 봐야 한다. 실습 예제는 공유 언어모델을 쓰는 에이전트 4개에 숫자 정렬 과제를 주고 팀 보상으로 학습시키며, H200 2장으로 약 5시간·50달러쯤 든다.",
+        "lang": "en",
+        "published_at": "2026-11-26T09:00:00+09:00",
+        "collected_at": "2026-11-27T08:34:44+09:00",
+        "metrics": null
+      },
+      {
+        "id": "6687f7be62c34e4af8b14ad1fa0bb36ceef40b28",
+        "title": "How OpenAI’s Performance Factory keeps ChatGPT fast",
+        "url": "https://openai.com/index/how-openai-performance-factory-keeps-chatgpt-fast",
+        "source": "openai",
+        "category": "ai_labs",
+        "summary_ko": "OpenAI 가 ChatGPT 의 성능 저하를 Codex 에이전트가 스스로 찾아 고치게 만든 사내 시스템 'Performance Factory' 를 공개했다. 성능 알림이 울리면 작업이 자동 생성되고, 에이전트가 원인을 조사해 기록한 뒤 수정안을 올려 엔지니어 리뷰를 받고, 배포 후에는 다른 에이전트가 같은 작업을 이어받아 성능이 기준선으로 돌아왔는지 검증한다 — 조사부터 수정, 확인까지 전 과정이 자동화돼 있다. 3개월여 동안 회귀 워크플로가 1,700건 넘게 조사해 600건 이상의 근본 원인을 규명했고, 이는 하루 17건꼴이다. 시스템은 작업 서비스, 작업 분배 루프, 클라우드의 Codex, 변화가 생기면 에이전트를 깨우는 구독의 네 부분으로 구성된다. 교훈으로 '엔지니어의 주의력을 지킬 것', '에이전트 변경도 평가할 것', '반복되는 실패는 자가 복구로 돌릴 것' 을 들었다.",
+        "lang": "en",
+        "published_at": "2026-11-19T17:00:00+09:00",
+        "collected_at": "2026-11-27T08:34:44+09:00",
+        "metrics": null
+      },
+      {
+        "id": "53f2a14376dda94d54be4734bb5e7ea38842035f",
+        "title": "Inside the Codex sandbox",
+        "url": "https://openai.com/index/inside-the-codex-sandbox",
+        "source": "openai",
+        "category": "ai_labs",
+        "summary_ko": "OpenAI 가 코딩 에이전트 Codex 가 사용자 PC 에서 명령을 실행할 때 쓰는 샌드박스의 내부 구조를 설명했다. 기본값은 보수적이되 일은 되게 하는 쪽 — Git 저장소를 작업 루트로 두는 :workspace 프로필은 작업 디렉터리 내 쓰기는 허용하되 .git 과 .codex 는 읽기 전용으로 묶어, 매 수정마다 승인을 묻지 않으면서도 config.toml 이나 .git/hooks 가 몰래 바뀌는 것을 막는다. 파일 읽기는 컴파일러·빌드 도구 때문에 넓게 열려 있고(OS 권한 범위 내), 네트워크는 프록시로 통제한다. 사용자는 '권한 프로필' 로 파일시스템·네트워크 제한을 조절하고, `codex sandbox` 명령으로 MCP 서버 같은 다른 프로그램도 같은 샌드박스에 가둘 수 있다. macOS·Linux·Windows 각각의 OS 수준 격리 방식도 설명한다. ※MCP: 에이전트가 외부 도구에 붙는 표준 프로토콜.",
+        "lang": "en",
+        "published_at": "2026-11-18T17:00:00+09:00",
+        "collected_at": "2026-11-27T08:34:44+09:00",
+        "metrics": null
+      },
+      {
+        "id": "de4cf53f9db96311cdf47867a4e06ac73ec122a0",
+        "title": "Scaling Git at OpenAI",
+        "url": "https://openai.com/index/scaling-git-at-openai",
+        "source": "openai",
+        "category": "ai_labs",
+        "summary_ko": "OpenAI 가 Git 호환을 유지한 채 자체 백엔드 'Pando' 를 만들어 사내 모노레포 전체를 옮겼다. 이유는 Codex — 에이전트가 동시에 작업하면서 브랜치·푸시·머지·페치가 폭증해 작년 말부터 기존 시스템이 느린 페치와 실패하는 머지로 버티지 못했다. 설계 목표는 두 가지로, 여러 브랜치로 쏟아지는 동시 푸시를 수평 확장하는 쓰기와 클라이언트의 네트워크 대역폭을 다 쓸 만큼 빠른 읽기다. 흔한 접근인 3단계 커밋(3PC)이나 WAL 대신 인과적 일관성(causal consistency)을 택해 제약을 재정의했다. 운영 결과 푸시 지연의 중앙값이 약 5분의 1로 줄었고, 하루 약 1페타바이트의 Git 데이터를 서빙한다. Git 프로토콜·클라이언트 호환을 지켜 엔지니어와 에이전트 모두 기존 워크플로 그대로 쓰며, 개선분 일부는 Git 프로젝트에 기여하겠다고 밝혔다.",
+        "lang": "en",
+        "published_at": "2026-11-03T00:30:00+09:00",
+        "collected_at": "2026-11-27T08:34:44+09:00",
+        "metrics": null
+      },
+      {
+        "id": "64d59b55a8fb866695c8c1e923e768f9baf418cb",
+        "title": "ChatGPT’s expanding world of work",
+        "url": "https://openai.com/index/chatgpt-expanding-world-of-work",
+        "source": "openai",
+        "category": "ai_labs",
+        "summary_ko": "OpenAI 경제연구팀이 사람들이 ChatGPT 를 '일' 에 어떻게 쓰는지 보여주는 OpenAI Signals 데이터를 연구자용으로 공개했다. 약 100개국, 165개 업무 활동(IWA) 범주를 2025년 1분기부터 2026년 3분기까지 분기별로 담았다. IWA 는 미국 직업정보 체계 O*NET 이 쓰는 분류로, 직종을 가로질러 공통되는 업무 묶음이라 고용·직업 통계와 맞대어 비교할 수 있다. 눈에 띄는 발견은 업무용 사용이 소수 활동에 몰리던 경향이 옅어졌다는 점 — 모든 분기에 관측된 74개국에서 상위 10개 활동이 차지하는 비중이 2025년 1분기 56.0%에서 2026년 3분기 51.1%로 떨어졌다. 나라마다 특화되는 업무가 서로 달라졌다는 뜻으로, 일의 구성 차이 때문인지 AI 도구 접근성 차이 때문인지는 앞으로 연구할 거리로 남겼다.",
+        "lang": "en",
+        "published_at": "2026-10-26T19:00:00+09:00",
+        "collected_at": "2026-11-27T08:34:44+09:00",
+        "metrics": null
+      },
+      {
+        "id": "eb7708c5f537ab79bfe683ac06695862c6627f7a",
+        "title": "How Fanatics and OpenAI streamline the fan experience",
+        "url": "https://openai.com/index/fanatics-streamline-fan-experience",
+        "source": "openai",
+        "category": "ai_labs",
+        "summary_ko": "스포츠 용품 플랫폼 Fanatics 가 OpenAI 모델로 만든 'Shop the Look'(코디 추천) 기능을 Fanatics.com 과 NFL·NBA·MLB·NHL 공식 스토어에 적용했다. 팬이 응원 팀 저지를 보면 상품 페이지에서 재고가 있는 어울리는 아이템으로 경기 당일 코디를 제안하는 방식으로, 상품·팀·재고 데이터를 모델이 조합하고 Fanatics 의 머천다이징 규칙이 조합의 적절성을 거른다. 추천 목록은 카탈로그 변화에 맞춰 매일 갱신된다. 개발에는 Codex 를 썼는데 상품 데이터 보강·호환 상품 탐색·추천 평가 도구를 빠르게 만들어 첫 50개 상품 테스트를 하루 안에 끝냈고, 며칠 반복 후 같은 주에 MVP 승인이 났다. MLB 상품 약 3만 개로 검증한 결과 기존 방식 대비 참여도가 10% 높았다.",
+        "lang": "en",
+        "published_at": "2026-10-26T16:00:00+09:00",
+        "collected_at": "2026-11-27T08:34:44+09:00",
+        "metrics": null
+      },
+      {
+        "id": "8f2f08b6e197805b4e591a57a55e222a54e44f14",
+        "title": "How Ultrafast cut incident investigation from hours to minutes at OpenAI",
+        "url": "https://openai.com/index/openai-cut-incident-investigation",
+        "source": "openai",
+        "category": "ai_labs",
+        "summary_ko": "OpenAI 엔지니어들이 Codex 의 고속 모드 'Ultrafast' 를 장애 대응의 기본 도구로 쓰고 있다는 사내 사례 소개다. 장애가 나면 Slack 채널을 열고 Codex 를 문제에 붙여 모니터링·조사·질의응답을 맡기는데, 한 엔지니어는 '원인 후보가 여러 갈래일 때 모든 건초더미를 동시에 뒤질 수 있어 대응이 훨씬 빨라졌다' 고 말한다. 데이터센터 보안 아키텍트는 정형·비정형 데이터를 모아 정규화하고 판단 근거를 만드는 데 1~2시간 걸리던 보안 조사가 지금은 10~15분, 때로는 거의 실시간으로 끝난다고 밝혔다. 속도가 바꾼 건 작업 방식 자체다 — 전에는 Codex 에 맡기고 기다릴 수 없어 자기도 같이 파고들었지만, 이제는 집중을 쪼개지 않고 기다릴 수 있다는 것. 로그뿐 아니라 Slack 대화까지 뒤져 유사 증상이나 의심스러운 변경을 찾는 데도 쓴다.",
+        "lang": "en",
+        "published_at": "2026-10-26T16:00:00+09:00",
+        "collected_at": "2026-11-27T08:34:44+09:00",
+        "metrics": null
+      },
+      {
+        "id": "298c8de07d18f423dad39eb2358f85464fd4cd53",
+        "title": "Rapidly scaling online storage to serve over 1 billion ChatGPT users (Part II)",
+        "url": "https://openai.com/index/scaling-storage-one-billion-users-part-two",
+        "source": "openai",
+        "category": "ai_labs",
+        "summary_ko": "ChatGPT 사용자 10억 명 이상을 받치는 OpenAI 의 온라인 스토리지 플랫폼 'Habitat' 확장기 2부로, 이번엔 밑단 저장소인 Azure Cosmos DB 를 어떻게 키웠는지 다룬다. Habitat 은 40개 리전에 걸쳐 밀리초 단위로 응답해야 하고 500페타바이트 넘는 데이터를 담는다. 멀티테넌시(여러 서비스가 한 저장소를 공유)를 세 단계에 걸쳐 시행착오했는데, 1단계는 Cosmos DB 기본 기능에 기댔다가 논리 파티션 키 한계·시끄러운 이웃·약한 파티션 문제를 만났고, 2단계의 워크로드 격리·싱글테넌시는 용량 계획이 어렵고 과다 프로비저닝을 불렀다. 결국 3단계에서 데이터 이동이 가능한 '기본 멀티테넌시' 로 가면서 핫키 스로틀링과 QoS 를 붙였다. 성능은 데이터를 사용자 가까이 두되 가장 작고 지연에 민감한 데이터만 넓게 복제하고 나머지는 통합 캐시에 맡기는 전략, 프록시를 Rust 로 바꿔 오버헤드를 줄이는 식으로 읽기 12배 가속을 얻었다.",
+        "lang": "en",
+        "published_at": "2026-10-24T02:00:00+09:00",
+        "collected_at": "2026-11-27T08:34:44+09:00",
+        "metrics": null
+      }
+    ],
+    "community": [],
+    "github_trending": [],
+    "codex": [],
+    "eng_blogs": []
+  },
+  "hot_topics": [
+    {
+      "topic": "Intel One Mono font (2023)",
+      "trend_score": 1.0,
+      "src_count": 1,
+      "hn": {
+        "points": 447,
+        "comments": 234
+      },
+      "items": [
+        {
+          "id": "91ef480232c56e0f9e5e6c472d71d7ac8c668832",
+          "title": "Intel One Mono font (2023)",
+          "url": "https://github.com/intel/intel-one-mono",
+          "source": "hackernews",
+          "category": "hot_topics",
+          "summary_ko": "인텔이 2023년 공개한 오픈소스 고정폭(모노스페이스) 글꼴 'Intel One Mono' 의 GitHub 저장소가 다시 화제에 올랐다(별 1만 800개). 저시력 개발자라는 그동안 소외됐던 사용자층을 겨냥해 Frere-Jones Type 이 인텔 브랜드팀·VMLY&R 과 함께 설계했고, 저시력·법적 시각장애 개발자 패널이 디자인 각 단계마다 피드백을 줬다. 목표는 눈의 피로를 줄이고 코딩 실수를 낮추는 최대 가독성이다. 라틴 문자 기반 200개 이상 언어를 지원하며 Light·Regular·Medium·Bold 4종 굵기와 각각의 이탤릭을 제공하고, 완성 폰트와 편집 가능한 소스를 모두 OFL-1.1 오픈 라이선스로 공개했다. 데스크톱은 .otf/.ttf, 웹은 .woff/.woff2 를 권장하며 화면에서는 9픽셀 이상 크기를 권한다. VSCode·Sublime Text·IntelliJ 설정 방법도 안내한다.",
+          "lang": "en",
+          "published_at": "2026-11-26T19:11:01+09:00",
+          "collected_at": "2026-11-27T08:34:44+09:00",
+          "metrics": {
+            "points": 447,
+            "comments": 234
+          }
+        }
+      ]
+    },
+    {
+      "topic": "Tell HN: Happy Thanksgiving",
+      "trend_score": 0.9926,
+      "src_count": 1,
+      "hn": {
+        "points": 557,
+        "comments": 132
+      },
+      "items": [
+        {
+          "id": "7567b48c80a875e832e4146a8aa6a473bf27eae5",
+          "title": "Tell HN: Happy Thanksgiving",
+          "url": "https://news.ycombinator.com/item?id=50655664",
+          "source": "hackernews",
+          "category": "hot_topics",
+          "summary_ko": "Hacker News 에 올라온 추수감사절 인사 글이 559점을 받으며 오늘 커뮤니티 상단에 올랐다(댓글 132개). 글 자체는 '친구·가족과 좋은 하루 보내시라' 는 짧은 인사지만, 댓글에서 한 사용자가 대학 교수에게 배웠다는 매년의 과제를 공유하며 반응이 모였다 — 지금의 나를 만든 코치·조언자·교사·고용주·멘토·친척·친구를 떠올리고, 그중 한두 명에게 손편지로 근황과 감사를 전하라는 것. 50줄에 접어든 한 개발자는 추수감사절뿐 아니라 평소에도 자신에게 긍정적 영향을 준 사람들의 목록을 만들어 한 명씩 찾아 감사를 전하고 있다고 답했다. 작은 도구와 프로젝트, 통찰 있는 글을 만들어 온 사람들에 대한 감사를 적은 댓글도 이어졌다.",
+          "lang": "en",
+          "published_at": "2026-11-26T23:26:54+09:00",
+          "collected_at": "2026-11-27T08:34:44+09:00",
+          "metrics": {
+            "points": 557,
+            "comments": 132
+          }
+        }
+      ]
+    },
+    {
+      "topic": "Nextcloud Office Desktop app",
+      "trend_score": 0.9752,
+      "src_count": 1,
+      "hn": {
+        "points": 389,
+        "comments": 199
+      },
+      "items": [
+        {
+          "id": "de9c79db32a5c15d0d66f0064b2e254e615fc31e",
+          "title": "Nextcloud Office Desktop app",
+          "url": "https://nextcloud.com/blog/euro-office-comes-to-your-desktop-with-the-nextcloud-office-desktop-app",
+          "source": "hackernews",
+          "category": "hot_topics",
+          "summary_ko": "Nextcloud 가 유럽에서 개발·관리되는 주권형 오피스 제품군 'Euro-Office' 기반의 데스크톱 앱 정식판을 내놨다. Windows·macOS·Linux 용 무료 오픈소스 오피스로 문서·스프레드시트·프레젠테이션·PDF 편집기를 갖췄고, MS 오피스 포맷(DOCX·XLSX·PPTX)과 개방 포맷(ODT·ODS·ODP) 호환성을 내세운다. 브라우저용 Nextcloud Office 의 기능에 데스크톱만의 이점을 더한 것이 핵심 — 인터넷 없이 오프라인 작업, 컴퓨터에 설치된 폰트 사용, 전자 서명, 로컬 파일과 온라인 파일 혼용이 가능하다. 어떤 파일을 내 컴퓨터에 두고 어떤 것을 클라우드로 보낼지 직접 고를 수 있고, Nextcloud Hub 인스턴스에 연결하면 팀과 실시간 공동 편집도 된다. 온라인 도구가 멈춰도 작업을 이어갈 수 있다는 점을 장점으로 든다.",
+          "lang": "en",
+          "published_at": "2026-11-26T20:50:49+09:00",
+          "collected_at": "2026-11-27T08:34:44+09:00",
+          "metrics": {
+            "points": 389,
+            "comments": 199
+          }
+        }
+      ]
+    },
+    {
+      "topic": "Collection of preserved UI style guides",
+      "trend_score": 0.9362,
+      "src_count": 1,
+      "hn": {
+        "points": 402,
+        "comments": 93
+      },
+      "items": [
+        {
+          "id": "136b273160019c4c1fa2f0bb065703307fd23209",
+          "title": "Collection of preserved UI style guides",
+          "url": "https://aresluna.org/ui-style-guides",
+          "source": "hackernews",
+          "category": "hot_topics",
+          "summary_ko": "Marcin Wichary 가 1980년대 초부터 현재까지 각 회사가 낸 UI 스타일 가이드(인터페이스 지침 문서) 79종을 한곳에 모아 공개했다. 여기저기 떠돌던 PDF 를 모으는 데 그치지 않고 직접 스캔한 것도 있으며, 여러 미니사이트는 독립 미러로 만들어 이미지를 인라인 처리하거나 YouTube 임베드를 고치는 등 읽기 쉽게 손봤다. 수록 범위는 Amiga(1991), Android(2012 Android Design~Material Design v1/v2~현행), BlackBerry, OSF/Motif 와 CDE, IBM 의 CUA, GEM/TOS, GNOME, 구글의 Glass·Cardboard, iOS(스큐어모픽 시대 1~6 과 iOS 7 이후), Java Swing 룩앤필 지침, KDE, Kinect, Apple Lisa(1980)·Apple II·클래식 맥 OS 등으로, 회사별·시대별로 묶고 중요한 문서를 따로 표시했다.",
+          "lang": "en",
+          "published_at": "2026-11-26T09:40:00+09:00",
+          "collected_at": "2026-11-27T08:34:44+09:00",
+          "metrics": {
+            "points": 402,
+            "comments": 93
+          }
+        }
+      ]
+    },
+    {
+      "topic": "YouTube Ad Punisher – Auto-reloads YouTube pages when an ad plays",
+      "trend_score": 0.9278,
+      "src_count": 1,
+      "hn": {
+        "points": 210,
+        "comments": 295
+      },
+      "items": [
+        {
+          "id": "9ca28a7fecf24c6d02d38cbda1619c9eadb4d591",
+          "title": "YouTube Ad Punisher – Auto-reloads YouTube pages when an ad plays",
+          "url": "https://github.com/antonpictures/youtube-punisher",
+          "source": "hackernews",
+          "category": "hot_topics",
+          "summary_ko": "유튜브 광고가 뜨면 페이지를 자동 새로고침해 광고를 건너뛰는 크롬 확장 'YouTube Ad Punisher' 저장소(MIT 라이선스, 별 98개). 발상은 단순하다 — 기존 광고 차단기는 유튜브의 안티 애드블록에 걸려 '광고 차단기는 허용되지 않습니다' 경고를 받고 건너뛰기 버튼은 몇 초를 기다려야 하지만, 페이지를 다시 불러오면 유튜브가 광고 노출을 재평가해 1~2회 만에 광고 없이 영상이 뜬다는 것. 확장은 광고가 뜨는 순간 현재 재생 위치를 잡아두고 새로고침한 뒤 `&t=Xs` URL 파라미터와 JS 탐색으로 그 지점으로 되돌려준다. 3회 새로고침해도 광고가 계속되면 보조 탭으로 4초간 전환했다 돌아오는데(크롬이 백그라운드 탭을 스로틀링해 광고 상태가 가라앉는 점을 이용), 그래도 안 되면 광고 없는 미러 사이트로 리다이렉트한다.",
+          "lang": "en",
+          "published_at": "2026-11-27T02:36:47+09:00",
+          "collected_at": "2026-11-27T08:34:44+09:00",
+          "metrics": {
+            "points": 210,
+            "comments": 295
+          }
+        }
+      ]
+    },
+    {
+      "topic": "OpenAI may be in cost control mode",
+      "trend_score": 0.9139,
+      "src_count": 1,
+      "hn": {
+        "points": 221,
+        "comments": 208
+      },
+      "items": [
+        {
+          "id": "82a13b62ffcbeb2a08be9302f3ad0e813b0c4209",
+          "title": "OpenAI may be in cost control mode",
+          "url": "https://micjm.com/blog/openai-is-in-cost-control-mode",
+          "source": "hackernews",
+          "category": "hot_topics",
+          "summary_ko": "OpenAI 의 최신 모델 Astra 6.2·Sol 6.2 에 혹평이 쏟아진 이유를 한 벤치마크 운영자가 자기 데이터로 분석했다. 결론은 '비용 절감용으로 튜닝된 것으로 보인다' — 과제당 출력 토큰 수와 추론(reasoning) 토큰 수가 함께 떨어졌다는 것이다. 필자는 실제 작업을 겨루게 하는 자체 대결 시스템의 지출 비율(x축)과 리더보드 Elo 점수(y축)로 GPT-6 → GPT-6.2 의 변화를 그렸는데, 상대 모델 대비 추론량을 보면 Astra 6 과 Sol 6.1 은 평범했지만 6.2 버전들은 눈에 띄게 적게 생각하는 이상치로 떨어졌다. 통계적으로도 출력 토큰 감소의 p-값이 Sol 0.0055·Astra 0.022, 추론 토큰 감소는 Sol 0.00013·Astra 0.0064 로 유의하다고 주장한다. ※Elo: 서로 겨룬 결과로 매기는 상대 실력 점수.",
+          "lang": "en",
+          "published_at": "2026-11-26T16:33:12+09:00",
+          "collected_at": "2026-11-27T08:34:44+09:00",
+          "metrics": {
+            "points": 221,
+            "comments": 208
+          }
+        }
+      ]
+    },
+    {
+      "topic": "Moat: OpenRouter replacement",
+      "trend_score": 0.898,
+      "src_count": 1,
+      "hn": {
+        "points": 240,
+        "comments": 133
+      },
+      "items": [
+        {
+          "id": "64a870b6a92756cbe22a4de8885f0c85ad27bc11",
+          "title": "Moat: OpenRouter replacement",
+          "url": "https://commandcode.ai/moat",
+          "source": "hackernews",
+          "category": "hot_topics",
+          "summary_ko": "여러 AI 모델을 한 API 로 중개하는 OpenRouter 의 대안을 표방한 'MOAT' 의 소개 페이지다. 스스로를 'AI 토큰계의 코스트코' 라 부르며 월 5달러(연 60달러 일시납) 회원제로 105개 이상의 오픈 모델을 도매가에 사용량 제한 없이 쓰게 한다고 홍보한다. 회원 전체의 사용량을 모아 생기는 구매력으로 할인을 받는 구조라는 설명이며, 5시간·주간·월간 한도가 없고 다른 라우터가 붙이는 5~8% 중개 수수료가 없다는 점을 내세운다. 제시된 회원가는 Z.ai GLM-5.3 Flash 70% 할인(100만 토큰당 입력 0.045달러/출력 0.15달러), GLM-5.3 65%, DeepSeek V4.1 Flash 60%, Moonshot Kimi K3 40% 등으로 평균 62% 할인이라고 주장한다. 월 10달러에 100달러어치를 쓰는 'goat' 요금제도 함께 둔다. ※가격·할인율은 모두 업체 자체 주장이다.",
+          "lang": "en",
+          "published_at": "2026-11-26T15:32:48+09:00",
+          "collected_at": "2026-11-27T08:34:44+09:00",
+          "metrics": {
+            "points": 240,
+            "comments": 133
+          }
+        }
+      ]
+    },
+    {
+      "topic": "Google Will Make AI Agents Use Its MCP Servers. The Gmail One Can't Send Email",
+      "trend_score": 0.892,
+      "src_count": 1,
+      "hn": {
+        "points": 194,
+        "comments": 183
+      },
+      "items": [
+        {
+          "id": "6f6a6b07f17a726f0cf416f09370755900e04234",
+          "title": "Google Will Make AI Agents Use Its MCP Servers. The Gmail One Can't Send Email",
+          "url": "https://techstackups.com/articles/google-workspace-ai-agents-mcp",
+          "source": "hackernews",
+          "category": "hot_topics",
+          "summary_ko": "구글이 11월 24일 Workspace MCP 서버 8종을 정식 공개하면서 API 약관에 새 조항을 넣었다 — 2027년 2월 1일부터 'AI 에이전트이거나 AI 에이전트가 구동하는' 도구는 Gmail·드라이브·캘린더 등에 반드시 구글의 MCP 서버를 통해 접근해야 하고, 에이전트임을 숨기는 것도 금지되며 어기면 접근 차단이나 계정 정지가 가능하다. 같은 날부터 REST API 를 직접 부르는 에이전트는 유료 등급과 무관하게 표준 등급 쿼터로 묶인다(AI 가 아닌 백업·동기화 스크립트는 영향 없음). 문제는 서버 기능이 고르지 않다는 점 — Gmail 서버는 검색·읽기·초안 생성·라벨은 되지만 발송·답장·전달·초안 수정이 '파트너 전용' 이라 일반에 열려 있지 않고, 드라이브도 이동·이름 변경·공유가 빠졌다. 데이터 규칙도 추가돼 벡터 임베딩·메모리 인덱스 등 'Google 기술 정보' 보관은 30일로 제한되고 학습·파인튜닝·평가 활용이 금지된다. 기사는 Anthropic 의 Workspace 커넥터가 바로 그 빠진 기능들을 광고하고 있다며 대형 벤더와 개인 개발자 사이의 비대칭을 지적한다.",
+          "lang": "en",
+          "published_at": "2026-11-26T18:44:23+09:00",
+          "collected_at": "2026-11-27T08:34:44+09:00",
+          "metrics": {
+            "points": 194,
+            "comments": 183
+          }
+        }
+      ]
+    },
+    {
+      "topic": "Lions' Commentary on Unix: Why It Was Secretly Copied for 20 Years",
+      "trend_score": 0.8677,
+      "src_count": 1,
+      "hn": {
+        "points": 270,
+        "comments": 61
+      },
+      "items": [
+        {
+          "id": "7c801712a80e2ea1dc55d1ee463bd8886fe2da81",
+          "title": "Lions' Commentary on Unix: Why It Was Secretly Copied for 20 Years",
+          "url": "https://fosscomics.com/posts/17.%20Lions%27%20Commentary%20on%20Unix",
+          "source": "hackernews",
+          "category": "hot_topics",
+          "summary_ko": "유닉스 6판 커널 소스에 주석을 단 John Lions 의 해설서(Lions' Commentary on Unix)가 왜 20년 동안 몰래 복사되며 돌아다녔는지를 다룬 글로, FOSS 코믹스 연재물이다. ※본문 미확보 — 제목 기반.",
+          "lang": "en",
+          "published_at": "2026-11-26T14:12:59+09:00",
+          "collected_at": "2026-11-27T08:34:44+09:00",
+          "metrics": {
+            "points": 270,
+            "comments": 61
+          }
+        }
+      ]
+    },
+    {
+      "topic": "AMD-specific fork of llama.cpp",
+      "trend_score": 0.8639,
+      "src_count": 1,
+      "hn": {
+        "points": 257,
+        "comments": 63
+      },
+      "items": [
+        {
+          "id": "1d45997e4997625f9817125417346ee454996a19",
+          "title": "AMD-specific fork of llama.cpp",
+          "url": "https://devnull.land/amd-specific-llama-cpp",
+          "source": "hackernews",
+          "category": "hot_topics",
+          "summary_ko": "AMD 그래픽카드 사용자에게 llama.cpp 의 AMD 특화 포크 'llama-cpp-rdna-boosts' 를 추천하는 개인 블로그 글. 필자 환경에서 토큰 생성이 초당 35→55개, 프리필(입력 처리)이 초당 700→1300 토큰으로 올랐다고 보고한다. 글은 2026년 들어 쏟아진 맞춤형 추론 엔진들(Strata, Basalt 등)을 경계하는데, 특정 하드웨어·모델에 집중하고 프런티어 모델로 통째로 '바이브 코딩' 된 데다, 속도를 좇다가 하드웨어 최적화를 넘어 모델이 생각하는 방식 자체를 바꾸는 선을 넘고 있다는 것이다 — 예로 Strata 가 원래 선택됐어야 할 전문가(expert) 대신 VRAM 에 올라온 전문가를 우선 조회하는 식을 든다. 반면 rdna-boosts 는 llama.cpp 의 고정 커밋에 최소한의 패치만 얹어 새 버전마다 다시 적용하는 방식이라 유지보수 부담이 적다는 점을 높이 샀다. ROCm 없이도 podman 으로 사전 빌드 이미지를 받아 실행할 수 있다. ※프리필: 프롬프트를 한꺼번에 처리하는 단계.",
+          "lang": "en",
+          "published_at": "2026-11-27T02:11:29+09:00",
+          "collected_at": "2026-11-27T08:34:44+09:00",
+          "metrics": {
+            "points": 257,
+            "comments": 63
+          }
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "source": "github_trending",
+      "ok": true,
+      "item_count": 16,
+      "error_type": null
+    },
+    {
+      "source": "anthropic",
+      "ok": true,
+      "item_count": 290,
+      "error_type": null
+    },
+    {
+      "source": "openai",
+      "ok": true,
+      "item_count": 1455,
+      "error_type": null
+    },
+    {
+      "source": "deepmind",
+      "ok": true,
+      "item_count": 100,
+      "error_type": null
+    },
+    {
+      "source": "meta_ai",
+      "ok": true,
+      "item_count": 88,
+      "error_type": null
+    },
+    {
+      "source": "mistral",
+      "ok": true,
+      "item_count": 94,
+      "error_type": null
+    },
+    {
+      "source": "xai",
+      "ok": true,
+      "item_count": 85,
+      "error_type": null
+    },
+    {
+      "source": "openai_codex",
+      "ok": true,
+      "item_count": 213,
+      "error_type": null
+    },
+    {
+      "source": "cloudflare",
+      "ok": true,
+      "item_count": 20,
+      "error_type": null
+    },
+    {
+      "source": "github_blog",
+      "ok": true,
+      "item_count": 10,
+      "error_type": null
+    },
+    {
+      "source": "aws",
+      "ok": true,
+      "item_count": 20,
+      "error_type": null
+    },
+    {
+      "source": "stripe",
+      "ok": true,
+      "item_count": 10,
+      "error_type": null
+    },
+    {
+      "source": "meta_eng",
+      "ok": true,
+      "item_count": 9,
+      "error_type": null
+    },
+    {
+      "source": "reddit_localllama",
+      "ok": false,
+      "item_count": 0,
+      "error_type": "HTTPError"
+    },
+    {
+      "source": "hf_blog",
+      "ok": true,
+      "item_count": 918,
+      "error_type": null
+    },
+    {
+      "source": "hackernews",
+      "ok": true,
+      "item_count": 20,
+      "error_type": null
+    }
+  ],
+  "summaries_injected": true
+}
